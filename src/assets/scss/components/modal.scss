@@ -1,0 +1,89 @@
+.modal {
+  z-index: 100;
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+
+  .modal-background {
+    background: transparent;
+  }
+
+  .modal-content {
+    background: #fff;
+    position: relative;
+    overflow: visible;
+
+    @media screen and (min-width: 768px){
+      max-height: 80%;
+    }
+
+    .modal-close {
+      position: absolute;
+      right: 0;
+      top: -38px;
+      cursor: pointer;
+      background-color: rgba(10, 10, 10, 0.3);
+      border-radius: 50%;
+      padding: 4px;
+
+      &:hover {
+        background-color: rgba(10, 10, 10, 0.5);
+      }
+
+      @media screen and (max-width: 768px) {
+        top: 4px;
+        right: 6px;
+        padding: 2px;
+        border-radius: 50%;
+      }
+
+      &.is-large {
+        @media screen and (max-width: 768px) {
+          height: 26px;
+          max-height: 26px;
+          max-width: 26px;
+          min-height: 26px;
+          min-width: 26px;
+          width: 26px;
+        }
+      }
+    }
+
+    .modal__content {
+      max-height: 100%;
+      overflow: auto;
+
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: 0 0 12px #ccc;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: transparentize(#000, 0.7);
+        border-radius: 0;
+        background-clip: padding-box;
+      }
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+    }
+  }
+
+  &.is-full-screen {
+    &> .animation-content {
+      background: #fff;
+    }
+
+    //@media screen and (max-width: 768px){
+    //  z-index: 10;
+    //
+    //  .modal__content {
+    //    padding-top: 56px;
+    //  }
+    //
+    //  .modal-close {
+    //    top: 62px;
+    //  }
+    //}
+  }
+}

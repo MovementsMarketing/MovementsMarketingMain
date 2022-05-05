@@ -1,0 +1,100 @@
+.button {
+  border: none;
+  outline: none;
+
+  &.button--primary {
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
+    transition: all ease 300ms;
+    font-size: 24px;
+    line-height: 50px;
+    height: 50px;
+    color: #fff;
+    font-weight: 900;
+
+    &:hover {
+      animation-duration: 300ms;
+      animation-name: gradientMove;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &.button--hollow {
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #fff 0%, #fff 20%, #fff 100%);
+    transition: all ease 300ms;
+    font-size: 24px;
+    line-height: 50px;
+    height: 50px;
+    color: #186267;
+    font-weight: 900;
+    padding-right: 12px;
+
+    .icon-wrapper {
+      margin-left: 20px;
+      //background: #186267;
+      border-radius: 100%;
+      padding: 10px;
+    }
+
+    .dot {
+      background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
+      // background: #9FF882;
+      border-radius: 50px;
+      height: 50px;
+      width: 50px;
+      z-index: 0;
+      position: absolute;
+      right: 0;
+    }
+
+    .text,
+    .icon-wrapper {
+      z-index: 2;
+    }
+
+    &:hover {
+      animation-duration: 200ms;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+     // animation-name: fillGradient;
+      animation-delay: 10ms;
+      color: #fff;
+      background: transparent;
+
+      .dot  {
+        //background: transparent;
+        width: 100%;
+        z-index: 0;
+      }
+
+
+    }
+  }
+}
+
+@keyframes fillGradient {
+  100%   { background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%); }
+  80%   { background: linear-gradient(90deg, #186267 0%, #186267 30%, #9FF882 100%); }
+  65%   { background: linear-gradient(90deg, #186267 0%, #186267 40%, #9FF882 135%); }
+  50%  {background: linear-gradient(90deg, #186267 0%, #186267 50%, #9FF882 160%); }
+  45%  {background: linear-gradient(90deg, #186267 0%, #186267 60%, #9FF882 180%); }
+  30% {background: linear-gradient(90deg, #186267 0%, #186267 70%, #9FF882 200%); }
+  15% {background: linear-gradient(90deg, #186267 0%, #186267 80%, #9FF882 200%); }
+  0% {background: linear-gradient(90deg, #186267 0%, #186267 90%, #9FF882 200%); }
+}
+
+
+@keyframes gradientMove {
+  0%   { background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%); }
+  15%   { background: linear-gradient(90deg, #186267 0%, #186267 30%, #9FF882 100%); }
+  30%   { background: linear-gradient(90deg, #186267 0%, #186267 40%, #9FF882 135%); }
+  45%  {background: linear-gradient(90deg, #186267 0%, #186267 50%, #9FF882 160%); }
+  50%  {background: linear-gradient(90deg, #186267 0%, #186267 60%, #9FF882 180%); }
+  65% {background: linear-gradient(90deg, #186267 0%, #186267 70%, #9FF882 200%); }
+  80% {background: linear-gradient(90deg, #186267 0%, #186267 80%, #9FF882 200%); }
+  100% {background: linear-gradient(90deg, #186267 0%, #186267 90%, #9FF882 200%); }
+}

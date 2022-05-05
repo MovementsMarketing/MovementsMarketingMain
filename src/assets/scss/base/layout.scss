@@ -1,0 +1,46 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+.columns {
+  width: 100%;
+  margin: 0;
+
+  &.is-column-reverse-tablet {
+    @media screen and (max-width: 1024px) {
+      flex-direction: column-reverse;
+      display: flex;
+    }
+  }
+
+  &.is-column-reverse-mobile {
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      display: flex;
+    }
+  }
+
+  .column {
+    @media screen and (max-width: 768px){
+      padding: 8px;
+    }
+  }
+}
+
+.is-align-content-center {
+  align-items: center;
+}
+
+.is-fullwidth {
+  width: 100%;
+}
+
+.l-h-0 {
+  line-height: 0;
+}
+
+.is-dark {
+  background-color: #000;
+}

@@ -1,0 +1,48 @@
+.form {
+  .form__label{
+    display: block;
+    font-size: 12px;
+    text-transform: lowercase;
+    font-weight: 700;
+  }
+
+  .form__input,
+  .form__textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-size: 16px;
+    padding: 8px;
+
+    &:focus {
+      outline: none;
+      border: none;
+      border-bottom: 4px solid #000;
+    }
+  }
+
+  .form__textarea {
+    min-height: 84px;
+  }
+}
+
+.form__button,
+.button {
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  padding: 8px 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #000;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: all 200ms ease;
+  border-radius: 0;
+
+  &:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+}
