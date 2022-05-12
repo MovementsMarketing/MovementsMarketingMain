@@ -50,6 +50,7 @@
         chevronDown: `<polyline xmlns="http://www.w3.org/2000/svg" points="6 9 12 15 18 9"/>`,
         chevronUp: `<polyline xmlns="http://www.w3.org/2000/svg" points="18 15 12 9 6 15"/>`,
         chevronRight: `<polyline xmlns="http://www.w3.org/2000/svg" points="9 18 15 12 9 6"/>`,
+        check: `<polyline xmlns="http://www.w3.org/2000/svg" points="20 6 9 17 4 12"/>`,
     };
 
   }

@@ -1,0 +1,30 @@
+.section {
+  padding: 20px 15% !important;
+
+  &.full-height {
+    height: calc(100vh - 150px);
+  }
+
+  .section__mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background: linear-gradient(45deg, #ECECEC 0%, #ECECEC 40%, transparent 80%, transparent);
+    z-index: 0;
+  }
+
+  > *:not(.section__mask) {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.section-divider {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
+}
