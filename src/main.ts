@@ -7,12 +7,14 @@ import VueI18n from 'vue-i18n'
 
 import router from './router';
 import Icons from "@/components/base/Icons.vue";
+import Slider from "@/components/base/Slider.vue";
 
 Vue.use(VModal);
 Vue.use(Buefy);
 Vue.use(VueI18n);
 
 Vue.component('icons', Icons);
+Vue.component('slider', Slider);
 
 Vue.config.productionTip = false;
 

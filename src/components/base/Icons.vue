@@ -48,8 +48,10 @@
         instagram: `<rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>`,
         globe: `<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>`,
         chevronDown: `<polyline xmlns="http://www.w3.org/2000/svg" points="6 9 12 15 18 9"/>`,
+        chevronsDown: `<polyline xmlns="http://www.w3.org/2000/svg" points="7 13 12 18 17 13"/><polyline xmlns="http://www.w3.org/2000/svg" points="7 6 12 11 17 6"/>`,
         chevronUp: `<polyline xmlns="http://www.w3.org/2000/svg" points="18 15 12 9 6 15"/>`,
         chevronRight: `<polyline xmlns="http://www.w3.org/2000/svg" points="9 18 15 12 9 6"/>`,
+        chevronLeft: `<polyline xmlns="http://www.w3.org/2000/svg" points="15 18 9 12 15 6"/>`,
         check: `<polyline xmlns="http://www.w3.org/2000/svg" points="20 6 9 17 4 12"/>`,
     };
 

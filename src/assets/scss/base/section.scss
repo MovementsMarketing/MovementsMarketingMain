@@ -1,5 +1,5 @@
 .section {
-  padding: 20px 15% !important;
+  padding: 0;
 
   &.full-height {
     height: calc(100vh - 150px);
@@ -19,6 +19,42 @@
   > *:not(.section__mask) {
     position: relative;
     z-index: 1;
+  }
+
+  .bg-image {
+    line-height: 0;
+  }
+
+  .section__content {
+    padding: 20px 320px !important;
+
+    h1 {
+      font-size: 74px;
+      line-height: 76px;
+      color: #186267;
+      max-width: 60%;
+      margin-bottom: 50px;
+      text-align: left;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 48px;
+        height: 8px;
+        background: #e8a500;
+      }
+
+      &.is-large {
+        font-size: 100px;
+        line-height: 102px;
+      }
+    }
+
+
+    .is-highlighted {
+      font-weight: 800;
+    }
+
   }
 }
 

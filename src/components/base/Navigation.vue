@@ -298,7 +298,7 @@
 
         created(): void {
           console.log(this.$i18n.locale);
-          
+
         }
     }
     export default Navigation;
@@ -361,12 +361,12 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          font-size: 20px;
-          color: #2a4647 !important;
+          font-size: 24px;
+          color: #186267 !important;
 
           a:not(.button),
           .navigation__item--dropdown {
-            color: #2a4647 !important;
+            color: #186267 !important;
             text-align: left;
             line-height: 50px;
             width: 150px;
