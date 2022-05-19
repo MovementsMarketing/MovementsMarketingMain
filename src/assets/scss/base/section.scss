@@ -63,4 +63,8 @@
   width: 100%;
   height: 10px;
   background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
+
+  &.section-divider--green {
+    background: #9FF882;
+  }
 }

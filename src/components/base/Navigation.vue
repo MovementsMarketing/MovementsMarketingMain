@@ -33,7 +33,7 @@
             <div class="navigation__menu" :class="isMobileActive ? 'is-active' : ''">
               <div class="navigation__menu__items">
                 <div class="navigation__item">
-                  <router-link to="#about">
+                  <router-link to="/#about">
                     {{ $t(`navigation.about`) }}
                   </router-link>
                 </div>
@@ -57,10 +57,12 @@
                       </div>
                       <div class="divider"></div>
                       <div class="text">
-                        <p class="title">
-                          {{ $t(`navigation.servicesOptions.outbound`) }}
-                        </p>
-                        <div class="list">
+                        <router-link to="#outbound">
+                          <p class="title" @click="isServicesActive = !isServicesActive">
+                            {{ $t(`navigation.servicesOptions.outbound`) }}
+                          </p>
+                        </router-link>
+                        <div class="list" @click="isServicesActive = !isServicesActive">
                           <router-link to="/">
                             {{ $t(`navigation.servicesOptions.telemarketing`) }}
                           </router-link>
@@ -76,10 +78,12 @@
 
                       </div>
                       <div class="text">
-                        <p class="title">
-                          {{ $t(`navigation.servicesOptions.inbound`) }}
-                        </p>
-                        <div class="list">
+                        <router-link to="#inbound">
+                          <p class="title" @click="isServicesActive = !isServicesActive">
+                            {{ $t(`navigation.servicesOptions.inbound`) }}
+                          </p>
+                        </router-link>
+                        <div class="list" @click="isServicesActive = !isServicesActive">
                           <router-link to="/">
                             {{ $t(`navigation.servicesOptions.customerService`) }}
                           </router-link>
@@ -104,13 +108,13 @@
                 </div>
 
                 <div class="navigation__item">
-                  <router-link to="#career">
+                  <router-link to="/#career">
                     {{ $t(`navigation.career`) }}
                   </router-link>
                 </div>
 
                 <div class="navigation__item">
-                  <router-link to="#contact">
+                  <router-link to="/#contact">
                     {{ $t(`navigation.contact`) }}
                   </router-link>
                 </div>
@@ -149,7 +153,7 @@
                   <img src="@/assets/images/movements-marketing-logo.png"/>
                 </div>
                 <div class="navigation__item">
-                  <router-link to="#about">
+                  <router-link to="/#about">
                     {{ $t(`navigation.about`) }}
                   </router-link>
                 </div>
@@ -165,12 +169,12 @@
 
                 </div>
                 <div class="navigation__item">
-                  <router-link to="#career">
+                  <router-link to="/#career">
                     {{ $t(`navigation.career`) }}
                   </router-link>
                 </div>
               <div class="navigation__item">
-                <router-link to="#contact">
+                <router-link to="/#contact">
                   {{ $t(`navigation.contact`) }}
                 </router-link>
               </div>
@@ -215,11 +219,13 @@
                 </div>
                 <div class="divider"></div>
                 <div class="text">
-                  <p class="title">
-                    {{ $t(`navigation.servicesOptions.outbound`) }}
-                  </p>
-                  <div class="list">
-                    <router-link to="/">
+                  <router-link to="/#outbound">
+                    <p class="title" @click="isServicesActive = !isServicesActive">
+                      {{ $t(`navigation.servicesOptions.outbound`) }}
+                    </p>
+                  </router-link>
+                  <div class="list" @click="isServicesActive = !isServicesActive">
+                    <router-link to="/service/b2b-telemarketing">
                       {{ $t(`navigation.servicesOptions.telemarketing`) }}
                     </router-link>
                   </div>
@@ -234,23 +240,25 @@
 
                 </div>
                 <div class="text">
-                  <p class="title">
-                    {{ $t(`navigation.servicesOptions.inbound`) }}
-                  </p>
-                  <div class="list">
-                    <router-link to="/">
+                  <router-link to="/#inbound" @click="isServicesActive = !isServicesActive">
+                    <p class="title">
+                      {{ $t(`navigation.servicesOptions.inbound`) }}
+                    </p>
+                  </router-link>
+                  <div class="list" @click="isServicesActive = !isServicesActive">
+                    <router-link to="/service/customer-service">
                       {{ $t(`navigation.servicesOptions.customerService`) }}
                     </router-link>
-                    <router-link to="/">
+                    <router-link to="/service/answering-service">
                       {{ $t(`navigation.servicesOptions.answeringService`) }}
                     </router-link>
-                    <router-link to="/">
+                    <router-link to="/service/live-chat">
                       {{ $t(`navigation.servicesOptions.liveChat`) }}
                     </router-link>
-                    <router-link to="/">
+                    <router-link to="/service/email-management">
                       {{ $t(`navigation.servicesOptions.emailManagement`) }}
                     </router-link>
-                    <router-link to="/">
+                    <router-link to="/service/social-webcare">
                       {{ $t(`navigation.servicesOptions.socialWebcare`) }}
                     </router-link>
                   </div>
@@ -404,6 +412,14 @@
             }
 
             &.is-active {
+              &::before {
+                content: '';
+                display: block;
+                width: 150px;
+                height: 2px;
+                background: #008d90;
+              }
+
               .vue-icon__wrapper {
                 transform: rotate(180deg);
               }
@@ -593,6 +609,10 @@
             font-weight: 500;
             color: #008d90;
             margin-bottom: 12px;
+
+            &:hover {
+              color: #9FF882;
+            }
           }
 
           .list {

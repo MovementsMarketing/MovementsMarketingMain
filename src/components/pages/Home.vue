@@ -30,29 +30,30 @@
 
         <div class="section-divider"></div>
 
-        <div class="section section--about">
-            <div class="facts m-b-20 m-t-20">
-                <div class="fact">
-                    <span class="icon-wrapper">
-                        <icons icon="check" stroke="#fff" stroke-width="2" height="18" width="18" />
-                    </span>
-                    {{ $t(`home.about.facts.qualitativeTelemarketing`) }}
-                </div>
-                <div class="fact-divider"></div>
-                <div class="fact">
-                    <span class="icon-wrapper">
-                        <icons icon="check" stroke="#fff" stroke-width="2" height="18" width="18" />
-                    </span>
-                    {{ $t(`home.about.facts.multilingualTelemarketers`) }}
-                </div>
-                <div class="fact-divider"></div>
-                <div class="fact">
-                    <span class="icon-wrapper">
-                        <icons icon="check" stroke="#fff" stroke-width="2" height="18" width="18" />
-                    </span>
-                    {{ $t(`home.about.facts.costEffectiveResults`) }}
-                </div>
-            </div>
+        <div id="about" class="section section--about">
+            <facts :facts="[$t(`home.about.facts.qualitativeTelemarketing`), $t(`home.about.facts.multilingualTelemarketers`), $t(`home.about.facts.costEffectiveResults`)]"></facts>
+<!--            <div class="facts m-b-20 m-t-20">-->
+<!--                <div class="fact">-->
+<!--                    <span class="icon-wrapper">-->
+<!--                        <icons icon="check" stroke="#fff" stroke-width="2" height="18" width="18" />-->
+<!--                    </span>-->
+<!--                    {{ $t(`home.about.facts.qualitativeTelemarketing`) }}-->
+<!--                </div>-->
+<!--                <div class="fact-divider"></div>-->
+<!--                <div class="fact">-->
+<!--                    <span class="icon-wrapper">-->
+<!--                        <icons icon="check" stroke="#fff" stroke-width="2" height="18" width="18" />-->
+<!--                    </span>-->
+<!--                    {{ $t(`home.about.facts.multilingualTelemarketers`) }}-->
+<!--                </div>-->
+<!--                <div class="fact-divider"></div>-->
+<!--                <div class="fact">-->
+<!--                    <span class="icon-wrapper">-->
+<!--                        <icons icon="check" stroke="#fff" stroke-width="2" height="18" width="18" />-->
+<!--                    </span>-->
+<!--                    {{ $t(`home.about.facts.costEffectiveResults`) }}-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="about">
                 <div class="bg-image">
                     <img src="@/assets/images/backgrounds/movements_about-us_map.png">
@@ -75,7 +76,7 @@
             </div>
         </div>
 
-        <div class="section section--numbers">
+        <div class="section section--numbers" id="numbersSection">
             <div class="our-numbers">
                 <div class="bg-image">
                     <img src="@/assets/images/backgrounds/movements_globe_bg.png">
@@ -90,25 +91,25 @@
                             <div class="columns is-multiline">
                                 <div class="column is-6">
                                     <div class="number-wrapper">
-                                        <p class="digit"> 598 </p>
+                                        <p class="digit"> {{ ourNumbers.projects.current }} </p>
                                         <p class="text"> {{$t(`home.numbers.projects`)}} </p>
                                     </div>
                                 </div>
                                 <div class="column is-6">
                                     <div class="number-wrapper">
-                                        <p class="digit"> 09 </p>
+                                        <p class="digit"> 0{{ ourNumbers.languages.current }} </p>
                                         <p class="text"> {{$t(`home.numbers.languages`)}} </p>
                                     </div>
                                 </div>
                                 <div class="column is-6">
                                     <div class="number-wrapper">
-                                        <p class="digit"> 03 </p>
+                                        <p class="digit"> 0{{ ourNumbers.offices.current }} </p>
                                         <p class="text"> {{$t(`home.numbers.offices`)}} </p>
                                     </div>
                                 </div>
                                 <div class="column is-6">
                                     <div class="number-wrapper">
-                                        <p class="digit"> 07 </p>
+                                        <p class="digit"> 0{{ ourNumbers.teams.current }} </p>
                                         <p class="text"> {{$t(`home.numbers.teams`)}} </p>
                                     </div>
                                 </div>
@@ -127,7 +128,7 @@
             </div>
         </div>
 
-        <div class="section section--services section--services--outbound columns m-0">
+        <div id="outbound" class="section section--services section--services--outbound columns m-0">
             <div class="section__content column is-6">
                 <h1 v-html="$t(`home.services.outbound.title`)"></h1>
                 <p v-html="$t(`home.services.outbound.text`)"></p>
@@ -163,8 +164,8 @@
             </div>
         </div>
 
-        <div class="section section--services section--services--inbound columns m-0">
-            <div class="services-cover column is-6 p-0">
+        <div id="inbound" class="section section--services section--services--inbound columns m-0">
+            <div class="services-cover column is-6 p-t-0 p-l-0 p-b-0">
                 <div class="services-cover__mask">
                     <img src="@/assets/images/backgrounds/yellow-mask.png">
                 </div>
@@ -182,6 +183,77 @@
             <slider :slidesData="clients"/>
         </div>
 
+        <div class="section section--telemarketers-title">
+            <div class="section__content">
+                <h3 v-html="$t(`home.telemarketers`)">
+                </h3>
+            </div>
+        </div>
+
+        <div class="section--telemarketers lh-0">
+            <img src="@/assets/images/backgrounds/movements_marketing_telemarketers.jpg">
+        </div>
+
+        <div class="section-divider section-divider--green"></div>
+
+        <div id="contact" class="section section--contact">
+            <div class="contact__title">
+                <h1 v-html="$t(`home.contact.title`)"></h1>
+            </div>
+            <div class="columns m-0">
+                <div class="column is-6 p-l-0 p-t-0 p-b-0 lh-0" style="position: relative">
+                    <img src="@/assets/images/backgrounds/movemens_contact_bg.png"/>
+                    <div class="offices">
+                        <div class="columns is-multiline">
+                            <div class="column is-4 has-text-left">
+                                <div class="office" :class="activeOfficeIndex === 0 ? 'is-active' : ''" @click="activeOfficeIndex = 0">
+                                    <span>
+                                        Sarajevo
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="column is-4 has-text-centered">
+                                <div class="office" :class="activeOfficeIndex === 1 ? 'is-active' : ''" @click="activeOfficeIndex = 1">
+                                   <span>
+                                       Utrecht
+                                   </span>
+                                </div>
+                            </div>
+                            <div class="column is-4 has-text-right">
+                                <div class="office" :class="activeOfficeIndex === 2 ? 'is-active' : ''" @click="activeOfficeIndex = 2">
+                                    <span>
+                                        Istanbul
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="column is-12">
+                                <div class="office-data">
+                                    <p>
+                                        {{offices[activeOfficeIndex].address}}
+                                    </p>
+                                    <p>
+                                        {{offices[activeOfficeIndex].postal}}
+                                    </p>
+                                    <p>
+                                        {{offices[activeOfficeIndex].country}}
+                                    </p>
+                                    <p>
+                                        {{offices[activeOfficeIndex].phone}}
+                                    </p>
+                                    <p>
+                                        {{offices[activeOfficeIndex].mail}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+
+                </div>
+            </div>
+        </div>
+        <movements-footer/>
     </div>
 </template>
 
@@ -189,25 +261,120 @@
   import Vue from 'vue';
   import { Component } from 'vue-property-decorator';
   import Navigation from "@/components/base/Navigation.vue";
+  import Facts from "@/components/components/Facts.vue";
 
   @Component({
     components: {
         Navigation,
+        Facts,
     }
   })
   class Home extends Vue {
 
       images = {
           coverBg: '',
+          contactBg: '',
       };
 
       clients: any[];
-      clientSlider = {
-          currentSlide: 0
+
+      ourNumbers : {
+          [key: string]: {current: number, target: number, step: number, timer: any}
+      } = {
+          languages: {
+              current: 0,
+              target: 9,
+              step: 1,
+              timer: 0,
+          },
+          projects:{
+              current: 0,
+              target: 598,
+              step: 62,
+              timer: 0,
+          },
+          offices: {
+              current: 0,
+              target: 3,
+              step: 1,
+              timer: 0,
+
+          },
+          teams: {
+              current: 0,
+              target: 7,
+              step: 1,
+              timer: 0,
+
+          }
       };
+
+      activeOfficeIndex = 0;
+
+      offices = [
+          {
+              key: 'sarajevo',
+              title: 'Sarajevo',
+              address: 'Marka Marulića 2B',
+              postal: '71000 Sarajevo',
+              country: 'Bosnia and Herzegovina',
+              phone: '+31 85 210 37 55',
+              mail: 'info@movementsmarketing.com'
+          },
+          {
+              key: 'utrecht',
+              title: 'Utrecht',
+              address: 'Marka Marulića 2B',
+              postal: '71000 Utrecht',
+              country: 'Bosnia and Herzegovina',
+              phone: '+31 85 210 37 55',
+              mail: 'info@movementsmarketing.com'
+          },
+          {
+              key: 'istanbul',
+              title: 'Istanbul',
+              address: 'Marka Marulića 2B',
+              postal: '71000 Istanbul',
+              country: 'Bosnia and Herzegovina',
+              phone: '+31 85 210 37 55',
+              mail: 'info@movementsmarketing.com'
+          },
+      ];
+
+      onScroll() {
+          let targetTop = document.querySelector('#numbersSection')?.getBoundingClientRect().top,
+              targetBottom = document.querySelector('#numbersSection')?.getBoundingClientRect().bottom,
+              bottomPosition = window.innerHeight - 200;
+
+          if(!targetTop || !targetBottom) return;
+
+          if (( targetTop >= 50 && targetTop <= bottomPosition ) || ( targetBottom >= 50 && targetBottom <= bottomPosition )) {
+              Object.keys(this.ourNumbers).forEach(key => {
+
+                  let timer = setInterval(() => {
+                      if(this.ourNumbers[key].target - this.ourNumbers[key].current >= this.ourNumbers[key].step) {
+                          Vue.nextTick(() => {
+                              Vue.set(this.ourNumbers[key], 'current', (this.ourNumbers[key].current + this.ourNumbers[key].step));
+                          });
+                      } else {
+                          Vue.nextTick(() => {
+                              this.ourNumbers[key].current = this.ourNumbers[key].current + (this.ourNumbers[key].target - this.ourNumbers[key].current)
+                          });
+                      }
+
+                      if(this.ourNumbers[key].current === this.ourNumbers[key].target) {
+                          clearInterval(timer)
+                      }
+                  }, 1000)
+              });
+              return false;
+          }
+          return true;
+      }
 
       created() {
           this.images.coverBg = require('@/assets/images/backgrounds/movements_call-center_bg.png');
+          this.images.contactBg = require('@/assets/images/backgrounds/movemens_contact_bg.png');
 
           this.clients = [
               {
@@ -225,7 +392,17 @@
                   text: this.$t(`home.clients.client.text`),
                   img: require('@/assets/images/backgrounds/movements_customer-service_inbound_cover.png'),
               },
-          ]
+          ];
+
+          window.addEventListener("scroll", this.onScroll);
+      }
+
+      mounted(): void {
+          this.onScroll();
+      }
+
+      beforeDestroy() {
+          window.removeEventListener("scroll", this.onScroll)
       }
   }
 
@@ -264,35 +441,34 @@
     }
 
     .section--about {
+        /*.facts {*/
+        /*    height: 120px;*/
+        /*    display: flex;*/
+        /*    align-items: center;*/
+        /*    justify-content: center;*/
+        /*    color: #186267;*/
 
-        .facts {
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #186267;
+        /*    .fact {*/
+        /*        font-size: 24px;*/
+        /*        letter-spacing: 1px;*/
+        /*        display: flex;*/
+        /*        align-items: center;*/
 
-            .fact {
-                font-size: 24px;
-                letter-spacing: 1px;
-                display: flex;
-                align-items: center;
+        /*        .icon-wrapper {*/
+        /*            padding: 5px;*/
+        /*            margin-right: 10px;*/
+        /*            border-radius: 50px;*/
+        /*            background: #49AF4E;*/
+        /*        }*/
+        /*    }*/
 
-                .icon-wrapper {
-                    padding: 5px;
-                    margin-right: 10px;
-                    border-radius: 50px;
-                    background: #49AF4E;
-                }
-            }
-
-            .fact-divider {
-                height: 50px;
-                width: 4px;
-                margin: 0 20px;
-                background: #e8a500;
-            }
-        }
+        /*    .fact-divider {*/
+        /*        height: 50px;*/
+        /*        width: 4px;*/
+        /*        margin: 0 20px;*/
+        /*        background: #e8a500;*/
+        /*    }*/
+        /*}*/
 
         .about {
             position: relative;
@@ -442,7 +618,7 @@
 
             .services-cover {
                 .services-cover__mask {
-                    right: 0;
+                    right: 12px;
                 }
             }
         }
@@ -478,6 +654,124 @@
 
                 &:hover {
                     transform: translateX(0px);
+                }
+            }
+        }
+    }
+
+    .section.section--clients {
+        margin-top: -12px;
+    }
+
+    .section.section--telemarketers-title {
+        background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
+
+        h3 {
+            font-size: 64px;
+            color: #fff;
+            line-height: 120px;
+            font-weight: 200;
+        }
+    }
+
+    .section--telemarketers {
+        width: 200vw;
+        position: relative;
+        animation-name: slide-left-right;
+        animation-duration: 60000ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .section.section--contact {
+        position: relative;
+
+        .contact__title {
+            position: absolute;
+            top: 30px;
+            width: 100%;
+            z-index: 6;
+            padding: 50px 0;
+
+            h1 {
+                font-size: 74px;
+                line-height: 76px;
+                color: #008d90;
+                display: inline-block;
+                position: relative;
+
+                .is-highlighted {
+                    font-weight: 800;
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 100vw;
+                    height: 3px;
+                    background: #9FF882;
+                    left: 0;
+                    position: absolute;
+                }
+            }
+        }
+
+        .offices {
+            position: absolute;
+            top: 0;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-left: 320px;
+            padding-right: 100px;
+
+            .columns {
+                width: 100%;
+
+                .office {
+                    color: #008d90;
+                    font-size: 32px;
+
+                    span {
+                        position: relative;
+                        line-height: 34px;
+                    }
+
+                    &.is-active {
+                        font-weight: 700;
+                        //border-bottom: 2px solid #9FF882;
+
+                        span {
+                            &::after {
+                                content: '';
+                                display: block;
+                                width: 100%;
+                                height: 3px;
+                                background: #9FF882;
+                                left: 0;
+                                bottom: -2px;
+                                position: absolute;
+                            }
+                        }
+
+                    }
+                }
+
+                .office-data {
+                    background: #fff;
+                    border-radius: 8px;
+                    box-shadow: 1px 1px 12px rgb(0 0 0 / 20%);
+                    padding: 20px 40px;
+
+                    p {
+                        color: #008d90;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 28px;
+                        text-align: left;
+                    }
                 }
             }
         }

@@ -8,6 +8,8 @@ import VueI18n from 'vue-i18n'
 import router from './router';
 import Icons from "@/components/base/Icons.vue";
 import Slider from "@/components/base/Slider.vue";
+import Footer from "@/components/base/Footer.vue";
+import Navigation from "@/components/base/Navigation.vue";
 
 Vue.use(VModal);
 Vue.use(Buefy);
@@ -15,6 +17,8 @@ Vue.use(VueI18n);
 
 Vue.component('icons', Icons);
 Vue.component('slider', Slider);
+Vue.component('movements-footer', Footer);
+Vue.component('navigation', Navigation);
 
 Vue.config.productionTip = false;
 

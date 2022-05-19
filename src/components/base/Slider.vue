@@ -12,7 +12,10 @@
       </div>
 
         <div class="columns is-multiline slide__content">
-            <div class="column p-0 is-6" :style="`background-image: url('${glassMask}')`">
+            <div
+                class="column p-0 is-6"
+                :style="`background-image: url('${glassMask}'); backdrop-filter: blur(5.6px); -webkit-backdrop-filter: blur(5.6px);`"
+            >
               <div class="slide__text">
                 <div v-for="(s, index) in slidesData" :key="index">
                   <transition name='fade' mode="out-in">
@@ -23,6 +26,7 @@
                 </div>
               </div>
             </div>
+          <div class="column p-0 is-6"></div>
         </div>
       <div class="slider__nav-wrapper">
         <div :style="this.currentNumber > 0 ? 'opacity: 1' : 'opacity: 0'" class="slider__nav slider__nav--prev" @click="previousSlide">
@@ -48,7 +52,7 @@
 
     currentNumber = 0;
 
-    glassMask = require('@/assets/images/backgrounds/yellow-mask.png');
+    glassMask = require('@/assets/images/backgrounds/glass_mask.png');
 
     get imagesPosition() {
       return `right: ${this.currentNumber * 100}%`;
@@ -67,7 +71,7 @@
 
     nextSlide(){
         if(this.currentNumber === this.slidesData.length - 1) {
-            this.currentNumber = 0;
+           // this.currentNumber = 0;
             return;
         }
         this.currentNumber += 1
@@ -75,7 +79,7 @@
 
       previousSlide(){
         if(this.currentNumber === 0) {
-          this.currentNumber = this.slidesData.length - 1;
+        //  this.currentNumber = this.slidesData.length - 1;
           return;
         }
           this.currentNumber -= 1
@@ -98,7 +102,7 @@
       .slide__images {
         display: flex;
         position: relative;
-        transition: all ease 800ms;
+        transition: all ease 600ms;
 
         .slide__image {
           flex: none;
@@ -136,10 +140,24 @@
             left:0;
 
           .slide__text {
-            display: flex;
             height: 100%;
-            justify-content: center;
-            align-items: center;
+            text-align: justify;
+            position: relative;
+
+            >div {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              padding-left: 360px;
+              padding-right: 100px;
+              display: flex;
+              align-items: center;
+            }
+
+            p {
+              color: white;
+            }
+
           }
         }
     }
