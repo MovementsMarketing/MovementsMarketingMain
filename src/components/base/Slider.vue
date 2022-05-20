@@ -1,10 +1,9 @@
 <template>
     <div class="slide">
-<!--        <img :src="slidesData[currentNumber].img"/>-->
       <div class="slide__images" :style="imagesPosition">
-        <div class="slide__image" style="width: 100%; height: 600px; background: indianred"></div>
-        <div class="slide__image" style="width: 100%; height: 600px; background: cornflowerblue"></div>
-        <div class="slide__image" style="width: 100%; height: 600px; background: yellowgreen"></div>
+        <div v-for="(s, index) in slidesData" :key="`img-${index}`" class="slide__image lh-0">
+          <img :src="slidesData[currentNumber].img"/>
+        </div>
       </div>
 
       <div class="slide__title">
@@ -19,9 +18,14 @@
               <div class="slide__text">
                 <div v-for="(s, index) in slidesData" :key="index">
                   <transition name='fade' mode="out-in">
-                    <p   v-if="currentNumber === index">
-                      <span v-html="slidesData[currentNumber].text"></span>
-                    </p>
+                    <div>
+                      <div class="logo" v-if="currentNumber === index">
+                        <img :src="slidesData[currentNumber].logo"/>
+                      </div>
+                      <p class="text"  v-if="currentNumber === index">
+                        <span v-html="slidesData[currentNumber].text"></span>
+                      </p>
+                    </div>
                   </transition>
                 </div>
               </div>
@@ -98,6 +102,7 @@
 <style lang="scss">
     .slide {
         position: relative;
+      overflow: hidden;
 
       .slide__images {
         display: flex;
@@ -118,6 +123,7 @@
         h2 {
           display: inline-block;
           position: relative;
+          color: #fff;
 
           &::after {
             content: '';
@@ -152,6 +158,11 @@
               padding-right: 100px;
               display: flex;
               align-items: center;
+            }
+
+            .logo {
+              max-width: 50%;
+              margin-bottom: 40px;
             }
 
             p {

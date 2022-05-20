@@ -1,5 +1,5 @@
 <template>
-    <div class="navigation">
+    <div class="navigation" :class="navClass">
         <div class="navigation__language-selector">
           <img :class="currentLang === 'en' ? `navigation__language active` : `navigation__language`"
                @click="setLanguage('en')"
@@ -57,7 +57,7 @@
                       </div>
                       <div class="divider"></div>
                       <div class="text">
-                        <router-link to="#outbound">
+                        <router-link to="/#outbound">
                           <p class="title" @click="isServicesActive = !isServicesActive">
                             {{ $t(`navigation.servicesOptions.outbound`) }}
                           </p>
@@ -121,13 +121,15 @@
 
                 <div class="navigation__item navigation__item--button">
                   <a class="button button--hollow">
-                  <span class="text">
-                    {{ $t(`navigation.contactUs`) }}
-                  </span>
-                    <span class="dot"></span>
-                    <span class="icon-wrapper">
-                    <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
-                  </span>
+                    <router-link to="/#contact">
+                    <span class="text">
+                      {{ $t(`navigation.contactUs`) }}
+                    </span>
+                      <span class="dot"></span>
+                      <span class="icon-wrapper">
+                        <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
+                      </span>
+                    </router-link>
                   </a>
                 </div>
 
@@ -149,9 +151,12 @@
         </div>
         <div class="is-hidden-touch">
             <div class="navigation__navbar navigation__navbar--desktop">
-                <div class="navigation__logo">
+              <router-link to="/">
+
+              <div class="navigation__logo">
                   <img src="@/assets/images/movements-marketing-logo.png"/>
                 </div>
+              </router-link>
                 <div class="navigation__item">
                   <router-link to="/#about">
                     {{ $t(`navigation.about`) }}
@@ -178,25 +183,18 @@
                   {{ $t(`navigation.contact`) }}
                 </router-link>
               </div>
-<!--              <div class="navigation__item navigation__item&#45;&#45;button">-->
-<!--                <a class="button button&#45;&#45;primary">-->
-<!--                  {{ $t(`navigation.contactUs`) }}-->
-<!--                  <span class="m-l-20">-->
-<!--                    <icons icon="chevronRight" stroke="#fff" stroke-width="3" height="24" width="24" />-->
-<!--                  </span>-->
-<!--                </a>-->
-<!--              </div>-->
 
               <div class="navigation__item navigation__item--button">
-                <a class="button button--hollow">
-                  <span class="text">
-                    {{ $t(`navigation.contactUs`) }}
-                  </span>
-                  <span class="dot"></span>
-                  <span class="icon-wrapper">
-                    <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
-                  </span>
-                </a>
+                  <router-link to="/#contact" class="button button--hollow">
+                    <span class="text">
+                      {{ $t(`navigation.contactUs`) }}
+                    </span>
+                    <span class="dot"></span>
+                    <span class="icon-wrapper">
+                      <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
+                    </span>
+                  </router-link>
+
               </div>
 
               <div class="navigation__item navigation__item--button">
@@ -281,6 +279,7 @@
     class Navigation extends Vue {
         isMobileActive: boolean = false;
         isServicesActive: boolean = false;
+        navClass: string = 'is-main';
 
         @Watch('isMobileActive')
         onMobileActive(isActive: boolean) {
@@ -304,16 +303,30 @@
           return this.$i18n.locale
       }
 
-        created(): void {
-          console.log(this.$i18n.locale);
+      onScroll() {
+          if (window.pageYOffset > 120) {
+            this.navClass = 'is-blurred';
+            return
+          }
 
+        this.navClass = 'is-main';
+
+      }
+
+        created(): void {
+          window.addEventListener("scroll", this.onScroll);
         }
+
+      beforeDestroy() {
+        window.removeEventListener("scroll", this.onScroll)
+      }
     }
     export default Navigation;
 </script>
 
 <style lang="scss" scoped>
   .navigation {
+
     .navigation__language-selector {
       padding: 0 64px;
       display: flex;
@@ -347,9 +360,10 @@
       left: 0;
       padding: 20px;
       z-index: 100;
-      -webkit-box-shadow: 0px 2px 5px 1px rgba(157,172,167,0.5);
-      box-shadow: 0 1px 2px 0 rgba(157,172,167,0.5);
+      -webkit-box-shadow: 0px 2px 5px 1px rgba(157,172,167,0.3);
+      box-shadow: 0 1px 5px 0 rgba(157,172,167,0.5);
       background: #fff;
+      transition: all ease 600ms;
 
       @media screen and (max-width: 768px){
         padding: 16px 20px;
@@ -634,6 +648,12 @@
         position: relative;
         top: unset;
       }
+    }
+
+    &.is-blurred {
+      .navigation__navbar {
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(15px) saturate(100%) contrast(45%) brightness(130%);      }
     }
 
   }

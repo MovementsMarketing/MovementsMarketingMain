@@ -1,0 +1,22 @@
+.form {
+  .form__input,
+  .form__textarea {
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+
+    &::placeholder {
+      color: #9DACA7;
+    }
+
+    &:focus {
+      box-shadow: 1px 1px 12px rgb(0 0 0 / 20%);
+    }
+  }
+
+  .form__textarea {
+    min-height: 120px;
+  }
+}

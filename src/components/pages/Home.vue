@@ -14,7 +14,7 @@
                     {{ $t(`home.subtitle`) }}
                 </h2>
                 <div>
-                    <a class="button button--hollow">
+                    <router-link to="/#contact" class="button button--hollow">
                         <span class="text">
                             {{ $t(`navigation.contactUs`) }}
                         </span>
@@ -22,7 +22,7 @@
                         <span class="icon-wrapper">
                     <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
                   </span>
-                    </a>
+                    </router-link>
                 </div>
 
             </div>
@@ -32,28 +32,6 @@
 
         <div id="about" class="section section--about">
             <facts :facts="[$t(`home.about.facts.qualitativeTelemarketing`), $t(`home.about.facts.multilingualTelemarketers`), $t(`home.about.facts.costEffectiveResults`)]"></facts>
-<!--            <div class="facts m-b-20 m-t-20">-->
-<!--                <div class="fact">-->
-<!--                    <span class="icon-wrapper">-->
-<!--                        <icons icon="check" stroke="#fff" stroke-width="2" height="18" width="18" />-->
-<!--                    </span>-->
-<!--                    {{ $t(`home.about.facts.qualitativeTelemarketing`) }}-->
-<!--                </div>-->
-<!--                <div class="fact-divider"></div>-->
-<!--                <div class="fact">-->
-<!--                    <span class="icon-wrapper">-->
-<!--                        <icons icon="check" stroke="#fff" stroke-width="2" height="18" width="18" />-->
-<!--                    </span>-->
-<!--                    {{ $t(`home.about.facts.multilingualTelemarketers`) }}-->
-<!--                </div>-->
-<!--                <div class="fact-divider"></div>-->
-<!--                <div class="fact">-->
-<!--                    <span class="icon-wrapper">-->
-<!--                        <icons icon="check" stroke="#fff" stroke-width="2" height="18" width="18" />-->
-<!--                    </span>-->
-<!--                    {{ $t(`home.about.facts.costEffectiveResults`) }}-->
-<!--                </div>-->
-<!--            </div>-->
             <div class="about">
                 <div class="bg-image">
                     <img src="@/assets/images/backgrounds/movements_about-us_map.png">
@@ -128,17 +106,24 @@
             </div>
         </div>
 
-        <div id="outbound" class="section section--services section--services--outbound columns m-0">
-            <div class="section__content column is-6">
-                <h1 v-html="$t(`home.services.outbound.title`)"></h1>
-                <p v-html="$t(`home.services.outbound.text`)"></p>
-            </div>
-            <div class="services-cover column is-6 p-0">
-                <div class="services-cover__mask">
-                    <img src="@/assets/images/backgrounds/blue-mask.png">
+        <div id="outbound" class="section section--services section--services--outbound">
+            <div class="columns m-0">
+                <div class="section__content column is-6">
+                    <h1 v-html="$t(`home.services.outbound.title`)"></h1>
+                    <p v-html="$t(`home.services.outbound.text`)"></p>
                 </div>
-                <div class="services-cover__image">
-                    <img src="@/assets/images/backgrounds/movements_customer-service_outbound_cover.png">
+                <div class="services-cover column is-6 p-0">
+                    <div class="services-cover__mask">
+                        <img src="@/assets/images/backgrounds/blue-mask.png">
+                    </div>
+                    <div class="services-cover__image">
+                        <img src="@/assets/images/backgrounds/movements_customer-service_outbound_cover.png">
+                    </div>
+                </div>
+            </div>
+            <div class="services__list">
+                <div v-for="(el, index) in services.outbound" :key="`outbound-${index}`" class="m-l-20">
+                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />
                 </div>
             </div>
         </div>
@@ -164,18 +149,25 @@
             </div>
         </div>
 
-        <div id="inbound" class="section section--services section--services--inbound columns m-0">
-            <div class="services-cover column is-6 p-t-0 p-l-0 p-b-0">
-                <div class="services-cover__mask">
-                    <img src="@/assets/images/backgrounds/yellow-mask.png">
+        <div id="inbound" class="section section--services section--services--inbound">
+            <div class="columns m-0">
+                <div class="services-cover column is-6 p-t-0 p-l-0 p-b-0">
+                    <div class="services-cover__mask">
+                        <img src="@/assets/images/backgrounds/yellow-mask.png">
+                    </div>
+                    <div class="services-cover__image">
+                        <img src="@/assets/images/backgrounds/movements_customer-service_inbound_cover.png">
+                    </div>
                 </div>
-                <div class="services-cover__image">
-                    <img src="@/assets/images/backgrounds/movements_customer-service_inbound_cover.png">
+                <div class="section__content column is-6">
+                    <h1 v-html="$t(`home.services.inbound.title`)"></h1>
+                    <p v-html="$t(`home.services.inbound.text`)"></p>
                 </div>
             </div>
-            <div class="section__content column is-6">
-                <h1 v-html="$t(`home.services.inbound.title`)"></h1>
-                <p v-html="$t(`home.services.inbound.text`)"></p>
+            <div class="services__list">
+                <div v-for="(el, index) in services.inbound" :key="`inbound-${index}`" class="m-l-20">
+                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />
+                </div>
             </div>
         </div>
 
@@ -191,7 +183,10 @@
         </div>
 
         <div class="section--telemarketers lh-0">
+        <div class="section--telemarketers__wrapper lh-0">
+
             <img src="@/assets/images/backgrounds/movements_marketing_telemarketers.jpg">
+        </div>
         </div>
 
         <div class="section-divider section-divider--green"></div>
@@ -249,7 +244,40 @@
                     </div>
                 </div>
                 <div class="column is-6">
+                    <div class="contact__form">
+                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="ask-question" />
+                            <div class="columns is-multiline">
+                                <div class="column is-6">
+                                    <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`home.contact.name`)">
+                                </div>
+                                <div class="column is-6">
+                                    <input class="form__input"  type="text" id="companyName" name="company name" required :placeholder="$t(`home.contact.companyName`)">
+                                </div>
+                                <div class="column is-6">
+                                    <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`home.contact.email`)">
+                                </div>
+                                <div class="column is-6">
+                                    <input class="form__input" name="message" id="phone"  :placeholder="$t(`home.contact.phone`)"/>
+                                </div>
+                                <div class="column is-12">
+                                    <textarea class="form__textarea"  name="message" id="message"  :placeholder="$t(`home.contact.message`)"/>
+                                </div>
+                                <div class="column is-12 has-text-right">
+                                    <button class="button button--hollow m-t-10">
+                                        <span class="text">
+                                            {{ $t(`home.contactUs`) }}
+                                        </span>
+                                        <span class="dot"></span>
+                                        <span class="icon-wrapper">
+                                            <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -262,11 +290,13 @@
   import { Component } from 'vue-property-decorator';
   import Navigation from "@/components/base/Navigation.vue";
   import Facts from "@/components/components/Facts.vue";
+  import Service from "@/components/components/Service.vue";
 
   @Component({
     components: {
         Navigation,
         Facts,
+        Service,
     }
   })
   class Home extends Vue {
@@ -282,31 +312,68 @@
           [key: string]: {current: number, target: number, step: number, timer: any}
       } = {
           languages: {
-              current: 0,
+              current: 9,
               target: 9,
               step: 1,
               timer: 0,
           },
           projects:{
-              current: 0,
+              current: 598,
               target: 598,
               step: 62,
               timer: 0,
           },
           offices: {
-              current: 0,
+              current: 3,
               target: 3,
               step: 1,
               timer: 0,
 
           },
           teams: {
-              current: 0,
+              current: 7,
               target: 7,
               step: 1,
               timer: 0,
 
           }
+      };
+
+      services  = {
+          outbound: [
+              {
+                  name: this.$t(`navigation.servicesOptions.telemarketing`),
+                  url: '/service/b2b-telemarketing',
+                  src: require('@/assets/images/services/icons/b2b_telemarketing.png'),
+              }
+          ],
+          inbound: [
+              {
+                  name: this.$t(`navigation.servicesOptions.customerService`),
+                  url: '/service/customer-service',
+                  src: require('@/assets/images/services/icons/customer_service.png'),
+              },
+              {
+                  name: this.$t(`navigation.servicesOptions.answeringService`),
+                  url: '/service/answering-service',
+                  src: require('@/assets/images/services/icons/answering_service.png'),
+              },
+              {
+                  name: this.$t(`navigation.servicesOptions.liveChat`),
+                  url: '/service/live-chat',
+                  src: require('@/assets/images/services/icons/live_chat.png'),
+              },
+              {
+                  name: this.$t(`navigation.servicesOptions.emailManagement`),
+                  url: '/service/email-management',
+                  src: require('@/assets/images/services/icons/email_management.png'),
+              },
+              {
+                  name: this.$t(`navigation.servicesOptions.socialWebcare`),
+                  url: '/service/social-webcare',
+                  src: require('@/assets/images/services/icons/social_webcare.png'),
+              },
+          ],
       };
 
       activeOfficeIndex = 0;
@@ -324,18 +391,18 @@
           {
               key: 'utrecht',
               title: 'Utrecht',
-              address: 'Marka Marulića 2B',
-              postal: '71000 Utrecht',
-              country: 'Bosnia and Herzegovina',
+              address: 'Europalaan 400-6',
+              postal: '3526 KS Utrecht',
+              country: 'Netherlands',
               phone: '+31 85 210 37 55',
               mail: 'info@movementsmarketing.com'
           },
           {
               key: 'istanbul',
               title: 'Istanbul',
-              address: 'Marka Marulića 2B',
-              postal: '71000 Istanbul',
-              country: 'Bosnia and Herzegovina',
+              address: 'Kagithane merkez mah. Seckin sok. (Dap Vadisi I Ofis nr.56 )',
+              postal: 'Istanbul / Kagithane',
+              country: 'Turkey',
               phone: '+31 85 210 37 55',
               mail: 'info@movementsmarketing.com'
           },
@@ -348,7 +415,7 @@
 
           if(!targetTop || !targetBottom) return;
 
-          if (( targetTop >= 50 && targetTop <= bottomPosition ) || ( targetBottom >= 50 && targetBottom <= bottomPosition )) {
+          if (( targetTop >= 0 && targetTop <= bottomPosition ) || ( targetBottom >= 0 && targetBottom <= bottomPosition )) {
               Object.keys(this.ourNumbers).forEach(key => {
 
                   let timer = setInterval(() => {
@@ -380,17 +447,14 @@
               {
                   name: 'Shypple',
                   text: this.$t(`home.clients.shypple.text`),
-                  img: require('@/assets/images/backgrounds/movements_call-center_bg.png'),
+                  img: require('@/assets/images/clients/shypple_bg.png'),
+                  logo: require('@/assets/images/clients/shypple_logo.png'),
               },
               {
                   name: 'Client 2',
                   text: this.$t(`home.clients.client.text`),
-                  img: require('@/assets/images/backgrounds/movements_customer-service_inbound_cover.png'),
-              },
-              {
-                  name: 'Client 3',
-                  text: this.$t(`home.clients.client.text`),
-                  img: require('@/assets/images/backgrounds/movements_customer-service_inbound_cover.png'),
+                  img: require('@/assets/images/clients/scorito_bg.png'),
+                  logo: require('@/assets/images/clients/scorito_logo.png'),
               },
           ];
 
@@ -441,34 +505,6 @@
     }
 
     .section--about {
-        /*.facts {*/
-        /*    height: 120px;*/
-        /*    display: flex;*/
-        /*    align-items: center;*/
-        /*    justify-content: center;*/
-        /*    color: #186267;*/
-
-        /*    .fact {*/
-        /*        font-size: 24px;*/
-        /*        letter-spacing: 1px;*/
-        /*        display: flex;*/
-        /*        align-items: center;*/
-
-        /*        .icon-wrapper {*/
-        /*            padding: 5px;*/
-        /*            margin-right: 10px;*/
-        /*            border-radius: 50px;*/
-        /*            background: #49AF4E;*/
-        /*        }*/
-        /*    }*/
-
-        /*    .fact-divider {*/
-        /*        height: 50px;*/
-        /*        width: 4px;*/
-        /*        margin: 0 20px;*/
-        /*        background: #e8a500;*/
-        /*    }*/
-        /*}*/
 
         .about {
             position: relative;
@@ -560,6 +596,8 @@
     }
 
     .section.section--services {
+        position: relative;
+
         .section__content {
             display: flex;
             flex-direction: column;
@@ -592,6 +630,15 @@
             .services-cover__mask {
                 position: absolute;
             }
+        }
+
+        .services__list {
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 320px;
         }
 
         &.section--services--outbound {
@@ -675,6 +722,10 @@
     }
 
     .section--telemarketers {
+        overflow: hidden;
+    }
+
+    .section--telemarketers__wrapper {
         width: 200vw;
         position: relative;
         animation-name: slide-left-right;
@@ -733,6 +784,7 @@
                 .office {
                     color: #008d90;
                     font-size: 32px;
+                    cursor: pointer;
 
                     span {
                         position: relative;
@@ -741,7 +793,6 @@
 
                     &.is-active {
                         font-weight: 700;
-                        //border-bottom: 2px solid #9FF882;
 
                         span {
                             &::after {
@@ -761,7 +812,7 @@
 
                 .office-data {
                     background: #fff;
-                    border-radius: 8px;
+                    border-radius: 30px;
                     box-shadow: 1px 1px 12px rgb(0 0 0 / 20%);
                     padding: 20px 40px;
 
@@ -774,6 +825,17 @@
                     }
                 }
             }
+        }
+
+        .contact__form {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-right: 320px;
+            padding-left: 100px;
+            padding-top: 70px;
         }
     }
 

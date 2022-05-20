@@ -79,20 +79,79 @@ const en = {
       email: 'Email',
       phone: 'Phone',
       message: 'Message',
-
     }
   },
   services: {
     telemarketing: {
       cover: {
-        title: '<span class="is-highlighted">Unburden Your Sales Team </span>',
+        title: 'Unburden Your <span class="is-highlighted"> Sales Team </span>',
         subtitle: 'Uplevel Your Lead Generation With Our <span class="is-highlighted">B2B Telemarketing! </span>',
-        cta: 'Try Now! ',
+        cta: 'Try Now For Free! ',
       },
       facts: {
         fact1: 'High-Value Leads',
         fact2: 'Conversion Conversations',
-        fact3: 'Ongoing Continuity ',
+        fact3: 'Ongoing Continuity',
+      }
+    },
+    customerService: {
+      cover: {
+        title: 'Upgrade Your <span class="is-highlighted"> Customer Support </span>',
+        subtitle: 'Go Next Level With Our  <span class="is-highlighted">Customer Service!  </span>',
+        cta: 'Try now!',
+      },
+      facts: {
+        fact1: 'Easily Reachable',
+        fact2: 'Qualitative Interaction',
+        fact3: 'Satisfied Customers ',
+      }
+    },
+    answeringService: {
+      cover: {
+        title: 'Relieve All <span class="is-highlighted"> Your Departments</span>',
+        subtitle: 'Optimize Your Accessibility With Our <span class="is-highlighted">Answering Service!  </span>',
+        cta: 'Try now!',
+      },
+      facts: {
+        fact1: 'Optimal Accessibility',
+        fact2: 'Professional Interaction',
+        fact3: 'Cost-effective Results',
+      }
+    },
+    liveChat: {
+      cover: {
+        title: 'Get With <span class="is-highlighted">The Times </span>',
+        subtitle: 'Provide Your Customers Even Better With Our  <span class="is-highlighted">Live Chat!  </span>',
+        cta: 'Try now!',
+      },
+      facts: {
+        fact1: 'Timely Response',
+        fact2: 'Problem-solving Communication',
+        fact3: 'Improving CX ',
+      }
+    },
+    emailManagement: {
+      cover: {
+        title: 'Outsource Your <span class="is-highlighted">Email Management  </span>',
+        subtitle: 'Maximize your professional’s productivity and job satisfaction! ',
+        cta: 'Try now!',
+      },
+      facts: {
+        fact1: 'Active Email ',
+        fact2: 'Improved Deliverability ',
+        fact3: 'Cost Reducing',
+      }
+    },
+    socialWebcare: {
+      cover: {
+        title: 'Be Present <span class="is-highlighted"> Online Too</span>',
+        subtitle: 'Impact your sales positively with our Social Webcare! ',
+        cta: 'Try now!',
+      },
+      facts: {
+        fact1: 'Extensive Contact Options',
+        fact2: 'Valuable Consumer Insights ',
+        fact3: 'Improved Online Reputation ',
       }
     },
 

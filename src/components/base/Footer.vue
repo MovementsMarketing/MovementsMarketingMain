@@ -1,37 +1,37 @@
 <template>
   <div class="footer footer--movements p-0">
-    <div class="footer__links">
+    <div class="footer__links ">
       <div class="columns">
-        <div class="column is-2">
-          <router-link to="#about">
+        <div class="column is-3">
+          <router-link to="/#about">
             {{ $t(`navigation.about`) }}
           </router-link>
         </div>
-        <div class="column is-2">
-          <router-link to="#about">
-            {{ $t(`navigation.about`) }}
+        <div class="column is-3">
+          <router-link to="/#outbound">
+            {{ $t(`navigation.services`) }}
           </router-link>
         </div>
-        <div class="column is-2">
-          <router-link to="#about">
-            {{ $t(`navigation.about`) }}
+<!--        <div class="column is-2">-->
+<!--          <router-link to="/#inbound">-->
+<!--            {{ $t(`navigation.servicesOptions.inbound`) }}-->
+<!--          </router-link>-->
+<!--        </div>-->
+        <div class="column is-3">
+          <router-link to="/#career">
+            {{ $t(`navigation.career`) }}
           </router-link>
         </div>
-        <div class="column is-2">
-          <router-link to="#about">
-            {{ $t(`navigation.about`) }}
+        <div class="column is-3">
+          <router-link to="/#contact">
+            {{ $t(`navigation.contact`) }}
           </router-link>
         </div>
-        <div class="column is-2">
-          <router-link to="#about">
-            {{ $t(`navigation.about`) }}
-          </router-link>
-        </div>
-        <div class="column is-2">
-          <router-link to="#about">
-            {{ $t(`navigation.about`) }}
-          </router-link>
-        </div>
+<!--        <div class="column is-2">-->
+<!--          <router-link to="/">-->
+<!--            {{ $t(`navigation.about`) }}-->
+<!--          </router-link>-->
+<!--        </div>-->
       </div>
     </div>
     <div class="footer__icons">
