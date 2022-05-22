@@ -13,8 +13,8 @@
 <script lang="ts">
   import Vue from 'vue';
   import { Component } from 'vue-property-decorator';
-  import ServiceCover from "@/components/components/ServiceCover";
-  import Facts from "@/components/components/Facts";
+  import ServiceCover from "@/components/components/ServiceCover.vue";
+  import Facts from "@/components/components/Facts.vue";
 
   @Component({
     components: {
