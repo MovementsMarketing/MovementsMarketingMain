@@ -6,6 +6,8 @@
 
     <facts :facts="[$t(`services.emailManagement.facts.fact1`), $t(`services.emailManagement.facts.fact2`), $t(`services.emailManagement.facts.fact3`)]"></facts>
 
+    <service-information :data="informationData" />
+
     <movements-footer/>
 
   </div>
@@ -16,11 +18,13 @@
   import { Component } from 'vue-property-decorator';
   import ServiceCover from "@/components/components/ServiceCover.vue";
   import Facts from "@/components/components/Facts.vue";
+  import ServiceInformation from "@/components/components/ServiceInformation.vue";
 
   @Component({
     components: {
       ServiceCover,
       Facts,
+      ServiceInformation,
     }
   })
   class EmailManagement extends Vue {
@@ -30,6 +34,12 @@
       title: this.$t(`services.emailManagement.cover.title`),
       subtitle: this.$t(`services.emailManagement.cover.subtitle`),
       cta: this.$t(`services.emailManagement.cover.cta`),
+    };
+
+    informationData = {
+      title: this.$t(`services.emailManagement.info.title`),
+      text: this.$t(`services.emailManagement.info.content`),
+      cover: require('@/assets/images/services/email_management/info-cover.png'),
     }
   }
 

@@ -6,6 +6,8 @@
 
     <facts :facts="[$t(`services.liveChat.facts.fact1`), $t(`services.liveChat.facts.fact2`), $t(`services.liveChat.facts.fact3`)]"></facts>
 
+    <service-information :data="informationData" />
+
     <movements-footer/>
 
   </div>
@@ -16,11 +18,13 @@
   import { Component } from 'vue-property-decorator';
   import ServiceCover from "@/components/components/ServiceCover.vue";
   import Facts from "@/components/components/Facts.vue";
+  import ServiceInformation from "@/components/components/ServiceInformation.vue";
 
   @Component({
     components: {
       ServiceCover,
       Facts,
+      ServiceInformation,
     }
   })
   class LiveChat extends Vue {
@@ -31,6 +35,12 @@
       title: this.$t(`services.liveChat.cover.title`),
       subtitle: this.$t(`services.liveChat.cover.subtitle`),
       cta: this.$t(`services.liveChat.cover.cta`),
+    };
+
+    informationData = {
+      title: this.$t(`services.liveChat.info.title`),
+      text: this.$t(`services.liveChat.info.content`),
+      cover: require('@/assets/images/services/live_chat/info-cover.png'),
     }
   }
 

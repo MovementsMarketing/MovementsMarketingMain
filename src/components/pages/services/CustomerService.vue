@@ -6,6 +6,8 @@
 
     <facts :facts="[$t(`services.customerService.facts.fact1`), $t(`services.customerService.facts.fact2`), $t(`services.customerService.facts.fact3`)]"></facts>
 
+    <service-information :data="informationData" />
+
     <movements-footer/>
 
   </div>
@@ -16,11 +18,13 @@
   import { Component } from 'vue-property-decorator';
   import ServiceCover from "@/components/components/ServiceCover.vue";
   import Facts from "@/components/components/Facts.vue";
+  import ServiceInformation from "@/components/components/ServiceInformation.vue";
 
   @Component({
     components: {
       ServiceCover,
       Facts,
+      ServiceInformation,
     }
   })
   class CustomerService extends Vue {
@@ -30,6 +34,12 @@
       title: this.$t(`services.customerService.cover.title`),
       subtitle: this.$t(`services.customerService.cover.subtitle`),
       cta: this.$t(`services.customerService.cover.cta`),
+    };
+
+    informationData = {
+      title: this.$t(`services.customerService.info.title`),
+      text: this.$t(`services.customerService.info.content`),
+      cover: require('@/assets/images/services/customer_service/info-cover.png'),
     }
   }
 

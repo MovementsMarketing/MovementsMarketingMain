@@ -339,6 +339,10 @@
       background: #9DACA7;
       z-index: 200;
 
+      @media (min-resolution: 100dpi) {
+        padding: 0 32px;
+      }
+
       .navigation__language {
         height: 20px;
         margin: 0 4px;
@@ -373,11 +377,20 @@
         display: flex;
         width: 180px;
         z-index: 150;
+
+        @media (min-resolution: 100dpi) {
+          width: 140px;
+        }
       }
 
       &.navigation__navbar--desktop {
         padding: 0 64px;
         height: 120px;
+
+        @media (min-resolution: 100dpi) {
+          padding: 0 32px;
+          height: 100px;
+        }
 
         .navigation__item {
           display: flex;
@@ -385,6 +398,10 @@
           align-items: center;
           font-size: 24px;
           color: #186267 !important;
+
+          @media (min-resolution: 100dpi) {
+            font-size: 20px;
+          }
 
           a:not(.button),
           .navigation__item--dropdown {
@@ -586,7 +603,11 @@
       width: 100%;
       top: 150px;
       padding: 0 15% !important;
-      z-index: 5;
+      z-index: 15;
+
+      @media (min-resolution: 100dpi) {
+        top: 120px;
+      }
 
       >.columns {
         background: #fff;
@@ -623,6 +644,10 @@
             font-weight: 500;
             color: #008d90;
             margin-bottom: 12px;
+
+            @media (min-resolution: 100dpi) {
+              font-size: 20px;
+            }
 
             &:hover {
               color: #9FF882;

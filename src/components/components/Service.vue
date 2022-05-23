@@ -44,15 +44,15 @@
   .service {
     position: relative;
     overflow: hidden;
-    height: 180px;
-    width: 250px;
+    height: 160px;
+    width: 220px;
     background: #fff;
     padding: 10px;
     text-align: left;
 
     .service__name {
       max-width: 30%;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 22px;
       font-weight: 800;
       color: #C8C8C8;
@@ -81,8 +81,8 @@
     .service__icon {
       position: absolute;
       width: 80%;
-      left: 50%;
-      top: 40px;
+      left: 45%;
+      top: 35px;
 
       img {
         filter: grayscale(1);

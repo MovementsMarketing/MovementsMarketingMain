@@ -57,5 +57,11 @@ export default new VueRouter({
         behavior: 'smooth',
       }
     }
+    else {
+      return {
+        x: 0,
+        y: 0,
+      }
+    }
   }
 });

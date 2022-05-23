@@ -3,6 +3,14 @@
         <navigation :full-logo="true" :light-logo="true"/>
 
         <div class="section section--cover" :style="`background-image: url(${images.coverBg});`">
+<!--            <div class="video-container">-->
+<!--                <video autoplay muted loop>-->
+<!--                    <source src="https://www.youtube.com/embed/4iRaFAATKDw?autoplay=1&mute=1" type="video/mp4" />-->
+<!--                </video>-->
+<!--                <div class="caption">-->
+<!--                    <h2>Your caption here</h2>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="section__mask"></div>
             <div class="section__content">
                 <h1>
@@ -98,13 +106,7 @@
             </div>
         </div>
 
-        <div class="section section--quote">
-            <div class="section__content">
-                <h3>
-                    {{ $t(`home.quote`) }}
-                </h3>
-            </div>
-        </div>
+        <quote :text="$t(`home.quote`)"/>
 
         <div id="outbound" class="section section--services section--services--outbound">
             <div class="columns m-0">
@@ -151,7 +153,7 @@
 
         <div id="inbound" class="section section--services section--services--inbound">
             <div class="columns m-0">
-                <div class="services-cover column is-6 p-t-0 p-l-0 p-b-0">
+                <div class="services-cover column is-6 p-t-0 p-l-0 p-b-0 l-h-0">
                     <div class="services-cover__mask">
                         <img src="@/assets/images/backgrounds/yellow-mask.png">
                     </div>
@@ -175,12 +177,7 @@
             <slider :slidesData="clients"/>
         </div>
 
-        <div class="section section--telemarketers-title">
-            <div class="section__content">
-                <h3 v-html="$t(`home.telemarketers`)">
-                </h3>
-            </div>
-        </div>
+        <quote :text="$t(`home.telemarketers`)" cssClass="is-gradient"/>
 
         <div class="section--telemarketers lh-0">
         <div class="section--telemarketers__wrapper lh-0">
@@ -291,12 +288,14 @@
   import Navigation from "@/components/base/Navigation.vue";
   import Facts from "@/components/components/Facts.vue";
   import Service from "@/components/components/Service.vue";
+  import Quote from "@/components/components/Quote.vue";
 
   @Component({
     components: {
         Navigation,
         Facts,
         Service,
+        Quote,
     }
   })
   class Home extends Vue {
@@ -474,21 +473,26 @@
 </script>
 
 <style lang="scss">
-    .section--cover {
-        height: calc(100vh - 160px);
+    .section.section--cover {
+        min-height: calc(100vh - 160px);
         position: relative;
         background-position: center;
 
         .section__content {
             text-align: left;
             height: 100%;
+            min-height: calc(100vh - 160px);
             display: flex;
             flex-direction: column;
             justify-content: center;
 
+            h1 {
+                font-size: 72px;
+            }
+
             h2 {
                 color: #186267;
-                font-size: 34px;
+                font-size: 36px;
                 font-style: italic;
                 margin-bottom: 80px;
             }
@@ -521,8 +525,8 @@
             .about__text {
                 p {
                     color: #186267;
-                    line-height: 28px;
-                    font-size: 20px;
+                    line-height: 26px;
+                    font-size: 18px;
                     text-align: justify;
                 }
             }
@@ -538,6 +542,10 @@
             width: 3px;
             background: #9FF882;
             left: 280px;
+
+            @media (min-resolution: 100dpi) {
+                left: 160px;
+            }
         }
 
         .section__content {
@@ -550,6 +558,11 @@
             h2 {
                 color: #fff;
                 font-size: 64px;
+
+                @media (min-resolution: 100dpi) {
+                    font-size: 58px;
+                }
+
 
                 .is-highlighted {
                     color: #9FF882;
@@ -565,19 +578,32 @@
                     color: #fff;
                     font-weight: 900;
 
+                    @media (min-resolution: 100dpi) {
+                        font-size: 72px;
+                        line-height: 80px;
+                    }
+
                     &::after {
                         content: '';
                         display: block;
                         width: 45px;
                         height: 3px;
                         background: #9FF882;
+
+                        @media (min-resolution: 100dpi) {
+                            width: 40px;
+                        }
                     }
                 }
 
                 .text {
                     color: #fff;
-                    font-size: 20px;
+                    font-size: 18px;
                     padding-top: 15px;
+
+                    @media (min-resolution: 100dpi) {
+                        padding-top: 10px;
+                    }
                 }
             }
 
@@ -588,10 +614,11 @@
         background: #fff;
 
         h3 {
-            font-size: 64px;
+            font-size: 58px;
             color: #008d90;
-            line-height: 120px;
+            line-height: 62px;
             font-weight: 200;
+            margin: 30px 0;
         }
     }
 
@@ -601,14 +628,14 @@
         .section__content {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly;
 
 
             h1 {
                 max-width: 100%;
                 text-align: left;
                 color: #fff;
-                margin-bottom: 120px;
+                margin-bottom: 0px;
 
                 .is-highlighted {
                     display: block;
@@ -618,9 +645,10 @@
 
             p {
                 color: #fff;
-                line-height: 28px;
-                font-size: 20px;
+                line-height: 26px;
+                font-size: 18px;
                 text-align: justify;
+                margin-bottom: 200px;
             }
         }
 
@@ -639,13 +667,17 @@
             display: flex;
             justify-content: flex-end;
             padding: 0 320px;
+
+            @media (min-resolution: 100dpi) {
+                padding: 0 200px;
+            }
         }
 
         &.section--services--outbound {
             background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
 
             .section__content {
-                padding-right: 120px !important;
+                padding-right: 80px !important;
             }
 
             .services-cover {
@@ -660,7 +692,7 @@
             background: linear-gradient(90deg, #9FF882 0%, #186267 80%, #186267 100%);
 
             .section__content {
-                padding-left: 120px !important;
+                padding-left: 80px !important;
             }
 
             .services-cover {
@@ -714,10 +746,11 @@
         background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
 
         h3 {
-            font-size: 64px;
+            font-size: 58px;
             color: #fff;
-            line-height: 120px;
+            line-height: 62px;
             font-weight: 200;
+            margin: 30px 0;
         }
     }
 
@@ -745,11 +778,17 @@
             padding: 50px 0;
 
             h1 {
-                font-size: 74px;
+                font-size: 72px;
                 line-height: 76px;
                 color: #008d90;
                 display: inline-block;
                 position: relative;
+
+                @media (min-resolution: 100dpi) {
+                    font-size: 62px;
+                    line-height: 68px;
+                }
+
 
                 .is-highlighted {
                     font-weight: 800;
@@ -777,6 +816,10 @@
             align-items: center;
             padding-left: 320px;
             padding-right: 100px;
+
+            @media (min-resolution: 100dpi) {
+                padding-left: 200px;
+            }
 
             .columns {
                 width: 100%;
@@ -836,6 +879,10 @@
             padding-right: 320px;
             padding-left: 100px;
             padding-top: 70px;
+
+            @media (min-resolution: 100dpi) {
+                padding-right: 200px;
+            }
         }
     }
 

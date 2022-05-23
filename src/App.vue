@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" >
 #app {
   font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,5 +21,9 @@ export default {
   text-align: center;
   margin-top: 150px;
   background: #ECECEC;
+
+  @media (min-resolution: 100dpi) {
+    margin-top: 120px;
+  }
 }
 </style>

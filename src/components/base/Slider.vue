@@ -124,6 +124,7 @@
           display: inline-block;
           position: relative;
           color: #fff;
+          font-weight: 800;
 
           &::after {
             content: '';
@@ -154,10 +155,14 @@
               position: absolute;
               height: 100%;
               width: 100%;
-              padding-left: 360px;
+              padding-left: 350px;
               padding-right: 100px;
               display: flex;
               align-items: center;
+
+              @media (min-resolution: 100dpi) {
+                padding-left: 220px;
+              }
             }
 
             .logo {
@@ -167,6 +172,7 @@
 
             p {
               color: white;
+              font-weight: 600;
             }
 
           }

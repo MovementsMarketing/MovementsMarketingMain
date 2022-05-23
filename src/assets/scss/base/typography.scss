@@ -15,11 +15,15 @@ h1, h2, h3 {
 
 p {
   color: #186267;
-  line-height: 28px;
-  font-size: 20px;
+  line-height: 26px;
+  font-size: 18px;
 }
 
 h2 {
   font-size: 64px;
   color: #186267;
+
+  @media (min-resolution: 100dpi) {
+    font-size: 58px;
+  }
 }
