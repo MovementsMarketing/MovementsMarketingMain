@@ -26,12 +26,17 @@
 
 <style lang="scss">
 
-  .section--quote {
+  .section.section--quote {
     h3 {
       font-size: 58px;
       line-height: 62px;
       font-weight: 200;
       margin: 30px 0;
+
+      @media (min-resolution: 100dpi) {
+        font-size: 50px;
+        line-height: 54px;
+      }
     }
 
     &.is-white {

@@ -8,6 +8,14 @@
 
     <service-information :data="informationData" />
 
+    <quote :text="$t(`services.answeringService.quote1`)"/>
+
+    <service-trial
+        :title="$t(`services.answeringService.trial.title`)"
+        :text="$t(`services.answeringService.trial.text`)"
+        :cta="$t(`services.answeringService.trial.cta`)"
+    />
+
     <movements-footer/>
 
   </div>
@@ -19,12 +27,16 @@
   import ServiceCover from "@/components/components/ServiceCover.vue";
   import Facts from "@/components/components/Facts.vue";
   import ServiceInformation from "@/components/components/ServiceInformation.vue";
+  import Quote from "@/components/components/Quote.vue";
+  import ServiceTrial from "@/components/components/ServiceTrial.vue";
 
   @Component({
     components: {
       ServiceCover,
       Facts,
       ServiceInformation,
+      Quote,
+      ServiceTrial,
     }
   })
   class AnsweringService extends Vue {

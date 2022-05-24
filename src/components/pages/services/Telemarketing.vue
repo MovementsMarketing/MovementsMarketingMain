@@ -8,6 +8,10 @@
 
     <service-information :data="informationData" />
 
+    <quote :text="$t(`services.telemarketing.quote1`)"/>
+
+    <service-trial :title="$t(`services.telemarketing.trial.title`)" :text="$t(`services.telemarketing.trial.text`)" :cta="$t(`services.telemarketing.trial.cta`)"/>
+
     <movements-footer/>
 
   </div>
@@ -19,12 +23,16 @@
   import ServiceCover from "@/components/components/ServiceCover.vue";
   import Facts from "@/components/components/Facts.vue";
   import ServiceInformation from "@/components/components/ServiceInformation.vue";
+  import Quote from "@/components/components/Quote.vue";
+  import ServiceTrial from "@/components/components/ServiceTrial.vue";
 
   @Component({
     components: {
       ServiceCover,
       Facts,
       ServiceInformation,
+      Quote,
+      ServiceTrial,
     }
   })
   class Telemarketing extends Vue {

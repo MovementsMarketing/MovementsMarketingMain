@@ -65,6 +65,9 @@
         z-index: 1;
         white-space: nowrap;
 
+        @media (min-resolution: 100dpi) {
+          font-size: 78px;
+        }
 
         .is-highlighted {
           display: block;
@@ -75,13 +78,13 @@
       h2 {
         color: #fff;
         text-align: left;
-        font-size: 58px;
+        font-size: 62px;
         font-weight: 300;
         margin-bottom: 80px;
         line-height: 58px;
 
-        .is-highlighted {
-         // display: block;
+        @media (min-resolution: 100dpi) {
+          font-size: 54px;
         }
       }
 

@@ -3,14 +3,14 @@
         <navigation :full-logo="true" :light-logo="true"/>
 
         <div class="section section--cover" :style="`background-image: url(${images.coverBg});`">
-<!--            <div class="video-container">-->
-<!--                <video autoplay muted loop>-->
-<!--                    <source src="https://www.youtube.com/embed/4iRaFAATKDw?autoplay=1&mute=1" type="video/mp4" />-->
-<!--                </video>-->
-<!--                <div class="caption">-->
-<!--                    <h2>Your caption here</h2>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="@/assets/video/movements_marketing.mp4" type="video/mp4" />
+                </video>
+                <div class="caption">
+              <h2>Your caption here</h2>
+                </div>
+            </div>
             <div class="section__mask"></div>
             <div class="section__content">
                 <h1>
@@ -477,6 +477,17 @@
         min-height: calc(100vh - 160px);
         position: relative;
         background-position: center;
+        overflow: hidden;
+
+        @media (min-resolution: 100dpi) {
+            min-height: calc(100vh - 130px);
+        }
+
+        .video-container {
+            position: absolute;
+            z-index: 0;
+            padding-left: 12%;
+        }
 
         .section__content {
             text-align: left;
@@ -486,8 +497,17 @@
             flex-direction: column;
             justify-content: center;
 
+            @media (min-resolution: 100dpi) {
+                min-height: calc(100vh - 130px);
+            }
+
             h1 {
-                font-size: 72px;
+                font-size: 84px;
+
+                @media (min-resolution: 100dpi) {
+                    font-size: 72px;
+                }
+
             }
 
             h2 {

@@ -21,6 +21,7 @@
     }
   }
 
+  &.is-hollow,
   &.button--hollow {
     font-family: 'Source Sans Pro', sans-serif;
     border-radius: 50px;
@@ -58,23 +59,31 @@
       z-index: 2;
     }
 
+    &.is-green {
+      .dot {
+        background: #9FF882;
+      }
+
+      &:hover {
+        .dot {
+          background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
+        }
+      }
+    }
+
     &:hover {
       animation-duration: 200ms;
       animation-timing-function: ease;
       animation-fill-mode: forwards;
-     // animation-name: fillGradient;
       animation-delay: 10ms;
       color: #fff;
       background: transparent;
       box-shadow: 1px 1px 12px rgb(0 0 0 / 20%);
 
       .dot  {
-        //background: transparent;
         width: 100%;
         z-index: 0;
       }
-
-
     }
   }
 
