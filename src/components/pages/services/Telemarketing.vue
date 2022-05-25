@@ -12,6 +12,10 @@
 
     <service-trial :title="$t(`services.telemarketing.trial.title`)" :text="$t(`services.telemarketing.trial.text`)" :cta="$t(`services.telemarketing.trial.cta`)"/>
 
+    <service-sales :title="salesData.title" :blocks="salesData.blocks"/>
+
+    <quote :text="$t(`services.telemarketing.quote2`)" class="is-gradient"/>
+
     <movements-footer/>
 
   </div>
@@ -25,6 +29,7 @@
   import ServiceInformation from "@/components/components/ServiceInformation.vue";
   import Quote from "@/components/components/Quote.vue";
   import ServiceTrial from "@/components/components/ServiceTrial.vue";
+  import ServiceSales from "@/components/components/ServiceSales.vue";
 
   @Component({
     components: {
@@ -33,6 +38,7 @@
       ServiceInformation,
       Quote,
       ServiceTrial,
+      ServiceSales,
     }
   })
   class Telemarketing extends Vue {
@@ -48,6 +54,27 @@
       title: this.$t(`services.telemarketing.info.title`),
       text: this.$t(`services.telemarketing.info.content`),
       cover: require('@/assets/images/services/b2b_telemarketing/info-cover.png'),
+    }
+
+    salesData = {
+      title: this.$t(`services.telemarketing.info.title`),
+      blocks: [
+        {
+          icon: require('@/assets/images/services/b2b_telemarketing/sales/1.png'),
+          title: this.$t(`services.telemarketing.sales.block1.title`),
+          text: this.$t(`services.telemarketing.sales.block1.text`)
+        },
+        {
+          icon: require('@/assets/images/services/b2b_telemarketing/sales/2.png'),
+          title: this.$t(`services.telemarketing.sales.block2.title`),
+          text: this.$t(`services.telemarketing.sales.block2.text`)
+        },
+        {
+          icon: require('@/assets/images/services/b2b_telemarketing/sales/3.png'),
+          title: this.$t(`services.telemarketing.sales.block3.title`),
+          text: this.$t(`services.telemarketing.sales.block3.text`)
+        },
+      ]
     }
 
   }
