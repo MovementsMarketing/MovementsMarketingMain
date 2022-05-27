@@ -119,6 +119,7 @@ const en = {
           text: 'Well-prepared we are ready to deliver the agreed targets. Delivering new business and maintaining a long-term partnership, is always our priority! ',
         },
       },
+      formTitle: 'Test Our B2B Telemarketing!',
     },
     customerService: {
       cover: {
@@ -157,6 +158,7 @@ const en = {
           text: 'A positive customer experience and delivering the agreed targets are both our benchmark and on top of our list! After the inhouse training, we continue developing our skills to always ensure the best possible outcome.  ',
         },
       },
+      formTitle: 'Test Our Customer Service!',
     },
     answeringService: {
       cover: {
@@ -183,18 +185,20 @@ const en = {
       sales: {
         title: 'How Our Answering Service Works',
         block1: {
-          title: '1. Quick Scan ',
-          text: 'Understanding your criteria and goals is the starting point for a qualitative lead. An online introduction between our telemarketers and you, is our go to for a productive collaboration. ',
+          title: '1. Incoming Calls ',
+          text: 'Our multilingual telemarketers answer phone calls based on tailored response scripts. ',
         },
         block2: {
-          title: '2. Sales Pitch ',
-          text: 'A successful sales conversation stands or falls with the right tone of voice to address the target group. Our team undergoes an intensive training before calling on behalf of your business.',
+          title: '2. Creating Notes ',
+          text: 'If desired, the operators can immediately create a note in your ticketing system. ',
         },
         block3: {
-          title: '3. Delivering Results ',
-          text: 'Well-prepared we are ready to deliver the agreed targets. Delivering new business and maintaining a long-term partnership, is always our priority! ',
+          title: '3. Finishing Up',
+          text: 'The team handles conversations adequately and represents your company as one of you! ',
         },
       },
+      formTitle: 'Test Our Answering Service!',
+
     },
     liveChat: {
       cover: {
@@ -221,18 +225,20 @@ const en = {
       sales: {
         title: 'How Our Live Chat Works',
         block1: {
-          title: '1. Quick Scan ',
-          text: 'Understanding your criteria and goals is the starting point for a qualitative lead. An online introduction between our telemarketers and you, is our go to for a productive collaboration. ',
+          title: '1. Incoming Chat ',
+          text: 'When a new chat request comes in, our chat agents proactively reach out to your customers. This fast response is another benefit of this service that at the same time translate into efficiency and leads to customer retention.  ',
         },
         block2: {
-          title: '2. Sales Pitch ',
-          text: 'A successful sales conversation stands or falls with the right tone of voice to address the target group. Our team undergoes an intensive training before calling on behalf of your business.',
+          title: '2. Unravel Request ',
+          text: 'By first mapping out the request for help and collecting the necessary data, our team can make right away a plan of action that will solve the customer question and lead towards a positive outcome.  ',
         },
         block3: {
-          title: '3. Delivering Results ',
-          text: 'Well-prepared we are ready to deliver the agreed targets. Delivering new business and maintaining a long-term partnership, is always our priority! ',
+          title: '3. Problem Solving ',
+          text: 'Once the inquire is solved, both parties continue pleased while we keep track of the records. Keep in mind that a live chat repays itself both quantitatively and qualitatively with an equal or increased ROI! ',
         },
       },
+      formTitle: 'Test Our Live Chat!',
+
     },
     emailManagement: {
       cover: {
@@ -259,18 +265,19 @@ const en = {
       sales: {
         title: 'How Our Email Management Works',
         block1: {
-          title: '1. Quick Scan ',
-          text: 'Understanding your criteria and goals is the starting point for a qualitative lead. An online introduction between our telemarketers and you, is our go to for a productive collaboration. ',
+          title: '1. Organizing Inbox',
+          text: 'To be up to date from now on and in the future, an organized inbox is our marketers go to in managing your email. Therefore, they start with bringing order and structure. ',
         },
         block2: {
-          title: '2. Sales Pitch ',
-          text: 'A successful sales conversation stands or falls with the right tone of voice to address the target group. Our team undergoes an intensive training before calling on behalf of your business.',
+          title: '2. Maintaining Emails',
+          text: 'Not all incoming emails are equally important, that’s why managing your email consists also of answering in order of importance. At all times, our team responds to all the emails in line with your company communications. ',
         },
         block3: {
-          title: '3. Delivering Results ',
-          text: 'Well-prepared we are ready to deliver the agreed targets. Delivering new business and maintaining a long-term partnership, is always our priority! ',
+          title: '3. Arrange Follow-ups',
+          text: 'Certain emails need a detailed reaction. Our professionals keep track of highly important emails and forward those to the person in charge before responding in the name of your business? ',
         },
       },
+      formTitle: 'Test Our Email Management!',
     },
     socialWebcare: {
       cover: {
@@ -297,20 +304,50 @@ const en = {
       sales: {
         title: 'How Our Social Webcare Works',
         block1: {
-          title: '1. Quick Scan ',
-          text: 'Understanding your criteria and goals is the starting point for a qualitative lead. An online introduction between our telemarketers and you, is our go to for a productive collaboration. ',
+          title: '1. Keep Watch',
+          text: 'Social Webcare doesn’t only impact your sales positively, it’s also another engine for your content. That’s why our web agents are customer-centric and trained to listen to the customer’s feedback.  ',
         },
         block2: {
-          title: '2. Sales Pitch ',
-          text: 'A successful sales conversation stands or falls with the right tone of voice to address the target group. Our team undergoes an intensive training before calling on behalf of your business.',
+          title: '2. Processing Data',
+          text: 'Constantly collecting important data and process them as needed, is the main task in Social Webcare. With our team handling your incoming posts, your customers are always receiving the best service! ',
         },
         block3: {
-          title: '3. Delivering Results ',
-          text: 'Well-prepared we are ready to deliver the agreed targets. Delivering new business and maintaining a long-term partnership, is always our priority! ',
+          title: '3. Summarizing Analytics',
+          text: 'Once the messages are sorted and answered, we start summarizing the important analytics that’ll help your business improve the customer journey and their experience. Our service is a full package from A to Z!',
         },
       },
+      formTitle: 'Test Our Social Webcare!',
     },
-
+    form: {
+      name: 'Name',
+      companyName: 'Company Name',
+      businessEmail: 'Business Email',
+      phone: 'Phone',
+      cta: 'Try Now!',
+      info: `*By submitting this form, you agree to our privacy policy.<span class="is-block">Following this, we may call or e-mail you. You can unsubscribe at any time.</span> `,
+    }
+  },
+  careers: {
+    cover: {
+      title: '<span class="is-highlighted">Join</span> Our <span class="is-highlighted">Team</span> Now',
+      subtitle: 'Looking forward to join out team and shape our clients future together with us?',
+      cta: 'Join Us',
+    },
+    positions: {
+      title: `<span class="is-highlighted">Our Open Job Positions</span>`,
+      copy: `<span class="is-block"> Can't wait to reveal your talents? </span> You can always send an <span> Open Application </span> to <span> careers@movementsmarketing.com </span>`,
+    },
+    offers: {
+      title: 'We Offer You In A Nutshell',
+      perks: {
+        perk1: 'International Workplaces',
+        perk2: 'Attractive Bonuses',
+        perk3: 'In-House Chef',
+        perk4: 'Recreative Playground',
+        perk5: 'Happy Meetups',
+        perk6: 'Fun Teambuildings',
+      }
+    }
   }
 };
 

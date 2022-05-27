@@ -135,7 +135,7 @@
                 <div class="column is-6 has-text-left">
                     <h2 v-html="$t(`home.work.title`)"></h2>
                     <p v-html="$t(`home.work.text`)"></p>
-                    <a class="button button--hollow">
+                    <a class="button button--hollow" href="https://issuu.com/movementsmarketing" target="_blank">
                         <span class="text">
                             {{ $t(`home.work.button`) }}
                         </span>

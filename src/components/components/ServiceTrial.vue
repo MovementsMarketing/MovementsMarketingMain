@@ -3,13 +3,13 @@
     <div class="section__content has-text-centered">
       <h3 v-html="title"></h3>
       <p v-html="text"></p>
-      <a class="button is-hollow is-green">
+      <router-link to="#tryService" class="button is-hollow is-green">
         <span class="text" v-text="cta"></span>
         <span class="dot"></span>
         <span class="icon-wrapper">
           <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
         </span>
-      </a>
+      </router-link>
     </div>
   </div>
 

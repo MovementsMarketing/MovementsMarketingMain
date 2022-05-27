@@ -12,11 +12,6 @@
             {{ $t(`navigation.services`) }}
           </router-link>
         </div>
-<!--        <div class="column is-2">-->
-<!--          <router-link to="/#inbound">-->
-<!--            {{ $t(`navigation.servicesOptions.inbound`) }}-->
-<!--          </router-link>-->
-<!--        </div>-->
         <div class="column is-3">
           <router-link to="/#career">
             {{ $t(`navigation.career`) }}
@@ -37,24 +32,32 @@
     <div class="footer__icons">
       <div class="columns m-0">
         <div class="column is-3">
-          <div class="footer__icon">
-            <icons icon="linkedin" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
-          </div>
+          <a href="https://www.linkedin.com/company/movements-marketing/" target="_blank">
+            <div class="footer__icon">
+              <icons icon="linkedin" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+            </div>
+          </a>
         </div>
         <div class="column is-3">
-          <div class="footer__icon">
-            <icons icon="facebook" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
-          </div>
+          <a href="https://www.facebook.com/Movements.Marketing" target="_blank">
+            <div class="footer__icon">
+              <icons icon="facebook" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+            </div>
+          </a>
         </div>
         <div class="column is-3">
-          <div class="footer__icon">
-            <icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
-          </div>
+          <a href="https://www.instagram.com/movementsmarketing" target="_blank">
+            <div class="footer__icon">
+              <icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+            </div>
+          </a>
         </div>
         <div class="column is-3">
-          <div class="footer__icon">
-            <icons icon="youtube" view-box="0 0 100 100" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
-          </div>
+          <a href="https://youtube.com/channel/UCAAdAaaSGa_LDaZu5jS-77A" target="_blank">
+            <div class="footer__icon">
+              <icons icon="youtube" view-box="0 0 100 100" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+            </div>
+          </a>
         </div>
       </div>
     </div>

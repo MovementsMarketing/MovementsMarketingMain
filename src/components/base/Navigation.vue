@@ -1,5 +1,5 @@
 <template>
-    <div class="navigation" :class="navClass">
+    <div class="navigation" :class="navBlurred && !isServicesActive ? 'is-blurred' : 'is-main'">
         <div class="navigation__language-selector">
           <img :class="currentLang === 'en' ? `navigation__language active` : `navigation__language`"
                @click="setLanguage('en')"
@@ -134,7 +134,7 @@
                 </div>
 
                 <div class="navigation__item navigation__item--button">
-                  <a class="button button--hollow">
+                  <a class="button button--hollow" href="https://www.linkedin.com/company/movements-marketing/posts/?feedView=articles&viewAsMember=true" target="_blank">
                   <span class="text">
                     {{ $t(`navigation.linkedInBlogs`) }}
                   </span>
@@ -198,7 +198,7 @@
               </div>
 
               <div class="navigation__item navigation__item--button">
-                <a class="button button--hollow">
+                <a class="button button--hollow" href="https://www.linkedin.com/company/movements-marketing/posts/?feedView=articles&viewAsMember=true" target="_blank">
                   <span class="text">
                     {{ $t(`navigation.linkedInBlogs`) }}
                   </span>
@@ -280,6 +280,7 @@
         isMobileActive: boolean = false;
         isServicesActive: boolean = false;
         navClass: string = 'is-main';
+        navBlurred:  boolean = false;
 
         @Watch('isMobileActive')
         onMobileActive(isActive: boolean) {
@@ -306,10 +307,12 @@
       onScroll() {
           if (window.pageYOffset > 120) {
             this.navClass = 'is-blurred';
+            this.navBlurred = true;
             return
           }
 
         this.navClass = 'is-main';
+        this.navBlurred = false;
 
       }
 
@@ -367,7 +370,7 @@
       -webkit-box-shadow: 0px 2px 5px 1px rgba(157,172,167,0.3);
       box-shadow: 0 1px 5px 0 rgba(157,172,167,0.5);
       background: #fff;
-      transition: all ease 600ms;
+      transition: all ease 400ms;
 
       @media screen and (max-width: 768px){
         padding: 16px 20px;
@@ -507,6 +510,14 @@
           ul.active li:nth-of-type(3){
             top: 50%;
             transform: translateY(-50%) rotate(-45deg) rotateY(180deg);
+          }
+        }
+
+        .navigation__services-options {
+          display: contents;
+
+          .navigation__services-options__option {
+            background: rgba(255, 255, 255, 0.5);
           }
         }
 
@@ -659,6 +670,7 @@
               color: #008d90;
               display: block;
               font-size: 14px;
+              font-weight: 700;
 
               &:hover {
                 color: #9FF882;

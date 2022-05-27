@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router'
 
 import Home from "@/components/pages/Home.vue";
+import Careers from "@/components/pages/Careers.vue";
 import AnsweringService from "@/components/pages/services/AnsweringService.vue";
 import CustomerService from "@/components/pages/services/CustomerService.vue";
 import EmailManagement from "@/components/pages/services/EmailManagement.vue";
@@ -18,6 +19,11 @@ export default new VueRouter({
       path: '/',
       name: 'Home',
       component: Home,
+    },
+    {
+      path: '/careers',
+      name: 'Careers',
+      component: Careers,
     },
     {
       path: '/service/answering-service',

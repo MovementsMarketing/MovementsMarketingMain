@@ -16,6 +16,13 @@
         :cta="$t(`services.emailManagement.trial.cta`)"
     />
 
+    <service-sales :title="salesData.title" :blocks="salesData.blocks"/>
+
+    <div id="tryService">
+      <quote :text="$t(`services.emailManagement.quote2`)" class="is-gradient"/>
+      <service-form :title="$t(`services.emailManagement.formTitle`)" form-name="emailManagement"/>
+    </div>
+
     <movements-footer/>
 
   </div>
@@ -29,6 +36,8 @@
   import ServiceInformation from "@/components/components/ServiceInformation.vue";
   import Quote from "@/components/components/Quote.vue";
   import ServiceTrial from "@/components/components/ServiceTrial.vue";
+  import ServiceSales from "@/components/components/ServiceSales.vue";
+  import ServiceForm from "@/components/components/ServiceForm.vue";
 
   @Component({
     components: {
@@ -37,6 +46,8 @@
       ServiceInformation,
       Quote,
       ServiceTrial,
+      ServiceSales,
+      ServiceForm,
     }
   })
   class EmailManagement extends Vue {
@@ -52,7 +63,28 @@
       title: this.$t(`services.emailManagement.info.title`),
       text: this.$t(`services.emailManagement.info.content`),
       cover: require('@/assets/images/services/email_management/info-cover.png'),
-    }
+    };
+
+    salesData = {
+      title: this.$t(`services.emailManagement.info.title`),
+      blocks: [
+        {
+          icon: require('@/assets/images/services/email_management/sales/1.png'),
+          title: this.$t(`services.emailManagement.sales.block1.title`),
+          text: this.$t(`services.emailManagement.sales.block1.text`)
+        },
+        {
+          icon: require('@/assets/images/services/email_management/sales/2.png'),
+          title: this.$t(`services.emailManagement.sales.block2.title`),
+          text: this.$t(`services.emailManagement.sales.block2.text`)
+        },
+        {
+          icon: require('@/assets/images/services/email_management/sales/3.png'),
+          title: this.$t(`services.emailManagement.sales.block3.title`),
+          text: this.$t(`services.emailManagement.sales.block3.text`)
+        },
+      ]
+    };
   }
 
   export default EmailManagement;

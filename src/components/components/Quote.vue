@@ -1,6 +1,6 @@
 <template>
   <div class="section section--quote" :class="cssClass">
-    <div class="section__content">
+    <div class="quote__wrapper">
       <h3 v-html="text"></h3>
     </div>
   </div>
@@ -27,6 +27,11 @@
 <style lang="scss">
 
   .section.section--quote {
+
+    .quote__wrapper {
+      padding: 20px 120px;
+    }
+
     h3 {
       font-size: 58px;
       line-height: 62px;

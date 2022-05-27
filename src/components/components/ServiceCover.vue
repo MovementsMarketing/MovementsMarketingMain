@@ -5,7 +5,7 @@
         <h1 v-html="data.title"></h1>
         <h2 v-html=" data.subtitle"></h2>
         <div class="has-text-left">
-          <a class="button button--hollow button--light-text">
+          <router-link :to="customLink ? customLink : '#tryService'" class="button button--hollow button--light-text">
             <span class="text">
             {{ data.cta }}
             </span>
@@ -13,7 +13,7 @@
             <span class="icon-wrapper">
               <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
             </span>
-          </a>
+          </router-link>
         </div>
       </div>
       <div class="services-cover column is-6 p-0 lh-0">
@@ -36,6 +36,9 @@
   class ServiceCover extends Vue {
     @Prop({required: true})
     data: any;
+
+    @Prop({default: null})
+    customLink: string | null;
   }
 
   export default ServiceCover;

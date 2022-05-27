@@ -16,6 +16,13 @@
         :cta="$t(`services.answeringService.trial.cta`)"
     />
 
+    <service-sales :title="salesData.title" :blocks="salesData.blocks"/>
+
+    <div id="tryService">
+      <quote :text="$t(`services.answeringService.quote2`)" class="is-gradient"/>
+      <service-form :title="$t(`services.answeringService.formTitle`)" form-name="answeringService"/>
+    </div>
+
     <movements-footer/>
 
   </div>
@@ -29,6 +36,8 @@
   import ServiceInformation from "@/components/components/ServiceInformation.vue";
   import Quote from "@/components/components/Quote.vue";
   import ServiceTrial from "@/components/components/ServiceTrial.vue";
+  import ServiceSales from "@/components/components/ServiceSales.vue";
+  import ServiceForm from "@/components/components/ServiceForm.vue";
 
   @Component({
     components: {
@@ -37,6 +46,8 @@
       ServiceInformation,
       Quote,
       ServiceTrial,
+      ServiceSales,
+      ServiceForm,
     }
   })
   class AnsweringService extends Vue {
@@ -53,7 +64,28 @@
       title: this.$t(`services.answeringService.info.title`),
       text: this.$t(`services.answeringService.info.content`),
       cover: require('@/assets/images/services/answering_service/info-cover.png'),
-    }
+    };
+
+    salesData = {
+      title: this.$t(`services.answeringService.info.title`),
+      blocks: [
+        {
+          icon: require('@/assets/images/services/answering_service/sales/1.png'),
+          title: this.$t(`services.answeringService.sales.block1.title`),
+          text: this.$t(`services.answeringService.sales.block1.text`)
+        },
+        {
+          icon: require('@/assets/images/services/answering_service/sales/2.png'),
+          title: this.$t(`services.answeringService.sales.block2.title`),
+          text: this.$t(`services.answeringService.sales.block2.text`)
+        },
+        {
+          icon: require('@/assets/images/services/answering_service/sales/3.png'),
+          title: this.$t(`services.answeringService.sales.block3.title`),
+          text: this.$t(`services.answeringService.sales.block3.text`)
+        },
+      ]
+    };
 
   }
 

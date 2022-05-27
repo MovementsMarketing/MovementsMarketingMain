@@ -1,5 +1,6 @@
 .section {
   padding: 0;
+  overflow: hidden;
 
   &.full-height {
     height: calc(100vh - 150px);
