@@ -242,7 +242,7 @@
                 </div>
                 <div class="column is-6">
                     <div class="contact__form">
-                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field">
+                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field" data-netlify="true">
                             <div class="columns is-multiline">
                                 <div class="column is-6">
                                     <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`home.contact.name`)">
