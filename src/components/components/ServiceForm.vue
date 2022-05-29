@@ -14,7 +14,7 @@
               <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`services.form.name`)">
             </div>
             <div class="column is-6 is-offset-3">
-              <input class="form__input"  type="text" id="companyName" name="company name" required :placeholder="$t(`services.form.companyName`)">
+              <input class="form__input"  type="text" id="companyName" name="companyName" required :placeholder="$t(`services.form.companyName`)">
             </div>
             <div class="column is-6 is-offset-3">
               <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`services.form.businessEmail`)">

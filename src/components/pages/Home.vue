@@ -242,19 +242,20 @@
                 </div>
                 <div class="column is-6">
                     <div class="contact__form">
-                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field" data-netlify="true">
+                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="ask-question" />
                             <div class="columns is-multiline">
                                 <div class="column is-6">
                                     <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`home.contact.name`)">
                                 </div>
                                 <div class="column is-6">
-                                    <input class="form__input"  type="text" id="companyName" name="company name" required :placeholder="$t(`home.contact.companyName`)">
+                                    <input class="form__input"  type="text" id="companyName" name="companyName" required :placeholder="$t(`home.contact.companyName`)">
                                 </div>
                                 <div class="column is-6">
                                     <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`home.contact.email`)">
                                 </div>
                                 <div class="column is-6">
-                                    <input class="form__input" name="message" id="phone"  :placeholder="$t(`home.contact.phone`)"/>
+                                    <input class="form__input" name="phone" id="phone"  :placeholder="$t(`home.contact.phone`)"/>
                                 </div>
                                 <div class="column is-12">
                                     <textarea class="form__textarea"  name="message" id="message"  :placeholder="$t(`home.contact.message`)"/>
