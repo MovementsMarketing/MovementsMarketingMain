@@ -335,10 +335,10 @@ const en = {
     },
     positions: {
       title: `<span class="is-highlighted">Our Open Job Positions</span>`,
-      copy: `<span class="is-block"> Can't wait to reveal your talents? </span> You can always send an <span> Open Application </span> to <span> careers@movementsmarketing.com </span>`,
+      copy: `<span class="is-block has-text-italic"> Can't wait to reveal your talents? </span> You can always send an <span class="is-highlighted"> Open Application </span> to <span class="is-highlighted"> careers@movementsmarketing.com </span>`,
     },
     offers: {
-      title: 'We Offer You In A Nutshell',
+      title: '<span class="is-highlighted">We Offer You In A Nutshell</span>',
       perks: {
         perk1: 'International Workplaces',
         perk2: 'Attractive Bonuses',

@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="navigation__item">
-                  <router-link to="/#career">
+                  <router-link to="/careers">
                     {{ $t(`navigation.career`) }}
                   </router-link>
                 </div>
@@ -174,7 +174,7 @@
 
                 </div>
                 <div class="navigation__item">
-                  <router-link to="/#career">
+                  <router-link to="/careers">
                     {{ $t(`navigation.career`) }}
                   </router-link>
                 </div>

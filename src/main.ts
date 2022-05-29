@@ -1,9 +1,10 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
 import VModal from 'vue-js-modal';
-import Buefy from 'buefy'
-import 'buefy/dist/buefy.css'
-import VueI18n from 'vue-i18n'
+import Buefy from 'buefy';
+import 'buefy/dist/buefy.css';
+import VueI18n from 'vue-i18n';
+import Carousel3d from 'vue-carousel-3d';
 
 import router from './router';
 import Icons from "@/components/base/Icons.vue";
@@ -14,6 +15,8 @@ import Navigation from "@/components/base/Navigation.vue";
 Vue.use(VModal);
 Vue.use(Buefy);
 Vue.use(VueI18n);
+Vue.use(Carousel3d);
+
 
 Vue.component('icons', Icons);
 Vue.component('slider', Slider);

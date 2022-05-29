@@ -13,7 +13,7 @@
           </router-link>
         </div>
         <div class="column is-3">
-          <router-link to="/#career">
+          <router-link to="/careers">
             {{ $t(`navigation.career`) }}
           </router-link>
         </div>

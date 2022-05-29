@@ -28,8 +28,8 @@
                         </span>
                         <span class="dot"></span>
                         <span class="icon-wrapper">
-                    <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
-                  </span>
+                            <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
+                        </span>
                     </router-link>
                 </div>
 
@@ -243,7 +243,6 @@
                 <div class="column is-6">
                     <div class="contact__form">
                         <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field">
-                            <input type="hidden" name="form-name" value="ask-question" />
                             <div class="columns is-multiline">
                                 <div class="column is-6">
                                     <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`home.contact.name`)">
