@@ -42,7 +42,7 @@
                   <span class="navigation__item--dropdown" :class="isServicesActive ? 'is-active' : ''">
                     <span class="text-wrapper">
                       {{ $t(`navigation.services`) }}
-                      <span class="m-l-20">
+                      <span class="m-l-5">
                         <icons icon="chevronDown" stroke="#2a4647" stroke-width="4" height="24" width="24" />
                       </span>
                     </span>
@@ -107,30 +107,33 @@
 
                 </div>
 
+
+
+                <div class="navigation__item">
+                  <router-link to="/#clients">
+                    {{ $t(`navigation.clients`) }}
+                  </router-link>
+                </div>
+
                 <div class="navigation__item">
                   <router-link to="/careers">
                     {{ $t(`navigation.career`) }}
                   </router-link>
                 </div>
 
-                <div class="navigation__item">
-                  <router-link to="/#contact">
-                    {{ $t(`navigation.contact`) }}
-                  </router-link>
-                </div>
 
+                <div class="navigation__actions-divider"></div>
                 <div class="navigation__item navigation__item--button">
-                  <a class="button button--hollow">
-                    <router-link to="/#contact">
+                  <router-link to="/#contact" class="button button--hollow">
                     <span class="text">
                       {{ $t(`navigation.contactUs`) }}
                     </span>
-                      <span class="dot"></span>
-                      <span class="icon-wrapper">
-                        <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
-                      </span>
-                    </router-link>
-                  </a>
+                    <span class="dot"></span>
+                    <span class="icon-wrapper">
+                      <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
+                    </span>
+                  </router-link>
+
                 </div>
 
                 <div class="navigation__item navigation__item--button">
@@ -173,14 +176,16 @@
                   </span>
 
                 </div>
-                <div class="navigation__item">
-                  <router-link to="/careers">
-                    {{ $t(`navigation.career`) }}
-                  </router-link>
-                </div>
+
               <div class="navigation__item">
-                <router-link to="/#contact">
-                  {{ $t(`navigation.contact`) }}
+                <router-link to="/#clients">
+                  {{ $t(`navigation.clients`) }}
+                </router-link>
+              </div>
+
+              <div class="navigation__item">
+                <router-link to="/careers">
+                  {{ $t(`navigation.career`) }}
                 </router-link>
               </div>
 
@@ -384,6 +389,14 @@
         @media (min-resolution: 100dpi) {
           width: 140px;
         }
+
+        @media screen  and (max-width: 1400px) {
+          width: 120px;
+        }
+
+        @media screen  and (max-width: 780px) {
+          width: 100px;
+        }
       }
 
       &.navigation__navbar--desktop {
@@ -393,6 +406,10 @@
         @media (min-resolution: 100dpi) {
           padding: 0 32px;
           height: 100px;
+        }
+
+        @media screen and (max-width: 1400px) {
+          padding: 0 12px;
         }
 
         .navigation__item {
@@ -412,6 +429,10 @@
             text-align: left;
             line-height: 50px;
             width: 150px;
+
+            @media screen and (max-width: 1400px) {
+              width: 100px;
+            }
 
             &::before {
               content: '';
@@ -439,6 +460,11 @@
               align-items: center;
               width: 150px;
               justify-content: space-between;
+
+              @media screen and (max-width: 1400px) {
+                width: 100px;
+                justify-content: flex-start;
+              }
             }
 
             .vue-icon__wrapper {
@@ -463,6 +489,8 @@
       }
 
       &.navigation__navbar--touch {
+        height: 100px;
+
         .navigation__burger {
           position: relative;
           width: 38px;
@@ -516,9 +544,28 @@
         .navigation__services-options {
           display: contents;
 
-          .navigation__services-options__option {
+          >.columns {
             background: rgba(255, 255, 255, 0.5);
           }
+
+          .navigation__services-options__option {
+            justify-content: center;
+
+            .icon {
+              width: 50px;
+            }
+
+            .divider {
+              display: none;
+            }
+          }
+        }
+
+        .navigation__actions-divider {
+          width: 60%;
+          height: 4px;
+          background: #e8a500;
+          margin: 15px auto 30px;
         }
 
         .navigation__menu {
@@ -545,7 +592,7 @@
             flex-direction: column;
             align-items: center;
             top: 150px;
-            padding: 50px 0;
+            padding: 20px 0;
             overflow: auto;
 
             .navigation__item {
@@ -562,6 +609,10 @@
                 text-align: center;
                 line-height: 50px;
                 width: 150px;
+
+                @media screen and (max-width: 1400px) {
+                  width: 100px;
+                }
 
                 &::before {
                   content: '';
@@ -590,6 +641,10 @@
                 align-items: center;
                 width: 150px;
                 justify-content: space-between;
+
+                @media screen and (max-width: 1400px) {
+                  justify-content: flex-start;
+                }
               }
 
               .vue-icon__wrapper {
@@ -651,13 +706,13 @@
           height: 100%;
 
           .title {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 500;
             color: #008d90;
             margin-bottom: 12px;
 
             @media (min-resolution: 100dpi) {
-              font-size: 20px;
+              font-size: 24px;
             }
 
             &:hover {
@@ -669,7 +724,7 @@
             a {
               color: #008d90;
               display: block;
-              font-size: 14px;
+              font-size: 18px;
               font-weight: 700;
 
               &:hover {

@@ -49,6 +49,21 @@
     background: #fff;
     padding: 10px;
     text-align: left;
+    border-radius: 12px;
+
+    @media screen  and (max-width: 1400px) {
+      height: 150px;
+      width: 200px;
+    }
+
+    @media screen  and (max-width: 1200px) {
+      height: 140px;
+      width: 180px;
+    }
+
+    @media screen  and (max-width: 1024px) {
+      margin-bottom: 20px;
+    }
 
     .service__name {
       max-width: 30%;

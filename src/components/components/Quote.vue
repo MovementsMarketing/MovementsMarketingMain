@@ -30,6 +30,18 @@
 
     .quote__wrapper {
       padding: 20px 120px;
+
+      @media screen  and (max-width: 1024px) {
+        padding: 20px 80px;
+      }
+
+      @media screen  and (max-width: 780px) {
+        padding: 20px 40px;
+      }
+
+      @media screen  and (max-width: 460px) {
+        padding: 15px 20px;
+      }
     }
 
     h3 {
@@ -41,6 +53,21 @@
       @media (min-resolution: 100dpi) {
         font-size: 50px;
         line-height: 54px;
+      }
+
+      @media screen  and (max-width: 1024px) {
+        font-size: 48px;
+        line-height: 50px;
+      }
+
+      @media screen  and (max-width: 780px) {
+        font-size: 42px;
+        line-height: 46px;
+      }
+
+      @media screen  and (max-width: 460px) {
+        font-size: 36px;
+        line-height: 42px;
       }
     }
 

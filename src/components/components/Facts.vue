@@ -35,17 +35,40 @@
     justify-content: center;
     color: #186267;
 
+    @media screen  and (max-width: 920px) {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+
+      >.fact {
+        flex-direction: column;
+      }
+    }
+
     .fact {
       font-size: 24px;
       letter-spacing: 1px;
       display: flex;
       align-items: center;
 
+      @media screen  and (max-width: 1200px) {
+        font-size: 20px;
+      }
+
+      @media screen  and (max-width: 340px) {
+        font-size: 18px;
+      }
+
       .icon-wrapper {
         padding: 5px;
         margin-right: 10px;
         border-radius: 50px;
         background: #49AF4E;
+
+        @media screen  and (max-width: 1200px) {
+          margin-right: 5px;
+        }
+
       }
     }
 
@@ -54,6 +77,16 @@
       width: 4px;
       margin: 0 20px;
       background: #e8a500;
+
+      @media screen  and (max-width: 1200px) {
+        margin: 0 10px;
+      }
+
+      @media screen  and (max-width: 920px) {
+        width: 50px;
+        height: 4px;
+        margin: 20px 0;
+      }
     }
   }
 

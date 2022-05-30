@@ -5,7 +5,7 @@
         <h1 v-html="data.title"></h1>
         <h2 v-html=" data.subtitle"></h2>
         <div class="has-text-left">
-          <router-link :to="customLink ? customLink : '#tryService'" class="button button--hollow button--light-text">
+          <router-link :to="customLink ? customLink : '#tryService'" class="button button--hollow is-green button--light-text">
             <span class="text">
             {{ data.cta }}
             </span>

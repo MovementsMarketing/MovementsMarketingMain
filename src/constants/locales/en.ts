@@ -2,6 +2,7 @@ const en = {
   navigation: {
     about: 'About',
     services: 'Services',
+    clients: 'Clients',
     career: 'Career',
     contact: 'Contact',
     contactUs: 'Contact Us!',
@@ -86,7 +87,7 @@ const en = {
       cover: {
         title: 'Unburden Your <span class="is-highlighted"> Sales Team </span>',
         subtitle: 'Uplevel Your Lead Generation With Our <span class="is-highlighted">B2B Telemarketing! </span>',
-        cta: 'Try Now For Free! ',
+        cta: 'Try Now! ',
       },
       facts: {
         fact1: 'High-Value Leads',

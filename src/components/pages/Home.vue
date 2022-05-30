@@ -2,13 +2,12 @@
     <div :class="'home'">
         <navigation :full-logo="true" :light-logo="true"/>
 
-        <div class="section section--cover" :style="`background-image: url(${images.coverBg});`">
+        <div class="section section--cover">
             <div class="video-container">
                 <video autoplay muted loop>
                     <source src="@/assets/video/movements_marketing.mp4" type="video/mp4" />
                 </video>
                 <div class="caption">
-              <h2>Your caption here</h2>
                 </div>
             </div>
             <div class="section__mask"></div>
@@ -47,12 +46,12 @@
                 <div class="section__content has-text-left">
                     <h1 v-html="$t(`home.about.aboutUs.aboutUs`)" class="m-b-0"></h1>
                     <div class="columns">
-                        <div class="column is-10">
-                            <div class="columns about__text is-variable is-8">
-                                <div class="column is-5">
+                        <div class="column is-12-tablet is-10-desktop">
+                            <div class="columns about__text is-variable is-8 is-multiline">
+                                <div class="column is-12-tablet is-5-desktop">
                                     <p v-html="$t(`home.about.aboutUs.p1`)"></p>
                                 </div>
-                                <div class="column is-5">
+                                <div class="column is-12-tablet is-5-desktop">
                                     <p v-html="$t(`home.about.aboutUs.p2`)"></p>
                                 </div>
                             </div>
@@ -62,19 +61,19 @@
             </div>
         </div>
 
-        <div class="section section--numbers" id="numbersSection">
+        <div class="section section--numbers" id="numbersSection" style="overflow: visible">
             <div class="our-numbers">
                 <div class="bg-image">
                     <img src="@/assets/images/backgrounds/movements_globe_bg.png">
                 </div>
                 <div class="line"></div>
                 <div class="section__content has-text-left">
-                    <div class="columns p-t-40 is-variable is-6">
-                        <div class="column is-7">
+                    <div class="columns p-t-40 is-variable is-6 is-multiline">
+                        <div class="column is-12-tablet is-6-desktop is-7-widescreen">
                             <h2 v-html="$t(`home.numbers.ourNumbers`)" class="m-b-0"></h2>
                         </div>
-                        <div class="column is-5">
-                            <div class="columns is-multiline">
+                        <div class="column is-12-tablet is-6-desktop is-5-widescreen">
+                            <div class="columns is-multiline is-mobile">
                                 <div class="column is-6">
                                     <div class="number-wrapper">
                                         <p class="digit"> {{ ourNumbers.projects.current }} </p>
@@ -110,11 +109,11 @@
 
         <div id="outbound" class="section section--services section--services--outbound">
             <div class="columns m-0">
-                <div class="section__content column is-6">
+                <div class="section__content column is-8-tablet is-6-desktop">
                     <h1 v-html="$t(`home.services.outbound.title`)"></h1>
                     <p v-html="$t(`home.services.outbound.text`)"></p>
                 </div>
-                <div class="services-cover column is-6 p-0">
+                <div class="services-cover column is-4-tablet is-6-desktop p-0">
                     <div class="services-cover__mask">
                         <img src="@/assets/images/backgrounds/blue-mask.png">
                     </div>
@@ -153,7 +152,7 @@
 
         <div id="inbound" class="section section--services section--services--inbound">
             <div class="columns m-0">
-                <div class="services-cover column is-6 p-t-0 p-l-0 p-b-0 l-h-0">
+                <div class="services-cover column is-4-tablet is-6-desktop p-t-0 p-l-0 p-b-0 l-h-0">
                     <div class="services-cover__mask">
                         <img src="@/assets/images/backgrounds/yellow-mask.png">
                     </div>
@@ -161,7 +160,7 @@
                         <img src="@/assets/images/backgrounds/movements_customer-service_inbound_cover.png">
                     </div>
                 </div>
-                <div class="section__content column is-6">
+                <div class="section__content column is-8-tablet is-6-desktop">
                     <h1 v-html="$t(`home.services.inbound.title`)"></h1>
                     <p v-html="$t(`home.services.inbound.text`)"></p>
                 </div>
@@ -173,7 +172,7 @@
             </div>
         </div>
 
-        <div class="section section--clients">
+        <div id="clients" class="section section--clients">
             <slider :slidesData="clients"/>
         </div>
 
@@ -483,13 +482,46 @@
             min-height: calc(100vh - 130px);
         }
 
+        @media screen  and (max-width: 1024px) {
+            min-height: unset;
+        }
+
         .video-container {
             position: absolute;
             z-index: 0;
             padding-left: 12%;
+            right: 0;
+
+            @media screen and (max-width: 1500px) {
+                right: 0;
+                padding: 0;
+
+                video {
+                    max-width: unset;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+
+            @media screen  and (max-width: 1024px) {
+                position: relative;
+                width: 100%;
+                height: auto;
+
+                video {
+                    height: auto;
+                    width: 100%;
+                }
+            }
         }
 
-        .section__content {
+        @media screen  and (max-width: 1024px) {
+            .section__mask {
+                display: none;
+            }
+        }
+
+            .section__content {
             text-align: left;
             height: 100%;
             min-height: calc(100vh - 160px);
@@ -497,15 +529,64 @@
             flex-direction: column;
             justify-content: center;
 
-            @media (min-resolution: 100dpi) {
-                min-height: calc(100vh - 130px);
-            }
+                @media (min-resolution: 100dpi) {
+                    min-height: calc(100vh - 130px);
+                }
+
+                @media screen  and (max-width: 1024px) {
+                    margin-top: -200px;
+                    text-align: center;
+                    min-height: unset;
+                    height: auto;
+                }
+
+                @media screen  and (max-width: 780px) {
+                    margin-top: -120px;
+                }
+
+                @media screen  and (max-width: 460px) {
+                    margin-top: -80px;
+                }
+
+                @media screen  and (max-width: 320px) {
+                    margin-top: -40px;
+                }
 
             h1 {
                 font-size: 84px;
 
                 @media (min-resolution: 100dpi) {
                     font-size: 72px;
+                }
+
+                @media screen  and (max-width: 1024px) {
+                    font-size: 58px;
+                    line-height: 56px;
+                    padding: 20px;
+                    background: #fff;
+                    text-align: center;
+                    width: 100%;
+                    max-width: 100%;
+
+                    &::before {
+                        margin: 0 auto 20px;
+                    }
+                }
+
+                @media screen  and (max-width: 780px) {
+                    font-size: 46px;
+                    line-height: 42px;
+                }
+
+                @media screen  and (max-width: 460px) {
+                    font-size: 36px;
+                    line-height: 32px;
+                }
+
+                @media screen  and (max-width: 320px) {
+                    font-size: 32px;
+                    line-height: 32px;
+                    margin-bottom: 30px;
                 }
 
             }
@@ -515,6 +596,22 @@
                 font-size: 36px;
                 font-style: italic;
                 margin-bottom: 80px;
+
+                @media screen  and (max-width: 1024px) {
+                    font-size: 28px;
+                    margin-bottom: 35px;
+                }
+
+                @media screen  and (max-width: 780px) {
+                    font-size: 24px;
+                    line-height: 20px;
+                }
+
+                @media screen  and (max-width: 460px) {
+                    font-size: 20px;
+                    line-height: 18px;
+                    margin-bottom: 25px;
+                }
             }
 
             .button {
@@ -523,6 +620,11 @@
 
                 &:hover {
                     transform: translateX(0px);
+                }
+
+                @media screen and (max-width: 1024px) {
+                    transform: unset;
+                    margin-bottom: 30px;
                 }
             }
         }
@@ -533,6 +635,44 @@
         .about {
             position: relative;
 
+            @media screen  and (max-width: 1500px) {
+                padding: 50px 0;
+            }
+
+            @media screen  and (max-width: 1024px) {
+                padding-top: 0;
+                background: #fff;
+            }
+
+            .bg-image {
+                @media screen  and (max-width: 1500px) {
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    right: 0;
+                    opacity: 0.3;
+
+                    img {
+                        height: 100%;
+                        max-width: unset;
+                        width: auto;
+                    }
+                }
+
+                @media screen  and (max-width: 1024px) {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    opacity: 1;
+
+                    img {
+                        height: auto;
+                        max-width: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+
             .section__content {
                 position: absolute;
                 top: 0;
@@ -540,6 +680,30 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
+
+                @media screen  and (max-width: 1500px) {
+                    position: relative;
+
+                    h1 {
+                        padding-bottom: 40px;
+                    }
+                }
+
+                @media screen  and (max-width: 1024px) {
+                    margin-top: -150px;
+
+                    h1 {
+                        padding-bottom: 100px;
+                    }
+                }
+
+                @media screen  and (max-width: 760px) {
+                    margin-top: -100px;
+
+                    h1 {
+                        padding-bottom: 50px;
+                    }
+                }
             }
 
             .about__text {
@@ -554,6 +718,7 @@
     }
 
     .section--numbers {
+        background: linear-gradient(90deg, #1b7679 0%, #30a1a6 100%);
 
         .line {
             position: absolute;
@@ -565,6 +730,18 @@
 
             @media (min-resolution: 100dpi) {
                 left: 160px;
+            }
+
+            @media screen  and (max-width: 1400px) {
+                left: 100px;
+            }
+
+            @media screen  and (max-width: 780px) {
+                left: 80px;
+            }
+
+            @media screen  and (max-width: 460px) {
+                left: 20px;
             }
         }
 
@@ -581,6 +758,27 @@
 
                 @media (min-resolution: 100dpi) {
                     font-size: 58px;
+                    line-height: 52px;
+                }
+
+                @media screen  and (max-width: 1024px) {
+                    font-size: 52px;
+                    line-height: 50px;
+                }
+
+                @media screen  and (max-width: 780px) {
+                    font-size: 48px;
+                    line-height: 46px;
+                }
+
+                @media screen  and (max-width: 460px) {
+                    font-size: 42px;
+                    line-height: 40px;
+                }
+
+                @media screen  and (max-width: 340px) {
+                    font-size: 38px;
+                    line-height: 36px;
                 }
 
 
@@ -601,6 +799,21 @@
                     @media (min-resolution: 100dpi) {
                         font-size: 72px;
                         line-height: 80px;
+                    }
+
+                    @media screen  and (max-width: 780px) {
+                        font-size: 78px;
+                        line-height: 84px;
+                    }
+
+                    @media screen  and (max-width: 460px) {
+                        font-size: 72px;
+                        line-height: 78px;
+                    }
+
+                    @media screen  and (max-width: 460px) {
+                        font-size: 68px;
+                        line-height: 72px;
                     }
 
                     &::after {
@@ -627,6 +840,16 @@
                 }
             }
 
+            @media screen  and (max-width: 1500px) {
+                position: relative;
+            }
+        }
+
+        .bg-image {
+            @media screen  and (max-width: 1500px) {
+                position: absolute;
+                bottom: 0;
+            }
         }
     }
 
@@ -656,10 +879,16 @@
                 text-align: left;
                 color: #fff;
                 margin-bottom: 0px;
+                position: relative;
+                z-index: 2;
 
                 .is-highlighted {
                     display: block;
                     white-space: nowrap;
+                }
+
+                @media screen  and (max-width: 1024px) {
+                    margin-bottom: 40px;
                 }
             }
 
@@ -669,6 +898,10 @@
                 font-size: 18px;
                 text-align: justify;
                 margin-bottom: 200px;
+
+                @media screen  and (max-width: 1024px) {
+                    margin-bottom: 40px;
+                }
             }
         }
 
@@ -677,7 +910,55 @@
 
             .services-cover__mask {
                 position: absolute;
+
+                @media screen  and (max-width: 1024px) {
+                    display: none;
+                }
             }
+
+            @media screen  and (max-width: 1400px) {
+                .services-cover__image {
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+
+                    img {
+                        max-width: unset;
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+            }
+
+            @media screen  and (max-width: 1024px) {
+                .services-cover__image {
+                    position: relative;
+                    min-height: 840px;
+
+                    img {
+                        position: absolute;
+                        filter: grayscale(1);
+                    }
+                }
+            }
+
+            @media screen  and (max-width: 768px) {
+                .services-cover__image {
+                    position: relative;
+                    min-height: 840px;
+
+                    img {
+                        position: absolute;
+                        filter: none;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+
+
         }
 
         .services__list {
@@ -691,6 +972,15 @@
             @media (min-resolution: 100dpi) {
                 padding: 0 200px;
             }
+
+            @media screen  and (max-width: 1400px) {
+                padding: 0 150px;
+            }
+
+            @media screen  and (max-width: 1024px) {
+                flex-direction: column;
+                bottom: 20px;
+            }
         }
 
         &.section--services--outbound {
@@ -698,11 +988,26 @@
 
             .section__content {
                 padding-right: 80px !important;
+
+                @media screen  and (max-width: 1400px) {
+                    padding-right: 40px !important;
+                }
+
+                @media screen  and (max-width: 1024px) {
+                    padding-right: 20px !important;
+                }
             }
 
             .services-cover {
                 .services-cover__mask {
                     left: 0;
+                }
+            }
+
+            .services__list {
+                @media screen  and (max-width: 1024px) {
+                    align-items: end;
+                    padding-right: 40px;
                 }
             }
 
@@ -713,11 +1018,27 @@
 
             .section__content {
                 padding-left: 80px !important;
+
+                @media screen  and (max-width: 1400px) {
+                    padding-left: 40px !important;
+                }
+
+                @media screen  and (max-width: 1024px) {
+                    padding-left: 20px !important;
+                }
+
             }
 
             .services-cover {
                 .services-cover__mask {
                     right: 12px;
+                }
+            }
+
+            .services__list {
+                @media screen  and (max-width: 1024px) {
+                    padding-left: 20px;
+
                 }
             }
         }
