@@ -53,18 +53,18 @@ const de = {
       },
       inbound: {
         title: 'Inbound <span class="is-highlighted">Customer Service</span>',
-        text: 'If your professionals must provide customer support while working, it\'s increasingly challenging to focus on their actual tasks. And that\'s where Movements Marketing steps in! With our <span class="is-highlighted">Inbound Customer Service</span>, your company is optimally accessible and no question remains unanswered. As the first point of contact for your customers, we provide a high-quality <span class="is-highlighted">Customer Service, Answering Service, Live Chat, Email Management</span> and <span class="is-highlighted">Social Webcare.</span> Handling incoming requests quick and adequate is our top priority!  ',
+        text: 'Wenn Ihre Mitarbeiter während der Arbeit Kundenservice leisten müssen, wird es immer schwieriger, sich auf ihre eigentlichen Aufgaben zu konzentrieren. Und hier kommt Movements Marketing ins Spiel! Mit unserem <span class="is-highlighted">Inbound Kunden Service</span> ist Ihr Unternehmen optimal erreichbar und es bleibt keine Frage offen. Als erste Anlaufstelle für Ihre Kunden bieten wir einen hochwertigen <span class="is-highlighted">Kundenservice, Antwortservice, Live-Chat, E-Mail-Management</span> und <span class="is-highlighted">Social Webcare.</span> Die schnelle und angemessene Bearbeitung eingehender Anfragen hat für uns oberste Priorität! ',
         services: {
         }
       }
     },
     work: {
-      title: 'How We <span class="is-highlighted">Work Together</span>',
-      text: 'Understanding your criteria and goals is the first base for a <span class="is-highlighted">long-term cooperation</span> and high customer satisfaction. By becoming familiar with your story trough <span class="is-highlighted">knowledge-sharing</span>, we can communicate adequately with the target group and deliver the agreed targets. We do this, among other things, through a business plan and by offering <span class="is-highlighted">custom-build solutions</span>. And our permanent team of multilingual telemarketers makes sure everything runs smoothly!',
-      button: 'Download Freebies',
+      title: '<span class="is-highlighted">Wie wir zusammenarbeiten</span>',
+      text: 'Das Verständnis Ihrer Kriterien und Ziele ist der erste Schritt für eine <span class="is-highlighted">langfristige Zusammenarbeit</span>und hohe Kundenzufriedenheit. Indem wir uns durch <span class="is-highlighted">Wissensaustausch</span> mit Ihrer Geschichte vertraut machen, können wir angemessen mit der Zielgruppe kommunizieren und die vereinbarten Ziele erreichen. Dies tun wir unter anderem durch einen Businessplan und indem wir <span class="is-highlighted">maßgeschneiderte Lösungen</span> anbieten. Und unser festes Team aus mehrsprachigen Telefonagenten sorgt dafür, dass alles reibungslos läuft!',
+      button: 'Download Gratisangebote',
     },
     clients: {
-      ourClients: 'Our <span class="is-highlighted">Clients</span>',
+      ourClients: 'Unsere <span class="is-highlighted">Kunden</span>',
       shypple: {
         text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit'
       },
@@ -72,14 +72,14 @@ const de = {
         text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`,
       },
     },
-    telemarketers: 'These Telemarketers Will <span class="is-highlighted">Uplift Your Business</span>',
+    telemarketers: 'Diese Telefonagenten <span class="is-highlighted">steigern Ihr Geschäft</span>',
     contact: {
       title: '<span class="is-highlighted">Let’s Connect!</span>',
       name: 'Name',
-      companyName: 'Company Name',
+      companyName: 'Name der Firma',
       email: 'Email',
-      phone: 'Phone',
-      message: 'Message',
+      phone: 'Telefon',
+      message: 'Nachricht',
     }
   },
   services: {
@@ -330,23 +330,23 @@ const de = {
   },
   careers: {
     cover: {
-      title: '<span class="is-highlighted">Join</span> Our <span class="is-highlighted">Team</span> Now',
-      subtitle: 'Looking forward to join out team and shape our clients future together with us?',
-      cta: 'Join Us',
+      title: '<span class="is-highlighted">Komm in unser Team!</span>',
+      subtitle: 'Sie möchten Teil unseres Teams werden und gemeinsam mit uns die Zukunft unserer Kunden gestalten?',
+      cta: 'Mach mit!',
     },
     positions: {
-      title: `<span class="is-highlighted">Our Open Job Positions</span>`,
-      copy: `<span class="is-block has-text-italic"> Can't wait to reveal your talents? </span> You can always send an <span class="is-highlighted"> Open Application </span> to <span class="is-highlighted"> careers@movementsmarketing.com </span>`,
+      title: `<span class="is-highlighted">Unsere Stellenangebote</span>`,
+      copy: `<span class="is-block has-text-italic">Sie können es kaum erwarten, Ihre Talente zu offenbaren?</span> Sie können jederzeit eine <span class="is-highlighted"> offene Bewerbung </span> an <span class="is-highlighted"> careers@movementsmarketing.com </span> senden`,
     },
     offers: {
-      title: '<span class="is-highlighted">We Offer You In A Nutshell</span>',
+      title: '<span class="is-highlighted">Wir bieten Ihnen auf den Punkt gebracht</span>',
       perks: {
-        perk1: 'International Workplaces',
-        perk2: 'Attractive Bonuses',
-        perk3: 'In-House Chef',
-        perk4: 'Recreative Playground',
-        perk5: 'Happy Meetups',
-        perk6: 'Fun Teambuildings',
+        perk1: 'Internationale Arbeitsplätze',
+        perk2: 'Attraktive Boni',
+        perk3: 'Chefkoch im Haus',
+        perk4: 'Erholungsspielort',
+        perk5: 'Spaßige Treffen',
+        perk6: 'Lustige Teambuildings',
       }
     }
   }

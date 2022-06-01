@@ -65,6 +65,10 @@
       margin-bottom: 20px;
     }
 
+    @media screen  and (max-width: 768px) {
+      width: 100%;
+    }
+
     .service__name {
       max-width: 30%;
       font-size: 18px;

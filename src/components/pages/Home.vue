@@ -130,8 +130,8 @@
         </div>
 
         <div class="section section--work">
-            <div class="section__content columns m-0">
-                <div class="column is-6 has-text-left">
+            <div class="section__content columns m-0 is-multiline">
+                <div class="column is-12-tablet is-6-desktop has-text-left">
                     <h2 v-html="$t(`home.work.title`)"></h2>
                     <p v-html="$t(`home.work.text`)"></p>
                     <a class="button button--hollow" href="https://issuu.com/movementsmarketing" target="_blank">
@@ -144,7 +144,7 @@
                         </span>
                     </a>
                 </div>
-                <div class="column is-6">
+                <div class="column is-12-tablet is-6-desktop work__img-wrapper">
                     <img src="@/assets/images/backgrounds/movements_work_cover.png">
                 </div>
             </div>
@@ -868,11 +868,18 @@
     .section.section--services {
         position: relative;
 
+        @media screen and (max-width: 768px) {
+            padding-top: 30px;
+        }
+
         .section__content {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
 
+            @media screen and (max-width: 768px) {
+                margin-top: 30px;
+            }
 
             h1 {
                 max-width: 100%;
@@ -885,6 +892,10 @@
                 .is-highlighted {
                     display: block;
                     white-space: nowrap;
+
+                    @media screen  and (max-width: 768px) {
+                        white-space: unset;
+                    }
                 }
 
                 @media screen  and (max-width: 1024px) {
@@ -946,10 +957,11 @@
             @media screen  and (max-width: 768px) {
                 .services-cover__image {
                     position: relative;
-                    min-height: 840px;
+                    min-height: unset;
+                    margin: 0 50px;
 
                     img {
-                        position: absolute;
+                        position: relative;
                         filter: none;
                         width: 100%;
                         height: auto;
@@ -981,10 +993,28 @@
                 flex-direction: column;
                 bottom: 20px;
             }
+
+            @media screen  and (max-width: 768px) {
+                position: relative;
+                padding: 0 50px;
+                align-items: center;
+
+                >div {
+                    width: 80%;
+                    margin-right: 20px;
+                }
+            }
         }
 
         &.section--services--outbound {
             background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
+
+            @media screen  and (max-width: 768px) {
+                >.columns {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
 
             .section__content {
                 padding-right: 80px !important;
@@ -995,6 +1025,18 @@
 
                 @media screen  and (max-width: 1024px) {
                     padding-right: 20px !important;
+                }
+
+                @media screen  and (max-width: 768px) {
+                    padding-right: 100px !important;
+                }
+
+                @media screen  and (max-width: 460px) {
+                    padding-right: 50px !important;
+                }
+
+                @media screen  and (max-width: 320px) {
+                    padding-right: 30px !important;
                 }
             }
 
@@ -1008,6 +1050,11 @@
                 @media screen  and (max-width: 1024px) {
                     align-items: end;
                     padding-right: 40px;
+                }
+
+                @media screen  and (max-width: 768px) {
+                    align-items: center;
+                    padding-right: 50px;
                 }
             }
 
@@ -1027,6 +1074,18 @@
                     padding-left: 20px !important;
                 }
 
+                @media screen  and (max-width: 768px) {
+                    padding-left: 100px !important;
+                }
+
+                @media screen  and (max-width: 460px) {
+                    padding-left: 50px !important;
+                }
+
+                @media screen  and (max-width: 320px) {
+                    padding-left: 30px !important;
+                }
+
             }
 
             .services-cover {
@@ -1039,6 +1098,11 @@
                 @media screen  and (max-width: 1024px) {
                     padding-left: 20px;
 
+                }
+
+                @media screen  and (max-width: 768px) {
+                    align-items: center;
+                    padding-left: 50px;
                 }
             }
         }
@@ -1059,12 +1123,21 @@
                 margin-bottom: 50px;
                 display: block;
                 white-space: nowrap;
+
+                @media screen  and (max-width: 1600px) {
+                    white-space: unset;
+                    line-height: 48px;
+                }
             }
 
             p {
                 max-width: 75%;
                 text-align: left;
                 margin-bottom: 50px;
+
+                @media screen  and (max-width: 1024px) {
+                    max-width: 100%;
+                }
             }
 
 
@@ -1075,6 +1148,16 @@
                 &:hover {
                     transform: translateX(0px);
                 }
+            }
+        }
+
+        .work__img-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen  and (max-width: 1024px) {
+                margin-top: 30px;
             }
         }
     }

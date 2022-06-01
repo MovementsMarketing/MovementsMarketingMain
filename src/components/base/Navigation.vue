@@ -336,7 +336,7 @@
   .navigation {
 
     .navigation__language-selector {
-      padding: 0 64px;
+      padding: 0 50px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -348,7 +348,7 @@
       z-index: 200;
 
       @media (min-resolution: 100dpi) {
-        padding: 0 32px;
+        padding: 0 25px;
       }
 
       .navigation__language {
@@ -383,28 +383,25 @@
 
       .navigation__logo {
         display: flex;
-        width: 180px;
+        width: 150px;
         z-index: 150;
 
         @media (min-resolution: 100dpi) {
-          width: 140px;
+          width: 130px;
         }
 
         @media screen  and (max-width: 1400px) {
           width: 120px;
         }
 
-        @media screen  and (max-width: 780px) {
-          width: 100px;
-        }
       }
 
       &.navigation__navbar--desktop {
-        padding: 0 64px;
+        padding: 0 50px;
         height: 120px;
 
         @media (min-resolution: 100dpi) {
-          padding: 0 32px;
+          padding: 0 25px;
           height: 100px;
         }
 
@@ -562,6 +559,7 @@
         }
 
         .navigation__actions-divider {
+          display: none;
           width: 60%;
           height: 4px;
           background: #e8a500;

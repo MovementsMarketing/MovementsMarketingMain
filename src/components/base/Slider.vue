@@ -163,6 +163,11 @@
               @media (min-resolution: 100dpi) {
                 padding-left: 220px;
               }
+
+              @media (min-resolution: 1024px) {
+                padding-left: 80px;
+                padding-right: 80px;
+              }
             }
 
             .logo {
