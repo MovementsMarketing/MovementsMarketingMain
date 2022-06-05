@@ -76,13 +76,15 @@
     }
   })
   class Careers extends Vue {
-    coverData = {
-      cover: require('@/assets/images/careers/cover.png'),
-      mask: require('@/assets/images/careers/mask.png'),
-      title: this.$t(`careers.cover.title`),
-      subtitle: this.$t(`careers.cover.subtitle`),
-      cta: this.$t(`careers.cover.cta`),
-    };
+    get coverData() {
+      return  {
+        cover: require('@/assets/images/careers/cover.png'),
+        mask: require('@/assets/images/careers/mask.png'),
+        title: this.$t(`careers.cover.title`),
+        subtitle: this.$t(`careers.cover.subtitle`),
+        cta: this.$t(`careers.cover.cta`),
+      };
+    }
 
     positions = [
       {
@@ -111,32 +113,34 @@
       },
     ];
 
-    perks = [
-      {
-        icon: require('@/assets/images/careers/perks/1.png'),
-        name: this.$t(`careers.offers.perks.perk1`),
-      },
-      {
-        icon: require('@/assets/images/careers/perks/2.png'),
-        name: this.$t(`careers.offers.perks.perk2`),
-      },
-      {
-        icon: require('@/assets/images/careers/perks/3.png'),
-        name: this.$t(`careers.offers.perks.perk3`),
-      },
-      {
-        icon: require('@/assets/images/careers/perks/4.png'),
-        name: this.$t(`careers.offers.perks.perk4`),
-      },
-      {
-        icon: require('@/assets/images/careers/perks/5.png'),
-        name: this.$t(`careers.offers.perks.perk5`),
-      },
-      {
-        icon: require('@/assets/images/careers/perks/6.png'),
-        name: this.$t(`careers.offers.perks.perk6`),
-      },
-    ]
+    get perks() {
+      return  [
+        {
+          icon: require('@/assets/images/careers/perks/1.png'),
+          name: this.$t(`careers.offers.perks.perk1`),
+        },
+        {
+          icon: require('@/assets/images/careers/perks/2.png'),
+          name: this.$t(`careers.offers.perks.perk2`),
+        },
+        {
+          icon: require('@/assets/images/careers/perks/3.png'),
+          name: this.$t(`careers.offers.perks.perk3`),
+        },
+        {
+          icon: require('@/assets/images/careers/perks/4.png'),
+          name: this.$t(`careers.offers.perks.perk4`),
+        },
+        {
+          icon: require('@/assets/images/careers/perks/5.png'),
+          name: this.$t(`careers.offers.perks.perk5`),
+        },
+        {
+          icon: require('@/assets/images/careers/perks/6.png'),
+          name: this.$t(`careers.offers.perks.perk6`),
+        },
+      ];
+    }
   }
 
   export default Careers;

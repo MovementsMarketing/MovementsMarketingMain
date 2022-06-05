@@ -76,25 +76,25 @@
                             <div class="columns is-multiline is-mobile">
                                 <div class="column is-6">
                                     <div class="number-wrapper">
-                                        <p class="digit"> {{ ourNumbers.projects.current }} </p>
+                                        <p class="digit"> 598 </p>
                                         <p class="text"> {{$t(`home.numbers.projects`)}} </p>
                                     </div>
                                 </div>
                                 <div class="column is-6">
                                     <div class="number-wrapper">
-                                        <p class="digit"> 0{{ ourNumbers.languages.current }} </p>
+                                        <p class="digit"> 09 </p>
                                         <p class="text"> {{$t(`home.numbers.languages`)}} </p>
                                     </div>
                                 </div>
                                 <div class="column is-6">
                                     <div class="number-wrapper">
-                                        <p class="digit"> 0{{ ourNumbers.offices.current }} </p>
+                                        <p class="digit"> 03 </p>
                                         <p class="text"> {{$t(`home.numbers.offices`)}} </p>
                                     </div>
                                 </div>
                                 <div class="column is-6">
                                     <div class="number-wrapper">
-                                        <p class="digit"> 0{{ ourNumbers.teams.current }} </p>
+                                        <p class="digit"> 04 </p>
                                         <p class="text"> {{$t(`home.numbers.teams`)}} </p>
                                     </div>
                                 </div>
@@ -304,75 +304,61 @@
           contactBg: '',
       };
 
-      clients: any[];
-
-      ourNumbers : {
-          [key: string]: {current: number, target: number, step: number, timer: any}
-      } = {
-          languages: {
-              current: 9,
-              target: 9,
-              step: 1,
-              timer: 0,
+      get clients() {
+        return [
+          {
+            name: 'Shypple',
+            text: this.$t(`home.clients.shypple.text`),
+            img: require('@/assets/images/clients/shypple_bg.png'),
+            logo: require('@/assets/images/clients/shypple_logo.png'),
           },
-          projects:{
-              current: 598,
-              target: 598,
-              step: 62,
-              timer: 0,
+          {
+            name: 'Client 2',
+            text: this.$t(`home.clients.client.text`),
+            img: require('@/assets/images/clients/scorito_bg.png'),
+            logo: require('@/assets/images/clients/scorito_logo.png'),
           },
-          offices: {
-              current: 3,
-              target: 3,
-              step: 1,
-              timer: 0,
+        ];
+      }
 
-          },
-          teams: {
-              current: 7,
-              target: 7,
-              step: 1,
-              timer: 0,
-
-          }
-      };
-
-      services  = {
+      get services() {
+        return  {
           outbound: [
-              {
-                  name: this.$t(`navigation.servicesOptions.telemarketing`),
-                  url: '/service/b2b-telemarketing',
-                  src: require('@/assets/images/services/icons/b2b_telemarketing.png'),
-              }
+            {
+              name: this.$t(`navigation.servicesOptions.telemarketing`),
+              url: '/service/b2b-telemarketing',
+              src: require('@/assets/images/services/icons/b2b_telemarketing.png'),
+            }
           ],
           inbound: [
-              {
-                  name: this.$t(`navigation.servicesOptions.customerService`),
-                  url: '/service/customer-service',
-                  src: require('@/assets/images/services/icons/customer_service.png'),
-              },
-              {
-                  name: this.$t(`navigation.servicesOptions.answeringService`),
-                  url: '/service/answering-service',
-                  src: require('@/assets/images/services/icons/answering_service.png'),
-              },
-              {
-                  name: this.$t(`navigation.servicesOptions.liveChat`),
-                  url: '/service/live-chat',
-                  src: require('@/assets/images/services/icons/live_chat.png'),
-              },
-              {
-                  name: this.$t(`navigation.servicesOptions.emailManagement`),
-                  url: '/service/email-management',
-                  src: require('@/assets/images/services/icons/email_management.png'),
-              },
-              {
-                  name: this.$t(`navigation.servicesOptions.socialWebcare`),
-                  url: '/service/social-webcare',
-                  src: require('@/assets/images/services/icons/social_webcare.png'),
-              },
+            {
+              name: this.$t(`navigation.servicesOptions.customerService`),
+              url: '/service/customer-service',
+              src: require('@/assets/images/services/icons/customer_service.png'),
+            },
+            {
+              name: this.$t(`navigation.servicesOptions.answeringService`),
+              url: '/service/answering-service',
+              src: require('@/assets/images/services/icons/answering_service.png'),
+            },
+            {
+              name: this.$t(`navigation.servicesOptions.liveChat`),
+              url: '/service/live-chat',
+              src: require('@/assets/images/services/icons/live_chat.png'),
+            },
+            {
+              name: this.$t(`navigation.servicesOptions.emailManagement`),
+              url: '/service/email-management',
+              src: require('@/assets/images/services/icons/email_management.png'),
+            },
+            {
+              name: this.$t(`navigation.servicesOptions.socialWebcare`),
+              url: '/service/social-webcare',
+              src: require('@/assets/images/services/icons/social_webcare.png'),
+            },
           ],
-      };
+        };
+      }
 
       activeOfficeIndex = 0;
 
@@ -406,65 +392,21 @@
           },
       ];
 
-      onScroll() {
-          let targetTop = document.querySelector('#numbersSection')?.getBoundingClientRect().top,
-              targetBottom = document.querySelector('#numbersSection')?.getBoundingClientRect().bottom,
-              bottomPosition = window.innerHeight - 200;
 
-          if(!targetTop || !targetBottom) return;
-
-          if (( targetTop >= 0 && targetTop <= bottomPosition ) || ( targetBottom >= 0 && targetBottom <= bottomPosition )) {
-              Object.keys(this.ourNumbers).forEach(key => {
-
-                  let timer = setInterval(() => {
-                      if(this.ourNumbers[key].target - this.ourNumbers[key].current >= this.ourNumbers[key].step) {
-                          Vue.nextTick(() => {
-                              Vue.set(this.ourNumbers[key], 'current', (this.ourNumbers[key].current + this.ourNumbers[key].step));
-                          });
-                      } else {
-                          Vue.nextTick(() => {
-                              this.ourNumbers[key].current = this.ourNumbers[key].current + (this.ourNumbers[key].target - this.ourNumbers[key].current)
-                          });
-                      }
-
-                      if(this.ourNumbers[key].current === this.ourNumbers[key].target) {
-                          clearInterval(timer)
-                      }
-                  }, 1000)
-              });
-              return false;
-          }
-          return true;
-      }
 
       created() {
           this.images.coverBg = require('@/assets/images/backgrounds/movements_call-center_bg.png');
           this.images.contactBg = require('@/assets/images/backgrounds/movemens_contact_bg.png');
 
-          this.clients = [
-              {
-                  name: 'Shypple',
-                  text: this.$t(`home.clients.shypple.text`),
-                  img: require('@/assets/images/clients/shypple_bg.png'),
-                  logo: require('@/assets/images/clients/shypple_logo.png'),
-              },
-              {
-                  name: 'Client 2',
-                  text: this.$t(`home.clients.client.text`),
-                  img: require('@/assets/images/clients/scorito_bg.png'),
-                  logo: require('@/assets/images/clients/scorito_logo.png'),
-              },
-          ];
-
-          window.addEventListener("scroll", this.onScroll);
+        //window.addEventListener("scroll", this.onScroll);
       }
 
       mounted(): void {
-          this.onScroll();
+         // this.onScroll();
       }
 
       beforeDestroy() {
-          window.removeEventListener("scroll", this.onScroll)
+          //window.removeEventListener("scroll", this.onScroll)
       }
   }
 

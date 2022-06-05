@@ -50,21 +50,27 @@
     }
   })
   class CustomerService extends Vue {
-    coverData = {
-      cover: require('@/assets/images/services/customer_service/cover.png'),
-      mask: require('@/assets/images/services/customer_service/mask.png'),
-      title: this.$t(`services.customerService.cover.title`),
-      subtitle: this.$t(`services.customerService.cover.subtitle`),
-      cta: this.$t(`services.customerService.cover.cta`),
-    };
+    get coverData() {
+      console.log(this.$t(`services.customerService.cover.title`));
+      return {
+        cover: require('@/assets/images/services/customer_service/cover.png'),
+        mask: require('@/assets/images/services/customer_service/mask.png'),
+        title: this.$t(`services.customerService.cover.title`),
+        subtitle: this.$t(`services.customerService.cover.subtitle`),
+        cta: this.$t(`services.customerService.cover.cta`),
+      };
+    }
 
-    informationData = {
+  get informationData() {
+    return  {
       title: this.$t(`services.customerService.info.title`),
       text: this.$t(`services.customerService.info.content`),
       cover: require('@/assets/images/services/customer_service/info-cover.png'),
     };
+  }
 
-    salesData = {
+  get salesData() {
+    return{
       title: this.$t(`services.customerService.info.title`),
       blocks: [
         {
@@ -84,6 +90,7 @@
         },
       ]
     };
+  }
   }
 
   export default CustomerService;

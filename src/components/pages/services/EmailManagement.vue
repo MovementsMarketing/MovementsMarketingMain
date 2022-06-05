@@ -51,40 +51,46 @@
     }
   })
   class EmailManagement extends Vue {
-    coverData = {
-      cover: require('@/assets/images/services/email_management/cover.png'),
-      mask: require('@/assets/images/services/email_management/mask.png'),
-      title: this.$t(`services.emailManagement.cover.title`),
-      subtitle: this.$t(`services.emailManagement.cover.subtitle`),
-      cta: this.$t(`services.emailManagement.cover.cta`),
-    };
+    get coverData() {
+      return  {
+        cover: require('@/assets/images/services/email_management/cover.png'),
+            mask: require('@/assets/images/services/email_management/mask.png'),
+            title: this.$t(`services.emailManagement.cover.title`),
+            subtitle: this.$t(`services.emailManagement.cover.subtitle`),
+            cta: this.$t(`services.emailManagement.cover.cta`),
+      };
+    }
 
-    informationData = {
-      title: this.$t(`services.emailManagement.info.title`),
-      text: this.$t(`services.emailManagement.info.content`),
-      cover: require('@/assets/images/services/email_management/info-cover.png'),
-    };
+    get informationData() {
+      return {
+        title: this.$t(`services.emailManagement.info.title`),
+        text: this.$t(`services.emailManagement.info.content`),
+        cover: require('@/assets/images/services/email_management/info-cover.png'),
+      };
+    }
 
-    salesData = {
-      title: this.$t(`services.emailManagement.info.title`),
-      blocks: [
-        {
-          icon: require('@/assets/images/services/email_management/sales/1.png'),
-          title: this.$t(`services.emailManagement.sales.block1.title`),
-          text: this.$t(`services.emailManagement.sales.block1.text`)
-        },
-        {
-          icon: require('@/assets/images/services/email_management/sales/2.png'),
-          title: this.$t(`services.emailManagement.sales.block2.title`),
-          text: this.$t(`services.emailManagement.sales.block2.text`)
-        },
-        {
-          icon: require('@/assets/images/services/email_management/sales/3.png'),
-          title: this.$t(`services.emailManagement.sales.block3.title`),
-          text: this.$t(`services.emailManagement.sales.block3.text`)
-        },
-      ]
-    };
+    get salesData() {
+      return  {
+        title: this.$t(`services.emailManagement.info.title`),
+        blocks: [
+          {
+            icon: require('@/assets/images/services/email_management/sales/1.png'),
+            title: this.$t(`services.emailManagement.sales.block1.title`),
+            text: this.$t(`services.emailManagement.sales.block1.text`)
+          },
+          {
+            icon: require('@/assets/images/services/email_management/sales/2.png'),
+            title: this.$t(`services.emailManagement.sales.block2.title`),
+            text: this.$t(`services.emailManagement.sales.block2.text`)
+          },
+          {
+            icon: require('@/assets/images/services/email_management/sales/3.png'),
+            title: this.$t(`services.emailManagement.sales.block3.title`),
+            text: this.$t(`services.emailManagement.sales.block3.text`)
+          },
+        ]
+      };
+    }
   }
 
   export default EmailManagement;

@@ -52,40 +52,46 @@
     }
   })
   class SocialWebcare extends Vue {
-    coverData = {
-      cover: require('@/assets/images/services/social_webcare/cover.png'),
-      mask: require('@/assets/images/services/social_webcare/mask.png'),
-      title: this.$t(`services.socialWebcare.cover.title`),
-      subtitle: this.$t(`services.socialWebcare.cover.subtitle`),
-      cta: this.$t(`services.socialWebcare.cover.cta`),
-    };
+    get coverData() {
+      return  {
+        cover: require('@/assets/images/services/social_webcare/cover.png'),
+        mask: require('@/assets/images/services/social_webcare/mask.png'),
+        title: this.$t(`services.socialWebcare.cover.title`),
+        subtitle: this.$t(`services.socialWebcare.cover.subtitle`),
+        cta: this.$t(`services.socialWebcare.cover.cta`),
+      };
+    }
 
-    informationData = {
-      title: this.$t(`services.socialWebcare.info.title`),
-      text: this.$t(`services.socialWebcare.info.content`),
-      cover: require('@/assets/images/services/social_webcare/info-cover.png'),
-    };
+    get informationData() {
+      return {
+        title: this.$t(`services.socialWebcare.info.title`),
+        text: this.$t(`services.socialWebcare.info.content`),
+        cover: require('@/assets/images/services/social_webcare/info-cover.png'),
+      };
+    }
 
-    salesData = {
-      title: this.$t(`services.telemarketing.info.title`),
-      blocks: [
-        {
-          icon: require('@/assets/images/services/social_webcare/sales/1.png'),
-          title: this.$t(`services.socialWebcare.sales.block1.title`),
-          text: this.$t(`services.socialWebcare.sales.block1.text`)
-        },
-        {
-          icon: require('@/assets/images/services/social_webcare/sales/2.png'),
-          title: this.$t(`services.socialWebcare.sales.block2.title`),
-          text: this.$t(`services.socialWebcare.sales.block2.text`)
-        },
-        {
-          icon: require('@/assets/images/services/social_webcare/sales/3.png'),
-          title: this.$t(`services.socialWebcare.sales.block3.title`),
-          text: this.$t(`services.socialWebcare.sales.block3.text`)
-        },
-      ]
-    };
+    get salesData() {
+      return {
+        title: this.$t(`services.telemarketing.info.title`),
+        blocks: [
+          {
+            icon: require('@/assets/images/services/social_webcare/sales/1.png'),
+            title: this.$t(`services.socialWebcare.sales.block1.title`),
+            text: this.$t(`services.socialWebcare.sales.block1.text`)
+          },
+          {
+            icon: require('@/assets/images/services/social_webcare/sales/2.png'),
+            title: this.$t(`services.socialWebcare.sales.block2.title`),
+            text: this.$t(`services.socialWebcare.sales.block2.text`)
+          },
+          {
+            icon: require('@/assets/images/services/social_webcare/sales/3.png'),
+            title: this.$t(`services.socialWebcare.sales.block3.title`),
+            text: this.$t(`services.socialWebcare.sales.block3.text`)
+          },
+        ]
+      };
+    }
 
   }
 

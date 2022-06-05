@@ -52,40 +52,46 @@
   })
   class AnsweringService extends Vue {
 
-    coverData = {
-      cover: require('@/assets/images/services/answering_service/cover.png'),
-      mask: require('@/assets/images/services/answering_service/mask.png'),
-      title: this.$t(`services.answeringService.cover.title`),
-      subtitle: this.$t(`services.answeringService.cover.subtitle`),
-      cta: this.$t(`services.answeringService.cover.cta`),
-    };
+    get coverData(){
+      return {
+        cover: require('@/assets/images/services/answering_service/cover.png'),
+        mask: require('@/assets/images/services/answering_service/mask.png'),
+        title: this.$t(`services.answeringService.cover.title`),
+        subtitle: this.$t(`services.answeringService.cover.subtitle`),
+        cta: this.$t(`services.answeringService.cover.cta`),
+      };
+    }
 
-    informationData = {
-      title: this.$t(`services.answeringService.info.title`),
-      text: this.$t(`services.answeringService.info.content`),
-      cover: require('@/assets/images/services/answering_service/info-cover.png'),
-    };
+    get informationData(){
+      return {
+        title: this.$t(`services.answeringService.info.title`),
+        text: this.$t(`services.answeringService.info.content`),
+        cover: require('@/assets/images/services/answering_service/info-cover.png'),
+      };
+    }
 
-    salesData = {
-      title: this.$t(`services.answeringService.info.title`),
-      blocks: [
-        {
-          icon: require('@/assets/images/services/answering_service/sales/1.png'),
-          title: this.$t(`services.answeringService.sales.block1.title`),
-          text: this.$t(`services.answeringService.sales.block1.text`)
-        },
-        {
-          icon: require('@/assets/images/services/answering_service/sales/2.png'),
-          title: this.$t(`services.answeringService.sales.block2.title`),
-          text: this.$t(`services.answeringService.sales.block2.text`)
-        },
-        {
-          icon: require('@/assets/images/services/answering_service/sales/3.png'),
-          title: this.$t(`services.answeringService.sales.block3.title`),
-          text: this.$t(`services.answeringService.sales.block3.text`)
-        },
-      ]
-    };
+    get salesData() {
+      return {
+        title: this.$t(`services.answeringService.info.title`),
+        blocks: [
+          {
+            icon: require('@/assets/images/services/answering_service/sales/1.png'),
+            title: this.$t(`services.answeringService.sales.block1.title`),
+            text: this.$t(`services.answeringService.sales.block1.text`)
+          },
+          {
+            icon: require('@/assets/images/services/answering_service/sales/2.png'),
+            title: this.$t(`services.answeringService.sales.block2.title`),
+            text: this.$t(`services.answeringService.sales.block2.text`)
+          },
+          {
+            icon: require('@/assets/images/services/answering_service/sales/3.png'),
+            title: this.$t(`services.answeringService.sales.block3.title`),
+            text: this.$t(`services.answeringService.sales.block3.text`)
+          },
+        ]
+      };
+    }
 
   }
 

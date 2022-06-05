@@ -48,39 +48,45 @@
     }
   })
   class Telemarketing extends Vue {
-    coverData = {
-      cover: require('@/assets/images/services/b2b_telemarketing/cover.png'),
-      mask: require('@/assets/images/services/b2b_telemarketing/mask.png'),
-      title: this.$t(`services.telemarketing.cover.title`),
-      subtitle: this.$t(`services.telemarketing.cover.subtitle`),
-      cta: this.$t(`services.telemarketing.cover.cta`),
-    };
-
-    informationData = {
-      title: this.$t(`services.telemarketing.info.title`),
-      text: this.$t(`services.telemarketing.info.content`),
-      cover: require('@/assets/images/services/b2b_telemarketing/info-cover.png'),
+    get coverData() {
+      return  {
+        cover: require('@/assets/images/services/b2b_telemarketing/cover.png'),
+        mask: require('@/assets/images/services/b2b_telemarketing/mask.png'),
+        title: this.$t(`services.telemarketing.cover.title`),
+        subtitle: this.$t(`services.telemarketing.cover.subtitle`),
+        cta: this.$t(`services.telemarketing.cover.cta`),
+      };
     }
 
-    salesData = {
-      title: this.$t(`services.telemarketing.info.title`),
-      blocks: [
-        {
-          icon: require('@/assets/images/services/b2b_telemarketing/sales/1.png'),
-          title: this.$t(`services.telemarketing.sales.block1.title`),
-          text: this.$t(`services.telemarketing.sales.block1.text`)
-        },
-        {
-          icon: require('@/assets/images/services/b2b_telemarketing/sales/2.png'),
-          title: this.$t(`services.telemarketing.sales.block2.title`),
-          text: this.$t(`services.telemarketing.sales.block2.text`)
-        },
-        {
-          icon: require('@/assets/images/services/b2b_telemarketing/sales/3.png'),
-          title: this.$t(`services.telemarketing.sales.block3.title`),
-          text: this.$t(`services.telemarketing.sales.block3.text`)
-        },
-      ]
+    get informationData() {
+      return {
+        title: this.$t(`services.telemarketing.info.title`),
+        text: this.$t(`services.telemarketing.info.content`),
+        cover: require('@/assets/images/services/b2b_telemarketing/info-cover.png'),
+      }
+    }
+
+     get salesData() {
+      return {
+        title: this.$t(`services.telemarketing.info.title`),
+        blocks: [
+          {
+            icon: require('@/assets/images/services/b2b_telemarketing/sales/1.png'),
+            title: this.$t(`services.telemarketing.sales.block1.title`),
+            text: this.$t(`services.telemarketing.sales.block1.text`)
+          },
+          {
+            icon: require('@/assets/images/services/b2b_telemarketing/sales/2.png'),
+            title: this.$t(`services.telemarketing.sales.block2.title`),
+            text: this.$t(`services.telemarketing.sales.block2.text`)
+          },
+          {
+            icon: require('@/assets/images/services/b2b_telemarketing/sales/3.png'),
+            title: this.$t(`services.telemarketing.sales.block3.title`),
+            text: this.$t(`services.telemarketing.sales.block3.text`)
+          },
+        ]
+      }
     }
 
   }

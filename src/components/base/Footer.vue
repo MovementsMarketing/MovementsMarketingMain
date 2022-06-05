@@ -1,74 +1,191 @@
 <template>
-  <div class="footer footer--movements p-0">
-    <div class="footer__links ">
-      <div class="columns">
-        <div class="column is-3">
-          <router-link to="/#about">
-            {{ $t(`navigation.about`) }}
-          </router-link>
+  <div class="footer footer--movements">
+    <div class="columns is-multiline">
+
+      <div class="column is-4 footer__impressum">
+        <div class="block block--impressum">
+          <span class="block__title">
+            Impressum
+          </span>
+          <span class="is-block">
+            Movements Marketing
+          </span>
+          <span class="is-block">
+            Tel. +31 85 210 37 55
+          </span>
+          <span class="is-block">
+            E-Mail: info@movementsmarketing.com
+          </span>
         </div>
-        <div class="column is-3">
-          <router-link to="/#outbound">
-            {{ $t(`navigation.services`) }}
-          </router-link>
+        <div class="block block--impressum">
+          <span class="block__title">
+            Registered offices
+          </span>
+          <span class="is-block">
+            Sarajevo, Utrecht, Istanbul
+          </span>
         </div>
-        <div class="column is-3">
-          <router-link to="/careers">
-            {{ $t(`navigation.career`) }}
-          </router-link>
+        <div class="block block--impressum">
+          <span class="block__title">
+            Managing director
+          </span>
+          <span class="is-block">
+            Mirza Ćuk
+          </span>
         </div>
-        <div class="column is-3">
-          <router-link to="/#contact">
-            {{ $t(`navigation.contact`) }}
-          </router-link>
+
+      </div>
+
+      <div class="column is-4 footer__links">
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <router-link to="/#about">
+              {{ $t(`navigation.about`) }}
+            </router-link>
+          </div>
+          <div class="column is-12">
+            <router-link to="/#outbound">
+              {{ $t(`navigation.services`) }}
+            </router-link>
+          </div>
+          <div class="column is-12">
+            <router-link to="/careers">
+              {{ $t(`navigation.career`) }}
+            </router-link>
+          </div>
+          <div class="column is-12">
+            <router-link to="/#clients">
+              {{ $t(`navigation.clients`) }}
+            </router-link>
+          </div>
+          <div class="column is-12">
+            <router-link to="/#contact">
+              {{ $t(`navigation.contact`) }}
+            </router-link>
+          </div>
+          <div class="column is-12">
+            <a href="">
+              Privacy Policy
+            </a>
+          </div>
         </div>
-<!--        <div class="column is-2">-->
-<!--          <router-link to="/">-->
+
+      </div>
+
+      <div class="column is-4 footer__contact">
+        <div class="footer__icons">
+          <div class="columns m-0">
+            <div class="column is-3">
+              <a href="https://www.linkedin.com/company/movements-marketing/" target="_blank">
+                <div class="footer__icon">
+                  <icons icon="linkedin" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+                </div>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="https://www.facebook.com/Movements.Marketing" target="_blank">
+                <div class="footer__icon">
+                  <icons icon="facebook" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+                </div>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="https://www.instagram.com/movementsmarketing" target="_blank">
+                <div class="footer__icon">
+                  <icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+                </div>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="https://youtube.com/channel/UCAAdAaaSGa_LDaZu5jS-77A" target="_blank">
+                <div class="footer__icon">
+                  <icons icon="youtube" view-box="0 0 100 100" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__mail">
+          info@movementsmarketing.com
+        </div>
+      </div>
+
+      <div class="column is-12 footer__copyright">
+        <div class="">
+          © 2022 Movements Marketing Inc. All Rights Reserved
+        </div>
+      </div>
+    </div>
+<!--    <div class="footer__links ">-->
+<!--      <div class="columns">-->
+<!--        <div class="column is-3">-->
+<!--          <router-link to="/#about">-->
 <!--            {{ $t(`navigation.about`) }}-->
 <!--          </router-link>-->
 <!--        </div>-->
-      </div>
-    </div>
-    <div class="footer__icons">
-      <div class="columns m-0">
-        <div class="column is-3">
-          <a href="https://www.linkedin.com/company/movements-marketing/" target="_blank">
-            <div class="footer__icon">
-              <icons icon="linkedin" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
-            </div>
-          </a>
-        </div>
-        <div class="column is-3">
-          <a href="https://www.facebook.com/Movements.Marketing" target="_blank">
-            <div class="footer__icon">
-              <icons icon="facebook" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
-            </div>
-          </a>
-        </div>
-        <div class="column is-3">
-          <a href="https://www.instagram.com/movementsmarketing" target="_blank">
-            <div class="footer__icon">
-              <icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
-            </div>
-          </a>
-        </div>
-        <div class="column is-3">
-          <a href="https://youtube.com/channel/UCAAdAaaSGa_LDaZu5jS-77A" target="_blank">
-            <div class="footer__icon">
-              <icons icon="youtube" view-box="0 0 100 100" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+<!--        <div class="column is-3">-->
+<!--          <router-link to="/#outbound">-->
+<!--            {{ $t(`navigation.services`) }}-->
+<!--          </router-link>-->
+<!--        </div>-->
+<!--        <div class="column is-3">-->
+<!--          <router-link to="/careers">-->
+<!--            {{ $t(`navigation.career`) }}-->
+<!--          </router-link>-->
+<!--        </div>-->
+<!--        <div class="column is-3">-->
+<!--          <router-link to="/#clients">-->
+<!--            {{ $t(`navigation.clients`) }}-->
+<!--          </router-link>-->
+<!--        </div>-->
+<!--        <div class="column is-3">-->
+<!--          <router-link to="/#contact">-->
+<!--            {{ $t(`navigation.contact`) }}-->
+<!--          </router-link>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="footer__icons">-->
+<!--      <div class="columns m-0">-->
+<!--        <div class="column is-3">-->
+<!--          <a href="https://www.linkedin.com/company/movements-marketing/" target="_blank">-->
+<!--            <div class="footer__icon">-->
+<!--              <icons icon="linkedin" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>-->
+<!--            </div>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="column is-3">-->
+<!--          <a href="https://www.facebook.com/Movements.Marketing" target="_blank">-->
+<!--            <div class="footer__icon">-->
+<!--              <icons icon="facebook" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>-->
+<!--            </div>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="column is-3">-->
+<!--          <a href="https://www.instagram.com/movementsmarketing" target="_blank">-->
+<!--            <div class="footer__icon">-->
+<!--              <icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>-->
+<!--            </div>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="column is-3">-->
+<!--          <a href="https://youtube.com/channel/UCAAdAaaSGa_LDaZu5jS-77A" target="_blank">-->
+<!--            <div class="footer__icon">-->
+<!--              <icons icon="youtube" view-box="0 0 100 100" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>-->
+<!--            </div>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div class="footer__mail">
-      info@movementsmarketing.com
-    </div>
+<!--    <div class="footer__mail">-->
+<!--      info@movementsmarketing.com-->
+<!--    </div>-->
 
-    <div class="footer__copyright">
-      © 2022 Movements Marketing Inc. All Rights Reserved
-    </div>
+<!--    <div class="footer__copyright">-->
+<!--      © 2022 Movements Marketing Inc. All Rights Reserved-->
+<!--    </div>-->
   </div>
 </template>
 
@@ -88,12 +205,33 @@
 <style lang="scss">
 
   .footer.footer--movements {
-    height: 300px;
+    padding: 20px 20px 10px 20px;
     background: #186267;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    .footer__contact,
+    .footer__impressum {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer__impressum {
+      .block {
+        color: #fff;
+
+        .block__title {
+          color: #9FF882;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 800;
+        }
+      }
+    }
 
     .footer__links {
       a {
@@ -130,6 +268,7 @@
     .footer__copyright {
       color: #fff;
       font-size: 12px;
+      border-top: 1px solid #fff;
     }
     }
 

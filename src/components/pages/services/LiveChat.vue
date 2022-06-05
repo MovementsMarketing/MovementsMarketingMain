@@ -56,40 +56,46 @@
   })
   class LiveChat extends Vue {
 
-    coverData = {
-      cover: require('@/assets/images/services/live_chat/cover.png'),
-      mask: require('@/assets/images/services/live_chat/mask.png'),
-      title: this.$t(`services.liveChat.cover.title`),
-      subtitle: this.$t(`services.liveChat.cover.subtitle`),
-      cta: this.$t(`services.liveChat.cover.cta`),
-    };
+    get coverData() {
+      return {
+        cover: require('@/assets/images/services/live_chat/cover.png'),
+        mask: require('@/assets/images/services/live_chat/mask.png'),
+        title: this.$t(`services.liveChat.cover.title`),
+        subtitle: this.$t(`services.liveChat.cover.subtitle`),
+        cta: this.$t(`services.liveChat.cover.cta`),
+      };
+    }
 
-    informationData = {
-      title: this.$t(`services.liveChat.info.title`),
-      text: this.$t(`services.liveChat.info.content`),
-      cover: require('@/assets/images/services/live_chat/info-cover.png'),
-    };
+    get informationData() {
+      return {
+        title: this.$t(`services.liveChat.info.title`),
+        text: this.$t(`services.liveChat.info.content`),
+        cover: require('@/assets/images/services/live_chat/info-cover.png'),
+      };
+    }
 
-    salesData = {
-      title: this.$t(`services.liveChat.info.title`),
-      blocks: [
-        {
-          icon: require('@/assets/images/services/live_chat/sales/1.png'),
-          title: this.$t(`services.liveChat.sales.block1.title`),
-          text: this.$t(`services.liveChat.sales.block1.text`)
-        },
-        {
-          icon: require('@/assets/images/services/live_chat/sales/2.png'),
-          title: this.$t(`services.liveChat.sales.block2.title`),
-          text: this.$t(`services.liveChat.sales.block2.text`)
-        },
-        {
-          icon: require('@/assets/images/services/live_chat/sales/3.png'),
-          title: this.$t(`services.liveChat.sales.block3.title`),
-          text: this.$t(`services.liveChat.sales.block3.text`)
-        },
-      ]
-    };
+    get salesData()  {
+      return {
+        title: this.$t(`services.liveChat.info.title`),
+        blocks: [
+          {
+            icon: require('@/assets/images/services/live_chat/sales/1.png'),
+            title: this.$t(`services.liveChat.sales.block1.title`),
+            text: this.$t(`services.liveChat.sales.block1.text`)
+          },
+          {
+            icon: require('@/assets/images/services/live_chat/sales/2.png'),
+            title: this.$t(`services.liveChat.sales.block2.title`),
+            text: this.$t(`services.liveChat.sales.block2.text`)
+          },
+          {
+            icon: require('@/assets/images/services/live_chat/sales/3.png'),
+            title: this.$t(`services.liveChat.sales.block3.title`),
+            text: this.$t(`services.liveChat.sales.block3.text`)
+          },
+        ]
+      };
+    }
   }
 
   export default LiveChat;
