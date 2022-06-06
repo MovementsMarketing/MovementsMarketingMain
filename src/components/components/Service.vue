@@ -103,6 +103,12 @@
       left: 45%;
       top: 35px;
 
+      @media screen and (max-width: 768px) {
+        width: auto;
+        right: -5%;
+        left: unset;
+      }
+
       img {
         filter: grayscale(1);
       }

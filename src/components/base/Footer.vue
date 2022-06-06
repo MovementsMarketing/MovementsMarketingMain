@@ -74,7 +74,7 @@
 
       <div class="column is-4 footer__contact">
         <div class="footer__icons">
-          <div class="columns m-0">
+          <div class="columns m-0 is-mobile">
             <div class="column is-3">
               <a href="https://www.linkedin.com/company/movements-marketing/" target="_blank">
                 <div class="footer__icon">

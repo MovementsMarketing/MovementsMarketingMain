@@ -146,6 +146,15 @@
             top:12px;
             left:0;
 
+          //@media screen and (max-width: 768px) {
+          //  position: relative;
+          //  justify-content: flex-end;
+          //  display: flex;
+          //  flex-direction: column-reverse;
+          //  position: absolute;
+          //  margin: 0;
+          //}
+
           .slide__text {
             height: 100%;
             text-align: justify;
@@ -164,9 +173,13 @@
                 padding-left: 220px;
               }
 
-              @media (min-resolution: 1024px) {
+              @media screen and (max-width: 1024px) {
                 padding-left: 80px;
                 padding-right: 80px;
+              }
+
+              @media screen and (max-width: 768px) {
+                position: relative;
               }
             }
 

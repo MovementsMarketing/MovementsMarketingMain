@@ -63,7 +63,7 @@
                           </p>
                         </router-link>
                         <div class="list" @click="isServicesActive = !isServicesActive">
-                          <router-link to="/">
+                          <router-link to="/service/b2b-telemarketing">
                             {{ $t(`navigation.servicesOptions.telemarketing`) }}
                           </router-link>
                         </div>
@@ -78,25 +78,25 @@
 
                       </div>
                       <div class="text">
-                        <router-link to="#inbound">
+                        <router-link to="/#inbound">
                           <p class="title" @click="isServicesActive = !isServicesActive">
                             {{ $t(`navigation.servicesOptions.inbound`) }}
                           </p>
                         </router-link>
                         <div class="list" @click="isServicesActive = !isServicesActive">
-                          <router-link to="/">
+                          <router-link to="/service/customer-service">
                             {{ $t(`navigation.servicesOptions.customerService`) }}
                           </router-link>
-                          <router-link to="/">
+                          <router-link to="/service/answering-service">
                             {{ $t(`navigation.servicesOptions.answeringService`) }}
                           </router-link>
-                          <router-link to="/">
+                          <router-link to="/service/live-chat">
                             {{ $t(`navigation.servicesOptions.liveChat`) }}
                           </router-link>
-                          <router-link to="/">
+                          <router-link to="/service/email-management">
                             {{ $t(`navigation.servicesOptions.emailManagement`) }}
                           </router-link>
-                          <router-link to="/">
+                          <router-link to="/service/social-webcare">
                             {{ $t(`navigation.servicesOptions.socialWebcare`) }}
                           </router-link>
                         </div>
@@ -580,6 +580,12 @@
 
           &.is-active {
             transform: translateX(0%);
+            height: 100vh;
+            background: rgba(255, 255, 255, 1);
+
+            .navigation__menu__items{
+              backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+            }
           }
 
           .navigation__menu__items {
@@ -589,7 +595,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            top: 150px;
+            top: 100px;
             padding: 20px 0;
             overflow: auto;
 

@@ -191,11 +191,11 @@
             <div class="contact__title">
                 <h1 v-html="$t(`home.contact.title`)"></h1>
             </div>
-            <div class="columns m-0">
-                <div class="column is-6 p-l-0 p-t-0 p-b-0 lh-0" style="position: relative">
+            <div class="columns m-0 is-multiline contact__columns">
+                <div class="column is-12-tablet is-6-desktop p-0 lh-0" style="position: relative; background: #ffffff;">
                     <img src="@/assets/images/backgrounds/movemens_contact_bg.png"/>
                     <div class="offices">
-                        <div class="columns is-multiline">
+                        <div class="columns is-multiline is-mobile">
                             <div class="column is-4 has-text-left">
                                 <div class="office" :class="activeOfficeIndex === 0 ? 'is-active' : ''" @click="activeOfficeIndex = 0">
                                     <span>
@@ -239,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-6">
+                <div class="column is-12-tablet is-6-desktop">
                     <div class="contact__form">
                         <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field">
                             <input type="hidden" name="form-name" value="ask-question" />
@@ -1143,6 +1143,10 @@
             z-index: 6;
             padding: 50px 0;
 
+          @media screen and (max-width: 1400px){
+            padding-top: 20px;
+          }
+
             h1 {
                 font-size: 72px;
                 line-height: 76px;
@@ -1186,6 +1190,16 @@
             @media (min-resolution: 100dpi) {
                 padding-left: 200px;
             }
+
+          @media screen and (max-width: 1400px){
+            padding-left: 100px;
+            padding-right: 50px;
+          }
+
+          @media screen and (max-width: 1024px){
+            padding-right: 50px;
+            padding-left: 50px;
+          }
 
             .columns {
                 width: 100%;
@@ -1249,7 +1263,26 @@
             @media (min-resolution: 100dpi) {
                 padding-right: 200px;
             }
+
+          @media screen and (max-width: 1400px){
+            padding-right: 100px;
+            padding-left: 50px;
+            padding-top: 150px;
+
+            @media screen and (max-width: 1024px){
+              padding-right: 50px;
+              padding-left: 50px;
+              padding-top: 150px;
+              padding-bottom: 50px;
+            }
+          }
         }
+
+      .contact__columns {
+        @media screen and (max-width: 1024px){
+          flex-direction: column-reverse;
+        }
+      }
     }
 
 
