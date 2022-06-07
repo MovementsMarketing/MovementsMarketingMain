@@ -1147,6 +1147,10 @@
             padding-top: 20px;
           }
 
+          @media screen and (max-width: 768px){
+            position: relative;
+          }
+
             h1 {
                 font-size: 72px;
                 line-height: 76px;
@@ -1158,6 +1162,11 @@
                     font-size: 62px;
                     line-height: 68px;
                 }
+
+              @media screen and (max-width: 460px){
+                font-size: 42px;
+                line-height: 46px;
+              }
 
 
                 .is-highlighted {
@@ -1201,6 +1210,11 @@
             padding-left: 50px;
           }
 
+          @media screen and (max-width: 460px){
+            padding-right: 20px;
+            padding-left: 20px;
+          }
+
             .columns {
                 width: 100%;
 
@@ -1208,6 +1222,22 @@
                     color: #008d90;
                     font-size: 32px;
                     cursor: pointer;
+
+                  @media screen and (max-width: 460px){
+                    font-size: 24px;
+                  }
+
+                  @media screen and (max-width: 340px){
+                    font-size: 22px;
+                  }
+
+                  @media screen and (max-width: 320px){
+                    font-size: 20px;
+                  }
+
+                  @media screen and (max-width: 300px){
+                    font-size: 18px;
+                  }
 
                     span {
                         position: relative;
@@ -1239,12 +1269,20 @@
                     box-shadow: 1px 1px 12px rgb(0 0 0 / 20%);
                     padding: 20px 40px;
 
+                  @media screen and (max-width: 460px){
+                    padding: 10px 20px;
+                  }
+
                     p {
                         color: #008d90;
                         font-weight: 600;
                         font-size: 15px;
                         line-height: 28px;
                         text-align: left;
+
+                      @media screen and (max-width: 460px){
+                        font-size: 13px;
+                      }
                     }
                 }
             }
@@ -1275,12 +1313,24 @@
               padding-top: 150px;
               padding-bottom: 50px;
             }
+
+            @media screen and (max-width: 768px){
+              padding: 20px;
+
+              form {
+                width: 100%;
+              }
+            }
           }
         }
 
       .contact__columns {
         @media screen and (max-width: 1024px){
           flex-direction: column-reverse;
+        }
+
+        @media screen and (max-width: 768px){
+          display: flex;
         }
       }
     }

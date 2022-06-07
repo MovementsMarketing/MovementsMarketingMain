@@ -117,75 +117,6 @@
         </div>
       </div>
     </div>
-<!--    <div class="footer__links ">-->
-<!--      <div class="columns">-->
-<!--        <div class="column is-3">-->
-<!--          <router-link to="/#about">-->
-<!--            {{ $t(`navigation.about`) }}-->
-<!--          </router-link>-->
-<!--        </div>-->
-<!--        <div class="column is-3">-->
-<!--          <router-link to="/#outbound">-->
-<!--            {{ $t(`navigation.services`) }}-->
-<!--          </router-link>-->
-<!--        </div>-->
-<!--        <div class="column is-3">-->
-<!--          <router-link to="/careers">-->
-<!--            {{ $t(`navigation.career`) }}-->
-<!--          </router-link>-->
-<!--        </div>-->
-<!--        <div class="column is-3">-->
-<!--          <router-link to="/#clients">-->
-<!--            {{ $t(`navigation.clients`) }}-->
-<!--          </router-link>-->
-<!--        </div>-->
-<!--        <div class="column is-3">-->
-<!--          <router-link to="/#contact">-->
-<!--            {{ $t(`navigation.contact`) }}-->
-<!--          </router-link>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="footer__icons">-->
-<!--      <div class="columns m-0">-->
-<!--        <div class="column is-3">-->
-<!--          <a href="https://www.linkedin.com/company/movements-marketing/" target="_blank">-->
-<!--            <div class="footer__icon">-->
-<!--              <icons icon="linkedin" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>-->
-<!--            </div>-->
-<!--          </a>-->
-<!--        </div>-->
-<!--        <div class="column is-3">-->
-<!--          <a href="https://www.facebook.com/Movements.Marketing" target="_blank">-->
-<!--            <div class="footer__icon">-->
-<!--              <icons icon="facebook" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>-->
-<!--            </div>-->
-<!--          </a>-->
-<!--        </div>-->
-<!--        <div class="column is-3">-->
-<!--          <a href="https://www.instagram.com/movementsmarketing" target="_blank">-->
-<!--            <div class="footer__icon">-->
-<!--              <icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>-->
-<!--            </div>-->
-<!--          </a>-->
-<!--        </div>-->
-<!--        <div class="column is-3">-->
-<!--          <a href="https://youtube.com/channel/UCAAdAaaSGa_LDaZu5jS-77A" target="_blank">-->
-<!--            <div class="footer__icon">-->
-<!--              <icons icon="youtube" view-box="0 0 100 100" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>-->
-<!--            </div>-->
-<!--          </a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--    <div class="footer__mail">-->
-<!--      info@movementsmarketing.com-->
-<!--    </div>-->
-
-<!--    <div class="footer__copyright">-->
-<!--      © 2022 Movements Marketing Inc. All Rights Reserved-->
-<!--    </div>-->
   </div>
 </template>
 
@@ -230,6 +161,10 @@
           font-size: 12px;
           font-weight: 800;
         }
+      }
+
+      @media screen and (max-width: 768px) {
+        border-bottom: 1px solid #ffffff;
       }
     }
 
