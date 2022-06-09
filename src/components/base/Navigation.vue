@@ -289,6 +289,7 @@
 
         @Watch('isMobileActive')
         onMobileActive(isActive: boolean) {
+          console.log('change', isActive)
           if (isActive) {
             document.documentElement.style.overflow = "hidden";
             return;
@@ -323,6 +324,8 @@
 
         created(): void {
           window.addEventListener("scroll", this.onScroll);
+          document.documentElement.style.overflow = "auto";
+
         }
 
       beforeDestroy() {
@@ -585,6 +588,7 @@
 
             .navigation__menu__items{
               backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+              background: #ffffff;
             }
           }
 

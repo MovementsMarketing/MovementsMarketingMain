@@ -10,9 +10,9 @@
         <h2  v-html="$t(`home.clients.ourClients`)"></h2>
       </div>
 
-        <div class="columns is-multiline slide__content">
+        <div class="columns is-multiline slide__content m-r-0 m-l-0">
             <div
-                class="column p-0 is-6"
+                class="column p-0 is-12-tablet is-6-desktop slide__text-column"
                 :style="`background-image: url('${glassMask}'); backdrop-filter: blur(5.6px); -webkit-backdrop-filter: blur(5.6px);`"
             >
               <div class="slide__text">
@@ -30,7 +30,6 @@
                 </div>
               </div>
             </div>
-          <div class="column p-0 is-6"></div>
         </div>
       <div class="slider__nav-wrapper">
         <div :style="this.currentNumber > 0 ? 'opacity: 1' : 'opacity: 0'" class="slider__nav slider__nav--prev" @click="previousSlide">
@@ -111,6 +110,12 @@
 
         .slide__image {
           flex: none;
+
+          img {
+            @media screen and (max-width: 768px) {
+              width: 100vw;
+            }
+          }
         }
       }
 
@@ -125,6 +130,7 @@
           position: relative;
           color: #fff;
           font-weight: 800;
+          text-shadow: 1px 1px 2px #909090;
 
           &::after {
             content: '';
@@ -146,19 +152,33 @@
             top:12px;
             left:0;
 
-          //@media screen and (max-width: 768px) {
-          //  position: relative;
-          //  justify-content: flex-end;
-          //  display: flex;
-          //  flex-direction: column-reverse;
-          //  position: absolute;
-          //  margin: 0;
-          //}
+          @media screen and (max-width: 768px) {
+            position: relative;
+            background: #186267;
+          }
+
+          .slide__text-column {
+            @media screen and (max-width: 768px) {
+              position: relative;
+            }
+
+            @media screen and (max-width: 420px) {
+              background: none !important;
+            }
+          }
 
           .slide__text {
             height: 100%;
             text-align: justify;
             position: relative;
+
+            @media screen and (max-width: 768px) {
+              padding: 50px 100px;
+            }
+
+            @media screen and (max-width: 420px) {
+              padding: 40px 40px 100px;
+            }
 
             >div {
               position: absolute;
@@ -173,6 +193,10 @@
                 padding-left: 220px;
               }
 
+              @media screen and (max-width: 1400px) {
+                padding-left: 100px;
+              }
+
               @media screen and (max-width: 1024px) {
                 padding-left: 80px;
                 padding-right: 80px;
@@ -180,12 +204,20 @@
 
               @media screen and (max-width: 768px) {
                 position: relative;
+                padding: 0;
               }
             }
 
             .logo {
               max-width: 50%;
               margin-bottom: 40px;
+
+              @media screen and (max-width: 420px) {
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
             }
 
             p {
@@ -205,6 +237,11 @@
     right: 120px;
     bottom: 100px;
 
+    @media screen and (max-width: 768px) {
+      right: 20px;
+      bottom: 20px;
+    }
+
     .slider__nav {
       width: 45px;
       height: 45px;
@@ -216,6 +253,11 @@
       z-index: 5;
       position: relative;
       cursor: pointer;
+
+      @media screen and (max-width: 768px) {
+        width: 40px;
+        height: 40px;
+      }
 
       &:hover {
         background: #9FF882;

@@ -71,6 +71,29 @@
         @media (min-resolution: 100dpi) {
           font-size: 78px;
         }
+        @media screen  and (max-width: 1024px) {
+          font-size: 72px;
+          line-height: 78px;
+          margin-top: 40px;
+          margin-bottom: 60px;
+        }
+
+        @media screen  and (max-width: 768px) {
+          font-size: 46px;
+          line-height: 42px;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        @media screen  and (max-width: 460px) {
+          font-size: 36px;
+          line-height: 32px;
+        }
+
+        @media screen  and (max-width: 320px) {
+          font-size: 32px;
+          line-height: 32px;
+        }
 
         .is-highlighted {
           display: block;
@@ -88,6 +111,23 @@
 
         @media (min-resolution: 100dpi) {
           font-size: 54px;
+        }
+
+        @media screen  and (max-width: 1024px) {
+          font-size: 36px;
+          line-height: 42px;
+          margin-bottom: 50px;
+        }
+
+        @media screen  and (max-width: 768px) {
+          font-size: 24px;
+          line-height: 20px;
+        }
+
+        @media screen  and (max-width: 460px) {
+          font-size: 20px;
+          line-height: 18px;
+          margin-bottom: 25px;
         }
       }
 
@@ -111,8 +151,30 @@
     .services-cover {
       position: relative;
 
+      .services-cover__image {
+        @media screen  and (max-width: 1300px) {
+          img {
+            height: 100%;
+            max-width: unset;
+          }
+        }
+
+        @media screen  and (max-width: 768px) {
+          img {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+      }
+
       .services-cover__mask {
         position: absolute;
+
+        @media screen  and (max-width: 460px) {
+          img {
+            max-width: 70%;
+          }
+        }
       }
     }
 

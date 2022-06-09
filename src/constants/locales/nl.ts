@@ -1,11 +1,11 @@
 const nl = {
   navigation: {
-    about: 'Over',
+    about: 'Over ons',
     services: 'Diensten',
     clients: 'Klanten',
-    career: 'Vacatures',
+    career: 'Careers',
     contact: 'Contact',
-    contactUs: 'Contact Ons!',
+    contactUs: 'Contact ons!',
     linkedInBlogs: 'LinkedIn Blogs',
     servicesOptions: {
       outbound: 'Outbound Lead Generation',
@@ -65,11 +65,11 @@ const nl = {
     },
     clients: {
       ourClients: 'Onze <span class="is-highlighted">klanten</span>',
-      shypple: {
-        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit'
+      scorito: {
+        text: 'Scorito is in Europa hét nummer 1 platform in fantasy sports. Het telt inmiddels meer dan 1 miljoen unieke spelers. Scorito heeft Movements Marketing ingezet om een internationale boost te genereren en om naast Nederland, ook in Belgie en Duitsland voor naamsbekendheid te zorgen. Het meertalige team van Movements Marketing is van toegevoegde waarde geweest voor Scorito door het genereren van leads, het onboarden van nieuwe klanten en het bieden van multichannel klantenservice. Oftewel: we zijn volledig ontzorgt. Movements Marketing weet een persoonlijke band te creëren met haar relaties en maatwerk te leveren met behoud van de gewenste kwaliteit.',
       },
-      client: {
-        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`,
+      dak: {
+        text: 'DAK is de grootste coöperatie van en voor assurantie- en hypotheekadviseurs. Wij zorgen voor professionele ondersteuning en geven advieskantoren toegang tot vrijwel de volledige financiële markt. De samenwerking met Movements Marketing startte tijdens de lancering van DAK Autolease. Met de introductie van deze nieuwe dienst zagen wij een kans om meer kantoren te werven. Dit is gelukt dankzij een effectieve samenwerking tussen ons salesteam en de mensen van Movements Marketing. Inmiddels werken we al vier jaar samen en pakken ze naast outbound activiteiten ook inbound werkzaamheden voor ons op. Wij bevelen Movements Marketing aan vanwege hun persoonlijke inzet, korte lijnen en goede resultaten.',
       },
     },
     telemarketers: 'Deze telemarketeers <span class="is-highlighted">boosten jouw business</span>',

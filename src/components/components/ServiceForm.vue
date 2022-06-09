@@ -96,6 +96,15 @@
       z-index: 6;
       padding: 50px 0;
 
+      @media screen  and (max-width: 1024px) {
+        padding: 40px 0;
+
+      }
+
+      @media screen  and (max-width: 768px) {
+        padding: 20px 0;
+      }
+
       h1 {
         font-size: 68px;
         line-height: 72px;
@@ -109,6 +118,29 @@
           line-height: 62px;
         }
 
+        @media screen  and (max-width: 1024px) {
+          font-size: 72px;
+          line-height: 78px;
+          margin-top: 40px;
+          margin-bottom: 60px;
+        }
+
+        @media screen  and (max-width: 768px) {
+          font-size: 46px;
+          line-height: 42px;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        @media screen  and (max-width: 460px) {
+          font-size: 36px;
+          line-height: 32px;
+        }
+
+        @media screen  and (max-width: 320px) {
+          font-size: 32px;
+          line-height: 32px;
+        }
 
         .is-highlighted {
           font-weight: 800;
@@ -139,6 +171,11 @@
 
       p {
         font-size: 14px;
+        @media screen  and (max-width: 768px) {
+          font-size: 10px;
+          line-height: 12px;
+        }
+
       }
     }
 

@@ -26,39 +26,34 @@
           </span>
         </div>
         <div class="block block--impressum">
-          <span class="block__title">
-            Managing director
-          </span>
-          <span class="is-block">
-            Mirza Ćuk
-          </span>
+          <img src="@/assets/images/movements-marketing-logo-white.png"/>
         </div>
 
       </div>
 
       <div class="column is-4 footer__links">
         <div class="columns is-multiline">
-          <div class="column is-12">
+          <div class="column is-12 p-b-0">
             <router-link to="/#about">
               {{ $t(`navigation.about`) }}
             </router-link>
           </div>
-          <div class="column is-12">
+          <div class="column is-12 p-b-0">
             <router-link to="/#outbound">
               {{ $t(`navigation.services`) }}
             </router-link>
           </div>
-          <div class="column is-12">
+          <div class="column is-12 p-b-0">
             <router-link to="/careers">
               {{ $t(`navigation.career`) }}
             </router-link>
           </div>
-          <div class="column is-12">
+          <div class="column is-12 p-b-0">
             <router-link to="/#clients">
               {{ $t(`navigation.clients`) }}
             </router-link>
           </div>
-          <div class="column is-12">
+          <div class="column is-12 p-b-0">
             <router-link to="/#contact">
               {{ $t(`navigation.contact`) }}
             </router-link>
@@ -73,41 +68,46 @@
       </div>
 
       <div class="column is-4 footer__contact">
+        <div class="footer__bvmw">
+          We are a member of:
+          <a href="https://www.bvmw.de/?lang=en" target="_blank">
+            <div class="bvmw__img">
+              <img src="@/assets/images/bvmw.png" alt="bvmw">
+            </div>
+          </a>
+        </div>
+
         <div class="footer__icons">
           <div class="columns m-0 is-mobile">
             <div class="column is-3">
               <a href="https://www.linkedin.com/company/movements-marketing/" target="_blank">
                 <div class="footer__icon">
-                  <icons icon="linkedin" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+                  <icons icon="linkedin" stroke="transparent" fill="#9FF882" :width="18" :height="18"/>
                 </div>
               </a>
             </div>
             <div class="column is-3">
               <a href="https://www.facebook.com/Movements.Marketing" target="_blank">
                 <div class="footer__icon">
-                  <icons icon="facebook" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+                  <icons icon="facebook" stroke="transparent" fill="#9FF882" :width="18" :height="18"/>
                 </div>
               </a>
             </div>
             <div class="column is-3">
               <a href="https://www.instagram.com/movementsmarketing" target="_blank">
                 <div class="footer__icon">
-                  <icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+                  <icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#9FF882" :width="18" :height="18"/>
                 </div>
               </a>
             </div>
             <div class="column is-3">
               <a href="https://youtube.com/channel/UCAAdAaaSGa_LDaZu5jS-77A" target="_blank">
                 <div class="footer__icon">
-                  <icons icon="youtube" view-box="0 0 100 100" stroke="transparent" fill="#9FF882" :width="24" :height="24"/>
+                  <icons icon="youtube" view-box="0 0 100 100" stroke="transparent" fill="#9FF882" :width="18" :height="18"/>
                 </div>
               </a>
             </div>
           </div>
-        </div>
-
-        <div class="footer__mail">
-          info@movementsmarketing.com
         </div>
       </div>
 
@@ -145,13 +145,15 @@
 
     .footer__contact,
     .footer__impressum {
-      justify-content: center;
-      align-items: center;
+      justify-content: space-around;
+      align-items: flex-start;
       display: flex;
       flex-direction: column;
     }
 
     .footer__impressum {
+      text-align: left;
+
       .block {
         color: #fff;
 
@@ -161,6 +163,10 @@
           font-size: 12px;
           font-weight: 800;
         }
+
+        img {
+          width: 120px;
+        }
       }
 
       @media screen and (max-width: 768px) {
@@ -169,6 +175,8 @@
     }
 
     .footer__links {
+      text-align: left;
+
       a {
         color: #fff;
         font-size: 18px;
@@ -180,17 +188,33 @@
       }
     }
 
-    .footer__mail {
+    .footer__mail{
       font-size: 18px;
       color: #9FF882;
       font-weight: 900;
+    }
+
+    .footer__bvmw {
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 600;
+
+      .bvmw__img {
+        max-width: 180px;
+        margin-bottom: 30px;
+      }
     }
 
     .footer__icons {
       .footer__icon {
         border: 2px solid #9FF882;
         border-radius: 50%;
-        padding: 10px;
+        padding: 0;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: transform ease 400ms;
         cursor: pointer;
 

@@ -1,11 +1,11 @@
 const de = {
   navigation: {
-    about: 'Über',
+    about: 'Über uns',
     services: 'Dienstleistungen',
     clients: 'Kunden',
-    career: 'Stellenangebote',
+    career: 'Careers',
     contact: 'Kontakt',
-    contactUs: 'Kontaktiere Uns!',
+    contactUs: 'Kontaktiere uns!',
     linkedInBlogs: 'LinkedIn-Blogs',
     servicesOptions: {
       outbound: 'Outbound Lead Generation',
@@ -65,11 +65,11 @@ const de = {
     },
     clients: {
       ourClients: 'Unsere <span class="is-highlighted">Kunden</span>',
-      shypple: {
-        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit'
+      scorito: {
+        text: 'Scorito ist die Nummer-1-Plattform für Fantasy-Sportarten in Europa. Sie hat jetzt mehr als 1 Million einzigartige Spieler. Scorito hat Movements Marketing genutzt, um neben den Niederlanden, Belgien und Deutschland einen internationalen Schub zu generieren und die Markenbekanntheit sicherzustellen. Das mehrsprachige Team von Movements Marketing hat Scorito durch die Generierung von Leads, das Onboarding neuer Kunden und die Bereitstellung von Multichannel-Kundenservice einen deutlichen Mehrwert gebracht. Mit anderen Worten: Wir sind völlig entlastet. Movements Marketing versteht es, eine persönliche Bindung zu seinen Kunden aufzubauen und maßgeschneiderte Lösungen in der gewünschten Qualität zu liefern.',
       },
-      client: {
-        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`,
+      dak: {
+        text: 'Die DAK ist die größte Genossenschaft von und für Versicherungs- und Baufinanzierungsberater. Wir bieten professionelle Unterstützung und verschaffen Beratungsunternehmen Zugang zum nahezu gesamten Finanzmarkt. Die Zusammenarbeit mit Movements Marketing begann während der Einführung von DAK Autolease. Mit der Einführung dieses neuen Dienstes sahen wir eine Gelegenheit, mehr Büros zu rekrutieren. Dies wurde dank einer effektiven Zusammenarbeit zwischen unserem Verkaufsteam und den Leuten von Movements Marketing erreicht. Wir arbeiten nun seit vier Jahren zusammen und sie wickeln für uns neben Outbound-Aktivitäten auch Inbound-Aktivitäten ab. Wir empfehlen Movements Marketing aufgrund des persönlichen Engagements, der kurzen Wege und der guten Ergebnisse.',
       },
     },
     telemarketers: 'Diese Telefonagenten <span class="is-highlighted">steigern Ihr Geschäft</span>',

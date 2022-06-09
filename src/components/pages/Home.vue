@@ -307,16 +307,16 @@
       get clients() {
         return [
           {
-            name: 'Shypple',
-            text: this.$t(`home.clients.shypple.text`),
-            img: require('@/assets/images/clients/shypple_bg.png'),
-            logo: require('@/assets/images/clients/shypple_logo.png'),
-          },
-          {
-            name: 'Client 2',
-            text: this.$t(`home.clients.client.text`),
+            name: 'Scorito',
+            text: this.$t(`home.clients.scorito.text`),
             img: require('@/assets/images/clients/scorito_bg.png'),
             logo: require('@/assets/images/clients/scorito_logo.png'),
+          },
+          {
+            name: 'Dak',
+            text: this.$t(`home.clients.dak.text`),
+            img: require('@/assets/images/clients/dak_bg.png'),
+            logo: require('@/assets/images/clients/dak_logo.png'),
           },
         ];
       }

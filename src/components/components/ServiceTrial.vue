@@ -44,6 +44,10 @@
     background-position: center;
 
     .section__content {
+      @media screen  and (max-width: 768px) {
+        padding: 20px !important;
+      }
+
       h3 {
         color: #fff;
         margin-bottom: 50px;
@@ -52,6 +56,14 @@
         @media (min-resolution: 100dpi) {
           font-size: 42px;
           margin-bottom: 35px;
+        }
+
+        @media screen  and (max-width: 768px) {
+          font-size: 32px;
+        }
+
+        @media screen  and (max-width: 420px) {
+          font-size: 28px;
         }
       }
 

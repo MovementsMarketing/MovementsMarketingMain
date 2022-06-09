@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <router-view/>
-    <cookie-law ref="cookieLaw" v-on:accept="setCookies"></cookie-law>
+    <cookie-law ref="cookieLaw" v-on:accept="setCookies" theme="dark-lime"></cookie-law>
   </div>
 </template>
 
 <script>
 import CookieLaw from 'vue-cookie-law'
-import {Component, Watch} from "vue-property-decorator";
+import {Component} from "vue-property-decorator";
 import Vue from "vue";
 
 @Component({
@@ -16,13 +16,13 @@ import Vue from "vue";
   },
 })
 class App extends Vue {
-  @Watch('currentLanguage')
-  onLangChange(lang) {
-    if(this.$refs.cookieLaw.isAccepted()) {
-      const newLang = { value: lang };
-      this.$cookies.set('language', newLang);
-    }
-  }
+  // @Watch('currentLanguage')
+  // onLangChange(lang) {
+  //   if(this.$refs.cookieLaw.isAccepted()) {
+  //     const newLang = { value: lang };
+  //     this.$cookies.set('language', newLang);
+  //   }
+  // }
 
   get currentLanguage() {
     return this.$i18n.locale;
@@ -30,13 +30,13 @@ class App extends Vue {
 
   setCookies() {
     if (this.$cookies.get('language')) return;
-    const lang = { value: this.$i18n.locale };
-    this.$cookies.set('language', lang);
+    // const lang = { value: this.$i18n.locale };
+    // this.$cookies.set('language', lang);
   }
 
   mounted() {
     if(this.$refs.cookieLaw.isAccepted() && this.$cookies.get('language')) {
-      this.$i18n.locale = this.$cookies.get('language')?.value;
+      //this.$i18n.locale = this.$cookies.get('language')?.value;
     }
   }
 }
