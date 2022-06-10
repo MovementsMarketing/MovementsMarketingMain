@@ -2,8 +2,8 @@
   <div class="footer footer--movements">
     <div class="columns is-multiline">
 
-      <div class="column is-4 footer__impressum">
-        <div class="block block--impressum">
+      <div class="column is-4 is-offset-1-desktop footer__impressum">
+        <div class="block block--impressum m-b-20">
           <span class="block__title">
             Impressum
           </span>
@@ -17,7 +17,7 @@
             E-Mail: info@movementsmarketing.com
           </span>
         </div>
-        <div class="block block--impressum">
+        <div class="block block--impressum m-b-10">
           <span class="block__title">
             Registered offices
           </span>
@@ -31,43 +31,75 @@
 
       </div>
 
-      <div class="column is-4 footer__links">
+      <div class="column is-4-tablet is-2-desktop footer__links">
         <div class="columns is-multiline">
           <div class="column is-12 p-b-0">
             <router-link to="/#about">
               {{ $t(`navigation.about`) }}
             </router-link>
           </div>
-          <div class="column is-12 p-b-0">
+          <div class="column is-12 p-0">
             <router-link to="/#outbound">
               {{ $t(`navigation.services`) }}
             </router-link>
           </div>
-          <div class="column is-12 p-b-0">
+          <div class="column is-12 p-0">
             <router-link to="/careers">
               {{ $t(`navigation.career`) }}
             </router-link>
           </div>
-          <div class="column is-12 p-b-0">
+          <div class="column is-12 p-0">
             <router-link to="/#clients">
               {{ $t(`navigation.clients`) }}
             </router-link>
           </div>
-          <div class="column is-12 p-b-0">
+          <div class="column is-12 p-0">
             <router-link to="/#contact">
               {{ $t(`navigation.contact`) }}
             </router-link>
           </div>
-          <div class="column is-12">
+          <div class="column is-12 p-t-0">
             <a href="">
               Privacy Policy
             </a>
           </div>
         </div>
+        <div class="footer__icons">
+          <div class="columns m-0 is-mobile">
+            <div class="column is-3">
+              <a href="https://www.linkedin.com/company/movements-marketing/" target="_blank">
+                <div class="footer__icon">
+                  <icons icon="linkedin" stroke="transparent" fill="#9FF882" :width="14" :height="14"/>
+                </div>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="https://www.facebook.com/Movements.Marketing" target="_blank">
+                <div class="footer__icon">
+                  <icons icon="facebook" stroke="transparent" fill="#9FF882" :width="14" :height="14"/>
+                </div>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="https://www.instagram.com/movementsmarketing" target="_blank">
+                <div class="footer__icon">
+                  <icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#9FF882" :width="14" :height="14"/>
+                </div>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="https://youtube.com/channel/UCAAdAaaSGa_LDaZu5jS-77A" target="_blank">
+                <div class="footer__icon">
+                  <icons icon="youtube" view-box="0 0 100 100" stroke="transparent" fill="#9FF882" :width="14" :height="14"/>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
 
       </div>
 
-      <div class="column is-4 footer__contact">
+      <div class="column is-4 footer__logos">
         <div class="footer__bvmw">
           We are a member of:
           <a href="https://www.bvmw.de/?lang=en" target="_blank">
@@ -75,39 +107,6 @@
               <img src="@/assets/images/bvmw.png" alt="bvmw">
             </div>
           </a>
-        </div>
-
-        <div class="footer__icons">
-          <div class="columns m-0 is-mobile">
-            <div class="column is-3">
-              <a href="https://www.linkedin.com/company/movements-marketing/" target="_blank">
-                <div class="footer__icon">
-                  <icons icon="linkedin" stroke="transparent" fill="#9FF882" :width="18" :height="18"/>
-                </div>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="https://www.facebook.com/Movements.Marketing" target="_blank">
-                <div class="footer__icon">
-                  <icons icon="facebook" stroke="transparent" fill="#9FF882" :width="18" :height="18"/>
-                </div>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="https://www.instagram.com/movementsmarketing" target="_blank">
-                <div class="footer__icon">
-                  <icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#9FF882" :width="18" :height="18"/>
-                </div>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="https://youtube.com/channel/UCAAdAaaSGa_LDaZu5jS-77A" target="_blank">
-                <div class="footer__icon">
-                  <icons icon="youtube" view-box="0 0 100 100" stroke="transparent" fill="#9FF882" :width="18" :height="18"/>
-                </div>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -137,22 +136,44 @@
 
   .footer.footer--movements {
     padding: 20px 20px 10px 20px;
-    background: #186267;
+    background: #0b4144;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
-    .footer__contact,
+    > .columns {
+      width: 100%;
+      max-width: 1800px;
+    }
+
+    .footer__logos,
     .footer__impressum {
-      justify-content: space-around;
       align-items: flex-start;
       display: flex;
       flex-direction: column;
+      font-size: 12px;
+      font-weight: 400;
+
+      @media screen and (max-width: 768px) {
+        align-items: center;
+      }
+    }
+
+    .footer__logos {
+      align-items: flex-end;
+
+      @media screen and (max-width: 768px) {
+        align-items: center;
+      }
     }
 
     .footer__impressum {
       text-align: left;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
 
       .block {
         color: #fff;
@@ -161,7 +182,7 @@
           color: #9FF882;
           text-transform: uppercase;
           font-size: 12px;
-          font-weight: 800;
+          font-weight: 400;
         }
 
         img {
@@ -171,16 +192,22 @@
 
       @media screen and (max-width: 768px) {
         border-bottom: 1px solid #ffffff;
+        margin-bottom: 10px;
       }
     }
 
     .footer__links {
-      text-align: left;
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 10px;
+      }
 
       a {
         color: #fff;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 400;
 
         &:hover {
           color: #9FF882;
@@ -195,23 +222,29 @@
     }
 
     .footer__bvmw {
-      font-size: 18px;
       color: #ffffff;
-      font-weight: 600;
+      text-align: right;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
 
       .bvmw__img {
-        max-width: 180px;
+        max-width: 120px;
         margin-bottom: 30px;
       }
     }
 
     .footer__icons {
+      max-width: 250px;
+      margin: auto;
+
       .footer__icon {
-        border: 2px solid #9FF882;
+        border: 1px solid #9FF882;
         border-radius: 50%;
         padding: 0;
-        width: 38px;
-        height: 38px;
+        width: 30px;
+        height: 30px;
         display: flex;
         align-items: center;
         justify-content: center;

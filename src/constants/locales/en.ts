@@ -71,6 +71,9 @@ const en = {
       dak: {
         text: 'DAK is the largest cooperative of and for insurance and mortgage advisers. We provide professional support and give consultancy firms access to almost the entire financial market. The collaboration with Movements Marketing started during the launch of DAK Autolease. With the introduction of this new service, we saw an opportunity to recruit more offices. This was achieved thanks to effective collaboration between our sales team and the people of Movements Marketing. We have now been working together for four years, and Movements Marketing team now also handles inbound activities for us in addition to outbound activities. We recommend Movements Marketing because of their personal commitment, short lines, and good results.',
       },
+      shypple: {
+        text: 'Shypple is a digital forwarder for moving freight globally that manages and analyses supply chains in real-time. The collaboration with Movements Marketing dates back to when we were still a start-up. But even now as a scale-up they are in the picture to efficiently scale up our commercial reach, especially towards other countries. For us, Movements Marketing is a partner who thinks along, wants to continue to learn, and above all shows that it is willing to propagate the message in our own way. This performance is growing and that is partly due to the quick communication, regular evaluations, and training. Especially on these last two points, Movements Marketing distinguishes itself from other parties we have worked with.',
+      }
     },
     telemarketers: 'These Telemarketers Will <span class="is-highlighted">Uplift Your Business</span>',
     contact: {

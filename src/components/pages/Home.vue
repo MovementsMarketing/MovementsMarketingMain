@@ -318,6 +318,12 @@
             img: require('@/assets/images/clients/dak_bg.png'),
             logo: require('@/assets/images/clients/dak_logo.png'),
           },
+          {
+            name: 'Shypple',
+            text: this.$t(`home.clients.shypple.text`),
+            img: require('@/assets/images/clients/shypple_bg.png'),
+            logo: require('@/assets/images/clients/shypple_logo.png'),
+          },
         ];
       }
 
@@ -811,7 +817,7 @@
         position: relative;
 
         @media screen and (max-width: 768px) {
-            padding-top: 30px;
+            padding-top: 0px;
         }
 
         .section__content {
@@ -900,7 +906,7 @@
                 .services-cover__image {
                     position: relative;
                     min-height: unset;
-                    margin: 0 50px;
+                    margin: 0;
 
                     img {
                         position: relative;
@@ -950,6 +956,10 @@
 
         &.section--services--outbound {
             background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
+
+          @media screen  and (max-width: 7680px) {
+            background: linear-gradient(90deg, #186267 0%, #6abe77 100%);
+          }
 
             @media screen  and (max-width: 768px) {
                 >.columns {
@@ -1005,6 +1015,10 @@
         &.section--services--inbound {
             background: linear-gradient(90deg, #9FF882 0%, #186267 80%, #186267 100%);
 
+          @media screen  and (max-width: 7680px) {
+            background: linear-gradient(90deg, #6abe77 0%, #186267 100%);
+          }
+
             .section__content {
                 padding-left: 80px !important;
 
@@ -1031,6 +1045,10 @@
             }
 
             .services-cover {
+              @media screen  and (max-width: 768px) {
+                padding: 0;
+              }
+
                 .services-cover__mask {
                     right: 12px;
                 }

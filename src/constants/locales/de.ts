@@ -71,6 +71,9 @@ const de = {
       dak: {
         text: 'Die DAK ist die größte Genossenschaft von und für Versicherungs- und Baufinanzierungsberater. Wir bieten professionelle Unterstützung und verschaffen Beratungsunternehmen Zugang zum nahezu gesamten Finanzmarkt. Die Zusammenarbeit mit Movements Marketing begann während der Einführung von DAK Autolease. Mit der Einführung dieses neuen Dienstes sahen wir eine Gelegenheit, mehr Büros zu rekrutieren. Dies wurde dank einer effektiven Zusammenarbeit zwischen unserem Verkaufsteam und den Leuten von Movements Marketing erreicht. Wir arbeiten nun seit vier Jahren zusammen und sie wickeln für uns neben Outbound-Aktivitäten auch Inbound-Aktivitäten ab. Wir empfehlen Movements Marketing aufgrund des persönlichen Engagements, der kurzen Wege und der guten Ergebnisse.',
       },
+      shypple: {
+        text: 'Shypple ist ein digitaler Spediteur für den weltweiten Transport von Fracht, der Lieferketten in Echtzeit verwaltet und analysiert. Die Zusammenarbeit mit Movements Marketing geht auf unsere Startup-Zeit zurück. Aber auch jetzt sind sie als Scale-up in der Lage, unsere kommerzielle Reichweite effizient zu vergrößern, auch in anderen Ländern. Movements Marketing ist für uns ein Partner, der mitdenkt, dazulernen will und vor allem zeigt, dass er bereit ist, die Botschaft auf unsere Weise zu verbreiten. Diese Leistung wächst und das liegt zum Teil an den kurzen Kommunikationswegen, regelmäßigen Bewertungen und Schulungen. Besonders in diesen letzten beiden Punkten unterscheidet sich Movements Marketing von anderen Parteien, mit denen wir zusammengearbeitet haben.',
+      }
     },
     telemarketers: 'Diese Telefonagenten <span class="is-highlighted">steigern Ihr Geschäft</span>',
     contact: {

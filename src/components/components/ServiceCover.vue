@@ -170,10 +170,8 @@
       .services-cover__mask {
         position: absolute;
 
-        @media screen  and (max-width: 460px) {
-          img {
-            max-width: 70%;
-          }
+        @media screen  and (max-width: 768px) {
+         display: none;
         }
       }
     }

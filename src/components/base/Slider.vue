@@ -112,6 +112,8 @@
           flex: none;
 
           img {
+            width: 100vw;
+
             @media screen and (max-width: 768px) {
               width: 100vw;
             }
@@ -162,7 +164,7 @@
               position: relative;
             }
 
-            @media screen and (max-width: 420px) {
+            @media screen and (max-width: 768px) {
               background: none !important;
             }
           }
@@ -208,15 +210,27 @@
               }
             }
 
+            .text {
+              @media screen and (max-width: 768px) {
+                font-size: 15px;
+              }
+            }
+
             .logo {
               max-width: 50%;
               margin-bottom: 40px;
 
-              @media screen and (max-width: 420px) {
+              @media screen and (max-width: 768px) {
                 max-width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin: 0 auto 10px;
+
+                img {
+                  width: auto;
+                  height: 40px;
+                }
               }
             }
 

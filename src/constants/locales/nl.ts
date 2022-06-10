@@ -71,6 +71,9 @@ const nl = {
       dak: {
         text: 'DAK is de grootste coöperatie van en voor assurantie- en hypotheekadviseurs. Wij zorgen voor professionele ondersteuning en geven advieskantoren toegang tot vrijwel de volledige financiële markt. De samenwerking met Movements Marketing startte tijdens de lancering van DAK Autolease. Met de introductie van deze nieuwe dienst zagen wij een kans om meer kantoren te werven. Dit is gelukt dankzij een effectieve samenwerking tussen ons salesteam en de mensen van Movements Marketing. Inmiddels werken we al vier jaar samen en pakken ze naast outbound activiteiten ook inbound werkzaamheden voor ons op. Wij bevelen Movements Marketing aan vanwege hun persoonlijke inzet, korte lijnen en goede resultaten.',
       },
+      shypple: {
+        text: 'Shypple is een digitale expediteur voor het wereldwijd verplaatsen van vracht die supply chains in realtime beheert en analyseert. De samenwerking met Movements Marketing dateert al van de tijd dat we nog een startup waren. Maar ook nu als scale-up helpen zij ons commerciële bereik efficiënt op te schalen, ook richting andere landen. Movements Marketing is voor ons een partner die meedenkt, continu wil blijven leren en zich bovenal bereid toont de boodschap op onze wijze uit te dragen. Deze performance groeit en dat komt ook mede door de korte lijnen, regelmatige evaluaties en trainingen. Vooral op deze laatste twee punten onderscheid Movements Marketing zich ten opzichte van andere partijen waarmee wij gewerkt hebben.',
+      }
     },
     telemarketers: 'Deze telemarketeers <span class="is-highlighted">boosten jouw business</span>',
     contact: {
