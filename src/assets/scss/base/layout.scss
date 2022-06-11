@@ -4,29 +4,9 @@ body,
   height: 100%;
 }
 
-.columns {
-  width: 100%;
-  margin: 0;
-
-  &.is-column-reverse-tablet {
-    @media screen and (max-width: 1024px) {
-      flex-direction: column-reverse;
-      display: flex;
-    }
-  }
-
-  &.is-column-reverse-mobile {
-    @media screen and (max-width: 768px) {
-      flex-direction: column-reverse;
-      display: flex;
-    }
-  }
-
-  .column {
-    @media screen and (max-width: 768px){
-      padding: 8px;
-    }
-  }
+body {
+  max-width: 2500px;
+  margin: 0 auto;
 }
 
 .is-align-content-center {

@@ -102,6 +102,12 @@
             width: 150px;
             height: 150px;
           }
+
+          @media screen and (max-width: 768px) {
+            width: 120px;
+            height: 120px;
+            padding: 30px;
+          }
         }
 
         .sales__title {

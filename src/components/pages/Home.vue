@@ -1,5 +1,5 @@
 <template>
-    <div :class="'home'">
+    <div :class="'home has-bg-gray'">
         <navigation :full-logo="true" :light-logo="true"/>
 
         <div class="section section--cover">
@@ -39,8 +39,8 @@
 
         <div id="about" class="section section--about">
             <facts :facts="[$t(`home.about.facts.qualitativeTelemarketing`), $t(`home.about.facts.multilingualTelemarketers`), $t(`home.about.facts.costEffectiveResults`)]"></facts>
-            <div class="about">
-                <div class="bg-image">
+            <div class="about has-bg-white">
+                <div class="bg-image has-text-right">
                     <img src="@/assets/images/backgrounds/movements_about-us_map.png">
                 </div>
                 <div class="section__content has-text-left">
@@ -117,7 +117,7 @@
                     <div class="services-cover__mask">
                         <img src="@/assets/images/backgrounds/blue-mask.png">
                     </div>
-                    <div class="services-cover__image">
+                    <div class="services-cover__image has-text-right">
                         <img src="@/assets/images/backgrounds/movements_customer-service_outbound_cover.png">
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                     <div class="services-cover__mask">
                         <img src="@/assets/images/backgrounds/yellow-mask.png">
                     </div>
-                    <div class="services-cover__image">
+                    <div class="services-cover__image has-text-left">
                         <img src="@/assets/images/backgrounds/movements_customer-service_inbound_cover.png">
                     </div>
                 </div>
@@ -873,6 +873,10 @@
                 @media screen  and (max-width: 1024px) {
                     display: none;
                 }
+
+              @media screen  and (min-width: 1920px) {
+                display: none;
+              }
             }
 
             @media screen  and (max-width: 1400px) {

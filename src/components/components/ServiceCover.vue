@@ -18,9 +18,9 @@
       </div>
       <div class="services-cover column is-6 p-0 lh-0">
         <div class="services-cover__mask">
-          <img :src="data.mask">
+          <img :src="data.mask" alt="Movements Marketing">
         </div>
-        <div class="services-cover__image">
+        <div class="services-cover__image has-text-right" :alt="data.title">
           <img :src="data.cover">
         </div>
       </div>
@@ -172,6 +172,10 @@
 
         @media screen  and (max-width: 768px) {
          display: none;
+        }
+
+        @media screen  and (min-width: 1920px) {
+          display: none;
         }
       }
     }

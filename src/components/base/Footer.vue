@@ -59,8 +59,8 @@
             </router-link>
           </div>
           <div class="column is-12 p-t-0">
-            <a href="">
-              Privacy Policy
+            <a :href="policyLink" target="_blank">
+              {{ $t(`navigation.privacyPolicy`) }}
             </a>
           </div>
         </div>
@@ -125,8 +125,9 @@
 
   @Component
   class Footer extends Vue {
-
-
+    get policyLink() {
+      return this.$i18n.locale === 'nl' ? 'https://drive.google.com/file/d/1vXHSUX6ixFlZud2xzOfZpWmKQRAA3tgB/view' : 'https://drive.google.com/file/d/13JrSBecSq-rMm0diCgUAUUkID1yI6_Vk/view';
+    }
   }
 
   export default Footer;

@@ -1,10 +1,10 @@
 <template>
-  <div class="careers">
+  <div class="careers has-bg-gray">
     <navigation :full-logo="true" :light-logo="true"/>
 
     <service-cover :data="coverData"/>
 
-    <div class="section section--positions">
+    <div class="section section--positions has-bg-gray">
       <h2 class="positions__title" v-html="$t(`careers.positions.title`)"> </h2>
 
       <div class="section__content positions__open columns m-t-30 m-b-30 is-multiline">
@@ -38,23 +38,45 @@
     </div>
 
     <div class="section section--careers-videos">
-      <carousel-3d :width="600" :height="450" :controls-visible="true" :clickable="true">
-        <slide :index="0">
-          <iframe width="600" height="450"
-                  src="https://www.youtube.com/embed/3Fn8LbUXtuI">
-          </iframe>
-        </slide>
-        <slide :index="1">
-          <iframe width="600" height="450"
-                  src="https://www.youtube.com/embed/tVIhRSCdb_0">
-          </iframe>
-        </slide>
-        <slide :index="2">
-          <iframe width="600" height="450"
-                  src="https://www.youtube.com/embed/D2eLnglOQK0">
-          </iframe>
-        </slide>
-      </carousel-3d>
+      <div class="is-hidden-touch">
+        <carousel-3d :width="600" :height="450" :controls-visible="true" :clickable="true">
+          <slide :index="0">
+            <iframe width="600" height="450"
+                    src="https://www.youtube.com/embed/3Fn8LbUXtuI">
+            </iframe>
+          </slide>
+          <slide :index="1">
+            <iframe width="600" height="450"
+                    src="https://www.youtube.com/embed/tVIhRSCdb_0">
+            </iframe>
+          </slide>
+          <slide :index="2">
+            <iframe width="600" height="450"
+                    src="https://www.youtube.com/embed/D2eLnglOQK0">
+            </iframe>
+          </slide>
+        </carousel-3d>
+      </div>
+
+      <div class="is-hidden-desktop">
+        <carousel-3d :width="200" :height="150" :controls-visible="true" :clickable="true">
+          <slide :index="0">
+            <iframe width="200" height="150"
+                    src="https://www.youtube.com/embed/3Fn8LbUXtuI">
+            </iframe>
+          </slide>
+          <slide :index="1">
+            <iframe width="200" height="150"
+                    src="https://www.youtube.com/embed/tVIhRSCdb_0">
+            </iframe>
+          </slide>
+          <slide :index="2">
+            <iframe width="200" height="150"
+                    src="https://www.youtube.com/embed/D2eLnglOQK0">
+            </iframe>
+          </slide>
+        </carousel-3d>
+      </div>
     </div>
 
     <movements-footer/>
@@ -198,6 +220,12 @@
           align-items: center;
           position: relative;
           z-index: 1;
+
+          @media screen and (max-width: 768px) {
+            width: 120px;
+            height: 120px;
+            padding: 30px;
+          }
         }
 
         .perk__name {
@@ -217,7 +245,19 @@
       padding: 50px 0;
 
       .carousel-3d-container {
+        @media screen and (max-width: 1024px) {
+          overflow: visible;
+        }
+
         .carousel-3d-controls {
+          @media screen and (max-width: 1024px) {
+            top: unset;
+            bottom: -50px;
+            display: flex;
+            justify-content: center;
+            height: 50px;
+          }
+
           .prev,
           .next {
             background: #008d90;
@@ -226,6 +266,17 @@
             align-items: center;
             justify-content: center;
             padding: 0 10px 10px 10px;
+
+            @media screen and (max-width: 1024px){
+              width: 30px !important;
+              height: 30px !important;
+              position: relative;
+              margin: 20px;
+
+              span {
+                font-size: 40px;
+              }
+            }
 
             span {
               color: #fff;
@@ -238,10 +289,34 @@
 
           .prev {
             left: 300px;
+
+            @media screen and (max-width: 2000px){
+              left: 200px;
+            }
+
+            @media screen and (max-width: 1600px){
+              left: 100px;
+            }
+
+            @media screen and (max-width: 1400px){
+              left: 10px;
+            }
           }
 
           .next {
             right: 300px;
+
+            @media screen and (max-width: 2000px){
+              right: 200px;
+            }
+
+            @media screen and (max-width: 1600px){
+              right: 100px;
+            }
+
+            @media screen and (max-width: 1400px){
+              right: 10px;
+            }
           }
         }
       }

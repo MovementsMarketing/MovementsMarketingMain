@@ -16,9 +16,9 @@
               src="@/assets/images/flags/germany.png"
           />
         </div>
-        <div class="is-hidden-desktop">
+        <div class="is-hidden-desktop is-fullwidth">
           <div class="navigation__navbar navigation__navbar--touch">
-            <router-link to="/" class="navigation__logo navigation__logo--large">
+            <router-link to="/" class="navigation__logo navigation__logo--large" @click="isMobileActive = false">
               <div class="navigation__logo">
                 <img src="@/assets/images/movements-marketing-logo.png"/>
               </div>
@@ -32,8 +32,8 @@
             </div>
             <div class="navigation__menu" :class="isMobileActive ? 'is-active' : ''">
               <div class="navigation__menu__items">
-                <div class="navigation__item">
-                  <router-link to="/#about">
+                <div class="navigation__item" @click="isMobileActive = false">
+                  <router-link to="/#about" >
                     {{ $t(`navigation.about`) }}
                   </router-link>
                 </div>
@@ -58,11 +58,11 @@
                       <div class="divider"></div>
                       <div class="text">
                         <router-link to="/#outbound">
-                          <p class="title" @click="isServicesActive = !isServicesActive">
+                          <p class="title" @click="isServicesActive = !isServicesActive; isMobileActive = false;">
                             {{ $t(`navigation.servicesOptions.outbound`) }}
                           </p>
                         </router-link>
-                        <div class="list" @click="isServicesActive = !isServicesActive">
+                        <div class="list" @click="isServicesActive = !isServicesActive; isMobileActive = false;">
                           <router-link to="/service/b2b-telemarketing">
                             {{ $t(`navigation.servicesOptions.telemarketing`) }}
                           </router-link>
@@ -79,11 +79,11 @@
                       </div>
                       <div class="text">
                         <router-link to="/#inbound">
-                          <p class="title" @click="isServicesActive = !isServicesActive">
+                          <p class="title" @click="isServicesActive = !isServicesActive; isMobileActive = false;">
                             {{ $t(`navigation.servicesOptions.inbound`) }}
                           </p>
                         </router-link>
-                        <div class="list" @click="isServicesActive = !isServicesActive">
+                        <div class="list" @click="isServicesActive = !isServicesActive; isMobileActive = false;">
                           <router-link to="/service/customer-service">
                             {{ $t(`navigation.servicesOptions.customerService`) }}
                           </router-link>
@@ -110,23 +110,23 @@
 
 
                 <div class="navigation__item">
-                  <router-link to="/#clients">
+                  <router-link to="/#clients" @click="isMobileActive = false;">
                     {{ $t(`navigation.clients`) }}
                   </router-link>
                 </div>
 
                 <div class="navigation__item">
-                  <router-link to="/careers">
+                  <router-link to="/careers"  @click="isMobileActive = false;">
                     {{ $t(`navigation.career`) }}
                   </router-link>
                 </div>
 
 
                 <div class="navigation__actions-divider"></div>
-                <div class="navigation__item navigation__item--button">
+                <div class="navigation__item navigation__item--button"  @click="isMobileActive = false;">
                   <router-link to="/#contact" class="button button--hollow">
                     <span class="text">
-                      {{ $t(`navigation.contactUs`) }}
+                      {{ $t(`navigation.contact`) }}
                     </span>
                     <span class="dot"></span>
                     <span class="icon-wrapper">
@@ -152,7 +152,7 @@
           </div>
 
         </div>
-        <div class="is-hidden-touch">
+        <div class="is-hidden-touch is-fullwidth" style="max-width: 2500px;" @mouseleave="isServicesActive = false">
             <div class="navigation__navbar navigation__navbar--desktop">
               <router-link to="/">
 
@@ -192,7 +192,7 @@
               <div class="navigation__item navigation__item--button">
                   <router-link to="/#contact" class="button button--hollow">
                     <span class="text">
-                      {{ $t(`navigation.contactUs`) }}
+                      {{ $t(`navigation.contact`) }}
                     </span>
                     <span class="dot"></span>
                     <span class="icon-wrapper">
@@ -230,6 +230,15 @@
                   <div class="list" @click="isServicesActive = !isServicesActive">
                     <router-link to="/service/b2b-telemarketing">
                       {{ $t(`navigation.servicesOptions.telemarketing`) }}
+                    </router-link>
+                    <router-link to="/service/b2b-telemarketing">
+                      {{ $t(`navigation.servicesOptions.leadGeneration`) }}
+                    </router-link>
+                    <router-link to="/service/b2b-telemarketing">
+                      {{ $t(`navigation.servicesOptions.newAppointments`) }}
+                    </router-link>
+                    <router-link to="/service/b2b-telemarketing">
+                      {{ $t(`navigation.servicesOptions.dataEnrichment`) }}
                     </router-link>
                   </div>
                 </div>
@@ -310,6 +319,10 @@
           return this.$i18n.locale
       }
 
+      clicked() {
+          console.log('clicked')
+      }
+
       onScroll() {
           if (window.pageYOffset > 120) {
             this.navClass = 'is-blurred';
@@ -337,18 +350,26 @@
 
 <style lang="scss" scoped>
   .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
 
     .navigation__language-selector {
       padding: 0 50px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      position: fixed;
       top: 0;
       width: 100%;
       height: 30px;
       background: #9DACA7;
       z-index: 200;
+      max-width: 2500px;
 
       @media (min-resolution: 100dpi) {
         padding: 0 25px;
@@ -370,7 +391,6 @@
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      position: fixed;
       top: 30px;
       left: 0;
       padding: 20px;
@@ -402,6 +422,8 @@
       &.navigation__navbar--desktop {
         padding: 0 50px;
         height: 120px;
+        max-width: 2500px;
+        width: 100%;
 
         @media (min-resolution: 100dpi) {
           padding: 0 25px;
@@ -434,6 +456,10 @@
               width: 100px;
             }
 
+            @media screen and (max-width: 768px) {
+              width: 250px;
+            }
+
             &::before {
               content: '';
               display: block;
@@ -441,6 +467,10 @@
               height: 2px;
               background: #008d90;
               transition: width 300ms ease;
+
+              @media screen and (max-width: 1024px){
+                display: none;
+              }
             }
 
             &:hover {
@@ -622,6 +652,10 @@
                   width: 100px;
                 }
 
+                @media screen and (max-width: 768px) {
+                  width: 250px;
+                }
+
                 &::before {
                   content: '';
                   display: block;
@@ -652,6 +686,11 @@
 
                 @media screen and (max-width: 1400px) {
                   justify-content: flex-start;
+                }
+
+                @media screen and (max-width: 768px) {
+                  justify-content: center;
+                  width: 100%;
                 }
               }
 

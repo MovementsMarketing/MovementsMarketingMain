@@ -113,6 +113,7 @@
 
           img {
             width: 100vw;
+            max-width: 2500px;
 
             @media screen and (max-width: 768px) {
               width: 100vw;
@@ -179,7 +180,7 @@
             }
 
             @media screen and (max-width: 420px) {
-              padding: 40px 40px 100px;
+              padding: 20px 20px 80px;
             }
 
             >div {

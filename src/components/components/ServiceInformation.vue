@@ -2,8 +2,8 @@
   <div class="section section--service-information">
     <div class="columns m-0">
       <div class="services-cover column is-6 p-t-0 p-l-0 p-b-0 lh-0 has-overflow-hidden">
-        <div class="services-cover__image">
-          <img :src="data.cover">
+        <div class="services-cover__image has-text-left">
+          <img :src="data.cover" :alt="data.title">
         </div>
       </div>
       <div class="section__content column is-6">

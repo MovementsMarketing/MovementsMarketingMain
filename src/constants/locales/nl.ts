@@ -5,12 +5,16 @@ const nl = {
     clients: 'Klanten',
     career: 'Careers',
     contact: 'Contact',
-    contactUs: 'Contact ons!',
+    contactUs: 'Neem contact op!',
     linkedInBlogs: 'LinkedIn Blogs',
+    privacyPolicy: 'Privacybeleid',
     servicesOptions: {
       outbound: 'Outbound Lead Generation',
       inbound: 'Inbound Customer Service',
       telemarketing: 'B2B Telemarketing',
+      leadGeneration: 'Leadgeneratie',
+      newAppointments: 'New business afspraken',
+      dataEnrichment: 'Dataverrijking',
       customerService: 'Customer Service',
       answeringService: 'Answering Service',
       liveChat: 'Live Chat',
@@ -21,17 +25,17 @@ const nl = {
   home: {
     title: 'New Business en tevreden klanten beginnen hier',
     subtitle: 'Wij creëren en onderhouden langdurige klantrelaties!',
-    contactUs: 'Contact Ons!',
+    contactUs: 'Neem contact op!',
     about: {
       facts: {
-        qualitativeTelemarketing: 'Kwalitatieve Telemarketing',
-        multilingualTelemarketers: 'Meertalige Telemarketeer',
-        costEffectiveResults: 'Kostenefficiënte Resultaten',
+        qualitativeTelemarketing: 'Kwalitatieve telemarketing',
+        multilingualTelemarketers: 'Meertalige telemarketeers',
+        costEffectiveResults: 'Kostenefficiënte resultaten',
       },
       aboutUs: {
         aboutUs: 'Over  <span class="is-highlighted">ons</span>',
         p1: 'Movements Marketing is specialist op het gebied van <span class="has-text-weight-bold">Outbound Lead Generation</span> en <span class="has-text-weight-bold">Inbound Customer Service</span>. Het creëren van gewaardeerde contactmomenten begint met het optimaliseren en verbeteren van de klantrelaties. Door kwalitatieve B2B-telemarketing en een op jouw klanten toegesneden Klantenservice, Telefoonservice, Live Chat, E-mailmanagement en Social Webcare, maken wij jouw ambities waar en helpen met het bereiken van jouw commerciële doelstellingen!',
-        p2: 'Ons goed getrainde team werkt vanuit ons hoofdkantoor in Sarajevo en twee andere vestigingen in Istanbul en Utrecht. Dankzij onze meertalige telemarketeers is een professionele communicatie en vruchtbare interactie verzekerd met blijvende, kosteneffectieve resultaten. Onze toewijding aan het succes van onze klanten, weergeeft onze ware ambities. Wij vertegenwoordigen jouw bedrijf dan ook als één van jullie. En daarom: <span style="font-style: italic;"> Alleen als jij succesvol bent, dan zijn wij het ook! </span>',
+        p2: 'Ons goed getrainde team werkt vanuit ons hoofdkantoor in Sarajevo en twee andere vestigingen in Istanbul en Utrecht. Dankzij onze meertalige telemarketeers is een professionele communicatie en vruchtbare interactie verzekerd met blijvende, kosteneffectieve resultaten. Onze toewijding aan het succes van onze klanten, weergeeft onze ware ambities. Wij vertegenwoordigen jouw bedrijf dan ook als één van jullie. En daarom: <span style="font-style: italic;"> Alleen als jij succesvol bent, zijn wij het ook! </span>',
       }
     },
     numbers: {

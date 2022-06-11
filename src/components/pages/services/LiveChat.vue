@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="has-bg-gray">
     <navigation :full-logo="true" :light-logo="true"/>
 
     <service-cover :data="coverData"/>
