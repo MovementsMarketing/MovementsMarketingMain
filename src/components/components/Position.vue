@@ -46,6 +46,10 @@
       .type,
       .location {
         font-size: 16px;
+
+        @media screen  and (max-width: 768px) {
+          font-size: 14px;
+        }
       }
 
       .type {
@@ -67,6 +71,10 @@
         font-size: 24px;
         font-weight: 800;
         padding-bottom: 5px;
+
+        @media screen  and (max-width: 768px) {
+          font-size: 20px;
+        }
       }
 
       .cta {

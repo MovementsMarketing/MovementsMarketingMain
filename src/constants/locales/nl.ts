@@ -15,8 +15,8 @@ const nl = {
       leadGeneration: 'Leadgeneratie',
       newAppointments: 'New business afspraken',
       dataEnrichment: 'Dataverrijking',
-      customerService: 'Customer Service',
-      answeringService: 'Answering Service',
+      customerService: 'Klantenservice',
+      answeringService: 'Telefoonservice',
       liveChat: 'Live Chat',
       emailManagement: 'Email Management',
       socialWebcare: 'Social Webcare',
@@ -50,21 +50,21 @@ const nl = {
     services: {
       outbound: {
         title: 'Outbound <span class="is-highlighted"> Lead Generation </span>',
-        text: 'Een agenda vol eersteklas afspraken is het ultieme doel van elk salesteam en bedrijf. Maar hoe genereer je hoogwaardige leads? Movements Marketing is expert in B2B Telemarketing en verzorgt cold calling namens jouw bedrijf. Wij brengen je in contact met potentiële klanten die jij voor ogen hebt en plannen afspraken direct in de agenda van jouw salesteam. En dankzij de gewenste leads die binnenstromen, kan sales zich concentreren op waar ze goed in zijn: het sluiten van deals. Naast het werven van nieuwe klanten door het maken van <span class="is-highlighted"> afspraken </span>, plannen wij ook <span class="is-highlighted"> demo\'s </span> in en verzorgen eveneens <span class="is-highlighted"> dataverrijking </span> om het salesproces te versnellen! ',
+        text: 'Een agenda vol eersteklas afspraken is het ultieme doel van elk salesteam en bedrijf. Maar hoe genereer je hoogwaardige leads? Movements Marketing is expert in B2B Telemarketing en verzorgt cold calling namens jouw bedrijf. Wij brengen je in contact met potentiële klanten die jij voor ogen hebt en plannen afspraken direct in de agenda van jouw salesteam. Dankzij de gewenste leads die binnenstromen, kan sales zich concentreren op waar ze goed in zijn: het sluiten van deals. Naast het werven van nieuwe klanten , plannen wij ook <span class="is-highlighted">demo&#39;</span>> in en verzorgen eveneens <span class="is-highlighted">dataverrijking</span> om het salesproces te versnellen!',
         services: {
           telemarketing: 'B2B Telemarketing'
         }
       },
       inbound: {
         title: 'Inbound <span class="is-highlighted">Customer Service</span>',
-        text: 'Als jouw professionals klantondersteuning moeten bieden terwijl ze aan het werk zijn, is het een steeds grotere uitdaging om te focussen op hun eigenlijke werkzaamheden. En daar komt Movements Marketing om de hoek kijken! Want met onze Inbound Customer Service, is jouw bedrijf optimaal bereikbaar en blijft geen vraag onbeantwoord. Als eerste aanspreekpunt voor jouw klanten, verzorgen wij een op-en-top Klantenservice, Telefoonservice, Live Chat, E-mailmanagement en Social Webcare. Het snel en adequaat afhandelen van inkomende klantvragen, is onze topprioriteit!',
+        text: 'Als jouw professionals klantondersteuning moeten bieden terwijl ze aan het werk zijn, wordt het een steeds grotere uitdaging om te focussen op hun eigenlijke werkzaamheden. Dat is het moment waar Movements Marketing om de hoek komt kijken. Want met onze Inbound Customer Service, is jouw bedrijf optimaal bereikbaar en blijft geen vraag onbeantwoord. Als eerste aanspreekpunt voor jouw klanten, zorgen wij voor op-en-top Klantenservice, Telefoonservice, Live Chat, E-mailmanagement en Social Webcare. Het snel en adequaat afhandelen van inkomende klantvragen, is onze topprioriteit!',
         services: {
         }
       }
     },
     work: {
       title: '<span class="is-highlighted">Hoe wij samenwerken</span>',
-      text: 'Het begrijpen van jouw criteria en doelstellingen, is de eerste stap in een <span class="is-highlighted">langdurige samenwerking</span> en een hoge klanttevredenheid. Door het inleven in jouw bedrijf via <span class="is-highlighted">knowledge-sharing</span>,kunnen wij adequaat communiceren met de doelgroep en de afgesproken targets halen. Dit doen wij onder andere door een businessplan en <span class="is-highlighted">maatwerkoplossingen</span>. En ons vaste team van meertalige telemarketeers leidt alles in goede banen!',
+      text: 'Het begrijpen van jouw criteria en doelstellingen, is de eerste stap in een <span class="is-highlighted">langdurige samenwerking</span> en een hoge klanttevredenheid. Door het inleven in jouw bedrijf via <span class="is-highlighted">knowledge-sharing,</span> kunnen wij adequaat communiceren met de doelgroep en de afgesproken targets halen. Dit doen wij onder andere door een businessplan en <span class="is-highlighted">maatwerkoplossingen.</span> Ons vaste team van meertalige telemarketeers leidt vervolgens alles in goede banen!',
       button: 'Download Freebies',
     },
     clients: {
@@ -338,7 +338,7 @@ const nl = {
   careers: {
     cover: {
       title: '<span class="is-highlighted">Kom ons team versterken!</span>',
-      subtitle: 'Kijk jij er naar uit om deel uit te maken van ons team en samen met ons aan de toekomst van onze klanten te bouwen?',
+      subtitle: 'Kijk jij ernaar uit om deel uit te maken van ons team en samen met ons aan de toekomst van onze klanten te bouwen?',
       cta: 'Join Us',
     },
     positions: {

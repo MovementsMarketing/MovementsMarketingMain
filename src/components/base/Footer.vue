@@ -11,10 +11,10 @@
             Movements Marketing
           </span>
           <span class="is-block">
-            Tel. +31 85 210 37 55
+            +31 85 210 37 55
           </span>
           <span class="is-block">
-            E-Mail: info@movementsmarketing.com
+            info@movementsmarketing.com
           </span>
         </div>
         <div class="block block--impressum m-b-10">

@@ -2,7 +2,7 @@
     <div class="slide">
       <div class="slide__images" :style="imagesPosition">
         <div v-for="(s, index) in slidesData" :key="`img-${index}`" class="slide__image lh-0">
-          <img :src="slidesData[currentNumber].img"/>
+          <img :src="slidesData[currentNumber].img" :alt="slidesData[currentNumber].name"/>
         </div>
       </div>
 
@@ -20,7 +20,7 @@
                   <transition name='fade' mode="out-in">
                     <div>
                       <div class="logo" v-if="currentNumber === index">
-                        <img :src="slidesData[currentNumber].logo"/>
+                        <img :src="slidesData[currentNumber].logo" :alt="`Client ${slidesData[currentNumber].name}`"/>
                       </div>
                       <p class="text"  v-if="currentNumber === index">
                         <span v-html="slidesData[currentNumber].text"></span>

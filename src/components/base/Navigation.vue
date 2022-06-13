@@ -4,23 +4,26 @@
           <img :class="currentLang === 'en' ? `navigation__language active` : `navigation__language`"
                @click="setLanguage('en')"
                src="@/assets/images/flags/united-kingdom.png"
+               alt="english"
           />
           <img
               :class="currentLang === 'nl' ? `navigation__language active` : `navigation__language`"
               @click="setLanguage('nl')"
               src="@/assets/images/flags/netherlands.png"
+              alt="dutch"
           />
           <img
               :class="currentLang === 'de' ? `navigation__language active` : `navigation__language`"
               @click="setLanguage('de')"
               src="@/assets/images/flags/germany.png"
+              alt="german"
           />
         </div>
         <div class="is-hidden-desktop is-fullwidth">
           <div class="navigation__navbar navigation__navbar--touch">
             <router-link to="/" class="navigation__logo navigation__logo--large" @click="isMobileActive = false">
               <div class="navigation__logo">
-                <img src="@/assets/images/movements-marketing-logo.png"/>
+                <img src="@/assets/images/movements-marketing-logo.png" alt="Movements Marketing"/>
               </div>
             </router-link>
             <div class="navigation__burger" @click="onBurgerClick">
@@ -53,7 +56,7 @@
                   <div class="columns m-0">
                     <div class="column is-6 navigation__services-options__option">
                       <div class="icon">
-                        <img src="@/assets/images/icons/services_icon_1.png"/>
+                        <img src="@/assets/images/icons/services_icon_1.png"  alt="Movements Marketing Outbound Lead Generation"/>
                       </div>
                       <div class="divider"></div>
                       <div class="text">
@@ -72,7 +75,7 @@
 
                     <div class="column is-6 navigation__services-options__option">
                       <div class="icon">
-                        <img src="@/assets/images/icons/services_icon_2.png"/>
+                        <img src="@/assets/images/icons/services_icon_2.png"  alt="Movements Marketing Inbound Customer Service"/>
                       </div>
                       <div class="divider">
 
@@ -157,7 +160,7 @@
               <router-link to="/">
 
               <div class="navigation__logo">
-                  <img src="@/assets/images/movements-marketing-logo.png"/>
+                  <img src="@/assets/images/movements-marketing-logo.png" alt="Movements Marketing"/>
                 </div>
               </router-link>
                 <div class="navigation__item">
@@ -218,7 +221,7 @@
             <div class="columns m-0">
               <div class="column is-6 navigation__services-options__option">
                 <div class="icon">
-                  <img src="@/assets/images/icons/services_icon_1.png"/>
+                  <img src="@/assets/images/icons/services_icon_1.png"  alt="Movements Marketing Outbound Lead Generation"/>
                 </div>
                 <div class="divider"></div>
                 <div class="text">
@@ -246,7 +249,7 @@
 
               <div class="column is-6 navigation__services-options__option">
                 <div class="icon">
-                  <img src="@/assets/images/icons/services_icon_2.png"/>
+                  <img src="@/assets/images/icons/services_icon_2.png"  alt="Movements Marketing Inbound Customer Service"/>
                 </div>
                 <div class="divider">
 

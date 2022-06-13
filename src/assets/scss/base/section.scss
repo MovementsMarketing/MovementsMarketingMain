@@ -103,6 +103,8 @@
 
     .is-highlighted {
       font-weight: 800;
+      z-index: 10;
+      position: relative;
     }
 
   }

@@ -50,6 +50,10 @@
     background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
     overflow: hidden;
 
+    @media screen  and (max-width: 7680px) {
+      background: linear-gradient(90deg, #186267 0%, #6abe77 100%);
+    }
+
     .section__content {
       display: flex;
       flex-direction: column;
@@ -98,6 +102,10 @@
         .is-highlighted {
           display: block;
           white-space: nowrap;
+
+          @media screen  and (max-width: 768px) {
+            white-space: break-spaces;
+          }
         }
       }
 

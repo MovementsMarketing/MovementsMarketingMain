@@ -34,6 +34,10 @@
     position: relative;
     background: linear-gradient(90deg, #9FF882 0%, #186267 80%, #186267 100%);
 
+    @media screen  and (max-width: 7680px) {
+      background: linear-gradient(90deg, #6abe77 0%, #186267 100%);
+    }
+
     .section__content {
       padding-left: 80px !important;
 
@@ -47,8 +51,8 @@
       }
 
       @media screen  and (max-width: 768px) {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
       }
     }
 
@@ -108,11 +112,6 @@
         @media screen  and (max-width: 1024px) {
           font-size: 46px;
           line-height: 48px;
-        }
-
-        @media screen  and (max-width: 460px) {
-          font-size: 28px;
-          line-height: 32px;
         }
       }
 

@@ -130,6 +130,7 @@
           line-height: 42px;
           margin-top: 20px;
           margin-bottom: 30px;
+          padding: 0 20px;
         }
 
         @media screen  and (max-width: 460px) {

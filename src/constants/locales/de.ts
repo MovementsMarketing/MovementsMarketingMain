@@ -3,20 +3,20 @@ const de = {
     about: 'Über uns',
     services: 'Dienstleistungen',
     clients: 'Kunden',
-    career: 'Careers',
+    career: 'Karriere',
     contact: 'Kontaktiere uns!',
     contactUs: 'Kontaktiere uns!',
     linkedInBlogs: 'LinkedIn-Blogs',
-    privacyPolicy: 'Privacy Policy',
+    privacyPolicy: 'Datenschutzerklärung',
     servicesOptions: {
-      outbound: 'Outbound Lead Generation',
-      inbound: 'Inbound Customer Service',
-      telemarketing: 'B2B Telemarketing',
+      outbound: 'Outbound Lead Generierung',
+      inbound: 'Inbound Kundenservice',
+      telemarketing: 'B2B-Telemarketing',
       leadGeneration: 'Leadgenerierung',
       newAppointments: 'Terminierung',
       dataEnrichment: 'Datenanreicherung',
-      customerService: 'Customer Service',
-      answeringService: 'Answering Service',
+      customerService: 'Kundenservice',
+      answeringService: 'Antwortservice',
       liveChat: 'Live Chat',
       emailManagement: 'Email Management',
       socialWebcare: 'Social Webcare',
@@ -34,7 +34,7 @@ const de = {
       },
       aboutUs: {
         aboutUs: 'Über  <span class="is-highlighted">uns</span>',
-        p1: 'Movements Marketing ist auf die Bereiche <span class="has-text-weight-bold">Outbound Lead Generation</span> und <span class="has-text-weight-bold">Inbound Kunden Service</span> spezialisiert. Der Aufbau wertvoller Kontaktmomente beginnt mit der Optimierung und Verbesserung der Kundenbeziehungen. Indem wir qualitatives B2B-Telemarketing und einen maßgeschneiderten Kundenservice, Antwortservice, Live-Chat, E-Mail-Management und Social Webcare anbieten, verwirklichen wir Ihre Ambitionen und helfen Ihnen, Ihre kommerziellen Ziele zu erreichen!',
+        p1: 'Movements Marketing ist auf die Bereiche <span class="has-text-weight-bold">Outbound Lead Generierung</span> und <span class="has-text-weight-bold">Inbound Kundenservice</span> spezialisiert. Der Aufbau wertvoller Kontaktmomente beginnt mit der Optimierung und Verbesserung der Kundenbeziehungen. Indem wir qualitatives B2B-Telemarketing und einen maßgeschneiderten Kundenservice, Antwortservice, Live-Chat, E-Mail-Management und Social Webcare anbieten, verwirklichen wir Ihre Ambitionen und helfen Ihnen, Ihre kommerziellen Ziele zu erreichen!',
         p2: 'Unser gut ausgebildetes Team arbeitet von unserem Hauptsitz in Sarajevo und zwei weiteren Büros in Istanbul und Utrecht aus. Dank unserer mehrsprachigen Telefonagenten ist eine professionelle Kommunikation und gewinnbringende Interaktion mit dauerhaft kosteneffektiven Ergebnissen gewährleistet. Unser Engagement für den Erfolg unserer Kunden spiegelt unsere wahren Ambitionen wieder. Deshalb vertreten wir Ihr Unternehmen als einer von Ihnen. Und darum:<span style="font-style: italic;"> Wir sind nur erfolgreich, wenn Sie es auch sind!</span>',
       }
     },
@@ -49,22 +49,22 @@ const de = {
     quote: '“Wir sind nur erfolgreich, wenn Sie es auch sind!”',
     services: {
       outbound: {
-        title: 'Outbound <span class="is-highlighted"> Lead Generation </span>',
+        title: 'Outbound <span class="is-highlighted"> Lead Generierung </span>',
         text: 'Ein Kalender voller erstklassiger Termine ist das ultimative Ziel eines jeden Vertriebsteams und Unternehmens. Doch wie generiert man hochwertige Leads? Movements Marketing ist Experte für <span class="is-highlighted"> B2B-Telemarketing </span> und bietet Kaltakquise im Namen Ihres Unternehmens an. Wir bringen Sie mit potenziellen Kunden in Kontakt, die Sie im Auge haben, und <span class="is-highlighted"> planen Termine </span>direkt im Kalender Ihres Vertriebsteams. Und dank der gewünschten Leads kann sich Ihr Vertrieb auf das konzentrieren, was er am besten kann: Geschäfte abschließen. Wir helfen Ihnen nicht nur, neue Kunden zu finden, indem wir Termine vereinbaren, sondern planen auch <span class="is-highlighted"> Demos </span> und kümmern uns um die <span class="is-highlighted"> Datenanreicherung,</span> um den Verkauf zu beschleunigen!',
         services: {
           telemarketing: 'B2B Telemarketing'
         }
       },
       inbound: {
-        title: 'Inbound <span class="is-highlighted">Customer Service</span>',
-        text: 'Wenn Ihre Mitarbeiter während der Arbeit Kundenservice leisten müssen, wird es immer schwieriger, sich auf ihre eigentlichen Aufgaben zu konzentrieren. Und hier kommt Movements Marketing ins Spiel! Mit unserem <span class="is-highlighted">Inbound Kunden Service</span> ist Ihr Unternehmen optimal erreichbar und es bleibt keine Frage offen. Als erste Anlaufstelle für Ihre Kunden bieten wir einen hochwertigen <span class="is-highlighted">Kundenservice, Antwortservice, Live-Chat, E-Mail-Management</span> und <span class="is-highlighted">Social Webcare.</span> Die schnelle und angemessene Bearbeitung eingehender Anfragen hat für uns oberste Priorität! ',
+        title: 'Inbound <span class="is-highlighted">Kundenservice</span>',
+        text: 'Wenn Ihre Mitarbeiter während der Arbeit Kundenservice bieten müssen, wird es immer schwieriger, sich auf ihre eigentlichen Aufgaben zu konzentrieren. Und hier kommt Movements Marketing ins Spiel! Mit unserem <span class="is-highlighted">Inbound Kundenservice</span> ist Ihr Unternehmen optimal erreichbar und es bleibt keine Frage offen. Als erste Anlaufstelle für Ihre Kunden bieten wir einen hochwertigen <span class="is-highlighted">Kundenservice, Antwortservice, Live-Chat, E-Mail-Management</span> und <span class="is-highlighted">Social Webcare.</span> Die schnelle und angemessene Bearbeitung eingehender Anfragen hat für uns oberste Priorität! ',
         services: {
         }
       }
     },
     work: {
       title: '<span class="is-highlighted">Wie wir zusammenarbeiten</span>',
-      text: 'Das Verständnis Ihrer Kriterien und Ziele ist der erste Schritt für eine <span class="is-highlighted">langfristige Zusammenarbeit</span>und hohe Kundenzufriedenheit. Indem wir uns durch <span class="is-highlighted">Wissensaustausch</span> mit Ihrer Geschichte vertraut machen, können wir angemessen mit der Zielgruppe kommunizieren und die vereinbarten Ziele erreichen. Dies tun wir unter anderem durch einen Businessplan und indem wir <span class="is-highlighted">maßgeschneiderte Lösungen</span> anbieten. Und unser festes Team aus mehrsprachigen Telefonagenten sorgt dafür, dass alles reibungslos läuft!',
+      text: 'Das Verständnis Ihrer Kriterien und Ziele ist der erste Schritt für eine <span class="is-highlighted">langfristige Zusammenarbeit</span> und hohe Kundenzufriedenheit. Indem wir uns durch <span class="is-highlighted">Wissensaustausch</span> mit Ihrer Geschichte vertraut machen, können wir angemessen mit der Zielgruppe kommunizieren und die vereinbarten Ziele erreichen. Dies tun wir unter anderem durch einen Businessplan und indem wir <span class="is-highlighted">maßgeschneiderte Lösungen</span> anbieten. Und unser festes Team aus mehrsprachigen Telefonagenten sorgt dafür, dass alles reibungslos läuft!',
       button: 'Download Gratisangebote',
     },
     clients: {
@@ -300,7 +300,7 @@ const de = {
       },
       info: {
         title: 'Warum unser <span class="is-highlighted"> Social Webcare</span> effektiv ist',
-        content: 'Heute ist Social Webcare ein Muss! Ihre Kunden sind online und wenn sie nicht ans Telefon gehen, keine E-Mail schreiben oder einen Chat starten, um um Hilfe zu bitten, posten sie ihre Fragen und Beschwerden online. Mit einer proaktiven Social Webcare sind Sie immer auf dem Laufenden und während wir uns um Ihre Kunden kümmern, sammelt unser Team auch wertvolle Verbrauchereinblicke, um Ihre Online-Reputation zu verbessern. Und wussten Sie, dass sich eine gute Social Webcare auch positiv auf Ihren Umsatz auswirkt?Unsere Web-Agenten sind bereit, Ihre Online-Reise zu verbessern!',
+        content: 'Heute ist Social Webcare ein Muss! Ihre Kunden sind online und wenn sie nicht ans Telefon gehen, keine E-Mail schreiben oder einen Chat starten, um um Hilfe zu bitten, posten sie ihre Fragen und Beschwerden online. Mit einer proaktiven Social Webcare sind Sie immer auf dem Laufenden und während wir uns um Ihre Kunden kümmern, sammelt unser Team auch wertvolle Verbrauchereinblicke, um Ihre Online-Reputation zu verbessern. Und wussten Sie, dass sich eine gute Social Webcare auch positiv auf Ihren Umsatz auswirkt? Unsere Web-Agenten sind bereit, Ihre Online-Reise zu verbessern!',
       },
       quote1: 'Wir sind Ihr integratives Tool für ein herausragendes Kundenerlebnis!',
       quote2: 'Möchten Sie das Beste aus Ihrem Kundenservice herausholen?',
@@ -338,15 +338,15 @@ const de = {
   careers: {
     cover: {
       title: '<span class="is-highlighted">Komm in unser Team!</span>',
-      subtitle: 'Sie möchten Teil unseres Teams werden und gemeinsam mit uns die Zukunft unserer Kunden gestalten?',
+      subtitle: 'Du möchtest Teil unseres Teams werden und gemeinsam mit uns die Zukunft unserer Kunden gestalten?',
       cta: 'Mach mit!',
     },
     positions: {
       title: `<span class="is-highlighted">Unsere Stellenangebote</span>`,
-      copy: `<span class="is-block has-text-italic">Sie können es kaum erwarten, Ihre Talente zu offenbaren?</span> Sie können jederzeit eine <span class="is-highlighted"> offene Bewerbung </span> an <span class="is-highlighted"> careers@movementsmarketing.com </span> senden`,
+      copy: `<span class="is-block has-text-italic">Du kannst es kaum erwarten, deine Talente zu offenbaren?</span> Du kannst jederzeit eine <span class="is-highlighted"> offene Bewerbung </span> an <span class="is-highlighted"> careers@movementsmarketing.com </span> senden`,
     },
     offers: {
-      title: '<span class="is-highlighted">Wir bieten Ihnen auf den Punkt gebracht</span>',
+      title: '<span class="is-highlighted">Wir bieten auf den Punkt gebracht</span>',
       perks: {
         perk1: 'Internationale Arbeitsplätze',
         perk2: 'Attraktive Boni',

@@ -82,6 +82,10 @@
     &.is-gradient {
       background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
 
+      @media screen  and (max-width: 7680px) {
+        background: linear-gradient(90deg, #186267 0%, #6abe77 100%);
+      }
+
       h3 {
         color: #fff;
       }

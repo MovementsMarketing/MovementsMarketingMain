@@ -41,7 +41,7 @@
             <facts :facts="[$t(`home.about.facts.qualitativeTelemarketing`), $t(`home.about.facts.multilingualTelemarketers`), $t(`home.about.facts.costEffectiveResults`)]"></facts>
             <div class="about has-bg-white">
                 <div class="bg-image has-text-right">
-                    <img src="@/assets/images/backgrounds/movements_about-us_map.png">
+                    <img src="@/assets/images/backgrounds/movements_about-us_map.png" alt="Movements Marketing Locations">
                 </div>
                 <div class="section__content has-text-left">
                     <h1 v-html="$t(`home.about.aboutUs.aboutUs`)" class="m-b-0"></h1>
@@ -64,7 +64,7 @@
         <div class="section section--numbers" id="numbersSection" style="overflow: visible">
             <div class="our-numbers">
                 <div class="bg-image">
-                    <img src="@/assets/images/backgrounds/movements_globe_bg.png">
+                    <img src="@/assets/images/backgrounds/movements_globe_bg.png" alt="Movements Marketing Globe Background">
                 </div>
                 <div class="line"></div>
                 <div class="section__content has-text-left">
@@ -115,10 +115,10 @@
                 </div>
                 <div class="services-cover column is-4-tablet is-6-desktop p-0">
                     <div class="services-cover__mask">
-                        <img src="@/assets/images/backgrounds/blue-mask.png">
+                        <img src="@/assets/images/backgrounds/blue-mask.png" alt="Movements Marketing Image Mask">
                     </div>
                     <div class="services-cover__image has-text-right">
-                        <img src="@/assets/images/backgrounds/movements_customer-service_outbound_cover.png">
+                        <img src="@/assets/images/backgrounds/movements_customer-service_outbound_cover.png" alt="Outbound Lead Generation">
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@
                     </a>
                 </div>
                 <div class="column is-12-tablet is-6-desktop work__img-wrapper">
-                    <img src="@/assets/images/backgrounds/movements_work_cover.png">
+                    <img src="@/assets/images/backgrounds/movements_work_cover.png" alt="Movements Marketing Work Practice">
                 </div>
             </div>
         </div>
@@ -154,10 +154,10 @@
             <div class="columns m-0">
                 <div class="services-cover column is-4-tablet is-6-desktop p-t-0 p-l-0 p-b-0 l-h-0">
                     <div class="services-cover__mask">
-                        <img src="@/assets/images/backgrounds/yellow-mask.png">
+                        <img src="@/assets/images/backgrounds/yellow-mask.png" alt="Movements Marketing Image Mask">
                     </div>
                     <div class="services-cover__image has-text-left">
-                        <img src="@/assets/images/backgrounds/movements_customer-service_inbound_cover.png">
+                        <img src="@/assets/images/backgrounds/movements_customer-service_inbound_cover.png" alt="Inbound Customer Service">
                     </div>
                 </div>
                 <div class="section__content column is-8-tablet is-6-desktop">
@@ -181,7 +181,7 @@
         <div class="section--telemarketers lh-0">
         <div class="section--telemarketers__wrapper lh-0">
 
-            <img src="@/assets/images/backgrounds/movements_marketing_telemarketers.jpg">
+            <img src="@/assets/images/backgrounds/movements_marketing_telemarketers.jpg" alt="Movements Marketing Telemarketers">
         </div>
         </div>
 
@@ -193,7 +193,7 @@
             </div>
             <div class="columns m-0 is-multiline contact__columns">
                 <div class="column is-12-tablet is-6-desktop p-0 lh-0" style="position: relative; background: #ffffff;">
-                    <img src="@/assets/images/backgrounds/movemens_contact_bg.png"/>
+                    <img src="@/assets/images/backgrounds/movemens_contact_bg.png" alt="Movements Marketing Contact"/>
                     <div class="offices">
                         <div class="columns is-multiline is-mobile">
                             <div class="column is-4 has-text-left">
