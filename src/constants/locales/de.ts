@@ -4,12 +4,12 @@ const de = {
     services: 'Dienstleistungen',
     clients: 'Kunden',
     career: 'Karriere',
-    contact: 'Kontaktiere uns!',
+    contact: 'Kontakt',
     contactUs: 'Kontaktiere uns!',
     linkedInBlogs: 'LinkedIn-Blogs',
     privacyPolicy: 'Datenschutzerklärung',
     servicesOptions: {
-      outbound: 'Outbound Lead Generierung',
+      outbound: 'Outbound Leadgenerierung',
       inbound: 'Inbound Kundenservice',
       telemarketing: 'B2B-Telemarketing',
       leadGeneration: 'Leadgenerierung',
@@ -25,7 +25,7 @@ const de = {
   home: {
     title: 'New Business und zufriedene Kunden beginnen hier',
     subtitle: 'Wir schaffen und pflegen langfristige Kundenbeziehungen!',
-    contactUs: 'Uns kontaktieren!',
+    contactUs: 'Kontaktiere uns!',
     about: {
       facts: {
         qualitativeTelemarketing: 'Qualitatives Telemarketing',
@@ -34,7 +34,7 @@ const de = {
       },
       aboutUs: {
         aboutUs: 'Über  <span class="is-highlighted">uns</span>',
-        p1: 'Movements Marketing ist auf die Bereiche <span class="has-text-weight-bold">Outbound Lead Generierung</span> und <span class="has-text-weight-bold">Inbound Kundenservice</span> spezialisiert. Der Aufbau wertvoller Kontaktmomente beginnt mit der Optimierung und Verbesserung der Kundenbeziehungen. Indem wir qualitatives B2B-Telemarketing und einen maßgeschneiderten Kundenservice, Antwortservice, Live-Chat, E-Mail-Management und Social Webcare anbieten, verwirklichen wir Ihre Ambitionen und helfen Ihnen, Ihre kommerziellen Ziele zu erreichen!',
+        p1: 'Movements Marketing ist auf die Bereiche <span class="has-text-weight-bold">Outbound Leadgenerierung</span> und <span class="has-text-weight-bold">Inbound Kundenservice</span> spezialisiert. Der Aufbau wertvoller Kontaktmomente beginnt mit der Optimierung und Verbesserung der Kundenbeziehungen. Indem wir qualitatives B2B-Telemarketing und einen maßgeschneiderten Kundenservice, Antwortservice, Live-Chat, E-Mail-Management und Social Webcare anbieten, verwirklichen wir Ihre Ambitionen und helfen Ihnen, Ihre kommerziellen Ziele zu erreichen!',
         p2: 'Unser gut ausgebildetes Team arbeitet von unserem Hauptsitz in Sarajevo und zwei weiteren Büros in Istanbul und Utrecht aus. Dank unserer mehrsprachigen Telefonagenten ist eine professionelle Kommunikation und gewinnbringende Interaktion mit dauerhaft kosteneffektiven Ergebnissen gewährleistet. Unser Engagement für den Erfolg unserer Kunden spiegelt unsere wahren Ambitionen wieder. Deshalb vertreten wir Ihr Unternehmen als einer von Ihnen. Und darum:<span style="font-style: italic;"> Wir sind nur erfolgreich, wenn Sie es auch sind!</span>',
       }
     },
@@ -49,7 +49,7 @@ const de = {
     quote: '“Wir sind nur erfolgreich, wenn Sie es auch sind!”',
     services: {
       outbound: {
-        title: 'Outbound <span class="is-highlighted"> Lead Generierung </span>',
+        title: 'Outbound <span class="is-highlighted"> Leadgenerierung </span>',
         text: 'Ein Kalender voller erstklassiger Termine ist das ultimative Ziel eines jeden Vertriebsteams und Unternehmens. Doch wie generiert man hochwertige Leads? Movements Marketing ist Experte für <span class="is-highlighted"> B2B-Telemarketing </span> und bietet Kaltakquise im Namen Ihres Unternehmens an. Wir bringen Sie mit potenziellen Kunden in Kontakt, die Sie im Auge haben, und <span class="is-highlighted"> planen Termine </span>direkt im Kalender Ihres Vertriebsteams. Und dank der gewünschten Leads kann sich Ihr Vertrieb auf das konzentrieren, was er am besten kann: Geschäfte abschließen. Wir helfen Ihnen nicht nur, neue Kunden zu finden, indem wir Termine vereinbaren, sondern planen auch <span class="is-highlighted"> Demos </span> und kümmern uns um die <span class="is-highlighted"> Datenanreicherung,</span> um den Verkauf zu beschleunigen!',
         services: {
           telemarketing: 'B2B Telemarketing'
@@ -76,7 +76,7 @@ const de = {
         text: 'Die DAK ist die größte Genossenschaft von und für Versicherungs- und Baufinanzierungsberater. Wir bieten professionelle Unterstützung und verschaffen Beratungsunternehmen Zugang zum nahezu gesamten Finanzmarkt. Die Zusammenarbeit mit Movements Marketing begann während der Einführung von DAK Autolease. Mit der Einführung dieses neuen Dienstes sahen wir eine Gelegenheit, mehr Büros zu rekrutieren. Dies wurde dank einer effektiven Zusammenarbeit zwischen unserem Verkaufsteam und den Leuten von Movements Marketing erreicht. Wir arbeiten nun seit vier Jahren zusammen und sie wickeln für uns neben Outbound-Aktivitäten auch Inbound-Aktivitäten ab. Wir empfehlen Movements Marketing aufgrund des persönlichen Engagements, der kurzen Wege und der guten Ergebnisse.',
       },
       shypple: {
-        text: 'Shypple ist ein digitaler Spediteur für den weltweiten Transport von Fracht, der Lieferketten in Echtzeit verwaltet und analysiert. Die Zusammenarbeit mit Movements Marketing geht auf unsere Startup-Zeit zurück. Aber auch jetzt sind sie als Scale-up in der Lage, unsere kommerzielle Reichweite effizient zu vergrößern, auch in anderen Ländern. Movements Marketing ist für uns ein Partner, der mitdenkt, dazulernen will und vor allem zeigt, dass er bereit ist, die Botschaft auf unsere Weise zu verbreiten. Diese Leistung wächst und das liegt zum Teil an den kurzen Kommunikationswegen, regelmäßigen Bewertungen und Schulungen. Besonders in diesen letzten beiden Punkten unterscheidet sich Movements Marketing von anderen Parteien, mit denen wir zusammengearbeitet haben.',
+        text: 'Shypple ist ein digitaler Spediteur für den weltweiten Transport von Fracht, der Lieferketten in Echtzeit verwaltet und analysiert. Die Zusammenarbeit mit Movements Marketing geht auf unsere Startup-Zeit zurück. Jetzt, wo wir ein Scale-up sind, helfen Sie, unsere kommerzielle Reichweite effizient zu vergrößern, auch in anderen Ländern. Sie sind für uns ein Partner, der mitdenkt, dazulernen will und vor allem zeigt, dass er bereit ist, die Botschaft auf unsere Weise zu verbreiten. Diese Leistung wächst und das liegt zum Teil an den kurzen Kommunikationswegen, regelmäßigen Bewertungen und Schulungen. Besonders in diesen letzten beiden Punkten unterscheidet sich Movements Marketing von anderen Parteien, mit denen wir zusammengearbeitet haben.',
       }
     },
     telemarketers: 'Diese Telefonagenten <span class="is-highlighted">steigern Ihr Geschäft</span>',
@@ -93,7 +93,7 @@ const de = {
     telemarketing: {
       cover: {
         title: 'Entlasten Sie Ihr <span class="is-highlighted"> Sales Team </span>',
-        subtitle: 'Steigern Sie Ihre Lead-Generierung mit unserem <span class="is-highlighted">B2B-Telemarketing! </span>',
+        subtitle: 'Steigern Sie Ihre Leadgenerierung mit unserem <span class="is-highlighted">B2B-Telemarketing! </span>',
         cta: 'Testen Sie jetzt!',
       },
       facts: {

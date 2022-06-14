@@ -4,7 +4,7 @@ const en = {
     services: 'Services',
     clients: 'Clients',
     career: 'Careers',
-    contact: 'Contact Us!',
+    contact: 'Contact',
     contactUs: 'Contact Us!',
     linkedInBlogs: 'LinkedIn Blogs',
     privacyPolicy: 'Privacy Policy',
@@ -23,7 +23,7 @@ const en = {
     }
   },
   home: {
-    title: 'New Business and Satisfied Customers start here',
+    title: 'New Business and Satisfied Customers Start Here',
     subtitle: 'We create and maintain long-term customer experiences!',
     contactUs: 'Contact Us!',
     about: {
@@ -34,8 +34,8 @@ const en = {
       },
       aboutUs: {
         aboutUs: 'About <span class="is-highlighted">Us</span>',
-        p1: 'Movements Marketing is specialized in the field of <span class="has-text-weight-bold">Outbound Lead Generation</span> and <span class="has-text-weight-bold">Inbound Customer Service</span>. Creating valued contact moments starts with optimizing and improving customer relationships. By offering qualitative B2B Telemarketing and a tailor-made Customer Service, Answering Service, Live Chat, Email Management and Social Webcare, we realize your ambitions and help achieve your commercial goals!',
-        p2: 'Our well-trained team works from our headquarters in Sarajevo and other two offices in Istanbul and Utrecht. Thanks to our multilinguals telemarketers, a professional communication and fruitful interaction is assured with on-going cost-effective results. Our commitment to our clients’ success, portrays our true ambitions. Therefore, we represent your business as one of you.  And that’s why: <span style="font-style: italic;"> we are only successful, if you are too! </span>',
+        p1: 'Movements Marketing specializes in the field of <span class="has-text-weight-bold"> Outbound Lead Generation </span> and <span class="has-text-weight-bold"> Inbound Customer Service. </span> Creating valued contacts starts with optimizing and improving customer relationships. By offering qualitative B2B Telemarketing and a tailor-made Customer Service, Answering Service, Live Chat, Email Management, and Social Webcare, we realize your ambitions and help you achieve your commercial goals!',
+        p2: 'Our well-trained team works from our headquarters in Sarajevo and two other offices in Istanbul and Utrecht. Thanks to our multilingual telemarketers, professional communication and fruitful interaction are assured with ongoing cost-effective results. Our commitment to our clients&#39; success portrays our true ambitions. Therefore, we represent your business as one of you. And that&#39;s why: <span style="font-style: italic;"> we are only successful, if you are too! </span>',
       }
     },
     numbers: {

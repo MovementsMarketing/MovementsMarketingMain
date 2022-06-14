@@ -172,7 +172,7 @@
                   <span class="navigation__item--dropdown" :class="isServicesActive ? 'is-active' : ''">
                     <span class="text-wrapper">
                       {{ $t(`navigation.services`) }}
-                      <span class="m-l-20">
+                      <span class="m-l-5">
                         <icons icon="chevronDown" stroke="#2a4647" stroke-width="2" height="20" width="20" />
                       </span>
                     </span>
@@ -445,7 +445,7 @@
           color: #186267 !important;
 
           @media (min-resolution: 100dpi) {
-            font-size: 20px;
+            font-size: 19px;
           }
 
           a:not(.button),

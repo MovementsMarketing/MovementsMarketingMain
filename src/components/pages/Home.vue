@@ -46,8 +46,8 @@
                 <div class="section__content has-text-left">
                     <h1 v-html="$t(`home.about.aboutUs.aboutUs`)" class="m-b-0"></h1>
                     <div class="columns">
-                        <div class="column is-12-tablet is-10-desktop">
-                            <div class="columns about__text is-variable is-8 is-multiline">
+                        <div class="column is-12-tablet is-9-desktop">
+                            <div class="columns about__text is-variable is-6 is-multiline">
                                 <div class="column is-12-tablet is-5-desktop">
                                     <p v-html="$t(`home.about.aboutUs.p1`)"></p>
                                 </div>
@@ -334,7 +334,22 @@
               name: this.$t(`navigation.servicesOptions.telemarketing`),
               url: '/service/b2b-telemarketing',
               src: require('@/assets/images/services/icons/b2b_telemarketing.png'),
-            }
+            },
+            {
+              name: this.$t(`navigation.servicesOptions.leadGeneration`),
+              url: '/service/b2b-telemarketing',
+              src: require('@/assets/images/services/icons/lead_generation.webp'),
+            },
+            {
+              name: this.$t(`navigation.servicesOptions.newAppointments`),
+              url: '/service/b2b-telemarketing',
+              src: require('@/assets/images/services/icons/new_appointments.webp'),
+            },
+            {
+              name: this.$t(`navigation.servicesOptions.dataEnrichment`),
+              url: '/service/b2b-telemarketing',
+              src: require('@/assets/images/services/icons/data_enrichment.webp'),
+            },
           ],
           inbound: [
             {
@@ -745,8 +760,8 @@
                     font-weight: 900;
 
                     @media (min-resolution: 100dpi) {
-                        font-size: 72px;
-                        line-height: 80px;
+                        font-size: 68px;
+                        line-height: 72px;
                     }
 
                     @media screen  and (max-width: 780px) {
@@ -783,7 +798,9 @@
                     padding-top: 15px;
 
                     @media (min-resolution: 100dpi) {
-                        padding-top: 10px;
+                      padding-top: 10px;
+                      font-size: 17px;
+                      line-height: 20px;
                     }
                 }
             }
