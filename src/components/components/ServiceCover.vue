@@ -87,15 +87,11 @@
           line-height: 42px;
           margin-top: 20px;
           margin-bottom: 30px;
-        }
-
-        @media screen  and (max-width: 460px) {
-          font-size: 36px;
-          line-height: 32px;
+          white-space: break-spaces;
         }
 
         @media screen  and (max-width: 320px) {
-          font-size: 32px;
+          font-size: 36px;
           line-height: 32px;
         }
 

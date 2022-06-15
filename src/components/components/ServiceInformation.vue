@@ -51,8 +51,7 @@
       }
 
       @media screen  and (max-width: 768px) {
-        padding-left: 40px !important;
-        padding-right: 40px !important;
+        padding: 40px !important;
       }
     }
 

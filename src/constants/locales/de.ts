@@ -49,7 +49,7 @@ const de = {
     quote: '“Wir sind nur erfolgreich, wenn Sie es auch sind!”',
     services: {
       outbound: {
-        title: 'Outbound <span class="is-highlighted"> Leadgenerierung </span>',
+        title: 'Outbound <span class="is-highlighted">Leadgenerierung </span>',
         text: 'Ein Kalender voller erstklassiger Termine ist das ultimative Ziel eines jeden Vertriebsteams und Unternehmens. Doch wie generiert man hochwertige Leads? Movements Marketing ist Experte für <span class="is-highlighted"> B2B-Telemarketing </span> und bietet Kaltakquise im Namen Ihres Unternehmens an. Wir bringen Sie mit potenziellen Kunden in Kontakt, die Sie im Auge haben, und <span class="is-highlighted"> planen Termine </span>direkt im Kalender Ihres Vertriebsteams. Und dank der gewünschten Leads kann sich Ihr Vertrieb auf das konzentrieren, was er am besten kann: Geschäfte abschließen. Wir helfen Ihnen nicht nur, neue Kunden zu finden, indem wir Termine vereinbaren, sondern planen auch <span class="is-highlighted"> Demos </span> und kümmern uns um die <span class="is-highlighted"> Datenanreicherung,</span> um den Verkauf zu beschleunigen!',
         services: {
           telemarketing: 'B2B Telemarketing'
@@ -92,7 +92,7 @@ const de = {
   services: {
     telemarketing: {
       cover: {
-        title: 'Entlasten Sie Ihr <span class="is-highlighted"> Sales Team </span>',
+        title: 'Entlasten Sie Ihr <span class="is-highlighted">Sales Team </span>',
         subtitle: 'Steigern Sie Ihre Leadgenerierung mit unserem <span class="is-highlighted">B2B-Telemarketing! </span>',
         cta: 'Testen Sie jetzt!',
       },
@@ -102,7 +102,7 @@ const de = {
         fact3: 'Laufende Kontinuität',
       },
       info: {
-        title: 'Warum unser <span class="is-highlighted"> B2B-Telemarketing</span> effektiv ist',
+        title: 'Warum unser <span class="is-highlighted">B2B-Telemarketing</span> effektiv ist',
         content: 'Kaltakquise und damit die Gewinnung von Neukunden ist ein Beruf. Es braucht Zeit und Ausdauer. Auch für das beste Verkaufsteam. Aber für uns ist es unsere zweite Natur. Movements Marketing unterstützt Ihren Vertrieb mit qualitativer Leadgenerierung und liefert Neugeschäft. Durch die Neukundengewinnung und gleichzeitige Terminvereinbarung sowie die Planung von Online-Demos und Datenanreicherung ist Ihr Vertriebsteam wieder voll in Form!',
       },
       quote1: 'Wir sind die Erweiterung Ihres Vertriebs!',
@@ -131,7 +131,7 @@ const de = {
     },
     customerService: {
       cover: {
-        title: 'Aktualisieren Sie Ihren <span class="is-highlighted"> Kundenservice </span>',
+        title: 'Aktualisieren Sie Ihren <span class="is-highlighted">Kundenservice </span>',
         subtitle: 'Gehen Sie auf die nächste Stufe mit unserem  <span class="is-highlighted">Kundenservice! </span>',
         cta: 'Testen Sie jetzt!',
       },
@@ -170,7 +170,7 @@ const de = {
     },
     answeringService: {
       cover: {
-        title: 'Entlasten Sie alle <span class="is-highlighted"> Ihre Abteilungen!</span>',
+        title: 'Entlasten Sie alle <span class="is-highlighted">Ihre Abteilungen!</span>',
         subtitle: 'Optimieren Sie die Erreichbarkeit mit unserem <span class="is-highlighted">Telefonservice!  </span>',
         cta: 'Testen Sie jetzt!',
       },
@@ -180,7 +180,7 @@ const de = {
         fact3: 'Kosteneffiziente Ergebnisse',
       },
       info: {
-        title: 'Warum unser <span class="is-highlighted"> Telefonservice</span> effektiv ist',
+        title: 'Warum unser <span class="is-highlighted">Telefonservice</span> effektiv ist',
         content: 'Wenn Ihre Mitarbeiter mit eingehenden Anrufen beschäftigt sind, werden sie dadurch von ihrer Arbeit abgelenkt. Doch mit unserem Telefonservice kann sich Ihr Team auf seine eigentlichen Aufgaben konzentrieren und Ihr Unternehmen ist optimal erreichbar! Dank unseres kontinuierlichen Qualitätsservices wird jeder Anruf beantwortet und keine Kundenfrage bleibt unbeantwortet. Indem Sie den Empfang auslagern, sind Sie der Konkurrenz einen Schritt voraus!',
       },
       quote1: 'Mit unserem Telefonservice sind Sie immer einen Schritt voraus!',
@@ -220,7 +220,7 @@ const de = {
         fact3: 'Verbesserung des Kundenerlebnisses',
       },
       info: {
-        title: 'Warum unser <span class="is-highlighted"> Live-Chat</span> effektiv ist',
+        title: 'Warum unser <span class="is-highlighted">Live-Chat</span> effektiv ist',
         content: 'Stellen Sie sich vor, Ihre Kunden könnten sie genau in dem Moment kontaktieren, in dem sie eine Frage oder ein Problem haben und es nicht selbst lösen können? Das ist einer der vielen Vorteile unseres Live-Chats! Darüber hinaus ist es eine zugängliche und einfache Art der Kommunikation, selbst für diejenigen Kunden, für die die Kontaktaufnahme ein Hindernis darstellt. Das Beste ist, dass Ihre Kunden wissen, dass sie eine Antwort erhalten und ihre Anfrage gelöst wird!',
       },
       quote1: 'Barrierefreie Kommunikation beginnt mit unserem Live-Chat!',
@@ -260,7 +260,7 @@ const de = {
         fact3: 'Kosteneffektive Investition',
       },
       info: {
-        title: 'Warum unser <span class="is-highlighted"> E-Mail-Management</span> effektiv ist',
+        title: 'Warum unser <span class="is-highlighted">E-Mail-Management</span> effektiv ist',
         content: 'Das Nachverfolgen und Beantworten von E-Mails ist keine Nebensache – zumal E-Mails heute der Standard für die professionelle Kommunikation sind. Aus diesem Grund ist die effektive Verwaltung Ihres Posteingangs ein Schlüsselfaktor für Ihren Geschäftserfolg. Um keine wichtigen Details zu verpassen, müssen Ihre Profis konzentriert sein. Eine unmögliche Aufgabe an einem ausgebuchten Arbeitstag. Doch dank unseres E-Mail-Managements gehört das Stapeln eingehender E-Mails der Vergangenheit an: Wir bringen Effizienz in Ihren Posteingang und sorgen für Aktualität!',
       },
       quote1: 'Wir sind der erste Schritt zur Verbesserung Ihres E-Mail-Managements!',
@@ -289,7 +289,7 @@ const de = {
     },
     socialWebcare: {
       cover: {
-        title: 'Sein Sie auch <span class="is-highlighted">  online präsent</span>',
+        title: 'Sein Sie auch <span class="is-highlighted">online präsent</span>',
         subtitle: 'Beeinflussen Sie Ihren Umsatz positiv mit unserer Social Webcare! ',
         cta: 'Testen Sie jetzt!',
       },
@@ -299,7 +299,7 @@ const de = {
         fact3: 'Besserer Online-Ruf',
       },
       info: {
-        title: 'Warum unser <span class="is-highlighted"> Social Webcare</span> effektiv ist',
+        title: 'Warum unser <span class="is-highlighted">Social Webcare</span> effektiv ist',
         content: 'Heute ist Social Webcare ein Muss! Ihre Kunden sind online und wenn sie nicht ans Telefon gehen, keine E-Mail schreiben oder einen Chat starten, um um Hilfe zu bitten, posten sie ihre Fragen und Beschwerden online. Mit einer proaktiven Social Webcare sind Sie immer auf dem Laufenden und während wir uns um Ihre Kunden kümmern, sammelt unser Team auch wertvolle Verbrauchereinblicke, um Ihre Online-Reputation zu verbessern. Und wussten Sie, dass sich eine gute Social Webcare auch positiv auf Ihren Umsatz auswirkt? Unsere Web-Agenten sind bereit, Ihre Online-Reise zu verbessern!',
       },
       quote1: 'Wir sind Ihr integratives Tool für ein herausragendes Kundenerlebnis!',

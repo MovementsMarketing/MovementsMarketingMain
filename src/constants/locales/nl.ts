@@ -9,11 +9,11 @@ const nl = {
     linkedInBlogs: 'LinkedIn Blogs',
     privacyPolicy: 'Privacybeleid',
     servicesOptions: {
-      outbound: 'Outbound Lead Generation',
-      inbound: 'Inbound Customer Service',
+      outbound: 'Outbound leadgeneratie',
+      inbound: 'Inbound klantenservice',
       telemarketing: 'B2B Telemarketing',
       leadGeneration: 'Leadgeneratie',
-      newAppointments: 'New business afspraken',
+      newAppointments: '<span class="no-wrap">New business</span> afspraken',
       dataEnrichment: 'Dataverrijking',
       customerService: 'Klantenservice',
       answeringService: 'Telefoonservice',
@@ -34,7 +34,7 @@ const nl = {
       },
       aboutUs: {
         aboutUs: 'Over  <span class="is-highlighted">ons</span>',
-        p1: 'Movements Marketing is specialist op het gebied van <span class="has-text-weight-bold">Outbound Lead Generation</span> en <span class="has-text-weight-bold">Inbound Customer Service</span>. Het creëren van gewaardeerde contactmomenten begint met het optimaliseren en verbeteren van de klantrelaties. Door kwalitatieve B2B-telemarketing en een op jouw klanten toegesneden Klantenservice, Telefoonservice, Live Chat, E-mailmanagement en Social Webcare, maken wij jouw ambities waar en helpen met het bereiken van jouw commerciële doelstellingen!',
+        p1: 'Movements Marketing is specialist op het gebied van <span class="has-text-weight-bold">Outbound leadgeneratie</span> en <span class="has-text-weight-bold">Inbound klantenservice</span>. Het creëren van gewaardeerde contactmomenten begint met het optimaliseren en verbeteren van de klantrelaties. Door kwalitatieve B2B-telemarketing en een op jouw klanten toegesneden Klantenservice, Telefoonservice, Live Chat, E-mailmanagement en Social Webcare, maken wij jouw ambities waar en helpen met het bereiken van jouw commerciële doelstellingen!',
         p2: 'Ons goed getrainde team werkt vanuit ons hoofdkantoor in Sarajevo en twee andere vestigingen in Istanbul en Utrecht. Dankzij onze meertalige telemarketeers is een professionele communicatie en vruchtbare interactie verzekerd met blijvende, kosteneffectieve resultaten. Onze toewijding aan het succes van onze klanten, weergeeft onze ware ambities. Wij vertegenwoordigen jouw bedrijf dan ook als één van jullie. En daarom: <span style="font-style: italic;"> Alleen als jij succesvol bent, zijn wij het ook! </span>',
       }
     },
@@ -49,15 +49,15 @@ const nl = {
     quote: '“Alleen als jij succesvol bent, dan zijn wij het ook!”',
     services: {
       outbound: {
-        title: 'Outbound <span class="is-highlighted"> Lead Generation </span>',
-        text: 'Een agenda vol eersteklas afspraken is het ultieme doel van elk salesteam en bedrijf. Maar hoe genereer je hoogwaardige leads? Movements Marketing is expert in B2B Telemarketing en verzorgt cold calling namens jouw bedrijf. Wij brengen je in contact met potentiële klanten die jij voor ogen hebt en plannen afspraken direct in de agenda van jouw salesteam. Dankzij de gewenste leads die binnenstromen, kan sales zich concentreren op waar ze goed in zijn: het sluiten van deals. Naast het werven van nieuwe klanten , plannen wij ook <span class="is-highlighted">demo&#39;</span>> in en verzorgen eveneens <span class="is-highlighted">dataverrijking</span> om het salesproces te versnellen!',
+        title: 'Outbound <span class="is-highlighted"> leadgeneratie </span>',
+        text: `Een agenda vol eersteklas afspraken is het ultieme doel van elk salesteam en bedrijf. Maar hoe genereer je hoogwaardige leads? Movements Marketing is expert in B2B Telemarketing en verzorgt cold calling namens jouw bedrijf. Wij brengen je in contact met potentiële klanten die jij voor ogen hebt en plannen afspraken direct in de agenda van jouw salesteam. Dankzij de gewenste leads die binnenstromen, kan sales zich concentreren op waar ze goed in zijn: het sluiten van deals. Naast het werven van nieuwe klanten , plannen wij ook <span class="is-highlighted">demo's</span> in en verzorgen eveneens <span class="is-highlighted">dataverrijking</span> om het salesproces te versnellen!`,
         services: {
           telemarketing: 'B2B Telemarketing'
         }
       },
       inbound: {
-        title: 'Inbound <span class="is-highlighted">Customer Service</span>',
-        text: 'Als jouw professionals klantondersteuning moeten bieden terwijl ze aan het werk zijn, wordt het een steeds grotere uitdaging om te focussen op hun eigenlijke werkzaamheden. Dat is het moment waar Movements Marketing om de hoek komt kijken. Want met onze Inbound Customer Service, is jouw bedrijf optimaal bereikbaar en blijft geen vraag onbeantwoord. Als eerste aanspreekpunt voor jouw klanten, zorgen wij voor op-en-top Klantenservice, Telefoonservice, Live Chat, E-mailmanagement en Social Webcare. Het snel en adequaat afhandelen van inkomende klantvragen, is onze topprioriteit!',
+        title: 'Inbound <span class="is-highlighted">klantenservice</span>',
+        text: 'Als jouw professionals klantondersteuning moeten bieden terwijl ze aan het werk zijn, wordt het een steeds grotere uitdaging om te focussen op hun eigenlijke werkzaamheden. Dat is het moment waar Movements Marketing om de hoek komt kijken. Want met onze <span class="is-highlighted"> Inbound klantenservice</span>, is jouw bedrijf optimaal bereikbaar en blijft geen vraag onbeantwoord. Als eerste aanspreekpunt voor jouw klanten, zorgen wij voor op-en-top <span class="is-highlighted">Klantenservice, Telefoonservice, Live Chat, E-mailmanagement</span> en <span class="is-highlighted">Social Webcare.</span> Het snel en adequaat afhandelen van inkomende klantvragen, is onze topprioriteit!',
         services: {
         }
       }

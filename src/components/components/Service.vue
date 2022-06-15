@@ -2,9 +2,7 @@
   <router-link :to="url">
 
     <div class="service">
-      <h4 class="service__name">
-        {{ name }}
-      </h4>
+      <h4 class="service__name" v-html="name"></h4>
       <div class="service__line">
       </div>
       <div class="service__action">
@@ -76,6 +74,10 @@
       font-weight: 800;
       color: #C8C8C8;
       padding-bottom: 5px;
+
+      .no-wrap {
+        white-space: nowrap;
+      }
     }
 
     .service__line {
@@ -85,7 +87,8 @@
     }
 
     .service__action {
-      padding-top: 25px;
+      position: absolute;
+      bottom: 15px;
 
       .vue-icon__wrapper {
         background: #c8c8c8;

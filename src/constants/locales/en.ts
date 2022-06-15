@@ -13,7 +13,7 @@ const en = {
       inbound: 'Inbound Customer Service',
       telemarketing: 'B2B Telemarketing',
       leadGeneration: 'Lead Generation',
-      newAppointments: 'New Business Appointments',
+      newAppointments: '<span class="no-wrap">New Business </span> Appointments',
       dataEnrichment: 'Data Enrichment',
       customerService: 'Customer Service',
       answeringService: 'Answering Service',
@@ -57,14 +57,14 @@ const en = {
       },
       inbound: {
         title: 'Inbound <span class="is-highlighted">Customer Service</span>',
-        text: 'If your professionals must provide customer support while working, it\'s increasingly challenging to focus on their actual tasks. And that\'s where Movements Marketing steps in! With our <span class="is-highlighted">Inbound Customer Service</span>, your company is optimally accessible and no question remains unanswered. As the first point of contact for your customers, we provide a high-quality <span class="is-highlighted">Customer Service, Answering Service, Live Chat, Email Management</span> and <span class="is-highlighted">Social Webcare.</span> Handling incoming requests quick and adequate is our top priority!  ',
+        text: `If your employees must provide customer support while working on their other tasks, it's increasingly challenging to focus on getting the job done. And that&#39;s where Movements Marketing steps in! With our <span class="is-highlighted">Inbound Customer Service</span>, your company is optimally accessible, and no question remains unanswered. As the first point of contact for your customers, we provide high-quality <span class="is-highlighted">Customer Service, Answering Service, Live Chat, Email Management</span>, and <span class="is-highlighted">Social Webcare.</span> Handling incoming requests quickly and adequately is our top priority!`,
         services: {
         }
       }
     },
     work: {
       title: 'How We <span class="is-highlighted">Work Together</span>',
-      text: 'Understanding your criteria and goals is the first base for a <span class="is-highlighted">long-term cooperation</span> and high customer satisfaction. By becoming familiar with your story trough <span class="is-highlighted">knowledge-sharing</span>, we can communicate adequately with the target group and deliver the agreed targets. We do this, among other things, through a business plan and by offering <span class="is-highlighted">custom-build solutions</span>. And our permanent team of multilingual telemarketers makes sure everything runs smoothly!',
+      text: 'Understanding your criteria and goals is the first base for <span class="is-highlighted">long-term cooperation</span> and high customer satisfaction. By becoming familiar with your story through <span class="is-highlighted">knowledge-sharing</span>, we can communicate adequately with the target group and deliver the agreed targets. We do this, among other things, through a business plan and by offering <span class="is-highlighted">custom-built solutions</span>. And our permanent team of multilingual telemarketers makes sure everything runs smoothly!',
       button: 'Download Freebies',
     },
     clients: {
@@ -92,8 +92,8 @@ const en = {
   services: {
     telemarketing: {
       cover: {
-        title: 'Unburden Your <span class="is-highlighted"> Sales Team </span>',
-        subtitle: 'Uplevel Your Lead Generation With Our <span class="is-highlighted">B2B Telemarketing! </span>',
+        title: 'Unburden Your <span class="is-highlighted">Sales Team</span>',
+        subtitle: 'Take Your Lead Generation to the Next Level With Our <span class="is-highlighted">B2B Telemarketing! </span>',
         cta: 'Try Now! ',
       },
       facts: {
@@ -102,36 +102,36 @@ const en = {
         fact3: 'Ongoing Continuity',
       },
       info: {
-        title: 'Why Our  <span class="is-highlighted"> B2B Telemarketing</span> Is Effective ',
-        content: 'Cold acquisition and thereby recruiting new customers is a profession. It takes time and perseverance. Even for the best sales team. But for us, it’s our second nature. Movements Marketing supports your sales with qualitative lead generation and new business as a positive outcome. By recruiting new customers and at the same time making appointments, as well as scheduling online demos and data enrichment, your sales team is back in their power! ',
+        title: 'Why Our  <span class="is-highlighted">B2B Telemarketing</span> Is Effective ',
+        content: `Cold acquisition and thereby recruiting new customers is a profession. It takes time and perseverance, even for the best sales team. But for us, it&#39;s our second nature. Movements Marketing supports your sales with qualitative lead generation and new clients as a positive outcome. By recruiting new customers, making appointments, scheduling online demos, and enriching your data all at the same time, your sales team will close more deals than ever!`,
       },
       quote1: 'We are the extension of your sales!',
       quote2: 'Do You Want To Get The Most Out Of Your Sales? ',
       trial: {
         title: '<span class="is-highlighted">Schedule An Introductory Meeting Right Away</span>',
-        text: 'Request a consultation now and discover why our B2B Telemarketing works!',
+        text: 'Request a consultation call now and discover why our B2B Telemarketing works!',
         cta: 'Let’s Talk!',
       },
       sales: {
         title: 'How Our B2B Telemarketing Works',
         block1: {
           title: '1. Quick Scan ',
-          text: 'Understanding your criteria and goals is the starting point for a qualitative lead. An online introduction between our telemarketers and you, is our go to for a productive collaboration. ',
+          text: `Understanding your criteria and goals is the starting point for a qualitative lead. An online introduction between our telemarketers and you is our go-to for a productive collaboration.`,
         },
         block2: {
           title: '2. Sales Pitch ',
-          text: 'A successful sales conversation stands or falls with the right tone of voice to address the target group. Our team undergoes an intensive training before calling on behalf of your business.',
+          text: `A successful sales conversation stands or falls with the right tone of voice to address the target group. Our team undergoes intensive training before calling on behalf of your business.`,
         },
         block3: {
           title: '3. Delivering Results ',
-          text: 'Well-prepared we are ready to deliver the agreed targets. Delivering new business and maintaining a long-term partnership, is always our priority! ',
+          text: `Well-prepared, we are ready to deliver the agreed targets. Providing new business and maintaining a long-term partnership is always our priority!`,
         },
       },
       formTitle: 'Test Our B2B Telemarketing!',
     },
     customerService: {
       cover: {
-        title: 'Upgrade Your <span class="is-highlighted"> Customer Support </span>',
+        title: 'Upgrade Your <span class="is-highlighted">Customer Support</span>',
         subtitle: 'Go Next Level With Our  <span class="is-highlighted">Customer Service!  </span>',
         cta: 'Try now!',
       },
@@ -142,35 +142,35 @@ const en = {
       },
       info: {
         title: 'Why Our <span class="is-highlighted">Customer Service</span> Is Effective ',
-        content: 'Providing in-between customer service while working, affects the quality in the workplace and the customer support itself. When inquires remain unsolved, it leaves your customers extremely unsatisfied. Being polite and providing solutions while listening to the customers questions, is only possible when fully focused. At Movements Marketing providing a high-quality Customer Service, is our focal point. We handle incoming questions appropriate, help your customers forward and make sure they hang up satisfied! \n',
+        content: `Providing in-between customer service while working affects the quality in the workplace and the customer support itself. When inquiries remain unsolved, it leaves your customers extremely unsatisfied. Being polite and providing solutions while listening to the customers&#39; questions is only possible when fully focused. At Movements Marketing, providing high-quality Customer Service is our focal point. We handle incoming questions appropriately, help your customers, and ensure they leave the call satisfied!`,
       },
       quote1: 'We are your personal remote Customer Service!',
       quote2: 'Do You Want To Get The Most Out Of Your Customer Service? ',
       trial: {
         title: '<span class="is-highlighted">Schedule An Introductory Meeting Right Away</span>',
-        text: 'Request an consultation now and discover why our Customer Service works! ',
+        text: 'Request a consultation call now and discover why our Customer Service works!',
         cta: 'Let’s Talk!',
       },
       sales: {
         title: 'How Our Customer Service Works',
         block1: {
           title: '1. Quick Scan ',
-          text: 'Providing customer support your customers deserve, starts with unraveling your needs and wants. After understanding your desires, an online introduction between our telemarketers and you is the second base for a constructive cooperation.',
+          text: `Providing customer support your customers deserve starts with unraveling your needs and wants. After understanding your desires, an online introduction between our telemarketers and you is the second base for constructive cooperation.`,
         },
         block2: {
           title: '2. Inhouse Training ',
-          text: 'Addressing the target group with the right tone of voice, makes a successful customer conversation. Our inhouse training makes sure that our team is fully prepared to capture the voice of the customer and communicate the right way on behalf of your company.',
+          text: `Addressing the target group with the right tone of voice makes a successful customer conversation. Our in-house training makes sure that our team is fully prepared to capture the voice of the customer and communicate the right way on behalf of your company.`,
         },
         block3: {
           title: '3. Delivering Results ',
-          text: 'A positive customer experience and delivering the agreed targets are both our benchmark and on top of our list! After the inhouse training, we continue developing our skills to always ensure the best possible outcome.  ',
+          text: `A positive customer experience and delivering the agreed targets are both our benchmark and on top of our list! After the in-house training, we continue developing our skills always to ensure the best possible outcome.`,
         },
       },
       formTitle: 'Test Our Customer Service!',
     },
     answeringService: {
       cover: {
-        title: 'Relieve All <span class="is-highlighted"> Your Departments</span>',
+        title: 'Relieve All <span class="is-highlighted">Your Departments</span>',
         subtitle: 'Optimize Your Accessibility With Our <span class="is-highlighted">Answering Service!  </span>',
         cta: 'Try now!',
       },
@@ -180,14 +180,14 @@ const en = {
         fact3: 'Cost-effective Results',
       },
       info: {
-        title: 'Why Our <span class="is-highlighted"> Answering Service </span> Is Effective ',
+        title: 'Why Our <span class="is-highlighted">Answering Service</span> Is Effective ',
         content: 'When your professionals are occupied with incoming calls, it distracts them from their main job. With our answering service and operators, your professionals can focus on their actual tasks and your company is optimally accessible! Thanks to our ongoing quality, every phone call is picked up and no customer question remains unanswered. With outsourcing your reception, you are one step ahead of the competition! ',
       },
       quote1: 'Be always one step ahead with our Answering Service!',
       quote2: 'Do You Want To Get The Most Out Of Your Customer Service? ',
       trial: {
         title: '<span class="is-highlighted">Schedule An Introductory Meeting Right Away</span>',
-        text: 'Request an consultation now and discover why our Answering Service works! ',
+        text: 'Request a consultation call now and discover why our Answering Service works!',
         cta: 'Let’s Talk!',
       },
       sales: {
@@ -202,7 +202,7 @@ const en = {
         },
         block3: {
           title: '3. Finishing Up',
-          text: 'The team handles conversations adequately and represents your company as one of you! ',
+          text: 'The team handles conversations adequately and represents your company as if they are one of your employees!',
         },
       },
       formTitle: 'Test Our Answering Service!',
@@ -289,7 +289,7 @@ const en = {
     },
     socialWebcare: {
       cover: {
-        title: 'Be Present <span class="is-highlighted"> Online Too</span>',
+        title: 'Be Present <span class="is-highlighted">Online Too</span>',
         subtitle: 'Impact your sales positively with our Social Webcare! ',
         cta: 'Try now!',
       },
@@ -338,7 +338,7 @@ const en = {
   careers: {
     cover: {
       title: '<span class="is-highlighted">Join</span> Our <span class="is-highlighted">Team</span> Now',
-      subtitle: 'Looking forward to join out team and shape our clients future together with us?',
+      subtitle: `Looking forward to joining our team and shaping our clients&#39; future with us?`,
       cta: 'Join Us',
     },
     positions: {
@@ -346,7 +346,7 @@ const en = {
       copy: `<span class="is-block has-text-italic"> Can't wait to reveal your talents? </span> You can always send an <span class="is-highlighted"> Open Application </span> to <span class="is-highlighted"> careers@movementsmarketing.com </span>`,
     },
     offers: {
-      title: '<span class="is-highlighted">We Offer You In A Nutshell</span>',
+      title: '<span class="is-highlighted">Why join us?</span>',
       perks: {
         perk1: 'International Workplaces',
         perk2: 'Attractive Bonuses',

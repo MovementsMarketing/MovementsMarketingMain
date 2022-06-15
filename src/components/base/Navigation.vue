@@ -238,7 +238,8 @@
                       {{ $t(`navigation.servicesOptions.leadGeneration`) }}
                     </router-link>
                     <router-link to="/service/b2b-telemarketing">
-                      {{ $t(`navigation.servicesOptions.newAppointments`) }}
+                      <span v-html="$t(`navigation.servicesOptions.newAppointments`)">
+                      </span>
                     </router-link>
                     <router-link to="/service/b2b-telemarketing">
                       {{ $t(`navigation.servicesOptions.dataEnrichment`) }}

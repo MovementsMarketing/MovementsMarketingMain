@@ -735,7 +735,7 @@
                 }
 
                 @media screen  and (max-width: 460px) {
-                    font-size: 42px;
+                    font-size: 38px;
                     line-height: 40px;
                 }
 
@@ -1119,6 +1119,10 @@
                 @media screen  and (max-width: 1024px) {
                     max-width: 100%;
                 }
+
+              @media screen  and (max-width: 768px) {
+                text-align: justify;
+              }
             }
 
 
