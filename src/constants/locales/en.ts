@@ -50,7 +50,7 @@ const en = {
     services: {
       outbound: {
         title: 'Outbound <span class="is-highlighted"> Lead Generation </span>',
-        text: 'An agenda full of first-class appointments is the ultimate goal of every sales team and company. But how to generate high-value leads? Movements Marketing is an expert in <span class="is-highlighted"> B2B Telemarketing </span> and provides cold calling on behalf of your business. We put you in contact with potential customers you have in mind and plan appointments directly in the agenda of your sales team. And thanks to the desired leads pouring in, sales can focus on what they do best: closing deals. Besides helping you find new customers by <span class="is-highlighted"> making appointments </span>, we also <span class="is-highlighted"> schedule demos </span> and take care of <span class="is-highlighted"> data enrichment </span> to speed up the sales! ',
+        text: 'An agenda full of first-class appointments is the ultimate goal of every sales team and company. But how to generate high-value leads? Movements Marketing is an expert in <span class="is-highlighted"> B2B Telemarketing </span> and provides cold calling on behalf of your business. We put you in contact with potential customers you have in mind and plan appointments directly in the agenda of your sales team. And thanks to the desired leads pouring in, sales can focus on what they do best: closing deals. Besides helping you find new customers by <span class="is-highlighted"> making appointments</span>, we also <span class="is-highlighted"> schedule demos </span> and take care of <span class="is-highlighted"> data enrichment </span> to speed up the sales! ',
         services: {
           telemarketing: 'B2B Telemarketing'
         }
@@ -356,6 +356,10 @@ const en = {
         perk6: 'Fun Teambuildings',
       }
     }
+  },
+  thanks: {
+    title: `Thank you!`,
+    subtitle: `We will contact you soon to schedule an introductory meeting!`,
   }
 };
 

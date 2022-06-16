@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 import Home from "@/components/pages/Home.vue";
 import Careers from "@/components/pages/Careers.vue";
+import ThankYou from "@/components/pages/ThankYou.vue";
 import AnsweringService from "@/components/pages/services/AnsweringService.vue";
 import CustomerService from "@/components/pages/services/CustomerService.vue";
 import EmailManagement from "@/components/pages/services/EmailManagement.vue";
@@ -54,6 +55,11 @@ export default new VueRouter({
       path: '/service/b2b-telemarketing',
       name: 'Telemarketing',
       component: Telemarketing,
+    },
+    {
+      path: '/thank-you/:form',
+      name: 'Thank You',
+      component: ThankYou,
     },
   ],
   scrollBehavior: function (to) {

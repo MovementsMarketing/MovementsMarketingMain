@@ -1,7 +1,11 @@
 html,
 body,
 #app {
-  height: 100%;
+  height: calc(100vh - 150px);
+
+  @media (min-resolution: 100dpi) {
+    height: calc(100vh - 120px);
+  }
 }
 
 body {

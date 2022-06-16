@@ -356,6 +356,10 @@ const nl = {
         perk6: 'Leuke teambuildings',
       }
     }
+  },
+  thanks: {
+    title: `Bedankt!`,
+    subtitle: `We nemen snel contact met je op om een kennismakingsgesprek in te plannen!`,
   }
 };
 

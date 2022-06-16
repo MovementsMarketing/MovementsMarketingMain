@@ -332,7 +332,7 @@ const de = {
       businessEmail: 'Geschäftliche E-Mail',
       phone: 'Telefon',
       cta: 'Starten Sie jetzt!',
-      info: `*Mit dem Absenden dieses Formulars stimmen Sie unserer Datenschutzerklärung zu.<span class="is-block">Anschließend können wir Sie anrufen oder Ihnen eine E-Mail senden. Sie können sich jederzeit abmelden.</span> `,
+      info: `*Mit dem Absenden dieses Formulars stimmen Sie unserer Datenschutzerklärung zu.<span class="is-block">Anschließend können wir Sie anrufen oder Ihnen eine E-Mail senden.</span> Sie können sich jederzeit abmelden. `,
     }
   },
   careers: {
@@ -356,6 +356,10 @@ const de = {
         perk6: 'Lustige Teambuildings',
       }
     }
+  },
+  thanks: {
+    title: `Danke!`,
+    subtitle: `Wir werden Sie bald kontaktieren, um ein Kennenlerngespräch zu vereinbaren!`,
   }
 };
 
