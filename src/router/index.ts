@@ -67,7 +67,7 @@ export default new VueRouter({
       component: ThankYou,
     },
     {
-      path: '/home/thank-you',
+      path: '/home/thanks',
       name: 'Thank You',
       component: ThankYou,
     },
