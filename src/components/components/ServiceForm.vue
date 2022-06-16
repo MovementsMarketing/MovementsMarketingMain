@@ -7,7 +7,7 @@
     <div class="section__content has-text-centered">
 
       <div class="contact__form">
-        <form class="form" :name="`service-${formName}`" method="post" netlify netlify-honeypot="bot-field">
+        <form class="form" :name="`service-${formName}`" method="post" netlify netlify-honeypot="bot-field" :action="`/thank-you/${serviceType}`">
           <input type="hidden" name="form-name" :value="`service-${formName}`" />
           <div class="columns is-multiline">
             <div class="column is-6 is-offset-3">
@@ -61,6 +61,10 @@
 
     @Prop({default: ''})
     formName: string;
+
+    @Prop({default: 'inbound'})
+    serviceType: string;
+
 
     bgImage = require('@/assets/images/backgrounds/movemens_contact_bg.png');
 

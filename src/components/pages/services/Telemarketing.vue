@@ -17,7 +17,7 @@
     <div id="tryService">
       <quote :text="$t(`services.telemarketing.quote2`)" class="is-gradient"/>
 
-      <service-form :title="$t(`services.telemarketing.formTitle`)" form-name="telemarketing"/>
+      <service-form :title="$t(`services.telemarketing.formTitle`)" form-name="telemarketing" service-type="outbound"/>
     </div>
 
     <movements-footer/>

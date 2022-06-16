@@ -61,6 +61,11 @@ export default new VueRouter({
       name: 'Thank You',
       component: ThankYou,
     },
+    {
+      path: '/:form/thank-you',
+      name: 'Thank You',
+      component: ThankYou,
+    },
   ],
   scrollBehavior: function (to) {
     if (to.hash) {
