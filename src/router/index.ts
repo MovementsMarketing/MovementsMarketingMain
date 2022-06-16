@@ -61,26 +61,21 @@ export default new VueRouter({
       name: 'Thank You',
       component: ThankYou,
     },
-    {
-      path: '/:form/thank-you',
-      name: 'Thank You',
-      component: ThankYou,
-    },
-    {
-      path: '/home/thanks',
-      name: 'Thank You',
-      component: ThankYou,
-    },
-    {
-      path: '/inbound/thank-you',
-      name: 'Thank You',
-      component: ThankYou,
-    },
-    {
-      path: '/outbound/thank-you',
-      name: 'Thank You',
-      component: ThankYou,
-    },
+    // {
+    //   path: '/home/thanks',
+    //   name: 'Thank You',
+    //   component: ThankYou,
+    // },
+    // {
+    //   path: '/inbound/thank-you',
+    //   name: 'Thank You',
+    //   component: ThankYou,
+    // },
+    // {
+    //   path: '/outbound/thank-you',
+    //   name: 'Thank You',
+    //   component: ThankYou,
+    // },
   ],
   scrollBehavior: function (to) {
     if (to.hash) {

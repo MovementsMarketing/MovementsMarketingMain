@@ -241,7 +241,7 @@
                 </div>
                 <div class="column is-12-tablet is-6-desktop">
                     <div class="contact__form">
-                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field" action="/home/thanks">
+                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field" action="/#/thank-you/general">
                             <input type="hidden" name="form-name" value="ask-question" />
                             <div class="columns is-multiline">
                                 <div class="column is-6">
