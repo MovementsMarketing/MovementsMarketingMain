@@ -69,6 +69,15 @@
                           <router-link to="/service/b2b-telemarketing">
                             {{ $t(`navigation.servicesOptions.telemarketing`) }}
                           </router-link>
+                          <router-link to="/service/b2b-telemarketing">
+                            {{ $t(`navigation.servicesOptions.leadGeneration`) }}
+                          </router-link>
+                          <router-link to="/service/b2b-telemarketing">
+                            <span v-html="$t(`navigation.servicesOptions.newAppointments`)"/>
+                          </router-link>
+                          <router-link to="/service/b2b-telemarketing">
+                            {{ $t(`navigation.servicesOptions.dataEnrichment`) }}
+                          </router-link>
                         </div>
                       </div>
                     </div>

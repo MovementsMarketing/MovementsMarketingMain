@@ -22,6 +22,11 @@ export default new VueRouter({
       component: Home,
     },
     {
+      path: '*',
+      name: 'Home',
+      component: Home,
+    },
+    {
       path: '/careers',
       name: 'Careers',
       component: Careers,

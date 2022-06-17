@@ -418,8 +418,6 @@
       created() {
           this.images.coverBg = require('@/assets/images/backgrounds/movements_call-center_bg.png');
           this.images.contactBg = require('@/assets/images/backgrounds/movemens_contact_bg.png');
-
-        //window.addEventListener("scroll", this.onScroll);
       }
 
       mounted(): void {
