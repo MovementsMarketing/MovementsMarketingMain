@@ -101,6 +101,7 @@
 
           @media screen  and (max-width: 768px) {
             white-space: break-spaces;
+            display: inline;
           }
         }
       }

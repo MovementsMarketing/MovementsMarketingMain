@@ -100,6 +100,10 @@
         .is-highlighted {
           display: block;
           white-space: nowrap;
+
+          @media screen  and (max-width: 768px) {
+           white-space: break-spaces;
+          }
         }
 
         @media screen  and (max-width: 1400px) {
@@ -111,6 +115,11 @@
         @media screen  and (max-width: 1024px) {
           font-size: 46px;
           line-height: 48px;
+        }
+
+        @media screen  and (max-width: 768px) {
+          font-size: 42px;
+          line-height: 46px;
         }
       }
 

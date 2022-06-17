@@ -37,11 +37,11 @@
       }
 
       @media screen  and (max-width: 780px) {
-        padding: 20px 100px !important;
+        padding: 20px 40px !important;
       }
 
       @media screen  and (max-width: 460px) {
-        padding: 10px 50px !important;
+        padding: 10px 40px !important;
       }
 
       @media screen  and (max-width: 320px) {
@@ -68,13 +68,8 @@
       }
 
       @media screen  and (max-width: 460px) {
-        font-size: 46px;
-        line-height: 48px;
-      }
-
-      @media screen  and (max-width: 340px) {
         font-size: 42px;
-        line-height: 40px;
+        line-height: 46px;
       }
 
       &::before {

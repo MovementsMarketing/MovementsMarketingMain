@@ -159,6 +159,11 @@
           background: #9FF882;
           left: 0;
           position: absolute;
+
+          @media screen  and (max-width: 768px) {
+            bottom: -15px
+          }
+
         }
       }
     }

@@ -74,7 +74,7 @@
         }
 
         @media screen  and (max-width: 420px) {
-          font-size: 28px;
+          font-size: 30px;
         }
       }
 

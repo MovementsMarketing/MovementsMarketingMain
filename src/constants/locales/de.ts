@@ -210,7 +210,7 @@ const de = {
     },
     liveChat: {
       cover: {
-        title: ' <span class="is-highlighted">Gehen Sie mit der Zeit </span>',
+        title: '<span class="is-highlighted">Gehen Sie mit der Zeit </span>',
         subtitle: 'Versorgen Sie Ihre Kunden noch besser mit unserem <span class="is-highlighted">Live-Chat!  </span>',
         cta: 'Testen Sie jetzt!',
       },

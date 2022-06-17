@@ -50,7 +50,7 @@ const nl = {
     services: {
       outbound: {
         title: 'Outbound <span class="is-highlighted"> leadgeneratie </span>',
-        text: `Een agenda vol eersteklas afspraken is het ultieme doel van elk salesteam en bedrijf. Maar hoe genereer je hoogwaardige leads? Movements Marketing is expert in B2B Telemarketing en verzorgt cold calling namens jouw bedrijf. Wij brengen je in contact met potentiële klanten die jij voor ogen hebt en plannen afspraken direct in de agenda van jouw salesteam. Dankzij de gewenste leads die binnenstromen, kan sales zich concentreren op waar ze goed in zijn: het sluiten van deals. Naast het werven van nieuwe klanten , plannen wij ook <span class="is-highlighted">demo's</span> in en verzorgen eveneens <span class="is-highlighted">dataverrijking</span> om het salesproces te versnellen!`,
+        text: `Een agenda vol eersteklas afspraken is het ultieme doel van elk salesteam en bedrijf. Maar hoe genereer je hoogwaardige leads? Movements Marketing is expert in B2B Telemarketing en verzorgt cold calling namens jouw bedrijf. Wij brengen je in contact met potentiële klanten die jij voor ogen hebt en plannen afspraken direct in de agenda van jouw salesteam. Dankzij de gewenste leads die binnenstromen, kan sales zich concentreren op waar ze goed in zijn: het sluiten van deals. Naast het werven van nieuwe klanten, plannen wij ook <span class="is-highlighted">demo's</span> in en verzorgen eveneens <span class="is-highlighted">dataverrijking</span> om het salesproces te versnellen!`,
         services: {
           telemarketing: 'B2B Telemarketing'
         }
@@ -92,7 +92,7 @@ const nl = {
   services: {
     telemarketing: {
       cover: {
-        title: 'Ontzorg jouw <span class="is-highlighted"> salesteam </span>',
+        title: 'Ontzorg jouw <span class="is-highlighted">salesteam </span>',
         subtitle: 'Boost jouw leadgeneratie met onze <span class="is-highlighted">B2B Telemarketing! </span>',
         cta: 'Probeer Nu!',
       },
@@ -131,7 +131,7 @@ const nl = {
     },
     customerService: {
       cover: {
-        title: 'Upgrade jouw <span class="is-highlighted"> klantenservice </span>',
+        title: 'Upgrade jouw <span class="is-highlighted">klantenservice </span>',
         subtitle: 'Ga next level met onze  <span class="is-highlighted">klantenservice!  </span>',
         cta: 'Probeer nu!',
       },
@@ -170,7 +170,7 @@ const nl = {
     },
     answeringService: {
       cover: {
-        title: 'Ontlast al <span class="is-highlighted"> jouw afdelingen</span>',
+        title: 'Ontlast al <span class="is-highlighted">jouw afdelingen</span>',
         subtitle: 'Optimaliseer de bereikbaarheid met onze <span class="is-highlighted">telefoonservice!  </span>',
         cta: 'Probeer nu!',
       },
@@ -180,7 +180,7 @@ const nl = {
         fact3: 'Kostenefficiënte resultaten',
       },
       info: {
-        title: 'Waarom onze <span class="is-highlighted"> telefoonservice</span> effectief is',
+        title: 'Waarom onze <span class="is-highlighted">telefoonservice</span> effectief is',
         content: 'Wanneer jouw professionals bezig zijn met inkomende oproepen, leidt dit hen af van hun werk. Maar met onze antwoordservice, kan jouw team zich concentreren op hun eigenlijke taken en is jouw bedrijf optimaal bereikbaar! Dankzij onze continue kwaliteitsservice, wordt elk telefoontje opgepakt en blijft geen enkele klantvraag onbeantwoord. Met het uitbesteden van de receptie, ben jij de concurrentie een stap voor!',
       },
       quote1: 'Wees de concurrentie een stap voor met onze telefoonservice',
@@ -210,7 +210,7 @@ const nl = {
     },
     liveChat: {
       cover: {
-        title: ' <span class="is-highlighted">Ga mee met de tijd </span>',
+        title: '<span class="is-highlighted">Ga mee met de tijd </span>',
         subtitle: 'Wees je klanten nog beter van dienst met onze <span class="is-highlighted">live chat!  </span>',
         cta: 'Probeer nu!',
       },
@@ -220,7 +220,7 @@ const nl = {
         fact3: 'Verbeterende CX',
       },
       info: {
-        title: 'Waarom onze <span class="is-highlighted"> live chat</span> effectief is',
+        title: 'Waarom onze <span class="is-highlighted">live chat</span> effectief is',
         content: 'Stel je voor dat jouw klanten direct contact kunnen opnemen op het exacte moment dat ze een vraag of probleem hebben en het zelf niet kunnen oplossen? Dat is één van de vele voordelen van onze Live Chat! Bovendien is het een laagdrempelige en gemakkelijke manier van communiceren, zelfs voor die klanten voor wie het een hindernis is om contact te zoeken. En het mooiste van alles: jouw klanten weten dat ze een reactie krijgen en dat hun verzoek wordt opgelost!',
       },
       quote1: 'Toegankelijke communicatie begint met onze Live Chat!',
@@ -289,7 +289,7 @@ const nl = {
     },
     socialWebcare: {
       cover: {
-        title: 'Wees ook <span class="is-highlighted"> online aanwezig </span>',
+        title: 'Wees ook <span class="is-highlighted">online aanwezig </span>',
         subtitle: 'Boost jouw sales positief met onze social webcare! ',
         cta: 'Probeer nu!',
       },
@@ -299,7 +299,7 @@ const nl = {
         fact3: 'Verbeterde online reputatie ',
       },
       info: {
-        title: 'Waarom onze <span class="is-highlighted"> Social Webcare</span> effectief is',
+        title: 'Waarom onze <span class="is-highlighted">Social Webcare</span> effectief is',
         content: 'Tegenwoordig is Social Webcare een must! Jouw klanten zijn online en wanneer ze de telefoon niet opnemen, een e-mail schrijven of een chat starten om hulp te vragen, plaatsen ze hun vragen en klachten online. Met een proactieve Social Webcare ben je altijd up-to-date en terwijl wij voor jouw klanten zorgen, verzamelt ons team ook waardevolle consumenteninzichten om jouw online reputatie te verbeteren. En wist je dat een goede Social Webcare ook een positief effect heeft op je omzet? Onze webagenten staan klaar om jouw online reis te verbeteren!',
       },
       quote1: 'Wij zijn jouw integratieve tool voor een uitstekende CX!',
@@ -343,7 +343,7 @@ const nl = {
     },
     positions: {
       title: `<span class="is-highlighted">Onze vacatures</span>`,
-      copy: `<span class="is-block has-text-italic"> Kun je niet wachten om je talenten te onthullen? </span> Je kunt altijd een <span class="is-highlighted"> Open sollicitatie </span> sturen naar <span class="is-highlighted"> careers@movementsmarketing.com </span>`,
+      copy: `<span class="is-block has-text-italic">Kun je niet wachten om je talenten te onthullen? </span> Je kunt altijd een <span class="is-highlighted">Open sollicitatie </span> sturen naar <span class="is-highlighted"> careers@movementsmarketing.com </span>`,
     },
     offers: {
       title: '<span class="is-highlighted">Wij bieden jou in een notendop</span>',

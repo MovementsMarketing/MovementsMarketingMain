@@ -4,7 +4,7 @@
 
         <div class="section section--cover">
             <div class="video-container">
-                <video autoplay muted loop>
+                <video autoplay muted loop playsinline>
                     <source src="@/assets/video/movements_marketing.mp4" type="video/mp4" />
                 </video>
                 <div class="caption">
@@ -1095,6 +1095,10 @@
         z-index: 1;
         padding: 60px 0;
 
+      @media screen  and (max-width: 1600px) {
+        padding: 40px 0;
+      }
+
         .section__content {
             h2 {
                 max-width: 100%;
@@ -1107,6 +1111,12 @@
                     white-space: unset;
                     line-height: 48px;
                 }
+
+
+              @media screen  and (max-width: 460px) {
+                font-size: 36px;
+                line-height: 42px;
+              }
             }
 
             p {

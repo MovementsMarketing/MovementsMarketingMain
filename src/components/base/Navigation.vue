@@ -493,6 +493,11 @@
                 width: 150px;
                 height: 2px;
                 background: #008d90;
+
+                @media screen and (max-width: 1024px){
+                  display: none;
+                }
+
               }
             }
           }
@@ -521,6 +526,11 @@
                 width: 150px;
                 height: 2px;
                 background: #008d90;
+
+                @media screen and (max-width: 1024px){
+                  display: none;
+                }
+
               }
 
               .vue-icon__wrapper {
@@ -676,6 +686,10 @@
                   height: 2px;
                   background: #008d90;
                   transition: width 300ms ease;
+
+                  @media screen and (max-width: 1024px){
+                    display: none;
+                  }
                 }
 
                 &:hover {
@@ -685,6 +699,10 @@
                     width: 150px;
                     height: 2px;
                     background: #008d90;
+
+                    @media screen and (max-width: 1024px){
+                      display: none;
+                    }
                   }
                 }
               }
