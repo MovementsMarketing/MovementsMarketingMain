@@ -110,27 +110,27 @@
 
     positions = [
       {
-        name: 'Sales Manager Benelux',
-        link: 'https://movements.bamboohr.com/jobs/',
-        location: 'Utrecht, NL',
-        type: 'Full - Time',
-      },
-      {
-        name: 'Teamleader',
-        link: 'https://movements.bamboohr.com/jobs/',
-        location: 'Utrecht, NL',
-        type: 'Full - Time',
-      },
-      {
-        name: 'Sales Manager Benelux',
+        name: 'B2B Telemarketeer / Customer Support Agent',
         link: 'https://movements.bamboohr.com/jobs/',
         location: 'Istanbul, TR',
         type: 'Full - Time',
       },
       {
-        name: 'Teamleader',
+        name: 'Customer Support Agent',
         link: 'https://movements.bamboohr.com/jobs/',
         location: 'Istanbul, TR',
+        type: 'Full - Time',
+      },
+      {
+        name: 'Telefonagent (Inbound/Outbound)',
+        link: 'https://movements.bamboohr.com/jobs/',
+        location: 'Sarajevo, BA',
+        type: 'Full - Time',
+      },
+      {
+        name: 'Telemarketer / Inbound & Outbound / Nederlandstalig',
+        link: 'https://movements.bamboohr.com/jobs/',
+        location: 'Sarajevo, BA',
         type: 'Full - Time',
       },
     ];

@@ -42,6 +42,10 @@
       padding: 15px;
       position: relative;
       transition: all 200ms ease;
+      min-height: 135px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       .type,
       .location {
@@ -54,6 +58,8 @@
 
       .type {
         color: #9e9e9e;
+        font-size: 14px;
+        margin-bottom: 2px;
       }
 
       .location {
@@ -68,12 +74,16 @@
 
       .name {
         color: #008d90;
-        font-size: 24px;
         font-weight: 800;
         padding-bottom: 5px;
+        font-size: 20px;
+        line-height: 22px;
+        padding-right: 50px;
+
 
         @media screen  and (max-width: 768px) {
-          font-size: 20px;
+          font-size: 18px;
+          line-height: 20px;
         }
       }
 
