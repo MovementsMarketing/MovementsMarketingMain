@@ -311,7 +311,6 @@
 
         @Watch('isMobileActive')
         onMobileActive(isActive: boolean) {
-          console.log('change', isActive)
           if (isActive) {
             document.documentElement.style.overflow = "hidden";
             return;
@@ -345,13 +344,23 @@
 
         this.navClass = 'is-main';
         this.navBlurred = false;
-
       }
 
         created(): void {
           window.addEventListener("scroll", this.onScroll);
           document.documentElement.style.overflow = "auto";
+        }
 
+        mounted() {
+          if(this.$route.query.lang) {
+            if(this.$route.query.lang.includes('nl')) {
+              this.setLanguage('nl');
+            } else if(this.$route.query.lang.includes('de')) {
+              this.setLanguage('de');
+            } else {
+              this.setLanguage('en');
+            }
+          }
         }
 
       beforeDestroy() {
