@@ -40,10 +40,10 @@ const nl = {
     },
     numbers: {
       ourNumbers: 'Ons werk <span class="is-highlighted"> in cijfers</span>',
-      projects: 'Succesvolle Projecten',
-      languages: 'Gesproken Talen',
-      offices: 'Wereldwijde Kantoren',
-      teams: 'Internationale Teams',
+      projects: 'Succesvolle projecten',
+      languages: 'Gesproken talen',
+      offices: 'Wereldwijde kantoren',
+      teams: 'Internationale teams',
 
     },
     quote: '“Alleen als jij succesvol bent, dan zijn wij het ook!”',
@@ -346,7 +346,7 @@ const nl = {
       copy: `<span class="is-block has-text-italic">Kun je niet wachten om je talenten te onthullen? </span> Je kunt altijd een <span class="is-highlighted">Open sollicitatie </span> sturen naar <span class="is-highlighted"> careers@movementsmarketing.com </span>`,
     },
     offers: {
-      title: '<span class="is-highlighted">Wij bieden jou in een notendop</span>',
+      title: '<span class="is-highlighted">Wij bieden jou</span>',
       perks: {
         perk1: 'Internationale werkplekken',
         perk2: 'Aantrekkelijke bonussen',

@@ -396,7 +396,7 @@
           {
               key: 'utrecht',
               title: 'Utrecht',
-              address: 'Europalaan 400-6',
+              address: 'Europalaan 400 - 7 Oost',
               postal: '3526 KS Utrecht',
               country: 'Netherlands',
               phone: '+31 85 210 37 55',
@@ -414,18 +414,29 @@
       ];
 
 
+    scrollToAnchor () {
+      this.$nextTick(() => {
+        if (this.$route.meta?.element) {
+          const $el = document.querySelector(this.$route.meta?.element);
+          console.log($el);
+          $el && window.scrollTo(0, $el.offsetTop);
+        }
+      });
+    }
 
       created() {
           this.images.coverBg = require('@/assets/images/backgrounds/movements_call-center_bg.png');
           this.images.contactBg = require('@/assets/images/backgrounds/movemens_contact_bg.png');
       }
 
-      mounted(): void {
-         // this.onScroll();
+      mounted () {
+         this.scrollToAnchor();
       }
 
-      beforeDestroy() {
-          //window.removeEventListener("scroll", this.onScroll)
+      updated () {
+       console.log(this);
+
+        this.scrollToAnchor();
       }
   }
 
@@ -1101,11 +1112,12 @@
 
         .section__content {
             h2 {
-                max-width: 100%;
-                text-align: left;
-                margin-bottom: 50px;
-                display: block;
-                white-space: nowrap;
+              max-width: 100%;
+              text-align: left;
+              margin-bottom: 50px;
+              display: block;
+              white-space: nowrap;
+              font-size: 60px;
 
                 @media screen  and (max-width: 1600px) {
                     white-space: unset;

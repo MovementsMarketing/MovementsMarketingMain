@@ -22,6 +22,36 @@ export default new VueRouter({
       component: Home,
     },
     {
+      path: '/about',
+      name: 'Home',
+      component: Home,
+      meta: {element: '#about'}
+    },
+    {
+      path: '/outbound',
+      name: 'Home',
+      component: Home,
+      meta: {element: '#outbound'}
+    },
+    {
+      path: '/inbound',
+      name: 'Home',
+      component: Home,
+      meta: {element: '#inbound'}
+    },
+    {
+      path: '/clients',
+      name: 'Home',
+      component: Home,
+      meta: {element: '#clients'}
+    },
+    {
+      path: '/contact',
+      name: 'Home',
+      component: Home,
+      meta: {element: '#contact'}
+    },
+    {
       path: '*',
       name: 'Home',
       component: Home,
@@ -68,9 +98,10 @@ export default new VueRouter({
     },
   ],
   scrollBehavior: function (to) {
-    if (to.hash) {
+    console.log(to);
+    if (to.meta?.element) {
       return {
-        selector: to.hash,
+        selector: to.meta.element,
         behavior: 'smooth',
       }
     }

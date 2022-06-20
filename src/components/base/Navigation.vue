@@ -36,7 +36,7 @@
             <div class="navigation__menu" :class="isMobileActive ? 'is-active' : ''">
               <div class="navigation__menu__items">
                 <div class="navigation__item" @click="isMobileActive = false">
-                  <router-link to="/#about" >
+                  <router-link to="/about" >
                     {{ $t(`navigation.about`) }}
                   </router-link>
                 </div>
@@ -60,7 +60,7 @@
                       </div>
                       <div class="divider"></div>
                       <div class="text">
-                        <router-link to="/#outbound">
+                        <router-link to="/outbound">
                           <p class="title" @click="isServicesActive = !isServicesActive; isMobileActive = false;">
                             {{ $t(`navigation.servicesOptions.outbound`) }}
                           </p>
@@ -90,7 +90,7 @@
 
                       </div>
                       <div class="text">
-                        <router-link to="/#inbound">
+                        <router-link to="/inbound">
                           <p class="title" @click="isServicesActive = !isServicesActive; isMobileActive = false;">
                             {{ $t(`navigation.servicesOptions.inbound`) }}
                           </p>
@@ -122,7 +122,7 @@
 
 
                 <div class="navigation__item">
-                  <router-link to="/#clients" @click="isMobileActive = false;">
+                  <router-link to="/clients" @click="isMobileActive = false;">
                     {{ $t(`navigation.clients`) }}
                   </router-link>
                 </div>
@@ -136,7 +136,7 @@
 
                 <div class="navigation__actions-divider"></div>
                 <div class="navigation__item navigation__item--button"  @click="isMobileActive = false;">
-                  <router-link to="/#contact" class="button button--hollow">
+                  <router-link to="/contact" class="button button--hollow">
                     <span class="text">
                       {{ $t(`navigation.contact`) }}
                     </span>
@@ -173,7 +173,7 @@
                 </div>
               </router-link>
                 <div class="navigation__item">
-                  <router-link to="/#about">
+                  <router-link to="/about">
                     {{ $t(`navigation.about`) }}
                   </router-link>
                 </div>
@@ -190,7 +190,7 @@
                 </div>
 
               <div class="navigation__item">
-                <router-link to="/#clients">
+                <router-link to="/clients">
                   {{ $t(`navigation.clients`) }}
                 </router-link>
               </div>
@@ -202,7 +202,7 @@
               </div>
 
               <div class="navigation__item navigation__item--button">
-                  <router-link to="/#contact" class="button button--hollow">
+                  <router-link to="/contact" class="button button--hollow">
                     <span class="text">
                       {{ $t(`navigation.contact`) }}
                     </span>
@@ -234,7 +234,7 @@
                 </div>
                 <div class="divider"></div>
                 <div class="text">
-                  <router-link to="/#outbound">
+                  <router-link to="/outbound">
                     <p class="title" @click="isServicesActive = !isServicesActive">
                       {{ $t(`navigation.servicesOptions.outbound`) }}
                     </p>
@@ -265,7 +265,7 @@
 
                 </div>
                 <div class="text">
-                  <router-link to="/#inbound" @click="isServicesActive = !isServicesActive">
+                  <router-link to="/inbound" @click="isServicesActive = !isServicesActive">
                     <p class="title">
                       {{ $t(`navigation.servicesOptions.inbound`) }}
                     </p>

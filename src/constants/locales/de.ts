@@ -16,7 +16,7 @@ const de = {
       newAppointments: 'Terminierung',
       dataEnrichment: 'Datenanreicherung',
       customerService: 'Kundenservice',
-      answeringService: 'Antwortservice',
+      answeringService: 'Telefonservice',
       liveChat: 'Live Chat',
       emailManagement: 'Email Management',
       socialWebcare: 'Social Webcare',
@@ -42,7 +42,7 @@ const de = {
       ourNumbers: 'Unsere Arbeit <span class="is-highlighted">in Zahlen</span>',
       projects: 'Erfolgreiche Projekte',
       languages: 'Gesprochene Sprachen',
-      offices: 'Weltweite Niederlassungen',
+      offices: 'Weltweite Succesvolle',
       teams: 'Internationale Teams',
 
     },
@@ -346,7 +346,7 @@ const de = {
       copy: `<span class="is-block has-text-italic">Du kannst es kaum erwarten, deine Talente zu offenbaren?</span> Du kannst jederzeit eine <span class="is-highlighted"> offene Bewerbung </span> an <span class="is-highlighted"> careers@movementsmarketing.com </span> senden`,
     },
     offers: {
-      title: '<span class="is-highlighted">Wir bieten auf den Punkt gebracht</span>',
+      title: '<span class="is-highlighted">Wir bieten Ihnen</span>',
       perks: {
         perk1: 'Internationale Arbeitsplätze',
         perk2: 'Attraktive Boni',

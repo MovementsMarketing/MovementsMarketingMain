@@ -40,7 +40,7 @@ const en = {
     },
     numbers: {
       ourNumbers: 'Our Work <span class="is-highlighted">In Numbers</span>',
-      projects: 'Prosperous Projects',
+      projects: 'Successful Projects',
       languages: 'Spoken Languages',
       offices: 'Worldwide Offices',
       teams: 'International Teams',
@@ -346,7 +346,7 @@ const en = {
       copy: `<span class="is-block has-text-italic"> Can't wait to reveal your talents? </span> You can always send an <span class="is-highlighted"> Open Application </span> to <span class="is-highlighted"> careers@movementsmarketing.com </span>`,
     },
     offers: {
-      title: '<span class="is-highlighted">Why join us?</span>',
+      title: '<span class="is-highlighted">We offer you</span>',
       perks: {
         perk1: 'International Workplaces',
         perk2: 'Attractive Bonuses',
