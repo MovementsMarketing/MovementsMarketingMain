@@ -2,7 +2,7 @@
   <div class="has-bg-gray">
     <navigation :full-logo="true" :light-logo="true"/>
 
-    <service-cover :data="coverData"/>
+    <service-cover :data="coverData" custom-link="/service/email-management/tryNow"/>
 
     <facts :facts="[$t(`services.emailManagement.facts.fact1`), $t(`services.emailManagement.facts.fact2`), $t(`services.emailManagement.facts.fact3`)]"></facts>
 

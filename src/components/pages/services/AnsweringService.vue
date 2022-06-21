@@ -2,7 +2,7 @@
   <div class="has-bg-gray">
     <navigation :full-logo="true" :light-logo="true"/>
 
-    <service-cover :data="coverData"/>
+    <service-cover :data="coverData" custom-link="/service/answering-service/tryNow"/>
 
     <facts :facts="[$t(`services.answeringService.facts.fact1`), $t(`services.answeringService.facts.fact2`), $t(`services.answeringService.facts.fact3`)]"></facts>
 

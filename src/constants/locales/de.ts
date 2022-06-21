@@ -42,7 +42,7 @@ const de = {
       ourNumbers: 'Unsere Arbeit <span class="is-highlighted">in Zahlen</span>',
       projects: 'Erfolgreiche Projekte',
       languages: 'Gesprochene Sprachen',
-      offices: 'Weltweite Succesvolle',
+      offices: 'Weltweite Standorte',
       teams: 'Internationale Teams',
 
     },

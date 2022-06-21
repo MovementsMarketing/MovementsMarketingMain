@@ -67,9 +67,21 @@ export default new VueRouter({
       component: AnsweringService,
     },
     {
+      path: '/service/answering-service/tryNow',
+      name: 'AnsweringService',
+      component: AnsweringService,
+      meta: {element: '#tryService'}
+    },
+    {
       path: '/service/customer-service',
       name: 'CustomerService',
       component: CustomerService,
+    },
+    {
+      path: '/service/customer-service/tryNow',
+      name: 'CustomerService',
+      component: CustomerService,
+      meta: {element: '#tryService'}
     },
     {
       path: '/service/email-management',
@@ -77,9 +89,21 @@ export default new VueRouter({
       component: EmailManagement,
     },
     {
+      path: '/service/email-management/tryNow',
+      name: 'EmailManagement',
+      component: EmailManagement,
+      meta: {element: '#tryService'}
+    },
+    {
       path: '/service/live-chat',
       name: 'LiveChat',
       component: LiveChat,
+    },
+    {
+      path: '/service/live-chat/tryNow',
+      name: 'LiveChat',
+      component: LiveChat,
+      meta: {element: '#tryService'}
     },
     {
       path: '/service/social-webcare',
@@ -87,9 +111,21 @@ export default new VueRouter({
       component: SocialWebcare,
     },
     {
+      path: '/service/social-webcare/tryNow',
+      name: 'SocialWebcare',
+      component: SocialWebcare,
+      meta: {element: '#tryService'}
+    },
+    {
       path: '/service/b2b-telemarketing',
       name: 'Telemarketing',
       component: Telemarketing,
+    },
+    {
+      path: '/service/b2b-telemarketing/tryNow',
+      name: 'Telemarketing',
+      component: Telemarketing,
+      meta: {element: '#tryService'}
     },
     {
       path: '/thank-you/:form',

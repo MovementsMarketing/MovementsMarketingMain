@@ -2,7 +2,7 @@
   <div class="has-bg-gray">
     <navigation :full-logo="true" :light-logo="true"/>
 
-    <service-cover :data="coverData"/>
+    <service-cover :data="coverData" custom-link="/service/b2b-telemarketing/tryNow"/>
 
     <facts :facts="[$t(`services.telemarketing.facts.fact1`), $t(`services.telemarketing.facts.fact2`), $t(`services.telemarketing.facts.fact3`)]"></facts>
 

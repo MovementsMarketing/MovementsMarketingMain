@@ -2,7 +2,7 @@
   <div class="has-bg-gray">
     <navigation :full-logo="true" :light-logo="true"/>
 
-    <service-cover :data="coverData"/>
+    <service-cover :data="coverData" custom-link="/service/live-chat/tryNow"/>
 
     <facts :facts="[$t(`services.liveChat.facts.fact1`), $t(`services.liveChat.facts.fact2`), $t(`services.liveChat.facts.fact3`)]"></facts>
 

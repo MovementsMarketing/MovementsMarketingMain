@@ -21,7 +21,7 @@
                     {{ $t(`home.subtitle`) }}
                 </h2>
                 <div>
-                    <router-link to="/#contact" class="button button--hollow">
+                    <router-link to="/contact" class="button button--hollow">
                         <span class="text">
                             {{ $t(`navigation.contactUs`) }}
                         </span>
