@@ -36,7 +36,7 @@
             <div class="navigation__menu" :class="isMobileActive ? 'is-active' : ''">
               <div class="navigation__menu__items">
                 <div class="navigation__item" @click="isMobileActive = false">
-                  <router-link to="/about" >
+                  <router-link :to="routes.about" >
                     {{ $t(`navigation.about`) }}
                   </router-link>
                 </div>
@@ -66,16 +66,16 @@
                           </p>
                         </router-link>
                         <div class="list" @click="isServicesActive = !isServicesActive; isMobileActive = false;">
-                          <router-link to="/service/b2b-telemarketing">
+                          <router-link :to="routes.telemarketing">
                             {{ $t(`navigation.servicesOptions.telemarketing`) }}
                           </router-link>
-                          <router-link to="/service/b2b-telemarketing">
+                          <router-link :to="routes.telemarketing">
                             {{ $t(`navigation.servicesOptions.leadGeneration`) }}
                           </router-link>
-                          <router-link to="/service/b2b-telemarketing">
+                          <router-link :to="routes.telemarketing">
                             <span v-html="$t(`navigation.servicesOptions.newAppointments`)"/>
                           </router-link>
-                          <router-link to="/service/b2b-telemarketing">
+                          <router-link :to="routes.telemarketing">
                             {{ $t(`navigation.servicesOptions.dataEnrichment`) }}
                           </router-link>
                         </div>
@@ -96,19 +96,19 @@
                           </p>
                         </router-link>
                         <div class="list" @click="isServicesActive = !isServicesActive; isMobileActive = false;">
-                          <router-link to="/service/customer-service">
+                          <router-link :to="routes.customer">
                             {{ $t(`navigation.servicesOptions.customerService`) }}
                           </router-link>
-                          <router-link to="/service/answering-service">
+                          <router-link :to="routes.answering">
                             {{ $t(`navigation.servicesOptions.answeringService`) }}
                           </router-link>
-                          <router-link to="/service/live-chat">
+                          <router-link :to="routes.liveChat">
                             {{ $t(`navigation.servicesOptions.liveChat`) }}
                           </router-link>
-                          <router-link to="/service/email-management">
+                          <router-link :to="routes.email">
                             {{ $t(`navigation.servicesOptions.emailManagement`) }}
                           </router-link>
-                          <router-link to="/service/social-webcare">
+                          <router-link :to="routes.webcare">
                             {{ $t(`navigation.servicesOptions.socialWebcare`) }}
                           </router-link>
                         </div>
@@ -122,13 +122,13 @@
 
 
                 <div class="navigation__item">
-                  <router-link to="/clients" @click="isMobileActive = false;">
+                  <router-link :to="routes.clients" @click="isMobileActive = false;">
                     {{ $t(`navigation.clients`) }}
                   </router-link>
                 </div>
 
                 <div class="navigation__item">
-                  <router-link to="/careers"  @click="isMobileActive = false;">
+                  <router-link :to="routes.careers"  @click="isMobileActive = false;">
                     {{ $t(`navigation.career`) }}
                   </router-link>
                 </div>
@@ -136,7 +136,7 @@
 
                 <div class="navigation__actions-divider"></div>
                 <div class="navigation__item navigation__item--button"  @click="isMobileActive = false;">
-                  <router-link to="/contact" class="button button--hollow">
+                  <router-link :to="routes.contact" class="button button--hollow">
                     <span class="text">
                       {{ $t(`navigation.contact`) }}
                     </span>
@@ -173,7 +173,7 @@
                 </div>
               </router-link>
                 <div class="navigation__item">
-                  <router-link to="/about">
+                  <router-link :to="routes.about">
                     {{ $t(`navigation.about`) }}
                   </router-link>
                 </div>
@@ -190,19 +190,19 @@
                 </div>
 
               <div class="navigation__item">
-                <router-link to="/clients">
+                <router-link :to="routes.clients">
                   {{ $t(`navigation.clients`) }}
                 </router-link>
               </div>
 
               <div class="navigation__item">
-                <router-link to="/careers">
+                <router-link :to="routes.careers">
                   {{ $t(`navigation.career`) }}
                 </router-link>
               </div>
 
               <div class="navigation__item navigation__item--button">
-                  <router-link to="/contact" class="button button--hollow">
+                  <router-link :to="routes.contact" class="button button--hollow">
                     <span class="text">
                       {{ $t(`navigation.contact`) }}
                     </span>
@@ -240,17 +240,17 @@
                     </p>
                   </router-link>
                   <div class="list" @click="isServicesActive = !isServicesActive">
-                    <router-link to="/service/b2b-telemarketing">
+                    <router-link :to="routes.telemarketing">
                       {{ $t(`navigation.servicesOptions.telemarketing`) }}
                     </router-link>
-                    <router-link to="/service/b2b-telemarketing">
+                    <router-link :to="routes.telemarketing">
                       {{ $t(`navigation.servicesOptions.leadGeneration`) }}
                     </router-link>
-                    <router-link to="/service/b2b-telemarketing">
+                    <router-link :to="routes.telemarketing">
                       <span v-html="$t(`navigation.servicesOptions.newAppointments`)">
                       </span>
                     </router-link>
-                    <router-link to="/service/b2b-telemarketing">
+                    <router-link :to="routes.telemarketing">
                       {{ $t(`navigation.servicesOptions.dataEnrichment`) }}
                     </router-link>
                   </div>
@@ -271,19 +271,19 @@
                     </p>
                   </router-link>
                   <div class="list" @click="isServicesActive = !isServicesActive">
-                    <router-link to="/service/customer-service">
+                    <router-link :to="routes.customer">
                       {{ $t(`navigation.servicesOptions.customerService`) }}
                     </router-link>
-                    <router-link to="/service/answering-service">
+                    <router-link :to="routes.answering">
                       {{ $t(`navigation.servicesOptions.answeringService`) }}
                     </router-link>
-                    <router-link to="/service/live-chat">
+                    <router-link :to="routes.liveChat">
                       {{ $t(`navigation.servicesOptions.liveChat`) }}
                     </router-link>
-                    <router-link to="/service/email-management">
+                    <router-link :to="routes.email">
                       {{ $t(`navigation.servicesOptions.emailManagement`) }}
                     </router-link>
-                    <router-link to="/service/social-webcare">
+                    <router-link :to="routes.webcare">
                       {{ $t(`navigation.servicesOptions.socialWebcare`) }}
                     </router-link>
                   </div>
@@ -351,11 +351,73 @@
           document.documentElement.style.overflow = "auto";
         }
 
+        get routes() {
+          if(this.$i18n.locale === 'nl') {
+            return {
+              home: '/',
+              about: '/over-ons',
+              outbound: '/outbound',
+              inbound: '/inbound',
+              telemarketing: '/diensten/b2b-telemarketing',
+              answering: '/diensten/telefoonservice',
+              customer: '/diensten/klantenservice',
+              email: '/diensten/email-management',
+              liveChat: '/diensten/live-chat',
+              webcare: '/diensten/social-webcare/',
+              clients: '/klanten/',
+              contact: '/contact/',
+              careers: '/careers/',
+            }
+          } else if(this.$i18n.locale === 'de') {
+            return {
+              home: '/',
+              about: '/uber-uns',
+              outbound: '/outbound',
+              inbound: '/inbound',
+              telemarketing: '/dienstleistungen/b2b-telemarketing',
+              answering: '/dienstleistungen/telefonservice',
+              customer: '/dienstleistungen/kundenservice',
+              email: '/dienstleistungen/email-management',
+              liveChat: '/dienstleistungen/live-chat',
+              webcare: '/dienstleistungen/social-webcare/',
+              clients: '/kunden',
+              contact: '/kontakt/',
+              careers: '/careers/',
+            }
+          } else {
+            return {
+              home: '/',
+              about: '/about',
+              outbound: '/outbound',
+              inbound: '/inbound',
+              telemarketing: '/service/b2b-telemarketing',
+              answering: '/service/answering-service/',
+              customer: '/service/customer-service/',
+              email: '/service/email-management/',
+              liveChat: '/service/live-chat/',
+              webcare: '/service/social-webcare/',
+              clients: '/clients/',
+              contact: '/contact/',
+              careers: '/careers/',
+            }
+          }
+        }
+
         mounted() {
           if(this.$route.query.lang) {
             if(this.$route.query.lang.includes('nl')) {
               this.setLanguage('nl');
             } else if(this.$route.query.lang.includes('de')) {
+              this.setLanguage('de');
+            } else {
+              this.setLanguage('en');
+            }
+          }
+
+          if(this.$route.meta?.locale) {
+            if(this.$route.meta?.locale.includes('nl')) {
+              this.setLanguage('nl');
+            } else if(this.$route.meta?.locale.includes('de')) {
               this.setLanguage('de');
             } else {
               this.setLanguage('en');

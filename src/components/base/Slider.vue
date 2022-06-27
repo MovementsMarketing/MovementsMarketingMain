@@ -257,6 +257,11 @@
       bottom: 20px;
     }
 
+    @media screen and (min-width: 768px) {
+      right: calc(50% + 30px);
+      bottom: 30px;
+    }
+
     .slider__nav {
       width: 45px;
       height: 45px;

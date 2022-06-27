@@ -1188,7 +1188,7 @@
     }
 
     .section--telemarketers__wrapper {
-        width: 200vw;
+        width: 300vw;
         position: relative;
         animation-name: slide-left-right;
         animation-duration: 60000ms;

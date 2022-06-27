@@ -21,12 +21,26 @@ export default new VueRouter({
       name: 'Home',
       component: Home,
     },
+
     {
       path: '/about',
       name: 'Home',
       component: Home,
       meta: {element: '#about'}
     },
+    {
+      path: '/over-ons',
+      name: 'Home',
+      component: Home,
+      meta: {element: '#about', locale: 'nl'}
+    },
+    {
+      path: '/uber-uns',
+      name: 'Home',
+      component: Home,
+      meta: {element: '#about', locale: 'de'}
+    },
+
     {
       path: '/outbound',
       name: 'Home',
@@ -39,6 +53,7 @@ export default new VueRouter({
       component: Home,
       meta: {element: '#inbound'}
     },
+
     {
       path: '/clients',
       name: 'Home',
@@ -46,25 +61,59 @@ export default new VueRouter({
       meta: {element: '#clients'}
     },
     {
+      path: '/klanten',
+      name: 'Home',
+      component: Home,
+      meta: {element: '#clients', locale: 'nl'}
+    },
+    {
+      path: '/kunden',
+      name: 'Home',
+      component: Home,
+      meta: {element: '#clients', locale: 'de'}
+    },
+
+    {
       path: '/contact',
       name: 'Home',
       component: Home,
       meta: {element: '#contact'}
     },
     {
+      path: '/kontakt',
+      name: 'Home',
+      component: Home,
+      meta: {element: '#contact', locale: 'de'}
+    },
+
+    {
       path: '*',
       name: 'Home',
       component: Home,
     },
+
     {
       path: '/careers',
       name: 'Careers',
       component: Careers,
     },
+
     {
       path: '/service/answering-service',
       name: 'AnsweringService',
       component: AnsweringService,
+    },
+    {
+      path: '/diensten/telefoonservice',
+      name: 'AnsweringService',
+      component: AnsweringService,
+      meta: {locale: 'nl'}
+    },
+    {
+      path: '/dienstleistungen/telefonservice',
+      name: 'AnsweringService',
+      component: AnsweringService,
+      meta: {locale: 'de'}
     },
     {
       path: '/service/answering-service/tryNow',
@@ -72,10 +121,23 @@ export default new VueRouter({
       component: AnsweringService,
       meta: {element: '#tryService'}
     },
+
     {
       path: '/service/customer-service',
       name: 'CustomerService',
       component: CustomerService,
+    },
+    {
+      path: '/diensten/klantenservice',
+      name: 'CustomerService',
+      component: CustomerService,
+      meta: {locale: 'nl'}
+    },
+    {
+      path: '/dienstleistungen/kundenservice',
+      name: 'CustomerService',
+      component: CustomerService,
+      meta: {locale: 'de'}
     },
     {
       path: '/service/customer-service/tryNow',
@@ -83,10 +145,23 @@ export default new VueRouter({
       component: CustomerService,
       meta: {element: '#tryService'}
     },
+
     {
       path: '/service/email-management',
       name: 'EmailManagement',
       component: EmailManagement,
+    },
+    {
+      path: '/diensten/email-management',
+      name: 'EmailManagement',
+      component: EmailManagement,
+      meta: {locale: 'nl'}
+    },
+    {
+      path: '/dienstleistungen/email-management',
+      name: 'EmailManagement',
+      component: EmailManagement,
+      meta: {locale: 'de'}
     },
     {
       path: '/service/email-management/tryNow',
@@ -94,10 +169,23 @@ export default new VueRouter({
       component: EmailManagement,
       meta: {element: '#tryService'}
     },
+
     {
       path: '/service/live-chat',
       name: 'LiveChat',
       component: LiveChat,
+    },
+    {
+      path: '/diensten/live-chat',
+      name: 'LiveChat',
+      component: LiveChat,
+      meta: {locale: 'nl'}
+    },
+    {
+      path: '/dienstleistungen/live-chat',
+      name: 'LiveChat',
+      component: LiveChat,
+      meta: {locale: 'de'}
     },
     {
       path: '/service/live-chat/tryNow',
@@ -105,10 +193,23 @@ export default new VueRouter({
       component: LiveChat,
       meta: {element: '#tryService'}
     },
+
     {
       path: '/service/social-webcare',
       name: 'SocialWebcare',
       component: SocialWebcare,
+    },
+    {
+      path: '/diensten/social-webcare',
+      name: 'SocialWebcare',
+      component: SocialWebcare,
+      meta: {locale: 'nl'}
+    },
+    {
+      path: '/dienstleistungen/social-webcare',
+      name: 'SocialWebcare',
+      component: SocialWebcare,
+      meta: {locale: 'de'}
     },
     {
       path: '/service/social-webcare/tryNow',
@@ -116,10 +217,23 @@ export default new VueRouter({
       component: SocialWebcare,
       meta: {element: '#tryService'}
     },
+
     {
       path: '/service/b2b-telemarketing',
       name: 'Telemarketing',
       component: Telemarketing,
+    },
+    {
+      path: '/diensten/b2b-telemarketing',
+      name: 'Telemarketing',
+      component: Telemarketing,
+      meta: {locale: 'nl'}
+    },
+    {
+      path: '/dienstleistungen/b2b-telemarketing',
+      name: 'Telemarketing',
+      component: Telemarketing,
+      meta: {locale: 'de'}
     },
     {
       path: '/service/b2b-telemarketing/tryNow',
@@ -127,6 +241,7 @@ export default new VueRouter({
       component: Telemarketing,
       meta: {element: '#tryService'}
     },
+
     {
       path: '/thank-you/:form',
       name: 'Thank You',

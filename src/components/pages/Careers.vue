@@ -39,20 +39,40 @@
 
     <div class="section section--careers-videos">
       <div class="is-hidden-touch">
-        <carousel-3d :width="600" :height="450" :controls-visible="true" :clickable="true">
+        <carousel-3d :width="440" :height="330" :controls-visible="true" :clickable="true">
           <slide :index="0">
-            <iframe width="600" height="450"
+            <iframe width="440" height="330"
                     src="https://www.youtube.com/embed/3Fn8LbUXtuI">
             </iframe>
           </slide>
           <slide :index="1">
-            <iframe width="600" height="450"
+            <iframe width="440" height="330"
                     src="https://www.youtube.com/embed/tVIhRSCdb_0">
             </iframe>
           </slide>
           <slide :index="2">
-            <iframe width="600" height="450"
+            <iframe width="440" height="330"
                     src="https://www.youtube.com/embed/D2eLnglOQK0">
+            </iframe>
+          </slide>
+          <slide :index="3">
+            <iframe width="440" height="330"
+                    src="https://www.youtube.com/embed/D1mI3ifIQ00">
+            </iframe>
+          </slide>
+          <slide :index="4">
+            <iframe width="440" height="330"
+                    src="https://www.youtube.com/embed/hDnRNnOVSro">
+            </iframe>
+          </slide>
+          <slide :index="5">
+            <iframe width="440" height="330"
+                    src="https://www.youtube.com/embed/aZHOEyUalNs">
+            </iframe>
+          </slide>
+          <slide :index="6">
+            <iframe width="440" height="330"
+                    src="https://www.youtube.com/embed/sJodW2ex4SY">
             </iframe>
           </slide>
         </carousel-3d>
@@ -73,6 +93,26 @@
           <slide :index="2">
             <iframe width="200" height="150"
                     src="https://www.youtube.com/embed/D2eLnglOQK0">
+            </iframe>
+          </slide>
+          <slide :index="3">
+            <iframe width="200" height="150"
+                    src="https://www.youtube.com/embed/D1mI3ifIQ00">
+            </iframe>
+          </slide>
+          <slide :index="4">
+            <iframe width="200" height="150"
+                    src="https://www.youtube.com/embed/hDnRNnOVSro">
+            </iframe>
+          </slide>
+          <slide :index="5">
+            <iframe width="200" height="150"
+                    src="https://www.youtube.com/embed/aZHOEyUalNs">
+            </iframe>
+          </slide>
+          <slide :index="6">
+            <iframe width="200" height="150"
+                    src="https://www.youtube.com/embed/sJodW2ex4SY">
             </iframe>
           </slide>
         </carousel-3d>
