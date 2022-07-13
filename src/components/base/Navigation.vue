@@ -300,10 +300,13 @@
 
 <script lang="ts">
     import Vue from 'vue';
-    import { Component, Watch } from 'vue-property-decorator';
+    import { Component, Watch, Prop } from 'vue-property-decorator';
 
     @Component
     class Navigation extends Vue {
+      @Prop({default: false})
+      translateUrl: boolean;
+
         isMobileActive: boolean = false;
         isServicesActive: boolean = false;
         navClass: string = 'is-main';
@@ -324,7 +327,14 @@
         }
 
       setLanguage(lang: string) {
+        if(lang === this.$i18n.locale) return;
+
         this.$i18n.locale = lang;
+
+        if(this.translateUrl && !this.$route.fullPath.includes('tryNow')) {
+          let newPath = `${this.$route.fullPath}/${lang}`.replace('//', '/');
+          this.$router.push(newPath);
+        }
       }
 
       get currentLang() {

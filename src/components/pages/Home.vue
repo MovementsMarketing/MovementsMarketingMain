@@ -418,7 +418,6 @@
       this.$nextTick(() => {
         if (this.$route.meta?.element) {
           const $el = document.querySelector(this.$route.meta?.element);
-          console.log($el);
           $el && window.scrollTo(0, $el.offsetTop);
         }
       });
@@ -434,8 +433,6 @@
       }
 
       updated () {
-       console.log(this);
-
         this.scrollToAnchor();
       }
   }

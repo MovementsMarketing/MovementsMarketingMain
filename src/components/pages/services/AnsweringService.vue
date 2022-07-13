@@ -1,6 +1,6 @@
 <template>
   <div class="has-bg-gray">
-    <navigation :full-logo="true" :light-logo="true"/>
+    <navigation :full-logo="true" :light-logo="true" :translate-url="true"/>
 
     <service-cover :data="coverData" custom-link="/service/answering-service/tryNow"/>
 

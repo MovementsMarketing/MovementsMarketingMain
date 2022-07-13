@@ -1,6 +1,6 @@
 <template>
   <div class="has-bg-gray">
-    <navigation :full-logo="true" :light-logo="true"/>
+    <navigation :full-logo="true" :light-logo="true" :translate-url="true"/>
 
     <service-cover :data="coverData" custom-link="/service/customer-service/tryNow"/>
 
@@ -51,7 +51,6 @@
   })
   class CustomerService extends Vue {
     get coverData() {
-      console.log(this.$t(`services.customerService.cover.title`));
       return {
         cover: require('@/assets/images/services/customer_service/cover.png'),
         mask: require('@/assets/images/services/customer_service/mask.png'),
