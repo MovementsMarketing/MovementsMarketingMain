@@ -34,12 +34,12 @@
       <div class="column is-4-tablet is-2-desktop footer__links">
         <div class="columns is-multiline">
           <div class="column is-12 p-b-0">
-            <router-link to="/#about">
+            <router-link to="/about">
               {{ $t(`navigation.about`) }}
             </router-link>
           </div>
           <div class="column is-12 p-0">
-            <router-link to="/#outbound">
+            <router-link to="/outbound">
               {{ $t(`navigation.services`) }}
             </router-link>
           </div>
@@ -49,12 +49,12 @@
             </router-link>
           </div>
           <div class="column is-12 p-0">
-            <router-link to="/#clients">
+            <router-link to="/clients">
               {{ $t(`navigation.clients`) }}
             </router-link>
           </div>
           <div class="column is-12 p-0">
-            <router-link to="/#contact">
+            <router-link to="/contact">
               {{ $t(`navigation.contact`) }}
             </router-link>
           </div>
