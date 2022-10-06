@@ -103,6 +103,8 @@
       </div>
     </div>
 
+    <movements-footer/>
+
   </div>
 
 </template>
