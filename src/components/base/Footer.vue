@@ -59,9 +59,9 @@
             </router-link>
           </div>
           <div class="column is-12 p-t-0">
-            <a :href="policyLink" target="_blank">
+            <router-link to="/privacy-policy" target="_blank">
               {{ $t(`navigation.privacyPolicy`) }}
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="footer__icons">

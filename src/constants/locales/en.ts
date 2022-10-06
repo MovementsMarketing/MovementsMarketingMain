@@ -360,7 +360,281 @@ const en = {
   thanks: {
     title: `Thank you!`,
     subtitle: `We will contact you soon to schedule an introductory meeting!`,
+  },
+  privacyPolicy: {
+    title: `Privacy Policy and Cookie Statement`,
+    description: `<p class="p-b-5">The privacy policy below applies to all website visitors, transactions, and agreements with
+<span class="has-text-weight-bold">Movements Marketing Services BV, Europalaan 400-6, 3526 KS Utrecht (NL)</span>, hereinafter
+referred to as Movements Marketing.</p>
+<p class="p-b-5">We respect the privacy of our website visitors and ensure that the personal information they
+provide is treated confidentially. You can read below how exactly this is done, as well as what
+personal data is collected and for which purposes.</p>
+<p class="p-b-5">During your contact with Movements Marketing, you may share personal information with us so
+that we can identify you as an individual or employee of a company (such as your full name, e-
+mail address, address, and telephone number). This is your personal data, and we believe it is
+important that you know what we do with your personal data. And, of course, what your rights
+are.</p>`,
+    dataUsage: {
+      subtitle: `What data do we use?`,
+      text: `<p class="p-b-5">We adhere to the General Data Protection Regulation (GDPR). By using our website and our
+services, we obtain personal data from you.</p>
+<p class="p-b-5">We may use your data to do the following, namely:</p>
+<ul>
+<li> Offer a service;</li>
+<li> Conclude a service;</li>
+<li> Enter into an agreement with you;</li>
+<li> Map out your wishes and needs;</li>
+<li> Tailor our services to your needs;</li>
+<li> Make you a personal offer at a suitable time by sending you a quotation;</li>
+<li> Keep track of how and when we have had contact with you;</li>
+<li> Obtain insight into the functionalities on our website;</li>
+<li> Get insights into the use of our website;</li>
+<li> Carry out product and service development;</li>
+<li> Determine strategy and policy;</li>
+<li> If necessary, detect unlawful conduct towards Movements Marketing, its contacts, and its employees.</li>
+</ul>`,
+    },
+    personalData: {
+      subtitle: `Processing the personal data`,
+      text: `<p class="p-b-5">For the above purposes, we will process the following personal data:</p>
+      <ul>
+<li> Name and address details;</li>
+<li> Gender;</li>
+<li> E-mail address;</li>
+<li> (Mobile) telephone number;</li>
+<li> IP address;</li>
+<li> Technical browser information;</li>
+<li> Cookie ID;</li>
+<li> Clicks and surfing behavior.</li>
+</ul>`,
+    },
+    collaboration: {
+      subtitle: `Once we start our collaboration`,
+      text: `<p class="p-b-5">We also use additional personal and company data to arrange and continue delivering our
+service as well as possible. The data we process for this is the following:</p>
+<ul class="p-b-5">
+<li>  Greeting;</li>
+<li>  First name;</li>
+<li>  Last name;</li>
+<li>  Company name;</li>
+<li>  E-mail address;</li>
+<li>  Phone number;</li>
+<li>  Billing address;</li>
+<li>  Chamber of Commerce number;</li>
+<li>  Contact name;</li>
+<li>  VAT number.</li>
+</ul>
+<p>
+We process personal data because we have a legitimate interest in doing so - to keep in touch
+with our company&#39;s contacts. We store this data for the duration of the customer relationship
+</p>`,
+    },
+    thirdParties: {
+      subtitle: `Do we provide your personal data to third parties?`,
+      text: `<p class="p-b-5">We may, but never without your prior consent, sell or rent your data to third parties, except
+when required by law. We will never disclose your information without your permission.
+However, in some cases, we may be required by the government to disclose this information,
+and we will comply with this legal obligation.</p>
+<p class="p-b-5">Movements Marketing may use third-party services for the processing of personal data. These
+third parties will only process personal data on behalf of Movements Marketing. In those cases,
+we have signed a processing agreement in which the processor is obliged to comply with all
+obligations under the Personal Data Protection Act, the European General Data Protection
+Regulation, and this Privacy Policy.</p>
+<p class="">We provide personal data to parties located outside the EU. This concerns our branches:
+Movements Marketing d.o.o, Sarajevo (Bosnia &amp; Herzegovina) and Movements SrL, Istanbul
+(Turkey).</p>`,
+    },
+    retention: {
+      subtitle: `Retention periods`,
+      text: `We do not store your personal data for longer than is strictly necessary to achieve the purposes
+stated in this privacy and cookie statement.`,
+    },
+    security: {
+      subtitle: `Security`,
+      text: `<p class="p-b-5">We have taken appropriate technical and organizational measures to protect your personal data
+against unlawful processing. For example, we have taken the following measures:</p>
+<ul>
+<li> Every person who can take cognizance of your data on behalf of Movements Marketing
+is bound to sign a non-disclosure agreement and keep the information safe.</li>
+<li>  Our employees are informed about the importance of protecting the personal data we
+collect.</li>
+<li>  We have a username and password policy on all our systems.</li>
+<li>  We make backups of the personal data collected to be able to restore it in the event of
+physical or technical incidents.</li>
+<li>  We test and evaluate our security measures when necessary.</li>
+</ul>`,
+    },
+    intellectual: {
+      subtitle: `Intellectual property rights`,
+      text: `The content of this site, including brands, logos, drawings, data, product or company names,
+texts, images, etc., is protected by intellectual rights and belongs to Movements Marketing or
+entitled third parties.`,
+    },
+    minors: {
+      subtitle: `Privacy policy and minors`,
+      text: `<p class="p-b-5">Our website and/or services do not intend to collect data from visitors younger than 16 unless
+they have permission from parents or guardians to visit and use our website and/or services.</p>
+<p class="p-b-5">However, we cannot check whether a website visitor is older than 16. Therefore, we advise
+parents to be involved in their children&#39;s online activities to prevent their children&#39;s personal data
+from being collected without parental consent.</p>
+If you are convinced that we have collected personal information about a minor without their
+parent&#39;s or guardian&#39;s permission, don&#39;t hesitate to get in touch with us at
+info@movementsmarketing.com, and we will delete this information.`,
+    },
+    cookiePolicy: {
+      subtitle: `Cookie Policy`,
+      text: `We use different types of cookies for our website. We believe it is important that you have
+control over your online privacy. That is why we want to be clear about which cookies we use
+and what we use them for.`,
+    },
+    cookies: {
+      subtitle: `Cookies`,
+      text: `<p class="p-b-5">Cookies are used on our website to:</p>
+<ul class="p-b-5">
+<li> Enable functionalities of the website and protect the website (technical or functional
+cookies);</li>
+<li> Analyze the use of the website and improve the website on usage data (analytical
+cookies);</li>
+<li> Make it possible to share our website via social media (social media cookies).</li>
+</ul>
+<p>Cookies are small information files that can be automatically stored on or read from your device
+(including a PC, tablet, or smartphone) when you visit a website. This is done via a web browser
+on the device. The information that a cookie obtains about your use of the website may be
+transferred to secure servers of <span class="has-text-weight-bold">Movements Marketing Services BV</span> or those of a third party.</p>`,
+    },
+    technicalCookies: {
+      subtitle: `Technical or functional cookies`,
+      text: `The main purpose of cookies is to save you time and effort. For example, if you adjust a web
+page to your personal preferences, the chosen settings and preferences are remembered for
+future use, thanks to cookies. When you revisit the website later, the previously entered data
+can be retrieved by the cookies so that you can easily use the website again according to the
+preferences you have set up previously.`,
+    },
+    analyticalCookies: {
+      subtitle: `Analytical cookies`,
+      text: `In addition, cookies are used on this website to keep track of statistics so that we can gain
+insights into the use of our website and the effectiveness of our marketing campaigns.`,
+    },
+    enableDisableCookies: {
+      subtitle: `Enabling and disabling cookies`,
+      text: `You can choose whether or not you want to accept cookies. Most browsers automatically accept
+cookies, but you can usually change your browser settings not to accept cookies if you prefer
+(see your browser help page for exact instructions). If you choose not to accept cookies, you
+may not be able to take full advantage of the interactive features of this website or other
+websites you visit.`,
+    },
+    deleteCookies: {
+      subtitle: `Deleting cookies`,
+      text: `Most cookies have an expiration date. That means they expire automatically after a certain
+period of time has passed and no longer keep any data stored from your visit to the website.
+You can also choose to delete the cookies before the expiration date has passed manually. For
+more information about this, you can consult your browser&#39;s help page.`,
+    },
+    websiteLinks: {
+      subtitle: `Links to other third-party websites`,
+      text: `Our website pages contain links to other websites. This privacy and cookie statement does not
+apply to third-party websites connected to our website through links. We cannot guarantee that
+these third parties will handle your personal data reliably or securely. We, therefore, recommend
+that you read the privacy policy of these websites before using them.`,
+    },
+    legalRights: {
+      subtitle: `Your legal rights`,
+      text: `<p class="p-b-5">You can ask us to inspect the personal data that we stored after your visit to our website. You
+can also request us to change, move, supplement or delete this data.</p>
+You can do this by sending an e-mail to: <a href="mailto:info@movementsmarketing.com">info@movementsmarketing.com</a>`,
+    },
+    statementChanges: {
+      subtitle: `Changes to this privacy and cookie statement`,
+      text: `We reserve the right to change this privacy policy and cookie statement. Changes will be
+published on our website. Therefore, it is recommended that you consult this policy regularly to
+be aware of any changes.`,
+    },
+    authority: {
+      subtitle: `Personal Data Authority`,
+      text: `If you have complaints about how we process personal data, we will be happy to help you.
+Under the privacy legislation, you have the right to file a complaint with the Dutch Data
+Protection Authority against our processing of your personal data. You can contact the Dutch
+Data Protection Authority for this.`,
+    },
   }
+
+  // privacyPolicy: {
+  //   title: ``,
+  //   description: ``,
+  //   dataUsage: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   personalData: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   collaboration: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   thirdParties: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   retention: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   security: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   intellectual: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   minors: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   cookiePolicy: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   cookies: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   technicalCookies: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   analyticalCookies: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   enableDisableCookies: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   deleteCookies: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   websiteLinks: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   legalRights: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   statementChanges: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  //   authority: {
+  //     subtitle: ``,
+  //     text: ``,
+  //   },
+  // }
+
 };
 
 export default en;

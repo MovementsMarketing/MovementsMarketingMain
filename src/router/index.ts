@@ -10,6 +10,7 @@ import EmailManagement from "@/components/pages/services/EmailManagement.vue";
 import LiveChat from "@/components/pages/services/LiveChat.vue";
 import SocialWebcare from "@/components/pages/services/SocialWebcare.vue";
 import Telemarketing from "@/components/pages/services/Telemarketing.vue";
+import PrivacyPolicy from "@/components/pages/PrivacyPolicy.vue";
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,12 @@ export default new VueRouter({
       component: Home,
     },
 
+    {
+      path: '/privacy-policy',
+      name: 'PrivacyPolicy',
+      component: PrivacyPolicy,
+    },
+
     //Translations and redirects: ABOUT
     {
       path: '/about',
@@ -29,48 +36,14 @@ export default new VueRouter({
       component: Home,
       meta: {element: '#about'}
     },
-    // {
-    //   path: '/about/en',
-    //   redirect: () => {
-    //     return '/about'
-    //   }
-    // },
-    // {
-    //   path: '/about/nl',
-    //   redirect: () => {
-    //     return '/over-ons'
-    //   }
-    // },
-    // {
-    //   path: '/about/de',
-    //   redirect: () => {
-    //     return '/uber-uns'
-    //   }
-    // },
+
     {
       path: '/over-ons',
       name: 'Home-about-nl',
       component: Home,
       meta: {element: '#about', locale: 'nl'}
     },
-    // {
-    //   path: '/over-ons/en',
-    //   redirect: () => {
-    //     return '/about'
-    //   }
-    // },
-    // {
-    //   path: '/over-ons/nl',
-    //   redirect: () => {
-    //     return '/over-ons'
-    //   }
-    // },
-    // {
-    //   path: '/over-ons/de',
-    //   redirect: () => {
-    //     return '/uber-uns'
-    //   }
-    // },
+
     {
       path: '/uber-uns',
       name: 'Home-about-de',
@@ -103,48 +76,14 @@ export default new VueRouter({
       component: Home,
       meta: {element: '#outbound'}
     },
-    // {
-    //   path: '/outbound/en',
-    //   redirect: () => {
-    //     return '/outbound'
-    //   }
-    // },
-    // {
-    //   path: '/outbound/nl',
-    //   redirect: () => {
-    //     return '/outbound'
-    //   }
-    // },
-    // {
-    //   path: '/outbound/de',
-    //   redirect: () => {
-    //     return '/outbound'
-    //   }
-    // },
+
     {
       path: '/inbound',
       name: 'Home-inbound',
       component: Home,
       meta: {element: '#inbound'}
     },
-    // {
-    //   path: '/inbound/en',
-    //   redirect: () => {
-    //     return '/inbound'
-    //   }
-    // },
-    // {
-    //   path: '/inbound/nl',
-    //   redirect: () => {
-    //     return '/inbound'
-    //   }
-    // },
-    // {
-    //   path: '/inbound/de',
-    //   redirect: () => {
-    //     return '/inbound'
-    //   }
-    // },
+
 
     //Translations and redirects: CLIENTS
 
@@ -154,48 +93,13 @@ export default new VueRouter({
       component: Home,
       meta: {element: '#clients'}
     },
-    // {
-    //   path: '/clients/en',
-    //   redirect: () => {
-    //     return '/clients'
-    //   }
-    // },
-    // {
-    //   path: '/clients/nl',
-    //   redirect: () => {
-    //     return '/klanten'
-    //   }
-    // },
-    // {
-    //   path: '/clients/de',
-    //   redirect: () => {
-    //     return '/kunden'
-    //   }
-    // },
+
     {
       path: '/klanten',
       name: 'Home-clients-nl',
       component: Home,
       meta: {element: '#clients', locale: 'nl'}
     },
-    // {
-    //   path: '/klanten/en',
-    //   redirect: () => {
-    //     return '/clients'
-    //   }
-    // },
-    // {
-    //   path: '/klanten/nl',
-    //   redirect: () => {
-    //     return '/klanten'
-    //   }
-    // },
-    // {
-    //   path: '/klanten/de',
-    //   redirect: () => {
-    //     return '/kunden'
-    //   }
-    // },
     {
       path: '/kunden',
       name: 'Home-clients-de',
