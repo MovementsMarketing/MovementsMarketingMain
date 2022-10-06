@@ -59,7 +59,7 @@
             </router-link>
           </div>
           <div class="column is-12 p-t-0">
-            <router-link to="/privacy-policy" target="_blank">
+            <router-link to="/privacy-policy">
               {{ $t(`navigation.privacyPolicy`) }}
             </router-link>
           </div>

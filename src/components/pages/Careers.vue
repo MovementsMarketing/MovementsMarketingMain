@@ -2,7 +2,7 @@
   <div class="careers has-bg-gray">
     <navigation :full-logo="true" :light-logo="true"/>
 
-    <service-cover :data="coverData"/>
+    <service-cover :data="coverData" custom-link="/contact"/>
 
     <div class="section section--positions has-bg-gray">
       <h2 class="positions__title" v-html="$t(`careers.positions.title`)"> </h2>

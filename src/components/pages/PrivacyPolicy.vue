@@ -133,12 +133,14 @@ export default PrivacyPolicy;
     line-height: 24px;
   }
 
-  a {
-    font-weight: 700;
-    color: #186267;
+  .section {
+    a {
+      font-weight: 700;
+      color: #186267;
 
-    &:hover {
-      color: #9FF882;
+      &:hover {
+        color: #9FF882;
+      }
     }
   }
 }
