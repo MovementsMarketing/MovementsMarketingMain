@@ -362,199 +362,216 @@ const nl = {
     subtitle: `We nemen snel contact met je op om een kennismakingsgesprek in te plannen!`,
   },
   privacyPolicy: {
-    title: `Privacy Policy and Cookie Statement`,
-    description: `<p class="p-b-5">The privacy policy below applies to all website visitors, transactions, and agreements with
-<span class="has-text-weight-bold">Movements Marketing Services BV, Europalaan 400-6, 3526 KS Utrecht (NL)</span>, hereinafter
-referred to as Movements Marketing.</p>
-<p class="p-b-5">We respect the privacy of our website visitors and ensure that the personal information they
-provide is treated confidentially. You can read below how exactly this is done, as well as what
-personal data is collected and for which purposes.</p>
-<p class="p-b-5">During your contact with Movements Marketing, you may share personal information with us so
-that we can identify you as an individual or employee of a company (such as your full name, e-
-mail address, address, and telephone number). This is your personal data, and we believe it is
-important that you know what we do with your personal data. And, of course, what your rights
-are.</p>`,
+    title: `Privacy policy- en cookieverklaring`,
+    description: `<p class="p-b-5">Het onderstaande privacy-policy is van toepassing op alle sitebezoeken, transacties en
+overeenkomsten met
+<span class="has-text-weight-bold">Movements Marketing Services BV, Europalaan 400-6, 3526 KS Utrecht (NL)</span>, 
+hierna te noemen Movements Marketing.</p>
+<p class="p-b-5">Wij respecteren de privacy van de bezoekers van onze website en dragen er zorg voor dat de
+persoonlijke informatie die u ons verschaft vertrouwelijk wordt behandeld. Hoe wij dit precies
+doen, en welke persoonsgegevens wij van u verzamelen voor welke doeleinden, kunt u
+hieronder lezen.</p>
+<p class="p-b-5">Tijdens uw contact met Movements Marketing kan het voorkomen dat u persoonlijke informatie
+met ons deelt, zodat wij u kunnen identificeren als individu, medewerker van een bedrijf, …
+(zoals uw volledige naam, e-mailadres, adres en telefoonnummer). Dit zijn uw
+persoonsgegevens. Wij vinden het belangrijk dat u weet wat wij met uw persoonsgegevens
+doen. En uiteraard wat uw rechten zijn.</p>`,
     dataUsage: {
-      subtitle: `What data do we use?`,
-      text: `<p class="p-b-5">We adhere to the General Data Protection Regulation (GDPR). By using our website and our
-services, we obtain personal data from you.</p>
-<p class="p-b-5">We may use your data to do the following, namely:</p>
+      subtitle: `Welke gegevens gebruiken wij?`,
+      text: `<p class="p-b-5">Wij houden ons aan de Algemene Verordening Gegevensbescherming (AVG). Door gebruik te
+maken van onze website en onze dienstverlening verkrijgen wij persoonsgegevens van u.</p>
+<p class="p-b-5">Wij gebruiken uw gegevens om het volgende te kunnen doen, namelijk:</p>
 <ul>
-<li> Offer a service;</li>
-<li> Conclude a service;</li>
-<li> Enter into an agreement with you;</li>
-<li> Map out your wishes and needs;</li>
-<li> Tailor our services to your needs;</li>
-<li> Make you a personal offer at a suitable time by sending you a quotation;</li>
-<li> Keep track of how and when we have had contact with you;</li>
-<li> Obtain insight into the functionalities on our website;</li>
-<li> Get insights into the use of our website;</li>
-<li> Carry out product and service development;</li>
-<li> Determine strategy and policy;</li>
-<li> If necessary, detect unlawful conduct towards Movements Marketing, its contacts, and its employees.</li>
+<li> Een dienst aan te bieden;</li>
+<li> Een dienst af te sluiten;</li>
+<li> Een overeenkomst met u aan te gaan;</li>
+<li> Uw wensen en behoeften in kaart te brengen;</li>
+<li> Onze diensten op uw behoeften aan te laten sluiten;</li>
+<li> U op een geschikt moment een persoonlijk aanbod te doen via een offerte;</li>
+<li> Bij te houden hoe en wanneer wij contact met u hebben gehad;</li>
+<li> Het gebruik maken van de functionaliteiten op onze website;</li>
+<li> Het verkrijgen van inzicht in het gebruik van onze website;</li>
+<li> Voor product- en dienstontwikkeling;</li>
+<li> Het bepalen van strategie en beleid;</li>
+<li> Zo nodig het achterhalen van onrechtmatige gedragingen met betrekking tot Movements
+Marketing, haar relaties en haar medewerkers.</li>
 </ul>`,
     },
     personalData: {
-      subtitle: `Processing the personal data`,
-      text: `<p class="p-b-5">For the above purposes, we will process the following personal data:</p>
+      subtitle: `Verwerken van de persoonsgegevens`,
+      text: `<p class="p-b-5">Voor bovengenoemde doeleinden zullen wij de volgende persoonsgegevens van u
+verwerken:</p>
       <ul>
-<li> Name and address details;</li>
-<li> Gender;</li>
-<li> E-mail address;</li>
-<li> (Mobile) telephone number;</li>
-<li> IP address;</li>
-<li> Technical browser information;</li>
+      <li> NAW-gegevens;</li>
+<li> Geslacht;</li>
+<li> E-mailadres;</li>
+<li> (mobiel) telefoonnummer;</li>
+<li> IP-adres;</li>
+<li> Technische browser-informatie;</li>
 <li> Cookie ID;</li>
-<li> Clicks and surfing behavior.</li>
+<li> Click - en surfgedrag</li>
 </ul>`,
     },
     collaboration: {
-      subtitle: `Once we start our collaboration`,
-      text: `<p class="p-b-5">We also use additional personal and company data to arrange and continue delivering our
-service as well as possible. The data we process for this is the following:</p>
+      subtitle: `Wanneer we starten met onze samenwerking`,
+      text: `<p class="p-b-5">Verder gebruiken we aanvullende persoons- en bedrijfsgegevens om de dienstverlening zo
+goed mogelijk in te regelen en voort te zetten. De gegevens die we hiervoor verwerken, zijn de
+volgende:</p>
 <ul class="p-b-5">
-<li>  Greeting;</li>
-<li>  First name;</li>
-<li>  Last name;</li>
-<li>  Company name;</li>
-<li>  E-mail address;</li>
-<li>  Phone number;</li>
-<li>  Billing address;</li>
-<li>  Chamber of Commerce number;</li>
-<li>  Contact name;</li>
-<li>  VAT number.</li>
+<li> Aanhef;</li>
+<li> Naam;</li>
+<li> Achternaam;</li>
+<li> Bedrijfsnaam;</li>
+<li> E-mailadres;</li>
+<li> Telefoonnummer;</li>
+<li> Factuuradres;</li>
+<li> KvK-nummer;</li>
+<li> Naam contactpersoon;</li>
+<li> Btw-nummer.</li>
 </ul>
 <p>
-We process personal data because we have a legitimate interest in doing so - to keep in touch
-with our company&#39;s contacts. We store this data for the duration of the customer relationship
+Wij verwerken persoonsgegevens omdat wij daar een gerechtvaardigd belang bij hebben. Dat is
+om in contact te blijven met de contactpersonen van uw bedrijf. Wij bewaren deze gegevens
+voor de duur van de klantrelatie, tenzij op grond van een wettelijke bewaarplicht een afwijkende
+bewaartermijn noodzakelijk is.
 </p>`,
     },
     thirdParties: {
-      subtitle: `Do we provide your personal data to third parties?`,
-      text: `<p class="p-b-5">We may, but never without your prior consent, sell or rent your data to third parties, except
-when required by law. We will never disclose your information without your permission.
-However, in some cases, we may be required by the government to disclose this information,
-and we will comply with this legal obligation.</p>
-<p class="p-b-5">Movements Marketing may use third-party services for the processing of personal data. These
-third parties will only process personal data on behalf of Movements Marketing. In those cases,
-we have signed a processing agreement in which the processor is obliged to comply with all
-obligations under the Personal Data Protection Act, the European General Data Protection
-Regulation, and this Privacy Policy.</p>
-<p class="">We provide personal data to parties located outside the EU. This concerns our branches:
-Movements Marketing d.o.o, Sarajevo (Bosnia &amp; Herzegovina) and Movements SrL, Istanbul
-(Turkey).</p>`,
+      subtitle: `Verstrekken we persoonsgegevens aan derden?`,
+      text: `<p class="p-b-5">We kunnen uw gegevens, maar nooit zonder uw voorafgaande toestemming, verkopen of
+verhuren aan derden, met uitzondering wanneer de grond van wettelijke bepaling aan de orde
+is. We zullen uw gegevens nooit zonder uw toestemming openbaar maken. Echter, we kunnen
+in een aantal gevallen door de overheid worden verplicht om gegevens naar buiten te brengen,
+en dan zullen we aan deze wettelijke verplichting voldoen.</p>
+<p class="p-b-5">Voor de verwerking van de persoonsgegevens kan Movements Marketing gebruik maken van
+diensten van derden. Deze derden verwerken persoonsgegevens uitsluitend in opdracht van
+Movements Marketing. We hebben in die gevallen een verwerkersovereenkomst gesloten,
+waarin de verwerker wordt verplicht om alle verplichtingen uit de Wet Bescherming
+Persoonsgegevens, de Europese Algemene Verordening Gegevensbescherming, en deze
+Privacy-policy na te leven.</p>
+<p class="">Wij verstrekken persoonsgegevens aan partijen die gevestigd zijn buiten de EU. Dit betreft onze
+vestigingen: Movements Marketing d.o.o, Sarajevo (Bosnië &amp; Herzegovina) en Movements SrL,
+vestiging Istanbul (Turkije).</p>`,
     },
     retention: {
-      subtitle: `Retention periods`,
-      text: `We do not store your personal data for longer than is strictly necessary to achieve the purposes
-stated in this privacy and cookie statement.`,
+      subtitle: `Bewaartermijnen`,
+      text: `Wij bewaren uw persoonsgegevens niet langer dan strikt noodzakelijk is, om de in deze privacy-
+en cookieverklaring genoemde doeleinden te bereiken.`,
     },
     security: {
-      subtitle: `Security`,
-      text: `<p class="p-b-5">We have taken appropriate technical and organizational measures to protect your personal data
-against unlawful processing. For example, we have taken the following measures:</p>
+      subtitle: `Beveiliging`,
+      text: `<p class="p-b-5">Wij hebben passende technische en organisatorische maatregelen genomen om
+persoonsgegevens van u te beschermen tegen onrechtmatige verwerking. Zo hebben we
+bijvoorbeeld de volgende maatregelen genomen:</p>
 <ul>
-<li> Every person who can take cognizance of your data on behalf of Movements Marketing
-is bound to sign a non-disclosure agreement and keep the information safe.</li>
-<li>  Our employees are informed about the importance of protecting the personal data we
-collect.</li>
-<li>  We have a username and password policy on all our systems.</li>
-<li>  We make backups of the personal data collected to be able to restore it in the event of
-physical or technical incidents.</li>
-<li>  We test and evaluate our security measures when necessary.</li>
+<li> Alle personen die namens Movements Marketing van uw gegevens kennis kunnen
+nemen, zijn gehouden aan geheimhouding daarvan en tekenen een
+geheimhoudingsverklaring.</li>
+<li>  Onze medewerkers zijn geïnformeerd over het belang van de bescherming van
+persoonsgegevens.</li>
+<li>  We hanteren een gebruikersnaam en wachtwoordbeleid op al onze systemen.</li>
+<li>  Wij maken back-ups van de persoonsgegevens om deze te kunnen herstellen bij fysieke
+of technische incidenten.</li>
+<li>  We testen en evalueren onze maatregelen wanneer nodig.</li>
 </ul>`,
     },
     intellectual: {
-      subtitle: `Intellectual property rights`,
-      text: `The content of this site, including brands, logos, drawings, data, product or company names,
-texts, images, etc., is protected by intellectual rights and belongs to Movements Marketing or
-entitled third parties.`,
+      subtitle: `Intellectuele eigendomsrechten`,
+      text: `De inhoud van deze site, met inbegrip van de merken, logo’s, tekeningen, data, product - of
+bedrijfsnamen, teksten, beelden e.d. zijn beschermd door intellectuele rechten en behoren toe
+aan Movements Marketing of rechthoudende derden.`,
     },
     minors: {
-      subtitle: `Privacy policy and minors`,
-      text: `<p class="p-b-5">Our website and/or services do not intend to collect data from visitors younger than 16 unless
-they have permission from parents or guardians to visit and use our website and/or services.</p>
-<p class="p-b-5">However, we cannot check whether a website visitor is older than 16. Therefore, we advise
-parents to be involved in their children&#39;s online activities to prevent their children&#39;s personal data
-from being collected without parental consent.</p>
-If you are convinced that we have collected personal information about a minor without their
-parent&#39;s or guardian&#39;s permission, don&#39;t hesitate to get in touch with us at
-info@movementsmarketing.com, and we will delete this information.`,
+      subtitle: `Aangaande minderjarigen`,
+      text: `Onze website en/of dienst heeft niet de intentie gegevens te verzamelen over websitebezoekers
+die jonger zijn dan 16 jaar tenzij ze toestemming hebben van ouders of voogd. We kunnen
+echter niet controleren of een websitebezoeker ouder dan 16 is. Wij raden ouders dan ook aan
+betrokken te zijn bij de online activiteiten van hun kinderen, om zo te voorkomen dat er
+gegevens over kinderen verzameld worden zonder ouderlijke toestemming. Als u ervan
+overtuigd bent dat wij zonder die toestemming persoonlijke gegevens hebben verzameld over
+een minderjarige, neem dan contact met ons op via info@movementsmarketing.com dan zullen
+wij deze informatie verwijderen.`,
     },
     cookiePolicy: {
-      subtitle: `Cookie Policy`,
-      text: `We use different types of cookies for our website. We believe it is important that you have
-control over your online privacy. That is why we want to be clear about which cookies we use
-and what we use them for.`,
+      subtitle: `Cookiebeleid`,
+      text: `Voor onze website gebruiken wij verschillende soorten cookies. Wij vinden het belangrijk dat u
+zelf controle heeft over uw online privacy. Daarom zijn we duidelijk over welke cookies we
+gebruiken en waarvoor we ze gebruiken.`,
     },
     cookies: {
       subtitle: `Cookies`,
-      text: `<p class="p-b-5">Cookies are used on our website to:</p>
+      text: `<p class="p-b-5">Op onze website worden cookies gebruikt om:</p>
 <ul class="p-b-5">
-<li> Enable functionalities of the website and protect the website (technical or functional
-cookies);</li>
-<li> Analyze the use of the website and improve the website on usage data (analytical
-cookies);</li>
-<li> Make it possible to share our website via social media (social media cookies).</li>
+<li> Functionaliteiten van de website mogelijk te maken en om de website te 
+beschermen (technische of functionele cookies);</li>
+<li> Het gebruik van de website te analyseren en op basis daarvan de website te 
+verbeteren (analytische cookies);</li>
+<li> Om het mogelijk te maken om onze website te delen via social media (social 
+media cookies).</li>
 </ul>
-<p>Cookies are small information files that can be automatically stored on or read from your device
-(including a PC, tablet, or smartphone) when you visit a website. This is done via a web browser
-on the device. The information that a cookie obtains about your use of the website may be
-transferred to secure servers of <span class="has-text-weight-bold">Movements Marketing Services BV</span> or those of a third party.</p>`,
+<p>Cookies zijn kleine informatiebestandjes die bij het bezoeken van een website automatisch
+kunnen worden opgeslagen op of uitgelezen van uw device (waaronder een PC, tablet of
+smartphone). Dat gebeurt via de webbrowser op het device. De informatie die een cookie
+verkrijgt over uw gebruik van de website kan worden overgebracht naar eigen beveiligde
+servers van <span class="has-text-weight-bold">Movements Marketing Services BV</span>, of die van een derde partij.</p>`,
     },
     technicalCookies: {
-      subtitle: `Technical or functional cookies`,
-      text: `The main purpose of cookies is to save you time and effort. For example, if you adjust a web
-page to your personal preferences, the chosen settings and preferences are remembered for
-future use, thanks to cookies. When you revisit the website later, the previously entered data
-can be retrieved by the cookies so that you can easily use the website again according to the
-preferences you have set up previously.`,
+      subtitle: `Technische of functionele cookies`,
+      text: `Het voornaamste doel van cookies is om u tijd en moeite te besparen. Als u bijvoorbeeld een
+webpagina aan uw persoonlijke voorkeuren aanpast of als u navigeert in een website, worden
+dankzij cookies de gekozen instellingen en voorkeuren onthouden voor toekomstig gebruik.
+Wanneer u de website later weer bezoekt, kunnen de eerder ingevoerde gegevens worden
+opgehaald door de cookies, waardoor u eenvoudig weer de mogelijkheden van de website kunt
+gebruiken zoals u die eerder hebt ingesteld.`,
     },
     analyticalCookies: {
-      subtitle: `Analytical cookies`,
-      text: `In addition, cookies are used on this website to keep track of statistics so that we can gain
-insights into the use of our website and the effectiveness of our marketing campaigns.`,
+      subtitle: `Analytische cookies`,
+      text: `Daarnaast worden er op deze website cookies gebruikt voor het bijhouden van statistieken,
+zodat wij inzicht kunnen krijgen in het gebruik van onze website en de effectiviteit van onze
+campagnes.`,
     },
     enableDisableCookies: {
-      subtitle: `Enabling and disabling cookies`,
-      text: `You can choose whether or not you want to accept cookies. Most browsers automatically accept
-cookies, but you can usually change your browser settings not to accept cookies if you prefer
-(see your browser help page for exact instructions). If you choose not to accept cookies, you
-may not be able to take full advantage of the interactive features of this website or other
-websites you visit.`,
+      subtitle: `In- en uitschakelen van cookies`,
+      text: `U kunt kiezen of u cookies wel of niet accepteert. Bij de meeste browsers worden cookies
+automatisch geaccepteerd, maar meestal kunt u de instellingen van uw browser zodanig
+wijzigen dat cookies desgewenst niet worden geaccepteerd (bekijk uw browser hulp pagina voor
+exacte instructies). Als u ervoor kiest om cookies niet te accepteren, kunt u mogelijk niet
+volledig gebruikmaken van interactieve mogelijkheden van deze website of andere sites die u
+bezoekt.`,
     },
     deleteCookies: {
-      subtitle: `Deleting cookies`,
-      text: `Most cookies have an expiration date. That means they expire automatically after a certain
-period of time has passed and no longer keep any data stored from your visit to the website.
-You can also choose to delete the cookies before the expiration date has passed manually. For
-more information about this, you can consult your browser&#39;s help page.`,
+      subtitle: `Verwijderen van cookies`,
+      text: `De meeste cookies hebben een houdbaarheidsdatum. Dat betekent dat ze na een bepaalde
+periode automatisch verlopen en geen gegevens van uw site-bezoek meer registreren. U kunt
+er ook voor kiezen de cookies handmatig te verwijderen voordat de houdbaarheidsdatum is
+verstreken. Voor meer informatie hierover, kunt u de handleiding van uw browser raadplegen.`,
     },
     websiteLinks: {
-      subtitle: `Links to other third-party websites`,
-      text: `Our website pages contain links to other websites. This privacy and cookie statement does not
-apply to third-party websites connected to our website through links. We cannot guarantee that
-these third parties will handle your personal data reliably or securely. We, therefore, recommend
-that you read the privacy policy of these websites before using them.`,
+      subtitle: `Links naar andere websites van derden`,
+      text: `Onze internetpagina&#39;s bevatten links naar andere websites. Deze privacy- en cookieverklaring is
+niet van toepassing op websites van derden die door middel van links met onze website zijn
+verbonden. Wij kunnen niet garanderen dat deze derden op een betrouwbare of veilige manier
+met uw persoonsgegevens omgaan. Wij raden u dan ook aan om de privacy policy van deze
+websites te lezen alvorens van deze websites gebruik te maken.`,
     },
     legalRights: {
-      subtitle: `Your legal rights`,
-      text: `<p class="p-b-5">You can ask us to inspect the personal data that we stored after your visit to our website. You
-can also request us to change, move, supplement or delete this data.</p>
-You can do this by sending an e-mail to: <a href="mailto:info@movementsmarketing.com">info@movementsmarketing.com</a>`,
+      subtitle: `Uw wettelijke rechten`,
+      text: `<p class="p-b-5">U kunt ons vragen om inzage in de gegevens die van u zijn opgeslagen. Ook kunt u ons
+verzoeken deze gegevens te wijzigen, te verplaatsen, aan te vullen of te verwijderen.</p>
+Dit kunt u doen door een e-mail te sturen naar: <a href="mailto:info@movementsmarketing.com">info@movementsmarketing.com</a>`,
     },
     statementChanges: {
-      subtitle: `Changes to this privacy and cookie statement`,
-      text: `We reserve the right to change this privacy policy and cookie statement. Changes will be
-published on our website. Therefore, it is recommended that you consult this policy regularly to
-be aware of any changes.`,
+      subtitle: `Wijzigingen in deze privacy- en cookieverklaring`,
+      text: `Wij behouden ons het recht voor om deze privacy- en cookieverklaring aan te passen.
+Wijzigingen zullen op onze website worden gepubliceerd. Het verdient dan ook aanbeveling om
+deze policy geregeld te raadplegen, zodat u van eventuele wijzigingen op de hoogte bent.`,
     },
     authority: {
-      subtitle: `Personal Data Authority`,
-      text: `If you have complaints about how we process personal data, we will be happy to help you.
-Under the privacy legislation, you have the right to file a complaint with the Dutch Data
-Protection Authority against our processing of your personal data. You can contact the Dutch
-Data Protection Authority for this.`,
+      subtitle: `Autoriteit Persoonsgegevens`,
+      text: `Natuurlijk helpen wij u ook graag verder als u klachten heeft over de verwerking van uw
+persoonsgegevens. Op grond van de privacywetgeving heeft u het recht om een klacht in te
+dienen bij de Autoriteit Persoonsgegevens tegen onze verwerkingen van uw
+persoonsgegevens. U kunt hiervoor contact opnemen met de Autoriteit Persoonsgegevens.`,
     },
   }
 
