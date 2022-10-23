@@ -1,3 +1,5 @@
+import generalTerms from "@/constants/locales/generalTerms/en";
+
 const en = {
   navigation: {
     about: 'About Us',
@@ -556,84 +558,9 @@ Under the privacy legislation, you have the right to file a complaint with the D
 Protection Authority against our processing of your personal data. You can contact the Dutch
 Data Protection Authority for this.`,
     },
-  }
+  },
 
-  // privacyPolicy: {
-  //   title: ``,
-  //   description: ``,
-  //   dataUsage: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   personalData: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   collaboration: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   thirdParties: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   retention: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   security: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   intellectual: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   minors: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   cookiePolicy: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   cookies: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   technicalCookies: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   analyticalCookies: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   enableDisableCookies: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   deleteCookies: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   websiteLinks: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   legalRights: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   statementChanges: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  //   authority: {
-  //     subtitle: ``,
-  //     text: ``,
-  //   },
-  // }
+  generalTerms: generalTerms,
 
 };
 

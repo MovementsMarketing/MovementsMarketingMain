@@ -11,6 +11,7 @@ import LiveChat from "@/components/pages/services/LiveChat.vue";
 import SocialWebcare from "@/components/pages/services/SocialWebcare.vue";
 import Telemarketing from "@/components/pages/services/Telemarketing.vue";
 import PrivacyPolicy from "@/components/pages/PrivacyPolicy.vue";
+import GeneralTerms from "@/components/pages/GeneralTerms.vue";
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ export default new VueRouter({
       path: '/privacy-policy',
       name: 'PrivacyPolicy',
       component: PrivacyPolicy,
+    },
+    {
+      path: '/general-terms',
+      name: 'GeneralTerms',
+      component: GeneralTerms,
     },
 
     //Translations and redirects: ABOUT

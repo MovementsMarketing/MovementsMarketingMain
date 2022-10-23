@@ -1,3 +1,5 @@
+import generalTerms from "@/constants/locales/generalTerms/en";
+
 const de = {
   navigation: {
     about: 'Über uns',
@@ -573,7 +575,8 @@ haben Sie das Recht, bei der niederländischen Datenschutzbehörde eine Beschwer
 unsere Verarbeitung Ihrer personenbezogenen Daten einzureichen. Sie können sich hierfür an
 die niederländische Datenschutzbehörde wenden.`,
     },
-  }
+  },
+  generalTerms: generalTerms,
 
 };
 

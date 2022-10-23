@@ -1,3 +1,5 @@
+import generalTerms from "@/constants/locales/generalTerms/en";
+
 const nl = {
   navigation: {
     about: 'Over ons',
@@ -573,7 +575,9 @@ persoonsgegevens. Op grond van de privacywetgeving heeft u het recht om een klac
 dienen bij de Autoriteit Persoonsgegevens tegen onze verwerkingen van uw
 persoonsgegevens. U kunt hiervoor contact opnemen met de Autoriteit Persoonsgegevens.`,
     },
-  }
+  },
+  generalTerms: generalTerms,
+
 
 };
 
