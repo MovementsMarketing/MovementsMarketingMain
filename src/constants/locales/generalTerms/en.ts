@@ -338,6 +338,10 @@ office has exclusive jurisdiction to hear any disputes between the parties unles
 otherwise.</li>
         </ol>`,
     },
+    article29: {
+        title: '',
+        text: ``,
+    },
 };
 
 export default generalTermsEn;

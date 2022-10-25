@@ -620,10 +620,10 @@ export default new VueRouter({
   ],
   scrollBehavior: function (to) {
     if (to.meta?.element) {
-      return {
-        selector: to.meta.element,
-        behavior: 'smooth',
-      }
+        return {
+          selector: to.meta.element,
+          behavior: 'smooth',
+        }
     }
     else {
       return {

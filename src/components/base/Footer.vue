@@ -58,6 +58,11 @@
               {{ $t(`navigation.contact`) }}
             </router-link>
           </div>
+          <div class="column is-12 p-0">
+            <router-link to="/general-terms">
+              {{ $t(`generalTerms.name`) }}
+            </router-link>
+          </div>
           <div class="column is-12 p-t-0">
             <router-link to="/privacy-policy">
               {{ $t(`navigation.privacyPolicy`) }}

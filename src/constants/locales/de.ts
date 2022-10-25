@@ -1,4 +1,4 @@
-import generalTerms from "@/constants/locales/generalTerms/en";
+import generalTerms from "@/constants/locales/generalTerms/de";
 
 const de = {
   navigation: {

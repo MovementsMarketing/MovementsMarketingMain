@@ -144,6 +144,10 @@ class GeneralTerms extends Vue {
         title: this.$t(`generalTerms.article28.title`),
         text: this.$t(`generalTerms.article28.text`),
       },
+      {
+        title: this.$t(`generalTerms.article29.title`),
+        text: this.$t(`generalTerms.article29.text`),
+      },
     ];
   }
 }

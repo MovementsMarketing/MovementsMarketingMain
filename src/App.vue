@@ -34,9 +34,22 @@ class App extends Vue {
     // this.$cookies.set('language', lang);
   }
 
+  // created() {
+  //   this.$watch('$route', this.onRouteChange);
+  // }
+
   mounted() {
     if(this.$refs.cookieLaw.isAccepted() && this.$cookies.get('language')) {
       //this.$i18n.locale = this.$cookies.get('language')?.value;
+    }
+
+    if(this.$route.meta?.element) {
+      const element = document.querySelector(`${this.$route.meta?.element}`);
+      if(element) {
+        setTimeout(() => {
+          element.scrollIntoView({behavior: "smooth",  block: "end"});
+        }, 300);
+      }
     }
   }
 }
