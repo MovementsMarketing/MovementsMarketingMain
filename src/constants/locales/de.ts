@@ -252,7 +252,7 @@ const de = {
     },
     emailManagement: {
       cover: {
-        title: 'Lagern Sie Ihr <span class="is-highlighted">E-Mail-Management</span> aus',
+        title: 'Lagern Sie Ihr <span class="is-highlighted is-block"><span style="white-space: nowrap;">E-Mail-</span>Management</span> aus',
         subtitle: 'Maximieren Sie die Produktivität und Arbeitszufriedenheit Ihrer Mitarbeiter!',
         cta: 'Testen Sie jetzt!',
       },

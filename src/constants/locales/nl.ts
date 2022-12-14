@@ -252,7 +252,7 @@ const nl = {
     },
     emailManagement: {
       cover: {
-        title: 'Besteed jouw<span class="is-highlighted">E-mail Management</span> uit',
+        title: 'Besteed jouw <span class="is-highlighted"> <span style="white-space: nowrap">E-mail</span> Management</span> uit',
         subtitle: 'Maximaliseer de productiviteit en het werkplezier van jouw professionals! ',
         cta: 'Probeer nu!',
       },
@@ -269,7 +269,7 @@ const nl = {
       quote2: 'Wil jij het maximale uit jouw klantenservice halen?',
       trial: {
         title: '<span class="is-highlighted">Plan direct een kennismakingsgesprek</span>',
-        text: 'Vraag nu een adviesgesprek aan en ontdek waarom onze emailmanagement werkt!',
+        text: 'Vraag nu een adviesgesprek aan en ontdek waarom onze email management werkt!',
         cta: 'Let’s Talk!',
       },
       sales: {
@@ -287,7 +287,7 @@ const nl = {
           text: 'Bepaalde e-mails hebben een specifieke reactie nodig. Onze professionals houden belangrijke mails apart bij en sturen deze door naar de verantwoordelijke voordat ze namens jouw bedrijf reageren.',
         },
       },
-      formTitle: 'Test onze emailmanagement!',
+      formTitle: 'Test onze email management!',
     },
     socialWebcare: {
       cover: {

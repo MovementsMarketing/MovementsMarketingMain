@@ -121,6 +121,16 @@
           font-size: 42px;
           line-height: 46px;
         }
+
+        @media screen  and (max-width: 520px) {
+          font-size: 38px;
+          line-height: 46px;
+        }
+
+        @media screen  and (max-width: 360px) {
+          font-size: 32px;
+          line-height: 36px;
+        }
       }
 
       p {

@@ -87,12 +87,17 @@
           line-height: 42px;
           margin-top: 20px;
           margin-bottom: 30px;
-          white-space: break-spaces;
+         // white-space: break-spaces;
         }
 
-        @media screen  and (max-width: 320px) {
-          font-size: 36px;
-          line-height: 32px;
+        @media screen  and (max-width: 520px) {
+          font-size: 38px;
+          line-height: 46px;
+        }
+
+        @media screen  and (max-width: 360px) {
+          font-size: 32px;
+          line-height: 36px;
         }
 
         .is-highlighted {
