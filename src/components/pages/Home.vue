@@ -254,10 +254,10 @@
                                     <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`home.contact.email`)">
                                 </div>
                                 <div class="column is-6">
-                                    <input class="form__input" name="phone" id="phone"  :placeholder="$t(`home.contact.phone`)"/>
+                                    <input class="form__input" name="phone" id="phone" required :placeholder="$t(`home.contact.phone`)"/>
                                 </div>
                                 <div class="column is-12">
-                                    <textarea class="form__textarea"  name="message" id="message"  :placeholder="$t(`home.contact.message`)"/>
+                                    <textarea class="form__textarea"  name="message" id="message" required :placeholder="$t(`home.contact.message`)"/>
                                 </div>
                                 <div class="column is-12 has-text-right">
                                     <button class="button button--hollow m-t-10">

@@ -20,7 +20,7 @@
               <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`services.form.businessEmail`)">
             </div>
             <div class="column is-6 is-offset-3">
-              <input class="form__input" name="message" id="phone"  :placeholder="$t(`services.form.phone`)"/>
+              <input class="form__input" name="message" id="phone" required :placeholder="$t(`services.form.phone`)"/>
             </div>
 
             <div class="column is-6 is-offset-3 has-text-right">
