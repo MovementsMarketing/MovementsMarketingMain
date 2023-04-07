@@ -151,7 +151,7 @@
     positions = [
       {
         name: 'B2B Telemarketeer / Customer Support Agent',
-        link: 'https://movements.bamboohr.com/jobs/',
+        link: 'https://app.healthboxhr.com/job-application/external/07c08518-c05407d0-d1cd1170-b5824a4d',
         location: 'Istanbul, TR',
         type: 'Full - Time',
       },
@@ -163,13 +163,13 @@
       },
       {
         name: 'Telefonagent (Inbound/Outbound)',
-        link: 'https://movements.bamboohr.com/jobs/',
+        link: 'https://app.healthboxhr.com/job-application/external/4de788fb-1d7dcd9b-4838cb70-fe068649',
         location: 'Sarajevo, BA',
         type: 'Full - Time',
       },
       {
         name: 'Telemarketer / Inbound & Outbound / Nederlandstalig',
-        link: 'https://movements.bamboohr.com/jobs/',
+        link: 'https://app.healthboxhr.com/job-application/external/d2046410-b9126d87-e2a24d05-3d1ac315',
         location: 'Sarajevo, BA',
         type: 'Full - Time',
       },
