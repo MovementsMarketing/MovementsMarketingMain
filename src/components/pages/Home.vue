@@ -241,7 +241,7 @@
                 </div>
                 <div class="column is-12-tablet is-6-desktop">
                     <div class="contact__form">
-                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field" action="/thank-you/general">
+                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field" action="/thank-you/general/">
                             <input type="hidden" name="form-name" value="ask-question" />
                             <div class="columns is-multiline">
                                 <div class="column is-6">
@@ -422,6 +422,22 @@
         }
       });
     }
+
+    // async handleFormSubmit ($event) {
+    //   const form = $event.target;
+    //   const body = new URLSearchParams(new FormData(form))
+    //   try {
+    //     const res = await fetch(form.action, { method: 'POST', body })
+    //     if (res.ok) {
+    //       this.$router.push({ path: '/thank-you/general' })
+    //     } else {
+    //       throw res
+    //     }
+    //   } catch (err) {
+    //     console.error(err)
+    //     // you don't have an error page but maybe you should add one
+    //   }
+    // }
 
       created() {
           this.images.coverBg = require('@/assets/images/backgrounds/movements_call-center_bg.png');
