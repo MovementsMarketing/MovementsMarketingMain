@@ -367,7 +367,7 @@ const nl = {
     title: `Privacy policy- en cookieverklaring`,
     description: `<p class="p-b-5">Het onderstaande privacy-policy is van toepassing op alle sitebezoeken, transacties en
 overeenkomsten met
-<span class="has-text-weight-bold">Movements Marketing Services BV, Europalaan 400-6, 3526 KS Utrecht (NL)</span>, 
+<span class="has-text-weight-bold">Movements Marketing Services BV, Beresteinseweg 34, 1217 TJ Hilversum (NL)</span>, 
 hierna te noemen Movements Marketing.</p>
 <p class="p-b-5">Wij respecteren de privacy van de bezoekers van onze website en dragen er zorg voor dat de
 persoonlijke informatie die u ons verschaft vertrouwelijk wordt behandeld. Hoe wij dit precies

@@ -366,7 +366,7 @@ const de = {
   privacyPolicy: {
     title: `Datenschutzrichtlinie und Cookie-Erklärung`,
     description: `<p class="p-b-5">Die nachstehende Datenschutzrichtlinie gilt für alle Website-Besuche, Transaktionen und Vereinbarungen mit
-<span class="has-text-weight-bold">Movements Marketing Services BV, Europalaan 400-6, 3526 KS Utrecht (NL)</span>, 
+<span class="has-text-weight-bold">Movements Marketing Services BV, Beresteinseweg 34, 1217 TJ Hilversum (NL)</span>, 
 im Folgenden als Movements Marketing bezeichnet.</p>
 <p class="p-b-5">Wir respektieren die Privatsphäre der Besucher unserer Website und stellen sicher, dass die
 von Ihnen bereitgestellten personenbezogenen Daten vertraulich behandelt werden. Wie wir

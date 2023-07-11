@@ -396,8 +396,8 @@
           {
               key: 'utrecht',
               title: 'Utrecht',
-              address: 'Europalaan 400 - 7 Oost',
-              postal: '3526 KS Utrecht',
+              address: 'Beresteinseweg 34',
+              postal: '1217 TJ Hilversum',
               country: 'Netherlands',
               phone: '+31 85 210 37 55',
               mail: 'info@movementsmarketing.com'
