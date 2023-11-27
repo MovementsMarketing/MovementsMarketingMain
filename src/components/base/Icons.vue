@@ -59,6 +59,7 @@
         chevronLeft: `<polyline xmlns="http://www.w3.org/2000/svg" points="15 18 9 12 15 6"/>`,
         check: `<polyline xmlns="http://www.w3.org/2000/svg" points="20 6 9 17 4 12"/>`,
         location: `<path xmlns="http://www.w3.org/2000/svg" d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/> <circle xmlns="http://www.w3.org/2000/svg" cx="12" cy="10" r="3"/>`,
+        arrowRight: `<line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>`,
     };
 
   }

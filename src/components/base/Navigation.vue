@@ -136,29 +136,29 @@
 
                 <div class="navigation__actions-divider"></div>
                 <div class="navigation__item navigation__item--button"  @click="isMobileActive = false;">
-                  <router-link :to="routes.contact" class="button button--hollow">
+                  <router-link :to="routes.contact" class="button button--primary">
                     <span class="text">
                       {{ $t(`navigation.contact`) }}
                     </span>
                     <span class="dot"></span>
                     <span class="icon-wrapper">
-                      <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
+                      <icons icon="arrowRight" stroke-width="3" stroke="#fff" height="24" width="24" />
                     </span>
                   </router-link>
 
                 </div>
 
-                <div class="navigation__item navigation__item--button">
-                  <a class="button button--hollow" href="https://www.linkedin.com/company/movements-marketing/posts/?feedView=articles&viewAsMember=true" target="_blank">
-                  <span class="text">
-                    {{ $t(`navigation.linkedInBlogs`) }}
-                  </span>
-                    <span class="dot"></span>
-                    <span class="icon-wrapper">
-                    <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
-                  </span>
-                  </a>
-                </div>
+<!--                <div class="navigation__item navigation__item&#45;&#45;button">-->
+<!--                  <a class="button button&#45;&#45;hollow" href="https://www.linkedin.com/company/movements-marketing/posts/?feedView=articles&viewAsMember=true" target="_blank">-->
+<!--                  <span class="text">-->
+<!--                    {{ $t(`navigation.linkedInBlogs`) }}-->
+<!--                  </span>-->
+<!--                    <span class="dot"></span>-->
+<!--                    <span class="icon-wrapper">-->
+<!--                    <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />-->
+<!--                  </span>-->
+<!--                  </a>-->
+<!--                </div>-->
               </div>
             </div>
           </div>
@@ -202,29 +202,29 @@
               </div>
 
               <div class="navigation__item navigation__item--button">
-                  <router-link :to="routes.contact" class="button button--hollow">
+                  <router-link :to="routes.contact" class="button button--primary">
                     <span class="text">
                       {{ $t(`navigation.contact`) }}
                     </span>
                     <span class="dot"></span>
                     <span class="icon-wrapper">
-                      <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
+                      <icons icon="arrowRight" stroke-width="3" stroke="#fff" height="20" width="20" />
                     </span>
                   </router-link>
 
               </div>
 
-              <div class="navigation__item navigation__item--button">
-                <a class="button button--hollow" href="https://www.linkedin.com/company/movements-marketing/posts/?feedView=articles&viewAsMember=true" target="_blank">
-                  <span class="text">
-                    {{ $t(`navigation.linkedInBlogs`) }}
-                  </span>
-                  <span class="dot"></span>
-                  <span class="icon-wrapper">
-                    <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
-                  </span>
-                </a>
-              </div>
+<!--              <div class="navigation__item navigation__item&#45;&#45;button">-->
+<!--                <a class="button button&#45;&#45;hollow" href="https://www.linkedin.com/company/movements-marketing/posts/?feedView=articles&viewAsMember=true" target="_blank">-->
+<!--                  <span class="text">-->
+<!--                    {{ $t(`navigation.linkedInBlogs`) }}-->
+<!--                  </span>-->
+<!--                  <span class="dot"></span>-->
+<!--                  <span class="icon-wrapper">-->
+<!--                    <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />-->
+<!--                  </span>-->
+<!--                </a>-->
+<!--              </div>-->
             </div>
           <div v-show="isServicesActive" class="section navigation__services-options">
             <div class="columns m-0">

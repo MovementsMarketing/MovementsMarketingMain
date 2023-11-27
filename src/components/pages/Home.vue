@@ -62,47 +62,7 @@
         </div>
 
         <div class="section section--numbers" id="numbersSection" style="overflow: visible">
-            <div class="our-numbers">
-                <div class="bg-image">
-                    <img src="@/assets/images/backgrounds/movements_globe_bg.png" alt="Movements Marketing Globe Background">
-                </div>
-                <div class="line"></div>
-                <div class="section__content has-text-left">
-                    <div class="columns p-t-40 is-variable is-6 is-multiline">
-                        <div class="column is-12-tablet is-6-desktop is-7-widescreen">
-                            <h2 v-html="$t(`home.numbers.ourNumbers`)" class="m-b-0"></h2>
-                        </div>
-                        <div class="column is-12-tablet is-6-desktop is-5-widescreen">
-                            <div class="columns is-multiline is-mobile">
-                                <div class="column is-6">
-                                    <div class="number-wrapper">
-                                        <p class="digit"> 598 </p>
-                                        <p class="text"> {{$t(`home.numbers.projects`)}} </p>
-                                    </div>
-                                </div>
-                                <div class="column is-6">
-                                    <div class="number-wrapper">
-                                        <p class="digit"> 09 </p>
-                                        <p class="text"> {{$t(`home.numbers.languages`)}} </p>
-                                    </div>
-                                </div>
-                                <div class="column is-6">
-                                    <div class="number-wrapper">
-                                        <p class="digit"> 03 </p>
-                                        <p class="text"> {{$t(`home.numbers.offices`)}} </p>
-                                    </div>
-                                </div>
-                                <div class="column is-6">
-                                    <div class="number-wrapper">
-                                        <p class="digit"> 04 </p>
-                                        <p class="text"> {{$t(`home.numbers.teams`)}} </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <work-in-numbers/>
         </div>
 
         <quote :text="$t(`home.quote`)"/>
@@ -288,6 +248,7 @@
   import Facts from "@/components/components/Facts.vue";
   import Service from "@/components/components/Service.vue";
   import Quote from "@/components/components/Quote.vue";
+  import WorkInNumbers from "@/components/components/WorkInNumbers.vue";
 
   @Component({
     components: {
@@ -295,6 +256,7 @@
         Facts,
         Service,
         Quote,
+      WorkInNumbers,
     }
   })
   class Home extends Vue {
@@ -769,61 +731,6 @@
 
                 .is-highlighted {
                     color: #9FF882;
-                }
-            }
-
-            .number-wrapper {
-                padding: 10px 20px;
-
-                .digit {
-                    font-size: 84px;
-                    line-height: 92px;
-                    color: #fff;
-                    font-weight: 900;
-
-                    @media (min-resolution: 100dpi) {
-                        font-size: 68px;
-                        line-height: 72px;
-                    }
-
-                    @media screen  and (max-width: 780px) {
-                        font-size: 78px;
-                        line-height: 84px;
-                    }
-
-                    @media screen  and (max-width: 460px) {
-                        font-size: 72px;
-                        line-height: 78px;
-                    }
-
-                    @media screen  and (max-width: 460px) {
-                        font-size: 68px;
-                        line-height: 72px;
-                    }
-
-                    &::after {
-                        content: '';
-                        display: block;
-                        width: 45px;
-                        height: 3px;
-                        background: #9FF882;
-
-                        @media (min-resolution: 100dpi) {
-                            width: 40px;
-                        }
-                    }
-                }
-
-                .text {
-                    color: #fff;
-                    font-size: 18px;
-                    padding-top: 15px;
-
-                    @media (min-resolution: 100dpi) {
-                      padding-top: 10px;
-                      font-size: 17px;
-                      line-height: 20px;
-                    }
                 }
             }
 
