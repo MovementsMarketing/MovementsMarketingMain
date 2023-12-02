@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,700;0,900;1,200;1,400;1,600;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @charset "UTF-8";
 
 $body-font: 'Poppins', sans-serif;
@@ -15,22 +14,83 @@ h1, h2, h3 {
 }
 
 p {
-  color: #186267;
-  line-height: 26px;
+  line-height: 28px;
   font-size: 18px;
+
+  @media screen  and (max-width: 420px) {
+    line-height: 26px;
+    font-size: 16px;
+  }
 }
 
-h2 {
-  font-size: 64px;
-  color: #186267;
+h1 {
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 700;
+  word-spacing: 5px;
 
-  @media (min-resolution: 100dpi) {
-    font-size: 58px;
+  @media (min-resolution: 240dpi) {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 70px;
+    word-spacing: 2px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    font-size: 68px;
+    line-height: 72px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 64px;
+    line-height: 68px;
   }
 
   @media screen  and (max-width: 780px) {
-    font-size: 40px;
-    line-height: 42px;
+    font-size: 46px;
+    line-height: 50px;
+    word-spacing: 2px;
+  }
+
+  @media screen  and (max-width: 420px) {
+    font-size: 36px;
+    line-height: 40px;
+    word-spacing: 2px;
+  }
+}
+
+h2 {
+  font-size: 58px;
+  font-weight: 700;
+  word-spacing: 2px;
+  line-height: 62px;
+
+  @media (min-resolution: 240dpi) {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 54px;
+    word-spacing: 1px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    font-size: 54px;
+    line-height: 58px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  @media screen  and (max-width: 780px) {
+    font-size: 42px;
+    line-height: 56px;
+    word-spacing: 0;
+  }
+
+  @media screen  and (max-width: 420px) {
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 
@@ -38,9 +98,9 @@ h3 {
   font-size: 58px;
   color: #186267;
 
-  @media (min-resolution: 100dpi) {
-    font-size: 42px;
-  }
+  //@media (min-resolution: 100dpi) {
+  //  font-size: 42px;
+  //}
 
   @media screen  and (max-width: 780px) {
     font-size: 40px;
@@ -52,9 +112,9 @@ h4 {
   font-size: 40px;
   color: #186267;
 
-  @media (min-resolution: 100dpi) {
-    font-size: 34px;
-  }
+  //@media (min-resolution: 100dpi) {
+  //  font-size: 34px;
+  //}
 
   @media screen  and (max-width: 780px) {
     font-size: 28px;
@@ -63,29 +123,55 @@ h4 {
 }
 
 h5 {
-  font-size: 34px;
+  font-size: 30px;
   color: #186267;
 
-  @media (min-resolution: 100dpi) {
+  //@media (min-resolution: 100dpi) {
+  //  font-size: 28px;
+  //}
+
+
+  @media screen  and (max-width: 1024px) {
     font-size: 28px;
+    line-height: 30px;
   }
 
   @media screen  and (max-width: 780px) {
     font-size: 24px;
-    line-height: 34px;
+    line-height: 26px;
   }
 }
 
 h6 {
-  font-size: 26px;
+  font-size: 24px;
   color: #186267;
 
-  @media (min-resolution: 100dpi) {
-    font-size: 22px;
-  }
+  //@media (min-resolution: 100dpi) {
+  //  font-size: 22px;
+  //}
 
   @media screen  and (max-width: 780px) {
     font-size: 18px;
     line-height: 34px;
   }
+}
+
+.is-movements-green {
+  color: $movements-green;
+}
+
+.has-line-left {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: $primary-green;
+    position: absolute;
+    left: 0;
+    top: -20px;
+  }
+
 }

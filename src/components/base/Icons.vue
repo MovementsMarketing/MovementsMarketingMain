@@ -39,7 +39,7 @@
     @Prop({default: 'none'})
     fill: string;
 
-    @Prop({default: '#000'})
+    @Prop({default: 'currentColor'})
     stroke: string;
 
       @Prop({default: '0 0 24 24'})

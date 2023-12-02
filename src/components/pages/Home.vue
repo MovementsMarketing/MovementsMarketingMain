@@ -1,6 +1,25 @@
 <template>
-    <div :class="'home has-bg-gray'">
-        <navigation :full-logo="true" :light-logo="true"/>
+  <div :class="'home has-bg-gray'">
+    <navigation :full-logo="true" :light-logo="true"/>
+
+    <cover/>
+
+    <div class="section is-white">
+      <div v-for="(el, index) in services" :key="`service-${index}`" class="home__service">
+        <service-block :img-url="el.imgSrc" :name="el.title" :is-left="el.isLeft">
+          <template #title>
+            <span v-html="el.title"></span>
+          </template>
+          <template #text>
+            <span v-html="el.text"></span>
+          </template>
+          <template #cta>
+            <learn-more :url="el.url"/>
+          </template>
+        </service-block>
+      </div>
+    </div>
+
 
         <div class="section section--cover">
             <div class="video-container">
@@ -23,7 +42,7 @@
                 <div>
                     <router-link to="/contact" class="button button--hollow">
                         <span class="text">
-                            {{ $t(`navigation.contactUs`) }}
+                            {{ $t(`contactUs`) }}
                         </span>
                         <span class="dot"></span>
                         <span class="icon-wrapper">
@@ -61,9 +80,9 @@
             </div>
         </div>
 
-        <div class="section section--numbers" id="numbersSection" style="overflow: visible">
-          <work-in-numbers/>
-        </div>
+<!--        <div class="section section&#45;&#45;numbers" id="numbersSection" style="overflow: visible">-->
+<!--          <work-in-numbers/>-->
+<!--        </div>-->
 
         <quote :text="$t(`home.quote`)"/>
 
@@ -83,9 +102,9 @@
                 </div>
             </div>
             <div class="services__list">
-                <div v-for="(el, index) in services.outbound" :key="`outbound-${index}`" class="m-l-20">
-                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />
-                </div>
+<!--                <div v-for="(el, index) in services.outbound" :key="`outbound-${index}`" class="m-l-20">-->
+<!--                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />-->
+<!--                </div>-->
             </div>
         </div>
 
@@ -126,9 +145,9 @@
                 </div>
             </div>
             <div class="services__list">
-                <div v-for="(el, index) in services.inbound" :key="`inbound-${index}`" class="m-l-20">
-                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />
-                </div>
+<!--                <div v-for="(el, index) in services.inbound" :key="`inbound-${index}`" class="m-l-20">-->
+<!--                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />-->
+<!--                </div>-->
             </div>
         </div>
 
@@ -249,14 +268,20 @@
   import Service from "@/components/components/Service.vue";
   import Quote from "@/components/components/Quote.vue";
   import WorkInNumbers from "@/components/components/WorkInNumbers.vue";
+  import Cover from "@/components/components/Cover.vue";
+  import ServiceBlock from "@/components/components/ServiceBlock.vue";
+  import LearnMore from "@/components/components/LearnMore.vue";
 
   @Component({
     components: {
-        Navigation,
-        Facts,
-        Service,
-        Quote,
+      Navigation,
+      Facts,
+      Service,
+      Quote,
       WorkInNumbers,
+      Cover,
+      ServiceBlock,
+      LearnMore,
     }
   })
   class Home extends Vue {
@@ -265,6 +290,55 @@
           coverBg: '',
           contactBg: '',
       };
+
+
+
+
+    get routesTranslated() {
+      if(this.$i18n.locale === 'nl') {
+        return {
+          customerExperience: '/',
+          endToEnd: '/',
+        }
+      } else if(this.$i18n.locale === 'de') {
+        return {
+          customerExperience: '/',
+          endToEnd: '/',
+        }
+      } else {
+        return {
+          customerExperience: '/',
+          endToEnd: '/',
+        }
+      }
+    }
+
+    get services() {
+      return  [
+        {
+          title: this.$t(`home.services.customerExperience.title`),
+          text: this.$t(`home.services.customerExperience.text`),
+          url: this.routesTranslated.customerExperience,
+          imgSrc: require('@/assets/images/backgrounds/movements_customer-service_outbound_cover.png'),
+          isLeft: false,
+        },
+        {
+          title: this.$t(`home.services.endToEnd.title`),
+          text: this.$t(`home.services.endToEnd.text`),
+          url: this.routesTranslated.endToEnd,
+          imgSrc: require('@/assets/images/backgrounds/movements_customer-service_outbound_cover.png'),
+          isLeft: true,
+        },
+      ];
+    }
+
+
+
+
+
+
+
+
 
       get clients() {
         return [
@@ -289,7 +363,7 @@
         ];
       }
 
-      get services() {
+      get servicesOld() {
         return  {
           outbound: [
             {
@@ -419,6 +493,15 @@
 </script>
 
 <style lang="scss">
+
+.home__service:not(:last-of-type){
+  margin-bottom: 120px;
+}
+
+
+
+
+
     .section.section--cover {
         min-height: calc(100vh - 160px);
         position: relative;

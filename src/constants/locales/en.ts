@@ -1,32 +1,64 @@
 import generalTerms from "@/constants/locales/generalTerms/en";
 
 const en = {
+  learnMore: 'Learn more',
+  connect: `Let's connect`,
+  contactUs: 'Contact us',
   navigation: {
     about: 'About Us',
-    services: 'Services',
-    clients: 'Clients',
-    career: 'Careers',
-    contact: 'Contact',
-    contactUs: 'Contact Us!',
-    linkedInBlogs: 'LinkedIn Blogs',
-    privacyPolicy: 'Privacy Policy',
+    services: 'Our solutions',
+    clients: 'Our clients',
+    career: 'Join us',
+    privacyPolicy: 'Privacy policy',
+    clientsOptions: {
+      partnerships: 'Our partnerships',
+      stories: 'Client success stories',
+    },
+    aboutOptions: {
+      ourValues: 'Our values',
+      ourTeam: 'Our team',
+    },
     servicesOptions: {
-      outbound: 'Outbound Lead Generation',
-      inbound: 'Inbound Customer Service',
-      telemarketing: 'B2B Telemarketing',
-      leadGeneration: 'Lead Generation',
-      newAppointments: '<span class="no-wrap">New Business </span> Appointments',
-      dataEnrichment: 'Data Enrichment',
-      customerService: 'Customer Service',
-      answeringService: 'Answering Service',
-      liveChat: 'Live Chat',
-      emailManagement: 'Email Management',
-      socialWebcare: 'Social Webcare',
+      customerExperience: 'Customer experience',
+      endToEnd: 'End-to-end sales support',
+      engagementStrategy: 'Customer engagement strategy',
+      telephoneCustomerCare: 'End-to-end telephone customer care',
+      appointmentOptimization: 'Appointment optimization solutions',
+      aiAssistant: 'AI Voice Assistant integration',
+      dataEnrichment: 'Data enrichment and qualification',
+      leadGeneration: 'Lead generation and follow up',
+      leadClosing: 'Lead closing',
     }
   },
   home: {
-    title: 'New Business and Satisfied Customers Start Here',
-    subtitle: 'We create and maintain long-term customer experiences!',
+    title: ' <span class="is-movements-green is-block">End-to-end excellence</span> in customer experience and sales',
+    subtitle: 'Tailoring your every touchpoint for optimal outcomes',
+    services: {
+      customerExperience: {
+        title: '<span class="is-movements-green is-block">Customer</span> experience',
+        text: 'In today\'s fast-paced market, balancing customer support with daily operations can stretch your team\'s focus and\n' +
+            'efficiency thin. We focus on customer experience that transforms your accessibility, ensuring every inquiry meets a\n' +
+            'prompt response. We\'re not just a support team; we\'re an extension of your brand, dedicated to elevating every\n' +
+            'interaction across telephone customer care, intelligent appointment optimization, to seamless AI Voice Assistant\n' +
+            'integration. Our promise is to support you in elevating your customer experience.',
+      },
+      endToEnd: {
+        title: 'End-to-end sales support',
+        text: 'Navigating the complexities of customer acquisition can be a challenge for many businesses. Our sales support\n' +
+            'team isn\'t just another tool; they\'re an extension of your team. We\'re here to help you create meaningful\n' +
+            'conversations that truly connect with your prospects. Our focus is on nurturing relationships, understanding\n' +
+            'prospects’ needs, and positioning your value precisely where it matters most. Through our expertise in customer\n' +
+            'strategy, data insights, B2B lead generation, and more, we don\'t just fill your pipeline - we prime it with\n' +
+            'opportunities.',
+      },
+    },
+
+
+
+
+
+
+
     contactUs: 'Contact Us!',
     about: {
       facts: {
@@ -49,21 +81,21 @@ const en = {
 
     },
     quote: '“We are only successful, if you are too!”',
-    services: {
-      outbound: {
-        title: 'Outbound <span class="is-highlighted"> Lead Generation </span>',
-        text: 'An agenda full of first-class appointments is the ultimate goal of every sales team and company. But how to generate high-value leads? Movements Marketing is an expert in <span class="is-highlighted"> B2B Telemarketing </span> and provides cold calling on behalf of your business. We put you in contact with potential customers you have in mind and plan appointments directly in the agenda of your sales team. And thanks to the desired leads pouring in, sales can focus on what they do best: closing deals. Besides helping you find new customers by <span class="is-highlighted"> making appointments</span>, we also <span class="is-highlighted"> schedule demos </span> and take care of <span class="is-highlighted"> data enrichment </span> to speed up the sales! ',
-        services: {
-          telemarketing: 'B2B Telemarketing'
-        }
-      },
-      inbound: {
-        title: 'Inbound <span class="is-highlighted">Customer Service</span>',
-        text: `If your employees must provide customer support while working on their other tasks, it's increasingly challenging to focus on getting the job done. And that's where Movements Marketing steps in! With our <span class="is-highlighted">Inbound Customer Service</span>, your company is optimally accessible, and no question remains unanswered. As the first point of contact for your customers, we provide high-quality <span class="is-highlighted">Customer Service, Answering Service, Live Chat, Email Management</span>, and <span class="is-highlighted">Social Webcare.</span> Handling incoming requests quickly and adequately is our top priority!`,
-        services: {
-        }
-      }
-    },
+    // services: {
+    //   outbound: {
+    //     title: 'Outbound <span class="is-highlighted"> Lead Generation </span>',
+    //     text: 'An agenda full of first-class appointments is the ultimate goal of every sales team and company. But how to generate high-value leads? Movements Marketing is an expert in <span class="is-highlighted"> B2B Telemarketing </span> and provides cold calling on behalf of your business. We put you in contact with potential customers you have in mind and plan appointments directly in the agenda of your sales team. And thanks to the desired leads pouring in, sales can focus on what they do best: closing deals. Besides helping you find new customers by <span class="is-highlighted"> making appointments</span>, we also <span class="is-highlighted"> schedule demos </span> and take care of <span class="is-highlighted"> data enrichment </span> to speed up the sales! ',
+    //     services: {
+    //       telemarketing: 'B2B Telemarketing'
+    //     }
+    //   },
+    //   inbound: {
+    //     title: 'Inbound <span class="is-highlighted">Customer Service</span>',
+    //     text: `If your employees must provide customer support while working on their other tasks, it's increasingly challenging to focus on getting the job done. And that's where Movements Marketing steps in! With our <span class="is-highlighted">Inbound Customer Service</span>, your company is optimally accessible, and no question remains unanswered. As the first point of contact for your customers, we provide high-quality <span class="is-highlighted">Customer Service, Answering Service, Live Chat, Email Management</span>, and <span class="is-highlighted">Social Webcare.</span> Handling incoming requests quickly and adequately is our top priority!`,
+    //     services: {
+    //     }
+    //   }
+    // },
     work: {
       title: 'How We <span class="is-highlighted">Work Together</span>',
       text: 'Understanding your criteria and goals is the first base for <span class="is-highlighted">long-term cooperation</span> and high customer satisfaction. By becoming familiar with your story through <span class="is-highlighted">knowledge-sharing</span>, we can communicate adequately with the target group and deliver the agreed targets. We do this, among other things, through a business plan and by offering <span class="is-highlighted">custom-built solutions</span>. And our permanent team of multilingual telemarketers makes sure everything runs smoothly!',

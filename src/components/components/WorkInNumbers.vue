@@ -38,15 +38,11 @@ class WorkInNumbers extends Vue {
     { value: 4, current: 0, translationKey: 'home.numbers.teams' },
   ];
 
-  animatedNumber(number) {
-    console.log(number, `${Math.floor(number.current)}`);
+  animatedNumber(number: {value: number; current: number; translationKey: string}) {
     return `${Math.floor(number.current)}`;
   }
 
   startNumberAnimation() {
-    // const incrementInterval = 100 / 60; // 60 frames per second
-    // let totalFrames = 100 / incrementInterval;
-
     this.workInNumbers.forEach((number) => {
       const timeout = 1500/number.value;
       const increment = number.value > 20 ? 2 : 1

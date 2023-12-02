@@ -1,25 +1,26 @@
 <template>
-  <div class="general-terms has-bg-white">
+  <div class="general-terms-wrapper">
     <navigation :full-logo="true" :light-logo="true"/>
 
-    <div class="section">
-      <div class="section__content">
-        <div class="p-b-10 p-t-10">
-          <h4 class="m-b-15">
-            {{$t('generalTerms.title')}}
-          </h4>
-        </div>
+    <div class="general-terms has-bg-white">
+      <div class="section">
+        <div class="section__content">
+          <div class="p-b-10 p-t-10">
+            <h4 class="m-b-15">
+              {{$t('generalTerms.title')}}
+            </h4>
+          </div>
 
-        <div v-for="(a, i) in articles" :key="`article-${i}`" class="p-b-10">
-          <h6 v-html="a.title" class="has-text-weight-semibold"></h6>
-          <p v-html="a.text"></p>
-        </div>
+          <div v-for="(a, i) in articles" :key="`article-${i}`" class="p-b-10">
+            <h6 v-html="a.title" class="has-text-weight-semibold"></h6>
+            <p v-html="a.text"></p>
+          </div>
 
+        </div>
       </div>
     </div>
 
     <movements-footer/>
-
   </div>
 
 </template>

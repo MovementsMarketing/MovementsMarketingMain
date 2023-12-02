@@ -21,10 +21,98 @@ body {
   width: 100%;
 }
 
+.is-fullheight {
+  height: 100%;
+}
+
 .l-h-0 {
   line-height: 0;
 }
 
 .is-dark {
   background-color: #000;
+}
+
+.has-margin-left {
+  margin-left: $side-spacing;
+
+  @media screen and (max-width: 1400px) {
+    margin-left: 120px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 80px;
+  }
+  @media screen and (max-width: 520px) {
+    margin-left: 40px;
+  }
+}
+
+.has-margin-right {
+  margin-right: $side-spacing;
+
+  @media screen and (max-width: 1400px) {
+    margin-right: 120px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-right: 80px;
+  }
+  @media screen and (max-width: 520px) {
+    margin-right: 40px;
+  }
+}
+
+.has-margin {
+  margin: 0 $side-spacing;
+
+  @media screen and (max-width: 1400px) {
+    margin: 0 120px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0 80px;
+  }
+  @media screen and (max-width: 520px) {
+    margin: 0 40px;
+  }
+}
+
+.has-padding-left {
+  padding-left: $side-spacing;
+
+  @media screen and (max-width: 1400px) {
+    padding-left: 120px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-left: 80px;
+  }
+  @media screen and (max-width: 520px) {
+    padding-left: 40px;
+  }
+}
+
+.has-padding-right {
+  padding-right: $side-spacing;
+
+  @media screen and (max-width: 1400px) {
+    padding-right: 120px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-right: 80px;
+  }
+  @media screen and (max-width: 520px) {
+    padding-right: 40px;
+  }
+}
+
+.has-padding {
+  padding: 0 $side-spacing;
+
+  @media screen and (max-width: 1400px) {
+    padding: 0 120px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 80px;
+  }
+  @media screen and (max-width: 520px) {
+    padding: 0 40px;
+  }
 }

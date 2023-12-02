@@ -1,25 +1,13 @@
 .section {
-  padding: 0;
+  padding: 120px 0;
   overflow: hidden;
 
   &.full-height {
     height: calc(100vh - 150px);
   }
 
-  .section__mask {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background: linear-gradient(70deg, #ECECEC 0%, #ECECEC 20%, rgba(255, 255, 255, 0.2) 60%, transparent 80%);
-    z-index: 0;
-  }
-
-  > *:not(.section__mask) {
-    position: relative;
-    z-index: 1;
+  &.is-white {
+    background: #ffffff;
   }
 
   .bg-image {

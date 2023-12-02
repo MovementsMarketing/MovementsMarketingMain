@@ -1,158 +1,61 @@
 .button {
   border: none;
   outline: none;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  padding: 12px 12px 12px 20px;
+  transition: all ease 300ms;
 
-  &.button--primary {
-    font-family: 'Poppins', sans-serif;
-    border-radius: 6px;
-    background: linear-gradient(90deg, #69BC77 0%, #69BC77 100%);
-    color: #ffffff;
-    transition: all ease 300ms;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-
-    .icon-wrapper {
-      //position: relative;
-      //width: 20px;
-      //height: 20px;
-
-      .vue-icon__wrapper {
-        margin-left: 4px;
-        border: 2px solid white;
-        border-radius: 100px;
-        padding: 4px;
-        overflow: hidden;
-      }
-
-      //span {
-      //  //position: absolute;
-      //  left: 0;
-      //  transition: all 200ms ease;
-      //}
-    }
-
-
-    &:hover {
-      animation-duration: 400ms;
-      animation-name: gradientMove;
-      animation-timing-function: ease;
-      animation-fill-mode: forwards;
-
-
-        .vue-icon__wrapper {
-          svg {
-            animation-duration: 400ms;
-            animation-name: buttonArrowMove;
-            animation-timing-function: ease;
-            animation-fill-mode: forwards;
-          }
-        }
+  .icon-wrapper {
+    .vue-icon__wrapper {
+      margin-left: 10px;
+      background: $movements-green;
+      border-radius: 100px;
+      padding: 5px;
+      overflow: hidden;
     }
   }
-  //
-  //&.button--primary {
-  //  font-family: 'Source Sans Pro', sans-serif;
-  //  border-radius: 50px;
-  //  background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
-  //  transition: all ease 300ms;
-  //  font-size: 24px;
-  //  line-height: 50px;
-  //  height: 50px;
-  //  color: #fff;
-  //  font-weight: 900;
-  //
-  //  &:hover {
-  //    animation-duration: 300ms;
-  //    animation-name: gradientMove;
-  //    animation-timing-function: ease;
-  //    animation-fill-mode: forwards;
-  //  }
-  //}
+
+  &:hover {
+    .vue-icon__wrapper {
+      svg {
+        animation-duration: 400ms;
+        animation-name: buttonArrowMove;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  &.button--primary {
+    background: linear-gradient(120deg, #186267 0%, #69BC77 100%);
+    background-size: 350% 100%;
+    background-position: 100% 50%;
+    color: #ffffff;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      background-size: 150% 100%;
+      background-position: 80% 50%;
+    }
+  }
 
   &.is-hollow,
   &.button--hollow {
-    font-family: 'Source Sans Pro', sans-serif;
-    border-radius: 50px;
     background: transparent;
-    transition: all ease 300ms;
-    font-size: 26px;
-    line-height: 50px;
-    height: 50px;
-    color: #186267;
-    font-weight: 700;
-    padding-right: 12px;
-
-    @media (min-resolution: 100dpi) {
-      font-size: 24px;
-    }
-
-    @media screen  and (max-width: 1024px) {
-      font-size: 23px;
-    }
-
-    @media screen  and (max-width: 460px) {
-      font-size: 22px;
-    }
-
-    .icon-wrapper {
-      margin-left: 20px;
-      border-radius: 100%;
-      padding-left: 10px;
-
-      @media screen  and (max-width: 460px) {
-        margin-left: 10px;
-      }
-    }
-
-    .dot {
-      background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
-      border-radius: 50px;
-      height: 50px;
-      width: 50px;
-      z-index: 0;
-      position: absolute;
-      right: 0;
-
-      @media screen  and (max-width: 460px) {
-        height: 40px;
-        width: 40px;
-        right: 5px;
-      }
-    }
-
-    .text,
-    .icon-wrapper {
-      z-index: 2;
-    }
-
-    &.is-green {
-      .dot {
-        background: #9FF882;
-      }
-
-      &:hover {
-        .dot {
-          background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
-        }
-      }
-    }
+    color: $movements-green;
 
     &:hover {
-      animation-duration: 200ms;
-      animation-timing-function: ease;
-      animation-fill-mode: forwards;
-      animation-delay: 10ms;
-      color: #fff;
-      background: transparent;
-      box-shadow: 1px 1px 12px rgb(0 0 0 / 20%);
+      color: $primary-green;
 
-      .dot  {
-        width: 100%;
-        z-index: 0;
+      .icon-wrapper {
+        .vue-icon__wrapper {
+          background: $primary-green;
+        }
       }
     }
   }
@@ -160,26 +63,6 @@
   &.button--light-text {
     color: #fff;
   }
-}
-
-@keyframes fillGradient {
-  100%   { background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%); }
-  80%   { background: linear-gradient(90deg, #186267 0%, #186267 30%, #9FF882 100%); }
-  65%   { background: linear-gradient(90deg, #186267 0%, #186267 40%, #9FF882 135%); }
-  50%  {background: linear-gradient(90deg, #186267 0%, #186267 50%, #9FF882 160%); }
-  45%  {background: linear-gradient(90deg, #186267 0%, #186267 60%, #9FF882 180%); }
-  30% {background: linear-gradient(90deg, #186267 0%, #186267 70%, #9FF882 200%); }
-  15% {background: linear-gradient(90deg, #186267 0%, #186267 80%, #9FF882 200%); }
-  0% {background: linear-gradient(90deg, #186267 0%, #186267 90%, #9FF882 200%); }
-}
-
-@keyframes arrowMove {
-  0%   { left:0; opacity: 1; }
-  1000%   { left: 10px; opacity: 1; }
-  //80%   { left: 12px; opacity: 0; }
-  //95%   { left: 0; opacity: 0; }
-  //100%   { left: 0; opacity: 1; }
-  //50%   { background: linear-gradient(90deg, #186267 0%, #186267 30%, #9FF882 100%); }
 }
 
 @keyframes buttonArrowMove {
@@ -191,14 +74,12 @@
 
 
 @keyframes gradientMove {
-  0%   { background: linear-gradient(90deg, #186267 0%, #69BC77 0%, #69BC77 100%); }
-  //50%   { background: linear-gradient(90deg, #186267 10%, #69BC77 50%, #69BC77 100%); }
-  //25%   { background: linear-gradient(90deg, #186267 0%, #186267 20%, #69BC77 100%); }
-  //50%   { background: linear-gradient(90deg, #186267 0%, #186267 30%, #69BC77 100%); }
-  //75%  {background: linear-gradient(90deg, #186267 0%, #186267 40%, #69BC77 100%); }
-  100%  {background: linear-gradient(90deg, #186267 10%, #69BC77 80%, #69BC77 100%); }
-  //50%  {background: linear-gradient(90deg, #186267 0%, #186267 60%, #69BC77 180%); }
-  //65% {background: linear-gradient(90deg, #186267 0%, #186267 70%, #69BC77 200%); }
-  //80% {background: linear-gradient(90deg, #186267 0%, #186267 80%, #69BC77 200%); }
-  //100% {background: linear-gradient(90deg, #186267 0%, #186267 90%, #69BC77 200%); }
+  //0%   { background: linear-gradient(120deg, #186267 0%, #69BC77 0%, #69BC77 100%); }
+  //100%  {background: linear-gradient(120deg, #186267 0%, #69BC77 50%, #69BC77 100%); }
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
 }
