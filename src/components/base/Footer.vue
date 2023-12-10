@@ -64,7 +64,7 @@
       </div>
 
       <div class="column is-4  footer__links p-0">
-        <div class="columns is-multiline">
+        <div class="columns is-multiline" style="gap: 5px;">
           <div class="column is-12 p-0 has-text-right-tablet">
             <router-link to="/careers">
               {{ $t(`navigation.career`) }}

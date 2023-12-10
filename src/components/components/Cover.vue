@@ -1,26 +1,37 @@
 <template>
   <div class="cover">
-    <div class="cover__content m-0">
-      <div class="cover__text">
+    <div class="cover__content m-0 has-radius-bottom-right" :class="{'is-green': isGreen}">
+      <div class="cover__text" >
         <div class="cover__text__box has-padding-left">
-          <h1 v-html="$t(`home.title`)" class="cover__title"></h1>
-          <h5 v-html="$t(`home.subtitle`)" class="cover__subtitle is-movements-green"></h5>
+          <h1 v-html="coverTitle" class="cover__title"></h1>
+          <h5 v-html="coverSubtitle" class="cover__subtitle is-movements-green has-text-weight-normal"></h5>
+          <slot name="cta"></slot>
+          <img src="@/assets/images/dots-green.png" class="dots">
         </div>
       </div>
-      <div class="cover__photo">
-        PHOTO
-      </div>
+      <div class="cover__photo" :style="`background-image: url('${coverImage}');`"></div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import { Component } from 'vue-property-decorator';
+import {Component, Prop} from 'vue-property-decorator';
+import {LocaleMessages} from "vue-i18n";
 
 @Component
 class Cover extends Vue {
+  @Prop({required: true})
+  coverImage: string;
 
+  @Prop({required: true})
+  coverTitle: string | LocaleMessages;
+
+  @Prop({required: true})
+  coverSubtitle: string | LocaleMessages;
+
+  @Prop({default: false})
+  isGreen: boolean;
 }
 
 export default Cover;
@@ -32,20 +43,19 @@ export default Cover;
   width: 100%;
   height: calc(100vh - 120px);
 
+
   @media screen  and (max-width: 780px) {
     min-height: 65vw;
   }
 
   .cover__content {
     background: #F2F2F2;
-    border-radius: 0 0 260px 0;
     width: 100%;
     height: 100%;
     display: flex;
 
-    @media screen  and (max-width: 780px) {
-      position: relative;
-      border-radius: 0 0 160px 0;
+    &.is-green {
+      background: #186267;
     }
 
     .cover__text {
@@ -78,7 +88,7 @@ export default Cover;
 
         @media screen  and (max-width: 780px) {
           width: calc(100% + -60px);
-          background: rgba(255, 255, 255, 0.6);
+          background: rgba(255, 255, 255, 0.75);
           left: 30px;
           padding-top: 40px;
           padding-bottom: 40px;
@@ -108,8 +118,10 @@ export default Cover;
 
     .cover__photo {
       width: calc(100vh - 120px);
-      background: #186267;
-      border-radius: 260px 0 260px 0;
+      border-radius: 240px 0 240px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
 
       @media screen and (max-width: 1400px) {
         max-width: 60%;
@@ -118,8 +130,31 @@ export default Cover;
       @media screen  and (max-width: 780px) {
         max-width: 100%;
         width: 100%;
-        border-radius: 0 0 160px 0;
+        border-radius: 0 0 120px 0;
       }
+    }
+  }
+
+  .cover__cta {
+    margin-top: 60px;
+  }
+
+  .dots {
+    width: 180px;
+    position: absolute;
+    right: -70px;
+    top: -100px;
+
+    @media screen  and (max-width: 780px) {
+      width: 100px;
+      right: -20px;
+      top: -60px;
+    }
+
+    @media screen  and (max-width: 420px) {
+      width: 60px;
+      right: -20px;
+      top: -40px;
     }
   }
 }

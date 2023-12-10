@@ -1,0 +1,122 @@
+.slider {
+  .slider__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    .dot {
+      background: #ffffff;
+      width: 12px;
+      height: 12px;
+      border-radius: 50px;
+      border: 1px darken(#f2f2f2, 1) solid;
+
+      &.is-active {
+        background: $primary-green;
+      }
+    }
+  }
+
+  .slider__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+    .slider__navigation__arrow {
+      color: $primary-green;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px $primary-green solid;
+      border-radius: 100px;
+      transition: all 400ms ease;
+      cursor: pointer;
+
+      &:hover {
+        background: $primary-green;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .forward-slide-enter, .forward-slide-leave-to,
+  .backward-slide-enter, .backward-slide-leave-to {
+    max-height: unset;
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+
+  .forward-slide-enter, .forward-slide-leave-to {
+    animation-name: slide-leave;
+  }
+
+  .backward-slide-enter, .backward-slide-leave-to {
+    animation-name: slide-leave-backward;
+  }
+
+  .forward-slide-enter-to, .forward-slide-leave-enter, .forward-slide-enter-active,
+  .backward-slide-enter-to, .backward-slide-leave-enter, .backward-slide-enter-active {
+    transform: translateX(80vw);
+    max-height: unset;
+    opacity: 0;
+    animation-duration: 800ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    // animation-delay: 1000ms;
+  }
+
+  .forward-slide-enter-to, .forward-slide-leave-enter, .forward-slide-enter-active {
+    animation-name: slide-enter;
+  }
+
+  .backward-slide-enter-to, .backward-slide-leave-enter, .backward-slide-enter-active {
+    animation-name: slide-enter-backward;
+  }
+
+  @keyframes slide-leave {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-80vw);
+    }
+  }
+
+  @keyframes slide-enter {
+    0% {
+      opacity: 0;
+      transform: translateX(80vw);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-leave-backward {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(80vw);
+    }
+  }
+
+  @keyframes slide-enter-backward {
+    0% {
+      opacity: 0;
+      transform: translateX(-80vw);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

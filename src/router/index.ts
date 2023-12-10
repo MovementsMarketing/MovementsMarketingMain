@@ -4,7 +4,6 @@ import VueRouter from 'vue-router'
 import Home from "@/components/pages/Home.vue";
 import Careers from "@/components/pages/Careers.vue";
 import ThankYou from "@/components/pages/ThankYou.vue";
-import AnsweringService from "@/components/pages/services/AnsweringService.vue";
 import CustomerService from "@/components/pages/services/CustomerService.vue";
 import EmailManagement from "@/components/pages/services/EmailManagement.vue";
 import LiveChat from "@/components/pages/services/LiveChat.vue";
@@ -12,6 +11,8 @@ import SocialWebcare from "@/components/pages/services/SocialWebcare.vue";
 import Telemarketing from "@/components/pages/services/Telemarketing.vue";
 import PrivacyPolicy from "@/components/pages/PrivacyPolicy.vue";
 import GeneralTerms from "@/components/pages/GeneralTerms.vue";
+import CustomerExperience from "@/components/pages/services/CustomerExperience.vue";
+import EndToEndSupport from "@/components/pages/services/EndToEndSupport.vue";
 
 Vue.use(VueRouter);
 
@@ -140,9 +141,9 @@ export default new VueRouter({
 
       //ANSWERING SERVICE
     {
-      path: '/service/answering-service',
-      name: 'AnsweringService',
-      component: AnsweringService,
+      path: '/customer-experience',
+      name: 'CustomerExperience',
+      component: CustomerExperience,
     },
     {
       path: '/service/answering-service/en',
@@ -165,7 +166,8 @@ export default new VueRouter({
     {
       path: '/diensten/telefoonservice',
       name: 'AnsweringService-nl',
-      component: AnsweringService,
+      // component: AnsweringService,
+      component: CustomerExperience,
       meta: {locale: 'nl'}
     },
     {
@@ -189,7 +191,8 @@ export default new VueRouter({
     {
       path: '/dienstleistungen/telefonservice',
       name: 'AnsweringService-de',
-      component: AnsweringService,
+      // component: AnsweringService,
+      component: CustomerExperience,
       meta: {locale: 'de'}
     },
     {
@@ -211,10 +214,115 @@ export default new VueRouter({
       }
     },
     {
-      path: '/service/answering-service/tryNow',
-      name: 'AnsweringService-try',
-      component: AnsweringService,
-      meta: {element: '#tryService'}
+      path: '/customer-experience/getStarted',
+      name: 'CustomerExperience-try',
+      component: CustomerExperience,
+      meta: {element: '#getStarted'}
+    },
+
+      //END to END SERVICE
+    {
+      path: '/end-to-end-sales-support',
+      name: 'EndToEndSupport',
+      component: EndToEndSupport,
+    },
+    {
+      path: '/service/answering-service/en',
+      redirect: () => {
+        return '/service/answering-service'
+      }
+    },
+    {
+      path: '/service/answering-service/nl',
+      redirect: () => {
+        return '/diensten/telefoonservice'
+      }
+    },
+    {
+      path: '/service/answering-service/de',
+      redirect: () => {
+        return '/dienstleistungen/telefonservice'
+      }
+    },
+    {
+      path: '/diensten/telefoonservice',
+      name: 'AnsweringService-nl',
+      // component: AnsweringService,
+      component: CustomerExperience,
+      meta: {locale: 'nl'}
+    },
+    {
+      path: '/diensten/telefoonservice/en',
+      redirect: () => {
+        return '/service/answering-service'
+      }
+    },
+    {
+      path: '/diensten/telefoonservice/nl',
+      redirect: () => {
+        return '/diensten/telefoonservice'
+      }
+    },
+    {
+      path: '/diensten/telefoonservice/de',
+      redirect: () => {
+        return '/dienstleistungen/telefonservice'
+      }
+    },
+    {
+      path: '/dienstleistungen/telefonservice',
+      name: 'AnsweringService-de',
+      // component: AnsweringService,
+      component: EndToEndSupport,
+      meta: {locale: 'de'}
+    },
+    {
+      path: '/dienstleistungen/telefonservice/en',
+      redirect: () => {
+        return '/service/answering-service'
+      }
+    },
+    {
+      path: '/dienstleistungen/telefonservice/nl',
+      redirect: () => {
+        return '/diensten/telefoonservice'
+      }
+    },
+    {
+      path: '/dienstleistungen/telefonservice/de',
+      redirect: () => {
+        return '/dienstleistungen/telefonservice'
+      }
+    },
+    {
+      path: '/end-to-end-sales-support/getStarted',
+      name: 'EndToEnd-try',
+      component: EndToEndSupport,
+      meta: {element: '#getStarted'}
+    },
+    {
+      path: '/end-to-end-sales-support/engagementStrategy',
+      name: 'EndToEnd-engagementStrategy',
+      component: EndToEndSupport,
+      meta: {element: '#engagementStrategy'}
+    },
+    {
+      path: '/end-to-end-sales-support/dataEnrichment',
+      name: 'EndToEnd-dataEnrichment',
+      component: EndToEndSupport,
+      meta: {element: '#dataEnrichment'}
+    },
+    {
+      path: '/end-to-end-sales-support/leadGeneration',
+      name: 'EndToEnd-leadGeneration',
+      component: EndToEndSupport,
+      meta: {element: '#leadGeneration'}
+    },
+    {
+      path: '/end-to-end-sales-support/leadClosing',
+      name: 'EndToEnd-leadClosing',
+      component: EndToEndSupport,
+      meta: {element: '#leadClosing'}
     },
 
       //CUSTOMER SERVICE
@@ -623,6 +731,7 @@ export default new VueRouter({
         return {
           selector: to.meta.element,
           behavior: 'smooth',
+          offset: { x: 0, y: 100 },
         }
     }
     else {

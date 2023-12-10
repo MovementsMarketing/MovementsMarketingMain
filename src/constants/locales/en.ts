@@ -24,7 +24,7 @@ const en = {
       engagementStrategy: 'Customer engagement strategy',
       telephoneCustomerCare: 'End-to-end telephone customer care',
       appointmentOptimization: 'Appointment optimization solutions',
-      aiAssistant: 'AI Voice Assistant integration',
+      aiAssistant: 'AI Voicebot',
       dataEnrichment: 'Data enrichment and qualification',
       leadGeneration: 'Lead generation and follow up',
       leadClosing: 'Lead closing',
@@ -39,7 +39,7 @@ const en = {
         text: 'In today\'s fast-paced market, balancing customer support with daily operations can stretch your team\'s focus and\n' +
             'efficiency thin. We focus on customer experience that transforms your accessibility, ensuring every inquiry meets a\n' +
             'prompt response. We\'re not just a support team; we\'re an extension of your brand, dedicated to elevating every\n' +
-            'interaction across telephone customer care, intelligent appointment optimization, to seamless AI Voice Assistant\n' +
+            'interaction across telephone customer care, intelligent appointment optimization, to seamless AI Voicebot\n' +
             'integration. Our promise is to support you in elevating your customer experience.',
       },
       endToEnd: {
@@ -52,35 +52,215 @@ const en = {
             'opportunities.',
       },
     },
-
-
-
-
-
-
-
-    contactUs: 'Contact Us!',
-    about: {
-      facts: {
-        qualitativeTelemarketing: 'Qualitative Telemarketing',
-        multilingualTelemarketers: 'Multilingual Telemarketers',
-        costEffectiveResults: 'Cost Effective Results',
+    partnerships: {
+      partnerships: 'Our partnerships',
+    },
+    testimonials: {
+      title: `We nurture trust and collaboration`,
+      text: `Building lasting relationships is at the heart of our values. In every sales support initiative and
+customer experience enhancement, we prioritize genuine collaboration, fostering an environment of mutual
+trust to serve your needs effectively.`,
+      impact: `Our impact`,
+      scorito: {
+        companyDescription: `The #1 platform for fantasy sports in Europe, with more than 1 million unique players.`,
+        quote: `“Movements Marketing knows how to create a personal bond with contacts and deliver tailor-made solutions while always maintaining top-notch quality.”`,
+        quotePerson: `Martijn Vermunt, International Sales Director`,
+        impact: `<li>Helped the client improve brand awareness and establish a global presence</li>
+<li>Our team added value by generating leads, onboarding new customers, and providing multichannel customer service</li>`
       },
-      aboutUs: {
-        aboutUs: 'About <span class="is-highlighted">Us</span>',
-        p1: 'Movements Marketing specializes in the field of <span class="has-text-weight-bold"> Outbound Lead Generation </span> and <span class="has-text-weight-bold"> Inbound Customer Service. </span> Creating valued contacts starts with optimizing and improving customer relationships. By offering qualitative B2B Telemarketing and a tailor-made Customer Service, Answering Service, Live Chat, Email Management, and Social Webcare, we realize your ambitions and help you achieve your commercial goals!',
-        p2: 'Our well-trained team works from our headquarters in Sarajevo and two other offices in Istanbul and Utrecht. Thanks to our multilingual telemarketers, professional communication and fruitful interaction are assured with ongoing cost-effective results. Our commitment to our clients\' success portrays our true ambitions. Therefore, we represent your business as one of you. And that\'s why: <span style="font-style: italic;"> we are only successful, if you are too! </span>',
-      }
+      dak: {
+        companyDescription: `The largest cooperative of insurance and
+mortgage advisors in the Netherlands`,
+        quote: `“In the years of working together, the
+Movements Marketing team has collaborated
+seamlessly with our sales team, and now
+handles
+both our inbound and outbound activities. We
+recommend them for their ongoing personal
+commitment, short lines, and consistently good
+results.”`,
+        quotePerson: `Jean Paul Hoogmans, Manager Marketing & Sales Support`,
+        impact: `<li>Fostering a long-standing thought partnership</li><li>Helped the client introduce a new service and
+recruit more offices with ease</li>`
+      },
+      shypple: {
+        companyDescription: `A global digital forwarder for moving freight and managing supply chains in real-time`,
+        quote: `“For us, Movements Marketing is a partner who continues to learn and understand our needs and translate them into tangible results. What makes them stand out is quick communication, regular evaluations, and constant training.”`,
+        quotePerson: `Michiel van Wandelen, Head of Sales`,
+        impact: `<li>Established a sustained collaboration with the client, focusing on continuous mutual growth</li><li>Helping the client scale their business internationally</li>`
+      },
+      abcDisplay: {
+        companyDescription: `A leading producer of purchase and rental mobile
+presentation systems with 40+ years on the
+Market`,
+        quote: `“Movements Marketing is an exceptional team of
+professionals who have exceeded our
+expectations. One of the most impressive results
+of our partnership is the number of demo units
+we were able to send to potential affiliates
+around the world. This has not only increased our
+sales opportunities, but also strengthened our
+international presence.”`,
+        quotePerson: `Cyrus Truijens, CEO`,
+        impact: `<li>Generated thousands of leads through targeted
+phone campaigns and expanded reach
+</li><li> Made the brand more recognizable in the
+industry and opened new business opportunities
+</li>`
+      },
+      diagnost: {
+        companyDescription: `A medical diagnostics laboratory and regional
+market leader in the Netherlands, affiliated
+with a hospital`,
+        quote: `“The Movements Marketing partnership was
+based on continued open communication
+and complete support in the design of the
+next step in service provision, especially with
+the help of the Voicebot. They were a true
+partner, going deep into solving any
+challenges we encountered.”`,
+        quotePerson: `Coos Molenaar, Department Manager`,
+        impact: `<li>Achieved shorter call times and improved
+patient experience from day 1
+</li><li>- Reduced unnecessary telephone calls and
+lowered costs
+</li><li>Improved the appointment process with
+active guidance for customers</li>`
+      },
+      sazas: {
+        companyDescription: `A leading company specialized in the field of
+absence prevention in the Netherlands`,
+        quote: `“Our collaboration with Movements Marketing
+has been transformative. We gained an
+additional sales channel and a partner who
+thinks along with us. It's been a pleasant
+experience, with consistently good results. We
+recommend Movements Marketing for their
+versatile support.”`,
+        quotePerson: `Gideon van Aalst, Team Leader Service and Sales`,
+        impact: `<li> Crafted an integrated sales strategy and
+support
+by taking ownership of lead generation
+</li><li> Took ownership of sending quotes and
+navigating the entire sales process
+</li><li> Optimized the sales funnel and witnessed a
+significant increase in conversion rates</li>`
+      },
+      cargoplot: {
+        companyDescription: `An online platform for e-commerce importers and
+freight forwarders in the Netherlands`,
+        quote: `“What makes Movements Marketing stand out is
+their flexibility and ability to generate value
+quickly by converting leads into long-term
+customers. They understand our needs and are a
+100% committed to our joint success.”`,
+        quotePerson: `Founder`,
+        impact: `<li>Helped validate and expand the client’s outbound
+strategy
+</li><li> Converted a significant number of demo
+appointments into signed customers</li>`
+      },
+      oct8ne: {
+        companyDescription: `A leading company in customer service tools
+in Europe`,
+        quote: `“Movements Marketing does what it says and
+says what it does! We wholeheartedly
+recommend their professional team of
+experts.”`,
+        quotePerson: `Melvin Dom, Country Manager`,
+        impact: `<li> First hybrid chat (Live chat and Chatbot) with
+visual support
+</li><li>Set up efficient demo appointments that
+turned into signed customers
+</li><li>Delivered in-depth customer response
+Research</li>`
+      },
+      x2com: {
+        companyDescription: `A business telecom provider supplying
+professional telecommunication services to
+companies and institutions in the Netherlands`,
+        quote: `“We would not recommend them to
+other organizations as we prefer to keep
+Movements Marketing to ourselves!”`,
+        quotePerson: `Guido Ackermans, Sales Manager`,
+        impact: `<li>Ensured new partnerships that extended the
+client team
+</li><li>Added value through regular feedback sessions
+and reporting</li>`
+      },
+      trans: {
+        companyDescription: `A German logistics platform for transport management with
+modules for shippers, freight forwarders and carriers`,
+        quote: `“We would recommend Movements Marketing to anyone
+looking to amplify their sales funnel, convert deals, and
+collaborate with a team that is fast, flexible, and result-
+oriented.”`,
+        quotePerson: `Peter Bauer, Head of Sales`,
+        impact: `<li>Helped boost the competitive edge on the saturated
+logistics market
+</li><li>Cultivated distinct brand awareness, setting the client apart
+from the competitors
+</li><li>Successfully expanded sales and customer base, marking a
+significant growth in market presence</li>`
+      },
     },
-    numbers: {
-      ourNumbers: 'Our Work <span class="is-highlighted">In Numbers</span>',
-      projects: 'Successful Projects',
-      languages: 'Spoken Languages',
-      offices: 'Worldwide Offices',
-      teams: 'International Teams',
+    values: {
+      ourValues: `Our values`,
+      intro: `Our way of working is firmly rooted in values that not only define who we are but also drive our interactions with clients and the results we achieve.`,
+      passion: {
+        title: `Passion`,
+        text: `Igniting your success with unwavering dedication in everything we do.`,
+      },
+      involvement: {
+        title: `Involvement`,
+        text: `Engaging with your goals and actively aligning with your vision.`,
+      },
+      connection: {
+        title: `Connection`,
+        text: `Building meaningful relationships to better understand your needs.`,
+      },
+      quality: {
+        title: `Quality`,
+        text: `Upholding high standards to consistently deliver solutions that exceed your expectations.`,
+      },
+      results: {
+        title: `Result Orientation`,
+        text: `Focusing on achieving exceptional, tangible results for you.`,
+      },
+    },
+    contact: {
+      title: 'Let’s Connect!',
+      subtitle: `Ready to elevate your sales outreach and customer interactions?`,
+      text: `Let's co-create your success story!`,
+      name: 'Name',
+      companyName: 'Company Name',
+      email: 'Email',
+      phone: 'Phone',
+      message: 'Message',
+    },
+    contactUs: 'Contact us',
 
-    },
-    quote: '“We are only successful, if you are too!”',
+    // about: {
+    //   facts: {
+    //     qualitativeTelemarketing: 'Qualitative Telemarketing',
+    //     multilingualTelemarketers: 'Multilingual Telemarketers',
+    //     costEffectiveResults: 'Cost Effective Results',
+    //   },
+    //   aboutUs: {
+    //     aboutUs: 'About <span class="is-highlighted">Us</span>',
+    //     p1: 'Movements Marketing specializes in the field of <span class="has-text-weight-bold"> Outbound Lead Generation </span> and <span class="has-text-weight-bold"> Inbound Customer Service. </span> Creating valued contacts starts with optimizing and improving customer relationships. By offering qualitative B2B Telemarketing and a tailor-made Customer Service, Answering Service, Live Chat, Email Management, and Social Webcare, we realize your ambitions and help you achieve your commercial goals!',
+    //     p2: 'Our well-trained team works from our headquarters in Sarajevo and two other offices in Istanbul and Utrecht. Thanks to our multilingual telemarketers, professional communication and fruitful interaction are assured with ongoing cost-effective results. Our commitment to our clients\' success portrays our true ambitions. Therefore, we represent your business as one of you. And that\'s why: <span style="font-style: italic;"> we are only successful, if you are too! </span>',
+    //   }
+    // },
+    // numbers: {
+    //   ourNumbers: 'Our Work <span class="is-highlighted">In Numbers</span>',
+    //   projects: 'Successful Projects',
+    //   languages: 'Spoken Languages',
+    //   offices: 'Worldwide Offices',
+    //   teams: 'International Teams',
+    //
+    // },
+    // quote: '“We are only successful, if you are too!”',
     // services: {
     //   outbound: {
     //     title: 'Outbound <span class="is-highlighted"> Lead Generation </span>',
@@ -96,34 +276,156 @@ const en = {
     //     }
     //   }
     // },
-    work: {
-      title: 'How We <span class="is-highlighted">Work Together</span>',
-      text: 'Understanding your criteria and goals is the first base for <span class="is-highlighted">long-term cooperation</span> and high customer satisfaction. By becoming familiar with your story through <span class="is-highlighted">knowledge-sharing</span>, we can communicate adequately with the target group and deliver the agreed targets. We do this, among other things, through a business plan and by offering <span class="is-highlighted">custom-built solutions</span>. And our permanent team of multilingual telemarketers makes sure everything runs smoothly!',
-      button: 'Download Freebies',
-    },
-    clients: {
-      ourClients: 'Our <span class="is-highlighted">Clients</span>',
-      scorito: {
-        text: "Scorito is Europe's number 1 platform for fantasy sports. It now has more than 1 million unique players. With the help of Movements Marketing, Scorito has managed to improve brand awareness and become internationally recognized, in addition to its established reputation in the Netherlands, Belgium, and Germany. Movements Marketing's multilingual team has added value to Scorito by generating leads, onboarding new customers, and providing multichannel customer service. In other words: we are completely unburdened. Movements Marketing knows how to create a personal bond with its contacts and to deliver tailor-made solutions while maintaining the desired quality.",
-      },
-      dak: {
-        text: 'DAK is the largest cooperative of and for insurance and mortgage advisers. We provide professional support and give consultancy firms access to almost the entire financial market. The collaboration with Movements Marketing started during the launch of DAK Autolease. With the introduction of this new service, we saw an opportunity to recruit more offices. This was achieved thanks to effective collaboration between our sales team and the people of Movements Marketing. We have now been working together for four years, and Movements Marketing team now also handles inbound activities for us in addition to outbound activities. We recommend Movements Marketing because of their personal commitment, short lines, and good results.',
-      },
-      shypple: {
-        text: 'Shypple is a digital forwarder for moving freight globally that manages and analyses supply chains in real-time. The collaboration with Movements Marketing dates back to when we were still a start-up. But even now as a scale-up they are in the picture to efficiently scale up our commercial reach, especially towards other countries. For us, Movements Marketing is a partner who thinks along, wants to continue to learn, and above all shows that it is willing to propagate the message in our own way. This performance is growing and that is partly due to the quick communication, regular evaluations, and training. Especially on these last two points, Movements Marketing distinguishes itself from other parties we have worked with.',
-      }
-    },
-    telemarketers: 'These Telemarketers Will <span class="is-highlighted">Uplift Your Business</span>',
-    contact: {
-      title: '<span class="is-highlighted">Let’s Connect!</span>',
-      name: 'Name',
-      companyName: 'Company Name',
-      email: 'Email',
-      phone: 'Phone',
-      message: 'Message',
-    }
+    // work: {
+    //   title: 'How We <span class="is-highlighted">Work Together</span>',
+    //   text: 'Understanding your criteria and goals is the first base for <span class="is-highlighted">long-term cooperation</span> and high customer satisfaction. By becoming familiar with your story through <span class="is-highlighted">knowledge-sharing</span>, we can communicate adequately with the target group and deliver the agreed targets. We do this, among other things, through a business plan and by offering <span class="is-highlighted">custom-built solutions</span>. And our permanent team of multilingual telemarketers makes sure everything runs smoothly!',
+    //   button: 'Download Freebies',
+    // },
+    // clients: {
+    //   ourClients: 'Our <span class="is-highlighted">Clients</span>',
+    //   scorito: {
+    //     text: "Scorito is Europe's number 1 platform for fantasy sports. It now has more than 1 million unique players. With the help of Movements Marketing, Scorito has managed to improve brand awareness and become internationally recognized, in addition to its established reputation in the Netherlands, Belgium, and Germany. Movements Marketing's multilingual team has added value to Scorito by generating leads, onboarding new customers, and providing multichannel customer service. In other words: we are completely unburdened. Movements Marketing knows how to create a personal bond with its contacts and to deliver tailor-made solutions while maintaining the desired quality.",
+    //   },
+    //   dak: {
+    //     text: 'DAK is the largest cooperative of and for insurance and mortgage advisers. We provide professional support and give consultancy firms access to almost the entire financial market. The collaboration with Movements Marketing started during the launch of DAK Autolease. With the introduction of this new service, we saw an opportunity to recruit more offices. This was achieved thanks to effective collaboration between our sales team and the people of Movements Marketing. We have now been working together for four years, and Movements Marketing team now also handles inbound activities for us in addition to outbound activities. We recommend Movements Marketing because of their personal commitment, short lines, and good results.',
+    //   },
+    //   shypple: {
+    //     text: 'Shypple is a digital forwarder for moving freight globally that manages and analyses supply chains in real-time. The collaboration with Movements Marketing dates back to when we were still a start-up. But even now as a scale-up they are in the picture to efficiently scale up our commercial reach, especially towards other countries. For us, Movements Marketing is a partner who thinks along, wants to continue to learn, and above all shows that it is willing to propagate the message in our own way. This performance is growing and that is partly due to the quick communication, regular evaluations, and training. Especially on these last two points, Movements Marketing distinguishes itself from other parties we have worked with.',
+    //   }
+    // },
+    // telemarketers: 'These Telemarketers Will <span class="is-highlighted">Uplift Your Business</span>',
+
   },
   services: {
+    customerExperience: {
+      cover: {
+        title: `Optimize your <span class="is-movements-green is-block">customer experience</span>`,
+        subtitle: `Strategic solutions designed to help you achieve your goals`,
+        cta: `Get started now`,
+      },
+      engagementStrategy: {
+        title: `Customer <span class="is-movements-green">engagement strategy</span>`,
+        text: `Our team embraces your objectives as our own. With a strategy that goes beyond traditional plans, we provide a
+unique blueprint crafted around your vision, brought to life by our dedicated team of multilingual experts. Every
+interaction is a step towards long-lasting loyalty and success.`,
+      },
+      telephoneCustomerCare: {
+        title: `End-to-end <span class="is-movements-green">telephone customer care</span>`,
+        text: `We empower your teams and elevate accessibility. Our expert operators are fully dedicated to each call, ensuring
+zero distractions and total engagement for your in-house talent. We don't just pick up; we dive deep into each
+customer's needs, delivering a customer experience that sets you apart from the competition.`,
+      },
+      appointmentOptimization: {
+        title: `<span class="is-movements-green">Appointment optimization</span> solutions`,
+        text: `Our approach is not just about scheduling appointments; it’s about enhancing quality. We combine precise planning
+with data-based insights, customized to enable seamless integration with your team's work process.`,
+      },
+      aiAssistant: {
+        title: `<span class="is-highlighted">AI Voicebot</span> integration`,
+        text: `Our cutting-edge AI Voicebot goes beyond traditional engagement. We offer your clients round-the-clock support,
+instant responses, and a human-like interaction experience - all without the wait. If you strive for increased
+efficiency, 24/7 availability, data gathering, and freeing human resources for more strategic tasks, try our solution
+now!`,
+        cta: `Request demo`,
+      },
+      caseStudies: {
+        title: `Customer experience case studies`,
+        study1: {
+          title: `Customer service and appointment optimization solutions for regional medical laboratory`,
+          text: `Our team collaborated with the client to optimize their operational processes, enabling them to allocate
+their existing workforce to more specialized tasks. We've offered valuable insights, empowering our client to
+gain a deeper understanding of customer satisfaction and achieve optimal resource utilization.`,
+        },
+        study2: {
+          title: `End-to-end telephone customer care for a leading diagnostic center`,
+          text: `We developed customer experience solutions for scheduling blood draws and examinations, answering
+patient inquiries, and providing user-friendly accessibility services. As a result of our efforts, we helped the client
+effectively connect with customers and enhance relationships, leading to strong loyalty and satisfaction.`,
+        },
+        study3: {
+          title: `End-to-end telephone customer care for a leading cooperative of insurance and mortgage advisers`,
+          text: `Our team enhanced customer service by handling incoming phone calls efficiently, understanding callers'
+needs, and seamlessly directing them to the right department. When reaching the desired department became
+challenging, we proactively created call-back requests, ensuring efficient customer support. As a result, clients'
+in-house teams were able to focus on providing vital assistance where they were needed the most.`,
+        },
+      },
+      contact: {
+        title: `Get started now`,
+        subtitle: `Ready to start transforming your customer experience for success?`,
+        text: `Share your contact info, and we'll reach out soon for a consultation session!`,
+      }
+    },
+    endToEnd: {
+      cover: {
+        title: `Unlock your <span class="is-movements-green is-block">sales potential</span>`,
+        subtitle: `Comprehensive solutions that fuel your sustainable growth`,
+        cta: `Explore our solutions`,
+      },
+      engagementStrategy: {
+        title: `Customer <span class="is-movements-green">engagement strategy</span>`,
+        text: `We specialize in crafting personalized customer engagement strategies, with a keen focus on understanding your unique needs.
+This allows us to deliver tailored approaches that ensure not just short-term gains, but continuous, long-term success for your
+business. We constantly adapt and refine our strategies to keep pace with your evolving needs and industry trends.`,
+      },
+      dataEnrichment: {
+        title: `Data <span class="is-movements-green">enrichment and qualification</span>`,
+        text: `We meticulously gather, analyze, and enrich data to convert your prospects into high-quality leads. This results in a bigger and
+better sales pipeline, ready to be capitalized on. Our data-driven approach also includes regular updates and maintenance to
+ensure your leads remain high-quality and relevant over time.`,
+      },
+      leadGeneration: {
+        title: `Lead <span class="is-movements-green">generation and follow up</span>`,
+        text: `We excel in acquiring new customers and enhancing your sales pipeline through our lead generation expertise. We not only
+secure your appointments and demos but also continually enrich your data to ensure that you close more deals efficiently and
+consistently. In addition, we also provide comprehensive follow-up support to maximize conversion rates and foster long-term
+customer relationships.`,
+      },
+      leadClosing: {
+        title: `Lead <span class="is-highlighted">closing</span>`,
+        text: `We focus on turning your leads into paying customers using persuasive negotiation and effective sales tactics. Our proven
+methods ensure that your new customers are on the right path to becoming loyal customers. Our dedicated team of sales
+professionals goes above and beyond to provide ongoing support and guidance to your new customers, ensuring a seamless
+transition from a lead to a customer.`,
+      },
+      caseStudies: {
+        title: `End-to-end sales case studies`,
+        study1: {
+          title: `Lead generation for a global leader in the food industry`,
+          text: `We collaborated with the client by serving as their dedicated partner to enhance market presence, boost
+customer retention, and formulate effective strategies through lead generation. Our partnership has led to a
+growth in their marketing campaigns and an improvement in customer retention, ultimately resulting in a surge of
+new customers.`,
+        },
+        study2: {
+          title: `End-to-end sales support for a national absenteeism insurance provider`,
+          text: `We crafted an integrated sales strategy and support by taking ownership of lead generation, sending quotes,
+and navigating the entire sales process on behalf of our client. As a result, our client gained the opportunity to
+optimize their sales funnel and witnessed a significant increase in conversion rates.`,
+        },
+        study3: {
+          title: `Lead generation for a growing online logistics and cargo platform`,
+          text: `We've played a pivotal role in enriching and qualifying potential partners and later arranging online demos to
+showcase the platform’s immense potential. We've continuously expanded our scope, initially focusing on online
+demo scheduling to taking on the responsibility of overseeing the entire sales process for smaller leads.`,
+        },
+      },
+      contact: {
+        title: `Explore our solutions`,
+        subtitle: `Ready to work with us on your sustainable growth?`,
+        text: `Share your contact info, and we'll reach out soon for a consultation session!`,
+      }
+    },
+    form: {
+      name: 'Name',
+      companyName: 'Company Name',
+      businessEmail: 'Business Email',
+      phone: 'Phone',
+      cta: 'Send',
+      info: `*By submitting this form, you agree to our privacy policy.<span class="is-block">Following this, we may call or e-mail you. You can unsubscribe at any time.</span> `,
+    },
+
+
     telemarketing: {
       cover: {
         title: 'Unburden Your <span class="is-highlighted">Sales Team</span>',
@@ -360,36 +662,15 @@ const en = {
       },
       formTitle: 'Test Our Social Webcare!',
     },
-    form: {
-      name: 'Name',
-      companyName: 'Company Name',
-      businessEmail: 'Business Email',
-      phone: 'Phone',
-      cta: 'Try Now!',
-      info: `*By submitting this form, you agree to our privacy policy.<span class="is-block">Following this, we may call or e-mail you. You can unsubscribe at any time.</span> `,
-    }
+
   },
   careers: {
     cover: {
-      title: '<span class="is-highlighted">Join</span> Our <span class="is-highlighted">Team</span> Now',
-      subtitle: `Looking forward to joining our team and shaping our clients' future with us?`,
-      cta: 'Join Us',
+      title: '<span class="is-movements-green">Join</span> Our Team',
+      subtitle: `Become a part of the next generation of marketers`,
+      cta: 'Open positions',
     },
-    positions: {
-      title: `<span class="is-highlighted">Our Open Job Positions</span>`,
-      copy: `<span class="is-block has-text-italic"> Can't wait to reveal your talents? </span> You can always send an <span class="is-highlighted"> Open Application </span> to <span class="is-highlighted"> careers@movementsmarketing.com </span>`,
-    },
-    offers: {
-      title: '<span class="is-highlighted">We offer you</span>',
-      perks: {
-        perk1: 'International Workplaces',
-        perk2: 'Attractive Bonuses',
-        perk3: 'In-House Chef',
-        perk4: 'Recreative Playground',
-        perk5: 'Happy Meetups',
-        perk6: 'Fun Teambuildings',
-      }
-    }
+
   },
   thanks: {
     title: `Thank you!`,

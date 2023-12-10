@@ -1,21 +1,21 @@
 <template>
-  <div class="service-block">
-    <div class="service-block__content has-margin" :class="{'is-left': isLeft, 'is-highlighted': isHighlighted}" :style="{ 'min-height': coverHeight }">
-      <div class="service-block__photo-wrapper">
+  <div class="home-block">
+    <div class="home-block__content m-0" :class="{'is-left': isLeft}">
+      <div class="home-block__photo-wrapper has-padding">
         <img :src="dots" :alt="name" :class="{'dots': true, 'is-left': isLeft}">
-        <div class="service-block__photo">
-          <img :src="imgUrl" :alt="name" :class="{'is-left': isLeft}"  ref="serviceBlockCover" @load="onImageLoad">
+        <div class="home-block__photo">
+          <img :src="imgUrl" :alt="name" :class="{'is-left': isLeft}">
         </div>
       </div>
-      <div class="service-block__info">
-        <div class="service-block__box" :class="{'is-left': isLeft}">
-          <h2 class="has-text-left service-block__title has-line-left">
+      <div class="home-block__info">
+        <div class="home-block__box has-padding" :class="{'is-left': isLeft}">
+          <h2 class="has-text-left home-block__title has-line-left">
             <slot name="title"> </slot>
           </h2>
-          <p class="has-text-left service-block__text">
+          <p class="has-text-left home-block__text">
             <slot name="text"> </slot>
           </p>
-          <div class="service-block__cta">
+          <div class="home-block__cta">
             <slot name="cta" > </slot>
           </div>
         </div>
@@ -29,12 +29,9 @@ import Vue from 'vue';
 import {Component, Prop} from 'vue-property-decorator';
 
 @Component
-class ServiceBlock extends Vue {
+class HomeBlock extends Vue {
   @Prop({default: false})
   isLeft: String;
-
-  @Prop({default: false})
-  isHighlighted: String;
 
   @Prop({default: ''})
   name: String;
@@ -43,53 +40,17 @@ class ServiceBlock extends Vue {
   imgUrl: String;
 
   dots = require('@/assets/images/dots-green.png');
-
-  coverHeightOnLoad = null;
-
-  get coverHeight() {
-    return this.coverHeightOnLoad ? `${this.coverHeightOnLoad + 120}px` : 'auto';
-  }
-
-  onImageLoad() {
-    this.coverHeightOnLoad = this.$refs.serviceBlockCover?.clientHeight;
-  }
 }
 
-export default ServiceBlock;
+export default HomeBlock;
 </script>
 
 <style lang="scss">
-.service-block {
+.home-block {
   background: #ffffff;
 
-  .service-block__content {
+  .home-block__content {
     display: flex;
-    background: #F2F2F2;
-    border-radius: 20px;
-
-    &.is-highlighted {
-      background: linear-gradient(165deg, rgba(48,168,143,1) 0%, rgba(48,174,188,1) 50%, rgba(154,223,130,1) 100%);
-
-      h2 {
-        .is-highlighted {
-          color: #ffffff;
-        }
-
-        &::before {
-          background: #ffffff;
-        }
-      }
-
-      p {
-        color: #ffffff;
-      }
-
-      .button--hollow {
-        color: #ffffff;
-        border: 2px solid #fff;
-        margin-left: 0 !important;
-      }
-    }
 
     &.is-left {
       flex-direction: row-reverse;
@@ -99,8 +60,8 @@ export default ServiceBlock;
       flex-direction: column !important;
     }
 
-    .service-block__photo-wrapper {
-      width: 50%;
+    .home-block__photo-wrapper {
+      width: 33.333%;
       position: relative;
 
       @media screen  and (max-width: 780px) {
@@ -109,29 +70,29 @@ export default ServiceBlock;
 
       .dots {
         position: absolute;
-        top: -20px;
-        left: -150px;
+        top: 0;
+        left: 130px;
 
         @media screen  and (max-width: 780px) {
           width: 100px;
-          top: -10px;
-          left: -20px;
+          top: -50px;
+          left: 40px;
         }
 
         &.is-left {
           left: unset;
-          right: -150px;
+          right: 130px;
           top: unset;
-          bottom: -20px;
+          bottom: 0;
 
           @media screen  and (max-width: 780px) {
-            top: -10px;
-            right: -20px;
+            top: -50px;
+            right: 40px;
           }
         }
       }
 
-      .service-block__photo {
+      .home-block__photo {
         line-height: 0;
         height: 100%;
         width: 100%;
@@ -145,24 +106,24 @@ export default ServiceBlock;
 
         img {
           position: absolute;
-          left: -100px;
+          right: -100px;
           min-width: 100px;
-          width: 100%;
+          width: calc(100% - 160px);
           background: #186267;
           border-radius: 120px 0 120px 0;
           box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.30);
 
           @media screen and (max-width: 1400px) {
             width: 100%;
-            left: -60px;
+            right: -60px;
           }
 
           &.is-left {
-            left: unset;
-            right: -100px;
+            right: unset;
+            left: -100px;
 
             @media screen and (max-width: 1400px) {
-              right: -60px;
+              left: -60px;
             }
           }
 
@@ -179,31 +140,31 @@ export default ServiceBlock;
       }
     }
 
-    .service-block__info {
-      width: 50%;
+    .home-block__info {
+      width: 66.666%;
 
       @media screen  and (max-width: 780px) {
         width: 100%;
       }
 
-      .service-block__box {
+      .home-block__box {
+        background: #F2F2F2;
         padding-top: 100px;
         padding-bottom: 60px;
-        padding-right: 80px;
+        border-radius: 20px 0 0 20px;
 
         &.is-left {
-          padding-right: unset;
-          padding-left: 80px;
+          border-radius: 0 20px 20px 0;
         }
 
         @media screen  and (max-width: 780px) {
           width: calc(100% - 80px);
           margin-left: 40px;
-        //  border-radius: 15px;
+          border-radius: 15px;
           padding-bottom: 40px;
         }
 
-        .service-block__cta {
+        .home-block__cta {
           padding-top: 40px;
           text-align: left;
 

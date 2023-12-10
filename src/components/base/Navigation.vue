@@ -1,5 +1,5 @@
 <template>
-    <div class="navigation" :class="navBlurred && !isServicesActive ? 'is-blurred' : 'is-main'">
+    <div class="navigation" :class="navBlurred && !isServicesActive ? 'is-blurred' : 'is-main'" @mouseleave="onMouseLeave">
         <div class=" is-fullwidth" style="max-width: 2500px;" @mouseleave="isServicesActive = false">
             <div class="navigation__navbar navigation__navbar--desktop">
               <router-link to="/">
@@ -10,7 +10,7 @@
 
               <div :class="isMobileActive ? `navigation__items is-mobile-active` : `navigation__items`">
 
-                <navigation-dropdown is-full-width="true">
+                <navigation-dropdown is-full-width="true" ref="services">
                   <template v-slot:title>
                     <span>
                       {{ $t(`navigation.services`) }}
@@ -21,13 +21,13 @@
                       <div class="services-option-group">
                         <span class="services-main-option">
 <!--                          todo route-->
-                             <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.customerExperience" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.customerExperience`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
 <!--                          todo route-->
-                             <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.customer" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.engagementStrategy`) }}
                              </router-link>
                         </span>
@@ -52,32 +52,27 @@
                       </div>
                       <div class="services-option-group">
                         <span class="services-main-option">
-<!--                          todo route-->
-                             <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.endToEnd" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.endToEnd`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
-<!--                          todo route-->
-                             <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.endToEndEngagementStrategy" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.engagementStrategy`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
-<!--                          todo route-->
-                             <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.endToEndDataEnrichment" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.dataEnrichment`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
-<!--                          todo route-->
-                             <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.endToEndLeadGeneration" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.leadGeneration`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
-<!--                          todo route-->
-                             <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.endToEndLeadClosing" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.leadClosing`) }}
                              </router-link>
                         </span>
@@ -273,6 +268,8 @@
         navClass: string = 'is-main';
         navBlurred:  boolean = false;
 
+        fullWidthDropdowns = ['services'];
+
         @Watch('isMobileActive')
         onMobileActive(isActive: boolean) {
           if (isActive) {
@@ -298,6 +295,12 @@
         }
       }
 
+      onMouseLeave() {
+          this.fullWidthDropdowns.forEach(d => {
+            this.$refs[d].close();
+          })
+      }
+
       get currentLang() {
           return this.$i18n.locale
       }
@@ -318,11 +321,19 @@
           // document.documentElement.style.overflow = "auto";
         }
 
+        //todo translations
         get routes() {
           if(this.$i18n.locale === 'nl') {
             return {
               home: '/',
               about: '/over-ons',
+              customerExperience: '/customer-experience/',
+              endToEnd: '/end-to-end-sales-support/',
+              endToEndEngagementStrategy: '/end-to-end-sales-support/engagementStrategy',
+              endToEndDataEnrichment: '/end-to-end-sales-support/dataEnrichment',
+              endToEndLeadGeneration: '/end-to-end-sales-support/leadGeneration',
+              endToEndLeadClosing: '/end-to-end-sales-support/leadClosing',
+
               outbound: '/outbound',
               inbound: '/inbound',
               telemarketing: '/diensten/b2b-telemarketing',
@@ -339,6 +350,13 @@
             return {
               home: '/',
               about: '/uber-uns',
+              customerExperience: '/customer-experience/',
+              endToEnd: '/end-to-end-sales-support/',
+              endToEndEngagementStrategy: '/end-to-end-sales-support/engagementStrategy',
+              endToEndDataEnrichment: '/end-to-end-sales-support/dataEnrichment',
+              endToEndLeadGeneration: '/end-to-end-sales-support/leadGeneration',
+              endToEndLeadClosing: '/end-to-end-sales-support/leadClosing',
+
               outbound: '/outbound',
               inbound: '/inbound',
               telemarketing: '/dienstleistungen/b2b-telemarketing',
@@ -355,6 +373,13 @@
             return {
               home: '/',
               about: '/about',
+              customerExperience: '/customer-experience/',
+              endToEnd: '/end-to-end-sales-support/',
+              endToEndEngagementStrategy: '/end-to-end-sales-support/engagementStrategy',
+              endToEndDataEnrichment: '/end-to-end-sales-support/dataEnrichment',
+              endToEndLeadGeneration: '/end-to-end-sales-support/leadGeneration',
+              endToEndLeadClosing: '/end-to-end-sales-support/leadClosing',
+
               outbound: '/outbound',
               inbound: '/inbound',
               telemarketing: '/service/b2b-telemarketing',

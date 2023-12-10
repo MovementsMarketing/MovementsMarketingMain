@@ -2,11 +2,11 @@
   <div :class="'home has-bg-gray'">
     <navigation :full-logo="true" :light-logo="true"/>
 
-    <cover/>
+    <cover :cover-image="coverData.img" :cover-title="coverData.title" :cover-subtitle="coverData.subtitle"/>
 
     <div class="section is-white">
       <div v-for="(el, index) in services" :key="`service-${index}`" class="home__service">
-        <service-block :img-url="el.imgSrc" :name="el.title" :is-left="el.isLeft">
+        <home-block :img-url="el.imgSrc" :name="el.title" :is-left="el.isLeft">
           <template #title>
             <span v-html="el.title"></span>
           </template>
@@ -16,12 +16,145 @@
           <template #cta>
             <learn-more :url="el.url"/>
           </template>
-        </service-block>
+        </home-block>
+      </div>
+    </div>
+
+    <div id="partnerships" class="section is-white partnerships p-l-40 p-r-40 p-t-40">
+      <h5 v-html="$t(`home.partnerships.partnerships`)" class="has-line-center partnerships__title"></h5>
+      <div class="partnerships__slider lh-0">
+        <div class="fade is-left"></div>
+        <div class="partnerships__img-wrapper lh-0">
+          <div v-for="(p, i) in partnerships" :key="`partner-${i}`">
+            <img :src="p"/>
+          </div>
+        </div>
+        <div class="fade is-right"></div>
+      </div>
+    </div>
+
+    <div id="testimonials" class="is-white">
+      <testimonials/>
+    </div>
+
+    <div id="values" class="is-white">
+      <values/>
+    </div>
+
+    <div id="contact" class="section contact is-white has-padding">
+      <div class="contact__title">
+        <h2 v-html="$t(`home.contact.title`)" class="has-line-center"></h2>
+      </div>
+      <div class="columns m-0 is-multiline contact__columns">
+        <div class="column is-12-tablet is-4-desktop is-relative ">
+          <img :src="dots" :class="{'dots': true}">
+
+          <div class="contact__info has-small-radius-diagonal is-gray">
+            <img :src="connectIcon" :class="{'connect-icon': true}">
+
+            <div class="offices">
+              <div class="office" :class="activeOfficeIndex === 0 ? 'is-active' : ''" @click="activeOfficeIndex = 0">
+                <span>
+                  Sarajevo
+                </span>
+              </div>
+              <div class="office" :class="activeOfficeIndex === 1 ? 'is-active' : ''" @click="activeOfficeIndex = 1">
+                <span>
+                  Utrecht
+                </span>
+              </div>
+              <div class="office" :class="activeOfficeIndex === 2 ? 'is-active' : ''" @click="activeOfficeIndex = 2">
+                <span>
+                  Istanbul
+                </span>
+              </div>
+            </div>
+
+            <div class="office__info">
+              <div class="office__info-data">
+                <div class="office__icon">
+                  <icons icon="pin" stroke-width="1" height="32" width="32" class="is-fixed"/>
+                </div>
+                <div>
+                  <p>
+                    {{offices[activeOfficeIndex].address}}
+                  </p>
+                  <p>
+                    {{offices[activeOfficeIndex].postal}}
+                  </p>
+                  <p>
+                    {{offices[activeOfficeIndex].country}}
+                  </p>
+                </div>
+
+              </div>
+              <div class="office__info-data">
+                <div class="office__icon">
+                  <icons icon="phone" stroke-width="1" height="32" width="32" class="is-fixed"/>
+                </div>
+                <p>
+                  {{offices[activeOfficeIndex].phone}}
+                </p>
+              </div>
+              <div class="office__info-data">
+                <div class="office__icon">
+                  <icons icon="mail" stroke-width="1" height="32" width="32" class="is-fixed"/>
+                </div>
+                <p style="overflow-wrap: anywhere">
+                  {{offices[activeOfficeIndex].mail}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-12-tablet is-8-desktop">
+          <div class="contact__form">
+            <div class="form-intro">
+              <h5 v-html="$t(`home.contact.subtitle`)" ></h5>
+              <p v-html="$t(`home.contact.text`)" ></p>
+            </div>
+
+            <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field" action="/thank-you/general/">
+              <input type="hidden" name="form-name" value="ask-question" />
+              <div class="columns is-multiline">
+                <div class="column is-6">
+                  <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`home.contact.name`)">
+                </div>
+                <div class="column is-6">
+                  <input class="form__input"  type="text" id="companyName" name="companyName" required :placeholder="$t(`home.contact.companyName`)">
+                </div>
+                <div class="column is-6">
+                  <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`home.contact.email`)">
+                </div>
+                <div class="column is-6">
+                  <input class="form__input" name="phone" id="phone" required :placeholder="$t(`home.contact.phone`)"/>
+                </div>
+                <div class="column is-12">
+                  <textarea class="form__textarea"  name="message" id="message" required :placeholder="$t(`home.contact.message`)"/>
+                </div>
+                <div class="column is-12 has-text-right">
+                  <button class="button button--primary m-t-10">
+                    <span class="text">
+                      {{ $t(`home.contactUs`) }}
+                    </span>
+                    <span class="dot"></span>
+                    <span class="icon-wrapper">
+                      <icons icon="arrowRight" stroke-width="3" stroke="#fff" height="20" width="20" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
       </div>
     </div>
 
 
-        <div class="section section--cover">
+
+
+    <div class="section section--cover">
             <div class="video-container">
                 <video autoplay muted loop playsinline>
                     <source src="@/assets/video/movements_marketing.mp4" type="video/mp4" />
@@ -166,96 +299,6 @@
 
         <div class="section-divider section-divider--green"></div>
 
-        <div id="contact" class="section section--contact">
-            <div class="contact__title">
-                <h1 v-html="$t(`home.contact.title`)"></h1>
-            </div>
-            <div class="columns m-0 is-multiline contact__columns">
-                <div class="column is-12-tablet is-6-desktop p-0 lh-0" style="position: relative; background: #ffffff;">
-                    <img src="@/assets/images/backgrounds/movemens_contact_bg.png" alt="Movements Marketing Contact"/>
-                    <div class="offices">
-                        <div class="columns is-multiline is-mobile">
-                            <div class="column is-4 has-text-left">
-                                <div class="office" :class="activeOfficeIndex === 0 ? 'is-active' : ''" @click="activeOfficeIndex = 0">
-                                    <span>
-                                        Sarajevo
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="column is-4 has-text-centered">
-                                <div class="office" :class="activeOfficeIndex === 1 ? 'is-active' : ''" @click="activeOfficeIndex = 1">
-                                   <span>
-                                       Utrecht
-                                   </span>
-                                </div>
-                            </div>
-                            <div class="column is-4 has-text-right">
-                                <div class="office" :class="activeOfficeIndex === 2 ? 'is-active' : ''" @click="activeOfficeIndex = 2">
-                                    <span>
-                                        Istanbul
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="column is-12">
-                                <div class="office-data">
-                                    <p>
-                                        {{offices[activeOfficeIndex].address}}
-                                    </p>
-                                    <p>
-                                        {{offices[activeOfficeIndex].postal}}
-                                    </p>
-                                    <p>
-                                        {{offices[activeOfficeIndex].country}}
-                                    </p>
-                                    <p>
-                                        {{offices[activeOfficeIndex].phone}}
-                                    </p>
-                                    <p>
-                                        {{offices[activeOfficeIndex].mail}}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-12-tablet is-6-desktop">
-                    <div class="contact__form">
-                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field" action="/thank-you/general/">
-                            <input type="hidden" name="form-name" value="ask-question" />
-                            <div class="columns is-multiline">
-                                <div class="column is-6">
-                                    <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`home.contact.name`)">
-                                </div>
-                                <div class="column is-6">
-                                    <input class="form__input"  type="text" id="companyName" name="companyName" required :placeholder="$t(`home.contact.companyName`)">
-                                </div>
-                                <div class="column is-6">
-                                    <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`home.contact.email`)">
-                                </div>
-                                <div class="column is-6">
-                                    <input class="form__input" name="phone" id="phone" required :placeholder="$t(`home.contact.phone`)"/>
-                                </div>
-                                <div class="column is-12">
-                                    <textarea class="form__textarea"  name="message" id="message" required :placeholder="$t(`home.contact.message`)"/>
-                                </div>
-                                <div class="column is-12 has-text-right">
-                                    <button class="button button--hollow m-t-10">
-                                        <span class="text">
-                                            {{ $t(`home.contactUs`) }}
-                                        </span>
-                                        <span class="dot"></span>
-                                        <span class="icon-wrapper">
-                                            <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-        </div>
         <movements-footer/>
     </div>
 </template>
@@ -269,8 +312,10 @@
   import Quote from "@/components/components/Quote.vue";
   import WorkInNumbers from "@/components/components/WorkInNumbers.vue";
   import Cover from "@/components/components/Cover.vue";
-  import ServiceBlock from "@/components/components/ServiceBlock.vue";
+  import HomeBlock from "@/components/components/HomeBlock.vue";
   import LearnMore from "@/components/components/LearnMore.vue";
+  import Testimonials from "@/components/components/Testimonials.vue";
+  import Values from "@/components/components/Values.vue";
 
   @Component({
     components: {
@@ -280,8 +325,10 @@
       Quote,
       WorkInNumbers,
       Cover,
-      ServiceBlock,
+      HomeBlock,
       LearnMore,
+      Testimonials,
+      Values,
     }
   })
   class Home extends Vue {
@@ -291,8 +338,16 @@
           contactBg: '',
       };
 
+    get coverData(){
+      return {
+        img: require('@/assets/images/movements-marketing-cover.png'),
+        title: this.$t(`home.title`),
+        subtitle: this.$t(`home.subtitle`),
+      };
+    }
 
-
+    dots = require('@/assets/images/dots-green.png');
+    connectIcon = require('@/assets/images/contact-connect.png');
 
     get routesTranslated() {
       if(this.$i18n.locale === 'nl') {
@@ -319,19 +374,35 @@
           title: this.$t(`home.services.customerExperience.title`),
           text: this.$t(`home.services.customerExperience.text`),
           url: this.routesTranslated.customerExperience,
-          imgSrc: require('@/assets/images/backgrounds/movements_customer-service_outbound_cover.png'),
+          imgSrc: require('@/assets/images/services/movements-customer-experience.png'),
           isLeft: false,
         },
         {
           title: this.$t(`home.services.endToEnd.title`),
           text: this.$t(`home.services.endToEnd.text`),
           url: this.routesTranslated.endToEnd,
-          imgSrc: require('@/assets/images/backgrounds/movements_customer-service_outbound_cover.png'),
+          imgSrc: require('@/assets/images/services/movements-end-to-end-sales-support.png'),
           isLeft: true,
         },
       ];
     }
 
+    get partnerships() {
+      return [
+        require('@/assets/images/clients/sazas.png'),
+        require('@/assets/images/clients/dak.png'),
+        require('@/assets/images/clients/diagnost.png'),
+        require('@/assets/images/clients/scorito.png'),
+        require('@/assets/images/clients/shypple.png'),
+        require('@/assets/images/clients/abc_display.png'),
+        require('@/assets/images/clients/sazas.png'),
+        require('@/assets/images/clients/dak.png'),
+        require('@/assets/images/clients/diagnost.png'),
+        require('@/assets/images/clients/scorito.png'),
+        require('@/assets/images/clients/shypple.png'),
+        require('@/assets/images/clients/abc_display.png'),
+      ]
+    }
 
 
 
@@ -345,20 +416,20 @@
           {
             name: 'Scorito',
             text: this.$t(`home.clients.scorito.text`),
-            img: require('@/assets/images/clients/scorito_bg.png'),
-            logo: require('@/assets/images/clients/scorito_logo.png'),
+            img: require('@/assets/images/clients/scorito.png'),
+            logo: require('@/assets/images/clients/scorito.png'),
           },
           {
             name: 'Dak',
             text: this.$t(`home.clients.dak.text`),
-            img: require('@/assets/images/clients/dak_bg.png'),
-            logo: require('@/assets/images/clients/dak_logo.png'),
+            img: require('@/assets/images/clients/dak.png'),
+            logo: require('@/assets/images/clients/dak.png'),
           },
           {
             name: 'Shypple',
             text: this.$t(`home.clients.shypple.text`),
-            img: require('@/assets/images/clients/shypple_bg.png'),
-            logo: require('@/assets/images/clients/shypple_logo.png'),
+            img: require('@/assets/images/clients/shypple.png'),
+            logo: require('@/assets/images/clients/shypple.png'),
           },
         ];
       }
@@ -1174,232 +1245,148 @@
         margin-top: -12px;
     }
 
-    .section.section--telemarketers-title {
-        background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
+    .partnerships {
+      .partnerships__title {
+        margin-bottom: 100px;
+      }
 
-        h3 {
-            font-size: 58px;
-            color: #fff;
-            line-height: 62px;
-            font-weight: 200;
-            margin: 30px 0;
-        }
-    }
-
-    .section--telemarketers {
+      .partnerships__slider {
         overflow: hidden;
-    }
-
-    .section--telemarketers__wrapper {
-        width: 300vw;
         position: relative;
-        animation-name: slide-left-right;
-        animation-duration: 60000ms;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
+        padding-bottom: 20px;
 
-    .section.section--contact {
-        position: relative;
+        .fade {
+          position: absolute;
+          height: 100%;
+          width: 240px;
+          z-index: 1;
+          top: 0;
 
-        .contact__title {
-            position: absolute;
-            top: 30px;
-            width: 100%;
-            z-index: 6;
-            padding: 50px 0;
-
-          @media screen and (max-width: 1400px){
-            padding-top: 20px;
+          @media screen  and (max-width: 1400px) {
+            width: 100px;
           }
 
-          @media screen and (max-width: 768px){
-            position: relative;
+          @media screen  and (max-width: 768px) {
+            width: 40px;
           }
 
-            h1 {
-                font-size: 72px;
-                line-height: 76px;
-                color: #008d90;
-                display: inline-block;
-                position: relative;
-
-                @media (min-resolution: 100dpi) {
-                    font-size: 62px;
-                    line-height: 68px;
-                }
-
-              @media screen and (max-width: 460px){
-                font-size: 42px;
-                line-height: 46px;
-              }
-
-
-                .is-highlighted {
-                    font-weight: 800;
-                }
-
-                &::after {
-                    content: '';
-                    display: block;
-                    width: 100vw;
-                    height: 3px;
-                    background: #9FF882;
-                    left: 0;
-                    position: absolute;
-                }
-            }
-        }
-
-        .offices {
-            position: absolute;
-            top: 0;
-            display: flex;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            padding-left: 320px;
-            padding-right: 100px;
-
-            @media (min-resolution: 100dpi) {
-                padding-left: 200px;
-            }
-
-          @media screen and (max-width: 1400px){
-            padding-left: 100px;
-            padding-right: 50px;
+          &.is-left {
+            left: 0;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
           }
 
-          @media screen and (max-width: 1024px){
-            padding-right: 50px;
-            padding-left: 50px;
-          }
-
-          @media screen and (max-width: 460px){
-            padding-right: 20px;
-            padding-left: 20px;
-          }
-
-            .columns {
-                width: 100%;
-
-                .office {
-                    color: #008d90;
-                    font-size: 32px;
-                    cursor: pointer;
-
-                  @media screen and (max-width: 460px){
-                    font-size: 24px;
-                  }
-
-                  @media screen and (max-width: 340px){
-                    font-size: 22px;
-                  }
-
-                  @media screen and (max-width: 320px){
-                    font-size: 20px;
-                  }
-
-                  @media screen and (max-width: 300px){
-                    font-size: 18px;
-                  }
-
-                    span {
-                        position: relative;
-                        line-height: 34px;
-                    }
-
-                    &.is-active {
-                        font-weight: 700;
-
-                        span {
-                            &::after {
-                                content: '';
-                                display: block;
-                                width: 100%;
-                                height: 3px;
-                                background: #9FF882;
-                                left: 0;
-                                bottom: -2px;
-                                position: absolute;
-                            }
-                        }
-
-                    }
-                }
-
-                .office-data {
-                    background: #fff;
-                    border-radius: 30px;
-                    box-shadow: 1px 1px 12px rgb(0 0 0 / 20%);
-                    padding: 20px 40px;
-
-                  @media screen and (max-width: 460px){
-                    padding: 10px 20px;
-                  }
-
-                    p {
-                        color: #008d90;
-                        font-weight: 600;
-                        font-size: 15px;
-                        line-height: 28px;
-                        text-align: left;
-
-                      @media screen and (max-width: 460px){
-                        font-size: 13px;
-                      }
-                    }
-                }
-            }
-        }
-
-        .contact__form {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            padding-right: 320px;
-            padding-left: 100px;
-            padding-top: 70px;
-
-            @media (min-resolution: 100dpi) {
-                padding-right: 200px;
-            }
-
-          @media screen and (max-width: 1400px){
-            padding-right: 100px;
-            padding-left: 50px;
-            padding-top: 150px;
-
-            @media screen and (max-width: 1024px){
-              padding-right: 50px;
-              padding-left: 50px;
-              padding-top: 150px;
-              padding-bottom: 50px;
-            }
-
-            @media screen and (max-width: 768px){
-              padding: 20px;
-
-              form {
-                width: 100%;
-              }
-            }
+          &.is-right {
+            right: 0;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
           }
         }
 
-      .contact__columns {
-        @media screen and (max-width: 1024px){
-          flex-direction: column-reverse;
-        }
-
-        @media screen and (max-width: 768px){
+        .partnerships__img-wrapper {
+          width: 200%;
+          position: relative;
+          animation-name: slide-left-right;
+          animation-duration: 80000ms;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
           display: flex;
+          align-items: center;
+          gap: 100px;
+
+          @media screen  and (max-width: 1400px) {
+            width: 300%;
+            gap: 80px;
+            animation-name: slide-left-right-small;
+          }
+
+          @media screen  and (max-width: 768px) {
+            width: 600%;
+            gap: 60px;
+            animation-name: slide-left-right-smallest;
+          }
+
         }
       }
     }
+
+.contact {
+
+  .dots {
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    z-index: 0;
+
+    @media screen and (max-width: 780px) {
+      width: 100px;
+      top: -40px;
+      left: -40px;
+    }
+  }
+
+  .contact__info {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+
+    .connect-icon {
+      position: absolute;
+      right: -50px;
+      top: -50px;
+      max-width: 250px;
+      z-index: 0;
+    }
+
+    .offices {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 10px;
+      margin: 40px 0;
+      z-index: 1;
+
+      .office {
+        font-weight: 700;
+        color: #186267;
+        text-transform: uppercase;
+        opacity: 0.5;
+        cursor: pointer;
+
+        &.is-active {
+          opacity: 1;
+        }
+
+        &:hover {
+          opacity: 1;
+          color: #69BC77;
+        }
+      }
+    }
+
+    .office__info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .office__info-data {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          text-align: left;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
 
 
 </style>

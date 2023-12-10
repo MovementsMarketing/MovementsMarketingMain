@@ -1,5 +1,8 @@
 .section {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: unset;
+  padding-right: unset;
   overflow: hidden;
 
   &.full-height {
@@ -98,6 +101,19 @@
   }
 }
 
+.is-white {
+  background: #ffffff;
+}
+
+.is-gray {
+  background: #f2f2f2;
+}
+
+.has-bg-dark {
+  background: $movements-green;
+  color: #ffffff;;
+}
+
 .section-divider {
   display: block;
   width: 100%;
@@ -108,3 +124,28 @@
     background: #9FF882;
   }
 }
+
+.has-radius-bottom-right {
+  border-radius: 0 0 260px 0;
+
+  @media screen  and (max-width: 768px) {
+    border-radius: 0 0 120px 0;
+  }
+}
+
+.has-radius-top-left {
+  border-radius: 260px 0 0 0;
+
+  @media screen  and (max-width: 768px) {
+    border-radius: 120px 0 0 0;
+  }
+}
+
+.has-small-radius-diagonal {
+  border-radius: 100px 0 100px 0;
+
+  @media screen  and (max-width: 768px) {
+    border-radius: 60px 0 60px 0;
+  }
+}
+

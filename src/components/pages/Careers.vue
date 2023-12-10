@@ -2,39 +2,71 @@
   <div class="careers has-bg-gray">
     <navigation :full-logo="true" :light-logo="true"/>
 
-    <service-cover :data="coverData" custom-link="/contact"/>
+    <cover :cover-image="coverData.img" :cover-title="coverData.title" :cover-subtitle="coverData.subtitle" :is-green="true">
+      <template #cta>
+        <a href="routes.getStarted" target="_blank" class="button button--primary cover__cta">
+          <span class="text">
+            {{ coverData.cta }}
+          </span>
+          <span class="dot"></span>
+          <span class="icon-wrapper">
+            <icons icon="arrowRight" stroke-width="3" stroke="#fff" height="20" width="20" />
+          </span>
+        </a>
+      </template>
+    </cover>
 
-    <div class="section section--positions has-bg-gray">
-      <h2 class="positions__title" v-html="$t(`careers.positions.title`)"> </h2>
+<!--    <div class="section section&#45;&#45;positions has-bg-gray">-->
+<!--      <h2 class="positions__title" v-html="$t(`careers.positions.title`)"> </h2>-->
 
-      <div class="section__content positions__open columns m-t-30 m-b-30 is-multiline">
-        <div v-for="(position, index) in positions" :key="`position-${index}`" class="column is-6">
-          <position :data="position"/>
+<!--      <div class="section__content positions__open columns m-t-30 m-b-30 is-multiline">-->
+<!--        <div v-for="(position, index) in positions" :key="`position-${index}`" class="column is-6">-->
+<!--          <position :data="position"/>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <p class="positions__copy" v-html="$t(`careers.positions.copy`)"></p>-->
+<!--    </div>-->
+
+<!--    <div class="section-divider"></div>-->
+
+<!--    <div class="section section&#45;&#45;offers">-->
+<!--      <h2 class="offers__title" v-html="$t(`careers.offers.title`)"> </h2>-->
+
+<!--      <div class="section__content offers__perks columns m-t-30 m-b-30 is-multiline">-->
+<!--        <div v-for="(perk, index) in perks" :key="`perk-${index}`" class="column is-4">-->
+<!--          <div class="perk">-->
+<!--            <div class="perk__icon">-->
+<!--              <img :src="perk.icon"/>-->
+
+<!--            </div>-->
+<!--            <div class="perk__name">-->
+<!--              <h5 v-text="perk.name" />-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--    </div>-->
+
+    <div class="team__video-slider has-padding">
+            <transition :name="transitionName" mode="out-in">
+              <div :key="videos[currentIndex]" class="team__video-slide">
+                <iframe :src="videos[currentIndex]"></iframe>
+              </div>
+            </transition>
+
+      <div class="column has-text-centered p-0 slider__dots">
+        <div v-for="(t, i) in videos" :key="`dot-${i}`" :class="{'dot': true, 'is-active': i === currentIndex}"></div>
+      </div>
+      <div class="column is-4 has-text-right slider__navigation p-0">
+        <div class="slider__navigation__arrow" @click="prevSlide">
+          <icons icon="chevronLeft" :width="32" :height="32" :stroke-width="3"></icons>
+        </div>
+        <div class="slider__navigation__arrow" @click="nextSlide">
+          <icons icon="chevronRight" :width="32" :height="32" :stroke-width="3"></icons>
         </div>
       </div>
-
-      <p class="positions__copy" v-html="$t(`careers.positions.copy`)"></p>
-    </div>
-
-    <div class="section-divider"></div>
-
-    <div class="section section--offers">
-      <h2 class="offers__title" v-html="$t(`careers.offers.title`)"> </h2>
-
-      <div class="section__content offers__perks columns m-t-30 m-b-30 is-multiline">
-        <div v-for="(perk, index) in perks" :key="`perk-${index}`" class="column is-4">
-          <div class="perk">
-            <div class="perk__icon">
-              <img :src="perk.icon"/>
-
-            </div>
-            <div class="perk__name">
-              <h5 v-text="perk.name" />
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
 
     <div class="section section--careers-videos">
@@ -78,45 +110,6 @@
         </carousel-3d>
       </div>
 
-      <div class="is-hidden-desktop">
-        <carousel-3d :width="200" :height="150" :controls-visible="true" :clickable="true">
-          <slide :index="0">
-            <iframe width="200" height="150"
-                    src="https://www.youtube.com/embed/3Fn8LbUXtuI">
-            </iframe>
-          </slide>
-          <slide :index="1">
-            <iframe width="200" height="150"
-                    src="https://www.youtube.com/embed/tVIhRSCdb_0">
-            </iframe>
-          </slide>
-          <slide :index="2">
-            <iframe width="200" height="150"
-                    src="https://www.youtube.com/embed/D2eLnglOQK0">
-            </iframe>
-          </slide>
-          <slide :index="3">
-            <iframe width="200" height="150"
-                    src="https://www.youtube.com/embed/D1mI3ifIQ00">
-            </iframe>
-          </slide>
-          <slide :index="4">
-            <iframe width="200" height="150"
-                    src="https://www.youtube.com/embed/hDnRNnOVSro">
-            </iframe>
-          </slide>
-          <slide :index="5">
-            <iframe width="200" height="150"
-                    src="https://www.youtube.com/embed/aZHOEyUalNs">
-            </iframe>
-          </slide>
-          <slide :index="6">
-            <iframe width="200" height="150"
-                    src="https://www.youtube.com/embed/sJodW2ex4SY">
-            </iframe>
-          </slide>
-        </carousel-3d>
-      </div>
     </div>
 
     <movements-footer/>
@@ -128,80 +121,51 @@
 <script lang="ts">
   import Vue from 'vue';
   import { Component } from 'vue-property-decorator';
-  import ServiceCover from "@/components/components/ServiceCover.vue";
   import Position from "@/components/components/Position.vue";
+  import Cover from "@/components/components/Cover.vue";
 
   @Component({
     components: {
-      ServiceCover,
+      Cover,
       Position,
     }
   })
   class Careers extends Vue {
+
+    currentIndex = 0;
+    direction = 'forward'
+
     get coverData() {
       return  {
-        cover: require('@/assets/images/careers/cover.png'),
-        mask: require('@/assets/images/careers/mask.png'),
+        img: require('@/assets/images/careers/join-team-cover.png'),
         title: this.$t(`careers.cover.title`),
         subtitle: this.$t(`careers.cover.subtitle`),
         cta: this.$t(`careers.cover.cta`),
       };
     }
 
-    positions = [
-      {
-        name: 'B2B Telemarketeer / Customer Support Agent',
-        link: 'https://app.healthboxhr.com/job-application/external/07c08518-c05407d0-d1cd1170-b5824a4d',
-        location: 'Istanbul, TR',
-        type: 'Full - Time',
-      },
-      {
-        name: 'Customer Support Agent',
-        link: 'https://movements.bamboohr.com/jobs/',
-        location: 'Istanbul, TR',
-        type: 'Full - Time',
-      },
-      {
-        name: 'Telefonagent (Inbound/Outbound)',
-        link: 'https://app.healthboxhr.com/job-application/external/4de788fb-1d7dcd9b-4838cb70-fe068649',
-        location: 'Sarajevo, BA',
-        type: 'Full - Time',
-      },
-      {
-        name: 'Telemarketer / Inbound & Outbound / Nederlandstalig',
-        link: 'https://app.healthboxhr.com/job-application/external/d2046410-b9126d87-e2a24d05-3d1ac315',
-        location: 'Sarajevo, BA',
-        type: 'Full - Time',
-      },
+    get transitionName() {
+      return `${this.direction}-slide`
+    }
+
+    videos = [
+      "https://www.youtube.com/embed/3Fn8LbUXtuI",
+      "https://www.youtube.com/embed/tVIhRSCdb_0",
+      "https://www.youtube.com/embed/D2eLnglOQK0",
+      "https://www.youtube.com/embed/D1mI3ifIQ00",
+      "https://www.youtube.com/embed/hDnRNnOVSro",
+      "https://www.youtube.com/embed/aZHOEyUalNs",
+      "https://www.youtube.com/embed/sJodW2ex4SY",
     ];
 
-    get perks() {
-      return  [
-        {
-          icon: require('@/assets/images/careers/perks/1.png'),
-          name: this.$t(`careers.offers.perks.perk1`),
-        },
-        {
-          icon: require('@/assets/images/careers/perks/2.png'),
-          name: this.$t(`careers.offers.perks.perk2`),
-        },
-        {
-          icon: require('@/assets/images/careers/perks/3.png'),
-          name: this.$t(`careers.offers.perks.perk3`),
-        },
-        {
-          icon: require('@/assets/images/careers/perks/4.png'),
-          name: this.$t(`careers.offers.perks.perk4`),
-        },
-        {
-          icon: require('@/assets/images/careers/perks/5.png'),
-          name: this.$t(`careers.offers.perks.perk5`),
-        },
-        {
-          icon: require('@/assets/images/careers/perks/6.png'),
-          name: this.$t(`careers.offers.perks.perk6`),
-        },
-      ];
+    nextSlide() {
+      this.direction = 'forward';
+      this.currentIndex = this.currentIndex === this.videos.length-1 ? 0 : this.currentIndex + 1;
+    }
+
+    prevSlide() {
+      this.direction = 'backward';
+      this.currentIndex = this.currentIndex === 0 ? this.videos.length-1 : this.currentIndex - 1;
     }
   }
 
@@ -209,158 +173,37 @@
 </script>
 
 <style lang="scss">
-  .careers {
-    .section.section--service-cover {
-      .section__content {
-        h1 {
-          font-weight: 300;
+.careers {
+  .team__video-slider {
+    .team__video-slide {
+      iframe {
+        border-radius: 50px 0 50px 0;
+        width: 1200px;
+        height: 800px;
+        max-width: 100%;
 
-          .is-highlighted {
-            display: unset;
-          }
+        @media screen and (max-width: 1580px){
+          width: 1000px;
+          height: 680px;
         }
-      }
-    }
 
-    .section.section--positions {
-      padding: 50px 0;
-
-      h2.positions__title,
-      .positions__copy {
-        color: #008d90;
-
-        .is-highlighted {
-          font-weight: 700;
+        @media screen and (max-width: 1240px){
+          width: 900px;
+          height: 600px;
         }
-      }
-    }
 
-    .section.section--offers {
-      padding: 50px 0;
-      background: #fff;
-
-      h2.offers__title {
-        color: #008d90;
-
-        .is-highlighted {
-          font-weight: 700;
+        @media screen and (max-width: 980px){
+          width: 600px;
+          height: 400px;
         }
-      }
 
-      .perk {
-        .perk__icon {
-          margin: 0 auto 40px auto;
-          background: #fff;
-          border-radius: 50%;
-          box-shadow: 0 0 12px rgb(0 0 0 / 20%);
-          width: 180px;
+        @media screen and (max-width: 768px){
+          border-radius: 20px 0 20px 0;
+          width: 280px;
           height: 180px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          z-index: 1;
-
-          @media screen and (max-width: 768px) {
-            width: 120px;
-            height: 120px;
-            padding: 30px;
-          }
-        }
-
-        .perk__name {
-          color: #008d90;
-          font-size: 28px;
-          font-weight: 700;
-          margin-bottom: 20px;
-
-          @media (min-resolution: 100dpi) {
-            font-size: 24px;
-          }
-        }
-      }
-    }
-
-    .section.section--careers-videos {
-      padding: 50px 0;
-
-      .carousel-3d-container {
-        @media screen and (max-width: 1024px) {
-          overflow: visible;
-        }
-
-        .carousel-3d-controls {
-          @media screen and (max-width: 1024px) {
-            top: unset;
-            bottom: -50px;
-            display: flex;
-            justify-content: center;
-            height: 50px;
-          }
-
-          .prev,
-          .next {
-            background: #008d90;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 10px 10px 10px;
-
-            @media screen and (max-width: 1024px){
-              width: 30px !important;
-              height: 30px !important;
-              position: relative;
-              margin: 20px;
-
-              span {
-                font-size: 40px;
-              }
-            }
-
-            span {
-              color: #fff;
-            }
-
-            &:hover {
-              background: #9FF882;
-            }
-          }
-
-          .prev {
-            left: 300px;
-
-            @media screen and (max-width: 2000px){
-              left: 200px;
-            }
-
-            @media screen and (max-width: 1600px){
-              left: 100px;
-            }
-
-            @media screen and (max-width: 1400px){
-              left: 10px;
-            }
-          }
-
-          .next {
-            right: 300px;
-
-            @media screen and (max-width: 2000px){
-              right: 200px;
-            }
-
-            @media screen and (max-width: 1600px){
-              right: 100px;
-            }
-
-            @media screen and (max-width: 1400px){
-              right: 10px;
-            }
-          }
         }
       }
     }
   }
-
+}
 </style>

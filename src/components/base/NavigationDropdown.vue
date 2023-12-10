@@ -29,9 +29,16 @@ class NavigationDropdown extends Vue {
 
   isActive = false;
 
+  close() {
+    console.log(close);
+    this.isActive = false;
+  }
+
   onMouseLeave() {
+    if(this.isFullWidth) return;
+
     setTimeout(()=>{
-      this.isActive = false;
+      this.close();
     }, 300)
   }
 }
