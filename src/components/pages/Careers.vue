@@ -49,17 +49,17 @@
 
 <!--    </div>-->
 
-    <div class="team__video-slider has-padding">
+    <div class="team__video-slider slider has-margin section is-relative">
             <transition :name="transitionName" mode="out-in">
               <div :key="videos[currentIndex]" class="team__video-slide">
                 <iframe :src="videos[currentIndex]"></iframe>
               </div>
             </transition>
 
-      <div class="column has-text-centered p-0 slider__dots">
+      <div class="has-text-centered p-0 slider__dots p-t-10">
         <div v-for="(t, i) in videos" :key="`dot-${i}`" :class="{'dot': true, 'is-active': i === currentIndex}"></div>
       </div>
-      <div class="column is-4 has-text-right slider__navigation p-0">
+      <div class="has-text-right slider__navigation p-0 p-t-15">
         <div class="slider__navigation__arrow" @click="prevSlide">
           <icons icon="chevronLeft" :width="32" :height="32" :stroke-width="3"></icons>
         </div>
@@ -69,48 +69,48 @@
       </div>
     </div>
 
-    <div class="section section--careers-videos">
-      <div class="is-hidden-touch">
-        <carousel-3d :width="440" :height="330" :controls-visible="true" :clickable="true">
-          <slide :index="0">
-            <iframe width="440" height="330"
-                    src="https://www.youtube.com/embed/3Fn8LbUXtuI">
-            </iframe>
-          </slide>
-          <slide :index="1">
-            <iframe width="440" height="330"
-                    src="https://www.youtube.com/embed/tVIhRSCdb_0">
-            </iframe>
-          </slide>
-          <slide :index="2">
-            <iframe width="440" height="330"
-                    src="https://www.youtube.com/embed/D2eLnglOQK0">
-            </iframe>
-          </slide>
-          <slide :index="3">
-            <iframe width="440" height="330"
-                    src="https://www.youtube.com/embed/D1mI3ifIQ00">
-            </iframe>
-          </slide>
-          <slide :index="4">
-            <iframe width="440" height="330"
-                    src="https://www.youtube.com/embed/hDnRNnOVSro">
-            </iframe>
-          </slide>
-          <slide :index="5">
-            <iframe width="440" height="330"
-                    src="https://www.youtube.com/embed/aZHOEyUalNs">
-            </iframe>
-          </slide>
-          <slide :index="6">
-            <iframe width="440" height="330"
-                    src="https://www.youtube.com/embed/sJodW2ex4SY">
-            </iframe>
-          </slide>
-        </carousel-3d>
-      </div>
+<!--    <div class="section section&#45;&#45;careers-videos">-->
+<!--      <div class="is-hidden-touch">-->
+<!--        <carousel-3d :width="440" :height="330" :controls-visible="true" :clickable="true">-->
+<!--          <slide :index="0">-->
+<!--            <iframe width="440" height="330"-->
+<!--                    src="https://www.youtube.com/embed/3Fn8LbUXtuI">-->
+<!--            </iframe>-->
+<!--          </slide>-->
+<!--          <slide :index="1">-->
+<!--            <iframe width="440" height="330"-->
+<!--                    src="https://www.youtube.com/embed/tVIhRSCdb_0">-->
+<!--            </iframe>-->
+<!--          </slide>-->
+<!--          <slide :index="2">-->
+<!--            <iframe width="440" height="330"-->
+<!--                    src="https://www.youtube.com/embed/D2eLnglOQK0">-->
+<!--            </iframe>-->
+<!--          </slide>-->
+<!--          <slide :index="3">-->
+<!--            <iframe width="440" height="330"-->
+<!--                    src="https://www.youtube.com/embed/D1mI3ifIQ00">-->
+<!--            </iframe>-->
+<!--          </slide>-->
+<!--          <slide :index="4">-->
+<!--            <iframe width="440" height="330"-->
+<!--                    src="https://www.youtube.com/embed/hDnRNnOVSro">-->
+<!--            </iframe>-->
+<!--          </slide>-->
+<!--          <slide :index="5">-->
+<!--            <iframe width="440" height="330"-->
+<!--                    src="https://www.youtube.com/embed/aZHOEyUalNs">-->
+<!--            </iframe>-->
+<!--          </slide>-->
+<!--          <slide :index="6">-->
+<!--            <iframe width="440" height="330"-->
+<!--                    src="https://www.youtube.com/embed/sJodW2ex4SY">-->
+<!--            </iframe>-->
+<!--          </slide>-->
+<!--        </carousel-3d>-->
+<!--      </div>-->
 
-    </div>
+<!--    </div>-->
 
     <movements-footer/>
 
@@ -175,17 +175,25 @@
 <style lang="scss">
 .careers {
   .team__video-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .slider__navigation {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
     .team__video-slide {
       iframe {
         border-radius: 50px 0 50px 0;
-        width: 1200px;
-        height: 800px;
+        width: 1000px;
+        height: 680px;
         max-width: 100%;
 
-        @media screen and (max-width: 1580px){
-          width: 1000px;
-          height: 680px;
-        }
 
         @media screen and (max-width: 1240px){
           width: 900px;

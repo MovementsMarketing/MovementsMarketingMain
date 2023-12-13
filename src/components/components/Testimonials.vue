@@ -15,7 +15,7 @@
       <div class="column has-text-centered p-0 slider__dots">
             <div v-for="(t, i) in testimonials" :key="`dot-${i}`" :class="{'dot': true, 'is-active': i === currentIndex}"></div>
       </div>
-      <div class="column is-4 has-text-right slider__navigation p-0">
+      <div class="column is-4 has-text-right slider__navigation p-0 p-t-15">
         <div class="slider__navigation__arrow" @click="prevSlide">
           <icons icon="chevronLeft" :width="32" :height="32" :stroke-width="3"></icons>
         </div>

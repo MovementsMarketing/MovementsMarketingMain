@@ -17,7 +17,7 @@
     </cover>
 
     <div class="section is-white">
-      <div v-for="(el, index) in services" :key="`service-${index}`" class="home__service">
+      <div v-for="(el, index) in services" :key="`service-${index}`" class="home__service" :id="el.id">
         <service-block :img-url="el.imgSrc" :name="el.title" :is-left="el.isLeft" :is-highlighted="el.isHighlighted">
           <template #title>
             <span v-html="el.title"></span>
@@ -91,6 +91,15 @@
 
     dots = require('@/assets/images/dots-green.png');
 
+    isElementInViewport = {
+      getStarted: false,
+      engagementStrategy: false,
+      telephoneCustomerCare: false,
+      appointmentOptimization: false,
+      aiVoicebot: false,
+    }
+
+
     get coverData(){
       return {
         img: require('@/assets/images/services/customer_experience/customer-experience-cover.png'),
@@ -145,19 +154,21 @@
           text: this.$t(`services.customerExperience.engagementStrategy.text`),
           imgSrc: require('@/assets/images/services/customer_experience/customer-experience-engagement.png'),
           isLeft: false,
-          id: this.$t(`services.customerExperience.engagementStrategy.title`)
+          id: 'engagementStrategy'
         },
         {
           title: this.$t(`services.customerExperience.telephoneCustomerCare.title`),
           text: this.$t(`services.customerExperience.telephoneCustomerCare.text`),
           imgSrc: require('@/assets/images/services/customer_experience/customer-experience-telephone.png'),
           isLeft: true,
+          id: 'telephoneCustomerCare'
         },
         {
           title: this.$t(`services.customerExperience.appointmentOptimization.title`),
           text: this.$t(`services.customerExperience.appointmentOptimization.text`),
           imgSrc: require('@/assets/images/services/customer_experience/customer-experience-appointment.png'),
           isLeft: false,
+          id: 'appointmentOptimization'
         },
         {
           title: this.$t(`services.customerExperience.aiAssistant.title`),
@@ -167,6 +178,7 @@
           isHighlighted: true,
           cta: this.$t(`services.customerExperience.aiAssistant.cta`),
           url: `https://services.movementsmarketing.com/voicebot/`,
+          id: 'aiVoicebot'
         },
       ];
     }
@@ -204,6 +216,64 @@
         ]
       };
     }
+
+    handleScroll() {
+      // @ts-ignore
+      const element = this.$router.history.current?.meta?.element;
+      const elementSubstring = element.substring(1);
+
+      // @ts-ignore
+      if(!element || !this.isElementInViewport[elementSubstring]) return;
+      setTimeout(() => {
+        // @ts-ignore
+        if(element && !this.isElementInViewport[element.substring(1)]) {
+          // @ts-ignore
+          const pathArray = this.$router.history.current.fullPath.split('/');
+          pathArray.pop();
+
+          const state = { isRouterChange: true };
+          window.history.pushState(state, '',  pathArray.join('/'));
+        }
+      }, 1200)
+    }
+
+    scrollToAnchor () {
+      this.$nextTick(() => {
+        if (this.$route.meta?.element) {
+          const $el = document.querySelector(this.$route.meta?.element);
+          $el && window.scrollTo(0, $el.offsetTop);
+        }
+      });
+    }
+
+    mounted() {
+      this.scrollToAnchor();
+
+      window.addEventListener('scroll', this.handleScroll);
+
+      const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const elementId = entry.target.id;
+              this.$set(this.isElementInViewport, elementId, entry.isIntersecting);
+            });
+          },
+          {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2,
+          }
+      );
+
+      Object.keys(this.isElementInViewport).forEach(elementId => {
+        const targetElement = document.getElementById(elementId);
+
+        if (targetElement) {
+          observer.observe(targetElement);
+        }
+      });
+    }
+
 
   }
 

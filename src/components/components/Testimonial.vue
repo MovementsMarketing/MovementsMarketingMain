@@ -60,6 +60,7 @@ class Testimonial extends Vue {
   }
 
   onImageLoad() {
+    // @ts-ignore
     this.coverHeightOnLoad = this.$refs.testimonialCover?.clientHeight;
   }
 }

@@ -5,6 +5,11 @@
   padding-right: unset;
   overflow: hidden;
 
+  @media screen  and (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   &.full-height {
     height: calc(100vh - 150px);
   }

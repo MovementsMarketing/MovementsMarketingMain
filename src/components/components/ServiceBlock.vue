@@ -51,6 +51,7 @@ class ServiceBlock extends Vue {
   }
 
   onImageLoad() {
+    // @ts-ignore
     this.coverHeightOnLoad = this.$refs.serviceBlockCover?.clientHeight;
   }
 }
@@ -103,7 +104,7 @@ export default ServiceBlock;
       width: 50%;
       position: relative;
 
-      @media screen  and (max-width: 780px) {
+      @media screen  and (max-width: 768px) {
         width: 100%;
       }
 
@@ -112,9 +113,9 @@ export default ServiceBlock;
         top: -20px;
         left: -150px;
 
-        @media screen  and (max-width: 780px) {
+        @media screen  and (max-width: 768px) {
           width: 100px;
-          top: -10px;
+          top: -40px;
           left: -20px;
         }
 
@@ -124,7 +125,7 @@ export default ServiceBlock;
           top: unset;
           bottom: -20px;
 
-          @media screen  and (max-width: 780px) {
+          @media screen  and (max-width: 768px) {
             top: -10px;
             right: -20px;
           }
@@ -139,7 +140,7 @@ export default ServiceBlock;
         align-items: center;
         justify-content: flex-end;
 
-        @media screen  and (max-width: 780px) {
+        @media screen  and (max-width: 768px) {
           justify-content: center;
         }
 
@@ -164,14 +165,19 @@ export default ServiceBlock;
             @media screen and (max-width: 1400px) {
               right: -60px;
             }
+
+            @media screen  and (max-width: 768px) {
+              right: 0;
+            }
           }
 
-          @media screen  and (max-width: 780px) {
+          @media screen  and (max-width: 768px) {
             position: relative;
             margin-bottom: -40px;
+            top: -50px;
             right: unset;
             left: unset !important;
-            width: calc(100% - 60px);
+            width: calc(100% - 80px);
             border-radius: 60px 0 60px 0;
           }
 
@@ -182,7 +188,7 @@ export default ServiceBlock;
     .service-block__info {
       width: 50%;
 
-      @media screen  and (max-width: 780px) {
+      @media screen  and (max-width: 768px) {
         width: 100%;
       }
 
@@ -194,13 +200,19 @@ export default ServiceBlock;
         &.is-left {
           padding-right: unset;
           padding-left: 80px;
+
+          @media screen  and (max-width: 768px) {
+            padding-left: unset;
+          }
         }
 
-        @media screen  and (max-width: 780px) {
+        @media screen  and (max-width: 768px) {
           width: calc(100% - 80px);
           margin-left: 40px;
-        //  border-radius: 15px;
+          padding-left: unset;
+          padding-right: unset;
           padding-bottom: 40px;
+          padding-top: 60px;
         }
 
         .service-block__cta {

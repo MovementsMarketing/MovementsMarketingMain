@@ -154,150 +154,150 @@
 
 
 
-    <div class="section section--cover">
-            <div class="video-container">
-                <video autoplay muted loop playsinline>
-                    <source src="@/assets/video/movements_marketing.mp4" type="video/mp4" />
-                </video>
-                <div class="caption">
-                </div>
-            </div>
-            <div class="section__mask"></div>
-            <div class="section__content">
-                <h1>
-                    <span class="is-highlighted">
-                        {{ $t(`home.title`) }}
-                    </span>
-                </h1>
-                <h2>
-                    {{ $t(`home.subtitle`) }}
-                </h2>
-                <div>
-                    <router-link to="/contact" class="button button--hollow">
-                        <span class="text">
-                            {{ $t(`contactUs`) }}
-                        </span>
-                        <span class="dot"></span>
-                        <span class="icon-wrapper">
-                            <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
-                        </span>
-                    </router-link>
-                </div>
+<!--    <div class="section section&#45;&#45;cover">-->
+<!--            <div class="video-container">-->
+<!--                <video autoplay muted loop playsinline>-->
+<!--                    <source src="@/assets/video/movements_marketing.mp4" type="video/mp4" />-->
+<!--                </video>-->
+<!--                <div class="caption">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="section__mask"></div>-->
+<!--            <div class="section__content">-->
+<!--                <h1>-->
+<!--                    <span class="is-highlighted">-->
+<!--                        {{ $t(`home.title`) }}-->
+<!--                    </span>-->
+<!--                </h1>-->
+<!--                <h2>-->
+<!--                    {{ $t(`home.subtitle`) }}-->
+<!--                </h2>-->
+<!--                <div>-->
+<!--                    <router-link to="/contact" class="button button&#45;&#45;hollow">-->
+<!--                        <span class="text">-->
+<!--                            {{ $t(`contactUs`) }}-->
+<!--                        </span>-->
+<!--                        <span class="dot"></span>-->
+<!--                        <span class="icon-wrapper">-->
+<!--                            <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />-->
+<!--                        </span>-->
+<!--                    </router-link>-->
+<!--                </div>-->
 
-            </div>
-        </div>
-
-        <div class="section-divider"></div>
-
-        <div id="about" class="section section--about">
-            <facts :facts="[$t(`home.about.facts.qualitativeTelemarketing`), $t(`home.about.facts.multilingualTelemarketers`), $t(`home.about.facts.costEffectiveResults`)]"></facts>
-            <div class="about has-bg-white">
-                <div class="bg-image has-text-right">
-                    <img src="@/assets/images/backgrounds/movements_about-us_map.png" alt="Movements Marketing Locations">
-                </div>
-                <div class="section__content has-text-left">
-                    <h1 v-html="$t(`home.about.aboutUs.aboutUs`)" class="m-b-0"></h1>
-                    <div class="columns">
-                        <div class="column is-12-tablet is-9-desktop">
-                            <div class="columns about__text is-variable is-6 is-multiline">
-                                <div class="column is-12-tablet is-5-desktop">
-                                    <p v-html="$t(`home.about.aboutUs.p1`)"></p>
-                                </div>
-                                <div class="column is-12-tablet is-5-desktop">
-                                    <p v-html="$t(`home.about.aboutUs.p2`)"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-<!--        <div class="section section&#45;&#45;numbers" id="numbersSection" style="overflow: visible">-->
-<!--          <work-in-numbers/>-->
+<!--            </div>-->
 <!--        </div>-->
 
-        <quote :text="$t(`home.quote`)"/>
+<!--        <div class="section-divider"></div>-->
 
-        <div id="outbound" class="section section--services section--services--outbound">
-            <div class="columns m-0">
-                <div class="section__content column is-8-tablet is-6-desktop">
-                    <h1 v-html="$t(`home.services.outbound.title`)"></h1>
-                    <p v-html="$t(`home.services.outbound.text`)"></p>
-                </div>
-                <div class="services-cover column is-4-tablet is-6-desktop p-0">
-                    <div class="services-cover__mask">
-                        <img src="@/assets/images/backgrounds/blue-mask.png" alt="Movements Marketing Image Mask">
-                    </div>
-                    <div class="services-cover__image has-text-right">
-                        <img src="@/assets/images/backgrounds/movements_customer-service_outbound_cover.png" alt="Outbound Lead Generation">
-                    </div>
-                </div>
-            </div>
-            <div class="services__list">
-<!--                <div v-for="(el, index) in services.outbound" :key="`outbound-${index}`" class="m-l-20">-->
-<!--                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />-->
+<!--        <div id="about" class="section section&#45;&#45;about">-->
+<!--            <facts :facts="[$t(`home.about.facts.qualitativeTelemarketing`), $t(`home.about.facts.multilingualTelemarketers`), $t(`home.about.facts.costEffectiveResults`)]"></facts>-->
+<!--            <div class="about has-bg-white">-->
+<!--                <div class="bg-image has-text-right">-->
+<!--                    <img src="@/assets/images/backgrounds/movements_about-us_map.png" alt="Movements Marketing Locations">-->
 <!--                </div>-->
-            </div>
-        </div>
-
-        <div class="section section--work">
-            <div class="section__content columns m-0 is-multiline">
-                <div class="column is-12-tablet is-6-desktop has-text-left">
-                    <h2 v-html="$t(`home.work.title`)"></h2>
-                    <p v-html="$t(`home.work.text`)"></p>
-                    <a class="button button--hollow" href="https://issuu.com/movementsmarketing" target="_blank">
-                        <span class="text">
-                            {{ $t(`home.work.button`) }}
-                        </span>
-                        <span class="dot"></span>
-                        <span class="icon-wrapper">
-                            <icons icon="chevronsDown" stroke-width="3" stroke="#fff" height="24" width="24" />
-                        </span>
-                    </a>
-                </div>
-                <div class="column is-12-tablet is-6-desktop work__img-wrapper">
-                    <img src="@/assets/images/backgrounds/movements_work_cover.png" alt="Movements Marketing Work Practice">
-                </div>
-            </div>
-        </div>
-
-        <div id="inbound" class="section section--services section--services--inbound">
-            <div class="columns m-0">
-                <div class="services-cover column is-4-tablet is-6-desktop p-t-0 p-l-0 p-b-0 l-h-0">
-                    <div class="services-cover__mask">
-                        <img src="@/assets/images/backgrounds/yellow-mask.png" alt="Movements Marketing Image Mask">
-                    </div>
-                    <div class="services-cover__image has-text-left">
-                        <img src="@/assets/images/backgrounds/movements_customer-service_inbound_cover.png" alt="Inbound Customer Service">
-                    </div>
-                </div>
-                <div class="section__content column is-8-tablet is-6-desktop">
-                    <h1 v-html="$t(`home.services.inbound.title`)"></h1>
-                    <p v-html="$t(`home.services.inbound.text`)"></p>
-                </div>
-            </div>
-            <div class="services__list">
-<!--                <div v-for="(el, index) in services.inbound" :key="`inbound-${index}`" class="m-l-20">-->
-<!--                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />-->
+<!--                <div class="section__content has-text-left">-->
+<!--                    <h1 v-html="$t(`home.about.aboutUs.aboutUs`)" class="m-b-0"></h1>-->
+<!--                    <div class="columns">-->
+<!--                        <div class="column is-12-tablet is-9-desktop">-->
+<!--                            <div class="columns about__text is-variable is-6 is-multiline">-->
+<!--                                <div class="column is-12-tablet is-5-desktop">-->
+<!--                                    <p v-html="$t(`home.about.aboutUs.p1`)"></p>-->
+<!--                                </div>-->
+<!--                                <div class="column is-12-tablet is-5-desktop">-->
+<!--                                    <p v-html="$t(`home.about.aboutUs.p2`)"></p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 <!--                </div>-->
-            </div>
-        </div>
+<!--            </div>-->
+<!--        </div>-->
 
-        <div id="clients" class="section section--clients">
-            <slider :slidesData="clients"/>
-        </div>
+<!--&lt;!&ndash;        <div class="section section&#45;&#45;numbers" id="numbersSection" style="overflow: visible">&ndash;&gt;-->
+<!--&lt;!&ndash;          <work-in-numbers/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
 
-        <quote :text="$t(`home.telemarketers`)" cssClass="is-gradient"/>
+<!--        <quote :text="$t(`home.quote`)"/>-->
 
-        <div class="section--telemarketers lh-0">
-        <div class="section--telemarketers__wrapper lh-0">
+<!--        <div id="outbound" class="section section&#45;&#45;services section&#45;&#45;services&#45;&#45;outbound">-->
+<!--            <div class="columns m-0">-->
+<!--                <div class="section__content column is-8-tablet is-6-desktop">-->
+<!--                    <h1 v-html="$t(`home.services.outbound.title`)"></h1>-->
+<!--                    <p v-html="$t(`home.services.outbound.text`)"></p>-->
+<!--                </div>-->
+<!--                <div class="services-cover column is-4-tablet is-6-desktop p-0">-->
+<!--                    <div class="services-cover__mask">-->
+<!--                        <img src="@/assets/images/backgrounds/blue-mask.png" alt="Movements Marketing Image Mask">-->
+<!--                    </div>-->
+<!--                    <div class="services-cover__image has-text-right">-->
+<!--                        <img src="@/assets/images/backgrounds/movements_customer-service_outbound_cover.png" alt="Outbound Lead Generation">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="services__list">-->
+<!--&lt;!&ndash;                <div v-for="(el, index) in services.outbound" :key="`outbound-${index}`" class="m-l-20">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
 
-            <img src="@/assets/images/backgrounds/movements_marketing_telemarketers.jpg" alt="Movements Marketing Telemarketers">
-        </div>
-        </div>
+<!--        <div class="section section&#45;&#45;work">-->
+<!--            <div class="section__content columns m-0 is-multiline">-->
+<!--                <div class="column is-12-tablet is-6-desktop has-text-left">-->
+<!--                    <h2 v-html="$t(`home.work.title`)"></h2>-->
+<!--                    <p v-html="$t(`home.work.text`)"></p>-->
+<!--                    <a class="button button&#45;&#45;hollow" href="https://issuu.com/movementsmarketing" target="_blank">-->
+<!--                        <span class="text">-->
+<!--                            {{ $t(`home.work.button`) }}-->
+<!--                        </span>-->
+<!--                        <span class="dot"></span>-->
+<!--                        <span class="icon-wrapper">-->
+<!--                            <icons icon="chevronsDown" stroke-width="3" stroke="#fff" height="24" width="24" />-->
+<!--                        </span>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="column is-12-tablet is-6-desktop work__img-wrapper">-->
+<!--                    <img src="@/assets/images/backgrounds/movements_work_cover.png" alt="Movements Marketing Work Practice">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="section-divider section-divider--green"></div>
+<!--        <div id="inbound" class="section section&#45;&#45;services section&#45;&#45;services&#45;&#45;inbound">-->
+<!--            <div class="columns m-0">-->
+<!--                <div class="services-cover column is-4-tablet is-6-desktop p-t-0 p-l-0 p-b-0 l-h-0">-->
+<!--                    <div class="services-cover__mask">-->
+<!--                        <img src="@/assets/images/backgrounds/yellow-mask.png" alt="Movements Marketing Image Mask">-->
+<!--                    </div>-->
+<!--                    <div class="services-cover__image has-text-left">-->
+<!--                        <img src="@/assets/images/backgrounds/movements_customer-service_inbound_cover.png" alt="Inbound Customer Service">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="section__content column is-8-tablet is-6-desktop">-->
+<!--                    <h1 v-html="$t(`home.services.inbound.title`)"></h1>-->
+<!--                    <p v-html="$t(`home.services.inbound.text`)"></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="services__list">-->
+<!--&lt;!&ndash;                <div v-for="(el, index) in services.inbound" :key="`inbound-${index}`" class="m-l-20">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div id="clients" class="section section&#45;&#45;clients">-->
+<!--            <slider :slidesData="clients"/>-->
+<!--        </div>-->
+
+<!--        <quote :text="$t(`home.telemarketers`)" cssClass="is-gradient"/>-->
+
+<!--        <div class="section&#45;&#45;telemarketers lh-0">-->
+<!--        <div class="section&#45;&#45;telemarketers__wrapper lh-0">-->
+
+<!--            <img src="@/assets/images/backgrounds/movements_marketing_telemarketers.jpg" alt="Movements Marketing Telemarketers">-->
+<!--        </div>-->
+<!--        </div>-->
+
+<!--        <div class="section-divider section-divider&#45;&#45;green"></div>-->
 
         <movements-footer/>
     </div>
@@ -338,6 +338,16 @@
           contactBg: '',
       };
 
+    dots = require('@/assets/images/dots-green.png');
+    connectIcon = require('@/assets/images/contact-connect.png');
+
+    isElementInViewport = {
+      values: false,
+      testimonials: false,
+      partnerships: false,
+      contact: false,
+    }
+
     get coverData(){
       return {
         img: require('@/assets/images/movements-marketing-cover.png'),
@@ -345,9 +355,6 @@
         subtitle: this.$t(`home.subtitle`),
       };
     }
-
-    dots = require('@/assets/images/dots-green.png');
-    connectIcon = require('@/assets/images/contact-connect.png');
 
     get routesTranslated() {
       if(this.$i18n.locale === 'nl') {
@@ -403,90 +410,6 @@
         require('@/assets/images/clients/abc_display.png'),
       ]
     }
-
-
-
-
-
-
-
-
-      get clients() {
-        return [
-          {
-            name: 'Scorito',
-            text: this.$t(`home.clients.scorito.text`),
-            img: require('@/assets/images/clients/scorito.png'),
-            logo: require('@/assets/images/clients/scorito.png'),
-          },
-          {
-            name: 'Dak',
-            text: this.$t(`home.clients.dak.text`),
-            img: require('@/assets/images/clients/dak.png'),
-            logo: require('@/assets/images/clients/dak.png'),
-          },
-          {
-            name: 'Shypple',
-            text: this.$t(`home.clients.shypple.text`),
-            img: require('@/assets/images/clients/shypple.png'),
-            logo: require('@/assets/images/clients/shypple.png'),
-          },
-        ];
-      }
-
-      get servicesOld() {
-        return  {
-          outbound: [
-            {
-              name: this.$t(`navigation.servicesOptions.telemarketing`),
-              url: '/service/b2b-telemarketing',
-              src: require('@/assets/images/services/icons/b2b_telemarketing.png'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.leadGeneration`),
-              url: '/service/b2b-telemarketing',
-              src: require('@/assets/images/services/icons/lead_generation.webp'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.newAppointments`),
-              url: '/service/b2b-telemarketing',
-              src: require('@/assets/images/services/icons/new_appointments.webp'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.dataEnrichment`),
-              url: '/service/b2b-telemarketing',
-              src: require('@/assets/images/services/icons/data_enrichment.webp'),
-            },
-          ],
-          inbound: [
-            {
-              name: this.$t(`navigation.servicesOptions.customerService`),
-              url: '/service/customer-service',
-              src: require('@/assets/images/services/icons/customer_service.png'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.answeringService`),
-              url: '/service/answering-service',
-              src: require('@/assets/images/services/icons/answering_service.png'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.liveChat`),
-              url: '/service/live-chat',
-              src: require('@/assets/images/services/icons/live_chat.png'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.emailManagement`),
-              url: '/service/email-management',
-              src: require('@/assets/images/services/icons/email_management.png'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.socialWebcare`),
-              url: '/service/social-webcare',
-              src: require('@/assets/images/services/icons/social_webcare.png'),
-            },
-          ],
-        };
-      }
 
       activeOfficeIndex = 0;
 
@@ -546,14 +469,50 @@
     //   }
     // }
 
-      created() {
-          this.images.coverBg = require('@/assets/images/backgrounds/movements_call-center_bg.png');
-          this.images.contactBg = require('@/assets/images/backgrounds/movemens_contact_bg.png');
-      }
+    handleScroll() {
+      // @ts-ignore
+      const element = this.$router.history.current?.meta?.element;
 
-      mounted () {
-         this.scrollToAnchor();
-      }
+      setTimeout(() => {
+        // @ts-ignore
+        if(element && !this.isElementInViewport[element.substring(1)]) {
+          // @ts-ignore
+          const pathArray = this.$router.history.current.fullPath.split('/');
+          pathArray.pop();
+
+          const state = { isRouterChange: true };
+          window.history.pushState(state, '',  '/');
+        }
+      }, 1000)
+    }
+
+    mounted() {
+      this.scrollToAnchor();
+
+      window.addEventListener('scroll', this.handleScroll);
+
+      const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const elementId = entry.target.id;
+              this.$set(this.isElementInViewport, elementId, entry.isIntersecting);
+            });
+          },
+          {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2,
+          }
+      );
+
+      Object.keys(this.isElementInViewport).forEach(elementId => {
+        const targetElement = document.getElementById(elementId);
+
+        if (targetElement) {
+          observer.observe(targetElement);
+        }
+      });
+    }
 
       updated () {
         this.scrollToAnchor();

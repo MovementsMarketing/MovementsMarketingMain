@@ -46,7 +46,7 @@
   .forward-slide-enter, .forward-slide-leave-to,
   .backward-slide-enter, .backward-slide-leave-to {
     max-height: unset;
-    animation-duration: 1000ms;
+    animation-duration: 600ms;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
   }
@@ -64,7 +64,7 @@
     transform: translateX(80vw);
     max-height: unset;
     opacity: 0;
-    animation-duration: 800ms;
+    animation-duration: 600ms;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     // animation-delay: 1000ms;

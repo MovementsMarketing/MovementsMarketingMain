@@ -1,5 +1,5 @@
 <template>
-    <div class="navigation__item navigation__dropdown" :class="{'is-active': isActive, 'is-mobile': isMobile}" @click="isActive = !isActive" @mouseleave="onMouseLeave">
+    <div class="navigation__item navigation__dropdown" :class="{'is-active': isActive, 'is-mobile': isMobile}" @click="handleClick" @mouseleave="onMouseLeave">
       <span class="navigation__dropdown__title">
         <slot name="title"></slot>
           <span class="m-l-5 is-flex is-align-items-center">
@@ -34,6 +34,14 @@ class NavigationDropdown extends Vue {
     this.isActive = false;
   }
 
+  handleClick() {
+    this.isActive = !this.isActive;
+
+    if(this.isActive) {
+      this.$emit('navigationDropdown:open')
+    }
+  }
+
   onMouseLeave() {
     if(this.isFullWidth) return;
 
@@ -56,7 +64,7 @@ export default NavigationDropdown;
       height: auto;
       width: 100%;
       flex-direction: column;
-      border-radius: 0 0 80px 0;
+      border-radius: 0 0 60px 0;
     }
   }
 
@@ -83,13 +91,13 @@ export default NavigationDropdown;
     left: 0;
     top: 120px;
     padding: 40px 40px 40px 20px;
-    border-radius: 0 0 80px 0;
+    border-radius: 0 0 60px 0;
     text-align: left;
     line-height: 18px;
     box-shadow: 0 4px 4px 0 rgba(157, 172, 167, 0.3);
 
     &.is-right {
-      border-radius: 0 0 0 80px;
+      border-radius: 0 0 0 60px;
     }
 
     &.is-fullwidth {

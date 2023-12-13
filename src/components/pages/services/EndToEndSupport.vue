@@ -39,8 +39,8 @@
           :title="$t(`services.endToEnd.contact.title`)"
           :subtitle="$t(`services.endToEnd.contact.subtitle`)"
           :text="$t(`services.endToEnd.contact.text`)"
-          form-name="customerExperience"
-          service-type="customerExperience"/>
+          form-name="endToEnd"
+          service-type="endToEnd"/>
     </div>
 
     <movements-footer/>
@@ -93,7 +93,7 @@
 
     get coverData(){
       return {
-        img: require('@/assets/images/movements-marketing-cover.png'),
+        img: require('@/assets/images/services/end_to_end/end-to-end-cover.png'),
         title: this.$t(`services.endToEnd.cover.title`),
         subtitle: this.$t(`services.endToEnd.cover.subtitle`),
         cta: this.$t(`services.endToEnd.cover.cta`),
@@ -173,17 +173,20 @@
 
 
     handleScroll() {
+      // @ts-ignore
       const element = this.$router.history.current?.meta?.element;
 
       setTimeout(() => {
+        // @ts-ignore
         if(element && !this.isElementInViewport[element.substring(1)]) {
+          // @ts-ignore
           const pathArray = this.$router.history.current.fullPath.split('/');
           pathArray.pop();
 
           const state = { isRouterChange: true };
           window.history.pushState(state, '',  pathArray.join('/'));
         }
-      }, 800)
+      }, 1200)
     }
 
 
@@ -222,33 +225,6 @@
           observer.observe(targetElement);
         }
       });
-
-      // Object.keys(this.isElementInViewport).forEach(k => {
-      //   const elementId = k; // Replace with your element ID
-      //
-      //   const observer = new IntersectionObserver(
-      //       (entries) => {
-      //         entries.forEach((entry) => {
-      //           if (entry.isIntersecting) {
-      //             this.isElementInViewport[k] = true;
-      //           } else {
-      //             this.isElementInViewport[k] = false;
-      //           }
-      //         });
-      //       },
-      //       {
-      //         root: null, // Use the viewport as the root
-      //         rootMargin: '0px', // No margin
-      //         threshold: 0.2, // Trigger when 50% of the element is in the viewport
-      //       }
-      //   );
-      //
-      //   const targetElement = document.getElementById(elementId);
-      //
-      //   if (targetElement) {
-      //     observer.observe(targetElement);
-      //   }
-      // })
     }
 
 

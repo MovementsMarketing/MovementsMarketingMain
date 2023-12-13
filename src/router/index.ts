@@ -13,6 +13,7 @@ import PrivacyPolicy from "@/components/pages/PrivacyPolicy.vue";
 import GeneralTerms from "@/components/pages/GeneralTerms.vue";
 import CustomerExperience from "@/components/pages/services/CustomerExperience.vue";
 import EndToEndSupport from "@/components/pages/services/EndToEndSupport.vue";
+import Team from "@/components/pages/Team.vue";
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,33 @@ export default new VueRouter({
       path: '/general-terms',
       name: 'GeneralTerms',
       component: GeneralTerms,
+    },
+
+      //PARTNERSHIPS
+
+    {
+      path: '/partnerships',
+      name: 'Home-partnerships',
+      component: Home,
+      meta: {element: '#partnerships'}
+    },
+
+      //TESTIMONIALS
+
+    {
+      path: '/testimonials',
+      name: 'Home-testimonials',
+      component: Home,
+      meta: {element: '#testimonials'}
+    },
+
+      //VALUES
+
+    {
+      path: '/values',
+      name: 'Home-values',
+      component: Home,
+      meta: {element: '#values'}
     },
 
     //Translations and redirects: ABOUT
@@ -139,6 +167,12 @@ export default new VueRouter({
       component: Careers,
     },
 
+    {
+      path: '/team',
+      name: 'Team',
+      component: Team,
+    },
+
       //ANSWERING SERVICE
     {
       path: '/customer-experience',
@@ -219,6 +253,31 @@ export default new VueRouter({
       component: CustomerExperience,
       meta: {element: '#getStarted'}
     },
+    {
+      path: '/customer-experience/engagementStrategy',
+      name: 'CustomerExperience-engagementStrategy',
+      component: CustomerExperience,
+      meta: {element: '#engagementStrategy'}
+    },
+    {
+      path: '/customer-experience/telephoneCustomerCare',
+      name: 'CustomerExperience-telephoneCustomerCare',
+      component: CustomerExperience,
+      meta: {element: '#telephoneCustomerCare'}
+    },
+    {
+      path: '/customer-experience/appointmentOptimization',
+      name: 'CustomerExperience-appointmentOptimization',
+      component: CustomerExperience,
+      meta: {element: '#appointmentOptimization'}
+    },
+    {
+      path: '/customer-experience/aiVoicebot',
+      name: 'EndToEnd-aiVoicebot',
+      component: CustomerExperience,
+      meta: {element: '#aiVoicebot'}
+    },
+
 
       //END to END SERVICE
     {

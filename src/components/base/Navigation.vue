@@ -27,25 +27,25 @@
                         </span>
                         <span class="services-suboption">
 <!--                          todo route-->
-                             <router-link :to="routes.customer" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.customerExperienceEngagementStrategy" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.engagementStrategy`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
 <!--                          todo route-->
-                             <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.customerExperienceTelephoneCustomerCare" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.telephoneCustomerCare`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
 <!--                          todo route-->
-                             <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.customerExperienceAppointmentOptimization" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.appointmentOptimization`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
 <!--                          todo route-->
-                             <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                             <router-link :to="routes.customerExperienceAiVoicebot" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.aiAssistant`) }}
                              </router-link>
                         </span>
@@ -81,29 +81,7 @@
                   </template>
                 </navigation-dropdown>
 
-                <navigation-dropdown>
-                  <template v-slot:title>
-                    <span>
-                      {{ $t(`navigation.about`) }}
-                    </span>
-                  </template>
-                  <template v-slot:content>
-                    <div class="m-b-30"  @click="isMobileActive=false">
-                      <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
-                        {{ $t(`navigation.clientsOptions.partnerships`) }}
-                      </router-link>
-                    </div>
-
-                    <div  @click="isMobileActive=false">
-                      <router-link :to="routes.clients">
-                        {{ $t(`navigation.clientsOptions.stories`) }}
-                      </router-link>
-                    </div>
-
-                  </template>
-                </navigation-dropdown>
-
-                <navigation-dropdown>
+                <navigation-dropdown @navigationDropdown:open="onMouseLeave">
                   <template v-slot:title>
                     <span>
                       {{ $t(`navigation.clients`) }}
@@ -111,14 +89,36 @@
                   </template>
                   <template v-slot:content>
                     <div class="m-b-30"  @click="isMobileActive=false">
-                      <router-link :to="routes.clients" class="m-b-10" @click="isMobileActive=false">
+                      <router-link :to="routes.partnerships" class="m-b-10" @click="isMobileActive=false">
                         {{ $t(`navigation.clientsOptions.partnerships`) }}
                       </router-link>
                     </div>
 
                     <div  @click="isMobileActive=false">
-                      <router-link :to="routes.clients">
+                      <router-link :to="routes.testimonials">
                         {{ $t(`navigation.clientsOptions.stories`) }}
+                      </router-link>
+                    </div>
+
+                  </template>
+                </navigation-dropdown>
+
+                <navigation-dropdown @navigationDropdown:open="onMouseLeave">
+                  <template v-slot:title>
+                    <span>
+                      {{ $t(`navigation.about`) }}
+                    </span>
+                  </template>
+                  <template v-slot:content>
+                    <div class="m-b-30"  @click="isMobileActive=false">
+                      <router-link :to="routes.values" class="m-b-10" @click="isMobileActive=false">
+                        {{ $t(`navigation.aboutOptions.ourValues`) }}
+                      </router-link>
+                    </div>
+
+                    <div  @click="isMobileActive=false">
+                      <router-link :to="routes.team">
+                        {{ $t(`navigation.aboutOptions.ourTeam`) }}
                       </router-link>
                     </div>
 
@@ -297,7 +297,8 @@
 
       onMouseLeave() {
           this.fullWidthDropdowns.forEach(d => {
-            this.$refs[d].close();
+            // @ts-ignore
+            this.$refs[d]?.close();
           })
       }
 
@@ -327,7 +328,15 @@
             return {
               home: '/',
               about: '/over-ons',
+              partnerships: `/partnerships`,
+              testimonials: `/testimonials`,
+              values: `/values`,
+              team: `/team`,
               customerExperience: '/customer-experience/',
+              customerExperienceEngagementStrategy: '/customer-experience/engagementStrategy',
+              customerExperienceTelephoneCustomerCare: '/customer-experience/telephoneCustomerCare',
+              customerExperienceAppointmentOptimization: '/customer-experience/appointmentOptimization',
+              customerExperienceAiVoicebot: '/customer-experience/aiVoicebot',
               endToEnd: '/end-to-end-sales-support/',
               endToEndEngagementStrategy: '/end-to-end-sales-support/engagementStrategy',
               endToEndDataEnrichment: '/end-to-end-sales-support/dataEnrichment',
@@ -350,7 +359,15 @@
             return {
               home: '/',
               about: '/uber-uns',
+              partnerships: `/partnerships`,
+              testimonials: `/testimonials`,
+              values: `/values`,
+              team: `/team`,
               customerExperience: '/customer-experience/',
+              customerExperienceEngagementStrategy: '/customer-experience/engagementStrategy',
+              customerExperienceTelephoneCustomerCare: '/customer-experience/telephoneCustomerCare',
+              customerExperienceAppointmentOptimization: '/customer-experience/appointmentOptimization',
+              customerExperienceAiVoicebot: '/customer-experience/aiVoicebot',
               endToEnd: '/end-to-end-sales-support/',
               endToEndEngagementStrategy: '/end-to-end-sales-support/engagementStrategy',
               endToEndDataEnrichment: '/end-to-end-sales-support/dataEnrichment',
@@ -373,7 +390,15 @@
             return {
               home: '/',
               about: '/about',
+              partnerships: `/partnerships`,
+              testimonials: `/testimonials`,
+              values: `/values`,
+              team: `/team`,
               customerExperience: '/customer-experience/',
+              customerExperienceEngagementStrategy: '/customer-experience/engagementStrategy',
+              customerExperienceTelephoneCustomerCare: '/customer-experience/telephoneCustomerCare',
+              customerExperienceAppointmentOptimization: '/customer-experience/appointmentOptimization',
+              customerExperienceAiVoicebot: '/customer-experience/aiVoicebot',
               endToEnd: '/end-to-end-sales-support/',
               endToEndEngagementStrategy: '/end-to-end-sales-support/engagementStrategy',
               endToEndDataEnrichment: '/end-to-end-sales-support/dataEnrichment',

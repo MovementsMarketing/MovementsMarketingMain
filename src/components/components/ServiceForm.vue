@@ -3,9 +3,9 @@
     <div class="contact__title">
       <h2 v-html="title" class="has-line-center"></h2>
     </div>
-    <div class="section__content has-text-centered">
+    <div class=" has-text-centered">
 
-      <div class="is-relative">
+      <div class="is-relative form__wrapper">
         <img :src="dots" :class="{'dots': true}">
 
         <div class="contact__form is-relative">
@@ -90,6 +90,12 @@
 
 <style lang="scss">
 .service-form {
+
+  .form__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .dots {
     position: absolute;
     left: -100px;

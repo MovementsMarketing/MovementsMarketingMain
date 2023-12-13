@@ -10,6 +10,11 @@
   padding: 12px 12px 12px 20px;
   transition: all ease 300ms;
 
+  .text {
+    text-wrap: wrap;
+    line-height: 24px;
+  }
+
   .icon-wrapper {
     .vue-icon__wrapper {
       margin-left: 10px;
