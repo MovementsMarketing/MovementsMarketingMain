@@ -10,7 +10,7 @@
       <p v-html="$t(`ourTeam.team.text`)" class=""></p>
     </div>
 
-    <div class="has-padding team__members columns is-multiline">
+    <div class="has-padding team__members columns is-multiline m-b-30">
       <div v-for="member in teamMembers" :key="member.name" class="member column is-6-tablet is-3-desktop">
         <div class="member__info">
           <img :src="member.img" class="member__photo"/>
@@ -23,7 +23,7 @@
     </div>
 
 
-    <movements-footer/>
+    <movements-footer is-gray="true"/>
 
   </div>
 
@@ -154,7 +154,7 @@ $border-radius-small: 40px;
       align-items: center;
       justify-content: center;
       margin-top: -40px;
-      transition: all 400ms ease;
+      transition: all 500ms ease;
       height: 485px;
 
       @media screen  and (max-width: 768px) {
@@ -188,7 +188,7 @@ $border-radius-small: 40px;
           border-radius: $border-radius 0 $border-radius 0;
           width: 100%;
           max-width: 300px;
-          transition: all 400ms ease;
+          transition: all 250ms ease;
 
           @media screen  and (max-width: 768px) {
             border-radius: $border-radius-small 0 $border-radius-small 0;

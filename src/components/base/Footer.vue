@@ -1,5 +1,5 @@
 <template>
-  <div class="is-white">
+  <div :class=" isGray ? 'is-gray' : 'is-white'">
     <div class="footer footer--movements">
       <div class="columns is-multiline footer__content is-align-items-center">
 
@@ -105,10 +105,13 @@
 
 <script lang="ts">
   import Vue from 'vue';
-  import { Component } from 'vue-property-decorator';
+  import {Component, Prop} from 'vue-property-decorator';
 
   @Component
   class Footer extends Vue {
+    @Prop({default: false})
+    isGray: boolean;
+
     get policyLink() {
       return this.$i18n.locale === 'nl' ? 'https://drive.google.com/file/d/1vXHSUX6ixFlZud2xzOfZpWmKQRAA3tgB/view' : 'https://drive.google.com/file/d/13JrSBecSq-rMm0diCgUAUUkID1yI6_Vk/view';
     }

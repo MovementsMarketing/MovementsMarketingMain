@@ -81,7 +81,7 @@
                   </template>
                 </navigation-dropdown>
 
-                <navigation-dropdown @navigationDropdown:open="onMouseLeave">
+                <navigation-dropdown  @navigationDropdown:open="onMouseLeave">
                   <template v-slot:title>
                     <span>
                       {{ $t(`navigation.clients`) }}
@@ -328,9 +328,9 @@
             return {
               home: '/',
               about: '/over-ons',
-              partnerships: `/partnerships`,
-              testimonials: `/testimonials`,
-              values: `/values`,
+              partnerships: `/clients/our-partnerships`,
+              testimonials: `/clients/client-success-stories`,
+              values: `/about-us/our-values`,
               team: `/team`,
               customerExperience: '/customer-experience/',
               customerExperienceEngagementStrategy: '/customer-experience/engagementStrategy',
@@ -359,9 +359,9 @@
             return {
               home: '/',
               about: '/uber-uns',
-              partnerships: `/partnerships`,
-              testimonials: `/testimonials`,
-              values: `/values`,
+              partnerships: `/clients/our-partnerships`,
+              testimonials: `/clients/client-success-stories`,
+              values: `/about-us/our-values`,
               team: `/team`,
               customerExperience: '/customer-experience/',
               customerExperienceEngagementStrategy: '/customer-experience/engagementStrategy',
@@ -390,9 +390,9 @@
             return {
               home: '/',
               about: '/about',
-              partnerships: `/partnerships`,
-              testimonials: `/testimonials`,
-              values: `/values`,
+              partnerships: `/clients/our-partnerships`,
+              testimonials: `/clients/client-success-stories`,
+              values: `/about-us/our-values`,
               team: `/team`,
               customerExperience: '/customer-experience/',
               customerExperienceEngagementStrategy: '/customer-experience/engagementStrategy',

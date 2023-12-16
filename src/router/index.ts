@@ -40,7 +40,7 @@ export default new VueRouter({
       //PARTNERSHIPS
 
     {
-      path: '/partnerships',
+      path: '/clients/our-partnerships',
       name: 'Home-partnerships',
       component: Home,
       meta: {element: '#partnerships'}
@@ -49,7 +49,7 @@ export default new VueRouter({
       //TESTIMONIALS
 
     {
-      path: '/testimonials',
+      path: '/clients/client-success-stories',
       name: 'Home-testimonials',
       component: Home,
       meta: {element: '#testimonials'}
@@ -58,7 +58,7 @@ export default new VueRouter({
       //VALUES
 
     {
-      path: '/values',
+      path: '/about-us/our-values',
       name: 'Home-values',
       component: Home,
       meta: {element: '#values'}

@@ -316,6 +316,7 @@
   import LearnMore from "@/components/components/LearnMore.vue";
   import Testimonials from "@/components/components/Testimonials.vue";
   import Values from "@/components/components/Values.vue";
+  import _ from 'lodash';
 
   @Component({
     components: {
@@ -340,6 +341,8 @@
 
     dots = require('@/assets/images/dots-green.png');
     connectIcon = require('@/assets/images/contact-connect.png');
+
+    debouncedHandleScroll = _.debounce(this.handleScroll, 1200);
 
     isElementInViewport = {
       values: false,
@@ -477,19 +480,19 @@
         // @ts-ignore
         if(element && !this.isElementInViewport[element.substring(1)]) {
           // @ts-ignore
-          const pathArray = this.$router.history.current.fullPath.split('/');
-          pathArray.pop();
+          // const pathArray = this.$router.history.current.fullPath.split('/');
+          // pathArray.pop();
 
           const state = { isRouterChange: true };
           window.history.pushState(state, '',  '/');
         }
-      }, 1000)
+      }, 200)
     }
 
     mounted() {
       this.scrollToAnchor();
 
-      window.addEventListener('scroll', this.handleScroll);
+      window.addEventListener('scroll', this.debouncedHandleScroll);
 
       const observer = new IntersectionObserver(
           (entries) => {
@@ -512,6 +515,10 @@
           observer.observe(targetElement);
         }
       });
+    }
+
+    beforeDestroy() {
+      window.removeEventListener('scroll', this.debouncedHandleScroll);
     }
 
       updated () {

@@ -62,6 +62,7 @@
   import ServiceBlock from "@/components/components/ServiceBlock.vue";
   import LearnMore from "@/components/components/LearnMore.vue";
   import CaseStudies from "@/components/components/CaseStudies.vue";
+  import _ from 'lodash';
 
   @Component({
     components: {
@@ -82,6 +83,8 @@
 
 
     dots = require('@/assets/images/dots-green.png');
+    debouncedHandleScroll = _.debounce(this.handleScroll, 1200);
+
 
     isElementInViewport = {
       getStarted: false,
@@ -186,7 +189,7 @@
           const state = { isRouterChange: true };
           window.history.pushState(state, '',  pathArray.join('/'));
         }
-      }, 1200)
+      }, 200)
     }
 
 
@@ -202,7 +205,7 @@
     mounted() {
       this.scrollToAnchor();
 
-      window.addEventListener('scroll', this.handleScroll);
+      window.addEventListener('scroll', this.debouncedHandleScroll);
 
       const observer = new IntersectionObserver(
           (entries) => {
@@ -234,7 +237,7 @@
 
     // Remove the scroll event listener when the component is destroyed
     beforeDestroy() {
-      window.removeEventListener('scroll', this.handleScroll);
+      window.removeEventListener('scroll', this.debouncedHandleScroll);
     }
 
   }

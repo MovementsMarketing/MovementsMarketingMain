@@ -43,6 +43,10 @@ export default CoverVideo;
     align-items: center;
     justify-content: center;
 
+    video {
+      width: 100%;
+    }
+
     @media screen  and (max-width: 1024px) {
       min-height: unset;
       height: unset;
