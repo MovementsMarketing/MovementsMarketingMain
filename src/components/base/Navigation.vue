@@ -1,5 +1,5 @@
 <template>
-    <div class="navigation" :class="navBlurred && !isServicesActive ? 'is-blurred' : 'is-main'" @mouseleave="onMouseLeave">
+    <div class="navigation is-main" @mouseleave="onMouseLeave">
         <div class=" is-fullwidth" style="max-width: 2500px;" @mouseleave="isServicesActive = false">
             <div class="navigation__navbar navigation__navbar--desktop">
               <router-link to="/">
@@ -173,73 +173,73 @@
               </div>
 
             </div>
-          <div v-show="isServicesActive" class="section navigation__services-options">
-            <div class="columns m-0">
-              <div class="column is-6 navigation__services-options__option">
-                <div class="icon">
-                  <img src="@/assets/images/icons/services_icon_1.png"  alt="Movements Marketing Outbound Lead Generation"/>
-                </div>
-                <div class="divider"></div>
-                <div class="text">
-                  <router-link to="/outbound">
-                    <p class="title" @click="isServicesActive = !isServicesActive">
-                      {{ $t(`navigation.servicesOptions.outbound`) }}
-                    </p>
-                  </router-link>
-                  <div class="list" @click="isServicesActive = !isServicesActive">
-                    <router-link :to="routes.telemarketing">
-                      {{ $t(`navigation.servicesOptions.telemarketing`) }}
-                    </router-link>
-                    <router-link :to="routes.telemarketing">
-                      {{ $t(`navigation.servicesOptions.leadGeneration`) }}
-                    </router-link>
-                    <router-link :to="routes.telemarketing">
-                      <span v-html="$t(`navigation.servicesOptions.newAppointments`)">
-                      </span>
-                    </router-link>
-                    <router-link :to="routes.telemarketing">
-                      {{ $t(`navigation.servicesOptions.dataEnrichment`) }}
-                    </router-link>
-                  </div>
-                </div>
-              </div>
+<!--          <div v-show="isServicesActive" class="section navigation__services-options">-->
+<!--            <div class="columns m-0">-->
+<!--              <div class="column is-6 navigation__services-options__option">-->
+<!--                <div class="icon">-->
+<!--                  <img src="@/assets/images/icons/services_icon_1.png"  alt="Movements Marketing Outbound Lead Generation"/>-->
+<!--                </div>-->
+<!--                <div class="divider"></div>-->
+<!--                <div class="text">-->
+<!--                  <router-link to="/outbound">-->
+<!--                    <p class="title" @click="isServicesActive = !isServicesActive">-->
+<!--                      {{ $t(`navigation.servicesOptions.outbound`) }}-->
+<!--                    </p>-->
+<!--                  </router-link>-->
+<!--                  <div class="list" @click="isServicesActive = !isServicesActive">-->
+<!--                    <router-link :to="routes.telemarketing">-->
+<!--                      {{ $t(`navigation.servicesOptions.telemarketing`) }}-->
+<!--                    </router-link>-->
+<!--                    <router-link :to="routes.telemarketing">-->
+<!--                      {{ $t(`navigation.servicesOptions.leadGeneration`) }}-->
+<!--                    </router-link>-->
+<!--                    <router-link :to="routes.telemarketing">-->
+<!--                      <span v-html="$t(`navigation.servicesOptions.newAppointments`)">-->
+<!--                      </span>-->
+<!--                    </router-link>-->
+<!--                    <router-link :to="routes.telemarketing">-->
+<!--                      {{ $t(`navigation.servicesOptions.dataEnrichment`) }}-->
+<!--                    </router-link>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
 
-              <div class="column is-6 navigation__services-options__option">
-                <div class="icon">
-                  <img src="@/assets/images/icons/services_icon_2.png"  alt="Movements Marketing Inbound Customer Service"/>
-                </div>
-                <div class="divider">
+<!--              <div class="column is-6 navigation__services-options__option">-->
+<!--                <div class="icon">-->
+<!--                  <img src="@/assets/images/icons/services_icon_2.png"  alt="Movements Marketing Inbound Customer Service"/>-->
+<!--                </div>-->
+<!--                <div class="divider">-->
 
-                </div>
-                <div class="text">
-                  <router-link to="/inbound" @click="isServicesActive = !isServicesActive">
-                    <p class="title">
-                      {{ $t(`navigation.servicesOptions.inbound`) }}
-                    </p>
-                  </router-link>
-                  <div class="list" @click="isServicesActive = !isServicesActive">
-                    <router-link :to="routes.customer">
-                      {{ $t(`navigation.servicesOptions.customerService`) }}
-                    </router-link>
-                    <router-link :to="routes.answering">
-                      {{ $t(`navigation.servicesOptions.answeringService`) }}
-                    </router-link>
-                    <router-link :to="routes.liveChat">
-                      {{ $t(`navigation.servicesOptions.liveChat`) }}
-                    </router-link>
-                    <router-link :to="routes.email">
-                      {{ $t(`navigation.servicesOptions.emailManagement`) }}
-                    </router-link>
-                    <router-link :to="routes.webcare">
-                      {{ $t(`navigation.servicesOptions.socialWebcare`) }}
-                    </router-link>
-                  </div>
-                </div>
-              </div>
+<!--                </div>-->
+<!--                <div class="text">-->
+<!--                  <router-link to="/inbound" @click="isServicesActive = !isServicesActive">-->
+<!--                    <p class="title">-->
+<!--                      {{ $t(`navigation.servicesOptions.inbound`) }}-->
+<!--                    </p>-->
+<!--                  </router-link>-->
+<!--                  <div class="list" @click="isServicesActive = !isServicesActive">-->
+<!--                    <router-link :to="routes.customer">-->
+<!--                      {{ $t(`navigation.servicesOptions.customerService`) }}-->
+<!--                    </router-link>-->
+<!--                    <router-link :to="routes.answering">-->
+<!--                      {{ $t(`navigation.servicesOptions.answeringService`) }}-->
+<!--                    </router-link>-->
+<!--                    <router-link :to="routes.liveChat">-->
+<!--                      {{ $t(`navigation.servicesOptions.liveChat`) }}-->
+<!--                    </router-link>-->
+<!--                    <router-link :to="routes.email">-->
+<!--                      {{ $t(`navigation.servicesOptions.emailManagement`) }}-->
+<!--                    </router-link>-->
+<!--                    <router-link :to="routes.webcare">-->
+<!--                      {{ $t(`navigation.servicesOptions.socialWebcare`) }}-->
+<!--                    </router-link>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
 
-            </div>
+<!--            </div>-->
 
-          </div>
+<!--          </div>-->
         </div>
 
 
@@ -421,6 +421,8 @@
         }
 
         mounted() {
+          document.documentElement.style.overflow = "auto";
+
           if(this.$route.query.lang) {
             if(this.$route.query.lang.includes('nl')) {
               this.setLanguage('nl');
