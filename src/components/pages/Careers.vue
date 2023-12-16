@@ -4,7 +4,7 @@
 
     <cover :cover-image="coverData.img" :cover-title="coverData.title" :cover-subtitle="coverData.subtitle" :is-green="true">
       <template #cta>
-        <a href="routes.getStarted" target="_blank" class="button button--primary cover__cta">
+        <a href="https://app.healthboxhr.com/jobs-feed/web/company/63cf8f5f4fdd0" target="_blank" class="button button--primary cover__cta">
           <span class="text">
             {{ coverData.cta }}
           </span>
@@ -15,39 +15,6 @@
         </a>
       </template>
     </cover>
-
-<!--    <div class="section section&#45;&#45;positions has-bg-gray">-->
-<!--      <h2 class="positions__title" v-html="$t(`careers.positions.title`)"> </h2>-->
-
-<!--      <div class="section__content positions__open columns m-t-30 m-b-30 is-multiline">-->
-<!--        <div v-for="(position, index) in positions" :key="`position-${index}`" class="column is-6">-->
-<!--          <position :data="position"/>-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <p class="positions__copy" v-html="$t(`careers.positions.copy`)"></p>-->
-<!--    </div>-->
-
-<!--    <div class="section-divider"></div>-->
-
-<!--    <div class="section section&#45;&#45;offers">-->
-<!--      <h2 class="offers__title" v-html="$t(`careers.offers.title`)"> </h2>-->
-
-<!--      <div class="section__content offers__perks columns m-t-30 m-b-30 is-multiline">-->
-<!--        <div v-for="(perk, index) in perks" :key="`perk-${index}`" class="column is-4">-->
-<!--          <div class="perk">-->
-<!--            <div class="perk__icon">-->
-<!--              <img :src="perk.icon"/>-->
-
-<!--            </div>-->
-<!--            <div class="perk__name">-->
-<!--              <h5 v-text="perk.name" />-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--    </div>-->
 
     <div class="team__video-slider slider has-margin section is-relative">
             <transition :name="transitionName" mode="out-in">
@@ -68,49 +35,6 @@
         </div>
       </div>
     </div>
-
-<!--    <div class="section section&#45;&#45;careers-videos">-->
-<!--      <div class="is-hidden-touch">-->
-<!--        <carousel-3d :width="440" :height="330" :controls-visible="true" :clickable="true">-->
-<!--          <slide :index="0">-->
-<!--            <iframe width="440" height="330"-->
-<!--                    src="https://www.youtube.com/embed/3Fn8LbUXtuI">-->
-<!--            </iframe>-->
-<!--          </slide>-->
-<!--          <slide :index="1">-->
-<!--            <iframe width="440" height="330"-->
-<!--                    src="https://www.youtube.com/embed/tVIhRSCdb_0">-->
-<!--            </iframe>-->
-<!--          </slide>-->
-<!--          <slide :index="2">-->
-<!--            <iframe width="440" height="330"-->
-<!--                    src="https://www.youtube.com/embed/D2eLnglOQK0">-->
-<!--            </iframe>-->
-<!--          </slide>-->
-<!--          <slide :index="3">-->
-<!--            <iframe width="440" height="330"-->
-<!--                    src="https://www.youtube.com/embed/D1mI3ifIQ00">-->
-<!--            </iframe>-->
-<!--          </slide>-->
-<!--          <slide :index="4">-->
-<!--            <iframe width="440" height="330"-->
-<!--                    src="https://www.youtube.com/embed/hDnRNnOVSro">-->
-<!--            </iframe>-->
-<!--          </slide>-->
-<!--          <slide :index="5">-->
-<!--            <iframe width="440" height="330"-->
-<!--                    src="https://www.youtube.com/embed/aZHOEyUalNs">-->
-<!--            </iframe>-->
-<!--          </slide>-->
-<!--          <slide :index="6">-->
-<!--            <iframe width="440" height="330"-->
-<!--                    src="https://www.youtube.com/embed/sJodW2ex4SY">-->
-<!--            </iframe>-->
-<!--          </slide>-->
-<!--        </carousel-3d>-->
-<!--      </div>-->
-
-<!--    </div>-->
 
     <movements-footer/>
 

@@ -23,7 +23,7 @@
         </transition>
         <transition :name="transitionName" mode="out-in">
           <div :key="`testimonial__impact-${index}`" class="testimonial__impact" :class="`translation-${transitionName}`">
-            <h6 v-text="$t(`home.testimonials.impact`)"/>
+            <h6 class="is-highlighted" v-text="$t(`home.testimonials.impact`)"/>
             <ul v-html="data.impact"></ul>
           </div>
         </transition>

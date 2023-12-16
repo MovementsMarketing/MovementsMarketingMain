@@ -451,7 +451,7 @@ abgeschlossen, in der der Auftragsverarbeiter verpflichtet ist, alle Verpflichtu
 Datenschutzgesetz, der europäischen Datenschutzgrundverordnung und dieser
 Datenschutzrichtlinie einzuhalten.</p>
 <p class="">Wir geben personenbezogene Daten an Parteien außerhalb der EU weiter. Dies betrifft unsere
-Niederlassungen: Movements Marketing d.o.o, Sarajevo (Bosnien &amp; Herzegowina) und
+Niederlassungen: Movements Marketing d.o.o, Sarajevo (Bosnien & Herzegowina) und
 Movements SrL, Niederlassung Istanbul (Türkei).</p>`,
     },
     retention: {

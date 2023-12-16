@@ -43,7 +43,7 @@ const en = {
             'integration. Our promise is to support you in elevating your customer experience.',
       },
       endToEnd: {
-        title: 'End-to-end sales support',
+        title: 'End-to-end <span class="is-movements-green is-block">sales support</span>',
         text: 'Navigating the complexities of customer acquisition can be a challenge for many businesses. Our sales support\n' +
             'team isn\'t just another tool; they\'re an extension of your team. We\'re here to help you create meaningful\n' +
             'conversations that truly connect with your prospects. Our focus is on nurturing relationships, understanding\n' +
@@ -239,67 +239,11 @@ significant growth in market presence</li>`
       message: 'Message',
     },
     contactUs: 'Contact us',
-
-    // about: {
-    //   facts: {
-    //     qualitativeTelemarketing: 'Qualitative Telemarketing',
-    //     multilingualTelemarketers: 'Multilingual Telemarketers',
-    //     costEffectiveResults: 'Cost Effective Results',
-    //   },
-    //   aboutUs: {
-    //     aboutUs: 'About <span class="is-highlighted">Us</span>',
-    //     p1: 'Movements Marketing specializes in the field of <span class="has-text-weight-bold"> Outbound Lead Generation </span> and <span class="has-text-weight-bold"> Inbound Customer Service. </span> Creating valued contacts starts with optimizing and improving customer relationships. By offering qualitative B2B Telemarketing and a tailor-made Customer Service, Answering Service, Live Chat, Email Management, and Social Webcare, we realize your ambitions and help you achieve your commercial goals!',
-    //     p2: 'Our well-trained team works from our headquarters in Sarajevo and two other offices in Istanbul and Utrecht. Thanks to our multilingual telemarketers, professional communication and fruitful interaction are assured with ongoing cost-effective results. Our commitment to our clients\' success portrays our true ambitions. Therefore, we represent your business as one of you. And that\'s why: <span style="font-style: italic;"> we are only successful, if you are too! </span>',
-    //   }
-    // },
-    // numbers: {
-    //   ourNumbers: 'Our Work <span class="is-highlighted">In Numbers</span>',
-    //   projects: 'Successful Projects',
-    //   languages: 'Spoken Languages',
-    //   offices: 'Worldwide Offices',
-    //   teams: 'International Teams',
-    //
-    // },
-    // quote: '“We are only successful, if you are too!”',
-    // services: {
-    //   outbound: {
-    //     title: 'Outbound <span class="is-highlighted"> Lead Generation </span>',
-    //     text: 'An agenda full of first-class appointments is the ultimate goal of every sales team and company. But how to generate high-value leads? Movements Marketing is an expert in <span class="is-highlighted"> B2B Telemarketing </span> and provides cold calling on behalf of your business. We put you in contact with potential customers you have in mind and plan appointments directly in the agenda of your sales team. And thanks to the desired leads pouring in, sales can focus on what they do best: closing deals. Besides helping you find new customers by <span class="is-highlighted"> making appointments</span>, we also <span class="is-highlighted"> schedule demos </span> and take care of <span class="is-highlighted"> data enrichment </span> to speed up the sales! ',
-    //     services: {
-    //       telemarketing: 'B2B Telemarketing'
-    //     }
-    //   },
-    //   inbound: {
-    //     title: 'Inbound <span class="is-highlighted">Customer Service</span>',
-    //     text: `If your employees must provide customer support while working on their other tasks, it's increasingly challenging to focus on getting the job done. And that's where Movements Marketing steps in! With our <span class="is-highlighted">Inbound Customer Service</span>, your company is optimally accessible, and no question remains unanswered. As the first point of contact for your customers, we provide high-quality <span class="is-highlighted">Customer Service, Answering Service, Live Chat, Email Management</span>, and <span class="is-highlighted">Social Webcare.</span> Handling incoming requests quickly and adequately is our top priority!`,
-    //     services: {
-    //     }
-    //   }
-    // },
-    // work: {
-    //   title: 'How We <span class="is-highlighted">Work Together</span>',
-    //   text: 'Understanding your criteria and goals is the first base for <span class="is-highlighted">long-term cooperation</span> and high customer satisfaction. By becoming familiar with your story through <span class="is-highlighted">knowledge-sharing</span>, we can communicate adequately with the target group and deliver the agreed targets. We do this, among other things, through a business plan and by offering <span class="is-highlighted">custom-built solutions</span>. And our permanent team of multilingual telemarketers makes sure everything runs smoothly!',
-    //   button: 'Download Freebies',
-    // },
-    // clients: {
-    //   ourClients: 'Our <span class="is-highlighted">Clients</span>',
-    //   scorito: {
-    //     text: "Scorito is Europe's number 1 platform for fantasy sports. It now has more than 1 million unique players. With the help of Movements Marketing, Scorito has managed to improve brand awareness and become internationally recognized, in addition to its established reputation in the Netherlands, Belgium, and Germany. Movements Marketing's multilingual team has added value to Scorito by generating leads, onboarding new customers, and providing multichannel customer service. In other words: we are completely unburdened. Movements Marketing knows how to create a personal bond with its contacts and to deliver tailor-made solutions while maintaining the desired quality.",
-    //   },
-    //   dak: {
-    //     text: 'DAK is the largest cooperative of and for insurance and mortgage advisers. We provide professional support and give consultancy firms access to almost the entire financial market. The collaboration with Movements Marketing started during the launch of DAK Autolease. With the introduction of this new service, we saw an opportunity to recruit more offices. This was achieved thanks to effective collaboration between our sales team and the people of Movements Marketing. We have now been working together for four years, and Movements Marketing team now also handles inbound activities for us in addition to outbound activities. We recommend Movements Marketing because of their personal commitment, short lines, and good results.',
-    //   },
-    //   shypple: {
-    //     text: 'Shypple is a digital forwarder for moving freight globally that manages and analyses supply chains in real-time. The collaboration with Movements Marketing dates back to when we were still a start-up. But even now as a scale-up they are in the picture to efficiently scale up our commercial reach, especially towards other countries. For us, Movements Marketing is a partner who thinks along, wants to continue to learn, and above all shows that it is willing to propagate the message in our own way. This performance is growing and that is partly due to the quick communication, regular evaluations, and training. Especially on these last two points, Movements Marketing distinguishes itself from other parties we have worked with.',
-    //   }
-    // },
-    // telemarketers: 'These Telemarketers Will <span class="is-highlighted">Uplift Your Business</span>',
-
   },
   services: {
     customerExperience: {
       cover: {
-        title: `Optimize your <span class="is-movements-green is-block">customer experience</span>`,
+        title: `Transform your <span class="is-movements-green is-block">customer experience</span>`,
         subtitle: `Strategic solutions designed to help you achieve your goals`,
         cta: `Get started now`,
       },
@@ -382,7 +326,7 @@ consistently. In addition, we also provide comprehensive follow-up support to ma
 customer relationships.`,
       },
       leadClosing: {
-        title: `Lead <span class="is-highlighted">closing</span>`,
+        title: `Lead <span class="is-movements-green">closing</span>`,
         text: `We focus on turning your leads into paying customers using persuasive negotiation and effective sales tactics. Our proven
 methods ensure that your new customers are on the right path to becoming loyal customers. Our dedicated team of sales
 professionals goes above and beyond to provide ongoing support and guidance to your new customers, ensuring a seamless
@@ -440,10 +384,7 @@ team is divided into Dutch-speaking and German-speaking specialists, catering to
 B2B sales support and lead generation. `,
     },
     members: {
-      member1: {
-        position: `Position`,
-        text: `Lorem ispum dolor sit gamet Lorem ipsum dolor sit gamet`,
-      }
+
     }
   },
   careers: {
@@ -538,7 +479,7 @@ we have signed a processing agreement in which the processor is obliged to compl
 obligations under the Personal Data Protection Act, the European General Data Protection
 Regulation, and this Privacy Policy.</p>
 <p class="">We provide personal data to parties located outside the EU. This concerns our branches:
-Movements Marketing d.o.o, Sarajevo (Bosnia &amp; Herzegovina) and Movements SrL, Istanbul
+Movements Marketing d.o.o, Sarajevo (Bosnia & Herzegovina) and Movements SrL, Istanbul
 (Turkey).</p>`,
     },
     retention: {
@@ -654,7 +595,6 @@ Protection Authority against our processing of your personal data. You can conta
 Data Protection Authority for this.`,
     },
   },
-
   generalTerms: generalTerms,
 
 };

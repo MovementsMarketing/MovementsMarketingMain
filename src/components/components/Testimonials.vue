@@ -42,88 +42,90 @@ class Testimonials extends Vue {
 
   direction = 'forward'
 
-  testimonials = [
-    {
-      cover: require('@/assets/images/testimonials/shypple.png'),
-      company: `Scorito`,
-      companyDescription: this.$t(`home.testimonials.scorito.companyDescription`),
-      quote: this.$t(`home.testimonials.scorito.quote`),
-      quotePerson: this.$t(`home.testimonials.scorito.quotePerson`),
-      impact: this.$t(`home.testimonials.scorito.impact`),
-    },
-    {
-      cover: require('@/assets/images/testimonials/shypple.png'),
-      company: `Dak`,
-      companyDescription: this.$t(`home.testimonials.dak.companyDescription`),
-      quote: this.$t(`home.testimonials.dak.quote`),
-      quotePerson: this.$t(`home.testimonials.dak.quotePerson`),
-      impact: this.$t(`home.testimonials.dak.impact`),
-    },
-    {
-      cover: require('@/assets/images/testimonials/shypple.png'),
-      company: `Shypple`,
-      companyDescription: this.$t(`home.testimonials.shypple.companyDescription`),
-      quote: this.$t(`home.testimonials.shypple.quote`),
-      quotePerson: this.$t(`home.testimonials.shypple.quotePerson`),
-      impact: this.$t(`home.testimonials.shypple.impact`),
-    },
-    {
-      cover: require('@/assets/images/testimonials/shypple.png'),
-      company: `ABC Display`,
-      companyDescription: this.$t(`home.testimonials.abcDisplay.companyDescription`),
-      quote: this.$t(`home.testimonials.abcDisplay.quote`),
-      quotePerson: this.$t(`home.testimonials.abcDisplay.quotePerson`),
-      impact: this.$t(`home.testimonials.abcDisplay.impact`),
-    },
-    {
-      cover: require('@/assets/images/testimonials/shypple.png'),
-      company: `Diagnost-IQ`,
-      companyDescription: this.$t(`home.testimonials.diagnost.companyDescription`),
-      quote: this.$t(`home.testimonials.diagnost.quote`),
-      quotePerson: this.$t(`home.testimonials.diagnost.quotePerson`),
-      impact: this.$t(`home.testimonials.diagnost.impact`),
-    },
-    {
-      cover: require('@/assets/images/testimonials/shypple.png'),
-      company: `Sazas`,
-      companyDescription: this.$t(`home.testimonials.sazas.companyDescription`),
-      quote: this.$t(`home.testimonials.sazas.quote`),
-      quotePerson: this.$t(`home.testimonials.sazas.quotePerson`),
-      impact: this.$t(`home.testimonials.sazas.impact`),
-    },
-    {
-      cover: require('@/assets/images/testimonials/shypple.png'),
-      company: `Cargoplot`,
-      companyDescription: this.$t(`home.testimonials.cargoplot.companyDescription`),
-      quote: this.$t(`home.testimonials.cargoplot.quote`),
-      quotePerson: this.$t(`home.testimonials.cargoplot.quotePerson`),
-      impact: this.$t(`home.testimonials.cargoplot.impact`),
-    },
-    {
-      cover: require('@/assets/images/testimonials/shypple.png'),
-      company: `Oct8ne`,
-      companyDescription: this.$t(`home.testimonials.oct8ne.companyDescription`),
-      quote: this.$t(`home.testimonials.oct8ne.quote`),
-      quotePerson: this.$t(`home.testimonials.oct8ne.quotePerson`),
-      impact: this.$t(`home.testimonials.oct8ne.impact`),
-    },
-    {
-      cover: require('@/assets/images/testimonials/shypple.png'),
-      company: `X2com`,
-      companyDescription: this.$t(`home.testimonials.x2com.companyDescription`),
-      quote: this.$t(`home.testimonials.x2com.quote`),
-      quotePerson: this.$t(`home.testimonials.x2com.quotePerson`),
-      impact: this.$t(`home.testimonials.x2com.impact`),
-    },
-    {
-      cover: require('@/assets/images/testimonials/shypple.png'),
-      company: `Trans.eu`,
-      companyDescription: this.$t(`home.testimonials.trans.companyDescription`),
-      quote: this.$t(`home.testimonials.trans.quote`),
-      quotePerson: this.$t(`home.testimonials.trans.quotePerson`),
-      impact: this.$t(`home.testimonials.trans.impact`),
-    }
-  ];
+  get testimonials() {
+    return [
+      {
+        cover: require('@/assets/images/testimonials/scorito.png'),
+        company: `Scorito`,
+        companyDescription: this.$t(`home.testimonials.scorito.companyDescription`),
+        quote: this.$t(`home.testimonials.scorito.quote`),
+        quotePerson: this.$t(`home.testimonials.scorito.quotePerson`),
+        impact: this.$t(`home.testimonials.scorito.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/dak.png'),
+        company: `Dak`,
+        companyDescription: this.$t(`home.testimonials.dak.companyDescription`),
+        quote: this.$t(`home.testimonials.dak.quote`),
+        quotePerson: this.$t(`home.testimonials.dak.quotePerson`),
+        impact: this.$t(`home.testimonials.dak.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/shypple.png'),
+        company: `Shypple`,
+        companyDescription: this.$t(`home.testimonials.shypple.companyDescription`),
+        quote: this.$t(`home.testimonials.shypple.quote`),
+        quotePerson: this.$t(`home.testimonials.shypple.quotePerson`),
+        impact: this.$t(`home.testimonials.shypple.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/abc-display.png'),
+        company: `ABC Display`,
+        companyDescription: this.$t(`home.testimonials.abcDisplay.companyDescription`),
+        quote: this.$t(`home.testimonials.abcDisplay.quote`),
+        quotePerson: this.$t(`home.testimonials.abcDisplay.quotePerson`),
+        impact: this.$t(`home.testimonials.abcDisplay.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/diagnost.png'),
+        company: `Diagnost-IQ`,
+        companyDescription: this.$t(`home.testimonials.diagnost.companyDescription`),
+        quote: this.$t(`home.testimonials.diagnost.quote`),
+        quotePerson: this.$t(`home.testimonials.diagnost.quotePerson`),
+        impact: this.$t(`home.testimonials.diagnost.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/sazas.png'),
+        company: `Sazas`,
+        companyDescription: this.$t(`home.testimonials.sazas.companyDescription`),
+        quote: this.$t(`home.testimonials.sazas.quote`),
+        quotePerson: this.$t(`home.testimonials.sazas.quotePerson`),
+        impact: this.$t(`home.testimonials.sazas.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/cargoplot.png'),
+        company: `Cargoplot`,
+        companyDescription: this.$t(`home.testimonials.cargoplot.companyDescription`),
+        quote: this.$t(`home.testimonials.cargoplot.quote`),
+        quotePerson: this.$t(`home.testimonials.cargoplot.quotePerson`),
+        impact: this.$t(`home.testimonials.cargoplot.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/oct8ne.png'),
+        company: `Oct8ne`,
+        companyDescription: this.$t(`home.testimonials.oct8ne.companyDescription`),
+        quote: this.$t(`home.testimonials.oct8ne.quote`),
+        quotePerson: this.$t(`home.testimonials.oct8ne.quotePerson`),
+        impact: this.$t(`home.testimonials.oct8ne.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/x2com.png'),
+        company: `X2com`,
+        companyDescription: this.$t(`home.testimonials.x2com.companyDescription`),
+        quote: this.$t(`home.testimonials.x2com.quote`),
+        quotePerson: this.$t(`home.testimonials.x2com.quotePerson`),
+        impact: this.$t(`home.testimonials.x2com.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/trans.png'),
+        company: `Trans.eu`,
+        companyDescription: this.$t(`home.testimonials.trans.companyDescription`),
+        quote: this.$t(`home.testimonials.trans.quote`),
+        quotePerson: this.$t(`home.testimonials.trans.quotePerson`),
+        impact: this.$t(`home.testimonials.trans.impact`),
+      }
+    ];
+  }
 
   get transitionName() {
     return `${this.direction}-slide`

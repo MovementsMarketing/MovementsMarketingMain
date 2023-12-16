@@ -1,363 +1,451 @@
 import generalTerms from "@/constants/locales/generalTerms/nl";
 
 const nl = {
+  learnMore: 'Learn more',
+  connect: `Let's connect`,
+  contactUs: 'Neem contact op!',
   navigation: {
     about: 'Over ons',
-    services: 'Diensten',
-    clients: 'Klanten',
-    career: 'Careers',
-    contact: 'Contact',
-    contactUs: 'Neem contact op!',
-    linkedInBlogs: 'LinkedIn Blogs',
-    privacyPolicy: 'Privacybeleid',
+    services: 'Onze oplossingen',
+    clients: 'Onze klanten',
+    career: 'Werken bij',
+    privacyPolicy: 'Privacy policy',
+    clientsOptions: {
+      partnerships: 'Onze partnerships',
+      stories: 'Klant succesverhalen',
+    },
+    aboutOptions: {
+      ourValues: 'Onze waarden',
+      ourTeam: 'Ons team',
+    },
     servicesOptions: {
-      outbound: 'Outbound leadgeneratie',
-      inbound: 'Inbound klantenservice',
-      telemarketing: 'B2B Telemarketing',
-      leadGeneration: 'Leadgeneratie',
-      newAppointments: '<span class="no-wrap">New business</span> afspraken',
-      dataEnrichment: 'Dataverrijking',
-      customerService: 'Klantenservice',
-      answeringService: 'Telefoonservice',
-      liveChat: 'Live Chat',
-      emailManagement: 'Email Management',
-      socialWebcare: 'Social Webcare',
+      customerExperience: 'Customer experience',
+      endToEnd: 'End-to-end sales support',
+      engagementStrategy: 'Klantstrategie',
+      telephoneCustomerCare: 'End-to-end telefonische klantenservice',
+      appointmentOptimization: 'Afspraak optimalisatie oplossingen',
+      aiAssistant: 'AI Voicebot',
+      dataEnrichment: 'Data verrijking en kwalificatie',
+      leadGeneration: 'Leadgeneratie en leadopvolging',
+      leadClosing: 'Lead closing',
     }
   },
   home: {
-    title: 'New Business en tevreden klanten beginnen hier',
-    subtitle: 'Wij creëren en onderhouden langdurige klantrelaties!',
-    contactUs: 'Neem contact op!',
-    about: {
-      facts: {
-        qualitativeTelemarketing: 'Kwalitatieve telemarketing',
-        multilingualTelemarketers: 'Meertalige telemarketeers',
-        costEffectiveResults: 'Kostenefficiënte resultaten',
-      },
-      aboutUs: {
-        aboutUs: 'Over  <span class="is-highlighted">ons</span>',
-        p1: 'Movements Marketing is specialist op het gebied van <span class="has-text-weight-bold">Outbound leadgeneratie</span> en <span class="has-text-weight-bold">Inbound klantenservice</span>. Het creëren van gewaardeerde contactmomenten begint met het optimaliseren en verbeteren van de klantrelaties. Door kwalitatieve B2B-telemarketing en een op jouw klanten toegesneden Klantenservice, Telefoonservice, Live Chat, E-mailmanagement en Social Webcare, maken wij jouw ambities waar en helpen met het bereiken van jouw commerciële doelstellingen!',
-        p2: 'Ons goed getrainde team werkt vanuit ons hoofdkantoor in Sarajevo en twee andere vestigingen in Istanbul en Utrecht. Dankzij onze meertalige telemarketeers is een professionele communicatie en vruchtbare interactie verzekerd met blijvende, kosteneffectieve resultaten. Onze toewijding aan het succes van onze klanten, weergeeft onze ware ambities. Wij vertegenwoordigen jouw bedrijf dan ook als één van jullie. En daarom: <span style="font-style: italic;"> Alleen als jij succesvol bent, zijn wij het ook! </span>',
-      }
-    },
-    numbers: {
-      ourNumbers: 'Ons werk <span class="is-highlighted"> in cijfers</span>',
-      projects: 'Succesvolle projecten',
-      languages: 'Gesproken talen',
-      offices: 'Wereldwijde kantoren',
-      teams: 'Internationale teams',
-
-    },
-    quote: '“Alleen als jij succesvol bent, dan zijn wij het ook!”',
+    title: ' <span class="is-movements-green is-block">End-to-end oplossingen</span> voor customer experience en sales',
+    subtitle: 'Het perfectioneren van ieder contactmoment voor optimale resultaten',
     services: {
-      outbound: {
-        title: 'Outbound <span class="is-highlighted"> leadgeneratie </span>',
-        text: `Een agenda vol eersteklas afspraken is het ultieme doel van elk salesteam en bedrijf. Maar hoe genereer je hoogwaardige leads? Movements Marketing is expert in B2B Telemarketing en verzorgt cold calling namens jouw bedrijf. Wij brengen je in contact met potentiële klanten die jij voor ogen hebt en plannen afspraken direct in de agenda van jouw salesteam. Dankzij de gewenste leads die binnenstromen, kan sales zich concentreren op waar ze goed in zijn: het sluiten van deals. Naast het werven van nieuwe klanten, plannen wij ook <span class="is-highlighted">demo's</span> in en verzorgen eveneens <span class="is-highlighted">dataverrijking</span> om het salesproces te versnellen!`,
-        services: {
-          telemarketing: 'B2B Telemarketing'
-        }
+      customerExperience: {
+        title: '<span class="is-movements-green is-block">Customer</span> experience',
+        text: "In de snel veranderende wereld van vandaag kan het balanceren tussen klantenservice en dagelijkse operaties de\n" +
+            "focus en efficiëntie van je team aanzienlijk onder druk zetten. Wij richten ons op customer experience die de\n" +
+            "bereikbaarheid transformeert, zodat elke vraag een snelle respons krijgt. We zijn niet zomaar een\n" +
+            "klantenserviceteam; we zijn een verlengstuk van jouw merk, toegewijd aan het verbeteren van elke interactie:\n" +
+            "van telefonische klantenservice en intelligente afspraakoptimalisatie tot naadloze integratie met AI Voicebot.\n" +
+            "Onze belofte is om jou te ondersteunen bij het verhogen van de customer experience.",
       },
-      inbound: {
-        title: 'Inbound <span class="is-highlighted">klantenservice</span>',
-        text: 'Als jouw professionals klantondersteuning moeten bieden terwijl ze aan het werk zijn, wordt het een steeds grotere uitdaging om te focussen op hun eigenlijke werkzaamheden. Dat is het moment waar Movements Marketing om de hoek komt kijken. Want met onze <span class="is-highlighted"> Inbound klantenservice</span>, is jouw bedrijf optimaal bereikbaar en blijft geen vraag onbeantwoord. Als eerste aanspreekpunt voor jouw klanten, zorgen wij voor op-en-top <span class="is-highlighted">Klantenservice, Telefoonservice, Live Chat, E-mailmanagement</span> en <span class="is-highlighted">Social Webcare.</span> Het snel en adequaat afhandelen van inkomende klantvragen, is onze topprioriteit!',
-        services: {
-        }
-      }
+      endToEnd: {
+        title: 'End-to-end <span class="is-movements-green is-block">sales support</span>',
+        text: "Het interesseren en aantrekken van nieuwe klanten is een uitdaging voor veel bedrijven. Ons salesteam is niet\n" +
+            "zomaar een instrument; ze zijn het verlengstuk van jouw team. We zijn er om je te helpen betekenisvolle\n" +
+            "gesprekken te voeren die echt resoneren bij je potentiële klanten. Onze focus ligt op het koesteren van relaties,\n" +
+            "het begrijpen van de echte behoeften van potentiële klanten en het precies positioneren van jouw waarde\n" +
+            "waar het er het meest toe doet. Door onze expertise in klantstrategie, data-inzicht, B2B-leadgeneratie en meer,\n" +
+            "vullen we niet alleen je pijplijn - we breiden het uit met kansen.",
+      },
     },
-    work: {
-      title: '<span class="is-highlighted">Hoe wij samenwerken</span>',
-      text: 'Het begrijpen van jouw criteria en doelstellingen, is de eerste stap in een <span class="is-highlighted">langdurige samenwerking</span> en een hoge klanttevredenheid. Door het inleven in jouw bedrijf via <span class="is-highlighted">knowledge-sharing,</span> kunnen wij adequaat communiceren met de doelgroep en de afgesproken targets halen. Dit doen wij onder andere door een businessplan en <span class="is-highlighted">maatwerkoplossingen.</span> Ons vaste team van meertalige telemarketeers leidt vervolgens alles in goede banen!',
-      button: 'Download Freebies',
+    partnerships: {
+      partnerships: 'Onze partnerships',
     },
-    clients: {
-      ourClients: 'Onze <span class="is-highlighted">klanten</span>',
+    testimonials: {
+      title: `Wij koesteren vertrouwen en samenwerking`,
+      text: `Bij ons draait alles om het bouwen van goede klantrelaties. We vinden het belangrijk om echt samen
+te werken bij elke stap in de sales support en bij het verbeteren van de customer experience. Ons doel is een
+sfeer van wederzijds vertrouwen te creëren, zodat we effectief aan jouw behoeften kunnen voldoen.`,
+      impact: `Onze bijdrage`,
       scorito: {
-        text: 'Scorito is in Europa hét nummer 1 platform in fantasy sports. Het telt inmiddels meer dan 1 miljoen unieke spelers. Scorito heeft Movements Marketing ingezet om een internationale boost te genereren en om naast Nederland, ook in Belgie en Duitsland voor naamsbekendheid te zorgen. Het meertalige team van Movements Marketing is van toegevoegde waarde geweest voor Scorito door het genereren van leads, het onboarden van nieuwe klanten en het bieden van multichannel klantenservice. Oftewel: we zijn volledig ontzorgt. Movements Marketing weet een persoonlijke band te creëren met haar relaties en maatwerk te leveren met behoud van de gewenste kwaliteit.',
+        companyDescription: `Het # 1 platform voor “fantasy sports” in Europa,
+met meer dan 1 miljoen unieke spelers`,
+        quote: `"Movements Marketing weet als geen ander hoe
+een persoonlijke band met contacten te bouwen en
+op maat gemaakte oplossingen te leveren, waarbij
+altijd de hoogste kwaliteit wordt gehandhaafd."`,
+        quotePerson: `Martijn Vermunt, International Sales Director`,
+        impact: `<li>Actief bijdragen aan het verbeteren van de
+merkbekendheid van de klant en het bouwen van de
+commerciële relatie in Nederland en daarbuiten
+</li><li>Ons team voegt waarde toe door leads te
+genereren, nieuwe klanten te werven en
+klantenservice te bieden langs diverse kanalen.</li>`
       },
       dak: {
-        text: 'DAK is de grootste coöperatie van en voor assurantie- en hypotheekadviseurs. Wij zorgen voor professionele ondersteuning en geven advieskantoren toegang tot vrijwel de volledige financiële markt. De samenwerking met Movements Marketing startte tijdens de lancering van DAK Autolease. Met de introductie van deze nieuwe dienst zagen wij een kans om meer kantoren te werven. Dit is gelukt dankzij een effectieve samenwerking tussen ons salesteam en de mensen van Movements Marketing. Inmiddels werken we al vier jaar samen en pakken ze naast outbound activiteiten ook inbound werkzaamheden voor ons op. Wij bevelen Movements Marketing aan vanwege hun persoonlijke inzet, korte lijnen en goede resultaten.',
+        companyDescription: `De grootste coöperatie van verzekerings- en
+hypotheekadviseurs in Nederland`,
+        quote: `"In de meerdere jaren van samenwerking heeft
+het Movements Marketing-team naadloos
+samengewerkt met ons salesteam en behandelt
+nu zowel onze inkomende als uitgaande
+activiteiten. We bevelen hen aan vanwege hun
+voortdurende persoonlijke betrokkenheid, de
+korte communicatielijnen en de consequent
+goede resultaten.”`,
+        quotePerson: `Jean Paul Hoogmans, Manager Marketing & Sales Support`,
+        impact: `<li>Het bevorderen van een langdurig partnership
+</li><li>De klant geholpen bij het introduceren van
+nieuwe diensten en het werven van meer
+kantoren.</li>`
       },
       shypple: {
-        text: 'Shypple is een digitale expediteur voor het wereldwijd verplaatsen van vracht die supply chains in realtime beheert en analyseert. De samenwerking met Movements Marketing dateert al van de tijd dat we nog een startup waren. Maar ook nu als scale-up helpen zij ons commerciële bereik efficiënt op te schalen, ook richting andere landen. Movements Marketing is voor ons een partner die meedenkt, continu wil blijven leren en zich bovenal bereid toont de boodschap op onze wijze uit te dragen. Deze performance groeit en dat komt ook mede door de korte lijnen, regelmatige evaluaties en trainingen. Vooral op deze laatste twee punten onderscheid Movements Marketing zich ten opzichte van andere partijen waarmee wij gewerkt hebben.',
-      }
+        companyDescription: `Wereldwijd opererende digitale expediteur
+voor het vervoeren van goederen en het
+real-time beheren van toeleveringsketens`,
+        quote: `"Voor ons is Movements Marketing een
+partner die blijft leren, onze behoeften
+begrijpt en ze omzet in tastbare resultaten.
+Wat hen onderscheidt is snelle communicatie,
+regelmatige evaluaties en voortdurende
+training.“`,
+        quotePerson: `Michiel van Wandelen, Head of Sales`,
+        impact: `<li>Opbouwen van een voortdurende
+samenwerking met klanten, met de focus op
+continue wederzijdse groei
+</li><li>Een belangrijke en actieve rol gespeeld bij het
+internationaal opschalen van deze klant.</li>`
+      },
+      abcDisplay: {
+        companyDescription: `Een toonaangevende producent van mobiele
+presentatiesystemen voor aankoop en verhuur,
+met meer dan 40 jaar ervaring op de markt`,
+        quote: `"Movements Marketing is een uitzonderlijk team
+van professionals dat onze verwachtingen heeft
+overtroffen. Een van de meest indrukwekkende
+resultaten van onze samenwerking is het aantal
+demo-units dat we naar potentiële partners over
+de hele wereld konden sturen. Dit heeft niet
+alleen onze verkoopkansen vergroot, maar ook
+onze internationale aanwezigheid versterkt.”`,
+        quotePerson: `Cyrus Truijens, CEO`,
+        impact: `<li>Generatie van veel goede en kwalitatieve leads
+door doelgerichte telefonische campagnes, naast
+het vergroten van de bereikbaarheid
+</li><li>Het merk herkenbaarder gemaakt in de branche
+en nieuwe zakelijke kansen weten te creëren.</li>`
+      },
+      diagnost: {
+        companyDescription: `Medisch diagnostisch laboratorium in
+Nederland, regionaal marktleider, werkzaam
+voor en verbonden aan een ziekenhuis`,
+        quote: `"De samenwerking met Movements Marketing
+is gebaseerd op voortdurende open
+communicatie en volledige ondersteuning bij
+het ontwerpen van de volgende stap in
+dienstverlening, ook met het introduceren van
+de Voicebot integratie. Ze zijn een echte
+partner, diep betrokken bij het oplossen van
+alle uitdagingen die we tegenkomen."`,
+        quotePerson: `Coos Molenaar, Department Manager`,
+        impact: `<li>Realiseren van kortere gesprekstijden,
+verhoogde efficiency en verbeterde patiënt-
+ervaringen vanaf de allereerste dag van de
+samenwerking
+</li><li>Optimalisatie de totale call-flow van
+binnenkomende en doorverbonden gesprekken,
+en significante reductie van de kosten
+</li><li>Verbetering van het totale afsprakenproces,
+onder ander door de actieve klantbegeleiding.</li>`
+      },
+      sazas: {
+        companyDescription: `Specialistisch en vooraanstaand nationaal
+opererend bedrijf in Nederland op het gebied
+van verzuimpreventie`,
+        quote: `"Onze samenwerking met Movements
+Marketing is transformerend geweest. We
+hebben er een extra sales kanaal bijgekregen en
+een partner die met ons meedenkt. Het is een
+prettige ervaring, met consequent goede
+resultaten. We bevelen Movements Marketing
+aan vanwege hun veelzijdige ondersteuning."`,
+        quotePerson: `Gideon van Aalst, Team Leader Service and Sales`,
+        impact: `<li>Ontwikkeling van een geïntegreerde
+sales strategie en sales support
+</li><li>Verantwoordelijk voor leadgeneratie, het
+versturen van offertes en begeleiding van het
+gehele salesproces
+</li><li>Optimaliseren van de sales funnel, met een
+aanzienlijke toename van de conversieratio’s
+als gevolg.</li>`
+      },
+      cargoplot: {
+        companyDescription: `Een online platform voor e-commerce importeurs
+en vrachtvervoerders in Nederland`,
+        quote: `"Wat Movements Marketing onderscheidt, is hun
+flexibiliteit en vermogen om snel waarde te
+genereren door leads om te zetten in lange-
+termijn klanten. Ze begrijpen onze behoeften en
+zijn voor 100% toegewijd aan ons gezamenlijk
+succes."`,
+        quotePerson: `Founder`,
+        impact: `<li>Bieden van ondersteuning bij het valideren en
+uitbreiden van de groeistrategie van de klant
+</li><li>Het omzetten van een aanzienlijk aantal demo-
+gesprekken in “getekende” klanten.</li>`
+      },
+      oct8ne: {
+        companyDescription: `Een toonaangevend bedrijf in klantenservice-
+tools in Europa`,
+        quote: `“Movements Marketing doet wat ze zeggen
+en zeggen wat ze doen! We bevelen hun
+professionele team van experts van harte
+aan.”`,
+        quotePerson: `Melvin Dom, Country Manager`,
+        impact: `<li>Opzetten en implementeren van de eerste
+hybride chat (Live chat en Chatbot) met visuele
+ondersteuning
+</li><li>Ontwikkelen en voeren van effectieve demo-
+gesprekken gevoerd, wat heeft geleid tot
+“getekende” klanten
+</li><li>Diepgaand klantrespons-onderzoek
+uitgevoerd.</li>`
+      },
+      x2com: {
+        companyDescription: `Een zakelijke telecom provider die
+professionele telecommunicatiediensten levert
+aan bedrijven en instellingen in Nederland`,
+        quote: `"We zouden Movements Marketing liever niet
+aanbevelen aan andere organisaties, omdat we
+hen helemaal voor onszelf willen houden!"`,
+        quotePerson: `Guido Ackermans, Sales Manager`,
+        impact: `<li>Nieuwe samenwerkingen opgezet die hun
+klantenbestand heeft uitgebreid
+</li><li>Toegevoegde waarde geleverd door zeer nauwe
+en betrokken samenwerking, regelmatige
+feedbacksessies en voortgangsrapportages.</li>`
+      },
+      trans: {
+        companyDescription: `Een toonaangevend Duits logistiek platform voor
+transportbeheer met modules voor verladers,
+expediteurs en vervoerders`,
+        quote: `"We bevelen Movements Marketing aan aan ieder
+bedrijf die zijn verkoopfunnel wil versterken, deals wil
+converteren en wil samenwerken met een team dat
+snel, flexibel en resultaatgericht is."`,
+        quotePerson: `Peter Bauer, Head of Sales`,
+        impact: `<li>Ondersteunt bij het versterken van de
+concurrentiepositie op de verzadigde logistieke markt
+</li><li>Bijgedragen aan een duidelijk bewustzijn van het merk,
+waardoor de klant zich heeft onderscheiden van de
+concurrentie
+</li><li>Succesvolle uitbreiding van het klantenbestand en het
+genereren van extra verkopen, met een aanzienlijke
+marktgroei als resultaat.</li>`
+      },
     },
-    telemarketers: 'Deze telemarketeers <span class="is-highlighted">boosten jouw business</span>',
+    values: {
+      ourValues: `Onze waarden`,
+      intro: `Onze manier van werken is stevig verankerd in waarden die niet alleen bepalen wie we zijn, maar die ook onze
+interacties met klanten sturen en voor de resultaten die we behalen.`,
+      passion: {
+        title: `Passie`,
+        text: `Jouw ambitie realiseren met alles wat we in ons hebben.`,
+      },
+      involvement: {
+        title: `Betrokkenheid`,
+        text: `Jouw doelstellingen leren kennen en actief afstemmen op jouw visie.`,
+      },
+      connection: {
+        title: `Verbinding`,
+        text: `Betekenisvolle relaties opbouwen om jouw behoeften goed te begrijpen.`,
+      },
+      quality: {
+        title: `Kwaliteit`,
+        text: `Consequent oplossingen bieden, die jouw verwachtingen overtreffen.`,
+      },
+      results: {
+        title: `Resultaatgerichtheid`,
+        text: `Gefocust op uitzonderlijke, tastbare resultaten voor jou.`,
+      },
+    },
     contact: {
-      title: '<span class="is-highlighted">Let’s Connect!</span>',
+      title: 'Let’s Connect!',
+      subtitle: `Ben je er klaar voor om jouw sales bereik en klantinteracties naar een hoger niveau te tillen?`,
+      text: `Laten we samen jouw succesverhaal creëren!`,
       name: 'Naam',
       companyName: 'Bedrijfsnaam',
       email: 'E-mail',
       phone: 'Telefoon',
       message: 'Bericht',
-    }
+    },
+    contactUs: 'Neem contact op!',
   },
+
   services: {
-    telemarketing: {
+    customerExperience: {
       cover: {
-        title: 'Ontzorg jouw <span class="is-highlighted">salesteam </span>',
-        subtitle: 'Boost jouw leadgeneratie met onze <span class="is-highlighted">B2B Telemarketing! </span>',
-        cta: 'Probeer Nu!',
+        title: `Transformeer jouw <span class="is-movements-green is-block">customer experience</span>`,
+        subtitle: `Strategische oplossingen die je helpen om jouw doelen te realiseren`,
+        cta: `Begin nu`,
       },
-      facts: {
-        fact1: 'Hoogwaardige Leads',
-        fact2: 'Gerichte Conversiegesprekken',
-        fact3: 'Doorlopende Continuïteit',
+      engagementStrategy: {
+        title: `<span class="is-movements-green">Klantstrategie</span>`,
+        text: `Ons team staat achter jouw doelen. Met een slimme en strategische aanpak, bieden we passende oplossingen
+gebaseerd op jouw wensen en ideeën. Ons toegewijde team van experts staat klaar om dit tot leven te brengen.
+Waarbij elke klant-interactie bijdraagt tot blijvende loyaliteit en succes.`,
       },
-      info: {
-        title: 'Waarom onze <span class="is-highlighted"> B2B Telemarketing</span> effectief is',
-        content: 'Koude acquisitie en daarmee het werven van nieuwe klanten is een vak. Het kost tijd en doorzettingsvermogen. Zelfs voor het beste salesteam. Maar voor ons, is het onze tweede natuur. Movements Marketing ondersteunt jouw sales met kwalitatieve leadgeneratie en levert new business. Door nieuwe klanten te werven en tegelijkertijd afspraken te maken, evenals online demo\'s en dataverrijking in te plannen, staat jouw salesteam weer in hun kracht!',
+      telephoneCustomerCare: {
+        title: `End-to-end <span class="is-movements-green">telefonische klantenservice</span>`,
+        text: `Wij versterken jouw organisatie en verbeteren de bereikbaarheid. Onze ervaren operators beantwoorden elke
+oproep adequaat en met de juiste tone-of-voice, worden niet afgeleid en zijn volledig betrokken. We gaan verder
+dan simpelweg de telefoon opnemen; we analyseren de behoeften van iedere klant en bieden een
+oplossingsgerichte customer experience die aansluit op jouw verwachtingen.`,
       },
-      quote1: 'Wij zijn het verlengstuk van jouw sales!',
-      quote2: 'Wil jij het maximale uit jouw sales halen?',
-      trial: {
-        title: '<span class="is-highlighted">Plan direct een kennismakingsgesprek</span>',
-        text: 'Vraag nu een adviesgesprek aan en ontdek waarom onze B2B Telemarketing werkt!',
-        cta: 'Let’s Talk!',
+      appointmentOptimization: {
+        title: `<span class="is-movements-green">Afspraak optimalisatie</span> oplossingen`,
+        text: `Onze benadering draait niet alleen om het inplannen van afspraken; het gaat ook om het verbeteren van kwaliteit. We combineren
+nauwkeurige planning met op data gebaseerde inzichten; alles ontworpen om naadloze integratie met het werkproces van jouw
+team mogelijk te maken.`,
       },
-      sales: {
-        title: 'Hoe onze B2B Telemarketing werkt',
-        block1: {
-          title: '1. Quick Scan ',
-          text: 'Het begrijpen van jouw criteria en doelen, is het startpunt voor een kwalitatieve lead. Een online kennismaking tussen onze telemarketeers en jou, is onze go-to voor een vruchtbare samenwerking.',
+      aiAssistant: {
+        title: `<span class="is-highlighted">AI Voicebot</span> integratie`,
+        text: `Onze geavanceerde Voicebot is een innovatie en gaat verder dan de traditionele customer experience. Wij bieden jouw klanten
+hiermee 24/7 ondersteuning, directe respons met een menselijke interactie-ervaring; allemaal zonder wachttijd. Als je streeft naar
+verhoogde efficiëntie, optimale bereikbaarheid, gegevensverzameling en het vrijspelen van teamleden voor meer strategische
+taken, probeer dan nu onze oplossing!`,
+        cta: `Request demo`,
+      },
+      caseStudies: {
+        title: `Klantbeleving case studies`,
+        study1: {
+          title: `Klantenservice- en afspraakoptimalisatie oplossingen voor een regionaal medisch laboratorium`,
+          text: `Samen met onze klant hebben we de handen ineengeslagen om hun werkprocessen naar een hoger niveau te tillen.
+Hierdoor kunnen ze hun bestaande team inzetten voor taken die echt het verschil maken. Onze waardevolle inzichten hebben
+niet alleen geleid tot een beter begrip van klanttevredenheid, maar ook tot een slimme inzet van middelen. Zo hebben we
+samen de weg geplaveid voor nog meer succes.`,
         },
-        block2: {
-          title: '2. Sales Pitch ',
-          text: 'Een succesvol salesgesprek valt of staat met de juiste tone of voice om de doelgroep aan te spreken. Ons team doorloopt een intensieve training alvorens zij uit naam van jouw bedrijf gaan bellen.',
+        study2: {
+          title: `End-to-end telefonische klantenservice voor een toonaangevend diagnostisch centrum`,
+          text: `Door een zeer betrokken samenwerking met deze klant, acteren we als een verlengstuk van hun Klant Contact Centrum.
+Voor de klant worden adequaat afspraken ingepland voor bloedafnames en diverse beeldvormende onderzoeken. Daarnaast
+worden, waar mogelijk, vragen van patiënten snel en accuraat beantwoord, en zijn gebruiksvriendelijke
+toegankelijkheidsdiensten geïmplementeerd. Hierdoor hebben we de klant geholpen om op een veel effectievere en
+efficiëntere manier met hun patiënten in verbinding te staan en is de relatie naar een hoger niveau getild. Met als resultaat een
+verhoogde loyaliteit en tevredenheid, tegen lagere kosten!`,
         },
-        block3: {
-          title: '3. Delivering Results ',
-          text: 'Goed beslagen ten ijs leveren wij de afgesproken targets. Het leveren van new business en het onderhouden van een langdurige samenwerking, is altijd onze prioriteit!',
+        study3: {
+          title: `End-to-end telefonische klantenservice voor een leidende coöperatie van verzekerings- en hypotheekadviseurs`,
+          text: `Ons team heeft voor deze klant de integrale klantenservice verbeterd, door inkomende telefoongesprekken efficiënt af te
+handelen, de behoeften van de bellers deskundig uit te vragen en hen naadloos naar de juiste afdeling te leiden. Wanneer het
+bereiken van de gewenste afdeling uitdagend bleek, creëren we terugbelverzoeken om efficiënte klantenondersteuning te
+garanderen. Als gevolg daarvan kunnen de interne teams van onze klanten zich nu richten op het bieden van essentiële hulp,
+daar waar het meest nodig was.`,
         },
       },
-      formTitle: 'Test onze B2B telemarketing!',
+      contact: {
+        title: `Ontdek onze oplossingen`,
+        subtitle: `Klaar om te beginnen met het transformeren van jouw customer experience voor succes?`,
+        text: `Deel je contactgegevens en we nemen snel contact met je op voor een adviesgesprek!`,
+      }
     },
-    customerService: {
+    endToEnd: {
       cover: {
-        title: 'Upgrade jouw <span class="is-highlighted">klantenservice </span>',
-        subtitle: 'Ga next level met onze  <span class="is-highlighted">klantenservice!  </span>',
-        cta: 'Probeer nu!',
+        title: `Vergroot jouw <span class="is-movements-green is-block">sales potentieel</span>`,
+        subtitle: `Integrale oplossingen die jouw groei duurzaam stimuleren`,
+        cta: `Ontdek onze oplossingen`,
       },
-      facts: {
-        fact1: 'Gemakkelijk Bereikbaar',
-        fact2: 'Kwalitatieve Interactie',
-        fact3: 'Tevreden Klanten',
+      engagementStrategy: {
+        title: `<span class="is-movements-green">Klantstrategie</span>`,
+        text: `Wij zijn specialist in het ontwikkelen van op maat gemaakte strategieën voor het vergroten van klantbetrokkenheid, met een
+scherp oog voor het begrijpen van jouw specifieke behoeften. Hierdoor kunnen we oplossingen bieden die niet alleen direct
+resultaat opleveren, maar ook duurzaam succes voor jouw bedrijf waarborgen. Onze voortdurende aanpassingen en verfijningen
+van strategieën zijn gericht op het naadloos inspelen op jouw evoluerende behoeften en de laatste trends in de industrie.`,
       },
-      info: {
-        title: 'Waarom onze <span class="is-highlighted">klantenservice</span> effectief is',
-        content: 'Het aanbieden van klantenservice tussen het werken door, heeft invloed op de kwaliteit op de werkvloer en de klantenservice zelf. Wanneer vragen onopgelost blijven, zijn jouw klanten ontevreden. Beleefd zijn en oplossingen bieden terwijl je luistert naar de vragen van de klant, is alleen mogelijk als je volledig gefocust bent. Bij Movements Marketing staat het bieden van een hoogwaardige klantenservice centraal. We behandelen binnenkomende vragen gepast, helpen je klanten verder en zorgen ervoor dat ze tevreden ophangen!',
+      dataEnrichment: {
+        title: `<span class="is-movements-green">Dataverrijking</span> en <span class="is-movements-green">kwalificatie</span>`,
+        text: `Wij verzamelen, analyseren en verrijken gegevens zorgvuldig om van jouw prospects hoogwaardige leads te maken. Dit resulteert
+in een grotere en betere sales funnel, klaar om benut te worden. Onze op data gebaseerde aanpak omvat ook regelmatige
+updates en onderhoud om ervoor te zorgen dat jouw leads in de loop van de tijd van hoge kwaliteit en relevant blijven.`,
       },
-      quote1: 'Wij zijn jouw persoonlijke klantenservice op afstand!',
-      quote2: 'Wil jij het maximale uit jouw klantenservice halen? ',
-      trial: {
-        title: '<span class="is-highlighted">Plan direct een kennismakingsgesprek</span>',
-        text: 'Vraag nu een adviesgesprek aan en ontdek waarom onze klantenservice werkt! ',
-        cta: 'Let’s Talk!',
+      leadGeneration: {
+        title: `<span class="is-movements-green">Leadgeneratie</span> en <span class="is-movements-green">leadopvolging</span>`,
+        text: `Het binnenhalen van nieuwe klanten en het optimaliseren van jouw sales funnel is bij onze leadgeneratie-experts in goede
+handen. We zorgen niet alleen voor jouw afspraken en online demo’s, maar blijven ook constant jouw gegevens verrijken, zodat je
+op een efficiënte en consistente manier meer deals kunt sluiten. Onze uitgebreide follow-up support tilt jouw
+conversiepercentages naar de gewenste hoogte en legt de basis voor sterke en langdurige klantrelaties.`,
       },
-      sales: {
-        title: 'Hoe onze klantenservice werkt',
-        block1: {
-          title: '1. Quick Scan ',
-          text: 'Klantondersteuning aanbieden die jouw klanten verdienen, begint met het ontrafelen van jouw behoeften en wensen. Na het begrijpen van jouw wensen, is een online kennismakingtussen onze telemarketeers en jou de tweede stap voor een constructieve samenwerking.',
+      leadClosing: {
+        title: `Lead <span class="is-movements-green">closing</span>`,
+        text: `Wij zetten jouw leads om in betalende klanten door middel van overtuigende onderhandelingen en effectieve sales strategieën.
+Onze bewezen methoden zorgen ervoor dat jouw nieuwe klanten op de juiste weg zijn om loyale klanten te worden. Ons
+toegewijde team van sales professionals gaat verder dan het gebruikelijke, en biedt voortdurende support en begeleiding aan
+jouw nieuwe klanten, waardoor een naadloze overgang van lead naar klant wordt gegarandeerd.`,
+      },
+      caseStudies: {
+        title: `End-to-end sales case studies`,
+        study1: {
+          title: `Lead generatie voor een wereldwijd leidend bedrijf in de FMCG`,
+          text: `Wij werken samen met deze klant als hun toegewijde partner om de marktaanwezigheid te vergroten,
+klantbehoud te stimuleren en effectieve strategieën te formuleren via leadgeneratie. Onze partnership heeft geleid
+tot groei van het resultaat van hun marketing- en salescampagnes en een verbetering van klantbehoud, wat ook
+heeft geresulteerd in een toename van nieuwe klanten.`,
         },
-        block2: {
-          title: '2. Inhouse Training ',
-          text: 'Met de juiste tone of voice de doelgroep aanspreken, maakt een succesvol klantgesprek. Onze inhouse training zorgt ervoor dat ons team volledig is voorbereid om de Voice of Customer (VoC) vast te leggen en namens jouw bedrijf op de juiste manier te communiceren.',
+        study2: {
+          title: `End-to-end sales support voor een nationale aanbieder van verzuimverzekeringen`,
+          text: `Wij hebben samen met deze klant een geïntegreerde sales strategie en support ontwikkeld, door de
+verantwoordelijkheid te nemen voor leadgeneratie, het versturen van offertes en het begeleiden van het volledige
+sales proces namens deze klant. Als gevolg daarvan heeft onze klant haar sales funnel zien groeien en zijn de
+conversieratio’s significant toegenomen.`,
         },
-        block3: {
-          title: '3. Delivering Results ',
-          text: 'Een positieve klantervaring en het behalen van de afgesproken doelstellingen, is onze benchmark en staat bovenaan onze prioriteitenlijst! Na de interne training blijven wij onze vaardigheden ontwikkelen om altijd de best, mogelijke resultaten te leveren.',
-        },
-      },
-      formTitle: 'Test onze klantenservice!',
-    },
-    answeringService: {
-      cover: {
-        title: 'Ontlast al <span class="is-highlighted">jouw afdelingen</span>',
-        subtitle: 'Optimaliseer de bereikbaarheid met onze <span class="is-highlighted">telefoonservice!  </span>',
-        cta: 'Probeer nu!',
-      },
-      facts: {
-        fact1: 'Optimale bereikbaarheid',
-        fact2: 'Professionele interactie',
-        fact3: 'Kostenefficiënte resultaten',
-      },
-      info: {
-        title: 'Waarom onze <span class="is-highlighted">telefoonservice</span> effectief is',
-        content: 'Wanneer jouw professionals bezig zijn met inkomende oproepen, leidt dit hen af van hun werk. Maar met onze antwoordservice, kan jouw team zich concentreren op hun eigenlijke taken en is jouw bedrijf optimaal bereikbaar! Dankzij onze continue kwaliteitsservice, wordt elk telefoontje opgepakt en blijft geen enkele klantvraag onbeantwoord. Met het uitbesteden van de receptie, ben jij de concurrentie een stap voor!',
-      },
-      quote1: 'Wees de concurrentie een stap voor met onze telefoonservice',
-      quote2: 'Wil jij het maximale uit jouw klantenservice halen?',
-      trial: {
-        title: '<span class="is-highlighted">Plan direct een kennismakingsgesprek</span>',
-        text: 'Vraag nu een adviesgesprek aan en ontdek waarom onze telefoonservice werkt! ',
-        cta: 'Let’s Talk!',
-      },
-      sales: {
-        title: 'Hoe onze telefoonservice werkt',
-        block1: {
-          title: '1. Incoming Calls ',
-          text: 'Onze meertalige telemarketeers beantwoorden telefoontjes op basis van afgestemde telefoonscripts.',
-        },
-        block2: {
-          title: '2. Creating Notes ',
-          text: 'Indien gewenst maken de telefonisten direct een notitie aan in jouw ticketingsysteem.',
-        },
-        block3: {
-          title: '3. Finishing Up',
-          text: 'Het team verwerkt gesprekken adequaat en vertegenwoordigt jouw bedrijf als één van jullie!',
+        study3: {
+          title: `Lead generatie voor een sterk groeiend online logistiek & cargo platform`,
+          text: `We hebben een belangrijke rol gespeeld in het verrijken en kwalificeren van potentiële partners, en
+vervolgens het organiseren van online demo’s, om het immense potentieel van het platform te tonen. We hebben
+voortdurend onze scope uitgebreid, waarbij we gericht waren op zowel het plannen van online demo’s , als het
+overnemen van de verantwoordelijkheid voor het begeleiden van het gehele sales proces voor kleinere leads.`,
         },
       },
-      formTitle: 'Test onze telefoonservice!',
-
-    },
-    liveChat: {
-      cover: {
-        title: '<span class="is-highlighted">Ga mee met de tijd </span>',
-        subtitle: 'Wees je klanten nog beter van dienst met onze <span class="is-highlighted">live chat!  </span>',
-        cta: 'Probeer nu!',
-      },
-      facts: {
-        fact1: 'Snelle response',
-        fact2: 'Probleemoplossende communicatie',
-        fact3: 'Verbeterende CX',
-      },
-      info: {
-        title: 'Waarom onze <span class="is-highlighted">live chat</span> effectief is',
-        content: 'Stel je voor dat jouw klanten direct contact kunnen opnemen op het exacte moment dat ze een vraag of probleem hebben en het zelf niet kunnen oplossen? Dat is één van de vele voordelen van onze Live Chat! Bovendien is het een laagdrempelige en gemakkelijke manier van communiceren, zelfs voor die klanten voor wie het een hindernis is om contact te zoeken. En het mooiste van alles: jouw klanten weten dat ze een reactie krijgen en dat hun verzoek wordt opgelost!',
-      },
-      quote1: 'Toegankelijke communicatie begint met onze Live Chat!',
-      quote2: 'Wil jij het maximale uit jouw klantenservice halen?',
-      trial: {
-        title: '<span class="is-highlighted">Plan direct een kennismakingsgesprek</span>',
-        text: 'Vraag nu een adviesgesprek aan en ontdek waarom onze Live Chat werkt!',
-        cta: 'Let’s Talk!',
-      },
-      sales: {
-        title: 'Hoe onze Live Chat werkt',
-        block1: {
-          title: '1. Incoming Chat ',
-          text: 'Wanneer er een nieuw chatverzoek binnenkomt, reageren onze chatagenten proactief. Onze snelle reactie is een ander voordeel van deze service die zich tegelijkertijd vertaalt in efficiëntie en die leidt tot klantbehoud.',
-        },
-        block2: {
-          title: '2. Unravel Request ',
-          text: 'Nadat eerst de hulpvraag in kaart is gebracht en de benodigde data verzameld, maakt ons team direct een plan van aanpak om de klantvraag op te lossen met een positief resultaat als uitkomst.',
-        },
-        block3: {
-          title: '3. Problem Solving ',
-          text: 'Zodra de klantvraag is opgelost, gaan beide partijen tevreden verder en ondertussen werken wij de administratie bij. En vergeet niet dat een live chat zichzelf zowel kwantitatief als kwalitatief terugbetaalt met een gelijke of verhoogde ROI!',
-        },
-      },
-      formTitle: 'Test onze live chat!',
-
-    },
-    emailManagement: {
-      cover: {
-        title: 'Besteed jouw <span class="is-highlighted"> <span style="white-space: nowrap">E-mail</span> Management</span> uit',
-        subtitle: 'Maximaliseer de productiviteit en het werkplezier van jouw professionals! ',
-        cta: 'Probeer nu!',
-      },
-      facts: {
-        fact1: 'Actieve e-mail',
-        fact2: 'Verbeterde beschikbaarheid',
-        fact3: 'Kostenbesparende investering',
-      },
-      info: {
-        title: 'Waarom onze <span class="is-highlighted"> E-mail Management</span> effectief is',
-        content: 'Het bijhouden en beantwoorden van e-mails is geen bijzaak - temeer omdat e-mails tegenwoordig de norm zijn voor professionele communicatie. Daarom is het effectief beheren van de inbox mede bepalend voor jouw zakelijk succes. Om geen belangrijke details te missen, moeten jouw professionals gefocust zijn. Een onmogelijke opgave tijdens een volgeboekte werkdag. Maar dankzij onze E-mailmanagement behoort het opstapelen van inkomende mails tot het verleden: we brengen efficiëntie in jouw inbox en zorgen ervoor dat deze up-to-date is!',
-      },
-      quote1: 'Wij zijn de eerste stap in het verbeteren van jouw e-mailbeheer!',
-      quote2: 'Wil jij het maximale uit jouw klantenservice halen?',
-      trial: {
-        title: '<span class="is-highlighted">Plan direct een kennismakingsgesprek</span>',
-        text: 'Vraag nu een adviesgesprek aan en ontdek waarom onze email management werkt!',
-        cta: 'Let’s Talk!',
-      },
-      sales: {
-        title: 'Hoe onze E-mail Management werkt',
-        block1: {
-          title: '1. Organizing Inbox',
-          text: 'Om vanaf nu en in de toekomst up-to-date te zijn, is een georganiseerde inbox een must voor onze marketeers in het beheren van jouw e-mail. En daarom beginnen zij met het brengen van orde en structuur in de inbox.',
-        },
-        block2: {
-          title: '2. Maintaining Emails',
-          text: 'Niet alle inkomende e-mails zijn even zwaarwegend - het beheren van de inbox bestaat dan ook uit het beantwoorden van mails in volgorde van belangrijkheid. Ons team reageert te allen tijde in overeenstemming met jouw bedrijfscommunicatie.',
-        },
-        block3: {
-          title: '3. Arrange Follow-ups',
-          text: 'Bepaalde e-mails hebben een specifieke reactie nodig. Onze professionals houden belangrijke mails apart bij en sturen deze door naar de verantwoordelijke voordat ze namens jouw bedrijf reageren.',
-        },
-      },
-      formTitle: 'Test onze email management!',
-    },
-    socialWebcare: {
-      cover: {
-        title: 'Wees ook <span class="is-highlighted">online aanwezig </span>',
-        subtitle: 'Boost jouw sales positief met onze social webcare! ',
-        cta: 'Probeer nu!',
-      },
-      facts: {
-        fact1: 'Uitgebreide contactopties',
-        fact2: 'Waardevolle klantenfeedback ',
-        fact3: 'Verbeterde online reputatie ',
-      },
-      info: {
-        title: 'Waarom onze <span class="is-highlighted">Social Webcare</span> effectief is',
-        content: 'Tegenwoordig is Social Webcare een must! Jouw klanten zijn online en wanneer ze de telefoon niet opnemen, een e-mail schrijven of een chat starten om hulp te vragen, plaatsen ze hun vragen en klachten online. Met een proactieve Social Webcare ben je altijd up-to-date en terwijl wij voor jouw klanten zorgen, verzamelt ons team ook waardevolle consumenteninzichten om jouw online reputatie te verbeteren. En wist je dat een goede Social Webcare ook een positief effect heeft op je omzet? Onze webagenten staan klaar om jouw online reis te verbeteren!',
-      },
-      quote1: 'Wij zijn jouw integratieve tool voor een uitstekende CX!',
-      quote2: 'Wil jij het maximale uit jouw klantenservice halen?',
-      trial: {
-        title: '<span class="is-highlighted">Plan direct een kennismakingsgesprek</span>',
-        text: 'Vraag nu een adviesgesprek aan en ontdek waarom onze social webcare werkt!',
-        cta: 'Let’s Talk!',
-      },
-      sales: {
-        title: 'Hoe onze Social Webcare werkt',
-        block1: {
-          title: '1. Keep Watch',
-          text: 'Social webcare heeft niet alleen een positieve invloed op jouw sales, het is ook een draaiende motor voor de content. Daarom zijn onze webagenten klantgericht en getraind om naar de feedback van de klant te luisteren.',
-        },
-        block2: {
-          title: '2. Processing Data',
-          text: 'Voortdurend belangrijke data verzamelen en waar nodig verwerken, is de hoofdtaak van social webcare. Dankzij ons team dat jouw inkomende berichten afhandelt, krijgen jouw klanten altijd de beste service!',
-        },
-        block3: {
-          title: '3. Summarizing Analytics',
-          text: 'Zodra de berichten zijn gesorteerd en beantwoord, beginnen we met het samenvatten van de belangrijkste analyses die jouw bedrijf mogelijk vooruithelpen om de klantreis en hun ervaring te verbeteren. Onze service is een totaalpakket van A tot Z!',
-        },
-      },
-      formTitle: 'Test onze social webcare!',
+      contact: {
+        title: `Ontdek onze oplossingen`,
+        subtitle: `Klaar om met ons samen te werken aan jouw duurzame groei?`,
+        text: `Deel je contactgegevens en we nemen snel contact met je op voor een adviesgesprek!`,
+      }
     },
     form: {
       name: 'Naam',
       companyName: 'Bedrijfsnaam',
       businessEmail: 'Business e-mail',
       phone: 'Telefoon',
-      cta: 'Start Nu!',
+      cta: 'Verstuur',
       info: `*Met het invullen van dit formulier ga je akkoord met ons privacybeleid. <span class="is-block">In navolging hierop mogen wij bellen of e-mailen. Je kan je op elk moment afmelden.</span> `,
     }
   },
-  careers: {
-    cover: {
-      title: '<span class="is-highlighted">Kom ons team versterken!</span>',
-      subtitle: 'Kijk jij ernaar uit om deel uit te maken van ons team en samen met ons aan de toekomst van onze klanten te bouwen?',
-      cta: 'Join Us',
+  ourTeam: {
+    title: `We zetten jouw ambities om in tastbare resultaten!`,
+    coverText: `<span class="has-text-weight-semibold">Movements Marketing</span> heeft als ambitie om de customer experience en sales successen voor haar klanten
+consequent en consistent te verbeteren. We zijn een dynamisch team, gedreven door het doel om het succes van
+onze klanten te vergroten. Onze reis, die begonnen is in Nederland, is gegroeid in expertise en bereik, zodat tevreden
+klanten en professionele communicatie grenzen overstijgen en succes een gedeelde ervaring wordt.`,
+    team: {
+      title: `Ons team`,
+      text: `Onze kracht ligt in ons team - we koesteren een team dat toegewijd is aan kwaliteit en resultaten, en
+oplossingen biedt die aansluiten bij de zakelijke doelstellingen van onze klanten. Van de Benelux tot de DACH-
+regio's evolueert ons team voortdurend, omarmt uitdagingen en stelt nieuwe normen in klantenservice en B2B
+sales. Ons team is opgedeeld in Nederlandstalige en Duitstalige specialisten, die zich bezighouden met
+klantenservice, B2B sales support en lead generatie.`,
     },
-    positions: {
-      title: `<span class="is-highlighted">Onze vacatures</span>`,
-      copy: `<span class="is-block has-text-italic">Kun je niet wachten om je talenten te onthullen? </span> Je kunt altijd een <span class="is-highlighted">Open sollicitatie </span> sturen naar <span class="is-highlighted"> careers@movementsmarketing.com </span>`,
-    },
-    offers: {
-      title: '<span class="is-highlighted">Wij bieden jou</span>',
-      perks: {
-        perk1: 'Internationale werkplekken',
-        perk2: 'Aantrekkelijke bonussen',
-        perk3: 'In-House Chef',
-        perk4: 'Recreatieve kantoorruimte',
-        perk5: 'Happy Meetups',
-        perk6: 'Leuke teambuildings',
+    members: {
+      member1: {
+        position: `Position`,
+        text: `Lorem ispum dolor sit gamet Lorem ipsum dolor sit gamet`,
       }
     }
+  },
+
+
+  careers: {
+    cover: {
+      title: 'Wil je deel uitmaken van<span class="is-movements-green">ons team? </span>',
+      subtitle: `Word onderdeel van de volgende generatie marketeers`,
+      cta: 'Open posities',
+    },
+
   },
   thanks: {
     title: `Bedankt!`,
@@ -452,7 +540,7 @@ waarin de verwerker wordt verplicht om alle verplichtingen uit de Wet Beschermin
 Persoonsgegevens, de Europese Algemene Verordening Gegevensbescherming, en deze
 Privacy-policy na te leven.</p>
 <p class="">Wij verstrekken persoonsgegevens aan partijen die gevestigd zijn buiten de EU. Dit betreft onze
-vestigingen: Movements Marketing d.o.o, Sarajevo (Bosnië &amp; Herzegovina) en Movements SrL,
+vestigingen: Movements Marketing d.o.o, Sarajevo (Bosnië & Herzegovina) en Movements SrL,
 vestiging Istanbul (Turkije).</p>`,
     },
     retention: {
@@ -577,8 +665,6 @@ persoonsgegevens. U kunt hiervoor contact opnemen met de Autoriteit Persoonsgege
     },
   },
   generalTerms: generalTerms,
-
-
 };
 
 export default nl;
