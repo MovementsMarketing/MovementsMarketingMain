@@ -1,6 +1,6 @@
 <template>
   <div :class="'home has-bg-gray'">
-    <navigation :full-logo="true" :light-logo="true"/>
+    <navigation :full-logo="true" :light-logo="true" :translate-url="true"/>
 
     <cover :cover-image="coverData.img" :cover-title="coverData.title" :cover-subtitle="coverData.subtitle"/>
 
@@ -1214,6 +1214,11 @@
     .partnerships {
       .partnerships__title {
         margin-bottom: 100px;
+
+        @media screen  and (max-width: 768px) {
+          margin-bottom: 60px;
+        }
+
       }
 
       .partnerships__slider {

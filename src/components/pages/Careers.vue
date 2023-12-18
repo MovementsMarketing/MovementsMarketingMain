@@ -23,7 +23,7 @@
               </div>
             </transition>
 
-      <div class="has-text-centered p-0 slider__dots p-t-10">
+      <div class="has-text-centered p-0 slider__dots p-t-15">
         <div v-for="(t, i) in videos" :key="`dot-${i}`" :class="{'dot': true, 'is-active': i === currentIndex}"></div>
       </div>
       <div class="has-text-right slider__navigation p-0 p-t-15">
@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <movements-footer/>
+    <movements-footer :is-gray="true"/>
 
   </div>
 
@@ -104,11 +104,20 @@
     justify-content: center;
     flex-direction: column;
 
+    @media screen and (max-width: 1240px){
+      justify-content: flex-end;
+    }
+
     .slider__navigation {
       position: absolute;
       width: 100%;
       display: flex;
       justify-content: space-between;
+
+      @media screen and (max-width: 1240px){
+        bottom: 65px;
+      }
+
     }
 
     .team__video-slide {

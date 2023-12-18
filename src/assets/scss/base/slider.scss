@@ -36,6 +36,12 @@
       transition: all 400ms ease;
       cursor: pointer;
 
+      @media screen and (max-width: 1240px){
+        height: 40px;
+        width: 40px;
+      }
+
+
       &:hover {
         background: $primary-green;
         color: #ffffff;

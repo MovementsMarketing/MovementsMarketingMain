@@ -3,7 +3,7 @@
     <div class="section slider has-padding has-text-centered has-bg-dark">
       <h2 v-html="$t(`home.values.ourValues`)" class="has-line-center values__title m-0"></h2>
     </div>
-    <div class="columns is-multiline has-padding values__list">
+    <div class="columns is-multiline has-padding values__list m-0">
       <div class="column is-6-tablet is-4-desktop p-20">
         <div class="value is-highlighted">
           <p class="has-line-left">

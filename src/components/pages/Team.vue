@@ -18,12 +18,12 @@
           <p v-text="member.position"  class="member__position"></p>
           <hr/>
         </div>
-<!--        <span v-text="member.description"  class="member__description"></span>-->
+<!--        <span v-text="member.description"  class="member__description:is-gray="true""></span>-->
       </div>
     </div>
 
 
-    <movements-footer is-gray="true"/>
+    <movements-footer :is-gray="true"/>
 
   </div>
 
@@ -159,6 +159,7 @@ $border-radius-small: 40px;
 
       @media screen  and (max-width: 768px) {
         border-radius: $border-radius-small 0 $border-radius-small 0;
+        padding: 140px 20px;
       }
 
       @media screen  and (max-width: 420px) {

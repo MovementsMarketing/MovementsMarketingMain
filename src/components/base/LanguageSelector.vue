@@ -48,20 +48,21 @@ import NavigationDropdown from "@/components/base/NavigationDropdown.vue";
   }
 })
 class LanguageSelector extends Vue {
-  @Prop({default: false})
+  @Prop({default: true})
   translateUrl: boolean;
 
   isLanguagesActive = false;
 
   setLanguage(lang: string) {
+    console.log(lang, this.$i18n.locale, this.translateUrl)
     if(lang === this.$i18n.locale) return;
 
     this.$i18n.locale = lang;
 
     if(this.translateUrl && !this.$route.fullPath.includes('tryNow')) {
-      //todo removed
-      //let newPath = `${this.$route.fullPath}/${lang}`.replace('//', '/');
-     // this.$router.push(newPath);
+      let newPath = `${this.$route.fullPath}/${lang}`.replace('//', '/');
+      console.log(newPath)
+     this.$router.push(newPath);
     }
   }
 

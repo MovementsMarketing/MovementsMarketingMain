@@ -43,7 +43,73 @@ export default new VueRouter({
       path: '/clients/our-partnerships',
       name: 'Home-partnerships',
       component: Home,
-      meta: {element: '#partnerships'}
+      meta: {element: '#partnerships', locale: 'en'}
+    },
+    {
+      path: '/klanten/onze-partnerships',
+      name: 'Home-clients-nl',
+      component: Home,
+      meta: {element: '#partnerships', locale: 'nl'}
+    },
+    {
+      path: '/kunden/unsere-kooperationspartner',
+      name: 'Home-clients-de',
+      component: Home,
+      meta: {element: '#partnerships', locale: 'de'}
+    },
+    {
+      path: '/clients/our-partnerships/en',
+      redirect: () => {
+        return '/clients/our-partnerships'
+      }
+    },
+    {
+      path: '/klanten/onze-partnerships/en',
+      redirect: () => {
+        return '/clients/our-partnerships'
+      }
+    },
+    {
+      path: '/kunden/unsere-kooperationspartner/en',
+      redirect: () => {
+        return '/clients/our-partnerships'
+      }
+    },
+    {
+      path: '/clients/our-partnerships/nl',
+      redirect: () => {
+        return '/klanten/onze-partnerships'
+      }
+    },
+    {
+      path: '/klanten/onze-partnerships/nl',
+      redirect: () => {
+        return '/klanten/onze-partnerships'
+      }
+    },
+    {
+      path: '/kunden/unsere-kooperationspartner/nl',
+      redirect: () => {
+        return '/klanten/onze-partnerships'
+      }
+    },
+    {
+      path: '/clients/our-partnerships/de',
+      redirect: () => {
+        return '/kunden/unsere-kooperationspartner'
+      }
+    },
+    {
+      path: '/klanten/onze-partnerships/de',
+      redirect: () => {
+        return '/kunden/unsere-kooperationspartner'
+      }
+    },
+    {
+      path: '/kunden/unsere-kooperationspartner/de',
+      redirect: () => {
+        return '/kunden/unsere-kooperationspartner'
+      }
     },
 
       //TESTIMONIALS

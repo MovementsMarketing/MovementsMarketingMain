@@ -80,6 +80,12 @@ $gap: 20px;
     font-weight: 700;
   }
 
+  p {
+    @media screen  and (max-width: 768px) {
+      line-height: 22px;
+    }
+  }
+
   .testimonial__company {
     background: #ffffff;
     border-radius: $border-radius 0 $border-radius 0;
@@ -87,18 +93,29 @@ $gap: 20px;
 
     @media screen  and (max-width: 768px) {
       border-radius: $border-radius-small 0 0 0;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
 
     .company__image {
       line-height: 0;
+
+      @media screen  and (max-width: 768px) {
+        border-radius: $border-radius-small 0 0 0;
+        height: 120px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
       img {
         width: 100%;
         border-radius: $border-radius 0 $border-radius 0;
 
         @media screen  and (max-width: 768px) {
-          border-radius: $border-radius-small 0 $border-radius-small 0;
+          border-radius: 0;
+          //border-radius: $border-radius-small 0 0 0;
+        //  border-radius: $border-radius-small 0 $border-radius-small 0;
         }
       }
     }
@@ -107,7 +124,20 @@ $gap: 20px;
       padding: 60px 20px;
 
       @media screen  and (max-width: 768px) {
-        padding: 20px;
+        padding: 20px 10px 10px;
+
+        h6 {
+          margin-bottom: 5px !important;
+
+          &::before {
+            top: -8px;
+          }
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
     }
   }
@@ -116,6 +146,10 @@ $gap: 20px;
     display: flex;
     flex-direction: column;
     gap: $gap;
+
+    @media screen  and (max-width: 768px) {
+      gap: 5px;
+    }
 
     .testimonial__quote {
       background: #186267;
@@ -131,7 +165,8 @@ $gap: 20px;
 
       @media screen  and (max-width: 768px) {
         border-radius: 0;
-        padding: 20px;
+        padding: 10px;
+        gap: 10px;
 
         .person {
           font-size: 12px;
@@ -140,6 +175,16 @@ $gap: 20px;
 
       h6 {
         font-weight: 400;
+
+        @media screen  and (max-width: 768px) {
+          line-height: 24px;
+          font-size: 16px;
+        }
+
+        @media screen  and (max-width: 420px) {
+          line-height: 22px;
+          font-size: 14px;
+        }
       }
 
       hr {
@@ -165,7 +210,7 @@ $gap: 20px;
         border-radius: 0 0 $border-radius-small 0;
         flex-direction: column;
         gap: 10px;
-        padding: 20px;
+        padding: 10px 10px 10px 15px;
       }
 
       h6 {
@@ -187,9 +232,14 @@ $gap: 20px;
             margin-left: -12px; /* Also needed for space (tweak if needed) */
           }
 
-          @media screen  and (max-width: 420px) {
-            line-height: 26px;
+          @media screen  and (max-width: 768px) {
+            line-height: 24px;
             font-size: 16px;
+          }
+
+          @media screen  and (max-width: 420px) {
+            line-height: 22px;
+            font-size: 14px;
           }
         }
       }
