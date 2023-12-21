@@ -9,6 +9,8 @@
   line-height: normal;
   padding: 12px 12px 12px 20px;
   transition: all ease 300ms;
+  height: unset;
+  min-height: 55px;
 
   .text {
     text-wrap: wrap;

@@ -244,6 +244,21 @@ der Konkurrenz abhebt;
 Kundenstamms, was zu einem deutlichen Wachstum der
 Marktpräsenz führt.</li>`
       },
+      alager: {
+        companyDescription: `Eine führende AR-App für die mobile Workflow-
+Automatisierung, Fernunterstützung und 3D-CAD-
+Visualisierung`,
+        quote: `„Eine professionelle und strukturierte
+Zusammenarbeit vom Projektmanagement bis hin
+zu motivierten und erfahrenen
+Vertriebsmitarbeitern - Sie bekommen all das und
+noch viel mehr vom Movements Marketing-Team.“`,
+        quotePerson: ``,
+        impact: `<li>Erweiterung der Vertriebsressourcen und
+Initiativen zur Leadgenerierung
+</li><li>243 % mehr Chancen generiert
+</li><li>Erzielter ROI von 364 %</li>`
+      },
     },
     values: {
       ourValues: `Unsere Werte`,
@@ -271,7 +286,7 @@ sondern auch unsere Interaktionen mit Kunden und die Ergebnisse, die wir erziele
       },
     },
     contact: {
-      title: '<span class="is-highlighted">Let’s Connect!</span>',
+      title: '<span class="is-movements-green">Let’s Connect!</span>',
       subtitle: `Sind Sie bereit, Ihre Vertriebsfähigkeiten und Kundeninteraktionen auf ein höheres Niveau zu bringen?`,
       text: `Lassen Sie uns gemeinsam Ihre Erfolgsgeschichte schreiben!`,
       name: 'Name',

@@ -158,8 +158,8 @@ export default HomeBlock;
         }
 
         @media screen  and (max-width: 780px) {
-          width: calc(100% - 80px);
-          margin-left: 40px;
+          width: calc(100% - 40px);
+          margin-left: 20px;
           border-radius: 15px;
           padding-bottom: 40px;
         }

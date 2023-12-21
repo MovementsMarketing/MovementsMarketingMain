@@ -4,7 +4,7 @@
 
     <cover :cover-image="coverData.img" :cover-title="coverData.title" :cover-subtitle="coverData.subtitle"/>
 
-    <div class="section is-white">
+    <div class="section is-white p-t-120">
       <div v-for="(el, index) in services" :key="`service-${index}`" class="home__service">
         <home-block :img-url="el.imgSrc" :name="el.title" :is-left="el.isLeft">
           <template #title>

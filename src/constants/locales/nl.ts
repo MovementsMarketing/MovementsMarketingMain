@@ -238,6 +238,20 @@ concurrentie
 genereren van extra verkopen, met een aanzienlijke
 marktgroei als resultaat.</li>`
       },
+      alager: {
+        companyDescription: `Een toonaangevende AR-app voor mobiele workflow-
+automatisering, externe ondersteuning en 3D CAD-
+visualisatie`,
+        quote: `"Professionele en gestructureerde samenwerking met
+een gemotiveerd en ervaren verkoopteam, maar ook
+voor projectmanagement – dit, en nog veel meer krijg
+je van het Movements Marketing-team."`,
+        quotePerson: ``,
+        impact: `<li>Uitbreiding van het sales team van de klant, en het
+genereren van leads voor de klant
+</li><li>Genereren van 243% meer verkoopkansen
+</li><li>Behalen van een ROI van 364%</li>`
+      },
     },
     values: {
       ourValues: `Onze waarden`,

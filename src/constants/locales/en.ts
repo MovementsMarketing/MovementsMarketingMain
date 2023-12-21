@@ -203,6 +203,19 @@ from the competitors
 </li><li>Successfully expanded sales and customer base, marking a
 significant growth in market presence</li>`
       },
+      alager: {
+        companyDescription: `A leading AR app for mobile workflow automation,
+remote support and 3D CAD visualization`,
+        quote: `“Professional and structured collaboration from project
+management as well as a motivated and experienced
+sales staff - you get all of this and much more from the
+Movements Marketing team.”`,
+        quotePerson: ``,
+        impact: `<li>Expanded the client’s sales resources and lead
+generation initiatives
+</li><li>Generated 243% more opportunities
+</li><li>Achieved ROI of 364%</li>`
+      },
     },
     values: {
       ourValues: `Our values`,

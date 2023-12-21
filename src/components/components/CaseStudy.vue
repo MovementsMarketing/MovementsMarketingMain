@@ -72,7 +72,7 @@ $gap: 20px;
       }
 
       @media screen  and (max-width: 768px) {
-        padding: 20px;
+        padding: 40px 20px 20px;
       }
     }
   }

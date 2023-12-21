@@ -207,8 +207,8 @@ export default ServiceBlock;
         }
 
         @media screen  and (max-width: 768px) {
-          width: calc(100% - 80px);
-          margin-left: 40px;
+          width: calc(100% - 40px);
+          margin-left: 20px;
           padding-left: unset;
           padding-right: unset;
           padding-bottom: 40px;

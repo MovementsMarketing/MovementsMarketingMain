@@ -16,7 +16,7 @@
       </template>
     </cover>
 
-    <div class="section is-white">
+    <div class="section is-white p-t-120">
       <div v-for="(el, index) in services" :key="`service-${index}`" class="home__service" :id="el.id">
         <service-block :img-url="el.imgSrc" :name="el.title" :is-left="el.isLeft">
           <template #title>

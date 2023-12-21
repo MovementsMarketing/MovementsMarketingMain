@@ -154,7 +154,7 @@ $border-radius-small: 40px;
       align-items: center;
       justify-content: center;
       margin-top: -40px;
-      transition: all 500ms ease;
+      transition: all 700ms ease;
       height: 485px;
 
       @media screen  and (max-width: 768px) {
@@ -189,7 +189,7 @@ $border-radius-small: 40px;
           border-radius: $border-radius 0 $border-radius 0;
           width: 100%;
           max-width: 300px;
-          transition: all 250ms ease;
+          transition: all 550ms ease;
 
           @media screen  and (max-width: 768px) {
             border-radius: $border-radius-small 0 $border-radius-small 0;
@@ -212,7 +212,7 @@ $border-radius-small: 40px;
           //margin-bottom: 60px;
 
           .member__photo {
-            max-width: 120px;
+            max-width: 140px;
             margin-bottom: 20px;
             border-radius: 20px 0 20px 0;
           }
