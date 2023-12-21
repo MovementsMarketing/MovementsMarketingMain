@@ -1,7 +1,7 @@
 <template>
   <div v-intersection-observer="startNumberAnimation" class="our-numbers">
     <div class="bg-image">
-      <img src="@/assets/images/backgrounds/movements_globe_bg.png" alt="Movements Marketing Globe Background">
+<!--      <img src="@/assets/images/backgrounds/movements_globe_bg.png" alt="Movements Marketing Globe Background">-->
     </div>
     <div class="line"></div>
     <div class="section__content has-text-left">

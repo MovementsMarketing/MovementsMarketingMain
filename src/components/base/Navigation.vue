@@ -20,31 +20,26 @@
                     <div class="services-options">
                       <div class="services-option-group">
                         <span class="services-main-option">
-<!--                          todo route-->
                              <router-link :to="routes.customerExperience" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.customerExperience`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
-<!--                          todo route-->
                              <router-link :to="routes.customerExperienceEngagementStrategy" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.engagementStrategy`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
-<!--                          todo route-->
                              <router-link :to="routes.customerExperienceTelephoneCustomerCare" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.telephoneCustomerCare`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
-<!--                          todo route-->
                              <router-link :to="routes.customerExperienceAppointmentOptimization" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.appointmentOptimization`) }}
                              </router-link>
                         </span>
                         <span class="services-suboption">
-<!--                          todo route-->
                              <router-link :to="routes.customerExperienceAiVoicebot" class="m-b-10" @click="isMobileActive=false">
                                {{ $t(`navigation.servicesOptions.aiAssistant`) }}
                              </router-link>
@@ -328,63 +323,43 @@
             return {
               home: '/',
               about: '/over-ons',
-              partnerships: `/clients/our-partnerships`,
-              testimonials: `/clients/client-success-stories`,
-              values: `/about-us/our-values`,
-              team: `/team`,
-              customerExperience: '/customer-experience/',
-              customerExperienceEngagementStrategy: '/customer-experience/engagementStrategy',
-              customerExperienceTelephoneCustomerCare: '/customer-experience/telephoneCustomerCare',
-              customerExperienceAppointmentOptimization: '/customer-experience/appointmentOptimization',
-              customerExperienceAiVoicebot: '/customer-experience/aiVoicebot',
-              endToEnd: '/end-to-end-sales-support/',
-              endToEndEngagementStrategy: '/end-to-end-sales-support/engagementStrategy',
-              endToEndDataEnrichment: '/end-to-end-sales-support/dataEnrichment',
-              endToEndLeadGeneration: '/end-to-end-sales-support/leadGeneration',
-              endToEndLeadClosing: '/end-to-end-sales-support/leadClosing',
-
-              outbound: '/outbound',
-              inbound: '/inbound',
-              telemarketing: '/diensten/b2b-telemarketing',
-              answering: '/diensten/telefoonservice',
-              customer: '/diensten/klantenservice',
-              email: '/diensten/email-management',
-              liveChat: '/diensten/live-chat',
-              webcare: '/diensten/social-webcare/',
-              clients: '/klanten/',
-              contact: '/contact/',
-              careers: '/careers/',
+              partnerships: `/klanten/onze-partnerships`,
+              testimonials: `/klanten/klant-succesverhalen`,
+              values: '/over-ons/onze-waarden',
+              team: `/over-ons/ons-team`,
+              contact: '/nl/contact/',
+              careers: '/nl/join-us/',
+              customerExperience: '/oplossingen/customer-experience',
+              customerExperienceEngagementStrategy: '/oplossingen/customer-experience/klantstrategie',
+              customerExperienceTelephoneCustomerCare: '/oplossingen/customer-experience/end-to-end-telefonische-klantenservice',
+              customerExperienceAppointmentOptimization: '/oplossingen/customer-experience/afspraak-optimalisatie-oplossingen',
+              customerExperienceAiVoicebot: '/oplossingen/customer-experience/ai-voicebot',
+              endToEnd: '/oplossingen/end-to-end-sales-support',
+              endToEndEngagementStrategy: '/oplossingen/end-to-end-sales-support/klantstrategie',
+              endToEndDataEnrichment: '/oplossingen/end-to-end-sales-support/data-verrijkingen-en-kwalificatie',
+              endToEndLeadGeneration: '/oplossingen/end-to-end-sales-support/leadgeneratie-en-leadopvolging',
+              endToEndLeadClosing: '/oplossingen/end-to-end-sales-support/lead-closing',
             }
           } else if(this.$i18n.locale === 'de') {
             return {
               home: '/',
               about: '/uber-uns',
-              partnerships: `/clients/our-partnerships`,
-              testimonials: `/clients/client-success-stories`,
-              values: `/about-us/our-values`,
-              team: `/team`,
-              customerExperience: '/customer-experience/',
-              customerExperienceEngagementStrategy: '/customer-experience/engagementStrategy',
-              customerExperienceTelephoneCustomerCare: '/customer-experience/telephoneCustomerCare',
-              customerExperienceAppointmentOptimization: '/customer-experience/appointmentOptimization',
-              customerExperienceAiVoicebot: '/customer-experience/aiVoicebot',
-              endToEnd: '/end-to-end-sales-support/',
-              endToEndEngagementStrategy: '/end-to-end-sales-support/engagementStrategy',
-              endToEndDataEnrichment: '/end-to-end-sales-support/dataEnrichment',
-              endToEndLeadGeneration: '/end-to-end-sales-support/leadGeneration',
-              endToEndLeadClosing: '/end-to-end-sales-support/leadClosing',
-
-              outbound: '/outbound',
-              inbound: '/inbound',
-              telemarketing: '/dienstleistungen/b2b-telemarketing',
-              answering: '/dienstleistungen/telefonservice',
-              customer: '/dienstleistungen/kundenservice',
-              email: '/dienstleistungen/email-management',
-              liveChat: '/dienstleistungen/live-chat',
-              webcare: '/dienstleistungen/social-webcare/',
-              clients: '/kunden',
-              contact: '/kontakt/',
-              careers: '/careers/',
+              partnerships: `/kunden/unsere-kooperationspartner`,
+              testimonials: `/kunden/erfolgsgeschichten-unserer-kunden`,
+              values: `/uber-ons/unsere-werte`,
+              team: `/uber-uns/unser-team`,
+              customerExperience: '/losungen/kundenerlebnis',
+              customerExperienceEngagementStrategy: '/losungen/kundenerlebnis/kundenstrategie',
+              customerExperienceTelephoneCustomerCare: '/losungen/kundenerlebnis/end-to-end-telefon-kundendienst',
+              customerExperienceAppointmentOptimization: '/losungen/kundenerlebnis/optimierung-der-terminvereinbarung',
+              customerExperienceAiVoicebot: '/losungen/kundenerlebnis/ki-voicebot',
+              endToEnd: '/losungen/end-to-end-vertriebsunterstutzung',
+              endToEndEngagementStrategy: '/losungen/end-to-end-vertriebsunterstutzung/kundenstrategie',
+              endToEndDataEnrichment: '/losungen/end-to-end-vertriebsunterstutzung/datenanreicherung-und-qualifizierung',
+              endToEndLeadGeneration: '/losungen/end-to-end-vertriebsunterstutzung/lead-generierung-und-nachverfolgung-der-leads',
+              endToEndLeadClosing: '/losungen/end-to-end-vertriebsunterstutzung/lead-closing',
+              contact: '/de/contact/',
+              careers: '/de/join-us/',
             }
           } else {
             return {
@@ -393,29 +368,19 @@
               partnerships: `/clients/our-partnerships`,
               testimonials: `/clients/client-success-stories`,
               values: `/about-us/our-values`,
-              team: `/team`,
-              customerExperience: '/customer-experience/',
-              customerExperienceEngagementStrategy: '/customer-experience/engagementStrategy',
-              customerExperienceTelephoneCustomerCare: '/customer-experience/telephoneCustomerCare',
-              customerExperienceAppointmentOptimization: '/customer-experience/appointmentOptimization',
-              customerExperienceAiVoicebot: '/customer-experience/aiVoicebot',
-              endToEnd: '/end-to-end-sales-support/',
-              endToEndEngagementStrategy: '/end-to-end-sales-support/engagementStrategy',
-              endToEndDataEnrichment: '/end-to-end-sales-support/dataEnrichment',
-              endToEndLeadGeneration: '/end-to-end-sales-support/leadGeneration',
-              endToEndLeadClosing: '/end-to-end-sales-support/leadClosing',
-
-              outbound: '/outbound',
-              inbound: '/inbound',
-              telemarketing: '/service/b2b-telemarketing',
-              answering: '/service/answering-service/',
-              customer: '/service/customer-service/',
-              email: '/service/email-management/',
-              liveChat: '/service/live-chat/',
-              webcare: '/service/social-webcare/',
-              clients: '/clients/',
+              team: `/about-us/our-team`,
+              customerExperience: '/solutions/customer-experience',
+              customerExperienceEngagementStrategy: '/solutions/customer-experience/customer-engagement-strategy',
+              customerExperienceTelephoneCustomerCare: '/solutions/customer-experience/end-to-end-telephone-customer-care',
+              customerExperienceAppointmentOptimization: '/solutions/customer-experience/appointment-optimization-solutions',
+              customerExperienceAiVoicebot: '/solutions/customer-experience/ai-voicebot',
+              endToEnd: '/solutions/end-to-end-sales-support',
+              endToEndEngagementStrategy: '/solutions/end-to-end-sales-support/customer-engagement-strategy',
+              endToEndDataEnrichment: '/solutions/end-to-end-sales-support/data-enrichment-and-qualification',
+              endToEndLeadGeneration: '/solutions/end-to-end-sales-support/lead-generation-and-follow-up',
+              endToEndLeadClosing: '/solutions/end-to-end-sales-support/lead-closing',
               contact: '/contact/',
-              careers: '/careers/',
+              careers: '/join-us/',
             }
           }
         }

@@ -165,7 +165,7 @@ $gap: 20px;
 
       @media screen  and (max-width: 768px) {
         border-radius: 0;
-        padding: 10px;
+        padding: 20px 10px;
         gap: 10px;
 
         .person {

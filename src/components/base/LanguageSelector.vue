@@ -54,14 +54,12 @@ class LanguageSelector extends Vue {
   isLanguagesActive = false;
 
   setLanguage(lang: string) {
-    console.log(lang, this.$i18n.locale, this.translateUrl)
     if(lang === this.$i18n.locale) return;
 
     this.$i18n.locale = lang;
 
     if(this.translateUrl && !this.$route.fullPath.includes('tryNow')) {
       let newPath = `${this.$route.fullPath}/${lang}`.replace('//', '/');
-      console.log(newPath)
      this.$router.push(newPath);
     }
   }

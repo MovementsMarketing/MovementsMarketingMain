@@ -46,7 +46,7 @@
         <h2 v-html="$t(`home.contact.title`)" class="has-line-center"></h2>
       </div>
       <div class="columns m-0 is-multiline contact__columns">
-        <div class="column is-12-tablet is-4-desktop is-relative ">
+        <div class="column is-12-tablet is-4-desktop is-relative">
           <img :src="dots" :class="{'dots': true}">
 
           <div class="contact__info has-small-radius-diagonal is-gray">
@@ -362,18 +362,18 @@
     get routesTranslated() {
       if(this.$i18n.locale === 'nl') {
         return {
-          customerExperience: '/',
-          endToEnd: '/',
+          customerExperience: '/oplossingen/customer-experience',
+          endToEnd: '/oplossingen/end-to-end-sales-support',
         }
       } else if(this.$i18n.locale === 'de') {
         return {
-          customerExperience: '/',
-          endToEnd: '/',
+          customerExperience: '/losungen/kundenerlebnis',
+          endToEnd: '/losungen/end-to-end-vertriebsunterstutzung',
         }
       } else {
         return {
-          customerExperience: '/',
-          endToEnd: '/',
+          customerExperience: '/solutions/customer-experience',
+          endToEnd: '/solutions/end-to-end-sales-support',
         }
       }
     }
@@ -534,10 +534,6 @@
 .home__service:not(:last-of-type){
   margin-bottom: 120px;
 }
-
-
-
-
 
     .section.section--cover {
         min-height: calc(100vh - 160px);
@@ -1281,6 +1277,16 @@
 
 .contact {
 
+  .contact__columns {
+    > .column {
+      padding: 20px;
+
+      @media screen and (max-width: 1024px) {
+        padding: 20px 0 !important;
+      }
+    }
+  }
+
   .dots {
     position: absolute;
     left: -100px;
@@ -1303,6 +1309,10 @@
     overflow: hidden;
     z-index: 1;
     height: 100%;
+
+    @media screen and (max-width: 780px) {
+      padding: 20px;
+    }
 
     .connect-icon {
       position: absolute;

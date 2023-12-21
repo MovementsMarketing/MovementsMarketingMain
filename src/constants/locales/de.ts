@@ -1,29 +1,38 @@
 import generalTerms from "@/constants/locales/generalTerms/de";
 
 const de = {
+  learnMore: 'Mehr erfahren',
+  connect: `Let's connect`,
+  contactUs: 'Kontaktiere uns!',
   navigation: {
     about: 'Über uns',
-    services: 'Dienstleistungen',
-    clients: 'Kunden',
-    career: 'Karriere',
-    contact: 'Kontakt',
-    contactUs: 'Kontaktiere uns!',
-    linkedInBlogs: 'LinkedIn-Blogs',
-    privacyPolicy: 'Datenschutzerklärung',
+    services: 'Unsere Lösungen',
+    clients: 'Unsere Kunden',
+    career: 'Join us',
+    privacyPolicy: 'Privacy policy',
+    clientsOptions: {
+      partnerships: 'Unsere Kooperationspartner',
+      stories: 'Erfolgsgeschichten unserer Kunden',
+    },
+    aboutOptions: {
+      ourValues: 'Unsere Werte',
+      ourTeam: 'Unser Team',
+    },
     servicesOptions: {
-      outbound: 'Outbound Leadgenerierung',
-      inbound: 'Inbound Kundenservice',
-      telemarketing: 'B2B-Telemarketing',
-      leadGeneration: 'Leadgenerierung',
-      newAppointments: 'Terminierung',
-      dataEnrichment: 'Datenanreicherung',
-      customerService: 'Kundenservice',
-      answeringService: 'Telefonservice',
-      liveChat: 'Live Chat',
-      emailManagement: 'Email Management',
-      socialWebcare: 'Social Webcare',
+      customerExperience: 'Kundenerlebnis',
+      endToEnd: 'End-to-end Vertriebsunterstützung',
+      engagementStrategy: 'Kundenstrategie',
+      telephoneCustomerCare: 'End-to-End-Telefon Kundendienst',
+      appointmentOptimization: 'Optimierung der Terminvereinbarung',
+      aiAssistant: 'KI-Voicebot',
+      dataEnrichment: 'Datenanreicherung und Qualifizierung',
+      leadGeneration: 'Lead-Generierung und Nachverfolgung der Leads',
+      leadClosing: 'Lead-closing',
     }
   },
+
+
+
   home: {
     title: 'New Business und zufriedene Kunden beginnen hier',
     subtitle: 'Wir schaffen und pflegen langfristige Kundenbeziehungen!',

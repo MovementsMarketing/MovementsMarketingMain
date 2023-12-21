@@ -124,19 +124,18 @@
 
     }
 
-    //todo translations
     get routes() {
       if(this.$i18n.locale === 'nl') {
         return {
-          getStarted: '/end-to-end-sales-support/getStarted',
+          getStarted: '/oplossingen/end-to-end-sales-support/contact',
         }
       } else if(this.$i18n.locale === 'de') {
         return {
-          getStarted: '/end-to-end-sales-support/getStarted',
+          getStarted: '/losungen/end-to-end-vertriebsunterstutzung/contact',
         }
       } else {
         return {
-          getStarted: '/end-to-end-sales-support/getStarted',
+          getStarted: '/solutions/end-to-end-sales-support/contact',
         }
       }
     }

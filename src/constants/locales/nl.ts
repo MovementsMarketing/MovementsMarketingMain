@@ -31,7 +31,7 @@ const nl = {
     }
   },
   home: {
-    title: ' <span class="is-movements-green is-block">End-to-end oplossingen</span> voor customer experience en sales',
+    title: '<span class="is-movements-green is-block">End-to-end oplossingen</span> voor customer experience en sales',
     subtitle: 'Het perfectioneren van ieder contactmoment voor optimale resultaten',
     services: {
       customerExperience: {
@@ -441,7 +441,7 @@ klantenservice, B2B sales support en lead generatie.`,
 
   careers: {
     cover: {
-      title: 'Wil je deel uitmaken van<span class="is-movements-green">ons team? </span>',
+      title: 'Wil je deel uitmaken van <span class="is-movements-green">ons team? </span>',
       subtitle: `Word onderdeel van de volgende generatie marketeers`,
       cta: 'Open posities',
     },

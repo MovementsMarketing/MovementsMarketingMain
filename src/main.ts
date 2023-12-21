@@ -11,7 +11,6 @@ import router from './router';
 import IntersectionObserver from './directives/IntersectionObserver';
 
 import Icons from "@/components/base/Icons.vue";
-import Slider from "@/components/base/Slider.vue";
 import Footer from "@/components/base/Footer.vue";
 import Navigation from "@/components/base/Navigation.vue";
 
@@ -24,7 +23,6 @@ Vue.use(VueCookies);
 Vue.directive('intersection-observer', IntersectionObserver);
 
 Vue.component('icons', Icons);
-Vue.component('slider', Slider);
 Vue.component('movements-footer', Footer);
 Vue.component('navigation', Navigation);
 

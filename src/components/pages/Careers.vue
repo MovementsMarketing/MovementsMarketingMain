@@ -1,6 +1,6 @@
 <template>
   <div class="careers has-bg-gray">
-    <navigation :full-logo="true" :light-logo="true"/>
+    <navigation :full-logo="true" :light-logo="true" :translate-url="true"/>
 
     <cover :cover-image="coverData.img" :cover-title="coverData.title" :cover-subtitle="coverData.subtitle" :is-green="true">
       <template #cta>

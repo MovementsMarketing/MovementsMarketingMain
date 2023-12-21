@@ -30,7 +30,6 @@ class NavigationDropdown extends Vue {
   isActive = false;
 
   close() {
-    console.log(close);
     this.isActive = false;
   }
 

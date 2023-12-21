@@ -136,15 +136,15 @@
     get routes() {
       if(this.$i18n.locale === 'nl') {
         return {
-          getStarted: '/customer-experience/getStarted',
+          getStarted: '/oplossingen/customer-experience/contact',
         }
       } else if(this.$i18n.locale === 'de') {
         return {
-          getStarted: '/customer-experience/getStarted',
+          getStarted: '/losungen/kundenerlebnis/contact',
         }
       } else {
         return {
-          getStarted: '/customer-experience/getStarted',
+          getStarted: '/solutions/customer-experience/contact',
         }
       }
     }
@@ -183,40 +183,6 @@
           id: 'aiVoicebot'
         },
       ];
-    }
-
-
-
-
-    get informationData(){
-      return {
-        title: this.$t(`services.answeringService.info.title`),
-        text: this.$t(`services.answeringService.info.content`),
-        cover: require('@/assets/images/services/answering_service/info-cover.png'),
-      };
-    }
-
-    get salesData() {
-      return {
-        title: this.$t(`services.answeringService.info.title`),
-        blocks: [
-          {
-            icon: require('@/assets/images/services/answering_service/sales/1.png'),
-            title: this.$t(`services.answeringService.sales.block1.title`),
-            text: this.$t(`services.answeringService.sales.block1.text`)
-          },
-          {
-            icon: require('@/assets/images/services/answering_service/sales/2.png'),
-            title: this.$t(`services.answeringService.sales.block2.title`),
-            text: this.$t(`services.answeringService.sales.block2.text`)
-          },
-          {
-            icon: require('@/assets/images/services/answering_service/sales/3.png'),
-            title: this.$t(`services.answeringService.sales.block3.title`),
-            text: this.$t(`services.answeringService.sales.block3.text`)
-          },
-        ]
-      };
     }
 
     handleScroll() {

@@ -1,6 +1,6 @@
 <template>
   <div class="team has-bg-gray">
-    <navigation :full-logo="true" :light-logo="true"/>
+    <navigation :full-logo="true" :light-logo="true" :translate-url="true"/>
 
     <cover-video :cover-title="coverData.title" :cover-text="coverData.text">
     </cover-video>
