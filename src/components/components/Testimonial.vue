@@ -204,6 +204,7 @@ $gap: 20px;
       align-items: center;
       border-radius: 0 0 $border-radius 0;
       min-height: 200px;
+      height: 100%;
       animation-delay: 300ms;
 
       @media screen  and (max-width: 768px) {
@@ -211,6 +212,7 @@ $gap: 20px;
         flex-direction: column;
         gap: 10px;
         padding: 10px 10px 10px 15px;
+        min-height: unset;
       }
 
       h6 {

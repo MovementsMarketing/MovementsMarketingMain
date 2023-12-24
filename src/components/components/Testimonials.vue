@@ -124,9 +124,8 @@ class Testimonials extends Vue {
         quotePerson: this.$t(`home.testimonials.trans.quotePerson`),
         impact: this.$t(`home.testimonials.trans.impact`),
       },
-        //todo cover
       {
-        cover: require('@/assets/images/testimonials/trans.png'),
+        cover: require('@/assets/images/testimonials/aleger.png'),
         company: `Aleger`,
         companyDescription: this.$t(`home.testimonials.alager.companyDescription`),
         quote: this.$t(`home.testimonials.alager.quote`),
