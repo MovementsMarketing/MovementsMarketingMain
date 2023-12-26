@@ -10,7 +10,7 @@
 <!--      </transition>-->
     </div>
 
-    <div class="columns m-0 p-t-20">
+    <div class="columns m-0">
       <div class="column is-4 p-0"></div>
       <div class="column has-text-centered p-0 slider__dots">
             <div v-for="(t, i) in testimonials" :key="`dot-${i}`" :class="{'dot': true, 'is-active': i === currentIndex}"></div>
@@ -45,38 +45,6 @@ class Testimonials extends Vue {
   get testimonials() {
     return [
       {
-        cover: require('@/assets/images/testimonials/scorito.png'),
-        company: `Scorito`,
-        companyDescription: this.$t(`home.testimonials.scorito.companyDescription`),
-        quote: this.$t(`home.testimonials.scorito.quote`),
-        quotePerson: this.$t(`home.testimonials.scorito.quotePerson`),
-        impact: this.$t(`home.testimonials.scorito.impact`),
-      },
-      {
-        cover: require('@/assets/images/testimonials/dak.png'),
-        company: `Dak`,
-        companyDescription: this.$t(`home.testimonials.dak.companyDescription`),
-        quote: this.$t(`home.testimonials.dak.quote`),
-        quotePerson: this.$t(`home.testimonials.dak.quotePerson`),
-        impact: this.$t(`home.testimonials.dak.impact`),
-      },
-      {
-        cover: require('@/assets/images/testimonials/shypple.png'),
-        company: `Shypple`,
-        companyDescription: this.$t(`home.testimonials.shypple.companyDescription`),
-        quote: this.$t(`home.testimonials.shypple.quote`),
-        quotePerson: this.$t(`home.testimonials.shypple.quotePerson`),
-        impact: this.$t(`home.testimonials.shypple.impact`),
-      },
-      {
-        cover: require('@/assets/images/testimonials/abc-display.png'),
-        company: `ABC Display`,
-        companyDescription: this.$t(`home.testimonials.abcDisplay.companyDescription`),
-        quote: this.$t(`home.testimonials.abcDisplay.quote`),
-        quotePerson: this.$t(`home.testimonials.abcDisplay.quotePerson`),
-        impact: this.$t(`home.testimonials.abcDisplay.impact`),
-      },
-      {
         cover: require('@/assets/images/testimonials/diagnost.png'),
         company: `Diagnost-IQ`,
         companyDescription: this.$t(`home.testimonials.diagnost.companyDescription`),
@@ -91,6 +59,30 @@ class Testimonials extends Vue {
         quote: this.$t(`home.testimonials.sazas.quote`),
         quotePerson: this.$t(`home.testimonials.sazas.quotePerson`),
         impact: this.$t(`home.testimonials.sazas.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/shypple.png'),
+        company: `Shypple`,
+        companyDescription: this.$t(`home.testimonials.shypple.companyDescription`),
+        quote: this.$t(`home.testimonials.shypple.quote`),
+        quotePerson: this.$t(`home.testimonials.shypple.quotePerson`),
+        impact: this.$t(`home.testimonials.shypple.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/dak.png'),
+        company: `Dak`,
+        companyDescription: this.$t(`home.testimonials.dak.companyDescription`),
+        quote: this.$t(`home.testimonials.dak.quote`),
+        quotePerson: this.$t(`home.testimonials.dak.quotePerson`),
+        impact: this.$t(`home.testimonials.dak.impact`),
+      },
+      {
+        cover: require('@/assets/images/testimonials/scorito.png'),
+        company: `Scorito`,
+        companyDescription: this.$t(`home.testimonials.scorito.companyDescription`),
+        quote: this.$t(`home.testimonials.scorito.quote`),
+        quotePerson: this.$t(`home.testimonials.scorito.quotePerson`),
+        impact: this.$t(`home.testimonials.scorito.impact`),
       },
       {
         cover: require('@/assets/images/testimonials/cargoplot.png'),
@@ -131,7 +123,15 @@ class Testimonials extends Vue {
         quote: this.$t(`home.testimonials.alager.quote`),
         quotePerson: this.$t(`home.testimonials.alager.quotePerson`),
         impact: this.$t(`home.testimonials.alager.impact`),
-      }
+      },
+      {
+        cover: require('@/assets/images/testimonials/abc-display.png'),
+        company: `ABC Display`,
+        companyDescription: this.$t(`home.testimonials.abcDisplay.companyDescription`),
+        quote: this.$t(`home.testimonials.abcDisplay.quote`),
+        quotePerson: this.$t(`home.testimonials.abcDisplay.quotePerson`),
+        impact: this.$t(`home.testimonials.abcDisplay.impact`),
+      },
     ];
   }
 
@@ -164,7 +164,6 @@ export default Testimonials;
 
   .testimonial-slider {
     position: relative;
-    overflow: hidden; /* Add this line to hide overflow */
   }
 
   .testimonial-container {

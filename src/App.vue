@@ -63,7 +63,7 @@ export default App;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 100px;
   background: #F2F2F2;
 
   @media screen  and (max-width: 780px) {

@@ -122,7 +122,7 @@ challenges we encountered.”`,
         quotePerson: `Coos Molenaar, Department Manager`,
         impact: `<li>Achieved shorter call times and improved
 patient experience from day 1
-</li><li>- Reduced unnecessary telephone calls and
+</li><li>Reduced unnecessary telephone calls and
 lowered costs
 </li><li>Improved the appointment process with
 active guidance for customers</li>`
@@ -387,7 +387,7 @@ demo scheduling to taking on the responsibility of overseeing the entire sales p
     coverText: `<span class="has-text-weight-semibold">Movements Marketing</span> is dedicated to elevating customer experience and sales success for its clients. We
 are a dynamic team driven by the purpose of empowering our clients' success. Our journey, which began in the
 Netherlands, has seen us expand our expertise and reach, ensuring that satisfied customers and professional
-communication transcend borders and that success is a shared experience`,
+communication transcend borders and that success is a shared experience.`,
     team: {
       title: `Our team`,
       text: `Our strength lies in our team - we are nurturing a team committed to quality and results, providing

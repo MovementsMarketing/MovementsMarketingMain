@@ -1268,16 +1268,10 @@
           align-items: center;
           gap: 100px;
 
-          @media screen  and (max-width: 1400px) {
-            width: 300%;
-            gap: 80px;
-            animation-name: slide-left-right-small;
-          }
-
           @media screen  and (max-width: 768px) {
-            width: 600%;
+            width: 1000%;
             gap: 60px;
-            animation-name: slide-left-right-smallest;
+            animation-name: slide-left-right-small;
           }
 
         }

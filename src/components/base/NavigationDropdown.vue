@@ -42,7 +42,7 @@ class NavigationDropdown extends Vue {
   }
 
   onMouseLeave() {
-    if(this.isFullWidth) return;
+    if(this.isFullWidth || window.innerWidth < 768) return;
 
     setTimeout(()=>{
       this.close();
@@ -88,7 +88,7 @@ export default NavigationDropdown;
     background: #F2F2F2;
     min-width: 100%;
     left: 0;
-    top: 120px;
+    top: 100px;
     padding: 40px 40px 40px 20px;
     border-radius: 0 0 60px 0;
     text-align: left;

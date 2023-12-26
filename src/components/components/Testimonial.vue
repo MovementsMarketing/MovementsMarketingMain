@@ -1,19 +1,24 @@
 <template>
   <div class="columns m-0 testimonial">
     <transition :name="transitionName" mode="out-in">
-      <div :key="`testimonial__company-${index}`" class="column is-4 testimonial__company p-0" :class="`translation-${transitionName}`">
-        <div class="company__image">
-          <img :src="data.cover" :alt="data.company" ref="testimonialCover"  @load="onImageLoad"/>
-        </div>
-        <div class="company__info">
-          <h6 v-html="data.company" class="has-line-center m-b-10 is-movements-green"></h6>
-          <p v-html="data.companyDescription" class="is-movements-green"></p>
+      <div :key="`testimonial__company-${index}`" class="column is-4 p-l-0 p-r-10" :class="`translation-${transitionName}`">
+        <div class="testimonial__company p-0">
+          <div class="company__image">
+            <img :src="data.cover" :alt="data.company" ref="testimonialCover"  @load="onImageLoad"/>
+          </div>
+          <div class="company__info">
+            <h6 v-html="data.company" class="has-line-center m-b-10 is-movements-green"></h6>
+            <p v-html="data.companyDescription" class="is-movements-green"></p>
+          </div>
         </div>
       </div>
+
     </transition>
-      <div class="column testimonial__content p-0 is-8">
+
+
+    <div class="column testimonial__content p-l-10 p-r-0 is-8">
         <transition :name="transitionName" mode="out-in">
-            <div :key="`testimonial__quote-${index}`" class="testimonial__quote" :style="{ 'min-height': coverHeight }" :class="`translation-${transitionName}`">
+            <div :key="`testimonial__quote-${index}`" class="testimonial__quote" :class="`translation-${transitionName}`">
               <h6 class="has-text-white">
                 <span v-html="data.quote" ></span>
               </h6>
@@ -28,7 +33,7 @@
           </div>
         </transition>
       </div>
-    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -74,7 +79,17 @@ $border-radius-small: 60px;
 $gap: 20px;
 
 .testimonial {
-  gap: $gap;
+  gap: unset;
+
+  @media screen  and (max-width: 768px) {
+    padding-bottom: 10px;
+  }
+
+  >.column {
+    @media screen  and (max-width: 768px) {
+      padding: 0 !important;
+    }
+  }
 
   h6 {
     font-weight: 700;
@@ -90,6 +105,7 @@ $gap: 20px;
     background: #ffffff;
     border-radius: $border-radius 0 $border-radius 0;
     width: 100%;
+    height: 100%;
 
     @media screen  and (max-width: 768px) {
       border-radius: $border-radius-small 0 0 0;
@@ -98,6 +114,12 @@ $gap: 20px;
 
     .company__image {
       line-height: 0;
+      height: 300px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $border-radius 0 $border-radius 0;
 
       @media screen  and (max-width: 768px) {
         border-radius: $border-radius-small 0 0 0;
@@ -110,7 +132,6 @@ $gap: 20px;
 
       img {
         width: 100%;
-        border-radius: $border-radius 0 $border-radius 0;
 
         @media screen  and (max-width: 768px) {
           border-radius: 0;
@@ -121,7 +142,7 @@ $gap: 20px;
     }
 
     .company__info {
-      padding: 60px 20px;
+      padding: 60px 20px 40px;
 
       @media screen  and (max-width: 768px) {
         padding: 20px 10px 10px;
@@ -155,18 +176,20 @@ $gap: 20px;
       background: #186267;
       color: #ffffff;
       border-radius: $border-radius 0 0 0;
-      padding: 40px;
+      padding: 40px 30px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       gap: 20px;
       animation-delay: 150ms;
+      min-height: 300px;
 
       @media screen  and (max-width: 768px) {
         border-radius: 0;
         padding: 20px 10px;
         gap: 10px;
+        min-height: 200px;
 
         .person {
           font-size: 12px;
@@ -198,7 +221,7 @@ $gap: 20px;
     .testimonial__impact {
       background: #ffffff;
       display: flex;
-      gap: 40px;
+      gap: 40px 30px;
       padding: 40px;
       text-align: left;
       align-items: center;

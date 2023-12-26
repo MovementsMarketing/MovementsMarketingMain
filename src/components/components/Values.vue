@@ -119,6 +119,15 @@ export default Values;
       &.is-highlighted {
         background: #69BC77;
         color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+          padding: 40px 20px;
+          border-radius: 60px 0 60px 0;
+        }
 
         p {
           color: #ffffff;

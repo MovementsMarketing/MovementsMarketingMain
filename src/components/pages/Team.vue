@@ -146,6 +146,10 @@ $border-radius-small: 40px;
   }
 
   .team__members {
+    @media screen  and (max-width: 768px) {
+      padding: 0 60px;
+    }
+
     .member {
       padding: 140px 20px 100px;
       border-radius: $border-radius 0 $border-radius 0;
@@ -163,7 +167,7 @@ $border-radius-small: 40px;
       }
 
       @media screen  and (max-width: 420px) {
-        height: 400px;
+        height: 340px;
       }
 
       * {
@@ -192,6 +196,7 @@ $border-radius-small: 40px;
           transition: all 550ms ease;
 
           @media screen  and (max-width: 768px) {
+            max-width: 225px;
             border-radius: $border-radius-small 0 $border-radius-small 0;
           }
         }
