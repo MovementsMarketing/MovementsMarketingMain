@@ -57,8 +57,13 @@ $gap: 20px;
     }
 
     .study__info {
-      padding: 40px;
+      padding: 60px 40px 40px;
       text-align: left;
+
+      @media (min-resolution: 200dpi) {
+        padding: 40px 20px 20px 20px;
+      }
+
 
       > {
         color: #000000;
@@ -67,8 +72,17 @@ $gap: 20px;
       h6 {
         font-weight: 700;
         color: #000000;
-        line-height: 26px;
-        min-height: 110px;
+        line-height: 24px;
+        font-size: 20px;
+        min-height: 100px;
+
+        @media (min-resolution: 200dpi) {
+          font-size: 19px;
+        }
+
+        @media (min-resolution: 220dpi) {
+          font-size: 18px;
+        }
       }
 
       @media screen  and (max-width: 768px) {

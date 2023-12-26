@@ -448,6 +448,10 @@
       a {
         font-weight: 400;
       }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }

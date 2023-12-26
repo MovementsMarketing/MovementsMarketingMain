@@ -5,7 +5,7 @@
           <h2 v-html="title" class="has-line-center studies__title m-0"></h2>
         </div>
         <div class="columns is-multiline has-padding studies__list">
-          <div v-for="s in caseStudies" :key="s.title" class="column is-6-tablet is-4-desktop p-20">
+          <div v-for="s in caseStudies" :key="s.title" class="column is-6-tablet is-4-desktop p-15">
             <case-study :data="s"/>
           </div>
         </div>
