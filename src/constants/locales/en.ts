@@ -31,7 +31,7 @@ const en = {
     }
   },
   home: {
-    title: ' <span class="is-movements-green is-block">End-to-end excellence</span> in customer experience and sales',
+    title: ' <span class="is-movements-green">End-to-end excellence</span> in customer experience and sales',
     subtitle: 'Tailoring your every touchpoint for optimal outcomes',
     services: {
       customerExperience: {
@@ -104,7 +104,7 @@ international presence.”`,
         quotePerson: `Cyrus Truijens, CEO`,
         impact: `<li>Generated thousands of leads through targeted
 phone campaigns and expanded reach
-</li><li> Made the brand more recognizable in the
+</li><li>Made the brand more recognizable in the
 industry and opened new business opportunities
 </li>`
       },
@@ -138,12 +138,12 @@ experience, with consistently good results. We
 recommend Movements Marketing for their
 versatile support.”`,
         quotePerson: `Gideon van Aalst, Team Leader Service and Sales`,
-        impact: `<li> Crafted an integrated sales strategy and
+        impact: `<li>Crafted an integrated sales strategy and
 support
 by taking ownership of lead generation
-</li><li> Took ownership of sending quotes and
+</li><li>Took ownership of sending quotes and
 navigating the entire sales process
-</li><li> Optimized the sales funnel and witnessed a
+</li><li>Optimized the sales funnel and witnessed a
 significant increase in conversion rates</li>`
       },
       cargoplot: {
@@ -157,7 +157,7 @@ customers. They understand our needs and are a
         quotePerson: `Founder`,
         impact: `<li>Helped validate and expand the client’s outbound
 strategy
-</li><li> Converted a significant number of demo
+</li><li>Converted a significant number of demo
 appointments into signed customers</li>`
       },
       oct8ne: {
@@ -168,7 +168,7 @@ says what it does! We wholeheartedly
 recommend their professional team of
 experts.”`,
         quotePerson: `Melvin Dom, Country Manager`,
-        impact: `<li> First hybrid chat (Live chat and Chatbot) with
+        impact: `<li>First hybrid chat (Live chat and Chatbot) with
 visual support
 </li><li>Set up efficient demo appointments that
 turned into signed customers

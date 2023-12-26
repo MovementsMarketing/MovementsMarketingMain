@@ -98,8 +98,19 @@ export default CoverVideo;
       .dots {
         width: 180px;
         position: absolute;
-        left: -70px;
-        top: -100px;
+        left: -60px;
+        top: -80px;
+
+        @media (min-resolution: 100dpi) {
+          width: 140px;
+        }
+
+        @media (min-resolution: 220dpi) {
+          width: 120px;
+          left: -40px;
+          top: -60px;
+        }
+
 
         @media screen  and (max-width: 780px) {
           width: 100px;

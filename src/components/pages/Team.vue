@@ -52,72 +52,72 @@
     get teamMembers() {
       return [
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Mirza.jpg'),
           name: 'Mirza Ćuk',
           position: 'Chief Executive Officer',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Joost.jpg'),
           name: 'Joost Van Beers',
           position: 'Founder',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Anel.jpg'),
           name: 'Anel Bašić',
           position: 'Director of Customer Onboarding & Project Management',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Frans.jpg'),
           name: 'Frans Saelman',
           position: 'Chief Operating Officer',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Azra.jpg'),
           name: 'Azra Kerić',
           position: 'Project Management Lead',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Drago.jpg'),
           name: 'Drago Bikarević',
           position: 'Project Management Lead',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Elvir.jpg'),
           name: 'Elvir Merić',
           position: 'Project Management Lead',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Saskia.jpg'),
           name: 'Saskia Rijnders',
           position: 'Quality Analyst',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Alma.jpg'),
           name: 'Alma Hadžović',
           position: 'HR Manager',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Jasna.jpg'),
           name: 'Jasna Ibraković',
           position: 'Finance Manager',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Aida.jpg'),
           name: 'Aida Cvjetinović',
           position: 'Senior Digital Marketer',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Anela.jpg'),
           name: 'Anela Alilovski',
           position: 'Team Leader (German)',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/Emina.jpg'),
           name: 'Emina Husejnović',
           position: 'Team Leader (Dutch)',
         },
         {
-          img: require('@/assets/images/movements-marketing-cover.png'),
+          img: require('@/assets/images/team/female.jpg'),
           name: 'Asli Birsel Basan',
           position: 'Supervisor Inbound (Dutch)',
         },

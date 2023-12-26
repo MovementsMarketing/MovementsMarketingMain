@@ -71,7 +71,7 @@ export default Cover;
       .cover__text__box {
         background: #ffffff;
         position: absolute;
-        width: calc(100% + 180px);
+        width: calc(100% + 120px);
         min-height: 50vh;
         display: flex;
         flex-direction: column;
@@ -81,6 +81,18 @@ export default Cover;
         padding-top: 50px;
         padding-bottom: 50px;
         padding-right: 50px;
+
+        @media (min-resolution: 200dpi) {
+          width: calc(100% + 100px);
+          padding-right: 40px;
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+
+        @media (min-resolution: 220dpi) {
+          width: calc(100% + 80px);
+          padding-right: 30px;
+        }
 
         @media screen and (max-width: 1400px) {
           width: calc(100% + 240px);
@@ -140,10 +152,20 @@ export default Cover;
   }
 
   .dots {
-    width: 180px;
+    width: 160px;
     position: absolute;
     right: -70px;
     top: -100px;
+
+    @media (min-resolution: 100dpi) {
+      width: 140px;
+    }
+
+    @media (min-resolution: 220dpi) {
+      width: 120px;
+      right: -40px;
+      top: -90px;
+    }
 
     @media screen  and (max-width: 780px) {
       width: 100px;

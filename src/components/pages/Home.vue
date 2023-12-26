@@ -405,12 +405,21 @@
         require('@/assets/images/clients/scorito.png'),
         require('@/assets/images/clients/shypple.png'),
         require('@/assets/images/clients/abc_display.png'),
+        require('@/assets/images/clients/oct8ne.png'),
+        require('@/assets/images/clients/trans.png'),
+        require('@/assets/images/clients/x2com.png'),
+        require('@/assets/images/clients/aleger.png'),
+
         require('@/assets/images/clients/sazas.png'),
         require('@/assets/images/clients/dak.png'),
         require('@/assets/images/clients/diagnost.png'),
         require('@/assets/images/clients/scorito.png'),
         require('@/assets/images/clients/shypple.png'),
         require('@/assets/images/clients/abc_display.png'),
+        require('@/assets/images/clients/oct8ne.png'),
+        require('@/assets/images/clients/trans.png'),
+        require('@/assets/images/clients/x2com.png'),
+        require('@/assets/images/clients/aleger.png'),
       ]
     }
 
@@ -1249,10 +1258,10 @@
         }
 
         .partnerships__img-wrapper {
-          width: 200%;
+          width: 300%;
           position: relative;
           animation-name: slide-left-right;
-          animation-duration: 80000ms;
+          animation-duration: 100000ms;
           animation-timing-function: linear;
           animation-iteration-count: infinite;
           display: flex;
@@ -1289,9 +1298,20 @@
 
   .dots {
     position: absolute;
-    left: -100px;
-    top: -100px;
+    left: -60px;
+    top: -60px;
     z-index: 0;
+    width: 160px;
+
+    @media (min-resolution: 100dpi) {
+      width: 140px;
+    }
+
+    @media (min-resolution: 220dpi) {
+      width: 120px;
+      left: -40px;
+      top: -40px;
+    }
 
     @media screen and (max-width: 780px) {
       width: 100px;
@@ -1301,7 +1321,7 @@
   }
 
   .contact__info {
-    padding: 60px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1363,6 +1383,15 @@
           text-align: left;
           font-size: 16px;
           line-height: 20px;
+
+          @media (min-resolution: 200dpi) {
+            font-size: 14px;
+          }
+
+          @media (min-resolution: 220dpi) {
+            font-size: 13px;
+            line-height: 16px;
+          }
         }
       }
     }

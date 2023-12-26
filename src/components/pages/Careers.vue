@@ -73,13 +73,13 @@
     }
 
     videos = [
+      "https://www.youtube.com/embed/sJodW2ex4SY",
       "https://www.youtube.com/embed/3Fn8LbUXtuI",
       "https://www.youtube.com/embed/tVIhRSCdb_0",
       "https://www.youtube.com/embed/D2eLnglOQK0",
       "https://www.youtube.com/embed/D1mI3ifIQ00",
       "https://www.youtube.com/embed/hDnRNnOVSro",
       "https://www.youtube.com/embed/aZHOEyUalNs",
-      "https://www.youtube.com/embed/sJodW2ex4SY",
     ];
 
     nextSlide() {
@@ -127,6 +127,15 @@
         height: 680px;
         max-width: 100%;
 
+        @media (min-resolution: 200dpi){
+          width: 900px;
+          height: 600px;
+        }
+
+        @media (min-resolution: 220dpi){
+          width: 750px;
+          height: 500px;
+        }
 
         @media screen and (max-width: 1240px){
           width: 900px;

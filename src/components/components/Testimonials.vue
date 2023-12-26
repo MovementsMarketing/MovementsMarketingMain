@@ -94,7 +94,7 @@ class Testimonials extends Vue {
       },
       {
         cover: require('@/assets/images/testimonials/cargoplot.png'),
-        company: `Cargoplot`,
+        company: ``,
         companyDescription: this.$t(`home.testimonials.cargoplot.companyDescription`),
         quote: this.$t(`home.testimonials.cargoplot.quote`),
         quotePerson: this.$t(`home.testimonials.cargoplot.quotePerson`),

@@ -442,14 +442,6 @@
       @media screen and (max-width: 1024px) {
         margin-bottom: 10px;
       }
-
-      a {
-        color: #69BC77;
-
-        &:hover {
-          font-weight: 700;
-        }
-      }
     }
 
     .services-suboption {

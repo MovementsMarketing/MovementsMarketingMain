@@ -110,8 +110,21 @@ export default ServiceBlock;
 
       .dots {
         position: absolute;
-        top: -20px;
-        left: -150px;
+        top: -40px;
+        left: -180px;
+        width: 160px;
+
+        @media (min-resolution: 200dpi) {
+          width: 140px;
+          top: -20px;
+          left: -150px;
+        }
+
+        @media (min-resolution: 220dpi) {
+          width: 120px;
+          top: 20px;
+          left: -140px;
+        }
 
         @media screen  and (max-width: 768px) {
           width: 100px;
@@ -121,9 +134,19 @@ export default ServiceBlock;
 
         &.is-left {
           left: unset;
-          right: -150px;
+          right: -180px;
           top: unset;
-          bottom: -20px;
+          bottom: -40px;
+
+          @media (min-resolution: 200dpi) {
+            bottom: -20px;
+            right: -150px;
+          }
+
+          @media (min-resolution: 220dpi) {
+            bottom: 20px;
+            right: -140px;
+          }
 
           @media screen  and (max-width: 768px) {
             top: -10px;
@@ -152,6 +175,10 @@ export default ServiceBlock;
           background: #186267;
           border-radius: 120px 0 120px 0;
           box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.30);
+
+          @media (min-resolution: 220dpi) {
+            width: 90%;
+          }
 
           @media screen and (max-width: 1400px) {
             width: 100%;

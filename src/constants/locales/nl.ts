@@ -31,7 +31,7 @@ const nl = {
     }
   },
   home: {
-    title: '<span class="is-movements-green is-block">End-to-end oplossingen</span> voor customer experience en sales',
+    title: '<span class="is-movements-green">End-to-end oplossingen</span> voor customer experience en sales',
     subtitle: 'Het perfectioneren van ieder contactmoment voor optimale resultaten',
     services: {
       customerExperience: {

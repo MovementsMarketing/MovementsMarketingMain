@@ -24,6 +24,10 @@
     height: 120px;
     max-width: 2500px;
 
+    @media (min-resolution: 220dpi) {
+      padding: 0 60px 0 180px;
+    }
+
     @media screen and (max-width: 1600px) {
       padding: 0 60px 0 180px;
     }
@@ -118,6 +122,14 @@
       display: flex;
       width: 180px;
       z-index: 150;
+
+      @media (min-resolution: 100dpi) {
+        width: 160px;
+      }
+
+      @media (min-resolution: 220dpi) {
+        width: 140px;
+      }
 
       @media screen  and (max-width: 1400px) {
         width: 120px;

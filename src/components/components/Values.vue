@@ -6,7 +6,7 @@
     <div class="columns is-multiline has-padding values__list m-0">
       <div class="column is-6-tablet is-4-desktop">
         <div class="value is-highlighted">
-          <p class="has-line-left">
+          <p class="">
             {{ $t(`home.values.intro`) }}
           </p>
         </div>
@@ -119,7 +119,6 @@ export default Values;
       &.is-highlighted {
         background: #69BC77;
         color: #ffffff;
-        padding-top: 80px;
 
         p {
           color: #ffffff;

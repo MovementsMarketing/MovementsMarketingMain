@@ -34,7 +34,7 @@ const de = {
 
 
   home: {
-    title: ' <span class="is-movements-green is-block">End-to-End Lösungen</span> für das Kundenerlebnis und den Vertrieb',
+    title: ' <span class="is-movements-green">End-to-End Lösungen</span> für das Kundenerlebnis und den Vertrieb',
     subtitle: 'Passen Sie jeden Touch Point individuell an, um optimale Ergebnisse zu erzielen',
     services: {
       customerExperience: {

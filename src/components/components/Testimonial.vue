@@ -225,6 +225,10 @@ $gap: 20px;
           color: #186267;
           margin-bottom: 5px;
 
+          @media (min-resolution: 220dpi) {
+            font-size: 16px;
+          }
+
           &::before {
             color: #69BC77;
             content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
