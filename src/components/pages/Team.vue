@@ -117,7 +117,7 @@
           position: 'Team Leader (Dutch)',
         },
         {
-          img: require('@/assets/images/team/female.jpg'),
+          img: require('@/assets/images/team/Asli.jpg'),
           name: 'Asli Birsel Basan',
           position: 'Supervisor Inbound (Dutch)',
         },
