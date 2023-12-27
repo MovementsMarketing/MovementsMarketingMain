@@ -71,7 +71,7 @@ export default Cover;
       .cover__text__box {
         background: #ffffff;
         position: absolute;
-        width: calc(100% + 120px);
+        width: calc(100% + 140px);
         min-height: 50vh;
         display: flex;
         flex-direction: column;
@@ -80,17 +80,17 @@ export default Cover;
         border-radius: 0 20px 20px 0;
         padding-top: 50px;
         padding-bottom: 50px;
-        padding-right: 50px;
+        padding-right: 40px;
 
         @media (min-resolution: 200dpi) {
-          width: calc(100% + 100px);
+          width: calc(100% + 120px);
           padding-right: 40px;
           padding-top: 40px;
           padding-bottom: 40px;
         }
 
         @media (min-resolution: 220dpi) {
-          width: calc(100% + 80px);
+          width: calc(100% + 100px);
           padding-right: 30px;
         }
 

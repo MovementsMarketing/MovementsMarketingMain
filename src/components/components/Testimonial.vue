@@ -74,7 +74,7 @@ export default Testimonial;
 </script>
 
 <style lang="scss">
-$border-radius: 100px;
+$border-radius: 80px;
 $border-radius-small: 60px;
 $gap: 20px;
 

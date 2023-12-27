@@ -137,6 +137,16 @@
           height: 500px;
         }
 
+        @media screen and (max-width: 1600px){
+          width: 900px;
+          height: 600px;
+        }
+
+        @media screen and (max-width: 1400px){
+          width: 750px;
+          height: 500px;
+        }
+
         @media screen and (max-width: 1240px){
           width: 900px;
           height: 600px;

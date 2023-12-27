@@ -96,9 +96,13 @@ export default Values;
     .value {
       text-align: left;
       padding: 40px;
-      border-radius: 100px 0 100px 0;
+      border-radius: 80px 0 80px 0;
       height: 100%;
       background: #ffffff;
+
+      @media screen and (max-width: 1600px) {
+        padding: 30px;
+      }
 
       @media screen and (max-width: 768px) {
         padding: 20px;
