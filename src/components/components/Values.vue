@@ -83,6 +83,10 @@ export default Values;
     .column {
       padding: 20px;
 
+      @media screen and (max-width: 1600px) {
+        padding: 10px;
+      }
+
       @media screen and (max-width: 768px) {
         padding: 20px 0;
       }

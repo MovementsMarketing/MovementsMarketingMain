@@ -104,8 +104,16 @@ export default Cover;
           left: 30px;
           padding-top: 40px;
           padding-bottom: 40px;
-          padding-right: 40px;
+          padding-right: 60px;
           border-radius: 15px;
+
+          h1 {
+            width: 100%;
+          }
+        }
+
+        @media screen  and (max-width: 520px) {
+          padding-right: 20px;
         }
 
         .cover__title {

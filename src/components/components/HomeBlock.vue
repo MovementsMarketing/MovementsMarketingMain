@@ -86,6 +86,18 @@ export default HomeBlock;
           left: 160px;
         }
 
+        @media screen and (max-width: 1600px) {
+          width: 140px;
+          top: 60px;
+          left: 160px;
+        }
+
+        @media screen and (max-width: 1400px) {
+          width: 120px;
+          top: 60px;
+          left: 85px;
+        }
+
         @media screen  and (max-width: 780px) {
           width: 100px;
           top: -50px;
@@ -106,6 +118,18 @@ export default HomeBlock;
           @media (min-resolution: 220dpi) {
             bottom: 60px;
             right: 160px;
+          }
+
+          @media screen and (max-width: 1600px) {
+            width: 140px;
+            bottom: 60px;
+            right: 160px;
+          }
+
+          @media screen and (max-width: 1400px) {
+            width: 120px;
+            bottom: 60px;
+            right: 85px;
           }
 
           @media screen  and (max-width: 780px) {
@@ -140,8 +164,12 @@ export default HomeBlock;
             width: calc(100% - 100px);
           }
 
+          @media screen and (max-width: 1600px) {
+            width: calc(100% - 100px);
+          }
+
           @media screen and (max-width: 1400px) {
-            width: 100%;
+            width: calc(100% - 60px);
             right: -60px;
           }
 

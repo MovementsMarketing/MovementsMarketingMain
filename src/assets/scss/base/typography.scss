@@ -155,9 +155,14 @@ h5 {
     line-height: 28px;
   }
 
-  @media screen  and (max-width: 1024px) {
+  @media screen  and (max-width: 1620px) {
     font-size: 26px;
     line-height: 30px;
+  }
+
+  @media screen  and (max-width: 1024px) {
+    font-size: 24px;
+    line-height: 28px;
   }
 
   @media screen  and (max-width: 780px) {
@@ -176,6 +181,10 @@ h6 {
 
   @media (min-resolution: 220dpi) {
     font-size: 18px;
+  }
+
+  @media screen  and (max-width: 1600px) {
+    font-size: 20px;
   }
 
   @media screen  and (max-width: 780px) {

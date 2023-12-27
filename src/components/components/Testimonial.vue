@@ -114,7 +114,7 @@ $gap: 20px;
 
     .company__image {
       line-height: 0;
-      height: 300px;
+      height: 280px;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -142,7 +142,7 @@ $gap: 20px;
     }
 
     .company__info {
-      padding: 60px 20px 40px;
+      padding: 40px 20px 20px;
 
       @media screen  and (max-width: 768px) {
         padding: 20px 10px 10px;
@@ -176,14 +176,18 @@ $gap: 20px;
       background: #186267;
       color: #ffffff;
       border-radius: $border-radius 0 0 0;
-      padding: 40px 30px;
+      padding: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: 20px;
+      gap: 10px;
       animation-delay: 150ms;
-      min-height: 300px;
+      min-height: 280px;
+
+      .person {
+        font-size: 14px;
+      }
 
       @media screen  and (max-width: 768px) {
         border-radius: 0;
@@ -215,6 +219,9 @@ $gap: 20px;
         height: 4px;
         background: #69BC77;
         margin: 0;
+        border-style: inset;
+        border-width: 1px;
+        border-color: #69BC77;
       }
     }
 
@@ -222,11 +229,10 @@ $gap: 20px;
       background: #ffffff;
       display: flex;
       gap: 40px 30px;
-      padding: 40px;
+      padding: 20px 40px;
       text-align: left;
       align-items: center;
       border-radius: 0 0 $border-radius 0;
-      min-height: 200px;
       height: 100%;
       animation-delay: 300ms;
 
