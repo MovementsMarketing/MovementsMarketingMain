@@ -44,7 +44,7 @@ export default Cover;
   height: calc(100vh - 120px);
 
 
-  @media screen  and (max-width: 780px) {
+  @media screen  and (max-width: 1024px) {
     min-height: 65vw;
   }
 
@@ -64,7 +64,7 @@ export default Cover;
       align-items: center;
       position: relative;
 
-      @media screen  and (max-width: 780px) {
+      @media screen  and (max-width: 1024px) {
         position: unset;
       }
 
@@ -98,7 +98,7 @@ export default Cover;
           width: calc(100% + 240px);
         }
 
-        @media screen  and (max-width: 780px) {
+        @media screen  and (max-width: 1024px) {
           width: calc(100% + -60px);
           background: rgba(255, 255, 255, 0.75);
           left: 30px;
@@ -120,7 +120,7 @@ export default Cover;
           text-align: left;
           margin-bottom: 40px;
 
-          @media screen  and (max-width: 780px) {
+          @media screen  and (max-width: 1024px) {
             text-align: center;
             margin-bottom: 20px;
           }
@@ -129,7 +129,7 @@ export default Cover;
         .cover__subtitle {
           text-align: left;
 
-          @media screen  and (max-width: 780px) {
+          @media screen  and (max-width: 1024px) {
             text-align: center;
           }
         }
@@ -147,7 +147,7 @@ export default Cover;
         max-width: 60%;
       }
 
-      @media screen  and (max-width: 780px) {
+      @media screen  and (max-width: 1024px) {
         max-width: 100%;
         width: 100%;
         border-radius: 0 0 120px 0;
@@ -175,7 +175,7 @@ export default Cover;
       top: -90px;
     }
 
-    @media screen  and (max-width: 780px) {
+    @media screen  and (max-width: 1024px) {
       width: 100px;
       right: -20px;
       top: -60px;
