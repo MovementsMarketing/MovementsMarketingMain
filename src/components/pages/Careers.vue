@@ -2,7 +2,7 @@
   <div class="careers has-bg-gray">
     <navigation :full-logo="true" :light-logo="true" :translate-url="true"/>
 
-    <cover :cover-image="coverData.img" :cover-title="coverData.title" :cover-subtitle="coverData.subtitle" :is-green="true">
+    <cover :cover-image="coverData.img" :cover-title="coverData.title" :cover-subtitle="coverData.subtitle" :is-green="true" :has-gray-bg="true">
       <template #cta>
         <a href="https://app.healthboxhr.com/jobs-feed/web/company/63cf8f5f4fdd0" target="_blank" class="button button--primary cover__cta">
           <span class="text">

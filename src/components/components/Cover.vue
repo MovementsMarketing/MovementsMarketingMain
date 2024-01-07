@@ -1,5 +1,5 @@
 <template>
-  <div class="cover">
+  <div class="cover" :class="{'has-bg-gray': hasGrayBg}">
     <div class="cover__content m-0 has-radius-bottom-right" :class="{'is-green': isGreen}">
       <div class="cover__text" >
         <div class="cover__text__box has-padding-left">
@@ -32,6 +32,9 @@ class Cover extends Vue {
 
   @Prop({default: false})
   isGreen: boolean;
+
+  @Prop({default: false})
+  hasGrayBg: boolean;
 }
 
 export default Cover;
