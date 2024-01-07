@@ -253,7 +253,7 @@ Zusammenarbeit vom Projektmanagement bis hin
 zu motivierten und erfahrenen
 Vertriebsmitarbeitern - Sie bekommen all das und
 noch viel mehr vom Movements Marketing-Team.“`,
-        quotePerson: ``,
+        quotePerson: `Alexander Stöger, Geschäftsführer`,
         impact: `<li>Erweiterung der Vertriebsressourcen und
 Initiativen zur Leadgenerierung
 </li><li>243 % mehr Chancen generiert
@@ -286,7 +286,8 @@ sondern auch unsere Interaktionen mit Kunden und die Ergebnisse, die wir erziele
       },
     },
     contact: {
-      title: '<span class="is-movements-green">Let’s Connect!</span>',
+      headquarters: 'Hauptfiliale',
+      title: 'Let’s Connect!',
       subtitle: `Sind Sie bereit, Ihre Vertriebsfähigkeiten und Kundeninteraktionen auf ein höheres Niveau zu bringen?`,
       text: `Lassen Sie uns gemeinsam Ihre Erfolgsgeschichte schreiben!`,
       name: 'Name',
@@ -329,10 +330,10 @@ einfach in den Arbeitsprozess Ihres Teams integrieren lässt.`,
 um-die-Uhr-Support, sofortige Antworten und ein menschenähnliches Interaktionserlebnis an - und das alles ohne
 Wartezeit. Wenn Sie eine höhere Effizienz, Verfügbarkeit rund um die Uhr, Datenerfassung und mehr Mitarbeiter
 für strategischere Aufgaben haben möchten, probieren Sie jetzt unsere Lösung aus!`,
-        cta: `Request demo`,
+        cta: `Demo anfordern`,
       },
       caseStudies: {
-        title: `Customer experience case studies`,
+        title: `Kundenerlebnis case studies`,
         study1: {
           title: `Kundendienst- und Terminoptimierungslösungen für ein regionales medizinisches Labor`,
           text: `Gemeinsam mit unserem Kunden, hatten wir das Ziel die Arbeitsabläufe auf ein höheres Niveau zu bringen. Dies
@@ -348,7 +349,7 @@ dem Kunden geholfen, effektiver mit Kunden zu interagieren und die Kundenbeziehu
 und Zufriedenheit führte.`,
         },
         study3: {
-          title: `Umfassender telefonischer Kundensupport für eine führende Versicherungs- und Hypothekenberatergenossenschaft`,
+          title: `Umfassender telefonischer Kundensupport für eine führende Versicherungs und Hypothekenberater-genossenschaft`,
           text: `Unser Team verbessert den Kundenservice, indem es eingehende Anrufe effizient bearbeitet, die Bedürfnisse der Anrufer
 versteht und sie an die richtige Abteilung weiterleitet. Sollte sich herausstellen, dass die gewünschte Abteilung nicht erreichbar
 ist, wird ein Rückruf angefordert und eine effiziente Kundenbetreuung sichergestellt. Dadurch konnten sich die internen Teams
@@ -405,7 +406,7 @@ Wachstum der Marketingkampagnen und einer Verbesserung der Kundenbindung geführ
 einem Anstieg der Neukundenanzahl führte.`,
         },
         study2: {
-          title: `End to end Vertriebsunterstützung für einen nationalen Krankenversicherungsanbieter`,
+          title: `End to end Vertriebsunterstützung für einen nationalen Anbieter der Krankenversicherung`,
           text: `Wir haben eine interne Vertriebsstrategie entwickelt, die den Kunden unterstützt, indem wir in seinem
 Namen die Leadgenerierung übernehmen, Angebote versenden und den gesamten Verkaufsprozess steuern. Dies
 gibt unseren Kunden die Möglichkeit, ihr Kerngeschäft zu optimieren, um den Gesamtumsatz zu steigern.`,

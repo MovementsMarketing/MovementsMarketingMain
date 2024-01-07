@@ -96,7 +96,7 @@ export default ServiceBlock;
       flex-direction: row-reverse;
     }
 
-    @media screen  and (max-width: 780px) {
+    @media screen  and (max-width: 1024px) {
       flex-direction: column !important;
     }
 
@@ -104,7 +104,7 @@ export default ServiceBlock;
       width: 50%;
       position: relative;
 
-      @media screen  and (max-width: 768px) {
+      @media screen  and (max-width: 1024px) {
         width: 100%;
       }
 
@@ -112,7 +112,7 @@ export default ServiceBlock;
         position: absolute;
         top: -40px;
         left: -180px;
-        width: 160px;
+        width: 150px;
 
         @media (min-resolution: 200dpi) {
           width: 140px;
@@ -126,7 +126,13 @@ export default ServiceBlock;
           left: -140px;
         }
 
-        @media screen  and (max-width: 768px) {
+        @media screen  and (max-width: 1400px) {
+          width: 140px;
+          top: -20px;
+          left: -150px;
+        }
+
+        @media screen  and (max-width: 1024px) {
           width: 100px;
           top: -40px;
           left: -20px;
@@ -148,7 +154,7 @@ export default ServiceBlock;
             right: -140px;
           }
 
-          @media screen  and (max-width: 768px) {
+          @media screen  and (max-width: 1024px) {
             top: -10px;
             right: -20px;
           }
@@ -163,7 +169,7 @@ export default ServiceBlock;
         align-items: center;
         justify-content: flex-end;
 
-        @media screen  and (max-width: 768px) {
+        @media screen  and (max-width: 1024px) {
           justify-content: center;
         }
 
@@ -193,12 +199,12 @@ export default ServiceBlock;
               right: -60px;
             }
 
-            @media screen  and (max-width: 768px) {
+            @media screen  and (max-width: 1024px) {
               right: 0;
             }
           }
 
-          @media screen  and (max-width: 768px) {
+          @media screen  and (max-width: 1024px) {
             position: relative;
             margin-bottom: -40px;
             top: -50px;
@@ -215,25 +221,39 @@ export default ServiceBlock;
     .service-block__info {
       width: 50%;
 
-      @media screen  and (max-width: 768px) {
+      @media screen  and (max-width: 1024px) {
         width: 100%;
       }
 
       .service-block__box {
         padding-top: 100px;
         padding-bottom: 60px;
-        padding-right: 80px;
+        padding-right: 60px;
 
         &.is-left {
           padding-right: unset;
-          padding-left: 80px;
+          padding-left: 60px;
 
-          @media screen  and (max-width: 768px) {
+          @media screen  and (max-width: 1024px) {
             padding-left: unset;
           }
         }
 
-        @media screen  and (max-width: 768px) {
+        &:not(.is-left) {
+          @media screen  and (max-width: 1500px) {
+            margin-left: -20px;
+          }
+
+          @media (min-resolution: 220dpi) {
+            margin-left: -20px;
+          }
+
+          @media screen  and (max-width: 1024px) {
+            margin-left: 20px;
+          }
+        }
+
+        @media screen  and (max-width: 1024px) {
           width: calc(100% - 40px);
           margin-left: 20px;
           padding-left: unset;
@@ -246,7 +266,7 @@ export default ServiceBlock;
           padding-top: 40px;
           text-align: left;
 
-          @media screen  and (max-width: 780px) {
+          @media screen  and (max-width: 1024px) {
             padding-top: 20px;
           }
 

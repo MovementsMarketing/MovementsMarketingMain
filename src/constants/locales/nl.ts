@@ -246,7 +246,7 @@ visualisatie`,
 een gemotiveerd en ervaren verkoopteam, maar ook
 voor projectmanagement – dit, en nog veel meer krijg
 je van het Movements Marketing-team."`,
-        quotePerson: ``,
+        quotePerson: `Alexander Stöger, Directeur`,
         impact: `<li>Uitbreiding van het sales team van de klant, en het
 genereren van leads voor de klant
 </li><li>Genereren van 243% meer verkoopkansen
@@ -279,7 +279,8 @@ interacties met klanten sturen en voor de resultaten die we behalen.`,
       },
     },
     contact: {
-      title: 'Let’s Connect!',
+      headquarters: 'Hoofdkantoor',
+      title: 'Laten we kennismaken!',
       subtitle: `Ben je er klaar voor om jouw sales bereik en klantinteracties naar een hoger niveau te tillen?`,
       text: `Laten we samen jouw succesverhaal creëren!`,
       name: 'Naam',
@@ -323,10 +324,10 @@ team mogelijk te maken.`,
 hiermee 24/7 ondersteuning, directe respons met een menselijke interactie-ervaring; allemaal zonder wachttijd. Als je streeft naar
 verhoogde efficiëntie, optimale bereikbaarheid, gegevensverzameling en het vrijspelen van teamleden voor meer strategische
 taken, probeer dan nu onze oplossing!`,
-        cta: `Request demo`,
+        cta: `Vraag een demo aan`,
       },
       caseStudies: {
-        title: `Klantbeleving case studies`,
+        title: `Customer experience case studies`,
         study1: {
           title: `Klantenservice- en afspraakoptimalisatie oplossingen voor een regionaal medisch laboratorium`,
           text: `Samen met onze klant hebben we de handen ineengeslagen om hun werkprocessen naar een hoger niveau te tillen.

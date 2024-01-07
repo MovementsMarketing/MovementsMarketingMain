@@ -10,8 +10,19 @@
       <p v-html="$t(`ourTeam.team.text`)" class=""></p>
     </div>
 
-    <div class="has-padding team__members columns is-multiline m-b-30">
-      <div v-for="member in teamMembers" :key="member.name" class="member column is-6-tablet is-3-desktop">
+    <div v-for="(teamRow, i) in teamMembers" :key="`teamRow-${i}`" class="has-padding team__members columns is-multiline m-b-30 is-hidden-touch is-justify-content-center">
+      <div v-for="member in teamRow" :key="member.name" class="member column is-6-tablet is-3-desktop">
+        <div class="member__info">
+          <img :src="member.img" class="member__photo"/>
+          <h6 v-text="member.name" class="member__name has-text-weight-semibold"></h6>
+          <p v-text="member.position"  class="member__position"></p>
+          <hr/>
+        </div>
+      </div>
+    </div>
+
+    <div class="has-padding team__members columns is-multiline m-b-30 is-hidden-desktop">
+      <div v-for="member in teamMembers.flat()" :key="member.name" class="member column is-6-tablet is-3-desktop">
         <div class="member__info">
           <img :src="member.img" class="member__photo"/>
           <h6 v-text="member.name" class="member__name has-text-weight-semibold"></h6>
@@ -51,7 +62,7 @@
 
     get teamMembers() {
       return [
-        {
+        [{
           img: require('@/assets/images/team/Mirza.jpg'),
           name: 'Mirza Ćuk',
           position: 'Chief Executive Officer',
@@ -70,8 +81,8 @@
           img: require('@/assets/images/team/Frans.jpg'),
           name: 'Frans Saelman',
           position: 'Chief Operating Officer',
-        },
-        {
+        },],
+        [{
           img: require('@/assets/images/team/Azra.jpg'),
           name: 'Azra Kerić',
           position: 'Project Management Lead',
@@ -85,8 +96,8 @@
           img: require('@/assets/images/team/Elvir.jpg'),
           name: 'Elvir Merić',
           position: 'Project Management Lead',
-        },
-        {
+        },],
+        [{
           img: require('@/assets/images/team/Saskia.jpg'),
           name: 'Saskia Rijnders',
           position: 'Quality Analyst',
@@ -105,8 +116,8 @@
           img: require('@/assets/images/team/Aida.jpg'),
           name: 'Aida Cvjetinović',
           position: 'Senior Digital Marketer',
-        },
-        {
+        },],
+        [{
           img: require('@/assets/images/team/Anela.jpg'),
           name: 'Anela Alilovski',
           position: 'Team Leader (German)',
@@ -120,7 +131,7 @@
           img: require('@/assets/images/team/Asli.jpg'),
           name: 'Asli Birsel Basan',
           position: 'Supervisor Inbound (Dutch)',
-        },
+        },]
       ]
     }
   }

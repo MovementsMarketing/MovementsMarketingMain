@@ -74,7 +74,7 @@ $gap: 20px;
         color: #000000;
         line-height: 24px;
         font-size: 20px;
-        min-height: 100px;
+        min-height: 120px;
 
         @media (min-resolution: 200dpi) {
           font-size: 19px;
@@ -82,6 +82,24 @@ $gap: 20px;
 
         @media (min-resolution: 220dpi) {
           font-size: 18px;
+        }
+
+        @media screen  and (max-width: 1600px) {
+          min-height: 140px;
+        }
+
+        @media screen  and (max-width: 768px) {
+          min-height: 120px;
+        }
+      }
+
+      p {
+        font-size: 15px;
+        color: #707070;
+        margin-bottom: 20px;
+
+        @media (min-resolution: 200dpi) {
+          font-size: 13px;
         }
       }
 

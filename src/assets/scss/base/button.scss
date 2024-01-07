@@ -3,25 +3,31 @@
   outline: none;
   font-family: 'Poppins', sans-serif;
   border-radius: 50px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   font-style: normal;
   line-height: normal;
   padding: 12px 12px 12px 20px;
   transition: all ease 300ms;
   height: unset;
-  min-height: 55px;
+  min-height: 50px;
 
   @media (min-resolution: 220dpi) {
-    font-size: 20px;
+    font-size: 18px;
     padding: 8px 8px 8px 20px;
-    min-height: 50px;
+    min-height: 46px;
+  }
+
+  @media (min-resolution: 240dpi) {
+    font-size: 18px;
+    padding: 8px 8px 8px 20px;
+    min-height: 42px;
   }
 
   @media screen and (max-width: 1200px) {
-    font-size: 20px;
+    font-size: 18px;
     padding: 8px 8px 8px 10px;
-    min-height: 50px;
+    min-height: 46px;
   }
 
   .text {
@@ -38,7 +44,7 @@
       margin-left: 10px;
       background: $movements-green;
       border-radius: 100px;
-      padding: 5px;
+      padding: 4px;
       overflow: hidden;
     }
   }

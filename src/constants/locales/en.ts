@@ -210,7 +210,7 @@ remote support and 3D CAD visualization`,
 management as well as a motivated and experienced
 sales staff - you get all of this and much more from the
 Movements Marketing team.”`,
-        quotePerson: ``,
+        quotePerson: `Alexander Stöger, Managing Director`,
         impact: `<li>Expanded the client’s sales resources and lead
 generation initiatives
 </li><li>Generated 243% more opportunities
@@ -242,6 +242,7 @@ generation initiatives
       },
     },
     contact: {
+      headquarters: 'Headquarters',
       title: 'Let’s Connect!',
       subtitle: `Ready to elevate your sales outreach and customer interactions?`,
       text: `Let's co-create your success story!`,

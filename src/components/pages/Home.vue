@@ -53,27 +53,30 @@
             <img :src="connectIcon" :class="{'connect-icon': true}">
 
             <div class="offices">
-              <div class="office" :class="activeOfficeIndex === 0 ? 'is-active' : ''" @click="activeOfficeIndex = 0">
+              <div class="office headquarters">
+                {{$t(`home.contact.headquarters`)}}:
+              </div>
+              <div class="office is-uppercase" :class="activeOfficeIndex === 0 ? 'is-active' : ''" @click="activeOfficeIndex = 0">
                 <span>
                   Sarajevo
                 </span>
               </div>
-              <div class="office" :class="activeOfficeIndex === 1 ? 'is-active' : ''" @click="activeOfficeIndex = 1">
-                <span>
-                  Utrecht
-                </span>
-              </div>
-              <div class="office" :class="activeOfficeIndex === 2 ? 'is-active' : ''" @click="activeOfficeIndex = 2">
-                <span>
-                  Istanbul
-                </span>
-              </div>
+<!--              <div class="office" :class="activeOfficeIndex === 1 ? 'is-active' : ''" @click="activeOfficeIndex = 1">-->
+<!--                <span>-->
+<!--                  Utrecht-->
+<!--                </span>-->
+<!--              </div>-->
+<!--              <div class="office" :class="activeOfficeIndex === 2 ? 'is-active' : ''" @click="activeOfficeIndex = 2">-->
+<!--                <span>-->
+<!--                  Istanbul-->
+<!--                </span>-->
+<!--              </div>-->
             </div>
 
             <div class="office__info">
               <div class="office__info-data">
                 <div class="office__icon">
-                  <icons icon="pin" stroke-width="1" height="32" width="32" class="is-fixed"/>
+                  <icons icon="pin" stroke-width="1" height="24" width="24" class="is-fixed"/>
                 </div>
                 <div>
                   <p>
@@ -90,7 +93,7 @@
               </div>
               <div class="office__info-data">
                 <div class="office__icon">
-                  <icons icon="phone" stroke-width="1" height="32" width="32" class="is-fixed"/>
+                  <icons icon="phone" stroke-width="1" height="24" width="24" class="is-fixed"/>
                 </div>
                 <p>
                   {{offices[activeOfficeIndex].phone}}
@@ -98,7 +101,7 @@
               </div>
               <div class="office__info-data">
                 <div class="office__icon">
-                  <icons icon="mail" stroke-width="1" height="32" width="32" class="is-fixed"/>
+                  <icons icon="mail" stroke-width="1" height="24" width="24" class="is-fixed"/>
                 </div>
                 <p style="overflow-wrap: anywhere">
                   {{offices[activeOfficeIndex].mail}}
@@ -1268,6 +1271,11 @@
           align-items: center;
           gap: 100px;
 
+          @media screen  and (max-width: 1400px) {
+            width: 600%;
+            animation-name: slide-left-right-medium;
+          }
+
           @media screen  and (max-width: 768px) {
             width: 1000%;
             gap: 60px;
@@ -1315,7 +1323,7 @@
   }
 
   .contact__info {
-    padding: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1348,18 +1356,22 @@
       .office {
         font-weight: 700;
         color: #186267;
-        text-transform: uppercase;
-        opacity: 0.5;
-        cursor: pointer;
+        //text-transform: uppercase;
+        //opacity: 0.5;
+        //cursor: pointer;
+
+        &.headquarters {
+          font-weight: 500;
+        }
 
         &.is-active {
           opacity: 1;
         }
 
-        &:hover {
-          opacity: 1;
-          color: #69BC77;
-        }
+        //&:hover {
+        //  opacity: 1;
+        //  color: #69BC77;
+        //}
       }
     }
 
@@ -1375,7 +1387,7 @@
 
         p {
           text-align: left;
-          font-size: 16px;
+          font-size: 15px;
           line-height: 20px;
 
           @media (min-resolution: 200dpi) {
@@ -1383,8 +1395,12 @@
           }
 
           @media (min-resolution: 220dpi) {
-            font-size: 13px;
+            font-size: 12px;
             line-height: 16px;
+          }
+
+          @media screen and (max-width: 1600px) {
+            font-size: 13px;
           }
         }
       }

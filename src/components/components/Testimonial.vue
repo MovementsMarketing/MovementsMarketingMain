@@ -1,7 +1,7 @@
 <template>
-  <div class="columns m-0 testimonial">
+  <div class="columns m-0 testimonial is-multiline">
     <transition :name="transitionName" mode="out-in">
-      <div :key="`testimonial__company-${index}`" class="column is-4 p-l-0 p-r-10" :class="`translation-${transitionName}`">
+      <div :key="`testimonial__company-${index}`" class="column is-12-tablet is-4-desktop p-l-0 p-r-10" :class="`translation-${transitionName}`">
         <div class="testimonial__company p-0">
           <div class="company__image">
             <img :src="data.cover" :alt="data.company" ref="testimonialCover"  @load="onImageLoad"/>
@@ -86,7 +86,7 @@ $gap: 20px;
   }
 
   >.column {
-    @media screen  and (max-width: 768px) {
+    @media screen  and (max-width: 1024px) {
       padding: 0 !important;
     }
   }
@@ -107,7 +107,7 @@ $gap: 20px;
     width: 100%;
     height: 100%;
 
-    @media screen  and (max-width: 768px) {
+    @media screen  and (max-width: 1024px) {
       border-radius: $border-radius-small 0 0 0;
       margin-bottom: 5px;
     }
@@ -121,7 +121,7 @@ $gap: 20px;
       justify-content: center;
       border-radius: $border-radius 0 $border-radius 0;
 
-      @media screen  and (max-width: 768px) {
+      @media screen  and (max-width: 1024px) {
         border-radius: $border-radius-small 0 0 0;
         height: 120px;
         overflow: hidden;
@@ -132,6 +132,7 @@ $gap: 20px;
 
       img {
         width: 100%;
+        min-height: 100%;
 
         @media screen  and (max-width: 768px) {
           border-radius: 0;
@@ -142,7 +143,16 @@ $gap: 20px;
     }
 
     .company__info {
-      padding: 40px 20px 20px;
+      padding: 40px 40px 20px;
+
+      p {
+        font-size: 17px;
+        line-height: 22px;
+
+        @media (min-resolution: 220dpi) {
+          font-size: 15px;
+        }
+      }
 
       @media screen  and (max-width: 768px) {
         padding: 20px 10px 10px;
@@ -168,7 +178,8 @@ $gap: 20px;
     flex-direction: column;
     gap: $gap;
 
-    @media screen  and (max-width: 768px) {
+    @media screen  and (max-width: 1024px) {
+      width: 100% !important;
       gap: 5px;
     }
 
@@ -189,7 +200,7 @@ $gap: 20px;
         font-size: 14px;
       }
 
-      @media screen  and (max-width: 768px) {
+      @media screen  and (max-width: 1024px) {
         border-radius: 0;
         padding: 20px 10px;
         gap: 10px;
@@ -203,7 +214,7 @@ $gap: 20px;
       h6 {
         font-weight: 400;
 
-        @media screen  and (max-width: 768px) {
+        @media screen  and (max-width: 1024px) {
           line-height: 24px;
           font-size: 16px;
         }
@@ -229,14 +240,14 @@ $gap: 20px;
       background: #ffffff;
       display: flex;
       gap: 40px 30px;
-      padding: 20px 40px;
+      padding: 20px;
       text-align: left;
       align-items: center;
       border-radius: 0 0 $border-radius 0;
       height: 100%;
       animation-delay: 300ms;
 
-      @media screen  and (max-width: 768px) {
+      @media screen  and (max-width: 1024px) {
         border-radius: 0 0 $border-radius-small 0;
         flex-direction: column;
         gap: 10px;
@@ -250,12 +261,13 @@ $gap: 20px;
 
       ul {
         li {
-          font-size: 18px;
+          font-size: 17px;
+          line-height: 20px;
           color: #186267;
           margin-bottom: 5px;
 
           @media (min-resolution: 220dpi) {
-            font-size: 16px;
+            font-size: 15px;
           }
 
           &::before {
@@ -267,7 +279,7 @@ $gap: 20px;
             margin-left: -12px; /* Also needed for space (tweak if needed) */
           }
 
-          @media screen  and (max-width: 768px) {
+          @media screen  and (max-width: 1024px) {
             line-height: 24px;
             font-size: 16px;
           }

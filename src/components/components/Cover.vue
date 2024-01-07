@@ -41,8 +41,7 @@ export default Cover;
 .cover {
   background: #fff;
   width: 100%;
-  height: calc(100vh - 120px);
-
+  height: calc(100vh - 100px);
 
   @media screen  and (max-width: 1024px) {
     min-height: 65vw;
@@ -71,7 +70,7 @@ export default Cover;
       .cover__text__box {
         background: #ffffff;
         position: absolute;
-        width: calc(100% + 140px);
+        min-width: calc(100% + 120px);
         min-height: 50vh;
         display: flex;
         flex-direction: column;
@@ -83,29 +82,31 @@ export default Cover;
         padding-right: 40px;
 
         @media (min-resolution: 200dpi) {
-          width: calc(100% + 120px);
+          min-width: calc(100% + 120px);
           padding-right: 40px;
           padding-top: 40px;
           padding-bottom: 40px;
         }
 
         @media (min-resolution: 220dpi) {
-          width: calc(100% + 100px);
+          min-width: calc(100% + 100px);
           padding-right: 30px;
         }
 
         @media screen and (max-width: 1400px) {
-          width: calc(100% + 240px);
+          min-width: calc(100% + 240px);
         }
 
         @media screen  and (max-width: 1024px) {
-          width: calc(100% + -60px);
+          min-width: calc(100% + -60px);
+          max-width: calc(100% + -60px);
           background: rgba(255, 255, 255, 0.75);
           left: 30px;
           padding-top: 40px;
           padding-bottom: 40px;
           padding-right: 60px;
           border-radius: 15px;
+          align-items: center;
 
           h1 {
             width: 100%;
@@ -137,7 +138,7 @@ export default Cover;
     }
 
     .cover__photo {
-      width: calc(100vh - 120px);
+      width: calc(100vh - 80px);
       border-radius: 240px 0 240px 0;
       background-repeat: no-repeat;
       background-size: cover;
@@ -160,7 +161,7 @@ export default Cover;
   }
 
   .dots {
-    width: 160px;
+    width: 150px;
     position: absolute;
     right: -70px;
     top: -100px;
