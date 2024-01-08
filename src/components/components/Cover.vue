@@ -80,9 +80,9 @@ export default Cover;
         align-items: flex-start;
         justify-content: center;
         border-radius: 0 20px 20px 0;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-right: 40px;
+        padding-top: 42px;
+        padding-bottom: 42px;
+        padding-right: 56px;
 
         @media (min-resolution: 200dpi) {
           min-width: calc(100% + 120px);
@@ -122,7 +122,7 @@ export default Cover;
 
         .cover__title {
           text-align: left;
-          margin-bottom: 40px;
+          margin-bottom: 32px;
 
           @media screen  and (max-width: 1024px) {
             text-align: center;
@@ -164,19 +164,15 @@ export default Cover;
   }
 
   .dots {
-    width: 150px;
+    width: 120px;
     position: absolute;
-    right: -70px;
-    top: -100px;
-
-    @media (min-resolution: 100dpi) {
-      width: 140px;
-    }
+    right: -58px;
+    top: -60px;
 
     @media (min-resolution: 220dpi) {
       width: 120px;
       right: -40px;
-      top: -90px;
+      top: -80px;
     }
 
     @media screen  and (max-width: 1024px) {

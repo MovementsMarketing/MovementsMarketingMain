@@ -209,7 +209,7 @@
       this.$nextTick(() => {
         if (this.$route.meta?.element) {
           const $el = document.querySelector(this.$route.meta?.element);
-          $el && window.scrollTo(0, $el.offsetTop);
+          $el && window.scrollTo(0, $el.offsetTop - 120);
         }
       });
     }

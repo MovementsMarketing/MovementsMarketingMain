@@ -787,7 +787,7 @@ export default new VueRouter({
         return {
           selector: to.meta.element,
           behavior: 'smooth',
-          offset: { x: 0, y: 50 },
+          offset: { x: 0, y: 120 },
         }
     }
     else {

@@ -70,15 +70,9 @@ export default HomeBlock;
 
       .dots {
         position: absolute;
-        top: 0;
-        left: 180px;
-        width: 160px;
-
-        @media (min-resolution: 200dpi) {
-          width: 140px;
-          top: 50px;
-          left: 200px;
-        }
+        width: 140px;
+        top: 40px;
+        left: 160px;
 
         @media (min-resolution: 220dpi) {
           width: 120px;
@@ -87,7 +81,6 @@ export default HomeBlock;
         }
 
         @media screen and (max-width: 1600px) {
-          width: 140px;
           top: 60px;
           left: 160px;
         }
@@ -106,14 +99,9 @@ export default HomeBlock;
 
         &.is-left {
           left: unset;
-          right: 180px;
+          right: 160px;
           top: unset;
-          bottom: 0;
-
-          @media (min-resolution: 200dpi) {
-            bottom: 50px;
-            right: 200px;
-          }
+          bottom: 40px;
 
           @media (min-resolution: 220dpi) {
             bottom: 60px;
@@ -121,7 +109,6 @@ export default HomeBlock;
           }
 
           @media screen and (max-width: 1600px) {
-            width: 140px;
             bottom: 60px;
             right: 160px;
           }

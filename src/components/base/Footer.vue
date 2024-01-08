@@ -59,7 +59,7 @@
             Registered offices
           </span>
             <span class="is-block">
-            Sarajevo, Utrecht, Istanbul
+            Sarajevo, Hilversum, Istanbul
           </span>
           </div>
         </div>

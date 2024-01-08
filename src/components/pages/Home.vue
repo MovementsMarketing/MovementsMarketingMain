@@ -460,10 +460,11 @@
 
 
     scrollToAnchor () {
+      console.log('scroll to ancor')
       this.$nextTick(() => {
         if (this.$route.meta?.element) {
           const $el = document.querySelector(this.$route.meta?.element);
-          $el && window.scrollTo(0, $el.offsetTop);
+          $el && window.scrollTo(0, $el.offsetTop - 120);
         }
       });
     }
@@ -1326,7 +1327,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -1340,7 +1341,7 @@
       position: absolute;
       right: -50px;
       top: -50px;
-      max-width: 250px;
+      max-width: 240px;
       z-index: 0;
     }
 
@@ -1349,9 +1350,10 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      gap: 10px;
-      margin: 40px 0;
+      gap: 5px;
+      margin: 60px 0;
       z-index: 1;
+      padding-left: 32px;
 
       .office {
         font-weight: 700;
