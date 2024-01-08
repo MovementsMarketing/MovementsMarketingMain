@@ -99,9 +99,9 @@ export default HomeBlock;
 
         &.is-left {
           left: unset;
-          right: 160px;
+          right: 180px;
           top: unset;
-          bottom: 40px;
+          bottom: 60px;
 
           @media (min-resolution: 220dpi) {
             bottom: 60px;
