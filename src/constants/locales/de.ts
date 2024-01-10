@@ -22,7 +22,7 @@ const de = {
       customerExperience: 'Kundenerlebnis',
       endToEnd: 'End-to-end Vertriebsunterstützung',
       engagementStrategy: 'Kundenstrategie',
-      telephoneCustomerCare: 'End-to-End-Telefon Kundendienst',
+      telephoneCustomerCare: 'End-to-End Kundendienst',
       appointmentOptimization: 'Optimierung der Terminvereinbarung',
       aiAssistant: 'KI-Voicebot',
       dataEnrichment: 'Datenanreicherung und Qualifizierung',
@@ -187,8 +187,8 @@ und eine deutliche Steigerung der
 Konversionsraten festgestellt.</li>`
       },
       cargoplot: {
-        companyDescription: `Eine Online-Plattform für E-Commerce-
-Importeure und Spediteure in den Niederlanden`,
+        companyDescription: `Eine Online-Plattform für <span class="no-wrap">E-Commerce-Importeure</span>
+ und Spediteure in den Niederlanden`,
         quote: `"Was Movements Marketing auszeichnet, ist ihre
 Flexibilität und die Fähigkeit, schnell Wert zu
 schaffen, indem sie Leads in langfristige Kunden
@@ -198,8 +198,8 @@ verpflichtet.“`,
         quotePerson: `Founder`,
         impact: `<li>Unterstützung bei der Validierung und
 Erweiterung der Outbound-Strategie des Kunden;
-</li><li>Konvertierte eine bedeutende Anzahl von Demo-
-Terminen in unterzeichnete Kunden.</li>`
+</li><li>Konvertierte eine große Anzahl von Online-Terminen
+in unterzeichnete Kunden.</li>`
       },
       oct8ne: {
         companyDescription: `Ein führendes Unternehmen im Bereich
@@ -210,8 +210,8 @@ Team von Experten uneingeschränkt."`,
         quotePerson: `Melvin Dom, Country Manager`,
         impact: `<li>Erstes hybrides Chat-System (Live-Chat und
 Chatbot) mit visueller Unterstützung;
-</li><li>Einrichtung effizienter Demo-Termine, die zu
-unterzeichneten Kunden führten;
+</li><li>Vereinbarung von effizienten Online-Terminen, die zu unterzeichneten
+Kunden führten;
 </li><li>Ausführliche Analyse der Kundenreaktionen.</li>`
       },
       x2com: {
@@ -225,8 +225,7 @@ für uns behalten!"`,
         quotePerson: `Guido Ackermans, Sales Manager`,
         impact: `<li>Gewährleistete neue Partnerschaften, die das
 Kundenteam erweitert haben;
-</li><li>Schafft Mehrwert durch regelmäßige Feedback-
-Sitzungen und Berichterstattung.</li>`
+</li><li>Schafft Mehrwert durch regelmäßige Feedback-Sitzungen und Berichterstattung.</li>`
       },
       trans: {
         companyDescription: `Die deutsche Logistikplattform für Transportmanagement
@@ -287,7 +286,7 @@ sondern auch unsere Interaktionen mit Kunden und die Ergebnisse, die wir erziele
     },
     contact: {
       headquarters: 'Hauptfiliale',
-      title: 'Let’s Connect!',
+      title: 'Kontaktieren Sie uns!',
       subtitle: `Sind Sie bereit, Ihre Vertriebsfähigkeiten und Kundeninteraktionen auf ein höheres Niveau zu bringen?`,
       text: `Lassen Sie uns gemeinsam Ihre Erfolgsgeschichte schreiben!`,
       name: 'Name',
@@ -311,7 +310,7 @@ bieten wir eine einzigartige Lösung, die auf Ihrer Vision basiert und von unser
 Team zum Leben erweckt wird. Jede Interaktion ist ein Schritt zu dauerhafter Loyalität und Erfolg.`,
       },
       telephoneCustomerCare: {
-        title: `End-to-end <span class="is-movements-green">telefonische Kundenbetreuung</span>`,
+        title: `End-to-end <span class="is-movements-green">Kundenbetreuung</span>`,
         text: `Wir stärken Ihr Team und verbessern die Erreichbarkeit. Unsere professionellen Mitarbeiter kümmern sich um
 jeden Anruf und sorgen dafür, dass Ihr internes Team nicht abgelenkt wird und sich voll und ganz auf das
 Kerngeschäft konzentrieren kann. Bei uns geht es nicht nur um die Anrufannahme, sondern wir gehen gezielt auf
@@ -326,8 +325,8 @@ einfach in den Arbeitsprozess Ihres Teams integrieren lässt.`,
       },
       aiAssistant: {
         title: `<span class="is-highlighted">KI-Voicebot</span>`,
-        text: `Unser hochmoderner Voicebot geht über das herkömmliche Engagement hinaus. Wir bieten Ihren Kunden Rund-
-um-die-Uhr-Support, sofortige Antworten und ein menschenähnliches Interaktionserlebnis an - und das alles ohne
+        text: `Unser hochmoderner Voicebot geht über das herkömmliche Engagement hinaus. Wir bieten Ihren Kunden Rund-um-die-Uhr-Support, 
+        sofortige Antworten und ein menschenähnliches Interaktionserlebnis an - und das alles ohne
 Wartezeit. Wenn Sie eine höhere Effizienz, Verfügbarkeit rund um die Uhr, Datenerfassung und mehr Mitarbeiter
 für strategischere Aufgaben haben möchten, probieren Sie jetzt unsere Lösung aus!`,
         cta: `Demo anfordern`,
@@ -342,7 +341,7 @@ einem besseren Verständnis der Kundenzufriedenheit geführt, sondern auch zu ei
 Ressourcen. Gemeinsam haben wir den Weg zum Erfolg gefunden.`,
         },
         study2: {
-          title: `End to end telefonische Kundenbetreuung für ein führendes Diagnosezentrum`,
+          title: `End-to-end telefonische Kundenbetreuung für ein führendes Diagnosezentrum`,
           text: `Wir haben Lösungen für die Planung von Blutabnahmen und Untersuchungen, die Beantwortung von Patientenanfragen
 und die Bereitstellung barrierefreier, benutzerfreundlicher Dienste entwickelt. Als Ergebnis unserer Bemühungen haben wir
 dem Kunden geholfen, effektiver mit Kunden zu interagieren und die Kundenbeziehungen zu verbessern, was zu mehr Loyalität
@@ -352,7 +351,7 @@ und Zufriedenheit führte.`,
           title: `Umfassender telefonischer Kundensupport für eine führende Versicherungs und Hypothekenberater-genossenschaft`,
           text: `Unser Team verbessert den Kundenservice, indem es eingehende Anrufe effizient bearbeitet, die Bedürfnisse der Anrufer
 versteht und sie an die richtige Abteilung weiterleitet. Sollte sich herausstellen, dass die gewünschte Abteilung nicht erreichbar
-ist, wird ein Rückruf angefordert und eine effiziente Kundenbetreuung sichergestellt. Dadurch konnten sich die internen Teams
+ist, wird ein Rückruf eingerichtet und eine effiziente Kundenbetreuung sichergestellt. Dadurch konnten sich die internen Teams
 der Kunden darauf konzentrieren, Unterstützung dort zu leisten, wo sie am meisten benötigt wurde.`,
         },
       },
@@ -384,8 +383,8 @@ umfasst auch regelmäßige Updates und Wartung, um sicherzustellen, dass Ihre Le
       },
       leadGeneration: {
         title: `<span class="is-movements-green">Lead-Generierung</span> und <span class="is-movements-green">Follow-up</span>`,
-        text: `Wir zeichnen uns durch Neukundenakquise und die Verbesserung Ihrer Vertriebspipeline durch unsere Expertise in der Lead-
-Generierung aus. Wir kümmern uns nicht nur um Ihre Termine und Demos, sondern reichern auch kontinuierlich Ihre Daten an,
+        text: `Wir zeichnen uns durch Neukundenakquise und die Verbesserung Ihrer Vertriebspipeline durch unsere Expertise in der Lead-Generierung aus. 
+        Wir kümmern uns nicht nur um Ihre Termine und Demos, sondern reichern auch kontinuierlich Ihre Daten an,
 damit Sie effizienter und konsistent mehr Geschäfte abschließen können. Unsere umfassende Nachbetreung hebt Ihre
 Konversationsrate auf das gewünschte Niveau und legt den Grundstein für starke und langfristige Kundenbeziehungen.`,
       },
@@ -397,7 +396,7 @@ umgewandelt werden. Desweitern gibt das Team, bestehend aus engagierten Vertrieb
 kontinuierlich zu unterstützen, als auch zu beraten und so einen nahtlosen Übergang vom Lead zum Kunden zu gewährleisten.`,
       },
       caseStudies: {
-        title: `End-to-end sales case studies`,
+        title: `End-to-end Vertriebsunterstützung case studies`,
         study1: {
           title: `Lead-Generierung für einen weltweit führenden Anbieter der Lebensmittelindustrie`,
           text: `Als engagierter Partner arbeiten wir mit dem Kunden die Marktpräsenz zu verbessern, die Kundenbindung zu
@@ -406,7 +405,7 @@ Wachstum der Marketingkampagnen und einer Verbesserung der Kundenbindung geführ
 einem Anstieg der Neukundenanzahl führte.`,
         },
         study2: {
-          title: `End to end Vertriebsunterstützung für einen nationalen Anbieter der Krankenversicherung`,
+          title: `End-to-end Vertriebsunterstützung für einen nationalen Anbieter der Krankenversicherung`,
           text: `Wir haben eine interne Vertriebsstrategie entwickelt, die den Kunden unterstützt, indem wir in seinem
 Namen die Leadgenerierung übernehmen, Angebote versenden und den gesamten Verkaufsprozess steuern. Dies
 gibt unseren Kunden die Möglichkeit, ihr Kerngeschäft zu optimieren, um den Gesamtumsatz zu steigern.`,
@@ -414,9 +413,10 @@ gibt unseren Kunden die Möglichkeit, ihr Kerngeschäft zu optimieren, um den Ge
         study3: {
           title: `Lead-Generierung für eine wachsende Fracht- und Logistikplattform`,
           text: `Für diesen Kunden spielen wir eine wichtige Rolle bei der Kontaktaufnahme und Qualifizierung potenzieller
-Kunden und stellen Online-Demos zur Verfügung, um ihnen die Vorteile der Plattform zu erklären. Darüber hinaus
-haben wir unser Leistungsspektrum kontinuierlich erweitert und uns zunächst auf die Terminvereinbarung der
-Online-Demos konzentriert, bis hin zur Übernahme des gesamten Verkaufsprozesses.`,
+Kunden und stellen Online-Demos zur Verfügung, um ihnen die Vorteile der Plattform zu erklären. 
+Darüber hinaus haben wir unser Leistungsspektrum kontinuierlich erweitert
+und uns zunächst auf die Terminvereinbarung der Online-Demos bis hin zur Übernahme des gesamten
+Verkaufsprozesses, konzentriert.`,
         },
       },
       contact: {

@@ -1,7 +1,7 @@
 import generalTerms from "@/constants/locales/generalTerms/nl";
 
 const nl = {
-  learnMore: 'Learn more',
+  learnMore: 'Ontdek meer',
   connect: `Let's connect`,
   contactUs: 'Neem contact op!',
   navigation: {
