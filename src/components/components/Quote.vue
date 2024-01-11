@@ -50,7 +50,7 @@
       font-weight: 200;
       margin: 30px 0;
 
-      @media (min-resolution: 100dpi) {
+      @media (min-resolution: 200dpi) {
         font-size: 50px;
         line-height: 54px;
       }

@@ -1,282 +1,307 @@
 <template>
-    <div :class="'home has-bg-gray'">
-        <navigation :full-logo="true" :light-logo="true"/>
+  <div :class="'home has-bg-gray'">
+    <navigation :full-logo="true" :light-logo="true" :translate-url="true"/>
 
-        <div class="section section--cover">
-            <div class="video-container">
-                <video autoplay muted loop playsinline>
-                    <source src="@/assets/video/movements_marketing.mp4" type="video/mp4" />
-                </video>
-                <div class="caption">
-                </div>
+    <cover :cover-image="coverData.img" :cover-title="coverData.title" :cover-subtitle="coverData.subtitle"/>
+
+    <div class="section is-white p-t-120">
+      <div v-for="(el, index) in services" :key="`service-${index}`" class="home__service">
+        <home-block :img-url="el.imgSrc" :name="el.title" :is-left="el.isLeft">
+          <template #title>
+            <span v-html="el.title"></span>
+          </template>
+          <template #text>
+            <span v-html="el.text"></span>
+          </template>
+          <template #cta>
+            <learn-more :url="el.url"/>
+          </template>
+        </home-block>
+      </div>
+    </div>
+
+    <div id="partnerships" class="section is-white partnerships p-l-40 p-r-40 p-t-40">
+      <h5 v-html="$t(`home.partnerships.partnerships`)" class="has-line-center partnerships__title"></h5>
+      <div class="partnerships__slider lh-0">
+        <div class="fade is-left"></div>
+        <div class="partnerships__img-wrapper lh-0">
+          <div v-for="(p, i) in partnerships" :key="`partner-${i}`">
+            <img :src="p"/>
+          </div>
+        </div>
+        <div class="fade is-right"></div>
+      </div>
+    </div>
+
+    <div id="testimonials" class="is-white">
+      <testimonials/>
+    </div>
+
+    <div id="values" class="is-white">
+      <values/>
+    </div>
+
+    <div id="contact" class="section contact is-white has-padding">
+      <div class="contact__title">
+        <h2 v-html="$t(`home.contact.title`)" class="has-line-center"></h2>
+      </div>
+      <div class="columns m-0 is-multiline contact__columns">
+        <div class="column is-12-tablet is-4-desktop is-relative">
+          <img :src="dots" :class="{'dots': true}">
+
+          <div class="contact__info has-small-radius-diagonal is-gray">
+            <img :src="connectIcon" :class="{'connect-icon': true}">
+
+            <div class="offices">
+              <div class="office headquarters">
+                {{$t(`home.contact.headquarters`)}}:
+              </div>
+              <div class="office is-uppercase" :class="activeOfficeIndex === 0 ? 'is-active' : ''" @click="activeOfficeIndex = 0">
+                <span>
+                  Sarajevo
+                </span>
+              </div>
+<!--              <div class="office" :class="activeOfficeIndex === 1 ? 'is-active' : ''" @click="activeOfficeIndex = 1">-->
+<!--                <span>-->
+<!--                  Utrecht-->
+<!--                </span>-->
+<!--              </div>-->
+<!--              <div class="office" :class="activeOfficeIndex === 2 ? 'is-active' : ''" @click="activeOfficeIndex = 2">-->
+<!--                <span>-->
+<!--                  Istanbul-->
+<!--                </span>-->
+<!--              </div>-->
             </div>
-            <div class="section__mask"></div>
-            <div class="section__content">
-                <h1>
-                    <span class="is-highlighted">
-                        {{ $t(`home.title`) }}
-                    </span>
-                </h1>
-                <h2>
-                    {{ $t(`home.subtitle`) }}
-                </h2>
+
+            <div class="office__info">
+              <div class="office__info-data">
+                <div class="office__icon">
+                  <icons icon="pin" stroke-width="1" height="24" width="24" class="is-fixed"/>
+                </div>
                 <div>
-                    <router-link to="/contact" class="button button--hollow">
-                        <span class="text">
-                            {{ $t(`navigation.contactUs`) }}
-                        </span>
-                        <span class="dot"></span>
-                        <span class="icon-wrapper">
-                            <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
-                        </span>
-                    </router-link>
+                  <p>
+                    {{offices[activeOfficeIndex].address}}
+                  </p>
+                  <p>
+                    {{offices[activeOfficeIndex].postal}}
+                  </p>
+                  <p>
+                    {{offices[activeOfficeIndex].country}}
+                  </p>
                 </div>
 
+              </div>
+              <div class="office__info-data">
+                <div class="office__icon">
+                  <icons icon="phone" stroke-width="1" height="24" width="24" class="is-fixed"/>
+                </div>
+                <p>
+                  {{offices[activeOfficeIndex].phone}}
+                </p>
+              </div>
+              <div class="office__info-data">
+                <div class="office__icon">
+                  <icons icon="mail" stroke-width="1" height="24" width="24" class="is-fixed"/>
+                </div>
+                <p style="overflow-wrap: anywhere">
+                  {{offices[activeOfficeIndex].mail}}
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-
-        <div class="section-divider"></div>
-
-        <div id="about" class="section section--about">
-            <facts :facts="[$t(`home.about.facts.qualitativeTelemarketing`), $t(`home.about.facts.multilingualTelemarketers`), $t(`home.about.facts.costEffectiveResults`)]"></facts>
-            <div class="about has-bg-white">
-                <div class="bg-image has-text-right">
-                    <img src="@/assets/images/backgrounds/movements_about-us_map.png" alt="Movements Marketing Locations">
-                </div>
-                <div class="section__content has-text-left">
-                    <h1 v-html="$t(`home.about.aboutUs.aboutUs`)" class="m-b-0"></h1>
-                    <div class="columns">
-                        <div class="column is-12-tablet is-9-desktop">
-                            <div class="columns about__text is-variable is-6 is-multiline">
-                                <div class="column is-12-tablet is-5-desktop">
-                                    <p v-html="$t(`home.about.aboutUs.p1`)"></p>
-                                </div>
-                                <div class="column is-12-tablet is-5-desktop">
-                                    <p v-html="$t(`home.about.aboutUs.p2`)"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="column is-12-tablet is-8-desktop">
+          <div class="contact__form">
+            <div class="form-intro">
+              <h5 v-html="$t(`home.contact.subtitle`)" ></h5>
+              <p v-html="$t(`home.contact.text`)" ></p>
             </div>
+
+            <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field" action="/thank-you/general/">
+              <input type="hidden" name="form-name" value="ask-question" />
+              <div class="columns is-multiline">
+                <div class="column is-6">
+                  <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`home.contact.name`)">
+                </div>
+                <div class="column is-6">
+                  <input class="form__input"  type="text" id="companyName" name="companyName" required :placeholder="$t(`home.contact.companyName`)">
+                </div>
+                <div class="column is-6">
+                  <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`home.contact.email`)">
+                </div>
+                <div class="column is-6">
+                  <input class="form__input" name="phone" id="phone" required :placeholder="$t(`home.contact.phone`)"/>
+                </div>
+                <div class="column is-12">
+                  <textarea class="form__textarea"  name="message" id="message" required :placeholder="$t(`home.contact.message`)"/>
+                </div>
+                <div class="column is-12 has-text-right">
+                  <button class="button button--primary m-t-10">
+                    <span class="text">
+                      {{ $t(`home.contactUs`) }}
+                    </span>
+                    <span class="dot"></span>
+                    <span class="icon-wrapper">
+                      <icons icon="arrowRight" stroke-width="3" stroke="#fff" height="20" width="20" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="section section--numbers" id="numbersSection" style="overflow: visible">
-            <div class="our-numbers">
-                <div class="bg-image">
-                    <img src="@/assets/images/backgrounds/movements_globe_bg.png" alt="Movements Marketing Globe Background">
-                </div>
-                <div class="line"></div>
-                <div class="section__content has-text-left">
-                    <div class="columns p-t-40 is-variable is-6 is-multiline">
-                        <div class="column is-12-tablet is-6-desktop is-7-widescreen">
-                            <h2 v-html="$t(`home.numbers.ourNumbers`)" class="m-b-0"></h2>
-                        </div>
-                        <div class="column is-12-tablet is-6-desktop is-5-widescreen">
-                            <div class="columns is-multiline is-mobile">
-                                <div class="column is-6">
-                                    <div class="number-wrapper">
-                                        <p class="digit"> 598 </p>
-                                        <p class="text"> {{$t(`home.numbers.projects`)}} </p>
-                                    </div>
-                                </div>
-                                <div class="column is-6">
-                                    <div class="number-wrapper">
-                                        <p class="digit"> 09 </p>
-                                        <p class="text"> {{$t(`home.numbers.languages`)}} </p>
-                                    </div>
-                                </div>
-                                <div class="column is-6">
-                                    <div class="number-wrapper">
-                                        <p class="digit"> 03 </p>
-                                        <p class="text"> {{$t(`home.numbers.offices`)}} </p>
-                                    </div>
-                                </div>
-                                <div class="column is-6">
-                                    <div class="number-wrapper">
-                                        <p class="digit"> 04 </p>
-                                        <p class="text"> {{$t(`home.numbers.teams`)}} </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <quote :text="$t(`home.quote`)"/>
 
-        <div id="outbound" class="section section--services section--services--outbound">
-            <div class="columns m-0">
-                <div class="section__content column is-8-tablet is-6-desktop">
-                    <h1 v-html="$t(`home.services.outbound.title`)"></h1>
-                    <p v-html="$t(`home.services.outbound.text`)"></p>
-                </div>
-                <div class="services-cover column is-4-tablet is-6-desktop p-0">
-                    <div class="services-cover__mask">
-                        <img src="@/assets/images/backgrounds/blue-mask.png" alt="Movements Marketing Image Mask">
-                    </div>
-                    <div class="services-cover__image has-text-right">
-                        <img src="@/assets/images/backgrounds/movements_customer-service_outbound_cover.png" alt="Outbound Lead Generation">
-                    </div>
-                </div>
-            </div>
-            <div class="services__list">
-                <div v-for="(el, index) in services.outbound" :key="`outbound-${index}`" class="m-l-20">
-                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />
-                </div>
-            </div>
-        </div>
 
-        <div class="section section--work">
-            <div class="section__content columns m-0 is-multiline">
-                <div class="column is-12-tablet is-6-desktop has-text-left">
-                    <h2 v-html="$t(`home.work.title`)"></h2>
-                    <p v-html="$t(`home.work.text`)"></p>
-                    <a class="button button--hollow" href="https://issuu.com/movementsmarketing" target="_blank">
-                        <span class="text">
-                            {{ $t(`home.work.button`) }}
-                        </span>
-                        <span class="dot"></span>
-                        <span class="icon-wrapper">
-                            <icons icon="chevronsDown" stroke-width="3" stroke="#fff" height="24" width="24" />
-                        </span>
-                    </a>
-                </div>
-                <div class="column is-12-tablet is-6-desktop work__img-wrapper">
-                    <img src="@/assets/images/backgrounds/movements_work_cover.png" alt="Movements Marketing Work Practice">
-                </div>
-            </div>
-        </div>
+<!--    <div class="section section&#45;&#45;cover">-->
+<!--            <div class="video-container">-->
+<!--                <video autoplay muted loop playsinline>-->
+<!--                    <source src="@/assets/video/movements_marketing.mp4" type="video/mp4" />-->
+<!--                </video>-->
+<!--                <div class="caption">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="section__mask"></div>-->
+<!--            <div class="section__content">-->
+<!--                <h1>-->
+<!--                    <span class="is-highlighted">-->
+<!--                        {{ $t(`home.title`) }}-->
+<!--                    </span>-->
+<!--                </h1>-->
+<!--                <h2>-->
+<!--                    {{ $t(`home.subtitle`) }}-->
+<!--                </h2>-->
+<!--                <div>-->
+<!--                    <router-link to="/contact" class="button button&#45;&#45;hollow">-->
+<!--                        <span class="text">-->
+<!--                            {{ $t(`contactUs`) }}-->
+<!--                        </span>-->
+<!--                        <span class="dot"></span>-->
+<!--                        <span class="icon-wrapper">-->
+<!--                            <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />-->
+<!--                        </span>-->
+<!--                    </router-link>-->
+<!--                </div>-->
 
-        <div id="inbound" class="section section--services section--services--inbound">
-            <div class="columns m-0">
-                <div class="services-cover column is-4-tablet is-6-desktop p-t-0 p-l-0 p-b-0 l-h-0">
-                    <div class="services-cover__mask">
-                        <img src="@/assets/images/backgrounds/yellow-mask.png" alt="Movements Marketing Image Mask">
-                    </div>
-                    <div class="services-cover__image has-text-left">
-                        <img src="@/assets/images/backgrounds/movements_customer-service_inbound_cover.png" alt="Inbound Customer Service">
-                    </div>
-                </div>
-                <div class="section__content column is-8-tablet is-6-desktop">
-                    <h1 v-html="$t(`home.services.inbound.title`)"></h1>
-                    <p v-html="$t(`home.services.inbound.text`)"></p>
-                </div>
-            </div>
-            <div class="services__list">
-                <div v-for="(el, index) in services.inbound" :key="`inbound-${index}`" class="m-l-20">
-                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />
-                </div>
-            </div>
-        </div>
+<!--            </div>-->
+<!--        </div>-->
 
-        <div id="clients" class="section section--clients">
-            <slider :slidesData="clients"/>
-        </div>
+<!--        <div class="section-divider"></div>-->
 
-        <quote :text="$t(`home.telemarketers`)" cssClass="is-gradient"/>
+<!--        <div id="about" class="section section&#45;&#45;about">-->
+<!--            <facts :facts="[$t(`home.about.facts.qualitativeTelemarketing`), $t(`home.about.facts.multilingualTelemarketers`), $t(`home.about.facts.costEffectiveResults`)]"></facts>-->
+<!--            <div class="about has-bg-white">-->
+<!--                <div class="bg-image has-text-right">-->
+<!--                    <img src="@/assets/images/backgrounds/movements_about-us_map.png" alt="Movements Marketing Locations">-->
+<!--                </div>-->
+<!--                <div class="section__content has-text-left">-->
+<!--                    <h1 v-html="$t(`home.about.aboutUs.aboutUs`)" class="m-b-0"></h1>-->
+<!--                    <div class="columns">-->
+<!--                        <div class="column is-12-tablet is-9-desktop">-->
+<!--                            <div class="columns about__text is-variable is-6 is-multiline">-->
+<!--                                <div class="column is-12-tablet is-5-desktop">-->
+<!--                                    <p v-html="$t(`home.about.aboutUs.p1`)"></p>-->
+<!--                                </div>-->
+<!--                                <div class="column is-12-tablet is-5-desktop">-->
+<!--                                    <p v-html="$t(`home.about.aboutUs.p2`)"></p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="section--telemarketers lh-0">
-        <div class="section--telemarketers__wrapper lh-0">
+<!--&lt;!&ndash;        <div class="section section&#45;&#45;numbers" id="numbersSection" style="overflow: visible">&ndash;&gt;-->
+<!--&lt;!&ndash;          <work-in-numbers/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
 
-            <img src="@/assets/images/backgrounds/movements_marketing_telemarketers.jpg" alt="Movements Marketing Telemarketers">
-        </div>
-        </div>
+<!--        <quote :text="$t(`home.quote`)"/>-->
 
-        <div class="section-divider section-divider--green"></div>
+<!--        <div id="outbound" class="section section&#45;&#45;services section&#45;&#45;services&#45;&#45;outbound">-->
+<!--            <div class="columns m-0">-->
+<!--                <div class="section__content column is-8-tablet is-6-desktop">-->
+<!--                    <h1 v-html="$t(`home.services.outbound.title`)"></h1>-->
+<!--                    <p v-html="$t(`home.services.outbound.text`)"></p>-->
+<!--                </div>-->
+<!--                <div class="services-cover column is-4-tablet is-6-desktop p-0">-->
+<!--                    <div class="services-cover__mask">-->
+<!--                        <img src="@/assets/images/backgrounds/blue-mask.png" alt="Movements Marketing Image Mask">-->
+<!--                    </div>-->
+<!--                    <div class="services-cover__image has-text-right">-->
+<!--                        <img src="@/assets/images/backgrounds/movements_customer-service_outbound_cover.png" alt="Outbound Lead Generation">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="services__list">-->
+<!--&lt;!&ndash;                <div v-for="(el, index) in services.outbound" :key="`outbound-${index}`" class="m-l-20">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div id="contact" class="section section--contact">
-            <div class="contact__title">
-                <h1 v-html="$t(`home.contact.title`)"></h1>
-            </div>
-            <div class="columns m-0 is-multiline contact__columns">
-                <div class="column is-12-tablet is-6-desktop p-0 lh-0" style="position: relative; background: #ffffff;">
-                    <img src="@/assets/images/backgrounds/movemens_contact_bg.png" alt="Movements Marketing Contact"/>
-                    <div class="offices">
-                        <div class="columns is-multiline is-mobile">
-                            <div class="column is-4 has-text-left">
-                                <div class="office" :class="activeOfficeIndex === 0 ? 'is-active' : ''" @click="activeOfficeIndex = 0">
-                                    <span>
-                                        Sarajevo
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="column is-4 has-text-centered">
-                                <div class="office" :class="activeOfficeIndex === 1 ? 'is-active' : ''" @click="activeOfficeIndex = 1">
-                                   <span>
-                                       Utrecht
-                                   </span>
-                                </div>
-                            </div>
-                            <div class="column is-4 has-text-right">
-                                <div class="office" :class="activeOfficeIndex === 2 ? 'is-active' : ''" @click="activeOfficeIndex = 2">
-                                    <span>
-                                        Istanbul
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="column is-12">
-                                <div class="office-data">
-                                    <p>
-                                        {{offices[activeOfficeIndex].address}}
-                                    </p>
-                                    <p>
-                                        {{offices[activeOfficeIndex].postal}}
-                                    </p>
-                                    <p>
-                                        {{offices[activeOfficeIndex].country}}
-                                    </p>
-                                    <p>
-                                        {{offices[activeOfficeIndex].phone}}
-                                    </p>
-                                    <p>
-                                        {{offices[activeOfficeIndex].mail}}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-12-tablet is-6-desktop">
-                    <div class="contact__form">
-                        <form class="form" name="ask-question" method="post" netlify netlify-honeypot="bot-field" action="/thank-you/general/">
-                            <input type="hidden" name="form-name" value="ask-question" />
-                            <div class="columns is-multiline">
-                                <div class="column is-6">
-                                    <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`home.contact.name`)">
-                                </div>
-                                <div class="column is-6">
-                                    <input class="form__input"  type="text" id="companyName" name="companyName" required :placeholder="$t(`home.contact.companyName`)">
-                                </div>
-                                <div class="column is-6">
-                                    <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`home.contact.email`)">
-                                </div>
-                                <div class="column is-6">
-                                    <input class="form__input" name="phone" id="phone" required :placeholder="$t(`home.contact.phone`)"/>
-                                </div>
-                                <div class="column is-12">
-                                    <textarea class="form__textarea"  name="message" id="message" required :placeholder="$t(`home.contact.message`)"/>
-                                </div>
-                                <div class="column is-12 has-text-right">
-                                    <button class="button button--hollow m-t-10">
-                                        <span class="text">
-                                            {{ $t(`home.contactUs`) }}
-                                        </span>
-                                        <span class="dot"></span>
-                                        <span class="icon-wrapper">
-                                            <icons icon="chevronRight" stroke-width="3" stroke="#fff" height="24" width="24" />
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+<!--        <div class="section section&#45;&#45;work">-->
+<!--            <div class="section__content columns m-0 is-multiline">-->
+<!--                <div class="column is-12-tablet is-6-desktop has-text-left">-->
+<!--                    <h2 v-html="$t(`home.work.title`)"></h2>-->
+<!--                    <p v-html="$t(`home.work.text`)"></p>-->
+<!--                    <a class="button button&#45;&#45;hollow" href="https://issuu.com/movementsmarketing" target="_blank">-->
+<!--                        <span class="text">-->
+<!--                            {{ $t(`home.work.button`) }}-->
+<!--                        </span>-->
+<!--                        <span class="dot"></span>-->
+<!--                        <span class="icon-wrapper">-->
+<!--                            <icons icon="chevronsDown" stroke-width="3" stroke="#fff" height="24" width="24" />-->
+<!--                        </span>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="column is-12-tablet is-6-desktop work__img-wrapper">-->
+<!--                    <img src="@/assets/images/backgrounds/movements_work_cover.png" alt="Movements Marketing Work Practice">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div id="inbound" class="section section&#45;&#45;services section&#45;&#45;services&#45;&#45;inbound">-->
+<!--            <div class="columns m-0">-->
+<!--                <div class="services-cover column is-4-tablet is-6-desktop p-t-0 p-l-0 p-b-0 l-h-0">-->
+<!--                    <div class="services-cover__mask">-->
+<!--                        <img src="@/assets/images/backgrounds/yellow-mask.png" alt="Movements Marketing Image Mask">-->
+<!--                    </div>-->
+<!--                    <div class="services-cover__image has-text-left">-->
+<!--                        <img src="@/assets/images/backgrounds/movements_customer-service_inbound_cover.png" alt="Inbound Customer Service">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="section__content column is-8-tablet is-6-desktop">-->
+<!--                    <h1 v-html="$t(`home.services.inbound.title`)"></h1>-->
+<!--                    <p v-html="$t(`home.services.inbound.text`)"></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="services__list">-->
+<!--&lt;!&ndash;                <div v-for="(el, index) in services.inbound" :key="`inbound-${index}`" class="m-l-20">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <service :name="el.name" :url="el.url" :imgSrc="el.src" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div id="clients" class="section section&#45;&#45;clients">-->
+<!--            <slider :slidesData="clients"/>-->
+<!--        </div>-->
+
+<!--        <quote :text="$t(`home.telemarketers`)" cssClass="is-gradient"/>-->
+
+<!--        <div class="section&#45;&#45;telemarketers lh-0">-->
+<!--        <div class="section&#45;&#45;telemarketers__wrapper lh-0">-->
+
+<!--            <img src="@/assets/images/backgrounds/movements_marketing_telemarketers.jpg" alt="Movements Marketing Telemarketers">-->
+<!--        </div>-->
+<!--        </div>-->
+
+<!--        <div class="section-divider section-divider&#45;&#45;green"></div>-->
+
         <movements-footer/>
     </div>
 </template>
@@ -288,13 +313,26 @@
   import Facts from "@/components/components/Facts.vue";
   import Service from "@/components/components/Service.vue";
   import Quote from "@/components/components/Quote.vue";
+  import WorkInNumbers from "@/components/components/WorkInNumbers.vue";
+  import Cover from "@/components/components/Cover.vue";
+  import HomeBlock from "@/components/components/HomeBlock.vue";
+  import LearnMore from "@/components/components/LearnMore.vue";
+  import Testimonials from "@/components/components/Testimonials.vue";
+  import Values from "@/components/components/Values.vue";
+  import _ from 'lodash';
 
   @Component({
     components: {
-        Navigation,
-        Facts,
-        Service,
-        Quote,
+      Navigation,
+      Facts,
+      Service,
+      Quote,
+      WorkInNumbers,
+      Cover,
+      HomeBlock,
+      LearnMore,
+      Testimonials,
+      Values,
     }
   })
   class Home extends Vue {
@@ -304,82 +342,89 @@
           contactBg: '',
       };
 
-      get clients() {
-        return [
-          {
-            name: 'Scorito',
-            text: this.$t(`home.clients.scorito.text`),
-            img: require('@/assets/images/clients/scorito_bg.png'),
-            logo: require('@/assets/images/clients/scorito_logo.png'),
-          },
-          {
-            name: 'Dak',
-            text: this.$t(`home.clients.dak.text`),
-            img: require('@/assets/images/clients/dak_bg.png'),
-            logo: require('@/assets/images/clients/dak_logo.png'),
-          },
-          {
-            name: 'Shypple',
-            text: this.$t(`home.clients.shypple.text`),
-            img: require('@/assets/images/clients/shypple_bg.png'),
-            logo: require('@/assets/images/clients/shypple_logo.png'),
-          },
-        ];
-      }
+    dots = require('@/assets/images/dots-green.png');
+    connectIcon = require('@/assets/images/contact-connect.png');
 
-      get services() {
-        return  {
-          outbound: [
-            {
-              name: this.$t(`navigation.servicesOptions.telemarketing`),
-              url: '/service/b2b-telemarketing',
-              src: require('@/assets/images/services/icons/b2b_telemarketing.png'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.leadGeneration`),
-              url: '/service/b2b-telemarketing',
-              src: require('@/assets/images/services/icons/lead_generation.webp'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.newAppointments`),
-              url: '/service/b2b-telemarketing',
-              src: require('@/assets/images/services/icons/new_appointments.webp'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.dataEnrichment`),
-              url: '/service/b2b-telemarketing',
-              src: require('@/assets/images/services/icons/data_enrichment.webp'),
-            },
-          ],
-          inbound: [
-            {
-              name: this.$t(`navigation.servicesOptions.customerService`),
-              url: '/service/customer-service',
-              src: require('@/assets/images/services/icons/customer_service.png'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.answeringService`),
-              url: '/service/answering-service',
-              src: require('@/assets/images/services/icons/answering_service.png'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.liveChat`),
-              url: '/service/live-chat',
-              src: require('@/assets/images/services/icons/live_chat.png'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.emailManagement`),
-              url: '/service/email-management',
-              src: require('@/assets/images/services/icons/email_management.png'),
-            },
-            {
-              name: this.$t(`navigation.servicesOptions.socialWebcare`),
-              url: '/service/social-webcare',
-              src: require('@/assets/images/services/icons/social_webcare.png'),
-            },
-          ],
-        };
+    debouncedHandleScroll = _.debounce(this.handleScroll, 1200);
+
+    isElementInViewport = {
+      values: false,
+      testimonials: false,
+      partnerships: false,
+      contact: false,
+    }
+
+    get coverData(){
+      return {
+        img: require('@/assets/images/movements-marketing-cover.png'),
+        title: this.$t(`home.title`),
+        subtitle: this.$t(`home.subtitle`),
+      };
+    }
+
+    get routesTranslated() {
+      if(this.$i18n.locale === 'nl') {
+        return {
+          customerExperience: '/oplossingen/customer-experience',
+          endToEnd: '/oplossingen/end-to-end-sales-support',
+        }
+      } else if(this.$i18n.locale === 'de') {
+        return {
+          customerExperience: '/losungen/kundenerlebnis',
+          endToEnd: '/losungen/end-to-end-vertriebsunterstutzung',
+        }
+      } else {
+        return {
+          customerExperience: '/solutions/customer-experience',
+          endToEnd: '/solutions/end-to-end-sales-support',
+        }
       }
+    }
+
+    get services() {
+      return  [
+        {
+          title: this.$t(`home.services.customerExperience.title`),
+          text: this.$t(`home.services.customerExperience.text`),
+          url: this.routesTranslated.customerExperience,
+          imgSrc: require('@/assets/images/services/movements-customer-experience.png'),
+          isLeft: false,
+        },
+        {
+          title: this.$t(`home.services.endToEnd.title`),
+          text: this.$t(`home.services.endToEnd.text`),
+          url: this.routesTranslated.endToEnd,
+          imgSrc: require('@/assets/images/services/movements-end-to-end-sales-support.png'),
+          isLeft: true,
+        },
+      ];
+    }
+
+    get partnerships() {
+      return [
+        require('@/assets/images/clients/sazas.png'),
+        require('@/assets/images/clients/dak.png'),
+        require('@/assets/images/clients/diagnost.png'),
+        require('@/assets/images/clients/scorito.png'),
+        require('@/assets/images/clients/shypple.png'),
+        require('@/assets/images/clients/abc_display.png'),
+        require('@/assets/images/clients/oct8ne.png'),
+        require('@/assets/images/clients/trans.png'),
+        require('@/assets/images/clients/x2com.png'),
+        require('@/assets/images/clients/aleger.png'),
+
+        require('@/assets/images/clients/sazas.png'),
+        require('@/assets/images/clients/dak.png'),
+        require('@/assets/images/clients/diagnost.png'),
+        require('@/assets/images/clients/scorito.png'),
+        require('@/assets/images/clients/shypple.png'),
+        require('@/assets/images/clients/abc_display.png'),
+        require('@/assets/images/clients/oct8ne.png'),
+        require('@/assets/images/clients/trans.png'),
+        require('@/assets/images/clients/x2com.png'),
+        require('@/assets/images/clients/aleger.png'),
+      ]
+    }
 
       activeOfficeIndex = 0;
 
@@ -415,10 +460,11 @@
 
 
     scrollToAnchor () {
+      console.log('scroll to ancor')
       this.$nextTick(() => {
         if (this.$route.meta?.element) {
           const $el = document.querySelector(this.$route.meta?.element);
-          $el && window.scrollTo(0, $el.offsetTop);
+          $el && window.scrollTo(0, $el.offsetTop - 120);
         }
       });
     }
@@ -439,14 +485,54 @@
     //   }
     // }
 
-      created() {
-          this.images.coverBg = require('@/assets/images/backgrounds/movements_call-center_bg.png');
-          this.images.contactBg = require('@/assets/images/backgrounds/movemens_contact_bg.png');
-      }
+    handleScroll() {
+      // @ts-ignore
+      const element = this.$router.history.current?.meta?.element;
 
-      mounted () {
-         this.scrollToAnchor();
-      }
+      setTimeout(() => {
+        // @ts-ignore
+        if(element && !this.isElementInViewport[element.substring(1)]) {
+          // @ts-ignore
+          // const pathArray = this.$router.history.current.fullPath.split('/');
+          // pathArray.pop();
+
+          const state = { isRouterChange: true };
+          window.history.pushState(state, '',  '/');
+        }
+      }, 200)
+    }
+
+    mounted() {
+      this.scrollToAnchor();
+
+      window.addEventListener('scroll', this.debouncedHandleScroll);
+
+      const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const elementId = entry.target.id;
+              this.$set(this.isElementInViewport, elementId, entry.isIntersecting);
+            });
+          },
+          {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2,
+          }
+      );
+
+      Object.keys(this.isElementInViewport).forEach(elementId => {
+        const targetElement = document.getElementById(elementId);
+
+        if (targetElement) {
+          observer.observe(targetElement);
+        }
+      });
+    }
+
+    beforeDestroy() {
+      window.removeEventListener('scroll', this.debouncedHandleScroll);
+    }
 
       updated () {
         this.scrollToAnchor();
@@ -457,6 +543,11 @@
 </script>
 
 <style lang="scss">
+
+.home__service:not(:last-of-type){
+  margin-bottom: 120px;
+}
+
     .section.section--cover {
         min-height: calc(100vh - 160px);
         position: relative;
@@ -769,61 +860,6 @@
 
                 .is-highlighted {
                     color: #9FF882;
-                }
-            }
-
-            .number-wrapper {
-                padding: 10px 20px;
-
-                .digit {
-                    font-size: 84px;
-                    line-height: 92px;
-                    color: #fff;
-                    font-weight: 900;
-
-                    @media (min-resolution: 100dpi) {
-                        font-size: 68px;
-                        line-height: 72px;
-                    }
-
-                    @media screen  and (max-width: 780px) {
-                        font-size: 78px;
-                        line-height: 84px;
-                    }
-
-                    @media screen  and (max-width: 460px) {
-                        font-size: 72px;
-                        line-height: 78px;
-                    }
-
-                    @media screen  and (max-width: 460px) {
-                        font-size: 68px;
-                        line-height: 72px;
-                    }
-
-                    &::after {
-                        content: '';
-                        display: block;
-                        width: 45px;
-                        height: 3px;
-                        background: #9FF882;
-
-                        @media (min-resolution: 100dpi) {
-                            width: 40px;
-                        }
-                    }
-                }
-
-                .text {
-                    color: #fff;
-                    font-size: 18px;
-                    padding-top: 15px;
-
-                    @media (min-resolution: 100dpi) {
-                      padding-top: 10px;
-                      font-size: 17px;
-                      line-height: 20px;
-                    }
                 }
             }
 
@@ -1184,232 +1220,195 @@
         margin-top: -12px;
     }
 
-    .section.section--telemarketers-title {
-        background: linear-gradient(90deg, #186267 0%, #186267 20%, #9FF882 100%);
+    .partnerships {
+      .partnerships__title {
+        margin-bottom: 100px;
 
-        h3 {
-            font-size: 58px;
-            color: #fff;
-            line-height: 62px;
-            font-weight: 200;
-            margin: 30px 0;
+        @media screen  and (max-width: 768px) {
+          margin-bottom: 60px;
         }
-    }
 
-    .section--telemarketers {
+      }
+
+      .partnerships__slider {
         overflow: hidden;
-    }
-
-    .section--telemarketers__wrapper {
-        width: 300vw;
         position: relative;
-        animation-name: slide-left-right;
-        animation-duration: 60000ms;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
+        padding-bottom: 20px;
 
-    .section.section--contact {
-        position: relative;
+        .fade {
+          position: absolute;
+          height: 100%;
+          width: 240px;
+          z-index: 1;
+          top: 0;
 
-        .contact__title {
-            position: absolute;
-            top: 30px;
-            width: 100%;
-            z-index: 6;
-            padding: 50px 0;
-
-          @media screen and (max-width: 1400px){
-            padding-top: 20px;
+          @media screen  and (max-width: 1400px) {
+            width: 100px;
           }
 
-          @media screen and (max-width: 768px){
-            position: relative;
+          @media screen  and (max-width: 768px) {
+            width: 40px;
           }
 
-            h1 {
-                font-size: 72px;
-                line-height: 76px;
-                color: #008d90;
-                display: inline-block;
-                position: relative;
-
-                @media (min-resolution: 100dpi) {
-                    font-size: 62px;
-                    line-height: 68px;
-                }
-
-              @media screen and (max-width: 460px){
-                font-size: 42px;
-                line-height: 46px;
-              }
-
-
-                .is-highlighted {
-                    font-weight: 800;
-                }
-
-                &::after {
-                    content: '';
-                    display: block;
-                    width: 100vw;
-                    height: 3px;
-                    background: #9FF882;
-                    left: 0;
-                    position: absolute;
-                }
-            }
-        }
-
-        .offices {
-            position: absolute;
-            top: 0;
-            display: flex;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            padding-left: 320px;
-            padding-right: 100px;
-
-            @media (min-resolution: 100dpi) {
-                padding-left: 200px;
-            }
-
-          @media screen and (max-width: 1400px){
-            padding-left: 100px;
-            padding-right: 50px;
+          &.is-left {
+            left: 0;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
           }
 
-          @media screen and (max-width: 1024px){
-            padding-right: 50px;
-            padding-left: 50px;
-          }
-
-          @media screen and (max-width: 460px){
-            padding-right: 20px;
-            padding-left: 20px;
-          }
-
-            .columns {
-                width: 100%;
-
-                .office {
-                    color: #008d90;
-                    font-size: 32px;
-                    cursor: pointer;
-
-                  @media screen and (max-width: 460px){
-                    font-size: 24px;
-                  }
-
-                  @media screen and (max-width: 340px){
-                    font-size: 22px;
-                  }
-
-                  @media screen and (max-width: 320px){
-                    font-size: 20px;
-                  }
-
-                  @media screen and (max-width: 300px){
-                    font-size: 18px;
-                  }
-
-                    span {
-                        position: relative;
-                        line-height: 34px;
-                    }
-
-                    &.is-active {
-                        font-weight: 700;
-
-                        span {
-                            &::after {
-                                content: '';
-                                display: block;
-                                width: 100%;
-                                height: 3px;
-                                background: #9FF882;
-                                left: 0;
-                                bottom: -2px;
-                                position: absolute;
-                            }
-                        }
-
-                    }
-                }
-
-                .office-data {
-                    background: #fff;
-                    border-radius: 30px;
-                    box-shadow: 1px 1px 12px rgb(0 0 0 / 20%);
-                    padding: 20px 40px;
-
-                  @media screen and (max-width: 460px){
-                    padding: 10px 20px;
-                  }
-
-                    p {
-                        color: #008d90;
-                        font-weight: 600;
-                        font-size: 15px;
-                        line-height: 28px;
-                        text-align: left;
-
-                      @media screen and (max-width: 460px){
-                        font-size: 13px;
-                      }
-                    }
-                }
-            }
-        }
-
-        .contact__form {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            padding-right: 320px;
-            padding-left: 100px;
-            padding-top: 70px;
-
-            @media (min-resolution: 100dpi) {
-                padding-right: 200px;
-            }
-
-          @media screen and (max-width: 1400px){
-            padding-right: 100px;
-            padding-left: 50px;
-            padding-top: 150px;
-
-            @media screen and (max-width: 1024px){
-              padding-right: 50px;
-              padding-left: 50px;
-              padding-top: 150px;
-              padding-bottom: 50px;
-            }
-
-            @media screen and (max-width: 768px){
-              padding: 20px;
-
-              form {
-                width: 100%;
-              }
-            }
+          &.is-right {
+            right: 0;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
           }
         }
 
-      .contact__columns {
-        @media screen and (max-width: 1024px){
-          flex-direction: column-reverse;
-        }
-
-        @media screen and (max-width: 768px){
+        .partnerships__img-wrapper {
+          width: 300%;
+          position: relative;
+          animation-name: slide-left-right;
+          animation-duration: 100000ms;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
           display: flex;
+          align-items: center;
+          gap: 100px;
+
+          @media screen  and (max-width: 1400px) {
+            width: 600%;
+            animation-name: slide-left-right-medium;
+          }
+
+          @media screen  and (max-width: 768px) {
+            width: 1000%;
+            gap: 60px;
+            animation-name: slide-left-right-small;
+          }
+
         }
       }
     }
+
+.contact {
+
+  .contact__columns {
+    > .column {
+      padding: 20px;
+
+      @media screen and (max-width: 1024px) {
+        padding: 20px 0 !important;
+      }
+    }
+  }
+
+  .dots {
+    position: absolute;
+    left: -60px;
+    top: -60px;
+    z-index: 0;
+    width: 160px;
+
+    @media (min-resolution: 100dpi) {
+      width: 140px;
+    }
+
+    @media (min-resolution: 220dpi) {
+      width: 120px;
+      left: -40px;
+      top: -40px;
+    }
+
+    @media screen and (max-width: 780px) {
+      width: 100px;
+      top: -40px;
+      left: -40px;
+    }
+  }
+
+  .contact__info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+
+    @media screen and (max-width: 780px) {
+      padding: 20px;
+    }
+
+    .connect-icon {
+      position: absolute;
+      right: -50px;
+      top: -50px;
+      max-width: 240px;
+      z-index: 0;
+    }
+
+    .offices {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 5px;
+      margin: 60px 0;
+      z-index: 1;
+      padding-left: 32px;
+
+      .office {
+        font-weight: 700;
+        color: #186267;
+        //text-transform: uppercase;
+        //opacity: 0.5;
+        //cursor: pointer;
+
+        &.headquarters {
+          font-weight: 500;
+        }
+
+        &.is-active {
+          opacity: 1;
+        }
+
+        //&:hover {
+        //  opacity: 1;
+        //  color: #69BC77;
+        //}
+      }
+    }
+
+    .office__info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .office__info-data {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          text-align: left;
+          font-size: 15px;
+          line-height: 20px;
+
+          @media (min-resolution: 200dpi) {
+            font-size: 14px;
+          }
+
+          @media (min-resolution: 220dpi) {
+            font-size: 12px;
+            line-height: 16px;
+          }
+
+          @media screen and (max-width: 1600px) {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 </style>

@@ -1,25 +1,26 @@
 .section {
-  padding: 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: unset;
+  padding-right: unset;
   overflow: hidden;
+
+  &.has-bg-dark {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen  and (max-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
   &.full-height {
     height: calc(100vh - 150px);
   }
 
-  .section__mask {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background: linear-gradient(70deg, #ECECEC 0%, #ECECEC 20%, rgba(255, 255, 255, 0.2) 60%, transparent 80%);
-    z-index: 0;
-  }
-
-  > *:not(.section__mask) {
-    position: relative;
-    z-index: 1;
+  &.is-white {
+    background: #ffffff;
   }
 
   .bg-image {
@@ -110,6 +111,19 @@
   }
 }
 
+.is-white {
+  background: #ffffff;
+}
+
+.is-gray {
+  background: #f2f2f2;
+}
+
+.has-bg-dark {
+  background: $movements-green;
+  color: #ffffff;;
+}
+
 .section-divider {
   display: block;
   width: 100%;
@@ -120,3 +134,28 @@
     background: #9FF882;
   }
 }
+
+.has-radius-bottom-right {
+  border-radius: 0 0 260px 0;
+
+  @media screen  and (max-width: 768px) {
+    border-radius: 0 0 120px 0;
+  }
+}
+
+.has-radius-top-left {
+  border-radius: 260px 0 0 0;
+
+  @media screen  and (max-width: 768px) {
+    border-radius: 120px 0 0 0;
+  }
+}
+
+.has-small-radius-diagonal {
+  border-radius: 80px 0 80px 0;
+
+  @media screen  and (max-width: 768px) {
+    border-radius: 60px 0 60px 0;
+  }
+}
+

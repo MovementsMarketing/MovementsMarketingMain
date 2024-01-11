@@ -1,0 +1,15 @@
+$side-spacing: 260px;
+
+@media screen and (max-width: 1200px) {
+  $side-spacing: 120px;
+}
+@media screen and (max-width: 768px) {
+  $side-spacing: 80px;
+}
+@media screen and (max-width: 520px) {
+  $side-spacing: 40px;
+}
+
+$movements-green: #186267;
+$primary-green: #69BC77;
+$gray: #F2F2F2;

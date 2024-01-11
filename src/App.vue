@@ -59,20 +59,20 @@ export default App;
 
 <style lang="scss" >
 #app {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 150px;
-  background: #ECECEC;
+  margin-top: 100px;
+  background: #F2F2F2;
 
-  @media (min-resolution: 100dpi) {
-    margin-top: 120px;
+  @media screen  and (max-width: 780px) {
+    margin-top: 100px;
   }
 }
 
 .Cookie {
-  background: #e8a500;
+  background: #186267;
 
   .Cookie__content {
     color: #fff;
@@ -80,7 +80,7 @@ export default App;
   }
 
   .Cookie__button {
-    background: #008d90;
+    background: #69BC77;
   }
 }
 </style>

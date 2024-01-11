@@ -1,4 +1,5 @@
 @import "~bulma/bulma";
+@import "base/settings.scss";
 @import "base/button.scss";
 @import "base/mixins.scss";
 @import "base/section.scss";
@@ -6,3 +7,5 @@
 @import "base/form.scss";
 @import "base/animations.scss";
 @import "base/layout.scss";
+@import "base/slider.scss";
+@import "components/navigation.scss";
