@@ -175,7 +175,7 @@ aanzienlijke toename van de conversieratio’s
 als gevolg.</li>`
       },
       cargoplot: {
-        companyDescription: `Een online platform voor e-commerce importeurs
+        companyDescription: `Een online platform voor <span class="no-wrap">e-commerce</span> importeurs
 en vrachtvervoerders in Nederland`,
         quote: `"Wat Movements Marketing onderscheidt, is hun
 flexibiliteit en vermogen om snel waarde te

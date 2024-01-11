@@ -22,7 +22,7 @@ const de = {
       customerExperience: 'Kundenerlebnis',
       endToEnd: 'End-to-end Vertriebsunterstützung',
       engagementStrategy: 'Kundenstrategie',
-      telephoneCustomerCare: 'End-to-End Kundendienst',
+      telephoneCustomerCare: 'End-to-End Kundenservice',
       appointmentOptimization: 'Optimierung der Terminvereinbarung',
       aiAssistant: 'KI-Voicebot',
       dataEnrichment: 'Datenanreicherung und Qualifizierung',
@@ -310,7 +310,7 @@ bieten wir eine einzigartige Lösung, die auf Ihrer Vision basiert und von unser
 Team zum Leben erweckt wird. Jede Interaktion ist ein Schritt zu dauerhafter Loyalität und Erfolg.`,
       },
       telephoneCustomerCare: {
-        title: `End-to-end <span class="is-movements-green">Kundenbetreuung</span>`,
+        title: `End-to-end <span class="is-movements-green">Kundenservice</span>`,
         text: `Wir stärken Ihr Team und verbessern die Erreichbarkeit. Unsere professionellen Mitarbeiter kümmern sich um
 jeden Anruf und sorgen dafür, dass Ihr internes Team nicht abgelenkt wird und sich voll und ganz auf das
 Kerngeschäft konzentrieren kann. Bei uns geht es nicht nur um die Anrufannahme, sondern wir gehen gezielt auf

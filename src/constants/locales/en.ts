@@ -147,7 +147,7 @@ navigating the entire sales process
 significant increase in conversion rates</li>`
       },
       cargoplot: {
-        companyDescription: `An online platform for e-commerce importers and
+        companyDescription: `An online platform for <span class="no-wrap">e-commerce</span> importers and
 freight forwarders in the Netherlands`,
         quote: `“What makes Movements Marketing stand out is
 their flexibility and ability to generate value
