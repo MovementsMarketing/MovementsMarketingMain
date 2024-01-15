@@ -193,8 +193,7 @@ and reporting</li>`
 modules for shippers, freight forwarders and carriers`,
         quote: `“We would recommend Movements Marketing to anyone
 looking to amplify their sales funnel, convert deals, and
-collaborate with a team that is fast, flexible, and result-
-oriented.”`,
+collaborate with a team that is fast, flexible, and result-oriented.”`,
         quotePerson: `Peter Bauer, Head of Sales`,
         impact: `<li>Helped boost the competitive edge on the saturated
 logistics market
