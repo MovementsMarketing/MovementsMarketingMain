@@ -18,16 +18,24 @@
             <input type="hidden" name="form-name" :value="`service-${formName}`" />
             <div class="columns is-multiline">
               <div class="column is-6">
-                <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`services.form.name`)">
+                <input class="form__input" type="text" id="name" name="name" required :placeholder="$t(`services.form.name`)"
+                       @keydown="declineFirstKeys($event, ['-', ' '])"
+                >
               </div>
               <div class="column is-6">
-                <input class="form__input"  type="text" id="companyName" name="companyName" required :placeholder="$t(`services.form.companyName`)">
+                <input class="form__input"  type="text" id="companyName" name="companyName" required :placeholder="$t(`services.form.companyName`)"
+                       @keydown="declineFirstKeys($event, ['-', ' '])"
+                >
               </div>
               <div class="column is-6">
-                <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`services.form.businessEmail`)">
+                <input class="form__input"  type="email" id="email" name="email" required  :placeholder="$t(`services.form.businessEmail`)"
+                       @keydown="declineFirstKeys($event, ['-', ' '])"
+                >
               </div>
               <div class="column is-6">
-                <input class="form__input" name="message" id="phone" required :placeholder="$t(`services.form.phone`)"/>
+                <input class="form__input" name="message" id="phone" required :placeholder="$t(`services.form.phone`)"
+                       @keydown="declineFirstKeys($event, ['-', ' '])"
+                />
               </div>
 
               <div class="column is-12 has-text-right">
@@ -82,6 +90,11 @@
 
 
     dots = require('@/assets/images/dots-green.png');
+
+    declineFirstKeys(event: KeyboardEvent, parameters: string[]){
+      // @ts-ignore
+      if (parameters.includes(event.key) && event.target?.selectionStart === 0) event.preventDefault();
+    }
 
   }
 

@@ -3,7 +3,7 @@ import generalTerms from "@/constants/locales/generalTerms/nl";
 const nl = {
   learnMore: 'Ontdek meer',
   connect: `Let's connect`,
-  contactUs: 'Neem contact op!',
+  contactUs: 'Neem contact op',
   navigation: {
     about: 'Over ons',
     services: 'Onze oplossingen',
@@ -70,12 +70,10 @@ een persoonlijke band met contacten te bouwen en
 op maat gemaakte oplossingen te leveren, waarbij
 altijd de hoogste kwaliteit wordt gehandhaafd."`,
         quotePerson: `Martijn Vermunt, International Sales Director`,
-        impact: `<li>Actief bijdragen aan het verbeteren van de
-merkbekendheid van de klant en het bouwen van de
-commerciële relatie in Nederland en daarbuiten
-</li><li>Ons team voegt waarde toe door leads te
-genereren, nieuwe klanten te werven en
-klantenservice te bieden langs diverse kanalen.</li>`
+        impact: `<li>Actief bijgedragen aan het verbeteren van de merkbekendheid van de klant en het bouwen
+van de commerciële relatie in Nederland en daarbuiten
+</li><li>Waarde toegevoegd door leads te genereren, nieuwe klanten te werven en klantenservice te
+bieden langs diverse kanalen</li>`
       },
       dak: {
         companyDescription: `De grootste coöperatie van verzekerings- en
@@ -92,7 +90,7 @@ goede resultaten.”`,
         impact: `<li>Het bevorderen van een langdurig partnership
 </li><li>De klant geholpen bij het introduceren van
 nieuwe diensten en het werven van meer
-kantoren.</li>`
+kantoren</li>`
       },
       shypple: {
         companyDescription: `Wereldwijd opererende digitale expediteur
@@ -109,7 +107,7 @@ training.“`,
 samenwerking met klanten, met de focus op
 continue wederzijdse groei
 </li><li>Een belangrijke en actieve rol gespeeld bij het
-internationaal opschalen van deze klant.</li>`
+internationaal opschalen van deze klant</li>`
       },
       abcDisplay: {
         companyDescription: `Een toonaangevende producent van mobiele
@@ -124,11 +122,9 @@ de hele wereld konden sturen. Dit heeft niet
 alleen onze verkoopkansen vergroot, maar ook
 onze internationale aanwezigheid versterkt.”`,
         quotePerson: `Cyrus Truijens, CEO`,
-        impact: `<li>Generatie van veel goede en kwalitatieve leads
-door doelgerichte telefonische campagnes, naast
-het vergroten van de bereikbaarheid
+        impact: `<li>Via gerichte telefooncampagnes duizenden leads gegenereerd en een groter bereik gerealiseerd
 </li><li>Het merk herkenbaarder gemaakt in de branche
-en nieuwe zakelijke kansen weten te creëren.</li>`
+en nieuwe zakelijke kansen weten te creëren</li>`
       },
       diagnost: {
         companyDescription: `Medisch diagnostisch laboratorium in
@@ -144,14 +140,12 @@ partner, diep betrokken bij het oplossen van
 alle uitdagingen die we tegenkomen."`,
         quotePerson: `Coos Molenaar, Department Manager`,
         impact: `<li>Realiseren van kortere gesprekstijden,
-verhoogde efficiency en verbeterde patiënt-
-ervaringen vanaf de allereerste dag van de
+verhoogde efficiency en verbeterde patiënt-ervaringen vanaf de allereerste dag van de
 samenwerking
-</li><li>Optimalisatie de totale call-flow van
-binnenkomende en doorverbonden gesprekken,
-en significante reductie van de kosten
+</li><li>Optimalisatie van de totale call-flow van binnenkomende en doorverbonden gesprekken, en
+een significante reductie van de kosten
 </li><li>Verbetering van het totale afsprakenproces,
-onder ander door de actieve klantbegeleiding.</li>`
+onder ander door de actieve klantbegeleiding</li>`
       },
       sazas: {
         companyDescription: `Specialistisch en vooraanstaand nationaal
@@ -172,26 +166,23 @@ versturen van offertes en begeleiding van het
 gehele salesproces
 </li><li>Optimaliseren van de sales funnel, met een
 aanzienlijke toename van de conversieratio’s
-als gevolg.</li>`
+als gevolg</li>`
       },
       cargoplot: {
         companyDescription: `Een online platform voor <span class="no-wrap">e-commerce</span> importeurs
 en vrachtvervoerders in Nederland`,
         quote: `"Wat Movements Marketing onderscheidt, is hun
 flexibiliteit en vermogen om snel waarde te
-genereren door leads om te zetten in lange-
-termijn klanten. Ze begrijpen onze behoeften en
+genereren door leads om te zetten in lange-termijn klanten. Ze begrijpen onze behoeften en
 zijn voor 100% toegewijd aan ons gezamenlijk
 succes."`,
         quotePerson: `Founder`,
         impact: `<li>Bieden van ondersteuning bij het valideren en
 uitbreiden van de groeistrategie van de klant
-</li><li>Het omzetten van een aanzienlijk aantal demo-
-gesprekken in “getekende” klanten.</li>`
+</li><li>Het omzetten van een aanzienlijk aantal demo-gesprekken in “getekende” klanten</li>`
       },
       oct8ne: {
-        companyDescription: `Een toonaangevend bedrijf in klantenservice-
-tools in Europa`,
+        companyDescription: `Een toonaangevend bedrijf in <span class="no-wrap">klantenservice-tools</span> in Europa`,
         quote: `“Movements Marketing doet wat ze zeggen
 en zeggen wat ze doen! We bevelen hun
 professionele team van experts van harte
@@ -200,11 +191,9 @@ aan.”`,
         impact: `<li>Opzetten en implementeren van de eerste
 hybride chat (Live chat en Chatbot) met visuele
 ondersteuning
-</li><li>Ontwikkelen en voeren van effectieve demo-
-gesprekken gevoerd, wat heeft geleid tot
-“getekende” klanten
+</li><li>Ontwikkelen en voeren van effectieve online demo&#39;s, wat heeft geleid tot “getekende” klanten
 </li><li>Diepgaand klantrespons-onderzoek
-uitgevoerd.</li>`
+uitgevoerd</li>`
       },
       x2com: {
         companyDescription: `Een zakelijke telecom provider die
@@ -218,7 +207,7 @@ hen helemaal voor onszelf willen houden!"`,
 klantenbestand heeft uitgebreid
 </li><li>Toegevoegde waarde geleverd door zeer nauwe
 en betrokken samenwerking, regelmatige
-feedbacksessies en voortgangsrapportages.</li>`
+feedbacksessies en voortgangsrapportages</li>`
       },
       trans: {
         companyDescription: `Een toonaangevend Duits logistiek platform voor
@@ -236,7 +225,7 @@ waardoor de klant zich heeft onderscheiden van de
 concurrentie
 </li><li>Succesvolle uitbreiding van het klantenbestand en het
 genereren van extra verkopen, met een aanzienlijke
-marktgroei als resultaat.</li>`
+marktgroei als resultaat</li>`
       },
       alager: {
         companyDescription: `Een toonaangevende AR-app voor mobiele workflow-
@@ -255,11 +244,11 @@ genereren van leads voor de klant
     },
     values: {
       ourValues: `Onze waarden`,
-      intro: `Onze manier van werken is stevig verankerd in waarden die niet alleen bepalen wie we zijn, maar die ook onze
-interacties met klanten sturen en voor de resultaten die we behalen.`,
+      intro: `Onze manier van werken is stevig verankerd in waarden die niet alleen bepalen wie we zijn,
+maar die ook onze interacties met klanten en de resultaten die we behalen aansturen.`,
       passion: {
         title: `Passie`,
-        text: `Jouw ambitie realiseren met alles wat we in ons hebben.`,
+        text: `Jouw succes stimuleren met een onvermoeibare inzet voor alles wat we doen.`,
       },
       involvement: {
         title: `Betrokkenheid`,
@@ -267,15 +256,15 @@ interacties met klanten sturen en voor de resultaten die we behalen.`,
       },
       connection: {
         title: `Verbinding`,
-        text: `Betekenisvolle relaties opbouwen om jouw behoeften goed te begrijpen.`,
+        text: `Betekenisvolle relaties opbouwen om jouw behoeften beter te begrijpen.`,
       },
       quality: {
         title: `Kwaliteit`,
-        text: `Consequent oplossingen bieden, die jouw verwachtingen overtreffen.`,
+        text: `Handhaven van hoge normen om consequent oplossingen te leveren die jouw verwachtingen overtreffen.`,
       },
       results: {
         title: `Resultaatgerichtheid`,
-        text: `Gefocust op uitzonderlijke, tastbare resultaten voor jou.`,
+        text: `Gefocust op het behalen van uitzonderlijke, tastbare resultaten voor jou.`,
       },
     },
     contact: {
@@ -289,7 +278,7 @@ interacties met klanten sturen en voor de resultaten die we behalen.`,
       phone: 'Telefoon',
       message: 'Bericht',
     },
-    contactUs: 'Neem contact op!',
+    contactUs: 'Neem contact op',
   },
 
   services: {
@@ -302,7 +291,7 @@ interacties met klanten sturen en voor de resultaten die we behalen.`,
       engagementStrategy: {
         title: `<span class="is-movements-green">Klantstrategie</span>`,
         text: `Ons team staat achter jouw doelen. Met een slimme en strategische aanpak, bieden we passende oplossingen
-gebaseerd op jouw wensen en ideeën. Ons toegewijde team van experts staat klaar om dit tot leven te brengen.
+gebaseerd op jouw wensen en ideeën. Ons toegewijde team van meertalige experts staat klaar om dit tot leven te brengen.
 Waarbij elke klant-interactie bijdraagt tot blijvende loyaliteit en succes.`,
       },
       telephoneCustomerCare: {
@@ -440,8 +429,8 @@ klanten en professionele communicatie grenzen overstijgen en succes een gedeelde
     team: {
       title: `Ons team`,
       text: `Onze kracht ligt in ons team - we koesteren een team dat toegewijd is aan kwaliteit en resultaten, en
-oplossingen biedt die aansluiten bij de zakelijke doelstellingen van onze klanten. Van de Benelux tot de DACH-
-regio's evolueert ons team voortdurend, omarmt uitdagingen en stelt nieuwe normen in klantenservice en B2B
+oplossingen biedt die aansluiten bij de zakelijke doelstellingen van onze klanten. Van de Benelux tot de DACH-regio's
+evolueert ons team voortdurend, omarmt uitdagingen en stelt nieuwe normen in klantenservice en B2B
 sales. Ons team is opgedeeld in Nederlandstalige en Duitstalige specialisten, die zich bezighouden met
 klantenservice, B2B sales support en lead generatie.`,
     },

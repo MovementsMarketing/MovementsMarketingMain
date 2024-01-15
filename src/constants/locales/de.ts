@@ -3,13 +3,13 @@ import generalTerms from "@/constants/locales/generalTerms/de";
 const de = {
   learnMore: 'Mehr erfahren',
   connect: `Let's connect`,
-  contactUs: 'Kontaktiere uns!',
+  contactUs: 'Kontaktieren Sie uns',
   navigation: {
     about: 'Über uns',
     services: 'Unsere Lösungen',
     clients: 'Unsere Kunden',
     career: 'Join us',
-    privacyPolicy: 'Privacy policy',
+    privacyPolicy: 'Datenschutzrichtlinie',
     clientsOptions: {
       partnerships: 'Unsere Kooperationspartner',
       stories: 'Erfolgsgeschichten unserer Kunden',
@@ -73,14 +73,14 @@ potentiellen Kunden aufbaut,
 maßgeschneiderte Lösungen findet und
 dabei höchste Qualität gewährleistet.“`,
         quotePerson: `Martijn Vermunt, International Sales Director`,
-        impact: `<li>Mehr als 1 Million einzigartige Spieler;
+        impact: `<li>Mehr als 1 Million einzigartige Spieler
 </li><li>Hat dem Kunden geholfen, die
 Markenbekanntheit zu verbessern und
-eine globale Präsenz aufzubauen;
+eine globale Präsenz aufzubauen
 </li><li>Unser Team schafft durch die
 Leadgenerierung, Neukundengewinnung
 und einen Multichannel- Kundenservice
-einen Mehrwert für den Kunden.</li>`
+einen Mehrwert für den Kunden</li>`
       },
       dak: {
         companyDescription: `Die größte Genossenschaft von
@@ -94,11 +94,11 @@ Wir empfehlen sie aufgrund ihres
 persönlichen Engagements und der
 kontinuirlich guten Ergebnisse.“`,
         quotePerson: `Jean Paul Hoogmans, Manager Marketing & Sales Support`,
-        impact: `<li>Pflege einer langjährigen Partnerschaft;
+        impact: `<li>Pflege einer langjährigen Partnerschaft
 </li><li>Hat dem Kunden geholfen, einen neuen
 Service einzuführen und problemlos weitere
 Versicherungsvermittlerbüros zu
-rekrutieren.</li>`
+rekrutieren</li>`
       },
       shypple: {
         companyDescription: `Ein weltweit bekannter digitaler Spediteur für
@@ -114,9 +114,9 @@ Bewertungen und die kontinuierlichen
 Schulungen.“`,
         quotePerson: `Michiel van Wandelen, Head of Sales`,
         impact: `<li>Langfristige Zusammenarbeit mit dem Fokus
-auf ein gemeinsames Wachstum;
+auf ein gemeinsames Wachstum
 </li><li>Unterstützung des Kunden bei der
-internationalen Expansion seines Geschäfts.</li>`
+internationalen Expansion seines Geschäfts</li>`
       },
       abcDisplay: {
         companyDescription: `Ein führender Hersteller von mobilen
@@ -135,10 +135,10 @@ Präsenz gestärkt.“`,
         quotePerson: `Cyrus Truijens, CEO`,
         impact: `<li>Durch eine gezielte Telefonkampagne und
 erweiterter Reichweite wurden tausende an
-Leads generiert;
+Leads generiert
 </li><li>Wir haben das Unternehmen in der
 Branche bekannter gemacht und neue
-Geschäftsmöglichkeiten eröffnet.</li>`
+Geschäftsmöglichkeiten eröffnet</li>`
       },
       diagnost: {
         companyDescription: `Ein medizinisches Diagnoselabor und regionaler
@@ -155,11 +155,11 @@ einsetzt.“`,
         quotePerson: `Coos Molenaar, Department Manager`,
         impact: `<li>Vom ersten Tag an wurden kürzere Wartezeiten
 und eine verbesserte Patientenerfahrung
-erreicht;
+erreicht
 </li><li>Wir haben unnötige Telefonanrufe reduziert
-und die Kosten gesenkt;
+und die Kosten gesenkt
 </li><li>Verbesserte Qualität der Terminierung mit
-aktiver Kundenbetreuung.</li>`
+aktiver Kundenbetreuung</li>`
       },
       sazas: {
         companyDescription: `Ein führendes Unternehmen
@@ -181,10 +181,10 @@ Vertriebsunterstützung durch
 Übernahme der Lead-Generierung,
 Versenden von Angeboten und
 Steuerung des gesamten
-Verkaufsprozesses;
+Verkaufsprozesses
 </li><li>Der Verkaufsprozess wurde optimiert
 und eine deutliche Steigerung der
-Konversionsraten festgestellt.</li>`
+Konversionsraten festgestellt</li>`
       },
       cargoplot: {
         companyDescription: `Eine Online-Plattform für <span class="no-wrap">E-Commerce-Importeure</span>
@@ -197,9 +197,9 @@ und sind zu 100 % unserem gemeinsamen Erfolg
 verpflichtet.“`,
         quotePerson: `Founder`,
         impact: `<li>Unterstützung bei der Validierung und
-Erweiterung der Outbound-Strategie des Kunden;
+Erweiterung der Outbound-Strategie des Kunden
 </li><li>Konvertierte eine große Anzahl von Online-Terminen
-in unterzeichnete Kunden.</li>`
+in unterzeichnete Kunden</li>`
       },
       oct8ne: {
         companyDescription: `Ein führendes Unternehmen im Bereich
@@ -209,10 +209,10 @@ verspricht. Wir empfehlen ihr professionelles
 Team von Experten uneingeschränkt."`,
         quotePerson: `Melvin Dom, Country Manager`,
         impact: `<li>Erstes hybrides Chat-System (Live-Chat und
-Chatbot) mit visueller Unterstützung;
+Chatbot) mit visueller Unterstützung
 </li><li>Vereinbarung von effizienten Online-Terminen, die zu unterzeichneten
-Kunden führten;
-</li><li>Ausführliche Analyse der Kundenreaktionen.</li>`
+Kunden führten
+</li><li>Ausführliche Analyse der Kundenreaktionen</li>`
       },
       x2com: {
         companyDescription: `Ein Geschäfts-Telekom-Anbieter, der
@@ -224,8 +224,8 @@ empfehlen, da wir Movements Marketing lieber
 für uns behalten!"`,
         quotePerson: `Guido Ackermans, Sales Manager`,
         impact: `<li>Gewährleistete neue Partnerschaften, die das
-Kundenteam erweitert haben;
-</li><li>Schafft Mehrwert durch regelmäßige Feedback-Sitzungen und Berichterstattung.</li>`
+Kundenteam erweitert haben
+</li><li>Schafft Mehrwert durch regelmäßige Feedback-Sitzungen und Berichterstattung</li>`
       },
       trans: {
         companyDescription: `Die deutsche Logistikplattform für Transportmanagement
@@ -236,12 +236,12 @@ mit einem Team zusammenarbeiten möchte, das schnell,
 flexibel und ergebnisorientiert ist."`,
         quotePerson: `Peter Bauer, Head of Sales`,
         impact: `<li>Unterstützung bei der Stärkung des Wettbewerbsvorteils
-auf dem gesättigten Logistikmarkt;
+auf dem gesättigten Logistikmarkt
 </li><li>Steigerung einer Markenbekanntheit, die den Kunden von
-der Konkurrenz abhebt;
+der Konkurrenz abhebt
 </li><li>Erfolgreiche Erweiterung des Vertriebs- und
 Kundenstamms, was zu einem deutlichen Wachstum der
-Marktpräsenz führt.</li>`
+Marktpräsenz führt</li>`
       },
       alager: {
         companyDescription: `Eine führende AR-App für die mobile Workflow-
@@ -324,7 +324,7 @@ kombinieren die genaue Planung der Termine mit datenbasierten Erkenntnissen; All
 einfach in den Arbeitsprozess Ihres Teams integrieren lässt.`,
       },
       aiAssistant: {
-        title: `<span class="is-highlighted">KI-Voicebot</span>`,
+        title: `<span class="is-highlighted">KI-Voicebot</span> Integration`,
         text: `Unser hochmoderner Voicebot geht über das herkömmliche Engagement hinaus. Wir bieten Ihren Kunden Rund-um-die-Uhr-Support, 
         sofortige Antworten und ein menschenähnliches Interaktionserlebnis an - und das alles ohne
 Wartezeit. Wenn Sie eine höhere Effizienz, Verfügbarkeit rund um die Uhr, Datenerfassung und mehr Mitarbeiter
@@ -445,7 +445,7 @@ Erfolg ein gemeinsames Erlebnis ist.`,
     team: {
       title: `Unser Team`,
       text: `Unser Team ist unsere Stärke - wir sind ein Team, das sich für Qualität und Ergebnisse einsetzt und
-Lösungen bietet, die mit den Geschäftszielen des Kunden übereinstimmen. Von den Benelux- bis hin zu den
+Lösungen bietet, die mit den Geschäftszielen des Kunden übereinstimmen. Von den Benelux bis hin zu den
 DACH-Regionen entwickelt sich unser Team kontinuierlich weiter, nimmt Herausforderungen an und setzt neue
 Maßstäbe im Kundenservice und im B2B-Vertrieb. Das Team besteht aus niederländisch und deutschsprachigen
 Experten, die sich um den Kundenservice, die B2B-Vertriebsunterstützung und die Lead-Generierung kümmern.`,

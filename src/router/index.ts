@@ -44,7 +44,7 @@ const team = {
 
 const careers = {
   en: '/join-us',
-  nl: '/nl/join-us',
+  nl: '/werken-bij',
   de: '/de/join-us',
 };
 
@@ -66,7 +66,7 @@ const customerExperienceEngagementStrategy = {
 const customerExperienceTelephoneCustomerCare = {
   en: '/solutions/customer-experience/end-to-end-telephone-customer-care',
   nl: '/oplossingen/customer-experience/end-to-end-telefonische-klantenservice',
-  de: '/losungen/kundenerlebnis/end-to-end-telefon-kundendienst',
+  de: '/losungen/kundenerlebnis/end-to-end-kundenservice',
 };
 const customerExperienceAppointmentOptimization = {
   en: '/solutions/customer-experience/appointment-optimization-solutions',
