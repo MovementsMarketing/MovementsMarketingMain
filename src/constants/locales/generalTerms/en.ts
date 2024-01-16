@@ -4,8 +4,7 @@ const generalTermsEn = {
     article1: {
         title: 'Article 1 - Definitions',
         text: `<ol>
-        <li> Movements Marketing Services, established in Utrecht, Chamber of Commerce number 77330277, is
-        referred to as a service provider in these general terms and conditions. </li>
+        <li> Movements Marketing Services, established in Hilversum, Chamber of Commerce number 77330277, is referred to as a service provider in these general terms and conditions. </li>
         <li>The other party of the service provider is referred to as the client in these general terms and
         conditions. </li> 
         <li> Parties are the service provider and client together. </li>

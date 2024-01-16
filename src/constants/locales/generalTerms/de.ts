@@ -4,8 +4,7 @@ const generalTermsEn = {
     article1: {
         title: 'Artikel 1 - Definitionen',
         text: `<ol>
-        <li> Movements Marketing Services, mit Sitz in Utrecht, Handelskammer (KvK) Nummer: 77330277, wird
-in diesen Allgemeinen Geschäftsbedingungen als Dienstleister bezeichnet. </li>
+        <li> Movements Marketing Services, mit Sitz in Hilversum, Handelskammer (KvK) Nummer: 77330277, wird in diesen Allgemeinen Geschäftsbedingungen als Dienstleister bezeichnet. </li>
         <li>Der Gesprächspartner des Dienstleisters wird in diesen Allgemeinen Geschäftsbedingungen als
 Auftraggeber genannt. </li> 
         <li> Die Parteien sind der Dienstleister und der Auftraggeber zusammen. </li>

@@ -4,8 +4,7 @@ const generalTermsEn = {
     article1: {
         title: 'Artikel 1 – Definities',
         text: `<ol>
-        <li> Movements Marketing Services BV, gevestigd te Utrecht, KvK-nummer 77330277, wordt in deze
-algemene voorwaarden aangeduid als dienstverlener. </li>
+        <li> Movements Marketing Services BV, gevestigd te Hilversum, KvK-nummer 77330277, wordt in deze algemene voorwaarden aangeduid als dienstverlener. </li>
         <li>De wederpartij van dienstverlener wordt in deze algemene voorwaarden aangeduid als
 opdrachtgever.</li> 
         <li> Partijen zijn dienstverlener en opdrachtgever samen. </li>
