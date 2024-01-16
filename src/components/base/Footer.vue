@@ -67,7 +67,7 @@
         <div class="column is-4  footer__links p-0">
           <div class="columns is-multiline" style="gap: 5px;">
             <div class="column is-12 p-0 has-text-right-tablet">
-              <router-link to="/careers">
+              <router-link :to="routes.careers">
                 {{ $t(`navigation.career`) }}
               </router-link>
             </div>
@@ -114,6 +114,22 @@
 
     get policyLink() {
       return this.$i18n.locale === 'nl' ? 'https://drive.google.com/file/d/1vXHSUX6ixFlZud2xzOfZpWmKQRAA3tgB/view' : 'https://drive.google.com/file/d/13JrSBecSq-rMm0diCgUAUUkID1yI6_Vk/view';
+    }
+
+    get routes() {
+      if(this.$i18n.locale === 'nl') {
+        return {
+          careers: '/werken-bij',
+        }
+      } else if(this.$i18n.locale === 'de') {
+        return {
+          careers: '/de/join-us/',
+        }
+      } else {
+        return {
+          careers: '/join-us/',
+        }
+      }
     }
   }
 
