@@ -6,6 +6,7 @@ import 'buefy/dist/buefy.css';
 import VueI18n from 'vue-i18n';
 import Carousel3d from 'vue-carousel-3d';
 import VueCookies from 'vue-cookies'
+import Meta from 'vue-meta';
 
 import router from './router';
 import IntersectionObserver from './directives/IntersectionObserver';
@@ -14,6 +15,8 @@ import Icons from "@/components/base/Icons.vue";
 import Footer from "@/components/base/Footer.vue";
 import Navigation from "@/components/base/Navigation.vue";
 
+
+Vue.use(Meta);
 Vue.use(VModal);
 Vue.use(Buefy);
 Vue.use(VueI18n);

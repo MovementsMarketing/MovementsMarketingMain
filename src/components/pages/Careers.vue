@@ -47,6 +47,7 @@
   import { Component } from 'vue-property-decorator';
   import Position from "@/components/components/Position.vue";
   import Cover from "@/components/components/Cover.vue";
+  import {MetaInfo} from "vue-meta";
 
   @Component({
     components: {
@@ -55,6 +56,14 @@
     }
   })
   class Careers extends Vue {
+    metaInfo: MetaInfo = {
+      title: 'Page Title',
+      meta: [
+        { property: 'og:title', content: 'Movements Marketing' },
+        { property: 'og:description', content: 'Elevate customer experience and drive sales with our seamless end-to-end solutions.' },
+        { property: 'og:image', content: '<%= BASE_URL %>movements-marketing-team.jpg' },
+      ],
+    };
 
     currentIndex = 0;
     direction = 'forward'
