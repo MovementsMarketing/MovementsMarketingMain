@@ -63,6 +63,7 @@
   import LearnMore from "@/components/components/LearnMore.vue";
   import CaseStudies from "@/components/components/CaseStudies.vue";
   import _ from 'lodash';
+  import {MetaInfo} from 'vue-meta';
 
   @Component({
     components: {
@@ -80,7 +81,14 @@
     }
   })
   class EndToEndSupport extends Vue {
-
+    metaInfo: MetaInfo = {
+      title: 'Page Title',
+      meta: [
+        { property: 'og:title', content: 'Movements Marketing' },
+        { property: 'og:description', content: 'Elevate customer experience and drive sales with our seamless end-to-end solutions.' },
+        { property: 'og:image', content: '<%= BASE_URL %>movements-marketing-end-to-end.jpg' },
+      ],
+    };
 
     dots = require('@/assets/images/dots-green.png');
     debouncedHandleScroll = _.debounce(this.handleScroll, 1200);
