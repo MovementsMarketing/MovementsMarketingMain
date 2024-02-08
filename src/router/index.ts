@@ -782,6 +782,7 @@ export default new VueRouter({
       component: ThankYou,
     },
   ],
+  fallback: true,
   scrollBehavior: function (to) {
     if (to.meta?.element) {
         return {
