@@ -77,11 +77,12 @@
           name: 'Anel Bašić',
           position: 'Director of Customer Onboarding & Project Management',
         },
-        {
-          img: require('@/assets/images/team/Frans.jpg'),
-          name: 'Frans Saelman',
-          position: 'Chief Operating Officer',
-        },],
+        // {
+        //   img: require('@/assets/images/team/Frans.jpg'),
+        //   name: 'Frans Saelman',
+        //   position: 'Chief Operating Officer',
+        // },
+        ],
         [{
           img: require('@/assets/images/team/Azra.jpg'),
           name: 'Azra Kerić',
@@ -97,11 +98,7 @@
           name: 'Elvir Merić',
           position: 'Project Management Lead',
         },],
-        [{
-          img: require('@/assets/images/team/Saskia.jpg'),
-          name: 'Saskia Rijnders',
-          position: 'Quality Analyst',
-        },
+        [
         {
           img: require('@/assets/images/team/Alma.jpg'),
           name: 'Alma Hadžović',
@@ -127,11 +124,17 @@
           name: 'Emina Husejnović',
           position: 'Team Leader (Dutch)',
         },
-        {
-          img: require('@/assets/images/team/Asli.jpg'),
-          name: 'Asli Birsel Basan',
-          position: 'Supervisor Inbound (Dutch)',
-        },]
+          {
+            img: require('@/assets/images/team/Saskia.jpg'),
+            name: 'Saskia Rijnders',
+            position: 'Quality Analyst',
+          },
+        // {
+        //   img: require('@/assets/images/team/Asli.jpg'),
+        //   name: 'Asli Birsel Basan',
+        //   position: 'Supervisor Inbound (Dutch)',
+        // },
+        ]
       ]
     }
   }
